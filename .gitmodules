@@ -1,3 +1,3 @@
-[submodule "ArknightsData"]
-	path = ArknightsData
-	url = https://github.com/Dimbreath/ArknightsData.git
+[submodule "scripts/arknights/ArknightsData"]
+	path = scripts/arknights/ArknightsData
+	url = https://github.com/Dimbreath/ArknightsData
