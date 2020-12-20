@@ -11,7 +11,10 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "ak:update": "yarn ak:update:img && yarn ak:update:ops",
+    "ak:update:ops": "git submodule update --remote && ts-node-script scripts/arknights/operators.ts",
+    "ak:update:img": "git submodule update --remote && ts-node-script scripts/arknights/images.ts"
   },
   "dependencies": {
     "@types/node": "^14.14.14",
