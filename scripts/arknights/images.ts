@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import path from "path";
 import { promises as fs } from "fs";
-import slugify from "slugify";
+import slugify from "../../src/utils/slugify";
 import { getOperatorName } from "./globals";
 
 const ACESHIP_BASEDIR = path.join(__dirname, "aceship");
@@ -31,8 +31,7 @@ function newSkillIconFilename(oldFilename: string): string | null {
     const newFilename = slugify(
       eliteLevel
         ? `${operatorName} elite ${eliteLevel}.png`
-        : `${operatorName}.png`,
-      { lower: true }
+        : `${operatorName}.png`
     );
     return newFilename;
   }
