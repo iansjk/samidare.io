@@ -2,10 +2,10 @@
 import path from "path";
 import { promises as fs } from "fs";
 import slugify from "../../src/utils/slugify";
-import { getOperatorName } from "./globals";
+import { ARKNIGHTS_DATA_DIR, getOperatorName } from "./globals";
 
 const ACESHIP_BASEDIR = path.join(__dirname, "aceship");
-const OUTDIR = path.join(__dirname, "../../src/data/arknights/images");
+const OUTDIR = path.join(ARKNIGHTS_DATA_DIR, "images");
 
 const skillIconFilenameRegex = /skill_icon_(?<skillId>[^.]+)\.png/;
 function newSkillIconFilename(oldFilename: string): string | null {

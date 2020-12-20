@@ -7,17 +7,11 @@ import enSkillTable from "./ArknightsData/en-US/gamedata/excel/skill_table.json"
 import {
   getOperatorName,
   getEliteLMDCost,
-  getItemName,
-  Ingredient,
+  InternalItemRequirement,
+  toIngredient,
+  ARKNIGHTS_DATA_DIR,
 } from "./globals";
 
-const OUTDIR = path.join(__dirname, "../../src/data/arknights");
-fs.mkdirSync(OUTDIR, { recursive: true });
-
-interface InternalItemRequirement {
-  id: string;
-  count: number;
-}
 interface EliteLevelEntry {
   evolveCost: InternalItemRequirement[];
 }
@@ -32,12 +26,6 @@ interface MasteryLevelEntry {
 interface SkillLevelEntry {
   lvlUpCost: InternalItemRequirement[];
 }
-
-const toIngredient = ({ id, count }: { id: string; count: number }): Ingredient => ({
-  id,
-  name: getItemName(id),
-  quantity: count,
-});
 
 const operatorIds = Object.keys(cnCharacterTable)
   .filter((id) => {
@@ -113,6 +101,6 @@ const operatorEntries = operatorIds.map((id: string) => {
 });
 
 fs.writeFileSync(
-  path.join(OUTDIR, "operators.json"),
+  path.join(ARKNIGHTS_DATA_DIR, "operators.json"),
   JSON.stringify(operatorEntries, null, 2)
 );

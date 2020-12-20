@@ -1,10 +1,18 @@
+import path from "path";
+
 import enItemTable from './ArknightsData/en-US/gamedata/excel/item_table.json';
 import cnCharacterTable from './ArknightsData/zh-CN/gamedata/excel/character_table.json';
 
+export const ARKNIGHTS_DATA_DIR = path.join(__dirname, "../../src/data/arknights");
 export interface Ingredient {
   id: string;
   name: string;
   quantity: number;
+}
+
+export interface InternalItemRequirement {
+  id: string;
+  count: number;
 }
 
 const operatorNameOverride: Record<string, string> = {
@@ -57,4 +65,12 @@ export function getEliteLMDCost(rarity: number, eliteLevel: number): Ingredient 
     name: 'LMD',
     quantity,
   };
+}
+
+export function toIngredient({ id, count }: { id: string, count: number }): Ingredient {
+  return {
+    id,
+    name: getItemName(id),
+    quantity: count
+  }
 }
