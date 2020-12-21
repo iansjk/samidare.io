@@ -10,7 +10,21 @@ import {
   InternalItemRequirement,
   toIngredient,
   ARKNIGHTS_DATA_DIR,
+  Ingredient,
 } from "./globals";
+
+enum GoalCategory {
+  "Elite" = 0,
+  "Mastery",
+  "Skill Level",
+}
+
+interface OperatorGoal {
+  goalName: string;
+  goalShortName?: string;
+  goalCategory: GoalCategory;
+  ingredients: Ingredient[];
+}
 
 interface EliteLevelEntry {
   evolveCost: InternalItemRequirement[];
@@ -44,28 +58,34 @@ const operatorEntries = operatorIds.map((id: string) => {
   const isCnOnly =
     enCharacterTable[operatorId as keyof typeof enCharacterTable] === undefined;
   const rarity = cnCharacterTable[operatorId].rarity + 1;
-  const skillLevels =
-    (cnCharacterTable[operatorId].allSkillLvlup as SkillLevelEntry[]).map((skillLevelEntry, i) => {
-      const cost = skillLevelEntry.lvlUpCost;
-      const ingredients = cost.map(toIngredient);
-      return {
-        // we want to return the result of a skillup,
-        // and since [0] points to skill level 1 -> 2, we add 2
-        skillLevel: i + 2,
-        ingredients
-      };
-    });
+  const skillLevels: OperatorGoal[] = (cnCharacterTable[operatorId]
+    .allSkillLvlup as SkillLevelEntry[]).map((skillLevelEntry, i) => {
+    const cost = skillLevelEntry.lvlUpCost;
+    const ingredients = cost.map(toIngredient);
+    return {
+      // we want to return the result of a skillup,
+      // and since [0] points to skill level 1 -> 2, we add 2
+      skillLevel: i + 2,
+      ingredients,
+      goalName: `Skill Level ${i + 1} → ${i + 2}`,
+      goalShortName: `Skill Level ${i + 2}`,
+      goalCategory: GoalCategory["Skill Level"],
+    };
+  });
   // operatorData[id].phases[0] is E0, so we skip that one
-  const elite =
-    (cnCharacterTable[operatorId].phases.slice(1) as EliteLevelEntry[]).map(({ evolveCost }, i) => {
-      const ingredients = evolveCost.map(toIngredient);
-      ingredients.unshift(getEliteLMDCost(rarity, i + 1));
-      // [0] points to E1, [1] points to E2, so add 1
-      return {
-        eliteLevel: i + 1,
-        ingredients
-      };
-    });
+  const elite: OperatorGoal[] = (cnCharacterTable[operatorId].phases.slice(
+    1
+  ) as EliteLevelEntry[]).map(({ evolveCost }, i) => {
+    const ingredients = evolveCost.map(toIngredient);
+    ingredients.unshift(getEliteLMDCost(rarity, i + 1));
+    // [0] points to E1, [1] points to E2, so add 1
+    return {
+      eliteLevel: i + 1,
+      ingredients,
+      goalName: `Elite ${i + 1}`,
+      goalCategory: GoalCategory.Elite,
+    };
+  });
   const baseObj = {
     name,
     rarity,
@@ -77,26 +97,34 @@ const operatorEntries = operatorIds.map((id: string) => {
     return baseObj;
   }
   const skillTable = isCnOnly ? cnSkillTable : enSkillTable;
-  const skills = (cnCharacterTable[operatorId].skills as MasteryLevelEntry[]).map((masteryLevelEntry, i) => {
-      // masteryLevelEntry contains data on all 3 mastery levels for one skill
-      const masteries =
-        masteryLevelEntry.levelUpCostCond.map(({ levelUpCost }, j) => {
-          const ingredients = levelUpCost.map(toIngredient);
-          // mastery level -> array of ingredients
-          return {
-            masteryLevel: j + 1,
-            ingredients
-          };
-        });
-      // skill # -> { skill name, skill 1 masteries, skill 2 masteries, ... }
-      return {
-        slot: i + 1,
-        skillId: masteryLevelEntry.skillId,
-        iconId: skillTable[masteryLevelEntry.skillId as keyof typeof skillTable].iconId,
-        skillName: skillTable[masteryLevelEntry.skillId as keyof typeof skillTable].levels[0].name,
-        masteries
-      };
-    });
+  const skills = (cnCharacterTable[operatorId]
+    .skills as MasteryLevelEntry[]).map((masteryLevelEntry, i) => {
+    // masteryLevelEntry contains data on all 3 mastery levels for one skill
+    const masteries: OperatorGoal[] = masteryLevelEntry.levelUpCostCond.map(
+      ({ levelUpCost }, j) => {
+        const ingredients = levelUpCost.map(toIngredient);
+        // mastery level -> array of ingredients
+        return {
+          masteryLevel: j + 1,
+          ingredients,
+          goalName: `Skill ${i + 1} Mastery ${j + 1}`,
+          goalShortName: `S${i + 1} M${j + 1}`,
+          goalCategory: GoalCategory.Mastery,
+        };
+      }
+    );
+    // skill # -> { skill name, skill 1 masteries, skill 2 masteries, ... }
+    return {
+      slot: i + 1,
+      skillId: masteryLevelEntry.skillId,
+      iconId:
+        skillTable[masteryLevelEntry.skillId as keyof typeof skillTable].iconId,
+      skillName:
+        skillTable[masteryLevelEntry.skillId as keyof typeof skillTable]
+          .levels[0].name,
+      masteries,
+    };
+  });
   return Object.assign(baseObj, { skills });
 });
 
