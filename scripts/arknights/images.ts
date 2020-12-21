@@ -5,7 +5,7 @@ import slugify from "../../src/utils/slugify";
 import { getOperatorName } from "./globals";
 
 const ACESHIP_BASEDIR = path.join(__dirname, "aceship");
-const OUTDIR = path.join("../../static/arknights/images");
+const OUTDIR = path.join(__dirname, "../../static/arknights/images");
 
 const skillIconFilenameRegex = /skill_icon_(?<skillId>[^.]+)\.png/;
 function newSkillIconFilename(oldFilename: string): string | null {
