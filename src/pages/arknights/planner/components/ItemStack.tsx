@@ -1,6 +1,6 @@
 import { makeStyles, Box, Typography } from "@material-ui/core";
 import React from "react";
-import Item from "./Item";
+import ItemBase from "./ItemBase";
 
 export const defaultSize = 100;
 
@@ -38,7 +38,7 @@ const ItemStack = React.memo(function ItemStack({
 
   return (
     <Box position="relative" width={backgroundSize} height={backgroundSize}>
-      <Item {...{ name, complete, size }} />
+      <ItemBase {...{ name, complete, size }} />
       <Box
         className={classes.quantityWrapper}
         position="absolute"
