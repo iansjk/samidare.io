@@ -19,7 +19,7 @@ interface Operator {
   skills: OperatorSkill;
 }
 
-interface OperatorSkill {
+export interface OperatorSkill {
   slot: number;
   skillId: string;
   iconId: string | null;
@@ -27,7 +27,7 @@ interface OperatorSkill {
   masteries: OperatorMasteryGoal[];
 }
 
-enum OperatorGoalCategory {
+export enum OperatorGoalCategory {
   "Elite" = 0,
   "Mastery",
   "Skill Level",
@@ -51,3 +51,26 @@ export type OperatorSkillLevelGoal = OperatorGoal & {
 export type OperatorMasteryGoal = OperatorGoal & {
   masteryLevel: number;
 };
+
+export function isEliteGoal(goal: OperatorGoal): goal is OperatorEliteGoal {
+  return (
+    Object.prototype.hasOwnProperty.call(goal, "eliteLevel") &&
+    goal.goalCategory === OperatorGoalCategory.Elite
+  );
+}
+
+export function isMasteryGoal(goal: OperatorGoal): goal is OperatorMasteryGoal {
+  return (
+    Object.prototype.hasOwnProperty.call(goal, "masteryLevel") &&
+    goal.goalCategory === OperatorGoalCategory.Mastery
+  );
+}
+
+export function isSkillLevelGoal(
+  goal: OperatorGoal
+): goal is OperatorSkillLevelGoal {
+  return (
+    Object.prototype.hasOwnProperty.call(goal, "skillLevel") &&
+    goal.goalCategory === OperatorGoalCategory["Skill Level"]
+  );
+}
