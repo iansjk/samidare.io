@@ -2,7 +2,7 @@ import { Box, makeStyles } from "@material-ui/core";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import React from "react";
 import slugify from "../utils/slugify";
-import { ItemProps } from "../types";
+import { Item } from "../types";
 
 const useStyles = makeStyles({
   itemBackground: {
@@ -26,9 +26,9 @@ interface ItemBaseProps {
   size: number;
   complete?: boolean;
 }
-type Props = ItemBaseProps & ItemProps;
+type Props = ItemBaseProps & Item;
 
-const Item = React.memo(function Item({
+const ItemBase = React.memo(function ItemBase({
   name,
   tier,
   size,
@@ -74,4 +74,4 @@ const Item = React.memo(function Item({
     </Box>
   );
 });
-export default Item;
+export default ItemBase;

@@ -15,7 +15,7 @@ import React from "react";
 import slugify from "slugify";
 import { bindTrigger, usePopupState } from "material-ui-popup-state/hooks";
 import ItemStack, { defaultSize } from "./ItemStack";
-import { Ingredient, ItemProps } from "../types";
+import { Ingredient, Item } from "../types";
 
 const useOutlinedInputStyles = makeStyles((theme) => ({
   input: {
@@ -81,7 +81,7 @@ interface ItemNeededProps {
   onChange: (itemName: string, rawInput: string) => void;
   onCraftingToggle: (itemName: string) => void;
 }
-type Props = ItemNeededProps & ItemProps;
+type Props = ItemNeededProps & Item;
 
 const ItemNeeded = React.memo(function ItemNeeded({
   name,

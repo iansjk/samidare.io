@@ -1,4 +1,4 @@
-export interface ItemProps {
+export interface Item {
   name: string;
   tier: number;
   ingredients?: Ingredient[];

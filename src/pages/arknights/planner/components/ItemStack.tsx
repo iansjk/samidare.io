@@ -1,6 +1,6 @@
 import { makeStyles, Box, Typography } from "@material-ui/core";
 import React from "react";
-import { ItemProps } from "../types";
+import { Item } from "../types";
 import ItemBase from "./ItemBase";
 
 export const defaultSize = 100;
@@ -26,7 +26,7 @@ interface ItemStackProps {
   complete?: boolean;
   size?: number;
 }
-type Props = ItemStackProps & ItemProps;
+type Props = ItemStackProps & Item;
 
 const ItemStack = React.memo(function ItemStack({
   name,
