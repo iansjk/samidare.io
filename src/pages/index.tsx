@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 function Home(): React.ReactElement {
   return (
@@ -7,6 +7,6 @@ function Home(): React.ReactElement {
       <p>What a world.</p>
       <img src="https://source.unsplash.com/random/400x200" alt="" />
     </div>
-  )
+  );
 }
 export default Home;

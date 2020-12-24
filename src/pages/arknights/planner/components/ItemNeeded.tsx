@@ -6,7 +6,6 @@ import {
   makeStyles,
   TextField,
   ButtonBase,
-  Popover,
   Backdrop,
 } from "@material-ui/core";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
@@ -14,11 +13,7 @@ import RemoveCircleIcon from "@material-ui/icons/RemoveCircle";
 import GavelIcon from "@material-ui/icons/Gavel";
 import React from "react";
 import slugify from "slugify";
-import {
-  bindPopover,
-  bindTrigger,
-  usePopupState,
-} from "material-ui-popup-state/hooks";
+import { bindTrigger, usePopupState } from "material-ui-popup-state/hooks";
 import ItemStack, { defaultSize } from "./ItemStack";
 import { Ingredient, ItemProps } from "../types";
 
