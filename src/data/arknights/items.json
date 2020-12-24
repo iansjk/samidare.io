@@ -42,6 +42,7 @@
       {
         "id": "3112",
         "name": "Carbon Stick",
+        "tier": 2,
         "quantity": 3
       }
     ]
@@ -54,6 +55,7 @@
       {
         "id": "3113",
         "name": "Carbon Brick",
+        "tier": 3,
         "quantity": 3
       }
     ]
@@ -66,11 +68,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 800
       },
       {
         "id": "3112",
         "name": "Carbon Stick",
+        "tier": 2,
         "quantity": 2
       }
     ]
@@ -83,11 +87,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 2400
       },
       {
         "id": "3113",
         "name": "Carbon Brick",
+        "tier": 3,
         "quantity": 2
       }
     ]
@@ -100,11 +106,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 7200
       },
       {
         "id": "3114",
         "name": "Carbon Pack",
+        "tier": 4,
         "quantity": 2
       }
     ]
@@ -122,6 +130,7 @@
       {
         "id": "3271",
         "name": "Supporter Chip",
+        "tier": 3,
         "quantity": 3
       }
     ]
@@ -134,6 +143,7 @@
       {
         "id": "3272",
         "name": "Supporter Chip Pack",
+        "tier": 4,
         "quantity": 3
       }
     ]
@@ -151,6 +161,7 @@
       {
         "id": "3281",
         "name": "Specialist Chip",
+        "tier": 3,
         "quantity": 3
       }
     ]
@@ -163,6 +174,7 @@
       {
         "id": "3282",
         "name": "Specialist Chip Pack",
+        "tier": 4,
         "quantity": 3
       }
     ]
@@ -180,6 +192,7 @@
       {
         "id": "3261",
         "name": "Medic Chip",
+        "tier": 3,
         "quantity": 3
       }
     ]
@@ -192,6 +205,7 @@
       {
         "id": "3262",
         "name": "Medic Chip Pack",
+        "tier": 4,
         "quantity": 3
       }
     ]
@@ -209,6 +223,7 @@
       {
         "id": "3251",
         "name": "Caster Chip",
+        "tier": 3,
         "quantity": 3
       }
     ]
@@ -221,6 +236,7 @@
       {
         "id": "3252",
         "name": "Caster Chip Pack",
+        "tier": 4,
         "quantity": 3
       }
     ]
@@ -238,6 +254,7 @@
       {
         "id": "3241",
         "name": "Sniper Chip",
+        "tier": 3,
         "quantity": 3
       }
     ]
@@ -250,6 +267,7 @@
       {
         "id": "3242",
         "name": "Sniper Chip Pack",
+        "tier": 4,
         "quantity": 3
       }
     ]
@@ -267,6 +285,7 @@
       {
         "id": "3231",
         "name": "Defender Chip",
+        "tier": 3,
         "quantity": 3
       }
     ]
@@ -279,6 +298,7 @@
       {
         "id": "3232",
         "name": "Defender Chip Pack",
+        "tier": 4,
         "quantity": 3
       }
     ]
@@ -296,6 +316,7 @@
       {
         "id": "3211",
         "name": "Vanguard Chip",
+        "tier": 3,
         "quantity": 3
       }
     ]
@@ -308,6 +329,7 @@
       {
         "id": "3212",
         "name": "Vanguard Chip Pack",
+        "tier": 4,
         "quantity": 3
       }
     ]
@@ -325,6 +347,7 @@
       {
         "id": "3221",
         "name": "Guard Chip",
+        "tier": 3,
         "quantity": 3
       }
     ]
@@ -337,6 +360,7 @@
       {
         "id": "3222",
         "name": "Guard Chip Pack",
+        "tier": 4,
         "quantity": 3
       }
     ]
@@ -359,6 +383,7 @@
       {
         "id": "3301",
         "name": "Skill Summary - 1",
+        "tier": 2,
         "quantity": 3
       }
     ]
@@ -371,6 +396,7 @@
       {
         "id": "3302",
         "name": "Skill Summary - 2",
+        "tier": 3,
         "quantity": 3
       }
     ]
@@ -383,11 +409,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 200
       },
       {
         "id": "3112",
         "name": "Carbon Stick",
+        "tier": 2,
         "quantity": 1
       }
     ]
@@ -465,11 +493,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 100
       },
       {
         "id": "30011",
         "name": "Orirock",
+        "tier": 1,
         "quantity": 3
       }
     ]
@@ -482,11 +512,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 200
       },
       {
         "id": "30012",
         "name": "Orirock Cube",
+        "tier": 2,
         "quantity": 5
       }
     ]
@@ -499,11 +531,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 300
       },
       {
         "id": "30013",
         "name": "Orirock Cluster",
+        "tier": 3,
         "quantity": 4
       }
     ]
@@ -521,11 +555,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 100
       },
       {
         "id": "30021",
         "name": "Sugar Substitute",
+        "tier": 1,
         "quantity": 3
       }
     ]
@@ -538,11 +574,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 200
       },
       {
         "id": "30022",
         "name": "Sugar",
+        "tier": 2,
         "quantity": 4
       }
     ]
@@ -555,21 +593,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 300
       },
       {
         "id": "30023",
         "name": "Sugar Pack",
+        "tier": 3,
         "quantity": 2
       },
       {
         "id": "30043",
         "name": "Oriron Cluster",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "30083",
         "name": "Manganese Ore",
+        "tier": 3,
         "quantity": 1
       }
     ]
@@ -587,11 +629,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 100
       },
       {
         "id": "30031",
         "name": "Ester",
+        "tier": 1,
         "quantity": 3
       }
     ]
@@ -604,11 +648,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 200
       },
       {
         "id": "30032",
         "name": "Polyester",
+        "tier": 2,
         "quantity": 4
       }
     ]
@@ -621,21 +667,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 300
       },
       {
         "id": "30033",
         "name": "Polyester Pack",
+        "tier": 3,
         "quantity": 2
       },
       {
         "id": "30053",
         "name": "Aketon",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "30073",
         "name": "Loxic Kohl",
+        "tier": 3,
         "quantity": 1
       }
     ]
@@ -653,11 +703,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 100
       },
       {
         "id": "30041",
         "name": "Oriron Shard",
+        "tier": 1,
         "quantity": 3
       }
     ]
@@ -670,11 +722,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 200
       },
       {
         "id": "30042",
         "name": "Oriron",
+        "tier": 2,
         "quantity": 4
       }
     ]
@@ -687,21 +741,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 300
       },
       {
         "id": "30043",
         "name": "Oriron Cluster",
+        "tier": 3,
         "quantity": 2
       },
       {
         "id": "30063",
         "name": "Integrated Device",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "30033",
         "name": "Polyester Pack",
+        "tier": 3,
         "quantity": 1
       }
     ]
@@ -719,11 +777,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 100
       },
       {
         "id": "30051",
         "name": "Diketon",
+        "tier": 1,
         "quantity": 3
       }
     ]
@@ -736,11 +796,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 200
       },
       {
         "id": "30052",
         "name": "Polyketon",
+        "tier": 2,
         "quantity": 4
       }
     ]
@@ -753,21 +815,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 300
       },
       {
         "id": "30053",
         "name": "Aketon",
+        "tier": 3,
         "quantity": 2
       },
       {
         "id": "30023",
         "name": "Sugar Pack",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "30083",
         "name": "Manganese Ore",
+        "tier": 3,
         "quantity": 1
       }
     ]
@@ -785,11 +851,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 100
       },
       {
         "id": "30061",
         "name": "Damaged Device",
+        "tier": 1,
         "quantity": 3
       }
     ]
@@ -802,11 +870,13 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 200
       },
       {
         "id": "30062",
         "name": "Device",
+        "tier": 2,
         "quantity": 4
       }
     ]
@@ -819,21 +889,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 300
       },
       {
         "id": "30063",
         "name": "Integrated Device",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "30013",
         "name": "Orirock Cluster",
+        "tier": 3,
         "quantity": 2
       },
       {
         "id": "30093",
         "name": "Grindstone",
+        "tier": 3,
         "quantity": 1
       }
     ]
@@ -851,21 +925,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 300
       },
       {
         "id": "30073",
         "name": "Loxic Kohl",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "30023",
         "name": "Sugar Pack",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "30103",
         "name": "RMA70-12",
+        "tier": 3,
         "quantity": 1
       }
     ]
@@ -883,21 +961,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 300
       },
       {
         "id": "30083",
         "name": "Manganese Ore",
+        "tier": 3,
         "quantity": 2
       },
       {
         "id": "30033",
         "name": "Polyester Pack",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "30073",
         "name": "Loxic Kohl",
+        "tier": 3,
         "quantity": 1
       }
     ]
@@ -915,21 +997,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 300
       },
       {
         "id": "30093",
         "name": "Grindstone",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "30043",
         "name": "Oriron Cluster",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "30063",
         "name": "Integrated Device",
+        "tier": 3,
         "quantity": 1
       }
     ]
@@ -947,21 +1033,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 300
       },
       {
         "id": "30103",
         "name": "RMA70-12",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "30013",
         "name": "Orirock Cluster",
+        "tier": 3,
         "quantity": 2
       },
       {
         "id": "30053",
         "name": "Aketon",
+        "tier": 3,
         "quantity": 1
       }
     ]
@@ -974,21 +1064,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 400
       },
       {
         "id": "30014",
         "name": "Orirock Concentration",
+        "tier": 4,
         "quantity": 1
       },
       {
         "id": "30044",
         "name": "Oriron Block",
+        "tier": 4,
         "quantity": 1
       },
       {
         "id": "30054",
         "name": "Keton Colloid",
+        "tier": 4,
         "quantity": 1
       }
     ]
@@ -1001,16 +1095,19 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 400
       },
       {
         "id": "30064",
         "name": "Optimized Device",
+        "tier": 4,
         "quantity": 1
       },
       {
         "id": "30074",
         "name": "White Horse Kohl",
+        "tier": 4,
         "quantity": 2
       }
     ]
@@ -1023,21 +1120,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 400
       },
       {
         "id": "30084",
         "name": "Manganese Trihydrate",
+        "tier": 4,
         "quantity": 1
       },
       {
         "id": "30094",
         "name": "Grindstone Pentahydrate",
+        "tier": 4,
         "quantity": 1
       },
       {
         "id": "30104",
         "name": "RMA70-24",
+        "tier": 4,
         "quantity": 1
       }
     ]
@@ -1050,21 +1151,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 400
       },
       {
         "id": "31034",
         "name": "Crystal Circuit",
+        "tier": 4,
         "quantity": 1
       },
       {
         "id": "31014",
         "name": "Polymerized Gel",
+        "tier": 4,
         "quantity": 2
       },
       {
         "id": "31024",
         "name": "Incandescent Alloy Block",
+        "tier": 4,
         "quantity": 1
       }
     ]
@@ -1082,21 +1187,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 300
       },
       {
         "id": "30043",
         "name": "Oriron Cluster",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "31013",
         "name": "Coagulating Gel",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "31023",
         "name": "Incandescent Alloy",
+        "tier": 3,
         "quantity": 1
       }
     ]
@@ -1114,21 +1223,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 300
       },
       {
         "id": "30063",
         "name": "Integrated Device",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "30093",
         "name": "Grindstone",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "31023",
         "name": "Incandescent Alloy",
+        "tier": 3,
         "quantity": 1
       }
     ]
@@ -1146,21 +1259,25 @@
       {
         "id": "4001",
         "name": "LMD",
+        "tier": 4,
         "quantity": 300
       },
       {
         "id": "31033",
         "name": "Crystal Component",
+        "tier": 3,
         "quantity": 2
       },
       {
         "id": "31013",
         "name": "Coagulating Gel",
+        "tier": 3,
         "quantity": 1
       },
       {
         "id": "31023",
         "name": "Incandescent Alloy",
+        "tier": 3,
         "quantity": 1
       }
     ]
@@ -1275,6 +1392,18 @@
   {
     "id": "2020recruitment10_3",
     "name": "Type-γ Headhunting Permit",
+    "tier": 5
+  },
+  {
+    "id": "2021recruitment10_1",
+    "tier": 5
+  },
+  {
+    "id": "2021recruitment10_2",
+    "tier": 5
+  },
+  {
+    "id": "2021recruitment10_3",
     "tier": 5
   },
   {

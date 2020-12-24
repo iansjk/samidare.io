@@ -1,6 +1,7 @@
 import path from "path";
 
-import enItemTable from "./ArknightsData/en-US/gamedata/excel/item_table.json";
+import { items as enItemTable } from "./ArknightsData/en-US/gamedata/excel/item_table.json";
+import { items as cnItemTable } from "./ArknightsData/zh-CN/gamedata/excel/item_table.json";
 import cnCharacterTable from "./ArknightsData/zh-CN/gamedata/excel/character_table.json";
 
 export const ARKNIGHTS_DATA_DIR = path.join(
@@ -10,6 +11,7 @@ export const ARKNIGHTS_DATA_DIR = path.join(
 export interface Ingredient {
   id: string;
   name: string;
+  tier: number;
   quantity: number;
 }
 
@@ -44,7 +46,7 @@ export function getOperatorName(operatorId: string): string | null {
 }
 
 export function getItemName(itemId: string): string {
-  const entry = enItemTable.items[itemId as keyof typeof enItemTable.items];
+  const entry = enItemTable[itemId as keyof typeof enItemTable];
   const name = entry?.name ?? itemNameOverride[itemId];
   return name;
 }
@@ -66,8 +68,20 @@ export function getEliteLMDCost(
   return {
     id: "4001",
     name: "LMD",
+    tier: 4,
     quantity,
   };
+}
+
+const ITEM_TIERS = Object.fromEntries(
+  Object.keys(cnItemTable).map((id) => [
+    id,
+    cnItemTable[id as keyof typeof cnItemTable].rarity + 1,
+  ])
+);
+
+function getItemTier(id: string): number {
+  return ITEM_TIERS[id];
 }
 
 export function toIngredient({
@@ -80,6 +94,7 @@ export function toIngredient({
   return {
     id,
     name: getItemName(id),
+    tier: getItemTier(id),
     quantity: count,
   };
 }

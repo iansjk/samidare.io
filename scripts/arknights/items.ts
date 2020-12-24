@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-import cnItemData from "./ArknightsData/zh-CN/gamedata/excel/item_table.json";
+import { items as cnItemTable } from "./ArknightsData/zh-CN/gamedata/excel/item_table.json";
 import cnBuildingData from "./ArknightsData/zh-CN/gamedata/excel/building_data.json";
 import {
   ARKNIGHTS_DATA_DIR,
@@ -10,7 +10,6 @@ import {
   toIngredient,
 } from "./globals";
 
-const cnItemTable = cnItemData.items;
 const { workshopFormulas } = cnBuildingData;
 
 interface FormulaEntry {
@@ -39,6 +38,7 @@ const items = Object.keys(cnItemTable).map((id) => {
       ingredients.unshift({
         id: "4001",
         name: "LMD",
+        tier: 4,
         quantity: formula.goldCost,
       });
     }

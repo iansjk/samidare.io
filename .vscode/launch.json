@@ -17,7 +17,8 @@
       "name": "Launch Program",
       "runtimeArgs": ["-r", "ts-node/register"],
       "args": ["${relativeFile}"],
-      "cwd": "${workspaceFolder}"
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "/Users/Ian/.nvm/versions/node/v12.20.0/bin/node"
     }
   ]
 }
