@@ -2,6 +2,7 @@ import { Box, makeStyles } from "@material-ui/core";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import React from "react";
 import slugify from "../../../../utils/slugify";
+import { ItemProps } from "../types";
 
 const useStyles = makeStyles({
   itemBackground: {
@@ -21,24 +22,25 @@ const useStyles = makeStyles({
   },
 });
 
-interface ItemProps {
-  name: string;
+interface ItemBaseProps {
   size: number;
   complete?: boolean;
 }
+type Props = ItemBaseProps & ItemProps;
 
 const Item = React.memo(function Item({
   name,
+  tier,
   size,
   complete = false,
-}: ItemProps): React.ReactElement {
+}: Props): React.ReactElement {
   const classes = useStyles();
   const backgroundSize = Math.floor(size * (95 / 100));
   const itemBackgroundStyle = {
     backgroundImage:
       backgroundSize < 40
         ? ""
-        : `url(${process.env.PUBLIC_URL}/images/item-bgs/tier${MATERIALS[name].tier}.png)`,
+        : `url(${process.env.PUBLIC_URL}/images/item-bgs/tier${tier}.png)`,
     opacity: complete ? 0.3 : 1,
     width: backgroundSize,
     height: backgroundSize,
@@ -54,9 +56,7 @@ const Item = React.memo(function Item({
             width: size,
             height: size,
           }}
-          src={`${process.env.PUBLIC_URL}/images/items/${slugify(name, {
-            lower: true,
-          })}.png`}
+          src={`${process.env.PUBLIC_URL}/images/items/${slugify(name)}.png`}
           alt={name}
           title={name}
         />

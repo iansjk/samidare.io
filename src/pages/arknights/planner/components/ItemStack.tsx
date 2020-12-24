@@ -1,5 +1,6 @@
 import { makeStyles, Box, Typography } from "@material-ui/core";
 import React from "react";
+import { ItemProps } from "../types";
 import ItemBase from "./ItemBase";
 
 export const defaultSize = 100;
@@ -21,24 +22,25 @@ export function formatQuantity(quantity: number): string {
 }
 
 interface ItemStackProps {
-  name: string;
   quantity: number;
   complete?: boolean;
   size?: number;
 }
+type Props = ItemStackProps & ItemProps;
 
 const ItemStack = React.memo(function ItemStack({
   name,
+  tier,
   quantity,
   complete = false,
   size = defaultSize,
-}: ItemStackProps): React.ReactElement {
+}: Props): React.ReactElement {
   const classes = useStyles();
   const backgroundSize = size - 5;
 
   return (
     <Box position="relative" width={backgroundSize} height={backgroundSize}>
-      <ItemBase {...{ name, complete, size }} />
+      <ItemBase {...{ name, tier, complete, size }} />
       <Box
         className={classes.quantityWrapper}
         position="absolute"

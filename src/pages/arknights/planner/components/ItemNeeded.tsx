@@ -20,6 +20,7 @@ import {
   usePopupState,
 } from "material-ui-popup-state/hooks";
 import ItemStack, { defaultSize } from "./ItemStack";
+import { Ingredient, ItemProps } from "../types";
 
 const useOutlinedInputStyles = makeStyles((theme) => ({
   input: {
@@ -74,7 +75,6 @@ const useStyles = makeStyles({
 });
 
 interface ItemNeededProps {
-  name: string;
   owned: number | null;
   needed: number;
   size?: number;
@@ -86,20 +86,23 @@ interface ItemNeededProps {
   onChange: (itemName: string, rawInput: string) => void;
   onCraftingToggle: (itemName: string) => void;
 }
+type Props = ItemNeededProps & ItemProps;
 
 const ItemNeeded = React.memo(function ItemNeeded({
   name,
+  tier,
+  ingredients,
   owned,
   needed,
   size = defaultSize,
   complete = false,
   crafting = false,
-  ingredientFor,
+  // ingredientFor,
   onIncrement,
   onDecrement,
   onChange,
   onCraftingToggle,
-}: ItemNeededProps): React.ReactElement {
+}: Props): React.ReactElement {
   const outlinedInputClasses = useOutlinedInputStyles();
   const inputAdornmentClasses = useInputAdornmentStyles();
   const classes = useStyles();
@@ -118,11 +121,11 @@ const ItemNeeded = React.memo(function ItemNeeded({
             {...bindTrigger(popoverState)}
             disableRipple
           >
-            <ItemStack {...{ name, size, complete }} quantity={needed} />
+            <ItemStack {...{ name, tier, size, complete }} quantity={needed} />
           </ButtonBase>
         </Box>
         <Backdrop className={classes.backdrop} open={popoverState.isOpen} />
-        <Popover
+        {/* <Popover
           className={classes.itemInfoPopover}
           anchorOrigin={{
             vertical: "center",
@@ -136,7 +139,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
           {...bindPopover(popoverState)}
         >
           <ItemInfoPopoverContent name={name} ingredientFor={ingredientFor} />
-        </Popover>
+        </Popover> */}
         <TextField
           size="small"
           fullWidth
@@ -177,7 +180,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
             ),
           }}
         />
-        {MATERIALS[name]?.ingredients ? (
+        {ingredients ? (
           <Button
             size="small"
             fullWidth
