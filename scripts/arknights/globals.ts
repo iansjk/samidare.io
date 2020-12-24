@@ -1,9 +1,12 @@
 import path from "path";
 
-import enItemTable from './ArknightsData/en-US/gamedata/excel/item_table.json';
-import cnCharacterTable from './ArknightsData/zh-CN/gamedata/excel/character_table.json';
+import enItemTable from "./ArknightsData/en-US/gamedata/excel/item_table.json";
+import cnCharacterTable from "./ArknightsData/zh-CN/gamedata/excel/character_table.json";
 
-export const ARKNIGHTS_DATA_DIR = path.join(__dirname, "../../src/data/arknights");
+export const ARKNIGHTS_DATA_DIR = path.join(
+  __dirname,
+  "../../src/data/arknights"
+);
 export interface Ingredient {
   id: string;
   name: string;
@@ -16,17 +19,17 @@ export interface InternalItemRequirement {
 }
 
 const operatorNameOverride: Record<string, string> = {
-  ShiraYuki: 'Shirayuki',
-  Гум: 'Gummy',
-  Зима: 'Zima',
-  Истина: 'Istina',
-  Роса: 'Rosa',
+  ShiraYuki: "Shirayuki",
+  Гум: "Gummy",
+  Зима: "Zima",
+  Истина: "Istina",
+  Роса: "Rosa",
 };
 
 const itemNameOverride: Record<string, string> = {
-  31033: 'Crystal Component',
-  31034: 'Crystal Circuit',
-  30145: 'Crystal Electronic Unit',
+  31033: "Crystal Component",
+  31034: "Crystal Circuit",
+  30145: "Crystal Electronic Unit",
 };
 
 export function getOperatorName(operatorId: string): string | null {
@@ -35,10 +38,7 @@ export function getOperatorName(operatorId: string): string | null {
     return null;
   }
   const { appellation } = entry;
-  return Object.prototype.hasOwnProperty.call(
-    operatorNameOverride,
-    appellation,
-  )
+  return Object.prototype.hasOwnProperty.call(operatorNameOverride, appellation)
     ? operatorNameOverride[appellation]
     : appellation;
 }
@@ -49,7 +49,10 @@ export function getItemName(itemId: string): string {
   return name;
 }
 
-export function getEliteLMDCost(rarity: number, eliteLevel: number): Ingredient {
+export function getEliteLMDCost(
+  rarity: number,
+  eliteLevel: number
+): Ingredient {
   let quantity = -1;
   if (rarity === 3) {
     quantity = 10000;
@@ -61,16 +64,22 @@ export function getEliteLMDCost(rarity: number, eliteLevel: number): Ingredient 
     quantity = eliteLevel === 2 ? 180000 : 30000;
   }
   return {
-    id: '4001',
-    name: 'LMD',
+    id: "4001",
+    name: "LMD",
     quantity,
   };
 }
 
-export function toIngredient({ id, count }: { id: string, count: number }): Ingredient {
+export function toIngredient({
+  id,
+  count,
+}: {
+  id: string;
+  count: number;
+}): Ingredient {
   return {
     id,
     name: getItemName(id),
-    quantity: count
-  }
+    quantity: count,
+  };
 }
