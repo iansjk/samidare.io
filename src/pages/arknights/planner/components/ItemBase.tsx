@@ -1,7 +1,7 @@
 import { Box, makeStyles } from "@material-ui/core";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import React from "react";
-import slugify from "../../../../utils/slugify";
+import slugify from "../utils/slugify";
 import { ItemProps } from "../types";
 
 const useStyles = makeStyles({
