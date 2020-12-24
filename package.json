@@ -18,11 +18,14 @@
     "ak:update:items": "git submodule update --remote && ts-node-script scripts/arknights/items.ts"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
     "@types/node": "^14.14.14",
     "gatsby": "^2.26.1",
     "gatsby-plugin-material-ui": "^2.1.10",
     "gatsby-source-filesystem": "^2.8.0",
     "gatsby-transformer-json": "^2.8.0",
+    "material-ui-popup-state": "^1.7.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "slugify": "^1.4.6"
