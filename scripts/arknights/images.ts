@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import path from "path";
 import { promises as fs } from "fs";
-import slugify from "../../src/pages/arknights/planner/utils/slugify";
+import slugify from "../../src/pages/arknights/planner/utils";
 import { getOperatorName } from "./globals";
 
 const ACESHIP_BASEDIR = path.join(__dirname, "aceship");
