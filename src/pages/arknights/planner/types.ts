@@ -6,5 +6,6 @@ export interface Item {
 
 export interface Ingredient {
   name: string;
+  tier: number;
   quantity: number;
 }
