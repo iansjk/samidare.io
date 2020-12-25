@@ -60,7 +60,9 @@ const GoalOverview = React.memo(function GoalOverview(
       }
     }
   `);
-  const items: Item[] = data.allItemsJson.nodes;
+  const items: Record<string, Item> = Object.fromEntries(
+    data.allItemsJson.nodes.map((node: { name: string }) => [node.name, node])
+  );
   const { goals, onGoalDeleted, onClearAllGoals } = props;
   const [materialsOwned, setMaterialsOwned] = useLocalStorage<
     Record<string, number | null>
@@ -82,7 +84,7 @@ const GoalOverview = React.memo(function GoalOverview(
         item.quantity + (materialsNeeded[item.name] || 0);
     })
   );
-  items.forEach((item) => {
+  Object.values(items).forEach((item) => {
     if (
       Object.prototype.hasOwnProperty.call(itemsToCraft, item.name) &&
       Object.prototype.hasOwnProperty.call(materialsNeeded, item.name)
@@ -178,7 +180,8 @@ const GoalOverview = React.memo(function GoalOverview(
   }
 
   const handleCraftingToggle = React.useCallback(
-    function handleCraftingToggle(item: Item) {
+    function handleCraftingToggle(itemName: string) {
+      const item = items[itemName];
       setItemsToCraft((prevObj) => {
         if (Object.prototype.hasOwnProperty.call(prevObj, item.name)) {
           const newObj = { ...prevObj };
@@ -188,7 +191,7 @@ const GoalOverview = React.memo(function GoalOverview(
         return { ...prevObj, [item.name]: item };
       });
     },
-    [setItemsToCraft]
+    [setItemsToCraft, items]
   );
 
   const handleReset = React.useCallback(
@@ -204,18 +207,21 @@ const GoalOverview = React.memo(function GoalOverview(
   ): React.ReactElement[] {
     return objectEntries
       .sort(
+        // FIXME doesn't sort by item category at the moment
         ([nameA, _], [nameB, __]) =>
           (isMaterialComplete(nameA) ? 1 : 0) -
             (isMaterialComplete(nameB) ? 1 : 0) ||
-          MATERIALS[nameA].category - MATERIALS[nameB].category ||
-          MATERIALS[nameB].tier - MATERIALS[nameA].tier ||
+          items[nameB].tier - items[nameA].tier ||
           nameA.localeCompare(nameB)
       )
       .map(([name, needed]) => {
+        const item = items[name];
         const inner = (
           <ItemNeeded
+            name={name}
+            tier={item.tier}
             size={isXSmallScreen ? 75 : undefined}
-            {...{ name, needed }}
+            needed={needed}
             owned={materialsOwned[name] || 0}
             complete={isMaterialComplete(name)}
             crafting={Object.prototype.hasOwnProperty.call(itemsToCraft, name)}
