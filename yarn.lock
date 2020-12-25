@@ -948,7 +948,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.1.5", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.5", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
   version "7.12.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
   integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
@@ -2997,6 +2997,11 @@ camel-case@4.1.1:
   dependencies:
     pascal-case "^3.1.1"
     tslib "^1.10.0"
+
+camelcase-css@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/camelcase-css/-/camelcase-css-2.0.1.tgz#ee978f6947914cc30c6b44741b6ed1df7f043fd5"
+  integrity sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==
 
 camelcase@^5.0.0, camelcase@^5.3.1:
   version "5.3.1"
@@ -5428,7 +5433,7 @@ fs-exists-cached@1.0.0, fs-exists-cached@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs-exists-cached/-/fs-exists-cached-1.0.0.tgz#cf25554ca050dc49ae6656b41de42258989dcbce"
   integrity sha1-zyVVTKBQ3EmuZla0HeQiWJidy84=
 
-fs-extra@^8.1.0:
+fs-extra@^8.0.1, fs-extra@^8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
   integrity sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
@@ -5575,6 +5580,11 @@ gatsby-link@^2.6.1:
     "@types/reach__router" "^1.3.6"
     prop-types "^15.7.2"
 
+gatsby-material-ui-components@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/gatsby-material-ui-components/-/gatsby-material-ui-components-1.0.3.tgz#9fa92a386e434f4b454e9cea47b6a1e124424449"
+  integrity sha512-5GcSIzo9lLaVLupq1H/hWLTrUqbvJsuSH7hutSkOZ4CJ088KfADBGwxU7ze7pqAI0jsQm/pFi0HWa4baVQwllQ==
+
 gatsby-page-utils@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-0.4.0.tgz#1a0364a8c26dc4585ac9999dab4e4458a4cf0466"
@@ -5589,7 +5599,15 @@ gatsby-page-utils@^0.4.0:
     lodash "^4.17.20"
     micromatch "^4.0.2"
 
-gatsby-plugin-material-ui@^2.1.10:
+gatsby-plugin-compile-es6-packages@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/gatsby-plugin-compile-es6-packages/-/gatsby-plugin-compile-es6-packages-2.1.0.tgz#eb6068d8936fd8b404716e47b821d09bf0656af7"
+  integrity sha512-yrYAAjabHWJr3ARi8xzDm01dbBfyOxEWTwGkL3BMdgL/opfLvTrwLmfium4kSelnLs70DYY3rYDwyHjqyFsnFQ==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    regex-escape "^3.4.8"
+
+gatsby-plugin-material-ui@^2.1.10, gatsby-plugin-material-ui@^2.1.9:
   version "2.1.10"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-material-ui/-/gatsby-plugin-material-ui-2.1.10.tgz#781ace481d2d8609ca15267deee9d5bdb4bc700b"
   integrity sha512-jyQvyTyy10LMHQU075azLj77u7AjCNLNmghMuza6aafmG4cZYGvzY6tJ+ebgg6l+WFDlR0JdOzf+gvBxIElD9w==
@@ -5612,6 +5630,13 @@ gatsby-plugin-page-creator@^2.5.0:
     graphql "^14.7.0"
     lodash "^4.17.20"
 
+gatsby-plugin-react-helmet@^3.1.2:
+  version "3.7.0"
+  resolved "https://registry.npmjs.org/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.7.0.tgz#1a3ca58b399e2a99ff5fec97421ff2156b3d64e0"
+  integrity sha512-vynqIMOUR/sOfM2eXpZiECuEZ6G/97ic+ulkyCVw7CjHNTQCW2evzJKNbHQrBYgmQCGXzQJuyGf1F5khLm8H7g==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+
 gatsby-plugin-typescript@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.7.0.tgz#a21820a6e115f919a04229c526cc76a622c86cf4"
@@ -5631,6 +5656,18 @@ gatsby-plugin-utils@^0.4.0:
   integrity sha512-yxDzKcEmZc0whi/d+2appWVhqhrpWfFAPRO0pjIszCEgaeqybUB2lSL6Hx5r36W4Ff1INQ0A/WfPOJETLY+O2A==
   dependencies:
     joi "^17.2.1"
+
+gatsby-plugin-webfonts@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.npmjs.org/gatsby-plugin-webfonts/-/gatsby-plugin-webfonts-1.1.3.tgz#429bed411e1be861920cb0963f2376fc75aa4b4f"
+  integrity sha512-L9BwptbT1i3bBv4ZAgDt10br/cpdosecRttm1TLzsQdiqt02uKjaP2tr4qLjUlEzu4YQQ8d8394Rm3ZCnvO8cA==
+  dependencies:
+    axios "^0.19.0"
+    cssnano "^4.1.10"
+    fs-extra "^8.0.1"
+    lodash.isempty "^4.4.0"
+    postcss "^7.0.17"
+    postcss-js "^2.0.1"
 
 gatsby-react-router-scroll@^3.2.0:
   version "3.2.0"
@@ -5742,6 +5779,25 @@ gatsby-telemetry@^1.5.1:
     lodash "^4.17.20"
     node-fetch "^2.6.1"
     uuid "3.4.0"
+
+gatsby-theme-material-ui-top-layout@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/gatsby-theme-material-ui-top-layout/-/gatsby-theme-material-ui-top-layout-1.0.3.tgz#b065959aecaf26ae1def90570cc580b384d2c018"
+  integrity sha512-mVnBDZTcQuy45EmM8cntP0CPAzhqH02HeYEhEBno+8dMnfsu6CX7tm1wlkBsWCLtD4ZZFH+SHm/xLEsyKPAH0w==
+  dependencies:
+    gatsby-plugin-react-helmet "^3.1.2"
+
+gatsby-theme-material-ui@^1.0.13:
+  version "1.0.13"
+  resolved "https://registry.npmjs.org/gatsby-theme-material-ui/-/gatsby-theme-material-ui-1.0.13.tgz#2c73aa9eede3021c0bf6133a388866c8c0747e74"
+  integrity sha512-8abDu/7BIjBkmVwNJu/qsLJIhIKxBX5ozIQJua/A20IEf94Jnh0berhPp3wnhuaasWi9WwJo48fuclVwJcLz3Q==
+  dependencies:
+    gatsby-material-ui-components "^1.0.3"
+    gatsby-plugin-compile-es6-packages "^2.1.0"
+    gatsby-plugin-material-ui "^2.1.9"
+    gatsby-plugin-webfonts "^1.1.3"
+    gatsby-theme-material-ui-top-layout "^1.0.3"
+    react-helmet "^6.1.0"
 
 gatsby-transformer-json@^2.8.0:
   version "2.8.0"
@@ -7661,6 +7717,11 @@ lodash.get@^4:
   resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
 
+lodash.isempty@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.npmjs.org/lodash.isempty/-/lodash.isempty-4.4.0.tgz#6f86cbedd8be4ec987be9aaf33c9684db1b31e7e"
+  integrity sha1-b4bL7di+TsmHvpqvM8loTbGzHn4=
+
 lodash.map@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
@@ -9127,6 +9188,14 @@ postcss-flexbugs-fixes@^4.2.1:
   dependencies:
     postcss "^7.0.26"
 
+postcss-js@^2.0.1:
+  version "2.0.3"
+  resolved "https://registry.npmjs.org/postcss-js/-/postcss-js-2.0.3.tgz#a96f0f23ff3d08cec7dc5b11bf11c5f8077cdab9"
+  integrity sha512-zS59pAk3deu6dVHyrGqmC3oDXBdNdajk4k1RyxeVXCrcEDBUBHoIhE4QTsmhxgzXxsaqFDAkUZfmMa5f/N/79w==
+  dependencies:
+    camelcase-css "^2.0.1"
+    postcss "^7.0.18"
+
 postcss-load-config@^2.0.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/postcss-load-config/-/postcss-load-config-2.1.2.tgz#c5ea504f2c4aef33c7359a34de3573772ad7502a"
@@ -9405,7 +9474,7 @@ postcss@^6.0.1, postcss@^6.0.23:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.17, postcss@^7.0.26, postcss@^7.0.27, postcss@^7.0.32:
+postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.17, postcss@^7.0.18, postcss@^7.0.26, postcss@^7.0.27, postcss@^7.0.32:
   version "7.0.35"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.35.tgz#d2be00b998f7f211d8a276974079f2e92b970e24"
   integrity sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg==
@@ -9752,6 +9821,21 @@ react-error-overlay@^3.0.0:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
   integrity sha512-XzgvowFrwDo6TWcpJ/WTiarb9UI6lhA4PMzS7n1joK3sHfBBBOQHUc0U4u57D6DWO9vHv6lVSWx2Q/Ymfyv4hw==
 
+react-fast-compare@^3.1.1:
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
+  integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
+
+react-helmet@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.npmjs.org/react-helmet/-/react-helmet-6.1.0.tgz#a750d5165cb13cf213e44747502652e794468726"
+  integrity sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==
+  dependencies:
+    object-assign "^4.1.1"
+    prop-types "^15.7.2"
+    react-fast-compare "^3.1.1"
+    react-side-effect "^2.1.0"
+
 react-hot-loader@^4.12.21:
   version "4.13.0"
   resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.13.0.tgz#c27e9408581c2a678f5316e69c061b226dc6a202"
@@ -9785,6 +9869,11 @@ react-refresh@^0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
+
+react-side-effect@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/react-side-effect/-/react-side-effect-2.1.1.tgz#66c5701c3e7560ab4822a4ee2742dee215d72eb3"
+  integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
 
 react-transition-group@^4.4.0:
   version "4.4.1"
@@ -9933,6 +10022,11 @@ regenerator-transform@^0.14.2:
   integrity sha512-eOf6vka5IO151Jfsw2NO9WpGX58W6wWmefK3I1zEGr0lOD0u8rwPaNqQL1aRxUaxLeKO3ArNh3VYg1KbaD+FFw==
   dependencies:
     "@babel/runtime" "^7.8.4"
+
+regex-escape@^3.4.8:
+  version "3.4.10"
+  resolved "https://registry.npmjs.org/regex-escape/-/regex-escape-3.4.10.tgz#b45afec7a6e793b786ad193dc3d18b46b5ae08e6"
+  integrity sha512-qEqf7uzW+iYcKNLMDFnMkghhQBnGdivT6KqVQyKsyjSWnoFyooXVnxrw9dtv3AFLnD6VBGXxtZGAQNFGFTnCqA==
 
 regex-not@^1.0.0, regex-not@^1.0.2:
   version "1.0.2"
