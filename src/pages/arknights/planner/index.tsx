@@ -104,6 +104,7 @@ function Planner(): React.ReactElement {
               goalName
               ingredients {
                 name
+                tier
                 quantity
               }
             }
@@ -114,6 +115,7 @@ function Planner(): React.ReactElement {
               skillLevel
               ingredients {
                 name
+                tier
                 quantity
               }
             }
@@ -125,6 +127,7 @@ function Planner(): React.ReactElement {
                 goalShortName
                 ingredients {
                   name
+                  tier
                   quantity
                 }
                 masteryLevel
