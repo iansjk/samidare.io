@@ -35,16 +35,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-interface GoalProps {
-  operatorName: string;
+interface OperatorGoalCardProps {
   goal: OperatorGoal;
   onDelete: (goal: OperatorGoal) => void;
 }
 
 const OperatorGoalCard = React.memo(function OperatorGoalCard(
-  props: GoalProps
+  props: OperatorGoalCardProps
 ): React.ReactElement {
-  const { operatorName, goal, onDelete } = props;
+  const { goal, onDelete } = props;
   const classes = useStyles();
   const theme = useTheme();
   const isXSmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
@@ -66,7 +65,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
     backgroundImage: `linear-gradient(to right, transparent, ${
       theme.palette.background.paper
     } ${gradientEnd}), url("${getOperatorImagePath(
-      operatorName,
+      goal.operatorName,
       eliteLevel
     )}")`,
     paddingLeft: shouldTextBeCollapsed ? "2rem" : "3rem",
@@ -85,7 +84,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
                 <Grid style={operatorNameStyle} item xs sm={12} md lg={12}>
                   <Box mr={2}>
                     <Typography component="h3" variant="h6">
-                      {operatorName}
+                      {goal.operatorName}
                     </Typography>
                   </Box>
                 </Grid>

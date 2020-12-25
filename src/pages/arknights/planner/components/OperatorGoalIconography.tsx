@@ -1,9 +1,9 @@
 import { makeStyles, Box } from "@material-ui/core";
 import React from "react";
 import {
-  OperatorGoal,
   isEliteGoal,
   isMasteryGoal,
+  OperatorGoal,
   OperatorSkill,
 } from "../types";
 

@@ -10,13 +10,13 @@ export interface Ingredient {
   quantity: number;
 }
 
-interface Operator {
+export interface Operator {
   name: string;
   rarity: number;
   isCnOnly: boolean;
-  elite: OperatorEliteGoal[];
-  skillLevels: OperatorSkillLevelGoal[];
-  skills: OperatorSkill;
+  elite: EliteGoal[];
+  skillLevels: SkillLevelGoal[];
+  skills: OperatorSkill[];
 }
 
 export interface OperatorSkill {
@@ -24,7 +24,7 @@ export interface OperatorSkill {
   skillId: string;
   iconId: string | null;
   skillName: string;
-  masteries: OperatorMasteryGoal[];
+  masteries: MasteryGoal[];
 }
 
 export enum OperatorGoalCategory {
@@ -33,42 +33,44 @@ export enum OperatorGoalCategory {
   "Skill Level",
 }
 
-export interface OperatorGoal {
+export interface Goal {
   goalName: string;
   goalShortName: string;
   goalCategory: OperatorGoalCategory;
   ingredients: Ingredient[];
 }
 
-export type OperatorEliteGoal = OperatorGoal & {
+export type OperatorGoal = Goal & {
+  operatorName: string;
+};
+
+export type EliteGoal = Goal & {
   eliteLevel: number;
 };
 
-export type OperatorSkillLevelGoal = OperatorGoal & {
+export type SkillLevelGoal = Goal & {
   skillLevel: number;
 };
 
-export type OperatorMasteryGoal = OperatorGoal & {
+export type MasteryGoal = Goal & {
   masteryLevel: number;
 };
 
-export function isEliteGoal(goal: OperatorGoal): goal is OperatorEliteGoal {
+export function isEliteGoal(goal: Goal): goal is EliteGoal {
   return (
     Object.prototype.hasOwnProperty.call(goal, "eliteLevel") &&
     goal.goalCategory === OperatorGoalCategory.Elite
   );
 }
 
-export function isMasteryGoal(goal: OperatorGoal): goal is OperatorMasteryGoal {
+export function isMasteryGoal(goal: Goal): goal is MasteryGoal {
   return (
     Object.prototype.hasOwnProperty.call(goal, "masteryLevel") &&
     goal.goalCategory === OperatorGoalCategory.Mastery
   );
 }
 
-export function isSkillLevelGoal(
-  goal: OperatorGoal
-): goal is OperatorSkillLevelGoal {
+export function isSkillLevelGoal(goal: Goal): goal is SkillLevelGoal {
   return (
     Object.prototype.hasOwnProperty.call(goal, "skillLevel") &&
     goal.goalCategory === OperatorGoalCategory["Skill Level"]
