@@ -1,17 +1,47 @@
 import { makeStyles, Box } from "@material-ui/core";
 import React from "react";
 import {
+  EliteGoal,
   isEliteGoal,
   isMasteryGoal,
+  MasteryGoal,
   OperatorGoal,
   OperatorSkill,
 } from "../types";
+import elite1 from "../../../../data/arknights/images/elite1.png";
+import elite2 from "../../../../data/arknights/images/elite2.png";
+import mastery1 from "../../../../data/arknights/images/mastery1.png";
+import mastery2 from "../../../../data/arknights/images/mastery2.png";
+import mastery3 from "../../../../data/arknights/images/mastery3.png";
 
 const useStyles = makeStyles({
   operatorIcon: {
     width: 30,
   },
 });
+
+function eliteImage(goal: EliteGoal) {
+  if (goal.eliteLevel === 1) {
+    return elite1;
+  }
+  if (goal.eliteLevel === 2) {
+    return elite2;
+  }
+  return "";
+}
+
+function masteryImage(goal: MasteryGoal) {
+  if (goal.masteryLevel === 1) {
+    return mastery1;
+  }
+  if (goal.masteryLevel === 2) {
+    return mastery2;
+  }
+  if (goal.masteryLevel === 3) {
+    return mastery3;
+  }
+  return "";
+}
 
 interface OperatorGoalIconographyProps {
   goal: OperatorGoal;
@@ -29,7 +59,7 @@ function OperatorGoalIconography(
       <Box clone mr={0.25}>
         <img
           className={classes.operatorIcon}
-          src={`${process.env.PUBLIC_URL}/images/icons/elite${goal.eliteLevel}.png`}
+          src={eliteImage(goal)}
           alt={goal.goalName}
         />
       </Box>
@@ -41,12 +71,12 @@ function OperatorGoalIconography(
       <Box mr={0.5}>
         <img
           className={classes.operatorIcon}
-          src={`${process.env.PUBLIC_URL}/images/skills/${iconFilename}.png`}
+          src={`/arknights/images/skills/${iconFilename}.png`}
           alt={skill?.skillName}
         />
         <img
           className={classes.operatorIcon}
-          src={`${process.env.PUBLIC_URL}/images/icons/mastery${goal.masteryLevel}.png`}
+          src={masteryImage(goal)}
           alt={`Mastery ${goal.masteryLevel}`}
         />
       </Box>
