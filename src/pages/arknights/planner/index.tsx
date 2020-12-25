@@ -23,10 +23,10 @@ import AddIcon from "@material-ui/icons/Add";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import React, { useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import useLocalStorage from "../hooks/useLocalStorage";
-import GoalOverview from "./GoalOverview";
-import AppFooter from "./AppFooter";
-import OperatorGoalIconography from "./OperatorGoalIconography";
+import useLocalStorage from "./hooks/useLocalStorage";
+import GoalOverview from "./components/GoalOverview";
+import AppFooter from "./components/AppFooter";
+import OperatorGoalIconography from "./components/OperatorGoalIconography";
 import {
   isEliteGoal,
   isMasteryGoal,
@@ -34,7 +34,7 @@ import {
   OperatorSkill,
   OperatorGoal,
   Goal,
-} from "../types";
+} from "./types";
 
 let appTheme = createMuiTheme({
   palette: {
@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function App(): React.ReactElement {
+function Planner(): React.ReactElement {
   const data = useStaticQuery(
     graphql`
       query {
@@ -301,4 +301,4 @@ function App(): React.ReactElement {
   );
 }
 
-export default App;
+export default Planner;
