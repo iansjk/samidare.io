@@ -101,7 +101,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
                       component="h4"
                       variant="subtitle1"
                     >
-                      {goal.goalShortName}
+                      {goal.goalShortName ?? goal.goalName}
                     </Typography>
                   </Grid>
                 </Box>
