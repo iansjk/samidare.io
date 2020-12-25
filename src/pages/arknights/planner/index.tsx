@@ -205,17 +205,20 @@ function Planner(): React.ReactElement {
     const operator = operators.find((op) => op.name === operatorName)!;
 
     const elite = [
-      <ListSubheader>Elite Levels</ListSubheader>,
+      <ListSubheader key="elite">Elite Levels</ListSubheader>,
       ...operator.elite.map((goal) => renderGoalMenuItem(goal)),
     ];
-    const masteries = [
-      <ListSubheader>Masteries</ListSubheader>,
-      ...operator.skills.map((skill) =>
-        skill.masteries.map((goal) => renderGoalMenuItem(goal, skill))
-      ),
-    ];
+    const masteries =
+      operator.rarity <= 3
+        ? []
+        : [
+            <ListSubheader key="masteries">Masteries</ListSubheader>,
+            ...operator.skills.map((skill) =>
+              skill.masteries.map((goal) => renderGoalMenuItem(goal, skill))
+            ),
+          ];
     const skillLevels = [
-      <ListSubheader>Skill Levels</ListSubheader>,
+      <ListSubheader key="skillLevels">Skill Levels</ListSubheader>,
       ...operator.skillLevels.map((goal) => renderGoalMenuItem(goal)),
     ];
     return [...elite, ...masteries, ...skillLevels];
