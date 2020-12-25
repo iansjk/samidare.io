@@ -14,7 +14,12 @@ import CancelIcon from "@material-ui/icons/Cancel";
 import ItemStack from "./ItemStack";
 import { getOperatorImagePath } from "../utils";
 import OperatorGoalIconography from "./OperatorGoalIconography";
-import { isEliteGoal, isMasteryGoal, OperatorGoal } from "../types";
+import {
+  isEliteGoal,
+  isMasteryGoal,
+  OperatorGoal,
+  OperatorSkill,
+} from "../types";
 
 const useStyles = makeStyles((theme) => ({
   deleteIconButton: {
@@ -37,13 +42,14 @@ const useStyles = makeStyles((theme) => ({
 
 interface OperatorGoalCardProps {
   goal: OperatorGoal;
+  skill?: OperatorSkill;
   onDelete: (goal: OperatorGoal) => void;
 }
 
 const OperatorGoalCard = React.memo(function OperatorGoalCard(
   props: OperatorGoalCardProps
 ): React.ReactElement {
-  const { goal, onDelete } = props;
+  const { goal, skill, onDelete } = props;
   const classes = useStyles();
   const theme = useTheme();
   const isXSmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
@@ -95,7 +101,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
                   alignItems="center"
                 >
                   <Grid item xs sm={12} md lg={12}>
-                    <OperatorGoalIconography goal={goal} />
+                    <OperatorGoalIconography goal={goal} skill={skill} />
                     <Typography
                       className={classes.goalShortName}
                       component="h4"

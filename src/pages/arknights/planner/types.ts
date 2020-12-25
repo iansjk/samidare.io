@@ -38,6 +38,7 @@ export interface Goal {
   goalShortName: string;
   goalCategory: OperatorGoalCategory;
   ingredients: Ingredient[];
+  skill?: OperatorSkill; // transient property, set by Planner
 }
 
 export type OperatorGoal = Goal & {

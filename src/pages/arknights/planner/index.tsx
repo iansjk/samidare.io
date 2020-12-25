@@ -184,13 +184,20 @@ function Planner(): React.ReactElement {
           `${opGoal.operatorName}${opGoal.goalName}`,
           opGoal,
         ]),
-        ...goalsToAdd.map((goal) => [
-          `${operatorName}${goal.goalName}`,
-          {
-            operatorName,
-            ...goal,
-          },
-        ]),
+        ...goalsToAdd.map((goal) => {
+          const key = `${operatorName}${goal.goalName}`;
+          const goalObject = { operatorName, ...goal };
+          if (isMasteryGoal(goal)) {
+            const slot = parseInt(goal.goalShortName.charAt(1), 10); // FIXME hacky
+            return [
+              key,
+              Object.assign(goalObject, {
+                skill: operator?.skills.find((skill) => skill.slot === slot),
+              }),
+            ];
+          }
+          return [key, goalObject];
+        }),
       ]);
       return Object.values(deduplicated);
     });

@@ -330,6 +330,7 @@ const GoalOverview = React.memo(function GoalOverview(
               <OperatorGoalCard
                 key={`${goal.operatorName}${goal.goalName}`}
                 goal={goal}
+                skill={goal.skill}
                 onDelete={onGoalDeleted}
               />
             ))}
