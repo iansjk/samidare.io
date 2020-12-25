@@ -18,6 +18,7 @@ import useLocalStorage from "../hooks/useLocalStorage";
 import { Ingredient, Item, OperatorGoal } from "../types";
 import ItemNeeded from "./ItemNeeded";
 import OperatorGoalCard from "./OperatorGoalCard";
+import lmdIcon from "../../../../data/arknights/images/lmd.png";
 
 const useStyles = makeStyles((theme) => ({
   lmdIcon: {
@@ -273,7 +274,7 @@ const GoalOverview = React.memo(function GoalOverview(
                       <b>{(materialsNeeded.LMD ?? 0).toLocaleString()}</b>
                       <img
                         className={classes.lmdIcon}
-                        src={`${process.env.PUBLIC_URL}/images/icons/lmd.png`}
+                        src={lmdIcon}
                         alt="LMD"
                       />
                     </Typography>
