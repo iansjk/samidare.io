@@ -94,7 +94,7 @@ function Planner(): React.ReactElement {
   const data = useStaticQuery(
     graphql`
       query {
-        allOperatorsJson {
+        allOperatorsJson(sort: { fields: name, order: ASC }) {
           nodes {
             name
             rarity
@@ -146,6 +146,7 @@ function Planner(): React.ReactElement {
     []
   );
   const classes = useStyles();
+  const operator = operators.find((op) => op.name === operatorName);
 
   const goalSelectMenuProps = {
     getContentAnchorEl: null,
@@ -159,16 +160,64 @@ function Planner(): React.ReactElement {
     },
   };
 
-  // FIXME
-  const handleAddGoals = () => {};
+  const handleAddGoals = () => {
+    setOperatorGoals((prevOperatorGoals) => {
+      const goalNamesSet = new Set(goalNames);
+      const masteries =
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        operator!.rarity <= 3
+          ? []
+          : // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+            operator!.skills.flatMap((skill) => skill.masteries);
+      const goalsToAdd = [
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        ...operator!.elite,
+        ...masteries,
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        ...operator!.skillLevels,
+      ].filter((goal) => goalNamesSet.has(goal.goalName));
+      const deduplicated = Object.fromEntries([
+        ...prevOperatorGoals.map((opGoal) => [
+          `${opGoal.operatorName}${opGoal.goalName}`,
+          opGoal,
+        ]),
+        ...goalsToAdd.map((goal) => [
+          `${operatorName}${goal.goalName}`,
+          {
+            operatorName,
+            ...goal,
+          },
+        ]),
+      ]);
+      return Object.values(deduplicated);
+    });
+    setGoalNames([]);
+  };
 
-  const handleGoalDeleted = () => {};
+  const handleGoalDeleted = (toDelete: OperatorGoal) => {
+    setOperatorGoals((prevOperatorGoals) =>
+      prevOperatorGoals.filter(
+        (opGoal) =>
+          !(
+            opGoal.goalName === toDelete.goalName &&
+            opGoal.operatorName === toDelete.operatorName
+          )
+      )
+    );
+  };
 
-  const handleClearAllGoals = () => {};
+  const handleClearAllGoals = () => {
+    setOperatorGoals([]);
+  };
 
-  const handleGoalsChanged = () => {};
+  const handleGoalsChanged = (e) => {
+    setGoalNames((e.target.value as string[]).filter((name) => !!name));
+  };
 
-  const handleOperatorNameChanged = () => {};
+  const handleOperatorNameChanged = (_: unknown, value: string | null) => {
+    setOperatorName(value);
+    setGoalNames([]);
+  };
 
   const renderGoalMenuItem = (goal: Goal, skill?: OperatorSkill) => {
     let child: React.ReactElement | null = null;
@@ -201,25 +250,26 @@ function Planner(): React.ReactElement {
       return <MenuItem>Please select an operator first.</MenuItem>;
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    const operator = operators.find((op) => op.name === operatorName)!;
-
     const elite = [
       <ListSubheader key="elite">Elite Levels</ListSubheader>,
-      ...operator.elite.map((goal) => renderGoalMenuItem(goal)),
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      ...operator!.elite.map((goal) => renderGoalMenuItem(goal)),
     ];
     const masteries =
-      operator.rarity <= 3
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      operator!.rarity <= 3
         ? []
         : [
             <ListSubheader key="masteries">Masteries</ListSubheader>,
-            ...operator.skills.map((skill) =>
+            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+            ...operator!.skills.map((skill) =>
               skill.masteries.map((goal) => renderGoalMenuItem(goal, skill))
             ),
           ];
     const skillLevels = [
       <ListSubheader key="skillLevels">Skill Levels</ListSubheader>,
-      ...operator.skillLevels.map((goal) => renderGoalMenuItem(goal)),
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      ...operator!.skillLevels.map((goal) => renderGoalMenuItem(goal)),
     ];
     return [...elite, ...masteries, ...skillLevels];
   };
@@ -240,7 +290,7 @@ function Planner(): React.ReactElement {
           <Grid component="main" className={classes.main} container spacing={2}>
             <Grid item xs={12} lg={3}>
               <Autocomplete
-                options={operators.map((operator) => operator.name).sort()}
+                options={operators.map((op) => op.name)}
                 autoComplete
                 autoHighlight
                 value={operatorName}
