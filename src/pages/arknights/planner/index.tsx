@@ -3,12 +3,8 @@ import {
   Box,
   Button,
   Container,
-  createMuiTheme,
-  CssBaseline,
   Grid,
-  responsiveFontSizes,
   TextField,
-  ThemeProvider,
   Toolbar,
   Typography,
   makeStyles,
@@ -18,7 +14,7 @@ import {
   FormControl,
   ListSubheader,
 } from "@material-ui/core";
-import { pink, blue } from "@material-ui/core/colors";
+
 import AddIcon from "@material-ui/icons/Add";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import React, { useState } from "react";
@@ -35,49 +31,6 @@ import {
   OperatorGoal,
   Goal,
 } from "../../../types";
-
-let appTheme = createMuiTheme({
-  palette: {
-    type: "dark",
-    primary: {
-      main: blue[700],
-      light: "rgb(104, 179, 255)",
-    },
-    secondary: {
-      main: pink[100],
-    },
-  },
-  overrides: {
-    MuiMenuItem: {
-      root: {
-        "&$selected": {
-          "&, &:hover": {
-            backgroundColor: blue[700],
-          },
-        },
-      },
-    },
-    MuiFormLabel: {
-      root: {
-        "&$focused": {
-          color: "white",
-        },
-      },
-    },
-    MuiMenu: {
-      paper: {
-        maxHeight: "65%",
-      },
-    },
-    MuiListSubheader: {
-      sticky: {
-        position: "static",
-      },
-    },
-  },
-});
-appTheme = responsiveFontSizes(appTheme);
-appTheme.typography.h4.fontSize = "1.55rem";
 
 const useStyles = makeStyles((theme) => ({
   appContainer: {
@@ -285,82 +238,79 @@ function Planner(): React.ReactElement {
   };
 
   return (
-    <ThemeProvider theme={appTheme}>
-      <CssBaseline />
-      <div className={classes.appContainer}>
-        <Container maxWidth="lg">
-          <AppBar>
-            <Toolbar>
-              <Typography component="h1" variant="h4">
-                Arknights Materials Checklist
-              </Typography>
-            </Toolbar>
-          </AppBar>
-          <Toolbar />
-          <Grid component="main" className={classes.main} container spacing={2}>
-            <Grid item xs={12} lg={3}>
-              <Autocomplete
-                options={operators.map((op) => op.name)}
-                autoComplete
-                autoHighlight
-                value={operatorName}
-                onChange={handleOperatorNameChanged}
-                renderInput={(params) => (
-                  <TextField
-                    // eslint-disable-next-line react/jsx-props-no-spreading
-                    {...params}
-                    label="Operator name"
-                    variant="outlined"
-                  />
-                )}
-              />
-            </Grid>
-            <Grid item xs={12} lg={9}>
-              <Box display="flex">
-                <Box mr={2} flexGrow={1} minWidth={0} width="100%">
-                  <FormControl variant="outlined" fullWidth>
-                    <InputLabel id="goal-select">Goals</InputLabel>
-                    <Select
-                      id="goal-select"
-                      autoWidth
-                      multiple
-                      displayEmpty
-                      value={goalNames}
-                      MenuProps={goalSelectMenuProps}
-                      renderValue={(selected: unknown) =>
-                        (selected as string[])
-                          .sort((a, b) => a.localeCompare(b))
-                          .join(", ")
-                      }
-                      onChange={handleGoalsChanged}
-                    >
-                      {renderGoalSelectOptions()}
-                    </Select>
-                  </FormControl>
-                </Box>
-                <Button
-                  color="primary"
-                  variant="contained"
-                  startIcon={<AddIcon />}
-                  onClick={handleAddGoals}
-                >
-                  Add
-                </Button>
-              </Box>
-            </Grid>
-            <Grid item xs={12}>
-              <GoalOverview
-                goals={operatorGoals}
-                onGoalDeleted={handleGoalDeleted}
-                onClearAllGoals={handleClearAllGoals}
-              />
-            </Grid>
+    <div className={classes.appContainer}>
+      <Container maxWidth="lg">
+        <AppBar>
+          <Toolbar>
+            <Typography component="h1" variant="h4">
+              Arknights Materials Checklist
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        <Toolbar />
+        <Grid component="main" className={classes.main} container spacing={2}>
+          <Grid item xs={12} lg={3}>
+            <Autocomplete
+              options={operators.map((op) => op.name)}
+              autoComplete
+              autoHighlight
+              value={operatorName}
+              onChange={handleOperatorNameChanged}
+              renderInput={(params) => (
+                <TextField
+                  // eslint-disable-next-line react/jsx-props-no-spreading
+                  {...params}
+                  label="Operator name"
+                  variant="outlined"
+                />
+              )}
+            />
           </Grid>
-        </Container>
-        <Box flexGrow={1} />
-        <AppFooter />
-      </div>
-    </ThemeProvider>
+          <Grid item xs={12} lg={9}>
+            <Box display="flex">
+              <Box mr={2} flexGrow={1} minWidth={0} width="100%">
+                <FormControl variant="outlined" fullWidth>
+                  <InputLabel id="goal-select">Goals</InputLabel>
+                  <Select
+                    id="goal-select"
+                    autoWidth
+                    multiple
+                    displayEmpty
+                    value={goalNames}
+                    MenuProps={goalSelectMenuProps}
+                    renderValue={(selected: unknown) =>
+                      (selected as string[])
+                        .sort((a, b) => a.localeCompare(b))
+                        .join(", ")
+                    }
+                    onChange={handleGoalsChanged}
+                  >
+                    {renderGoalSelectOptions()}
+                  </Select>
+                </FormControl>
+              </Box>
+              <Button
+                color="primary"
+                variant="contained"
+                startIcon={<AddIcon />}
+                onClick={handleAddGoals}
+              >
+                Add
+              </Button>
+            </Box>
+          </Grid>
+          <Grid item xs={12}>
+            <GoalOverview
+              goals={operatorGoals}
+              onGoalDeleted={handleGoalDeleted}
+              onClearAllGoals={handleClearAllGoals}
+            />
+          </Grid>
+        </Grid>
+      </Container>
+      <Box flexGrow={1} />
+      <AppFooter />
+    </div>
   );
 }
 
