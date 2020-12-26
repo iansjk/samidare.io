@@ -221,6 +221,7 @@ const GoalOverview = React.memo(function GoalOverview(
           <ItemNeeded
             name={name}
             tier={item.tier}
+            ingredients={item.ingredients}
             size={isXSmallScreen ? 75 : undefined}
             needed={needed}
             owned={materialsOwned[name] || 0}
