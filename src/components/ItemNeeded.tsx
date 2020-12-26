@@ -12,8 +12,8 @@ import AddCircleIcon from "@material-ui/icons/AddCircle";
 import RemoveCircleIcon from "@material-ui/icons/RemoveCircle";
 import GavelIcon from "@material-ui/icons/Gavel";
 import React from "react";
-import slugify from "slugify";
 import { bindTrigger, usePopupState } from "material-ui-popup-state/hooks";
+import slugify from "../utils";
 import ItemStack, { defaultSize } from "./ItemStack";
 import { Ingredient, Item } from "../types";
 
@@ -103,7 +103,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
   const classes = useStyles();
   const popoverState = usePopupState({
     variant: "popover",
-    popupId: `${slugify(name, { lower: true })}-popover`,
+    popupId: `${slugify(name)}-popover`,
   });
 
   return (
