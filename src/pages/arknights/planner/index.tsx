@@ -9,6 +9,7 @@ import {
   InputLabel,
   FormControl,
   ListSubheader,
+  NoSsr,
 } from "@material-ui/core";
 
 import AddIcon from "@material-ui/icons/Add";
@@ -272,11 +273,13 @@ function Planner(): React.ReactElement {
         </Box>
       </Grid>
       <Grid item xs={12}>
-        <GoalOverview
-          goals={operatorGoals}
-          onGoalDeleted={handleGoalDeleted}
-          onClearAllGoals={handleClearAllGoals}
-        />
+        <NoSsr>
+          <GoalOverview
+            goals={operatorGoals}
+            onGoalDeleted={handleGoalDeleted}
+            onClearAllGoals={handleClearAllGoals}
+          />
+        </NoSsr>
       </Grid>
     </Grid>
   );
