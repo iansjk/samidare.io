@@ -3,7 +3,6 @@ import {
   Button,
   Grid,
   TextField,
-  makeStyles,
   Select,
   MenuItem,
   InputLabel,
@@ -11,7 +10,7 @@ import {
   ListSubheader,
   NoSsr,
 } from "@material-ui/core";
-
+import Helmet from "react-helmet";
 import AddIcon from "@material-ui/icons/Add";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import React, { useState } from "react";
@@ -32,6 +31,11 @@ function Planner(): React.ReactElement {
   const data = useStaticQuery(
     graphql`
       query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
         allOperatorsJson(sort: { fields: name, order: ASC }) {
           nodes {
             name
@@ -79,6 +83,7 @@ function Planner(): React.ReactElement {
       }
     `
   );
+  const { title } = data.site.siteMetadata;
   const operators: Operator[] = data.allOperatorsJson.nodes;
   const [operatorName, setOperatorName] = useState<string | null>(null);
   const [goalNames, setGoalNames] = useState<string[]>([] as string[]);
@@ -221,68 +226,72 @@ function Planner(): React.ReactElement {
   };
 
   return (
-    <Grid component="main" container spacing={2}>
-      <Grid item xs={12} lg={3}>
-        <Autocomplete
-          options={operators.map((op) => op.name)}
-          autoComplete
-          autoHighlight
-          value={operatorName}
-          onChange={handleOperatorNameChanged}
-          renderInput={(params) => (
-            <TextField
-              // eslint-disable-next-line react/jsx-props-no-spreading
-              {...params}
-              label="Operator name"
-              variant="outlined"
-            />
-          )}
-        />
-      </Grid>
-      <Grid item xs={12} lg={9}>
-        <Box display="flex">
-          <Box mr={2} flexGrow={1} minWidth={0} width="100%">
-            <FormControl variant="outlined" fullWidth>
-              <InputLabel id="goal-select">Goals</InputLabel>
-              <Select
-                id="goal-select"
-                autoWidth
-                multiple
-                displayEmpty
-                value={goalNames}
-                MenuProps={goalSelectMenuProps}
-                renderValue={(selected: unknown) =>
-                  (selected as string[])
-                    .sort((a, b) => a.localeCompare(b))
-                    .join(", ")
-                }
-                onChange={handleGoalsChanged}
-              >
-                {renderGoalSelectOptions()}
-              </Select>
-            </FormControl>
-          </Box>
-          <Button
-            color="primary"
-            variant="contained"
-            startIcon={<AddIcon />}
-            onClick={handleAddGoals}
-          >
-            Add
-          </Button>
-        </Box>
-      </Grid>
-      <Grid item xs={12}>
-        <NoSsr>
-          <GoalOverview
-            goals={operatorGoals}
-            onGoalDeleted={handleGoalDeleted}
-            onClearAllGoals={handleClearAllGoals}
+    <>
+      <Helmet>
+        <title>{title} | Planner</title>
+      </Helmet>
+      <Grid component="main" container spacing={2}>
+        <Grid item xs={12} lg={3}>
+          <Autocomplete
+            options={operators.map((op) => op.name)}
+            autoComplete
+            autoHighlight
+            value={operatorName}
+            onChange={handleOperatorNameChanged}
+            renderInput={(params) => (
+              <TextField
+                // eslint-disable-next-line react/jsx-props-no-spreading
+                {...params}
+                label="Operator name"
+                variant="outlined"
+              />
+            )}
           />
-        </NoSsr>
+        </Grid>
+        <Grid item xs={12} lg={9}>
+          <Box display="flex">
+            <Box mr={2} flexGrow={1} minWidth={0} width="100%">
+              <FormControl variant="outlined" fullWidth>
+                <InputLabel id="goal-select">Goals</InputLabel>
+                <Select
+                  id="goal-select"
+                  autoWidth
+                  multiple
+                  displayEmpty
+                  value={goalNames}
+                  MenuProps={goalSelectMenuProps}
+                  renderValue={(selected: unknown) =>
+                    (selected as string[])
+                      .sort((a, b) => a.localeCompare(b))
+                      .join(", ")
+                  }
+                  onChange={handleGoalsChanged}
+                >
+                  {renderGoalSelectOptions()}
+                </Select>
+              </FormControl>
+            </Box>
+            <Button
+              color="primary"
+              variant="contained"
+              startIcon={<AddIcon />}
+              onClick={handleAddGoals}
+            >
+              Add
+            </Button>
+          </Box>
+        </Grid>
+        <Grid item xs={12}>
+          <NoSsr>
+            <GoalOverview
+              goals={operatorGoals}
+              onGoalDeleted={handleGoalDeleted}
+              onClearAllGoals={handleClearAllGoals}
+            />
+          </NoSsr>
+        </Grid>
       </Grid>
-    </Grid>
+    </>
   );
 }
-
 export default Planner;
