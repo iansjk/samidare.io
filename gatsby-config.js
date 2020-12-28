@@ -5,6 +5,13 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "Arknights Tools",
+    siteUrl: "https://samidare.io/arknights",
+    description:
+      "A collection of tools for Arknights, a tower defense mobile game by Hypergryph/Yostar",
+  },
+  pathPrefix: "/arknights",
   plugins: [
     "gatsby-theme-material-ui",
     "gatsby-plugin-layout",

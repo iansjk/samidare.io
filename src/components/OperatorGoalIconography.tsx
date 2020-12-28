@@ -8,11 +8,11 @@ import {
   OperatorGoal,
   OperatorSkill,
 } from "../types";
-import elite1 from "../data/arknights/images/elite1.png";
-import elite2 from "../data/arknights/images/elite2.png";
-import mastery1 from "../data/arknights/images/mastery1.png";
-import mastery2 from "../data/arknights/images/mastery2.png";
-import mastery3 from "../data/arknights/images/mastery3.png";
+import elite1 from "../data/images/elite1.png";
+import elite2 from "../data/images/elite2.png";
+import mastery1 from "../data/images/mastery1.png";
+import mastery2 from "../data/images/mastery2.png";
+import mastery3 from "../data/images/mastery3.png";
 
 const useStyles = makeStyles({
   operatorIcon: {

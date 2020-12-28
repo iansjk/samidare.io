@@ -18,7 +18,7 @@ import useLocalStorage from "../hooks/useLocalStorage";
 import { Ingredient, Item, OperatorGoal } from "../types";
 import ItemNeeded from "./ItemNeeded";
 import OperatorGoalCard from "./OperatorGoalCard";
-import lmdIcon from "../data/arknights/images/lmd.png";
+import lmdIcon from "../data/images/lmd.png";
 
 const useStyles = makeStyles((theme) => ({
   lmdIcon: {

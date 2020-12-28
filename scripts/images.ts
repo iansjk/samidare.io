@@ -1,11 +1,11 @@
 /* eslint-disable import/prefer-default-export */
 import path from "path";
 import { promises as fs } from "fs";
-import slugify from "../../src/utils";
+import slugify from "../src/utils";
 import { getOperatorName } from "./globals";
 
 const ACESHIP_BASEDIR = path.join(__dirname, "aceship");
-const OUTDIR = path.join(__dirname, "../../static/arknights/images");
+const OUTDIR = path.join(__dirname, "../static/images");
 
 const skillIconFilenameRegex = /skill_icon_(?<skillId>[^.]+)\.png/;
 function newSkillIconFilename(oldFilename: string): string | null {

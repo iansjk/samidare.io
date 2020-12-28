@@ -128,6 +128,7 @@ const operatorEntries = operatorIds.map((id: string) => {
   return Object.assign(baseObj, { skills });
 });
 
+fs.mkdirSync(ARKNIGHTS_DATA_DIR, { recursive: true });
 fs.writeFileSync(
   path.join(ARKNIGHTS_DATA_DIR, "operators.json"),
   JSON.stringify(operatorEntries, null, 2)

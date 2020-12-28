@@ -1,7 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "name": "arknights-tools",
+  "description": "A collection of tools for Arknights, a tower defense mobile game by Hypergryph/Yostar",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -13,9 +12,9 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "ak:update": "yarn ak:update:img && yarn ak:update:ops && yarn ak:update:items",
-    "ak:update:ops": "git submodule update --remote && ts-node-script scripts/arknights/operators.ts",
-    "ak:update:img": "git submodule update --remote && ts-node-script scripts/arknights/images.ts",
-    "ak:update:items": "git submodule update --remote && ts-node-script scripts/arknights/items.ts"
+    "ak:update:ops": "git submodule update --remote && ts-node-script scripts/operators.ts",
+    "ak:update:img": "git submodule update --remote && ts-node-script scripts/images.ts",
+    "ak:update:items": "git submodule update --remote && ts-node-script scripts/items.ts"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.2",
