@@ -68,11 +68,6 @@ const useStyles = makeStyles({
   itemInfoPopover: {
     opacity: 0.9,
   },
-  backdrop: {
-    zIndex: 2,
-    backdropFilter: "blur(2px)",
-    backgroundColor: "unset",
-  },
 });
 
 interface ItemNeededProps {
@@ -125,9 +120,13 @@ const ItemNeeded = React.memo(function ItemNeeded({
             <ItemStack {...{ name, tier, size, complete }} quantity={needed} />
           </ButtonBase>
         </Box>
-        <Backdrop className={classes.backdrop} open={popoverState.isOpen} />
         <Popover
+          BackdropProps={{
+            invisible: false,
+            transitionDuration: 250,
+          }}
           className={classes.itemInfoPopover}
+          hideBackdrop={false}
           anchorOrigin={{
             vertical: "center",
             horizontal: "right",
@@ -135,6 +134,11 @@ const ItemNeeded = React.memo(function ItemNeeded({
           transformOrigin={{
             vertical: "center",
             horizontal: "left",
+          }}
+          transitionDuration={{
+            appear: 0,
+            enter: 250,
+            exit: 0,
           }}
           // eslint-disable-next-line react/jsx-props-no-spreading
           {...bindPopover(popoverState)}
