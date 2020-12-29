@@ -7,15 +7,21 @@ import {
   TextField,
   ButtonBase,
   Backdrop,
+  Popover,
 } from "@material-ui/core";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
 import RemoveCircleIcon from "@material-ui/icons/RemoveCircle";
 import GavelIcon from "@material-ui/icons/Gavel";
 import React from "react";
-import { bindTrigger, usePopupState } from "material-ui-popup-state/hooks";
+import {
+  bindPopover,
+  bindTrigger,
+  usePopupState,
+} from "material-ui-popup-state/hooks";
 import slugify from "../utils";
 import ItemStack, { defaultSize } from "./ItemStack";
 import { Ingredient, Item } from "../types";
+import ItemInfoPopoverContent from "./ItemInfoPopoverContent";
 
 const useOutlinedInputStyles = makeStyles((theme) => ({
   input: {
@@ -92,7 +98,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
   size = defaultSize,
   complete = false,
   crafting = false,
-  // ingredientFor,
+  ingredientFor,
   onIncrement,
   onDecrement,
   onChange,
@@ -120,7 +126,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
           </ButtonBase>
         </Box>
         <Backdrop className={classes.backdrop} open={popoverState.isOpen} />
-        {/* <Popover
+        <Popover
           className={classes.itemInfoPopover}
           anchorOrigin={{
             vertical: "center",
@@ -133,8 +139,13 @@ const ItemNeeded = React.memo(function ItemNeeded({
           // eslint-disable-next-line react/jsx-props-no-spreading
           {...bindPopover(popoverState)}
         >
-          <ItemInfoPopoverContent name={name} ingredientFor={ingredientFor} />
-        </Popover> */}
+          <ItemInfoPopoverContent
+            name={name}
+            tier={tier}
+            ingredients={ingredients}
+            ingredientFor={ingredientFor}
+          />
+        </Popover>
         <TextField
           size="small"
           fullWidth
