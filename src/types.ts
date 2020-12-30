@@ -16,7 +16,7 @@ export interface Operator {
   isCnOnly: boolean;
   elite: EliteGoal[];
   skillLevels: SkillLevelGoal[];
-  skills: OperatorSkill[];
+  skills?: OperatorSkill[];
 }
 
 export interface OperatorSkill {
@@ -35,7 +35,7 @@ export enum OperatorGoalCategory {
 
 export interface Goal {
   goalName: string;
-  goalShortName: string;
+  goalShortName?: string;
   goalCategory: OperatorGoalCategory;
   ingredients: Ingredient[];
   skill?: OperatorSkill; // transient property, set by Planner
