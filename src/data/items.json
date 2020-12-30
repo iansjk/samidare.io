@@ -286,7 +286,11 @@
   {
     "id": "30011",
     "name": "Orirock",
-    "tier": 1
+    "tier": 1,
+    "efficientStage": {
+      "sanityCost": 50.134295437358205,
+      "stageId": "main_01-07"
+    }
   },
   {
     "id": "30012",
@@ -305,7 +309,11 @@
         "tier": 1,
         "quantity": 3
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 4.82350480209546,
+      "stageId": "main_01-07"
+    }
   },
   {
     "id": "30013",
@@ -324,7 +332,11 @@
         "tier": 2,
         "quantity": 5
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 884.3103448275862,
+      "stageId": "main_04-07"
+    }
   },
   {
     "id": "30014",
@@ -348,7 +360,11 @@
   {
     "id": "30021",
     "name": "Sugar Substitute",
-    "tier": 1
+    "tier": 1,
+    "efficientStage": {
+      "sanityCost": 105.90135782747605,
+      "stageId": "main_01-07"
+    }
   },
   {
     "id": "30022",
@@ -367,7 +383,11 @@
         "tier": 1,
         "quantity": 3
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 91.79445015416239,
+      "stageId": "main_07-13"
+    }
   },
   {
     "id": "30023",
@@ -386,7 +406,11 @@
         "tier": 2,
         "quantity": 4
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 45.83571428571429,
+      "stageId": "main_05-02"
+    }
   },
   {
     "id": "30024",
@@ -417,12 +441,20 @@
         "tier": 3,
         "quantity": 1
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 388.90909090909093,
+      "stageId": "main_05-02"
+    }
   },
   {
     "id": "30031",
     "name": "Ester",
-    "tier": 1
+    "tier": 1,
+    "efficientStage": {
+      "sanityCost": 43.908913467794406,
+      "stageId": "main_04-05"
+    }
   },
   {
     "id": "30032",
@@ -441,7 +473,11 @@
         "tier": 1,
         "quantity": 3
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 105.60913705583756,
+      "stageId": "sub_03-3-1"
+    }
   },
   {
     "id": "30033",
@@ -460,7 +496,11 @@
         "tier": 2,
         "quantity": 4
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 32.31839499739448,
+      "stageId": "main_07-03"
+    }
   },
   {
     "id": "30034",
@@ -496,7 +536,11 @@
   {
     "id": "30041",
     "name": "Oriron Shard",
-    "tier": 1
+    "tier": 1,
+    "efficientStage": {
+      "sanityCost": 128.85179786200194,
+      "stageId": "main_01-07"
+    }
   },
   {
     "id": "30042",
@@ -515,7 +559,11 @@
         "tier": 1,
         "quantity": 3
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 112.99465842001686,
+      "stageId": "main_07-13"
+    }
   },
   {
     "id": "30043",
@@ -534,7 +582,11 @@
         "tier": 2,
         "quantity": 4
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 61.98628795298726,
+      "stageId": "main_05-05"
+    }
   },
   {
     "id": "30044",
@@ -565,12 +617,20 @@
         "tier": 3,
         "quantity": 1
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 468.79999999999995,
+      "stageId": "main_05-05"
+    }
   },
   {
     "id": "30051",
     "name": "Diketon",
-    "tier": 1
+    "tier": 1,
+    "efficientStage": {
+      "sanityCost": 54.4258064516129,
+      "stageId": "main_04-05"
+    }
   },
   {
     "id": "30052",
@@ -589,7 +649,11 @@
         "tier": 1,
         "quantity": 3
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 187.46666666666667,
+      "stageId": "main_04-05"
+    }
   },
   {
     "id": "30053",
@@ -608,7 +672,11 @@
         "tier": 2,
         "quantity": 4
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 57.61092668121029,
+      "stageId": "main_04-05"
+    }
   },
   {
     "id": "30054",
@@ -639,12 +707,20 @@
         "tier": 3,
         "quantity": 1
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 501.5623451692816,
+      "stageId": "main_04-05"
+    }
   },
   {
     "id": "30061",
     "name": "Damaged Device",
-    "tier": 1
+    "tier": 1,
+    "efficientStage": {
+      "sanityCost": 159.06616126809098,
+      "stageId": "main_04-07"
+    }
   },
   {
     "id": "30062",
@@ -663,7 +739,11 @@
         "tier": 1,
         "quantity": 3
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 141.26567164179104,
+      "stageId": "main_04-04"
+    }
   },
   {
     "id": "30063",
@@ -682,7 +762,11 @@
         "tier": 2,
         "quantity": 4
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 54.32846715328467,
+      "stageId": "main_07-13"
+    }
   },
   {
     "id": "30064",
@@ -718,7 +802,11 @@
   {
     "id": "30073",
     "name": "Loxic Kohl",
-    "tier": 3
+    "tier": 3,
+    "efficientStage": {
+      "sanityCost": 48.454607508532426,
+      "stageId": "main_04-04"
+    }
   },
   {
     "id": "30074",
@@ -749,12 +837,20 @@
         "tier": 3,
         "quantity": 1
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 347.119804400978,
+      "stageId": "main_04-04"
+    }
   },
   {
     "id": "30083",
     "name": "Manganese Ore",
-    "tier": 3
+    "tier": 3,
+    "efficientStage": {
+      "sanityCost": 60.011700468018724,
+      "stageId": "main_04-07"
+    }
   },
   {
     "id": "30084",
@@ -785,12 +881,20 @@
         "tier": 3,
         "quantity": 1
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 449.4741966893866,
+      "stageId": "main_04-07"
+    }
   },
   {
     "id": "30093",
     "name": "Grindstone",
-    "tier": 3
+    "tier": 3,
+    "efficientStage": {
+      "sanityCost": 65.33413132694939,
+      "stageId": "main_07-15"
+    }
   },
   {
     "id": "30094",
@@ -821,12 +925,20 @@
         "tier": 3,
         "quantity": 1
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 441.1939953810624,
+      "stageId": "main_07-15"
+    }
   },
   {
     "id": "30103",
     "name": "RMA70-12",
-    "tier": 3
+    "tier": 3,
+    "efficientStage": {
+      "sanityCost": 69.94140897465705,
+      "stageId": "main_04-09"
+    }
   },
   {
     "id": "30104",
@@ -857,7 +969,11 @@
         "tier": 3,
         "quantity": 1
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 478.24801271860093,
+      "stageId": "main_04-09"
+    }
   },
   {
     "id": "30115",
@@ -980,7 +1096,11 @@
   {
     "id": "31013",
     "name": "Coagulating Gel",
-    "tier": 3
+    "tier": 3,
+    "efficientStage": {
+      "sanityCost": 70.65401785714286,
+      "stageId": "sub_05-4-1"
+    }
   },
   {
     "id": "31014",
@@ -1011,12 +1131,20 @@
         "tier": 3,
         "quantity": 1
       }
-    ]
+    ],
+    "efficientStage": {
+      "sanityCost": 490.74418604651163,
+      "stageId": "sub_05-4-1"
+    }
   },
   {
     "id": "31023",
     "name": "Incandescent Alloy",
-    "tier": 3
+    "tier": 3,
+    "efficientStage": {
+      "sanityCost": 38.104395604395606,
+      "stageId": "sub_03-3-1"
+    }
   },
   {
     "id": "31024",
@@ -1052,7 +1180,11 @@
   {
     "id": "31033",
     "name": "Crystal Component",
-    "tier": 3
+    "tier": 3,
+    "efficientStage": {
+      "sanityCost": 1907.5,
+      "stageId": "main_04-09"
+    }
   },
   {
     "id": "31034",
