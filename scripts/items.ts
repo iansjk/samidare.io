@@ -215,10 +215,11 @@ function buildFarmingStage(stageItem: StageItem): FarmingStage {
   const stageData =
     cnStageTable[stageItem.stageId as keyof typeof cnStageTable];
   return {
-    itemSanityCost: stageItem.sanityCost,
     stageSanityCost: stageData.apCost,
     stageName: stageData.code,
-    dropRate: stageItem.dropRate,
+    itemSanityCost:
+      Math.round((stageItem.sanityCost + Number.EPSILON) * 100) / 100,
+    dropRate: Math.round((stageItem.dropRate + Number.EPSILON) * 100) / 100,
   };
 }
 
