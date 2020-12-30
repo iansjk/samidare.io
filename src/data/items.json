@@ -44,7 +44,21 @@
   {
     "id": "3213",
     "name": "Vanguard Dualchip",
-    "tier": 5
+    "tier": 5,
+    "ingredients": [
+      {
+        "id": "3212",
+        "name": "Vanguard Chip Pack",
+        "tier": 4,
+        "quantity": 2
+      },
+      {
+        "id": "32001",
+        "name": "Chip Catalyst",
+        "tier": 4,
+        "quantity": 1
+      }
+    ]
   },
   {
     "id": "3221",
@@ -83,7 +97,7 @@
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-D-2",
-        "itemSanityCost": 72,
+        "itemSanityCost": 71.8,
         "dropRate": 0.5
       }
     }
@@ -91,7 +105,21 @@
   {
     "id": "3223",
     "name": "Guard Dualchip",
-    "tier": 5
+    "tier": 5,
+    "ingredients": [
+      {
+        "id": "3222",
+        "name": "Guard Chip Pack",
+        "tier": 4,
+        "quantity": 2
+      },
+      {
+        "id": "32001",
+        "name": "Chip Catalyst",
+        "tier": 4,
+        "quantity": 1
+      }
+    ]
   },
   {
     "id": "3231",
@@ -138,7 +166,21 @@
   {
     "id": "3233",
     "name": "Defender Dualchip",
-    "tier": 5
+    "tier": 5,
+    "ingredients": [
+      {
+        "id": "3232",
+        "name": "Defender Chip Pack",
+        "tier": 4,
+        "quantity": 2
+      },
+      {
+        "id": "32001",
+        "name": "Chip Catalyst",
+        "tier": 4,
+        "quantity": 1
+      }
+    ]
   },
   {
     "id": "3241",
@@ -185,7 +227,21 @@
   {
     "id": "3243",
     "name": "Sniper Dualchip",
-    "tier": 5
+    "tier": 5,
+    "ingredients": [
+      {
+        "id": "3242",
+        "name": "Sniper Chip Pack",
+        "tier": 4,
+        "quantity": 2
+      },
+      {
+        "id": "32001",
+        "name": "Chip Catalyst",
+        "tier": 4,
+        "quantity": 1
+      }
+    ]
   },
   {
     "id": "3251",
@@ -232,7 +288,21 @@
   {
     "id": "3253",
     "name": "Caster Dualchip",
-    "tier": 5
+    "tier": 5,
+    "ingredients": [
+      {
+        "id": "3252",
+        "name": "Caster Chip Pack",
+        "tier": 4,
+        "quantity": 2
+      },
+      {
+        "id": "32001",
+        "name": "Chip Catalyst",
+        "tier": 4,
+        "quantity": 1
+      }
+    ]
   },
   {
     "id": "3261",
@@ -279,7 +349,21 @@
   {
     "id": "3263",
     "name": "Medic Dualchip",
-    "tier": 5
+    "tier": 5,
+    "ingredients": [
+      {
+        "id": "3262",
+        "name": "Medic Chip Pack",
+        "tier": 4,
+        "quantity": 2
+      },
+      {
+        "id": "32001",
+        "name": "Chip Catalyst",
+        "tier": 4,
+        "quantity": 1
+      }
+    ]
   },
   {
     "id": "3271",
@@ -326,7 +410,21 @@
   {
     "id": "3273",
     "name": "Supporter Dualchip",
-    "tier": 5
+    "tier": 5,
+    "ingredients": [
+      {
+        "id": "3272",
+        "name": "Supporter Chip Pack",
+        "tier": 4,
+        "quantity": 2
+      },
+      {
+        "id": "32001",
+        "name": "Chip Catalyst",
+        "tier": 4,
+        "quantity": 1
+      }
+    ]
   },
   {
     "id": "3281",
@@ -365,7 +463,7 @@
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-D-2",
-        "itemSanityCost": 72,
+        "itemSanityCost": 72.2,
         "dropRate": 0.5
       }
     }
@@ -373,7 +471,21 @@
   {
     "id": "3283",
     "name": "Specialist Dualchip",
-    "tier": 5
+    "tier": 5,
+    "ingredients": [
+      {
+        "id": "3282",
+        "name": "Specialist Chip Pack",
+        "tier": 4,
+        "quantity": 2
+      },
+      {
+        "id": "32001",
+        "name": "Chip Catalyst",
+        "tier": 4,
+        "quantity": 1
+      }
+    ]
   },
   {
     "id": "3301",
@@ -443,7 +555,7 @@
       "leastSanity": {
         "stageSanityCost": 12,
         "stageName": "S2-5",
-        "itemSanityCost": 3.27,
+        "itemSanityCost": 3.28,
         "dropRate": 3.66
       },
       "mostEfficient": {
@@ -555,7 +667,7 @@
       "leastSanity": {
         "stageSanityCost": 12,
         "stageName": "S2-6",
-        "itemSanityCost": 4.93,
+        "itemSanityCost": 4.92,
         "dropRate": 2.44
       },
       "mostEfficient": {
@@ -724,7 +836,7 @@
       "mostEfficient": {
         "stageSanityCost": 15,
         "stageName": "S3-6",
-        "itemSanityCost": 105.53,
+        "itemSanityCost": 105.58,
         "dropRate": 0.14
       }
     }
@@ -1631,13 +1743,13 @@
       "leastSanity": {
         "stageSanityCost": 15,
         "stageName": "S3-6",
-        "itemSanityCost": 38.11,
+        "itemSanityCost": 38.08,
         "dropRate": 0.39
       },
       "mostEfficient": {
         "stageSanityCost": 15,
         "stageName": "S3-6",
-        "itemSanityCost": 38.11,
+        "itemSanityCost": 38.08,
         "dropRate": 0.39
       }
     }

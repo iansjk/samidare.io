@@ -13,11 +13,13 @@ import {
   toIngredient,
 } from "./globals";
 
-const { workshopFormulas } = cnBuildingData;
+const {
+  workshopFormulas,
+  manufactFormulas: manufactureFormulas,
+} = cnBuildingData;
 
 interface FormulaEntry {
-  rarity: number;
-  goldCost: number;
+  goldCost?: number;
   costs: InternalItemRequirement[];
 }
 
@@ -124,14 +126,21 @@ const items = Object.keys(cnItemTable)
       name,
       tier,
     };
-    const formulaId = entry.buildingProductList.find(
+    const workshopFormulaId = entry.buildingProductList.find(
       ({ roomType }) => roomType === "WORKSHOP"
     )?.formulaId;
-    if (formulaId) {
-      const formula: FormulaEntry =
-        workshopFormulas[formulaId as keyof typeof workshopFormulas];
+    const manufactureFormulaId = entry.buildingProductList.find(
+      ({ roomType }) => roomType === "MANUFACTURE"
+    )?.formulaId;
+
+    if (workshopFormulaId || manufactureFormulaId) {
+      const formula: FormulaEntry = workshopFormulaId
+        ? workshopFormulas[workshopFormulaId as keyof typeof workshopFormulas]
+        : manufactureFormulas[
+            manufactureFormulaId as keyof typeof manufactureFormulas
+          ];
       const ingredients = formula.costs.map(toIngredient);
-      if (formula.goldCost > 0) {
+      if (typeof formula.goldCost !== "undefined" && formula.goldCost > 0) {
         ingredients.unshift({
           id: "4001",
           name: "LMD",
