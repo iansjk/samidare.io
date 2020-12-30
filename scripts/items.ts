@@ -4,6 +4,7 @@ import path from "path";
 import axios from "axios";
 import { items as cnItemTable } from "./ArknightsData/zh-CN/gamedata/excel/item_table.json";
 import cnBuildingData from "./ArknightsData/zh-CN/gamedata/excel/building_data.json";
+import { stages as cnStageTable } from "./ArknightsData/zh-CN/gamedata/excel/stage_table.json";
 import {
   ARKNIGHTS_DATA_DIR,
   getItemName,
@@ -93,20 +94,20 @@ const WHITELISTED_ITEMS = new Set([
   "Specialist Dualchip",
 ]);
 
-const EFFICIENT_STAGES_COSTS: Record<string, number> = {
-  "main_01-07": 6, // "1-7",
-  "main_04-04": 18, // "4-4",
-  "main_04-05": 18, // "4-5",
-  "main_04-07": 18, // "4-7",
-  "main_04-09": 21, // "4-9",
-  "main_05-02": 18, // "5-2",
-  "main_05-05": 18, // "5-5",
-  "sub_03-3-1": 15, // "S3-6",
-  "sub_05-4-1": 18, // "S5-7",
-  "main_07-03": 18, // "7-4",
-  "main_07-13": 18, // "7-15",
-  "main_07-15": 21, // "7-17",
-};
+const EFFICIENT_STAGES = [
+  "main_01-07", // "1-7",
+  "main_04-04", // "4-4",
+  "main_04-05", // "4-5",
+  "main_04-07", // "4-7",
+  "main_04-09", // "4-9",
+  "main_05-02", // "5-2",
+  "main_05-05", // "5-5",
+  "sub_03-3-1", // "S3-6",
+  "sub_05-4-1", // "S5-7",
+  "main_07-03", // "7-4",
+  "main_07-13", // "7-15",
+  "main_07-15", // "7-17",
+];
 
 const PENGUIN_STATS_MATRIX_URL =
   "https://penguin-stats.io/PenguinStats/api/v2/result/matrix";
@@ -157,49 +158,92 @@ interface PenguinStatsResponse {
 
 interface StageItem {
   sanityCost: number;
+  dropRate: number;
   stageId: string;
 }
 
-const itemEfficientStageMap: Record<string, StageItem> = {};
-(async () => {
+async function getStagesForItems(
+  { efficientStagesOnly } = { efficientStagesOnly: false }
+): Promise<Record<string, StageItem>> {
+  const itemStageMap: Record<string, StageItem> = {};
+  let params = { itemFilter: items.map((item) => item.id).join(",") };
+  if (efficientStagesOnly) {
+    params = Object.assign(params, {
+      stageFilter: EFFICIENT_STAGES.join(","),
+    });
+  }
   const response = await axios.get<PenguinStatsResponse>(
     PENGUIN_STATS_MATRIX_URL,
-    {
-      params: {
-        stageFilter: Object.keys(EFFICIENT_STAGES_COSTS).join(","),
-        itemFilter: items.map((item) => item.id).join(","),
-      },
-    }
+    { params }
   );
   const { matrix } = response.data;
-  matrix.forEach((cell) => {
-    const dropRate = cell.quantity / cell.times;
-    const sanityCost = EFFICIENT_STAGES_COSTS[cell.stageId] / dropRate;
-    if (
-      !Object.prototype.hasOwnProperty.call(
-        itemEfficientStageMap,
-        cell.itemId
-      ) ||
-      itemEfficientStageMap[cell.itemId].sanityCost > sanityCost
-    ) {
-      itemEfficientStageMap[cell.itemId] = {
-        sanityCost,
-        stageId: cell.stageId,
+  matrix
+    .filter((cell) =>
+      Object.prototype.hasOwnProperty.call(cnStageTable, cell.stageId)
+    )
+    .forEach((cell) => {
+      const dropRate = cell.quantity / cell.times;
+      const stageData = cnStageTable[cell.stageId as keyof typeof cnStageTable];
+      const sanityCost = stageData.apCost / dropRate;
+      if (
+        !Object.prototype.hasOwnProperty.call(itemStageMap, cell.itemId) ||
+        itemStageMap[cell.itemId].sanityCost > sanityCost
+      ) {
+        itemStageMap[cell.itemId] = {
+          sanityCost,
+          dropRate,
+          stageId: cell.stageId,
+        };
+      }
+    });
+  return itemStageMap;
+}
+
+interface FarmingStage {
+  itemSanityCost: number;
+  stageSanityCost: number;
+  dropRate: number;
+  stageName: string;
+}
+
+function buildFarmingStage(stageItem: StageItem): FarmingStage {
+  const stageData =
+    cnStageTable[stageItem.stageId as keyof typeof cnStageTable];
+  return {
+    itemSanityCost: stageItem.sanityCost,
+    stageSanityCost: stageData.apCost,
+    stageName: stageData.code,
+    dropRate: stageItem.dropRate,
+  };
+}
+
+(async () => {
+  const [itemEfficientStages, itemFastestStages] = await Promise.all([
+    getStagesForItems({
+      efficientStagesOnly: true,
+    }),
+    getStagesForItems(),
+  ]);
+
+  const itemsWithStages = items.map((item) => {
+    const stages: Record<string, FarmingStage> = {};
+    if (Object.prototype.hasOwnProperty.call(itemFastestStages, item.id)) {
+      stages.leastSanity = buildFarmingStage(itemFastestStages[item.id]);
+    }
+    if (Object.prototype.hasOwnProperty.call(itemEfficientStages, item.id)) {
+      stages.mostEfficient = buildFarmingStage(itemEfficientStages[item.id]);
+    }
+    if (Object.keys(stages).length > 0) {
+      return {
+        ...item,
+        stages,
       };
     }
-  });
-
-  const itemsWithEfficientStages = items.map((item) => {
-    if (!Object.prototype.hasOwnProperty.call(itemEfficientStageMap, item.id)) {
-      return item;
-    }
-    return Object.assign(item, {
-      efficientStage: itemEfficientStageMap[item.id],
-    });
+    return item;
   });
 
   fs.writeFileSync(
     path.join(ARKNIGHTS_DATA_DIR, "items.json"),
-    JSON.stringify(itemsWithEfficientStages, null, 2)
+    JSON.stringify(itemsWithStages, null, 2)
   );
 })();

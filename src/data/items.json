@@ -10,7 +10,15 @@
         "tier": 3,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 37.25581395348837,
+        "stageSanityCost": 18,
+        "stageName": "PR-C-1",
+        "dropRate": 0.48314606741573035
+      }
+    }
   },
   {
     "id": "3212",
@@ -23,7 +31,15 @@
         "tier": 4,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 82,
+        "stageSanityCost": 36,
+        "stageName": "PR-C-2",
+        "dropRate": 0.43902439024390244
+      }
+    }
   },
   {
     "id": "3213",
@@ -41,7 +57,15 @@
         "tier": 3,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 36.26277372262774,
+        "stageSanityCost": 18,
+        "stageName": "PR-D-1",
+        "dropRate": 0.4963768115942029
+      }
+    }
   },
   {
     "id": "3222",
@@ -54,7 +78,15 @@
         "tier": 4,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 72,
+        "stageSanityCost": 36,
+        "stageName": "PR-D-2",
+        "dropRate": 0.5
+      }
+    }
   },
   {
     "id": "3223",
@@ -72,7 +104,15 @@
         "tier": 3,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 35.333333333333336,
+        "stageSanityCost": 18,
+        "stageName": "PR-A-1",
+        "dropRate": 0.5094339622641509
+      }
+    }
   },
   {
     "id": "3232",
@@ -85,7 +125,15 @@
         "tier": 4,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 76.40816326530613,
+        "stageSanityCost": 36,
+        "stageName": "PR-A-2",
+        "dropRate": 0.47115384615384615
+      }
+    }
   },
   {
     "id": "3233",
@@ -103,7 +151,15 @@
         "tier": 3,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 40.63636363636363,
+        "stageSanityCost": 18,
+        "stageName": "PR-B-1",
+        "dropRate": 0.4429530201342282
+      }
+    }
   },
   {
     "id": "3242",
@@ -116,7 +172,15 @@
         "tier": 4,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 68.85,
+        "stageSanityCost": 36,
+        "stageName": "PR-B-2",
+        "dropRate": 0.5228758169934641
+      }
+    }
   },
   {
     "id": "3243",
@@ -134,7 +198,15 @@
         "tier": 3,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 32.31325301204819,
+        "stageSanityCost": 18,
+        "stageName": "PR-B-1",
+        "dropRate": 0.5570469798657718
+      }
+    }
   },
   {
     "id": "3252",
@@ -147,7 +219,15 @@
         "tier": 4,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 75.45205479452055,
+        "stageSanityCost": 36,
+        "stageName": "PR-B-2",
+        "dropRate": 0.477124183006536
+      }
+    }
   },
   {
     "id": "3253",
@@ -165,7 +245,15 @@
         "tier": 3,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 36.69230769230769,
+        "stageSanityCost": 18,
+        "stageName": "PR-A-1",
+        "dropRate": 0.49056603773584906
+      }
+    }
   },
   {
     "id": "3262",
@@ -178,7 +266,15 @@
         "tier": 4,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 68.07272727272728,
+        "stageSanityCost": 36,
+        "stageName": "PR-A-2",
+        "dropRate": 0.5288461538461539
+      }
+    }
   },
   {
     "id": "3263",
@@ -196,7 +292,15 @@
         "tier": 3,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 34.826086956521735,
+        "stageSanityCost": 18,
+        "stageName": "PR-C-1",
+        "dropRate": 0.5168539325842697
+      }
+    }
   },
   {
     "id": "3272",
@@ -209,7 +313,15 @@
         "tier": 4,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 64.17391304347825,
+        "stageSanityCost": 36,
+        "stageName": "PR-C-2",
+        "dropRate": 0.5609756097560976
+      }
+    }
   },
   {
     "id": "3273",
@@ -227,7 +339,15 @@
         "tier": 3,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 35.7410071942446,
+        "stageSanityCost": 18,
+        "stageName": "PR-D-1",
+        "dropRate": 0.5036231884057971
+      }
+    }
   },
   {
     "id": "3282",
@@ -240,7 +360,15 @@
         "tier": 4,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 72,
+        "stageSanityCost": 36,
+        "stageName": "PR-D-2",
+        "dropRate": 0.5
+      }
+    }
   },
   {
     "id": "3283",
@@ -250,7 +378,15 @@
   {
     "id": "3301",
     "name": "Skill Summary - 1",
-    "tier": 2
+    "tier": 2,
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 3,
+        "stageSanityCost": 15,
+        "stageName": "CA-2",
+        "dropRate": 5
+      }
+    }
   },
   {
     "id": "3302",
@@ -263,7 +399,15 @@
         "tier": 2,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 6.666666666666667,
+        "stageSanityCost": 20,
+        "stageName": "CA-3",
+        "dropRate": 3
+      }
+    }
   },
   {
     "id": "3303",
@@ -276,7 +420,15 @@
         "tier": 3,
         "quantity": 3
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 15,
+        "stageSanityCost": 30,
+        "stageName": "CA-5",
+        "dropRate": 2
+      }
+    }
   },
   {
     "id": "4001",
@@ -287,9 +439,19 @@
     "id": "30011",
     "name": "Orirock",
     "tier": 1,
-    "efficientStage": {
-      "sanityCost": 50.134295437358205,
-      "stageId": "main_01-07"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 3.2742735648476256,
+        "stageSanityCost": 12,
+        "stageName": "S2-5",
+        "dropRate": 3.664935064935065
+      },
+      "mostEfficient": {
+        "itemSanityCost": 50.134295437358205,
+        "stageSanityCost": 6,
+        "stageName": "1-7",
+        "dropRate": 0.11967855432409297
+      }
     }
   },
   {
@@ -310,9 +472,19 @@
         "quantity": 3
       }
     ],
-    "efficientStage": {
-      "sanityCost": 4.82350480209546,
-      "stageId": "main_01-07"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 4.82350480209546,
+        "stageSanityCost": 6,
+        "stageName": "1-7",
+        "dropRate": 1.2439087854527353
+      },
+      "mostEfficient": {
+        "itemSanityCost": 4.82350480209546,
+        "stageSanityCost": 6,
+        "stageName": "1-7",
+        "dropRate": 1.2439087854527353
+      }
     }
   },
   {
@@ -333,9 +505,19 @@
         "quantity": 5
       }
     ],
-    "efficientStage": {
-      "sanityCost": 884.3103448275862,
-      "stageId": "main_04-07"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 28.378071833648395,
+        "stageSanityCost": 12,
+        "stageName": "2-4",
+        "dropRate": 0.4228617106314948
+      },
+      "mostEfficient": {
+        "itemSanityCost": 884.3103448275862,
+        "stageSanityCost": 18,
+        "stageName": "4-7",
+        "dropRate": 0.02035484499902515
+      }
     }
   },
   {
@@ -355,15 +537,33 @@
         "tier": 3,
         "quantity": 4
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 331.8,
+        "stageSanityCost": 18,
+        "stageName": "R8-3",
+        "dropRate": 0.054249547920433995
+      }
+    }
   },
   {
     "id": "30021",
     "name": "Sugar Substitute",
     "tier": 1,
-    "efficientStage": {
-      "sanityCost": 105.90135782747605,
-      "stageId": "main_01-07"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 4.925196850393701,
+        "stageSanityCost": 12,
+        "stageName": "S2-6",
+        "dropRate": 2.436450839328537
+      },
+      "mostEfficient": {
+        "itemSanityCost": 105.90135782747605,
+        "stageSanityCost": 6,
+        "stageName": "1-7",
+        "dropRate": 0.05665649735836818
+      }
     }
   },
   {
@@ -384,9 +584,19 @@
         "quantity": 3
       }
     ],
-    "efficientStage": {
-      "sanityCost": 91.79445015416239,
-      "stageId": "main_07-13"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 9.918166939443536,
+        "stageSanityCost": 15,
+        "stageName": "S3-1",
+        "dropRate": 1.5123762376237624
+      },
+      "mostEfficient": {
+        "itemSanityCost": 91.78171024089508,
+        "stageSanityCost": 18,
+        "stageName": "7-15",
+        "dropRate": 0.19611750481393578
+      }
     }
   },
   {
@@ -407,9 +617,19 @@
         "quantity": 4
       }
     ],
-    "efficientStage": {
-      "sanityCost": 45.83571428571429,
-      "stageId": "main_05-02"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 21.478214665249734,
+        "stageSanityCost": 15,
+        "stageName": "MB-6",
+        "dropRate": 0.6983820691702538
+      },
+      "mostEfficient": {
+        "itemSanityCost": 45.83571428571429,
+        "stageSanityCost": 18,
+        "stageName": "5-2",
+        "dropRate": 0.39270687237026647
+      }
     }
   },
   {
@@ -442,18 +662,38 @@
         "quantity": 1
       }
     ],
-    "efficientStage": {
-      "sanityCost": 388.90909090909093,
-      "stageId": "main_05-02"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 388.90909090909093,
+        "stageSanityCost": 18,
+        "stageName": "5-2",
+        "dropRate": 0.04628330995792426
+      },
+      "mostEfficient": {
+        "itemSanityCost": 388.90909090909093,
+        "stageSanityCost": 18,
+        "stageName": "5-2",
+        "dropRate": 0.04628330995792426
+      }
     }
   },
   {
     "id": "30031",
     "name": "Ester",
     "tier": 1,
-    "efficientStage": {
-      "sanityCost": 43.908913467794406,
-      "stageId": "main_04-05"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 4.739495798319328,
+        "stageSanityCost": 12,
+        "stageName": "S2-7",
+        "dropRate": 2.5319148936170213
+      },
+      "mostEfficient": {
+        "itemSanityCost": 43.908913467794406,
+        "stageSanityCost": 18,
+        "stageName": "4-5",
+        "dropRate": 0.40993954480796585
+      }
     }
   },
   {
@@ -474,9 +714,19 @@
         "quantity": 3
       }
     ],
-    "efficientStage": {
-      "sanityCost": 105.60913705583756,
-      "stageId": "sub_03-3-1"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 9.578102189781022,
+        "stageSanityCost": 9,
+        "stageName": "1-8",
+        "dropRate": 0.9396433470507545
+      },
+      "mostEfficient": {
+        "itemSanityCost": 105.60913705583756,
+        "stageSanityCost": 15,
+        "stageName": "S3-6",
+        "dropRate": 0.14203316510454217
+      }
     }
   },
   {
@@ -497,9 +747,19 @@
         "quantity": 4
       }
     ],
-    "efficientStage": {
-      "sanityCost": 32.31839499739448,
-      "stageId": "main_07-03"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 32.31839499739448,
+        "stageSanityCost": 18,
+        "stageName": "7-4",
+        "dropRate": 0.5569583514729357
+      },
+      "mostEfficient": {
+        "itemSanityCost": 32.31839499739448,
+        "stageSanityCost": 18,
+        "stageName": "7-4",
+        "dropRate": 0.5569583514729357
+      }
     }
   },
   {
@@ -531,15 +791,33 @@
         "tier": 3,
         "quantity": 1
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 457.4805194805195,
+        "stageSanityCost": 18,
+        "stageName": "6-4",
+        "dropRate": 0.03934593765968319
+      }
+    }
   },
   {
     "id": "30041",
     "name": "Oriron Shard",
     "tier": 1,
-    "efficientStage": {
-      "sanityCost": 128.85179786200194,
-      "stageId": "main_01-07"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 6.169811320754716,
+        "stageSanityCost": 6,
+        "stageName": "1-3",
+        "dropRate": 0.9724770642201835
+      },
+      "mostEfficient": {
+        "itemSanityCost": 128.85179786200194,
+        "stageSanityCost": 6,
+        "stageName": "1-7",
+        "dropRate": 0.046565124426326564
+      }
     }
   },
   {
@@ -560,9 +838,19 @@
         "quantity": 3
       }
     ],
-    "efficientStage": {
-      "sanityCost": 112.99465842001686,
-      "stageId": "main_07-13"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 12.355057976809277,
+        "stageSanityCost": 15,
+        "stageName": "S3-3",
+        "dropRate": 1.2140776699029125
+      },
+      "mostEfficient": {
+        "itemSanityCost": 113.00477930840597,
+        "stageSanityCost": 18,
+        "stageName": "7-15",
+        "dropRate": 0.15928529846401862
+      }
     }
   },
   {
@@ -583,9 +871,19 @@
         "quantity": 4
       }
     ],
-    "efficientStage": {
-      "sanityCost": 61.98628795298726,
-      "stageId": "main_05-05"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 26.873818063253992,
+        "stageSanityCost": 18,
+        "stageName": "MB-8",
+        "dropRate": 0.6697968988862197
+      },
+      "mostEfficient": {
+        "itemSanityCost": 61.98628795298726,
+        "stageSanityCost": 18,
+        "stageName": "5-5",
+        "dropRate": 0.290386803185438
+      }
     }
   },
   {
@@ -618,18 +916,38 @@
         "quantity": 1
       }
     ],
-    "efficientStage": {
-      "sanityCost": 468.79999999999995,
-      "stageId": "main_05-05"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 468.79999999999995,
+        "stageSanityCost": 18,
+        "stageName": "5-5",
+        "dropRate": 0.03839590443686007
+      },
+      "mostEfficient": {
+        "itemSanityCost": 468.79999999999995,
+        "stageSanityCost": 18,
+        "stageName": "5-5",
+        "dropRate": 0.03839590443686007
+      }
     }
   },
   {
     "id": "30051",
     "name": "Diketon",
     "tier": 1,
-    "efficientStage": {
-      "sanityCost": 54.4258064516129,
-      "stageId": "main_04-05"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 6.237154150197628,
+        "stageSanityCost": 12,
+        "stageName": "S2-9",
+        "dropRate": 1.9239543726235742
+      },
+      "mostEfficient": {
+        "itemSanityCost": 54.4258064516129,
+        "stageSanityCost": 18,
+        "stageName": "4-5",
+        "dropRate": 0.3307254623044097
+      }
     }
   },
   {
@@ -650,9 +968,19 @@
         "quantity": 3
       }
     ],
-    "efficientStage": {
-      "sanityCost": 187.46666666666667,
-      "stageId": "main_04-05"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 12.214518760195759,
+        "stageSanityCost": 15,
+        "stageName": "3-7",
+        "dropRate": 1.2280467445742904
+      },
+      "mostEfficient": {
+        "itemSanityCost": 187.46666666666667,
+        "stageSanityCost": 18,
+        "stageName": "4-5",
+        "dropRate": 0.09601706970128022
+      }
     }
   },
   {
@@ -673,9 +1001,19 @@
         "quantity": 4
       }
     ],
-    "efficientStage": {
-      "sanityCost": 57.61092668121029,
-      "stageId": "main_04-05"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 27.18400101904337,
+        "stageSanityCost": 18,
+        "stageName": "MB-7",
+        "dropRate": 0.6621541835357625
+      },
+      "mostEfficient": {
+        "itemSanityCost": 57.61092668121029,
+        "stageSanityCost": 18,
+        "stageName": "4-5",
+        "dropRate": 0.3124407302038881
+      }
     }
   },
   {
@@ -708,18 +1046,38 @@
         "quantity": 1
       }
     ],
-    "efficientStage": {
-      "sanityCost": 501.5623451692816,
-      "stageId": "main_04-05"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 501.5623451692816,
+        "stageSanityCost": 18,
+        "stageName": "4-5",
+        "dropRate": 0.03588786154575628
+      },
+      "mostEfficient": {
+        "itemSanityCost": 501.5623451692816,
+        "stageSanityCost": 18,
+        "stageName": "4-5",
+        "dropRate": 0.03588786154575628
+      }
     }
   },
   {
     "id": "30061",
     "name": "Damaged Device",
     "tier": 1,
-    "efficientStage": {
-      "sanityCost": 159.06616126809098,
-      "stageId": "main_04-07"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 7.6909090909090905,
+        "stageSanityCost": 6,
+        "stageName": "1-5",
+        "dropRate": 0.7801418439716312
+      },
+      "mostEfficient": {
+        "itemSanityCost": 159.06616126809098,
+        "stageSanityCost": 18,
+        "stageName": "4-7",
+        "dropRate": 0.11316046012868006
+      }
     }
   },
   {
@@ -740,9 +1098,19 @@
         "quantity": 3
       }
     ],
-    "efficientStage": {
-      "sanityCost": 141.26567164179104,
-      "stageId": "main_04-04"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 16.530892448512585,
+        "stageSanityCost": 15,
+        "stageName": "S3-4",
+        "dropRate": 0.907392026578073
+      },
+      "mostEfficient": {
+        "itemSanityCost": 141.26567164179104,
+        "stageSanityCost": 18,
+        "stageName": "4-4",
+        "dropRate": 0.12741949116727241
+      }
     }
   },
   {
@@ -763,9 +1131,19 @@
         "quantity": 4
       }
     ],
-    "efficientStage": {
-      "sanityCost": 54.32846715328467,
-      "stageId": "main_07-13"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 54.333333333333336,
+        "stageSanityCost": 18,
+        "stageName": "7-15",
+        "dropRate": 0.3312883435582822
+      },
+      "mostEfficient": {
+        "itemSanityCost": 54.333333333333336,
+        "stageSanityCost": 18,
+        "stageName": "7-15",
+        "dropRate": 0.3312883435582822
+      }
     }
   },
   {
@@ -797,15 +1175,33 @@
         "tier": 3,
         "quantity": 1
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 695.0839694656488,
+        "stageSanityCost": 21,
+        "stageName": "4-10",
+        "dropRate": 0.030212177121771218
+      }
+    }
   },
   {
     "id": "30073",
     "name": "Loxic Kohl",
     "tier": 3,
-    "efficientStage": {
-      "sanityCost": 48.454607508532426,
-      "stageId": "main_04-04"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 42.96628988696609,
+        "stageSanityCost": 21,
+        "stageName": "6-11",
+        "dropRate": 0.48875525569570744
+      },
+      "mostEfficient": {
+        "itemSanityCost": 48.454607508532426,
+        "stageSanityCost": 18,
+        "stageName": "4-4",
+        "dropRate": 0.37148170061702307
+      }
     }
   },
   {
@@ -838,18 +1234,38 @@
         "quantity": 1
       }
     ],
-    "efficientStage": {
-      "sanityCost": 347.119804400978,
-      "stageId": "main_04-04"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 347.119804400978,
+        "stageSanityCost": 18,
+        "stageName": "4-4",
+        "dropRate": 0.05185529541036261
+      },
+      "mostEfficient": {
+        "itemSanityCost": 347.119804400978,
+        "stageSanityCost": 18,
+        "stageName": "4-4",
+        "dropRate": 0.05185529541036261
+      }
     }
   },
   {
     "id": "30083",
     "name": "Manganese Ore",
     "tier": 3,
-    "efficientStage": {
-      "sanityCost": 60.011700468018724,
-      "stageId": "main_04-07"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 40.73206256728516,
+        "stageSanityCost": 15,
+        "stageName": "3-2",
+        "dropRate": 0.3682602611940298
+      },
+      "mostEfficient": {
+        "itemSanityCost": 60.011700468018724,
+        "stageSanityCost": 18,
+        "stageName": "4-7",
+        "dropRate": 0.29994150906609474
+      }
     }
   },
   {
@@ -882,18 +1298,38 @@
         "quantity": 1
       }
     ],
-    "efficientStage": {
-      "sanityCost": 449.4741966893866,
-      "stageId": "main_04-07"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 449.4741966893866,
+        "stageSanityCost": 18,
+        "stageName": "4-7",
+        "dropRate": 0.040046792747124194
+      },
+      "mostEfficient": {
+        "itemSanityCost": 449.4741966893866,
+        "stageSanityCost": 18,
+        "stageName": "4-7",
+        "dropRate": 0.040046792747124194
+      }
     }
   },
   {
     "id": "30093",
     "name": "Grindstone",
     "tier": 3,
-    "efficientStage": {
-      "sanityCost": 65.33413132694939,
-      "stageId": "main_07-15"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 47.67517301038062,
+        "stageSanityCost": 15,
+        "stageName": "3-3",
+        "dropRate": 0.31462916761170334
+      },
+      "mostEfficient": {
+        "itemSanityCost": 65.33413132694939,
+        "stageSanityCost": 21,
+        "stageName": "7-17",
+        "dropRate": 0.32142464548752336
+      }
     }
   },
   {
@@ -926,18 +1362,38 @@
         "quantity": 1
       }
     ],
-    "efficientStage": {
-      "sanityCost": 441.1939953810624,
-      "stageId": "main_07-15"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 437.6847609561753,
+        "stageSanityCost": 21,
+        "stageName": "4-8",
+        "dropRate": 0.047979737640677644
+      },
+      "mostEfficient": {
+        "itemSanityCost": 441.1939953810624,
+        "stageSanityCost": 21,
+        "stageName": "7-17",
+        "dropRate": 0.04759810926679125
+      }
     }
   },
   {
     "id": "30103",
     "name": "RMA70-12",
     "tier": 3,
-    "efficientStage": {
-      "sanityCost": 69.94140897465705,
-      "stageId": "main_04-09"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 53.150400000000005,
+        "stageSanityCost": 18,
+        "stageName": "7-10",
+        "dropRate": 0.33866160931996747
+      },
+      "mostEfficient": {
+        "itemSanityCost": 69.94140897465705,
+        "stageSanityCost": 21,
+        "stageName": "4-9",
+        "dropRate": 0.30025131474845257
+      }
     }
   },
   {
@@ -970,9 +1426,19 @@
         "quantity": 1
       }
     ],
-    "efficientStage": {
-      "sanityCost": 478.24801271860093,
-      "stageId": "main_04-09"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 478.24801271860093,
+        "stageSanityCost": 21,
+        "stageName": "4-9",
+        "dropRate": 0.04391027132684879
+      },
+      "mostEfficient": {
+        "itemSanityCost": 478.24801271860093,
+        "stageSanityCost": 21,
+        "stageName": "4-9",
+        "dropRate": 0.04391027132684879
+      }
     }
   },
   {
@@ -1097,9 +1563,19 @@
     "id": "31013",
     "name": "Coagulating Gel",
     "tier": 3,
-    "efficientStage": {
-      "sanityCost": 70.65401785714286,
-      "stageId": "sub_05-4-1"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 62.689655172413794,
+        "stageSanityCost": 21,
+        "stageName": "JT8-2",
+        "dropRate": 0.334983498349835
+      },
+      "mostEfficient": {
+        "itemSanityCost": 70.65401785714286,
+        "stageSanityCost": 18,
+        "stageName": "S5-7",
+        "dropRate": 0.25476258174580607
+      }
     }
   },
   {
@@ -1132,18 +1608,38 @@
         "quantity": 1
       }
     ],
-    "efficientStage": {
-      "sanityCost": 490.74418604651163,
-      "stageId": "sub_05-4-1"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 414,
+        "stageSanityCost": 18,
+        "stageName": "7-8",
+        "dropRate": 0.043478260869565216
+      },
+      "mostEfficient": {
+        "itemSanityCost": 490.74418604651163,
+        "stageSanityCost": 18,
+        "stageName": "S5-7",
+        "dropRate": 0.03667898777367074
+      }
     }
   },
   {
     "id": "31023",
     "name": "Incandescent Alloy",
     "tier": 3,
-    "efficientStage": {
-      "sanityCost": 38.104395604395606,
-      "stageId": "sub_03-3-1"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 38.104395604395606,
+        "stageSanityCost": 15,
+        "stageName": "S3-6",
+        "dropRate": 0.39365537130497474
+      },
+      "mostEfficient": {
+        "itemSanityCost": 38.104395604395606,
+        "stageSanityCost": 15,
+        "stageName": "S3-6",
+        "dropRate": 0.39365537130497474
+      }
     }
   },
   {
@@ -1175,15 +1671,33 @@
         "tier": 3,
         "quantity": 1
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 398.1951219512195,
+        "stageSanityCost": 18,
+        "stageName": "R8-7",
+        "dropRate": 0.04520396912899669
+      }
+    }
   },
   {
     "id": "31033",
     "name": "Crystal Component",
     "tier": 3,
-    "efficientStage": {
-      "sanityCost": 1907.5,
-      "stageId": "main_04-09"
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 36.965208405098174,
+        "stageSanityCost": 21,
+        "stageName": "R8-11",
+        "dropRate": 0.5681017612524462
+      },
+      "mostEfficient": {
+        "itemSanityCost": 1907.5,
+        "stageSanityCost": 21,
+        "stageName": "4-9",
+        "dropRate": 0.011009174311926606
+      }
     }
   },
   {
@@ -1215,7 +1729,15 @@
         "tier": 3,
         "quantity": 1
       }
-    ]
+    ],
+    "stages": {
+      "leastSanity": {
+        "itemSanityCost": 596.1666666666667,
+        "stageSanityCost": 21,
+        "stageName": "R8-11",
+        "dropRate": 0.03522504892367906
+      }
+    }
   },
   {
     "id": "32001",
