@@ -55644,13 +55644,13 @@
         "goalCategory": 2
       }
     ],
-    "isCnOnly": true,
+    "isCnOnly": false,
     "skills": [
       {
         "slot": 1,
         "skillId": "skchr_weedy_1",
         "iconId": null,
-        "skillName": "炮管敲击",
+        "skillName": "Barrel Burst",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -55736,7 +55736,7 @@
         "slot": 2,
         "skillId": "skchr_weedy_2",
         "iconId": null,
-        "skillName": "水炮模式",
+        "skillName": "Hydraulics Mode",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -55822,7 +55822,7 @@
         "slot": 3,
         "skillId": "skchr_weedy_3",
         "iconId": null,
-        "skillName": "液氮大炮",
+        "skillName": "Liquid Nitrogen Cannon",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -56095,13 +56095,13 @@
         "goalCategory": 2
       }
     ],
-    "isCnOnly": true,
+    "isCnOnly": false,
     "skills": [
       {
         "slot": 1,
         "skillId": "skcom_assist_cost[3]",
         "iconId": null,
-        "skillName": "支援号令·γ型",
+        "skillName": "Support γ",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -56187,7 +56187,7 @@
         "slot": 2,
         "skillId": "skchr_elysm_2",
         "iconId": null,
-        "skillName": "聆听",
+        "skillName": "Monitor",
         "masteries": [
           {
             "masteryLevel": 1,
