@@ -4,6 +4,7 @@ import path from "path";
 import axios from "axios";
 import { items as cnItemTable } from "./ArknightsData/zh-CN/gamedata/excel/item_table.json";
 import cnBuildingData from "./ArknightsData/zh-CN/gamedata/excel/building_data.json";
+import { stages as enStageTable } from "./ArknightsData/en-US/gamedata/excel/stage_table.json";
 import { stages as cnStageTable } from "./ArknightsData/zh-CN/gamedata/excel/stage_table.json";
 import {
   ARKNIGHTS_DATA_DIR,
@@ -178,9 +179,13 @@ async function getStagesForItems(
   );
   const { matrix } = response.data;
   matrix
-    .filter((cell) =>
-      Object.prototype.hasOwnProperty.call(cnStageTable, cell.stageId)
-    )
+    .filter((cell) => {
+      const cnStageData =
+        cnStageTable[cell.stageId as keyof typeof cnStageTable];
+      const enStageData =
+        enStageTable[cell.stageId as keyof typeof enStageTable];
+      return enStageData || cnStageData?.zoneId === "main_7";
+    })
     .forEach((cell) => {
       const dropRate = cell.quantity / cell.times;
       const stageData = cnStageTable[cell.stageId as keyof typeof cnStageTable];
