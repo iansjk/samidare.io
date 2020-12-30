@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import React from "react";
 import {
   Card,
@@ -10,8 +9,10 @@ import {
   Divider,
 } from "@material-ui/core";
 import DoubleArrowIcon from "@material-ui/icons/DoubleArrow";
+import { useStaticQuery, graphql } from "gatsby";
 import ItemStack from "./ItemStack";
 import { Ingredient, Item } from "../types";
+import sanityIcon from "../data/images/sanity.png";
 
 const useCommonStyles = makeStyles((theme) => ({
   itemInfoSection: {
@@ -90,97 +91,111 @@ function CraftingInfo(props: CraftingInfoProps): React.ReactElement {
   );
 }
 
-// const useStageInfoStyles = makeStyles({
-//   sanityIcon: {
-//     display: "inline-block",
-//     width: "18px",
-//     verticalAlign: "text-top",
-//   },
-//   stageType: {
-//     fontSize: "initial",
-//   },
-//   stageData: {
-//     fontSize: "initial",
-//     margin: 0,
-//   },
-// });
+const useStageInfoStyles = makeStyles({
+  sanityIcon: {
+    display: "inline-block",
+    width: "18px",
+    verticalAlign: "text-top",
+  },
+  stageType: {
+    fontSize: "initial",
+  },
+  stageData: {
+    fontSize: "initial",
+    margin: 0,
+  },
+});
 
-// interface StageInfoProps {
-//   stages: RecommendedStages;
-// }
+interface Stage {
+  stageSanityCost: number;
+  stageName: string;
+  itemSanityCost: number;
+  dropRate: number;
+}
 
-// function StageInfo(props: StageInfoProps): React.ReactElement {
-//   const { stages } = props;
-//   const classes = useStageInfoStyles();
-//   const commonClasses = useCommonStyles();
-//   const hasTwoRecommended = !!stages.leastSanity;
+interface RecommendedStages {
+  leastSanity: Stage | null;
+  mostEfficient: Stage | null;
+}
 
-//   function renderStage(stage: Stage) {
-//     return (
-//       <>
-//         <Typography variant="h4" component="span">
-//           {stage.name}
-//         </Typography>
-//         <Typography>{stage.dropRate}% chance</Typography>
-//         <Typography>
-//           {stage.sanityCost}
-//           <img
-//             className={classes.sanityIcon}
-//             src={`${process.env.PUBLIC_URL}/images/icons/sanity.png`}
-//             alt="Sanity"
-//           />
-//         </Typography>
-//         {stage.extraMaterial && (
-//           <Box
-//             display="flex"
-//             alignItems="center"
-//             justifyContent="center"
-//             mx={-0.5}
-//             mt={-0.5}
-//             mb={-1}
-//           >
-//             <Typography>Extra drop:</Typography>
-//             <Box ml={0.5}>
-//               <Item name={stage.extraMaterial} size={36} />
-//             </Box>
-//           </Box>
-//         )}
-//       </>
-//     );
-//   }
+interface StageInfoProps {
+  stages: RecommendedStages;
+}
 
-//   return (
-//     <Box mt={1}>
-//       <div className={commonClasses.itemInfoSection}>
-//         <Divider className={commonClasses.itemInfoSectionDivider} />
-//         <Typography
-//           component="h4"
-//           className={commonClasses.itemInfoSectionHeader}
-//         >
-//           Recommended {hasTwoRecommended ? "stages" : "stage"}
-//         </Typography>
-//       </div>
-//       <Box whiteSpace="nowrap" textAlign="center">
-//         {hasTwoRecommended ? (
-//           <Box mt={1}>
-//             <Grid container spacing={2}>
-//               <Grid item className={classes.stageType} xs>
-//                 <Typography>Most efficient</Typography>
-//                 {renderStage(stages.mostEfficient)}
-//               </Grid>
-//               <Grid item className={classes.stageType} xs>
-//                 <Typography>Least sanity</Typography>
-//                 {renderStage(stages.leastSanity!)}
-//               </Grid>
-//             </Grid>
-//           </Box>
-//         ) : (
-//           <div>{renderStage(stages.mostEfficient)}</div>
-//         )}
-//       </Box>
-//     </Box>
-//   );
-// }
+function StageInfo(props: StageInfoProps): React.ReactElement {
+  const { stages } = props;
+  const classes = useStageInfoStyles();
+  const commonClasses = useCommonStyles();
+  const hasTwoRecommended = stages.leastSanity && stages.mostEfficient;
+
+  function renderStage(stage: Stage) {
+    return (
+      <>
+        <Typography variant="h4" component="span">
+          {stage.stageName}
+        </Typography>
+        <Typography>{Math.round(stage.dropRate * 100)}% chance</Typography>
+        <Typography>
+          Stage cost:&nbsp;
+          {stage.stageSanityCost}
+          <img className={classes.sanityIcon} src={sanityIcon} alt="Sanity" />
+        </Typography>
+        <Typography>
+          Cost per item:&nbsp;
+          {stage.itemSanityCost}
+          <img className={classes.sanityIcon} src={sanityIcon} alt="Sanity" />
+        </Typography>
+        {/* {stage.extraMaterial && (
+          <Box
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            mx={-0.5}
+            mt={-0.5}
+            mb={-1}
+          >
+            <Typography>Extra drop:</Typography>
+            <Box ml={0.5}>
+              <ItemBase name={stage.extraMaterial} size={36} />
+            </Box>
+          </Box>
+        )} */}
+      </>
+    );
+  }
+
+  return (
+    <Box mt={1}>
+      <div className={commonClasses.itemInfoSection}>
+        <Divider className={commonClasses.itemInfoSectionDivider} />
+        <Typography
+          component="h4"
+          className={commonClasses.itemInfoSectionHeader}
+        >
+          Recommended {hasTwoRecommended ? "stages" : "stage"}
+        </Typography>
+      </div>
+      <Box whiteSpace="nowrap" textAlign="center">
+        <Box mt={1}>
+          <Grid container spacing={2}>
+            {stages.mostEfficient && (
+              <Grid item className={classes.stageType} xs>
+                {hasTwoRecommended && <Typography>Most efficient</Typography>}
+                {renderStage(stages.mostEfficient)}
+              </Grid>
+            )}
+            {stages.leastSanity && (
+              <Grid item className={classes.stageType} xs>
+                {hasTwoRecommended && <Typography>Least sanity</Typography>}
+                {renderStage(stages.leastSanity)}
+              </Grid>
+            )}
+          </Grid>
+        </Box>
+      </Box>
+    </Box>
+  );
+}
 
 const craftingResultIconFontSize = "3rem";
 const useIngredientForInfoStyles = makeStyles({
@@ -267,11 +282,50 @@ type ItemInfoPopoverContentProps = Item & {
   ingredientFor?: Ingredient[];
 };
 
+interface QueryNode {
+  stages: {
+    leastSanity: Stage | null;
+    mostEfficient: Stage | null;
+  };
+  name: string;
+}
+
 const ItemInfoPopoverContent = React.memo(function ItemInfoPopoverContent(
   props: ItemInfoPopoverContentProps
 ): React.ReactElement {
   const { name, tier, ingredients, ingredientFor } = props;
   const classes = useStyles();
+  const data = useStaticQuery(graphql`
+    query {
+      allItemsJson {
+        nodes {
+          stages {
+            leastSanity {
+              dropRate
+              itemSanityCost
+              stageName
+              stageSanityCost
+            }
+            mostEfficient {
+              dropRate
+              itemSanityCost
+              stageName
+              stageSanityCost
+            }
+          }
+          name
+        }
+      }
+    }
+  `);
+  const itemStages = Object.fromEntries(
+    data.allItemsJson.nodes
+      .filter(
+        (node: QueryNode) =>
+          node.stages && (node.stages.leastSanity || node.stages.mostEfficient)
+      )
+      .map((node: QueryNode) => [node.name, node.stages])
+  );
 
   return (
     <Card className={classes.itemInfoCard}>
@@ -292,10 +346,7 @@ const ItemInfoPopoverContent = React.memo(function ItemInfoPopoverContent(
             ingredientFor={ingredientFor}
           />
         )}
-        {/* {MATERIALS[name]!.recommendedStages &&
-          !MATERIALS[name]!.craftingRecommended && (
-            <StageInfo stages={MATERIALS[name]!.recommendedStages!} />
-          )} */}
+        {itemStages[name] && <StageInfo stages={itemStages[name]} />}
       </CardContent>
     </Card>
   );
