@@ -112,7 +112,7 @@ function Planner(): React.ReactElement {
         operator!.rarity <= 3
           ? []
           : // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-            operator!.skills.flatMap((skill) => skill.masteries);
+            operator!.skills!.flatMap((skill) => skill.masteries);
       const goalsToAdd = [
         // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         ...operator!.elite,
@@ -129,11 +129,13 @@ function Planner(): React.ReactElement {
           const key = `${operatorName}${goal.goalName}`;
           const goalObject = { operatorName, ...goal };
           if (isMasteryGoal(goal)) {
-            const slot = parseInt(goal.goalShortName.charAt(1), 10); // FIXME hacky
+            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+            const slot = parseInt(goal.goalShortName!.charAt(1), 10); // FIXME hacky
             return [
               key,
               Object.assign(goalObject, {
-                skill: operator?.skills.find((skill) => skill.slot === slot),
+                // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+                skill: operator!.skills!.find((skill) => skill.slot === slot),
               }),
             ];
           }
@@ -161,7 +163,9 @@ function Planner(): React.ReactElement {
     setOperatorGoals([]);
   };
 
-  const handleGoalsChanged = (e) => {
+  const handleGoalsChanged = (
+    e: React.ChangeEvent<{ name?: string; value: unknown }>
+  ) => {
     setGoalNames((e.target.value as string[]).filter((name) => !!name));
   };
 
@@ -213,7 +217,7 @@ function Planner(): React.ReactElement {
         : [
             <ListSubheader key="masteries">Masteries</ListSubheader>,
             // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-            ...operator!.skills.map((skill) =>
+            ...operator!.skills!.map((skill) =>
               skill.masteries.map((goal) => renderGoalMenuItem(goal, skill))
             ),
           ];
