@@ -1,0 +1,842 @@
+[
+  {
+    "name": "Lancet-2",
+    "rarity": 1,
+    "tags": [
+      "Healing",
+      "Ranged",
+      "Medic",
+      "Robot"
+    ]
+  },
+  {
+    "name": "Castle-3",
+    "rarity": 1,
+    "tags": [
+      "Support",
+      "Melee",
+      "Guard",
+      "Robot"
+    ]
+  },
+  {
+    "name": "THRM-EX",
+    "rarity": 1,
+    "tags": [
+      "Nuker",
+      "Melee",
+      "Specialist",
+      "Robot"
+    ]
+  },
+  {
+    "name": "Yato",
+    "rarity": 2,
+    "tags": [
+      "Starter",
+      "Melee",
+      "Vanguard",
+      "Starter"
+    ]
+  },
+  {
+    "name": "Noir Corne",
+    "rarity": 2,
+    "tags": [
+      "Starter",
+      "Melee",
+      "Defender",
+      "Starter"
+    ]
+  },
+  {
+    "name": "Rangers",
+    "rarity": 2,
+    "tags": [
+      "Starter",
+      "Ranged",
+      "Sniper",
+      "Starter"
+    ]
+  },
+  {
+    "name": "Durin",
+    "rarity": 2,
+    "tags": [
+      "Starter",
+      "Ranged",
+      "Caster",
+      "Starter"
+    ]
+  },
+  {
+    "name": "12F",
+    "rarity": 2,
+    "tags": [
+      "Starter",
+      "Ranged",
+      "Caster",
+      "Starter"
+    ]
+  },
+  {
+    "name": "Adnachiel",
+    "rarity": 3,
+    "tags": [
+      "DPS",
+      "Ranged",
+      "Sniper"
+    ]
+  },
+  {
+    "name": "Fang",
+    "rarity": 3,
+    "tags": [
+      "DP-Recovery",
+      "Melee",
+      "Vanguard"
+    ]
+  },
+  {
+    "name": "Vanilla",
+    "rarity": 3,
+    "tags": [
+      "DP-Recovery",
+      "Melee",
+      "Vanguard"
+    ]
+  },
+  {
+    "name": "Plume",
+    "rarity": 3,
+    "tags": [
+      "DPS",
+      "DP-Recovery",
+      "Melee",
+      "Vanguard"
+    ]
+  },
+  {
+    "name": "Melantha",
+    "rarity": 3,
+    "tags": [
+      "DPS",
+      "Survival",
+      "Melee",
+      "Guard"
+    ]
+  },
+  {
+    "name": "Beagle",
+    "rarity": 3,
+    "tags": [
+      "Defense",
+      "Melee",
+      "Defender"
+    ]
+  },
+  {
+    "name": "Kroos",
+    "rarity": 3,
+    "tags": [
+      "DPS",
+      "Ranged",
+      "Sniper"
+    ]
+  },
+  {
+    "name": "Lava",
+    "rarity": 3,
+    "tags": [
+      "AoE",
+      "Ranged",
+      "Caster"
+    ]
+  },
+  {
+    "name": "Hibiscus",
+    "rarity": 3,
+    "tags": [
+      "Healing",
+      "Ranged",
+      "Medic"
+    ]
+  },
+  {
+    "name": "Ansel",
+    "rarity": 3,
+    "tags": [
+      "Healing",
+      "Ranged",
+      "Medic"
+    ]
+  },
+  {
+    "name": "Steward",
+    "rarity": 3,
+    "tags": [
+      "DPS",
+      "Ranged",
+      "Caster"
+    ]
+  },
+  {
+    "name": "Orchid",
+    "rarity": 3,
+    "tags": [
+      "Slow",
+      "Ranged",
+      "Supporter"
+    ]
+  },
+  {
+    "name": "Catapult",
+    "rarity": 3,
+    "tags": [
+      "AoE",
+      "Ranged",
+      "Sniper"
+    ]
+  },
+  {
+    "name": "Midnight",
+    "rarity": 3,
+    "tags": [
+      "DPS",
+      "Melee",
+      "Guard"
+    ]
+  },
+  {
+    "name": "Popukar",
+    "rarity": 3,
+    "tags": [
+      "AoE",
+      "Survival",
+      "Melee",
+      "Guard"
+    ]
+  },
+  {
+    "name": "Spot",
+    "rarity": 3,
+    "tags": [
+      "Defense",
+      "Healing",
+      "Melee",
+      "Defender"
+    ]
+  },
+  {
+    "name": "Estelle",
+    "rarity": 4,
+    "tags": [
+      "AoE",
+      "Survival",
+      "Melee",
+      "Guard"
+    ]
+  },
+  {
+    "name": "Haze",
+    "rarity": 4,
+    "tags": [
+      "DPS",
+      "Debuff",
+      "Ranged",
+      "Caster"
+    ]
+  },
+  {
+    "name": "Gitano",
+    "rarity": 4,
+    "tags": [
+      "AoE",
+      "Ranged",
+      "Caster"
+    ]
+  },
+  {
+    "name": "Jessica",
+    "rarity": 4,
+    "tags": [
+      "DPS",
+      "Survival",
+      "Ranged",
+      "Sniper"
+    ]
+  },
+  {
+    "name": "Meteor",
+    "rarity": 4,
+    "tags": [
+      "DPS",
+      "Debuff",
+      "Ranged",
+      "Sniper"
+    ]
+  },
+  {
+    "name": "Shirayuki",
+    "rarity": 4,
+    "tags": [
+      "AoE",
+      "Slow",
+      "Ranged",
+      "Sniper"
+    ]
+  },
+  {
+    "name": "Scavenger",
+    "rarity": 4,
+    "tags": [
+      "DP-Recovery",
+      "DPS",
+      "Melee",
+      "Vanguard"
+    ]
+  },
+  {
+    "name": "Vigna",
+    "rarity": 4,
+    "tags": [
+      "DPS",
+      "DP-Recovery",
+      "Melee",
+      "Vanguard"
+    ]
+  },
+  {
+    "name": "Dobermann",
+    "rarity": 4,
+    "tags": [
+      "DPS",
+      "Support",
+      "Melee",
+      "Guard"
+    ]
+  },
+  {
+    "name": "Matoimaru",
+    "rarity": 4,
+    "tags": [
+      "Survival",
+      "DPS",
+      "Melee",
+      "Guard"
+    ]
+  },
+  {
+    "name": "Frostleaf",
+    "rarity": 4,
+    "tags": [
+      "Slow",
+      "DPS",
+      "Melee",
+      "Guard"
+    ]
+  },
+  {
+    "name": "Mousse",
+    "rarity": 4,
+    "tags": [
+      "DPS",
+      "Melee",
+      "Guard"
+    ]
+  },
+  {
+    "name": "Gravel",
+    "rarity": 4,
+    "tags": [
+      "Fast-Redeploy",
+      "Defense",
+      "Melee",
+      "Specialist"
+    ]
+  },
+  {
+    "name": "Rope",
+    "rarity": 4,
+    "tags": [
+      "Shift",
+      "Melee",
+      "Specialist"
+    ]
+  },
+  {
+    "name": "Myrrh",
+    "rarity": 4,
+    "tags": [
+      "Healing",
+      "Ranged",
+      "Medic"
+    ]
+  },
+  {
+    "name": "Perfumer",
+    "rarity": 4,
+    "tags": [
+      "Healing",
+      "Ranged",
+      "Medic"
+    ]
+  },
+  {
+    "name": "Matterhorn",
+    "rarity": 4,
+    "tags": [
+      "Defense",
+      "Melee",
+      "Defender"
+    ]
+  },
+  {
+    "name": "Cuora",
+    "rarity": 4,
+    "tags": [
+      "Defense",
+      "Melee",
+      "Defender"
+    ]
+  },
+  {
+    "name": "Gummy",
+    "rarity": 4,
+    "tags": [
+      "Defense",
+      "Healing",
+      "Melee",
+      "Defender"
+    ]
+  },
+  {
+    "name": "Earthspirit",
+    "rarity": 4,
+    "tags": [
+      "Slow",
+      "Ranged",
+      "Supporter"
+    ]
+  },
+  {
+    "name": "Shaw",
+    "rarity": 4,
+    "tags": [
+      "Shift",
+      "Melee",
+      "Specialist"
+    ]
+  },
+  {
+    "name": "Beehunter",
+    "rarity": 4,
+    "tags": [
+      "DPS",
+      "Melee",
+      "Guard"
+    ]
+  },
+  {
+    "name": "Greyy",
+    "rarity": 4,
+    "tags": [
+      "AoE",
+      "Slow",
+      "Ranged",
+      "Caster"
+    ]
+  },
+  {
+    "name": "Indra",
+    "rarity": 5,
+    "tags": [
+      "DPS",
+      "Survival",
+      "Melee",
+      "Guard",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Vulcan",
+    "rarity": 5,
+    "tags": [
+      "Survival",
+      "Defense",
+      "DPS",
+      "Melee",
+      "Defender",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Ptilopsis",
+    "rarity": 5,
+    "tags": [
+      "Healing",
+      "Support",
+      "Ranged",
+      "Medic",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Zima",
+    "rarity": 5,
+    "tags": [
+      "DP-Recovery",
+      "Support",
+      "Melee",
+      "Vanguard",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Texas",
+    "rarity": 5,
+    "tags": [
+      "DP-Recovery",
+      "Crowd-Control",
+      "Melee",
+      "Vanguard",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Specter",
+    "rarity": 5,
+    "tags": [
+      "AoE",
+      "Survival",
+      "Melee",
+      "Guard",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Blue Poison",
+    "rarity": 5,
+    "tags": [
+      "DPS",
+      "Ranged",
+      "Sniper",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Platinum",
+    "rarity": 5,
+    "tags": [
+      "DPS",
+      "Ranged",
+      "Sniper",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Meteorite",
+    "rarity": 5,
+    "tags": [
+      "AoE",
+      "Debuff",
+      "Ranged",
+      "Sniper",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Mayer",
+    "rarity": 5,
+    "tags": [
+      "Summon",
+      "Crowd-Control",
+      "Ranged",
+      "Supporter",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Silence",
+    "rarity": 5,
+    "tags": [
+      "Healing",
+      "Ranged",
+      "Medic",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Warfarin",
+    "rarity": 5,
+    "tags": [
+      "Healing",
+      "Support",
+      "Ranged",
+      "Medic",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Nearl",
+    "rarity": 5,
+    "tags": [
+      "Defense",
+      "Healing",
+      "Melee",
+      "Defender",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Projekt Red",
+    "rarity": 5,
+    "tags": [
+      "Fast-Redeploy",
+      "Crowd-Control",
+      "Melee",
+      "Specialist",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Liskarm",
+    "rarity": 5,
+    "tags": [
+      "Defense",
+      "DPS",
+      "Melee",
+      "Defender",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Croissant",
+    "rarity": 5,
+    "tags": [
+      "Defense",
+      "Shift",
+      "Melee",
+      "Defender",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Provence",
+    "rarity": 5,
+    "tags": [
+      "DPS",
+      "Ranged",
+      "Sniper",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Firewatch",
+    "rarity": 5,
+    "tags": [
+      "DPS",
+      "Nuker",
+      "Ranged",
+      "Sniper",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Cliffheart",
+    "rarity": 5,
+    "tags": [
+      "Shift",
+      "DPS",
+      "Melee",
+      "Specialist",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Pramanix",
+    "rarity": 5,
+    "tags": [
+      "Debuff",
+      "Ranged",
+      "Supporter",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Istina",
+    "rarity": 5,
+    "tags": [
+      "Slow",
+      "DPS",
+      "Ranged",
+      "Supporter",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Manticore",
+    "rarity": 5,
+    "tags": [
+      "DPS",
+      "Survival",
+      "Melee",
+      "Specialist",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "FEater",
+    "rarity": 5,
+    "tags": [
+      "Shift",
+      "Slow",
+      "Melee",
+      "Specialist",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Nightmare",
+    "rarity": 5,
+    "tags": [
+      "DPS",
+      "Healing",
+      "Slow",
+      "Ranged",
+      "Caster",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Swire",
+    "rarity": 5,
+    "tags": [
+      "DPS",
+      "Support",
+      "Melee",
+      "Guard",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Exusiai",
+    "rarity": 6,
+    "tags": [
+      "DPS",
+      "Ranged",
+      "Sniper",
+      "Top Operator",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Siege",
+    "rarity": 6,
+    "tags": [
+      "DP-Recovery",
+      "DPS",
+      "Melee",
+      "Vanguard",
+      "Top Operator",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Ifrit",
+    "rarity": 6,
+    "tags": [
+      "AoE",
+      "Debuff",
+      "Ranged",
+      "Caster",
+      "Top Operator",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Shining",
+    "rarity": 6,
+    "tags": [
+      "Healing",
+      "Support",
+      "Ranged",
+      "Medic",
+      "Top Operator",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Nightingale",
+    "rarity": 6,
+    "tags": [
+      "Healing",
+      "Support",
+      "Ranged",
+      "Medic",
+      "Top Operator",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Hoshiguma",
+    "rarity": 6,
+    "tags": [
+      "Defense",
+      "DPS",
+      "Melee",
+      "Defender",
+      "Top Operator",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Saria",
+    "rarity": 6,
+    "tags": [
+      "Defense",
+      "Healing",
+      "Support",
+      "Melee",
+      "Defender",
+      "Top Operator",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "SilverAsh",
+    "rarity": 6,
+    "tags": [
+      "DPS",
+      "Support",
+      "Melee",
+      "Guard",
+      "Top Operator",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Skadi",
+    "rarity": 6,
+    "tags": [
+      "DPS",
+      "Survival",
+      "Melee",
+      "Guard",
+      "Top Operator",
+      "Senior Operator"
+    ]
+  },
+  {
+    "name": "Ch'en",
+    "rarity": 6,
+    "tags": [
+      "Nuker",
+      "DPS",
+      "Melee",
+      "Guard",
+      "Top Operator",
+      "Senior Operator"
+    ]
+  }
+]
