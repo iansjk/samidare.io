@@ -48,7 +48,7 @@ const GoalOverview = React.memo(function GoalOverview(
 ): React.ReactElement {
   const data = useStaticQuery(graphql`
     query {
-      allItemsJson(sort: { order: ASC, fields: tier }) {
+      allItemsJson(sort: { order: DESC, fields: tier }) {
         nodes {
           name
           tier
