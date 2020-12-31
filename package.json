@@ -15,7 +15,7 @@
     "ak:update:img": "git submodule update --remote && ts-node-script scripts/images.ts",
     "ak:update:items": "git submodule update --remote && ts-node-script scripts/items.ts",
     "ak:update:recruitment": "git submodule update --remote && ts-node-script scripts/recruitment.ts",
-    "netlify:deploy": "yarn build && yarn ak:update && mv public arknights && mkdir public && mv arknights public"
+    "netlify:deploy": "yarn ak:update && yarn build && mv public arknights && mkdir public && mv arknights public"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.2",
