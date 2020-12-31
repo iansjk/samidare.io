@@ -9,7 +9,7 @@
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "cypress run",
     "ak:update": "yarn ak:update:img && yarn ak:update:ops && yarn ak:update:items && yarn ak:update:recruitment",
     "ak:update:ops": "git submodule update --remote && ts-node-script scripts/operators.ts",
     "ak:update:img": "git submodule update --remote && ts-node-script scripts/images.ts",
