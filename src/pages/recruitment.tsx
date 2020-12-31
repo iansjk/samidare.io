@@ -70,7 +70,8 @@ function Recruitment(): React.ReactElement {
     tagCombinations.forEach((tagCombination) => {
       if (
         tagCombination.filter((tag) => recruitmentData.tags.includes(tag))
-          .length === tagCombination.length
+          .length === tagCombination.length &&
+        (recruitmentData.rarity < 6 || tagCombination.includes("Top Operator"))
       ) {
         matchingOperators[tagCombination.join(",")] = [
           ...(matchingOperators[tagCombination.join(",")] || []),
