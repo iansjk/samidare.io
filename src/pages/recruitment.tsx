@@ -115,14 +115,19 @@ function Recruitment(): React.ReactElement {
         </Box>
       ))}
       <Divider />
-      <dl>
-        {Object.entries(matchingOperators).map(([tagSet, recruitments]) => (
-          <>
-            <dt>{tagSet}</dt>
-            <dd>{recruitments.map((r) => r.name).join(", ")}</dd>
-          </>
-        ))}
-      </dl>
+        <dl>
+          {Object.entries(matchingOperators)
+            .sort(
+              ([tagSetA, _], [tagSetB, __]) =>
+                tagSetB.split(",").length - tagSetA.split(",").length
+            )
+            .map(([tagSet, recruitments]) => (
+              <>
+                <dt>{tagSet}</dt>
+                <dd>{recruitments.map((r) => r.name).join(", ")}</dd>
+              </>
+            ))}
+        </dl>
     </>
   );
 }
