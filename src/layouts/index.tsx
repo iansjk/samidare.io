@@ -7,6 +7,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 import AppFooter from "../components/AppFooter";
 
 const useStyles = makeStyles({
@@ -24,6 +25,15 @@ interface Props {
 function Layout(props: Props): React.ReactElement {
   const { children } = props;
   const classes = useStyles();
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
 
   return (
     <div className={classes.appContainer}>
@@ -31,7 +41,7 @@ function Layout(props: Props): React.ReactElement {
         <AppBar>
           <Toolbar>
             <Typography component="h1" variant="h4">
-              Arknights Materials Checklist
+              {data.site.siteMetadata.title}
             </Typography>
           </Toolbar>
         </AppBar>
