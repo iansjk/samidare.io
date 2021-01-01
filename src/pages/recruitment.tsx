@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import {
   Box,
   Chip,
-  Divider,
   Grid,
   makeStyles,
   TextField,
@@ -67,6 +66,10 @@ const useStyles = makeStyles((theme) => ({
   recruitmentResult: {
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(2),
+    "& ~ &": {
+      borderTop: "1px solid #4d4d4d",
+      paddingTop: theme.spacing(2),
+    },
   },
 }));
 
@@ -113,23 +116,21 @@ function Recruitment(): React.ReactElement {
 
   return (
     <>
-      <Box clone mb={2}>
-        <Autocomplete
-          options={Object.values(tagsByCategory).flat()}
-          multiple
-          autoHighlight
-          disableCloseOnSelect
-          renderInput={(params) => (
-            <TextField
-              {...params}
-              label="Available recruitment tags"
-              variant="outlined"
-            />
-          )}
-          value={activeTags}
-          onChange={handleTagsChanged}
-        />
-      </Box>
+      <Autocomplete
+        options={Object.values(tagsByCategory).flat()}
+        multiple
+        autoHighlight
+        disableCloseOnSelect
+        renderInput={(params) => (
+          <TextField
+            {...params}
+            label="Available recruitment tags"
+            variant="outlined"
+          />
+        )}
+        value={activeTags}
+        onChange={handleTagsChanged}
+      />
       {Object.entries(matchingOperators)
         .sort(
           ([tagSetA, opSetA], [tagSetB, opSetB]) =>
