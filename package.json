@@ -7,7 +7,7 @@
     "build": "gatsby build --prefix-paths",
     "start": "yarn develop",
     "develop": "gatsby develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
     "test": "cypress run",
     "ak:update": "yarn ak:update:img && yarn ak:update:ops && yarn ak:update:items && yarn ak:update:recruitment",
