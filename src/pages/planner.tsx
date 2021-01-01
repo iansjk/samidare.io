@@ -232,12 +232,7 @@ function Planner(): React.ReactElement {
           value={operatorName}
           onChange={handleOperatorNameChanged}
           renderInput={(params) => (
-            <TextField
-              // eslint-disable-next-line react/jsx-props-no-spreading
-              {...params}
-              label="Operator name"
-              variant="outlined"
-            />
+            <TextField {...params} label="Operator name" variant="outlined" />
           )}
         />
       </Grid>

@@ -28,6 +28,13 @@ module.exports = {
       },
     ],
     "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": [
+      "error",
+      {
+        explicitSpread: "ignore",
+        exceptions: ["ButtonBase", "Popover", "TextField"],
+      },
+    ],
     "prettier/prettier": [
       "error",
       {

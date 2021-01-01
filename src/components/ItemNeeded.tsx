@@ -113,7 +113,6 @@ const ItemNeeded = React.memo(function ItemNeeded({
         <Box width="100%" textAlign="center">
           <ButtonBase
             className={classes.itemButton}
-            // eslint-disable-next-line react/jsx-props-no-spreading
             {...bindTrigger(popoverState)}
             disableRipple
           >
@@ -140,7 +139,6 @@ const ItemNeeded = React.memo(function ItemNeeded({
             enter: 250,
             exit: 0,
           }}
-          // eslint-disable-next-line react/jsx-props-no-spreading
           {...bindPopover(popoverState)}
         >
           <ItemInfoPopoverContent
