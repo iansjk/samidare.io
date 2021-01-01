@@ -10,7 +10,6 @@ import {
   ListSubheader,
   NoSsr,
 } from "@material-ui/core";
-import Helmet from "react-helmet";
 import AddIcon from "@material-ui/icons/Add";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import React, { useState } from "react";
@@ -31,11 +30,6 @@ function Planner(): React.ReactElement {
   const data = useStaticQuery(
     graphql`
       query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
         allOperatorsJson(sort: { fields: name, order: ASC }) {
           nodes {
             name
@@ -83,7 +77,6 @@ function Planner(): React.ReactElement {
       }
     `
   );
-  const { title } = data.site.siteMetadata;
   const operators: Operator[] = data.allOperatorsJson.nodes;
   const [operatorName, setOperatorName] = useState<string | null>(null);
   const [goalNames, setGoalNames] = useState<string[]>([] as string[]);
