@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { Box, Button, Divider } from "@material-ui/core";
+import { Box, Button, Divider, NoSsr, TextField } from "@material-ui/core";
 import { Combination } from "js-combinatorics";
+import Autocomplete from "@material-ui/lab/Autocomplete";
 
 const tagsByCategory = {
   rarity: ["Top Operator", "Senior Operator", "Starter", "Robot"],
@@ -91,31 +92,25 @@ function Recruitment(): React.ReactElement {
 
   return (
     <>
-      {Object.entries(tagsByCategory).map(([category, tagnames]) => (
-        <Box mb={2}>
-          <h3>{category}</h3>
-          <div>
-            {tagnames.map((tag: string) => {
-              const active =
-                activeTags.find((existingTag) => existingTag === tag) != null;
-              return (
-                <Box clone mr={1} mb={1} key={tag}>
-                  <Button
-                    color="primary"
-                    onClick={() => handleTagToggle(tag)}
-                    variant={active ? "contained" : "outlined"}
-                    disabled={activeTags.length === 5 && !active}
-                  >
-                    {tag}
-                  </Button>
-                </Box>
-              );
-            })}
-          </div>
-        </Box>
-      ))}
+      <Autocomplete
+        options={Object.values(tagsByCategory).flat()}
+        multiple
+        autoHighlight
+        disableCloseOnSelect
+        renderInput={(params) => (
+          <TextField
+            // eslint-disable-next-line react/jsx-props-no-spreading
+            {...params}
+            label="Available recruitment tags"
+            variant="outlined"
+          />
+        )}
+        value={activeTags}
+        onChange={(_, value) => setActiveTags(value)}
+      />
       <Divider />
-        <dl>
+      <dl>
+        <NoSsr>
           {Object.entries(matchingOperators)
             .sort(
               ([tagSetA, _], [tagSetB, __]) =>
@@ -127,7 +122,8 @@ function Recruitment(): React.ReactElement {
                 <dd>{recruitments.map((r) => r.name).join(", ")}</dd>
               </>
             ))}
-        </dl>
+        </NoSsr>
+      </dl>
     </>
   );
 }
