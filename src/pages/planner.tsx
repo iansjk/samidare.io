@@ -230,72 +230,67 @@ function Planner(): React.ReactElement {
   };
 
   return (
-    <>
-      <Helmet>
-        <title>{title} | Planner</title>
-      </Helmet>
-      <Grid component="main" container spacing={2}>
-        <Grid item xs={12} lg={3}>
-          <Autocomplete
-            options={operators.map((op) => op.name)}
-            autoComplete
-            autoHighlight
-            value={operatorName}
-            onChange={handleOperatorNameChanged}
-            renderInput={(params) => (
-              <TextField
-                // eslint-disable-next-line react/jsx-props-no-spreading
-                {...params}
-                label="Operator name"
-                variant="outlined"
-              />
-            )}
-          />
-        </Grid>
-        <Grid item xs={12} lg={9}>
-          <Box display="flex">
-            <Box mr={2} flexGrow={1} minWidth={0} width="100%">
-              <FormControl variant="outlined" fullWidth>
-                <InputLabel id="goal-select">Goals</InputLabel>
-                <Select
-                  id="goal-select"
-                  autoWidth
-                  multiple
-                  displayEmpty
-                  value={goalNames}
-                  MenuProps={goalSelectMenuProps}
-                  renderValue={(selected: unknown) =>
-                    (selected as string[])
-                      .sort((a, b) => a.localeCompare(b))
-                      .join(", ")
-                  }
-                  onChange={handleGoalsChanged}
-                >
-                  {renderGoalSelectOptions()}
-                </Select>
-              </FormControl>
-            </Box>
-            <Button
-              color="primary"
-              variant="contained"
-              startIcon={<AddIcon />}
-              onClick={handleAddGoals}
-            >
-              Add
-            </Button>
-          </Box>
-        </Grid>
-        <Grid item xs={12}>
-          <NoSsr>
-            <GoalOverview
-              goals={operatorGoals}
-              onGoalDeleted={handleGoalDeleted}
-              onClearAllGoals={handleClearAllGoals}
+    <Grid component="main" container spacing={2}>
+      <Grid item xs={12} lg={3}>
+        <Autocomplete
+          options={operators.map((op) => op.name)}
+          autoComplete
+          autoHighlight
+          value={operatorName}
+          onChange={handleOperatorNameChanged}
+          renderInput={(params) => (
+            <TextField
+              // eslint-disable-next-line react/jsx-props-no-spreading
+              {...params}
+              label="Operator name"
+              variant="outlined"
             />
-          </NoSsr>
-        </Grid>
+          )}
+        />
       </Grid>
-    </>
+      <Grid item xs={12} lg={9}>
+        <Box display="flex">
+          <Box mr={2} flexGrow={1} minWidth={0} width="100%">
+            <FormControl variant="outlined" fullWidth>
+              <InputLabel id="goal-select">Goals</InputLabel>
+              <Select
+                id="goal-select"
+                autoWidth
+                multiple
+                displayEmpty
+                value={goalNames}
+                MenuProps={goalSelectMenuProps}
+                renderValue={(selected: unknown) =>
+                  (selected as string[])
+                    .sort((a, b) => a.localeCompare(b))
+                    .join(", ")
+                }
+                onChange={handleGoalsChanged}
+              >
+                {renderGoalSelectOptions()}
+              </Select>
+            </FormControl>
+          </Box>
+          <Button
+            color="primary"
+            variant="contained"
+            startIcon={<AddIcon />}
+            onClick={handleAddGoals}
+          >
+            Add
+          </Button>
+        </Box>
+      </Grid>
+      <Grid item xs={12}>
+        <NoSsr>
+          <GoalOverview
+            goals={operatorGoals}
+            onGoalDeleted={handleGoalDeleted}
+            onClearAllGoals={handleClearAllGoals}
+          />
+        </NoSsr>
+      </Grid>
+    </Grid>
   );
 }
 export default Planner;
