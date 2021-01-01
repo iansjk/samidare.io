@@ -24,10 +24,16 @@ interface Props {
   uri: string;
 }
 
-const PageTitles: Record<string, string> = {
-  "/planner": "Operator Planner",
-  "/recruitment": "Recruitment Calculator",
-};
+function getPageTitle(title: string, uri: string): string | null {
+  let subtitle = null;
+  if (uri.endsWith("planner")) {
+    subtitle = "Operator Planner";
+  }
+  if (uri.endsWith("recruitment")) {
+    subtitle = "Recruitment Calculator";
+  }
+  return `${subtitle ? `${subtitle} · ` : ""}${title}`;
+}
 
 function Layout(props: Props): React.ReactElement {
   const { children, uri } = props;
@@ -42,7 +48,7 @@ function Layout(props: Props): React.ReactElement {
       }
     }
   `).site.siteMetadata;
-  const pageTitle = `${PageTitles[uri]} · ${title}`;
+  const pageTitle = getPageTitle(title, uri);
 
   return (
     <>
