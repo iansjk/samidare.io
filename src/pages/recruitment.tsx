@@ -82,14 +82,11 @@ function Recruitment(): React.ReactElement {
     });
   });
 
-  function handleTagToggle(tag: string) {
-    if (!activeTags.find((existingTag) => existingTag === tag)) {
-      setActiveTags([...activeTags, tag]);
-    } else {
-      setActiveTags(activeTags.filter((existingTag) => existingTag !== tag));
+  function handleTagsChanged(_: unknown, value: string[]) {
+    if (value.length <= 5) {
+      setActiveTags(value);
     }
   }
-
   return (
     <>
       <Autocomplete
@@ -106,7 +103,7 @@ function Recruitment(): React.ReactElement {
           />
         )}
         value={activeTags}
-        onChange={(_, value) => setActiveTags(value)}
+        onChange={handleTagsChanged}
       />
       <Divider />
       <dl>
