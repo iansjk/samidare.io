@@ -1,4 +1,4 @@
-import { Chip, Avatar, makeStyles } from "@material-ui/core";
+import { Chip, Avatar, makeStyles, Tooltip } from "@material-ui/core";
 import React from "react";
 import { getOperatorImagePath } from "../utils";
 
@@ -43,15 +43,22 @@ function RecruitableOperatorChip({
   const chipClasses = useChipStyles();
 
   return (
-    <Chip
-      className={`rarity-${rarity}`}
-      classes={{
-        root: chipClasses.root,
-        label: chipClasses.label,
-      }}
-      avatar={<Avatar alt="" src={getOperatorImagePath(name)} />}
-      label={name}
-    />
+    <Tooltip
+      title={tags.join(", ")}
+      arrow
+      placement="bottom"
+      enterTouchDelay={1}
+    >
+      <Chip
+        className={`rarity-${rarity}`}
+        classes={{
+          root: chipClasses.root,
+          label: chipClasses.label,
+        }}
+        avatar={<Avatar alt="" src={getOperatorImagePath(name)} />}
+        label={name}
+      />
+    </Tooltip>
   );
 }
 export default RecruitableOperatorChip;
