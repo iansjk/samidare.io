@@ -7,6 +7,8 @@ import {
   Grid,
   makeStyles,
   TextField,
+  useMediaQuery,
+  useTheme,
 } from "@material-ui/core";
 import { Combination } from "js-combinatorics";
 import Autocomplete from "@material-ui/lab/Autocomplete";
@@ -100,6 +102,8 @@ function Recruitment(): React.ReactElement {
     });
   });
   const classes = useStyles();
+  const theme = useTheme();
+  const isXSmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
 
   function handleTagsChanged(_: unknown, value: string[]) {
     if (value.length <= 5) {
@@ -136,20 +140,22 @@ function Recruitment(): React.ReactElement {
         .map(([tagSet, recruitments]) => (
           <>
             <Grid container className={classes.recruitmentResult} spacing={2}>
-              <Box clone justifyContent="flex-end">
-                <Grid item xs={2} className={classes.chipContainer}>
+              <Box
+                clone
+                justifyContent={isXSmallScreen ? "center" : "flex-end"}
+              >
+                <Grid item xs={12} sm={3} className={classes.chipContainer}>
                   {tagSet.split(",").map((tag) => (
-                    <Chip label={tag} />
+                    <Chip key={tag} label={tag} />
                   ))}
                 </Grid>
               </Box>
-              <Grid item xs={10} className={classes.chipContainer}>
+              <Grid item xs={12} sm={9} className={classes.chipContainer}>
                 {recruitments.map(({ name, rarity, tags }) => (
                   <RecruitableOperatorChip {...{ name, rarity, tags }} />
                 ))}
               </Grid>
             </Grid>
-            <Divider />
           </>
         ))}
     </>
