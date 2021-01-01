@@ -1,10 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { ARKNIGHTS_DATA_DIR } from "./globals";
-import {
-  gachaTags,
-  recruitDetail,
-} from "./ArknightsData/en-US/gamedata/excel/gacha_table.json";
+import { recruitDetail } from "./ArknightsData/en-US/gamedata/excel/gacha_table.json";
 import characterTable from "./ArknightsData/en-US/gamedata/excel/character_table.json";
 
 const nameOverrides: Record<string, string> = {
@@ -88,13 +85,4 @@ const recruitment = recruitableOperators.flatMap((opNames, rarity) =>
 fs.writeFileSync(
   path.join(ARKNIGHTS_DATA_DIR, "recruitment.json"),
   JSON.stringify(recruitment, null, 2)
-);
-
-fs.writeFileSync(
-  path.join(ARKNIGHTS_DATA_DIR, "recruitment-tags.json"),
-  JSON.stringify(
-    gachaTags.map((tag) => tag.tagName),
-    null,
-    2
-  )
 );
