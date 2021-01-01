@@ -1,8 +1,18 @@
 import React, { useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { Box, Button, Divider, NoSsr, TextField } from "@material-ui/core";
+import {
+  Box,
+  Chip,
+  Divider,
+  Grid,
+  makeStyles,
+  TextField,
+} from "@material-ui/core";
 import { Combination } from "js-combinatorics";
 import Autocomplete from "@material-ui/lab/Autocomplete";
+import RecruitableOperatorChip, {
+  RecruitableOperator,
+} from "../components/RecruitableOperatorChip";
 
 const tagsByCategory = {
   rarity: ["Top Operator", "Senior Operator", "Starter", "Robot"],
@@ -35,12 +45,6 @@ const tagsByCategory = {
   ],
 };
 
-interface RecruitmentData {
-  name: string;
-  rarity: number;
-  tags: string[];
-}
-
 function getTagCombinations(activeTags: string[]) {
   if (activeTags.length === 0) {
     return [];
@@ -50,6 +54,19 @@ function getTagCombinations(activeTags: string[]) {
     .map((_, i) => i + 1);
   return range.flatMap((k) => [...new Combination<string>(activeTags, k)]);
 }
+
+const useStyles = makeStyles((theme) => ({
+  chipContainer: {
+    gap: theme.spacing(1),
+    display: "flex",
+    alignItems: "center",
+    flexWrap: "wrap",
+  },
+  recruitmentResult: {
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(2),
+  },
+}));
 
 function Recruitment(): React.ReactElement {
   const data = useStaticQuery(graphql`
@@ -63,10 +80,11 @@ function Recruitment(): React.ReactElement {
       }
     }
   `);
-  const recruitableOperators: RecruitmentData[] = data.allRecruitmentJson.nodes;
+  const recruitableOperators: RecruitableOperator[] =
+    data.allRecruitmentJson.nodes;
   const [activeTags, setActiveTags] = useState<string[]>([]);
   const tagCombinations = getTagCombinations(activeTags);
-  const matchingOperators: Record<string, RecruitmentData[]> = {};
+  const matchingOperators: Record<string, RecruitableOperator[]> = {};
   recruitableOperators.forEach((recruitmentData) => {
     tagCombinations.forEach((tagCombination) => {
       if (
@@ -81,46 +99,59 @@ function Recruitment(): React.ReactElement {
       }
     });
   });
+  const classes = useStyles();
 
   function handleTagsChanged(_: unknown, value: string[]) {
     if (value.length <= 5) {
       setActiveTags(value);
     }
   }
+
   return (
     <>
-      <Autocomplete
-        options={Object.values(tagsByCategory).flat()}
-        multiple
-        autoHighlight
-        disableCloseOnSelect
-        renderInput={(params) => (
-          <TextField
-            // eslint-disable-next-line react/jsx-props-no-spreading
-            {...params}
-            label="Available recruitment tags"
-            variant="outlined"
-          />
-        )}
-        value={activeTags}
-        onChange={handleTagsChanged}
-      />
-      <Divider />
-      <dl>
-        <NoSsr>
-          {Object.entries(matchingOperators)
-            .sort(
-              ([tagSetA, _], [tagSetB, __]) =>
-                tagSetB.split(",").length - tagSetA.split(",").length
-            )
-            .map(([tagSet, recruitments]) => (
-              <>
-                <dt>{tagSet}</dt>
-                <dd>{recruitments.map((r) => r.name).join(", ")}</dd>
-              </>
-            ))}
-        </NoSsr>
-      </dl>
+      <Box clone mb={2}>
+        <Autocomplete
+          options={Object.values(tagsByCategory).flat()}
+          multiple
+          autoHighlight
+          disableCloseOnSelect
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Available recruitment tags"
+              variant="outlined"
+            />
+          )}
+          value={activeTags}
+          onChange={handleTagsChanged}
+        />
+      </Box>
+      {Object.entries(matchingOperators)
+        .sort(
+          ([tagSetA, opSetA], [tagSetB, opSetB]) =>
+            Math.min(...opSetB.map((op) => op.rarity)) -
+              Math.min(...opSetA.map((op) => op.rarity)) ||
+            tagSetB.split(",").length - tagSetA.split(",").length
+        )
+        .map(([tagSet, recruitments]) => (
+          <>
+            <Grid container className={classes.recruitmentResult} spacing={2}>
+              <Box clone justifyContent="flex-end">
+                <Grid item xs={2} className={classes.chipContainer}>
+                  {tagSet.split(",").map((tag) => (
+                    <Chip label={tag} />
+                  ))}
+                </Grid>
+              </Box>
+              <Grid item xs={10} className={classes.chipContainer}>
+                {recruitments.map(({ name, rarity, tags }) => (
+                  <RecruitableOperatorChip {...{ name, rarity, tags }} />
+                ))}
+              </Grid>
+            </Grid>
+            <Divider />
+          </>
+        ))}
     </>
   );
 }
