@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles, Container, Link, Typography } from "@material-ui/core";
+import clsx from "clsx";
 
 const useStyles = makeStyles((theme) => ({
   footer: {
@@ -41,11 +42,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function AppFooter(): React.ReactElement {
+export default function AppFooter({ className }): React.ReactElement {
   const classes = useStyles();
 
   return (
-    <Container component="footer" className={classes.footer}>
+    <Container
+      component="footer"
+      className={className ? clsx(className, classes.footer) : classes.footer}
+    >
       <ul className={classes.footerList}>
         <li>
           <Typography variant="body2">

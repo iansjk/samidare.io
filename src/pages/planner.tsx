@@ -223,7 +223,7 @@ function Planner(): React.ReactElement {
   };
 
   return (
-    <Grid component="main" container spacing={2}>
+    <Grid container spacing={2}>
       <Grid item xs={12} lg={3}>
         <Autocomplete
           options={operators.map((op) => op.name)}
