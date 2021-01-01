@@ -10,6 +10,7 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import AppFooter from "../components/AppFooter";
+import favicon from "../data/images/favicon.ico";
 
 const useStyles = makeStyles({
   appContainer: {
@@ -56,6 +57,7 @@ function Layout(props: Props): React.ReactElement {
         <html lang="en" />
         <title>{pageTitle}</title>
         <meta name="description" content={description} />
+        <link rel="icon" type="image/x-icon" href={favicon} />
       </Helmet>
       <div className={classes.appContainer}>
         <Container maxWidth="lg">
