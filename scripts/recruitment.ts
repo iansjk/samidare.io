@@ -7,6 +7,10 @@ import {
 } from "./ArknightsData/en-US/gamedata/excel/gacha_table.json";
 import characterTable from "./ArknightsData/en-US/gamedata/excel/character_table.json";
 
+const nameOverrides: Record<string, string> = {
+  "THRM-EX": "Thermal-EX",
+};
+
 function toTitleCase(string: string) {
   return [...string.toLowerCase()]
     .map((char, i) => (i === 0 ? char.toUpperCase() : char))
@@ -74,7 +78,7 @@ const recruitment = recruitableOperators.flatMap((opNames, rarity) =>
         tags.push("Senior Operator");
       }
       return {
-        name: opName,
+        name: nameOverrides[opName] ?? opName,
         rarity,
         tags,
       };
