@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
 function Recruitment(): React.ReactElement {
   const data = useStaticQuery(graphql`
     query {
-      allRecruitmentJson {
+      allRecruitmentJson(sort: { order: DESC, fields: rarity }) {
         nodes {
           name
           rarity
@@ -134,9 +134,16 @@ function Recruitment(): React.ReactElement {
       {Object.entries(matchingOperators)
         .sort(
           ([tagSetA, opSetA], [tagSetB, opSetB]) =>
-            Math.min(...opSetB.map((op) => op.rarity)) -
-              Math.min(...opSetA.map((op) => op.rarity)) ||
-            tagSetB.split(",").length - tagSetA.split(",").length
+            Math.min(
+              ...opSetB.map((op) =>
+                op.rarity < 3 ? Number.MAX_VALUE : op.rarity
+              )
+            ) -
+              Math.min(
+                ...opSetA.map((op) =>
+                  op.rarity < 3 ? Number.MAX_VALUE : op.rarity
+                )
+              ) || tagSetB.split(",").length - tagSetA.split(",").length
         )
         .map(([tagSet, recruitments]) => (
           <>
