@@ -134,15 +134,9 @@ function Recruitment(): React.ReactElement {
       {Object.entries(matchingOperators)
         .sort(
           ([tagSetA, opSetA], [tagSetB, opSetB]) =>
-            Math.min(
-              ...opSetB.map((op) =>
-                op.rarity < 3 ? Number.MAX_VALUE : op.rarity
-              )
-            ) -
+            Math.min(...opSetB.map((op) => (op.rarity === 1 ? 4 : op.rarity))) -
               Math.min(
-                ...opSetA.map((op) =>
-                  op.rarity < 3 ? Number.MAX_VALUE : op.rarity
-                )
+                ...opSetA.map((op) => (op.rarity === 1 ? 4 : op.rarity))
               ) || tagSetB.split(",").length - tagSetA.split(",").length
         )
         .map(([tagSet, recruitments]) => (
