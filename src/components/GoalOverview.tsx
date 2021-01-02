@@ -22,7 +22,6 @@ import lmdIcon from "../data/images/lmd.png";
 
 const useStyles = makeStyles((theme) => ({
   lmdIcon: {
-    height: "18px",
     marginLeft: theme.spacing(0.5),
     position: "relative",
     top: theme.spacing(0.25),
@@ -277,6 +276,8 @@ const GoalOverview = React.memo(function GoalOverview(
                         className={classes.lmdIcon}
                         src={lmdIcon}
                         alt="LMD"
+                        width={26}
+                        height={18}
                       />
                     </Typography>
                   </Grid>
