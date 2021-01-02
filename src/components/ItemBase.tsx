@@ -71,7 +71,7 @@ const ItemBase = React.memo(function ItemBase({
     <Box position="relative">
       <div className={classes.itemBackground} style={itemBackgroundStyle}>
         <Image
-          cloudName="samidare"
+          cloudName={process.env.GATSBY_CLOUDINARY_CLOUD_NAME}
           publicId={`/arknights/items/${slugify(name)}`}
           alt={name}
           width={size}

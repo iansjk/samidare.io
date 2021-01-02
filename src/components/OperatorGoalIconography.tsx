@@ -65,7 +65,7 @@ function OperatorGoalIconography(
     return (
       <Box mr={0.5}>
         <Image
-          cloudName="samidare"
+          cloudName={process.env.GATSBY_CLOUDINARY_CLOUD_NAME}
           publicId={`/arknights/skills/${iconFilename}`}
           alt={skill?.skillName}
           width={30}

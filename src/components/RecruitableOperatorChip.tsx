@@ -72,7 +72,7 @@ function RecruitableOperatorChip({
       <Hidden xlDown implementation="css" key="imageProvider">
         <Image
           ref={callbackRef}
-          cloudName="samidare"
+          cloudName={process.env.GATSBY_CLOUDINARY_CLOUD_NAME}
           publicId={getOperatorImagePublicId(name)}
           alt=""
           width={24}

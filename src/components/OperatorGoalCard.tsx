@@ -88,7 +88,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
       <Hidden xlDown implementation="css">
         <Image
           ref={callbackRef}
-          cloudName="samidare"
+          cloudName={process.env.GATSBY_CLOUDINARY_CLOUD_NAME}
           publicId={getOperatorImagePublicId(goal.operatorName, eliteLevel)}
           alt=""
         >
