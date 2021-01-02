@@ -1,5 +1,6 @@
-import { makeStyles, Box } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 import React from "react";
+import { Image, Transformation } from "cloudinary-react";
 import {
   EliteGoal,
   isEliteGoal,
@@ -13,12 +14,6 @@ import elite2 from "../data/images/elite2.png";
 import mastery1 from "../data/images/mastery1.png";
 import mastery2 from "../data/images/mastery2.png";
 import mastery3 from "../data/images/mastery3.png";
-
-const useStyles = makeStyles({
-  operatorIcon: {
-    width: 30,
-  },
-});
 
 function eliteImage(goal: EliteGoal) {
   if (goal.eliteLevel === 1) {
@@ -52,15 +47,15 @@ function OperatorGoalIconography(
   props: OperatorGoalIconographyProps
 ): React.ReactElement {
   const { goal, skill } = props;
-  const classes = useStyles();
 
   if (isEliteGoal(goal)) {
     return (
       <Box clone mr={0.25}>
         <img
-          className={classes.operatorIcon}
           src={eliteImage(goal)}
           alt={goal.goalName}
+          width={30}
+          height={30}
         />
       </Box>
     );
@@ -69,15 +64,21 @@ function OperatorGoalIconography(
     const iconFilename = skill?.iconId ?? skill?.skillId;
     return (
       <Box mr={0.5}>
-        <img
-          className={classes.operatorIcon}
-          src={`/arknights/images/skills/${iconFilename}.png`}
+        <Image
+          cloudName="samidare"
+          publicId={`/arknights/skills/${iconFilename}`}
           alt={skill?.skillName}
-        />
+          width={30}
+          height={30}
+          crop="fit"
+        >
+          <Transformation quality="auto" fetchFormat="auto" />
+        </Image>
         <img
-          className={classes.operatorIcon}
           src={masteryImage(goal)}
           alt={`Mastery ${goal.masteryLevel}`}
+          width={30}
+          height={30}
         />
       </Box>
     );

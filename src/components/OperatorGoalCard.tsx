@@ -8,11 +8,12 @@ import {
   Typography,
   useTheme,
   useMediaQuery,
+  Hidden,
 } from "@material-ui/core";
-import React from "react";
+import React, { useState } from "react";
 import CancelIcon from "@material-ui/icons/Cancel";
+import { Image, Transformation } from "cloudinary-react";
 import ItemStack from "./ItemStack";
-import { getOperatorImagePath } from "../utils";
 import OperatorGoalIconography from "./OperatorGoalIconography";
 import {
   isEliteGoal,
@@ -20,6 +21,7 @@ import {
   OperatorGoal,
   OperatorSkill,
 } from "../types";
+import { getOperatorImagePublicId } from "../utils";
 
 const useStyles = makeStyles((theme) => ({
   deleteIconButton: {
@@ -50,6 +52,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
   props: OperatorGoalCardProps
 ): React.ReactElement {
   const { goal, skill, onDelete } = props;
+  const [operatorImageUrl, setOperatorImageUrl] = useState("");
   const classes = useStyles();
   const theme = useTheme();
   const isXSmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
@@ -68,20 +71,30 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
     eliteLevel = goal.eliteLevel;
   }
   const goalCardStyle = {
-    backgroundImage: `linear-gradient(to right, transparent, ${
-      theme.palette.background.paper
-    } ${gradientEnd}), url("${getOperatorImagePath(
-      goal.operatorName,
-      eliteLevel
-    )}")`,
+    backgroundImage: `linear-gradient(to right, transparent, ${theme.palette.background.paper} ${gradientEnd}), url("${operatorImageUrl}")`,
     paddingLeft: shouldTextBeCollapsed ? "2rem" : "3rem",
     backgroundPosition: `${bgImagePositionX} center`,
   };
-
   const handleClick = React.useCallback(() => onDelete(goal), [goal, onDelete]);
+
+  const callbackRef = (ref) => {
+    if (ref) {
+      setOperatorImageUrl(ref.getAttributes().src);
+    }
+  };
 
   return (
     <Box mb={1} position="relative">
+      <Hidden xlDown implementation="css">
+        <Image
+          ref={callbackRef}
+          cloudName="samidare"
+          publicId={getOperatorImagePublicId(goal.operatorName, eliteLevel)}
+          alt=""
+        >
+          <Transformation quality="auto" fetchFormat="auto" />
+        </Image>
+      </Hidden>
       <Card className={classes.goalCard} style={goalCardStyle}>
         <CardContent>
           <Grid container className={classes.goalOuterGridContainer}>

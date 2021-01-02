@@ -1,6 +1,7 @@
 import { Box, makeStyles } from "@material-ui/core";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import React from "react";
+import { Image, Transformation } from "cloudinary-react";
 import slugify from "../utils";
 import { Item } from "../types";
 import tier1 from "../data/images/tier1.png";
@@ -32,9 +33,6 @@ const useStyles = makeStyles({
   itemBackground: {
     position: "relative",
     margin: "auto",
-  },
-  itemImage: {
-    objectFit: "contain",
   },
   overlay: {
     display: "flex",
@@ -72,16 +70,16 @@ const ItemBase = React.memo(function ItemBase({
   return (
     <Box position="relative">
       <div className={classes.itemBackground} style={itemBackgroundStyle}>
-        <img
-          className={classes.itemImage}
-          style={{
-            width: size,
-            height: size,
-          }}
-          src={`/arknights/images/items/${slugify(name)}.png`}
+        <Image
+          cloudName="samidare"
+          publicId={`/arknights/items/${slugify(name)}`}
           alt={name}
-          title={name}
-        />
+          width={size}
+          height={size}
+          crop="pad"
+        >
+          <Transformation quality="auto" fetchFormat="auto" />
+        </Image>
       </div>
       {complete && (
         <Box

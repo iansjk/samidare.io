@@ -138,12 +138,22 @@ function StageInfo(props: StageInfoProps): React.ReactElement {
         <Typography>
           Stage cost:&nbsp;
           {stage.stageSanityCost}
-          <img className={classes.sanityIcon} src={sanityIcon} alt="Sanity" />
+          <img
+            className={classes.sanityIcon}
+            src={sanityIcon}
+            alt="Sanity"
+            width={18}
+          />
         </Typography>
         <Typography>
           Cost per item:&nbsp;
           {stage.itemSanityCost}
-          <img className={classes.sanityIcon} src={sanityIcon} alt="Sanity" />
+          <img
+            className={classes.sanityIcon}
+            src={sanityIcon}
+            alt="Sanity"
+            width={18}
+          />
         </Typography>
         {/* {stage.extraMaterial && (
           <Box

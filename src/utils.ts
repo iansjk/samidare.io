@@ -5,16 +5,16 @@ function slugify(toSlug: string): string {
 }
 export default slugify;
 
-export const getOperatorImagePath = (
+export const getOperatorImagePublicId = (
   name: string,
   eliteLevel?: number
 ): string => {
-  let filename = `${slugify(name)}.png`;
+  let slug = `${slugify(name)}`;
   if (name === "Amiya" && eliteLevel === 1) {
-    filename = `${slugify(`${name} elite 1`)}.png`;
+    slug = `${slugify(`${name} elite 1`)}`;
   }
   if (eliteLevel === 2) {
-    filename = `${slugify(`${name} elite 2`)}.png`;
+    slug = `${slugify(`${name} elite 2`)}`;
   }
-  return `/arknights/images/operators/${filename}`;
+  return `/arknights/operators/${slug}`;
 };

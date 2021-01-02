@@ -1,6 +1,7 @@
-import { Chip, Avatar, makeStyles, Tooltip } from "@material-ui/core";
-import React from "react";
-import { getOperatorImagePath } from "../utils";
+import { Chip, Avatar, makeStyles, Tooltip, Hidden } from "@material-ui/core";
+import { Image, Transformation } from "cloudinary-react";
+import React, { useState } from "react";
+import { getOperatorImagePublicId } from "../utils";
 
 export interface RecruitableOperator {
   name: string;
@@ -41,24 +42,47 @@ function RecruitableOperatorChip({
   tags,
 }: RecruitableOperator): React.ReactElement {
   const chipClasses = useChipStyles();
+  const [operatorImageUrl, setOperatorImageUrl] = useState("");
+
+  const callbackRef = (ref) => {
+    if (ref) {
+      setOperatorImageUrl(ref.getAttributes().src);
+    }
+  };
 
   return (
-    <Tooltip
-      title={tags.join(", ")}
-      arrow
-      placement="bottom"
-      enterTouchDelay={1}
-    >
-      <Chip
-        className={`rarity-${rarity}`}
-        classes={{
-          root: chipClasses.root,
-          label: chipClasses.label,
-        }}
-        avatar={<Avatar alt="" src={getOperatorImagePath(name)} />}
-        label={name}
-      />
-    </Tooltip>
+    <>
+      <Tooltip
+        title={tags.join(", ")}
+        arrow
+        placement="bottom"
+        enterTouchDelay={1}
+        key="chipWrapper"
+      >
+        <Chip
+          className={`rarity-${rarity}`}
+          classes={{
+            root: chipClasses.root,
+            label: chipClasses.label,
+          }}
+          avatar={<Avatar alt="" src={operatorImageUrl} />}
+          label={name}
+        />
+      </Tooltip>
+      <Hidden xlDown implementation="css" key="imageProvider">
+        <Image
+          ref={callbackRef}
+          cloudName="samidare"
+          publicId={getOperatorImagePublicId(name)}
+          alt=""
+          width={24}
+          height={24}
+          crop="pad"
+        >
+          <Transformation quality="auto" fetchFormat="auto" />
+        </Image>
+      </Hidden>
+    </>
   );
 }
 export default RecruitableOperatorChip;
