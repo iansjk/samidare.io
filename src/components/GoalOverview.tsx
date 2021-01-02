@@ -96,7 +96,6 @@ const GoalOverview = React.memo(function GoalOverview(
       item?.ingredients?.forEach((ingredient) => {
         ingredientMapping[ingredient.name] = [
           ...(ingredientMapping[ingredient.name] || []),
-          // FIXME should tier be item.tier or ingredient.tier?
           { name: item.name, tier: item.tier, quantity: ingredient.quantity },
         ];
         materialsNeeded[ingredient.name] =
