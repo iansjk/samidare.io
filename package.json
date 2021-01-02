@@ -10,9 +10,9 @@
     "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
     "test": "cypress run",
-    "ak:update": "yarn ak:update:img && yarn ak:update:ops && yarn ak:update:items && yarn ak:update:recruitment",
-    "ak:update:ops": "git submodule update --remote && ts-node-script scripts/operators.ts",
-    "ak:update:img": "git submodule update --remote && ts-node-script scripts/images.ts",
+    "ak:update": "yarn ak:update:images && yarn ak:update:operators && yarn ak:update:items && yarn ak:update:recruitment",
+    "ak:update:operators": "git submodule update --remote && ts-node-script scripts/operators.ts",
+    "ak:update:images": "git submodule update --remote && ts-node-script scripts/images.ts",
     "ak:update:items": "git submodule update --remote && ts-node-script scripts/items.ts",
     "ak:update:recruitment": "git submodule update --remote && ts-node-script scripts/recruitment.ts",
     "netlify:deploy": "yarn ak:update && yarn build && mv public arknights && mkdir public && mv arknights public"
