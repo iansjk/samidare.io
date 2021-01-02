@@ -85,6 +85,9 @@ function getPageTitle(title: string, uri: string): string | undefined {
 const useLinkStyles = makeStyles((theme) => ({
   link: {
     color: theme.palette.text.primary,
+    "&:hover": {
+      textDecoration: "none",
+    },
   },
 }));
 
