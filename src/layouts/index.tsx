@@ -82,12 +82,35 @@ function getPageTitle(title: string, uri: string): string | undefined {
   return subpage?.[1];
 }
 
-interface Props {
+const useLinkStyles = makeStyles((theme) => ({
+  link: {
+    color: theme.palette.text.primary,
+  },
+}));
+
+function ListItemLink({ to, primary }: { to: string; primary: string }) {
+  const classes = useLinkStyles();
+  const renderLink = React.useMemo(
+    () =>
+      React.forwardRef<HTMLAnchorElement>((itemProps, ref) => (
+        <GatsbyLink to={to} ref={ref} {...itemProps} />
+      )),
+    [to]
+  );
+
+  return (
+    <ListItem button component={renderLink}>
+      <ListItemText className={classes.link} primary={primary} />
+    </ListItem>
+  );
+}
+
+interface LayoutProps {
   children: React.ReactNode;
   uri: string;
 }
 
-function Layout(props: Props): React.ReactElement {
+function Layout(props: LayoutProps): React.ReactElement {
   const { children, uri } = props;
   const classes = useStyles();
   const { title, description } = useStaticQuery(graphql`
@@ -120,9 +143,7 @@ function Layout(props: Props): React.ReactElement {
       <Divider />
       <List>
         {Object.entries(links).map(([pageUri, pageName]) => (
-          <ListItem button key={pageName}>
-            <ListItemText primary={pageName} />
-          </ListItem>
+          <ListItemLink key={pageUri} to={pageUri} primary={pageName} />
         ))}
       </List>
     </div>

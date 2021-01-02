@@ -32,7 +32,7 @@ module.exports = {
       "error",
       {
         explicitSpread: "ignore",
-        exceptions: ["ButtonBase", "Popover", "TextField"],
+        exceptions: ["ButtonBase", "Popover", "TextField", "GatsbyLink"],
       },
     ],
     "prettier/prettier": [
