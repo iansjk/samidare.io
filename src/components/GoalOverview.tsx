@@ -252,91 +252,87 @@ const GoalOverview = React.memo(function GoalOverview(
   return (
     <Grid container spacing={2}>
       <Grid component="section" item md={7} data-testid="materialsLists">
-        {requiredMaterials.length > 0 && (
-          <Card>
-            <CardContent>
-              <Box clone mb={1}>
-                <Grid container>
-                  <Grid item xs={8}>
-                    <Typography component="h2" variant="h5">
-                      Required materials
-                    </Typography>
-                    <Box my={1} width="90%">
-                      <Divider />
-                    </Box>
-                    <Typography
-                      className={classes.totalCostHeader}
-                      component="span"
-                      variant="h6"
+        <Card>
+          <CardContent>
+            <Box clone mb={1}>
+              <Grid container>
+                <Grid item xs={8}>
+                  <Typography component="h2" variant="h5">
+                    Required materials
+                  </Typography>
+                  <Box my={1} width="90%">
+                    <Divider />
+                  </Box>
+                  <Typography
+                    className={classes.totalCostHeader}
+                    component="span"
+                    variant="h6"
+                  >
+                    Total cost:&nbsp;
+                    <b>{(materialsNeeded.LMD ?? 0).toLocaleString()}</b>
+                    <img
+                      className={classes.lmdIcon}
+                      src={lmdIcon}
+                      alt="LMD"
+                      width={26}
+                      height={18}
+                    />
+                  </Typography>
+                </Grid>
+                <Grid item xs={4}>
+                  <Box textAlign="end">
+                    <Button
+                      variant="outlined"
+                      onClick={handleReset}
+                      startIcon={<RotateLeftIcon />}
                     >
-                      Total cost:&nbsp;
-                      <b>{(materialsNeeded.LMD ?? 0).toLocaleString()}</b>
-                      <img
-                        className={classes.lmdIcon}
-                        src={lmdIcon}
-                        alt="LMD"
-                        width={26}
-                        height={18}
-                      />
+                      Reset
+                    </Button>
+                  </Box>
+                </Grid>
+              </Grid>
+            </Box>
+            <Grid container spacing={1}>
+              {renderItemsNeeded(requiredMaterials)}
+            </Grid>
+          </CardContent>
+        </Card>
+      </Grid>
+      <Grid component="section" item xs={12} md={5}>
+        <>
+          <Box clone mb={1}>
+            <Card>
+              <CardContent className={classes.OperatorGoalCardsHeaderContent}>
+                <Grid container>
+                  <Grid item xs={6}>
+                    <Typography component="h2" variant="h5">
+                      Operator goals
                     </Typography>
                   </Grid>
-                  <Grid item xs={4}>
+                  <Grid item xs={6}>
                     <Box textAlign="end">
                       <Button
                         variant="outlined"
-                        onClick={handleReset}
-                        startIcon={<RotateLeftIcon />}
+                        onClick={onClearAllGoals}
+                        startIcon={<ClearAllIcon />}
                       >
-                        Reset
+                        Clear All
                       </Button>
                     </Box>
                   </Grid>
                 </Grid>
-              </Box>
-              <Grid container spacing={1}>
-                {renderItemsNeeded(requiredMaterials)}
-              </Grid>
-            </CardContent>
-          </Card>
-        )}
-      </Grid>
-      <Grid component="section" item xs={12} md={5}>
-        {goals.length > 0 && (
-          <>
-            <Box clone mb={1}>
-              <Card>
-                <CardContent className={classes.OperatorGoalCardsHeaderContent}>
-                  <Grid container>
-                    <Grid item xs={6}>
-                      <Typography component="h2" variant="h5">
-                        Operator goals
-                      </Typography>
-                    </Grid>
-                    <Grid item xs={6}>
-                      <Box textAlign="end">
-                        <Button
-                          variant="outlined"
-                          onClick={onClearAllGoals}
-                          startIcon={<ClearAllIcon />}
-                        >
-                          Clear All
-                        </Button>
-                      </Box>
-                    </Grid>
-                  </Grid>
-                </CardContent>
-              </Card>
-            </Box>
-            {goals.map((goal) => (
-              <OperatorGoalCard
-                key={`${goal.operatorName}${goal.goalName}`}
-                goal={goal}
-                skill={goal.skill}
-                onDelete={onGoalDeleted}
-              />
-            ))}
-          </>
-        )}
+              </CardContent>
+            </Card>
+          </Box>
+          {goals.map((goal) => (
+            <OperatorGoalCard
+              key={`${goal.operatorName}${goal.goalName}`}
+              goal={goal}
+              skill={goal.skill}
+              onDelete={onGoalDeleted}
+            />
+          ))}
+        </>
       </Grid>
     </Grid>
   );

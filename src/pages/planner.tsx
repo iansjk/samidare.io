@@ -8,7 +8,6 @@ import {
   InputLabel,
   FormControl,
   ListSubheader,
-  NoSsr,
 } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
 import Autocomplete from "@material-ui/lab/Autocomplete";
@@ -270,13 +269,11 @@ function Planner(): React.ReactElement {
         </Box>
       </Grid>
       <Grid item xs={12}>
-        <NoSsr>
-          <GoalOverview
-            goals={operatorGoals}
-            onGoalDeleted={handleGoalDeleted}
-            onClearAllGoals={handleClearAllGoals}
-          />
-        </NoSsr>
+        <GoalOverview
+          goals={operatorGoals}
+          onGoalDeleted={handleGoalDeleted}
+          onClearAllGoals={handleClearAllGoals}
+        />
       </Grid>
     </Grid>
   );
