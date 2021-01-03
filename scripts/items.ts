@@ -23,6 +23,12 @@ interface FormulaEntry {
   costs: InternalItemRequirement[];
 }
 
+// maximum item sanity cost multiplier when considering a stage as being "efficient"
+// e.g. if Sugar Substitute costs 4x+ sanity per item farming it from the "most efficient" stage
+// compared to the sanity per item from the "least sanity" stage, then don't display a most efficient stage
+// (since it'd take way too long to get the item from the prospective most efficient stage)
+const EFFICIENT_STAGE_MAX_ITEM_SANITY_COST_MULTIPLIER = 4;
+
 const WHITELISTED_ITEMS = new Set([
   "LMD",
   "Orirock",
@@ -254,10 +260,24 @@ function buildFarmingStage(itemId: string, stageItem: StageItem): FarmingStage {
       );
     }
     if (Object.prototype.hasOwnProperty.call(itemEfficientStages, item.id)) {
-      stages.mostEfficient = buildFarmingStage(
+      const mostEfficientStage = buildFarmingStage(
         item.id,
         itemEfficientStages[item.id]
       );
+      if (stages.leastSanity) {
+        if (
+          mostEfficientStage.itemSanityCost <=
+          stages.leastSanity.itemSanityCost *
+            EFFICIENT_STAGE_MAX_ITEM_SANITY_COST_MULTIPLIER
+        ) {
+          stages.mostEfficient = mostEfficientStage;
+          // if the least sanity stage and the most efficient stage are the same,
+          // display the stage only once as "most efficient"
+          if (stages.leastSanity.stageName === stages.mostEfficient.stageName) {
+            delete stages.leastSanity;
+          }
+        }
+      }
     }
     if (Object.keys(stages).length > 0) {
       return {
