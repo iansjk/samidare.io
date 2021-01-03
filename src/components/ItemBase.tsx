@@ -78,6 +78,7 @@ const ItemBase = React.memo(function ItemBase({
           height={size}
           crop="pad"
         >
+          <Transformation effect="sharpen" />
           <Transformation quality="auto" fetchFormat="auto" />
         </Image>
       </div>

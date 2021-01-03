@@ -72,6 +72,7 @@ function OperatorGoalIconography(
           height={30}
           crop="fit"
         >
+          <Transformation effect="sharpen" />
           <Transformation quality="auto" fetchFormat="auto" />
         </Image>
         <img

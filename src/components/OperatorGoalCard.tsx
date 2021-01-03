@@ -92,6 +92,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
           publicId={getOperatorImagePublicId(goal.operatorName, eliteLevel)}
           alt=""
         >
+          <Transformation effect="sharpen" />
           <Transformation quality="auto" fetchFormat="auto" />
         </Image>
       </Hidden>

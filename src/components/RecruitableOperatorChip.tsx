@@ -79,6 +79,7 @@ function RecruitableOperatorChip({
           height={24}
           crop="pad"
         >
+          <Transformation effect="sharpen" />
           <Transformation quality="auto" fetchFormat="auto" />
         </Image>
       </Hidden>
