@@ -121,10 +121,12 @@ const items = Object.keys(cnItemTable)
     const entry = cnItemTable[id as keyof typeof cnItemTable];
     const name = getItemName(id);
     const tier = entry.rarity + 1;
+    const { sortId } = entry;
     const baseObj = {
       id,
       name,
       tier,
+      sortId,
     };
     const workshopFormulaId = entry.buildingProductList.find(
       ({ roomType }) => roomType === "WORKSHOP"
@@ -146,6 +148,7 @@ const items = Object.keys(cnItemTable)
           name: "LMD",
           tier: 4,
           quantity: formula.goldCost,
+          sortId: 10004,
         });
       }
       return Object.assign(baseObj, { ingredients });

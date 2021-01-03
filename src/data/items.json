@@ -3,20 +3,22 @@
     "id": "3211",
     "name": "Vanguard Chip",
     "tier": 3,
+    "sortId": 400018,
     "ingredients": [
       {
         "id": "3271",
         "name": "Supporter Chip",
         "tier": 3,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400023
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "PR-C-1",
-        "itemSanityCost": 37.26,
-        "dropRate": 0.48
+        "itemSanityCost": 37.91,
+        "dropRate": 0.47
       }
     }
   },
@@ -24,20 +26,22 @@
     "id": "3212",
     "name": "Vanguard Chip Pack",
     "tier": 4,
+    "sortId": 400010,
     "ingredients": [
       {
         "id": "3272",
         "name": "Supporter Chip Pack",
         "tier": 4,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400015
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-C-2",
-        "itemSanityCost": 82,
-        "dropRate": 0.44
+        "itemSanityCost": 80.34,
+        "dropRate": 0.45
       }
     }
   },
@@ -45,18 +49,21 @@
     "id": "3213",
     "name": "Vanguard Dualchip",
     "tier": 5,
+    "sortId": 400002,
     "ingredients": [
       {
         "id": "3212",
         "name": "Vanguard Chip Pack",
         "tier": 4,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 400010
       },
       {
         "id": "32001",
         "name": "Chip Catalyst",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 400001
       }
     ]
   },
@@ -64,19 +71,21 @@
     "id": "3221",
     "name": "Guard Chip",
     "tier": 3,
+    "sortId": 400019,
     "ingredients": [
       {
         "id": "3281",
         "name": "Specialist Chip",
         "tier": 3,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400025
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "PR-D-1",
-        "itemSanityCost": 36.53,
+        "itemSanityCost": 37.03,
         "dropRate": 0.49
       }
     }
@@ -85,19 +94,21 @@
     "id": "3222",
     "name": "Guard Chip Pack",
     "tier": 4,
+    "sortId": 400011,
     "ingredients": [
       {
         "id": "3282",
         "name": "Specialist Chip Pack",
         "tier": 4,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400017
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-D-2",
-        "itemSanityCost": 71.8,
+        "itemSanityCost": 72.17,
         "dropRate": 0.5
       }
     }
@@ -106,18 +117,21 @@
     "id": "3223",
     "name": "Guard Dualchip",
     "tier": 5,
+    "sortId": 400003,
     "ingredients": [
       {
         "id": "3222",
         "name": "Guard Chip Pack",
         "tier": 4,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 400011
       },
       {
         "id": "32001",
         "name": "Chip Catalyst",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 400001
       }
     ]
   },
@@ -125,20 +139,22 @@
     "id": "3231",
     "name": "Defender Chip",
     "tier": 3,
+    "sortId": 400021,
     "ingredients": [
       {
         "id": "3261",
         "name": "Medic Chip",
         "tier": 3,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400022
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "PR-A-1",
-        "itemSanityCost": 35.33,
-        "dropRate": 0.51
+        "itemSanityCost": 34.28,
+        "dropRate": 0.53
       }
     }
   },
@@ -146,19 +162,21 @@
     "id": "3232",
     "name": "Defender Chip Pack",
     "tier": 4,
+    "sortId": 400013,
     "ingredients": [
       {
         "id": "3262",
         "name": "Medic Chip Pack",
         "tier": 4,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400014
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-A-2",
-        "itemSanityCost": 76.41,
+        "itemSanityCost": 76.45,
         "dropRate": 0.47
       }
     }
@@ -167,18 +185,21 @@
     "id": "3233",
     "name": "Defender Dualchip",
     "tier": 5,
+    "sortId": 400005,
     "ingredients": [
       {
         "id": "3232",
         "name": "Defender Chip Pack",
         "tier": 4,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 400013
       },
       {
         "id": "32001",
         "name": "Chip Catalyst",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 400001
       }
     ]
   },
@@ -186,19 +207,21 @@
     "id": "3241",
     "name": "Sniper Chip",
     "tier": 3,
+    "sortId": 400020,
     "ingredients": [
       {
         "id": "3251",
         "name": "Caster Chip",
         "tier": 3,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400024
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "PR-B-1",
-        "itemSanityCost": 40.64,
+        "itemSanityCost": 40.46,
         "dropRate": 0.44
       }
     }
@@ -207,20 +230,22 @@
     "id": "3242",
     "name": "Sniper Chip Pack",
     "tier": 4,
+    "sortId": 400012,
     "ingredients": [
       {
         "id": "3252",
         "name": "Caster Chip Pack",
         "tier": 4,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400016
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-B-2",
-        "itemSanityCost": 68.85,
-        "dropRate": 0.52
+        "itemSanityCost": 70.1,
+        "dropRate": 0.51
       }
     }
   },
@@ -228,18 +253,21 @@
     "id": "3243",
     "name": "Sniper Dualchip",
     "tier": 5,
+    "sortId": 400004,
     "ingredients": [
       {
         "id": "3242",
         "name": "Sniper Chip Pack",
         "tier": 4,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 400012
       },
       {
         "id": "32001",
         "name": "Chip Catalyst",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 400001
       }
     ]
   },
@@ -247,19 +275,21 @@
     "id": "3251",
     "name": "Caster Chip",
     "tier": 3,
+    "sortId": 400024,
     "ingredients": [
       {
         "id": "3241",
         "name": "Sniper Chip",
         "tier": 3,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400020
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "PR-B-1",
-        "itemSanityCost": 32.31,
+        "itemSanityCost": 32.43,
         "dropRate": 0.56
       }
     }
@@ -268,20 +298,22 @@
     "id": "3252",
     "name": "Caster Chip Pack",
     "tier": 4,
+    "sortId": 400016,
     "ingredients": [
       {
         "id": "3242",
         "name": "Sniper Chip Pack",
         "tier": 4,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400012
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-B-2",
-        "itemSanityCost": 75.45,
-        "dropRate": 0.48
+        "itemSanityCost": 74.01,
+        "dropRate": 0.49
       }
     }
   },
@@ -289,18 +321,21 @@
     "id": "3253",
     "name": "Caster Dualchip",
     "tier": 5,
+    "sortId": 400008,
     "ingredients": [
       {
         "id": "3252",
         "name": "Caster Chip Pack",
         "tier": 4,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 400016
       },
       {
         "id": "32001",
         "name": "Chip Catalyst",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 400001
       }
     ]
   },
@@ -308,20 +343,22 @@
     "id": "3261",
     "name": "Medic Chip",
     "tier": 3,
+    "sortId": 400022,
     "ingredients": [
       {
         "id": "3231",
         "name": "Defender Chip",
         "tier": 3,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400021
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "PR-A-1",
-        "itemSanityCost": 36.69,
-        "dropRate": 0.49
+        "itemSanityCost": 37.91,
+        "dropRate": 0.47
       }
     }
   },
@@ -329,19 +366,21 @@
     "id": "3262",
     "name": "Medic Chip Pack",
     "tier": 4,
+    "sortId": 400014,
     "ingredients": [
       {
         "id": "3232",
         "name": "Defender Chip Pack",
         "tier": 4,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400013
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-A-2",
-        "itemSanityCost": 68.07,
+        "itemSanityCost": 68.04,
         "dropRate": 0.53
       }
     }
@@ -350,18 +389,21 @@
     "id": "3263",
     "name": "Medic Dualchip",
     "tier": 5,
+    "sortId": 400006,
     "ingredients": [
       {
         "id": "3262",
         "name": "Medic Chip Pack",
         "tier": 4,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 400014
       },
       {
         "id": "32001",
         "name": "Chip Catalyst",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 400001
       }
     ]
   },
@@ -369,20 +411,22 @@
     "id": "3271",
     "name": "Supporter Chip",
     "tier": 3,
+    "sortId": 400023,
     "ingredients": [
       {
         "id": "3211",
         "name": "Vanguard Chip",
         "tier": 3,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400018
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "PR-C-1",
-        "itemSanityCost": 34.83,
-        "dropRate": 0.52
+        "itemSanityCost": 34.27,
+        "dropRate": 0.53
       }
     }
   },
@@ -390,20 +434,22 @@
     "id": "3272",
     "name": "Supporter Chip Pack",
     "tier": 4,
+    "sortId": 400015,
     "ingredients": [
       {
         "id": "3212",
         "name": "Vanguard Chip Pack",
         "tier": 4,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400010
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-C-2",
-        "itemSanityCost": 64.17,
-        "dropRate": 0.56
+        "itemSanityCost": 65.23,
+        "dropRate": 0.55
       }
     }
   },
@@ -411,18 +457,21 @@
     "id": "3273",
     "name": "Supporter Dualchip",
     "tier": 5,
+    "sortId": 400007,
     "ingredients": [
       {
         "id": "3272",
         "name": "Supporter Chip Pack",
         "tier": 4,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 400015
       },
       {
         "id": "32001",
         "name": "Chip Catalyst",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 400001
       }
     ]
   },
@@ -430,19 +479,21 @@
     "id": "3281",
     "name": "Specialist Chip",
     "tier": 3,
+    "sortId": 400025,
     "ingredients": [
       {
         "id": "3221",
         "name": "Guard Chip",
         "tier": 3,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400019
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "PR-D-1",
-        "itemSanityCost": 35.49,
+        "itemSanityCost": 35.02,
         "dropRate": 0.51
       }
     }
@@ -451,19 +502,21 @@
     "id": "3282",
     "name": "Specialist Chip Pack",
     "tier": 4,
+    "sortId": 400017,
     "ingredients": [
       {
         "id": "3222",
         "name": "Guard Chip Pack",
         "tier": 4,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 400011
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-D-2",
-        "itemSanityCost": 72.2,
+        "itemSanityCost": 71.83,
         "dropRate": 0.5
       }
     }
@@ -472,18 +525,21 @@
     "id": "3283",
     "name": "Specialist Dualchip",
     "tier": 5,
+    "sortId": 400009,
     "ingredients": [
       {
         "id": "3282",
         "name": "Specialist Chip Pack",
         "tier": 4,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 400017
       },
       {
         "id": "32001",
         "name": "Chip Catalyst",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 400001
       }
     ]
   },
@@ -491,6 +547,7 @@
     "id": "3301",
     "name": "Skill Summary - 1",
     "tier": 2,
+    "sortId": 80003,
     "stages": {
       "leastSanity": {
         "stageSanityCost": 15,
@@ -504,12 +561,14 @@
     "id": "3302",
     "name": "Skill Summary - 2",
     "tier": 3,
+    "sortId": 80002,
     "ingredients": [
       {
         "id": "3301",
         "name": "Skill Summary - 1",
         "tier": 2,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 80003
       }
     ],
     "stages": {
@@ -525,12 +584,14 @@
     "id": "3303",
     "name": "Skill Summary - 3",
     "tier": 4,
+    "sortId": 80001,
     "ingredients": [
       {
         "id": "3302",
         "name": "Skill Summary - 2",
         "tier": 3,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 80002
       }
     ],
     "stages": {
@@ -545,12 +606,14 @@
   {
     "id": "4001",
     "name": "LMD",
-    "tier": 4
+    "tier": 4,
+    "sortId": 10004
   },
   {
     "id": "30011",
     "name": "Orirock",
     "tier": 1,
+    "sortId": 100015,
     "stages": {
       "leastSanity": {
         "stageSanityCost": 12,
@@ -570,18 +633,21 @@
     "id": "30012",
     "name": "Orirock Cube",
     "tier": 2,
+    "sortId": 100014,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 100
+        "quantity": 100,
+        "sortId": 10004
       },
       {
         "id": "30011",
         "name": "Orirock",
         "tier": 1,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 100015
       }
     ],
     "stages": {
@@ -603,31 +669,34 @@
     "id": "30013",
     "name": "Orirock Cluster",
     "tier": 3,
+    "sortId": 100013,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 200
+        "quantity": 200,
+        "sortId": 10004
       },
       {
         "id": "30012",
         "name": "Orirock Cube",
         "tier": 2,
-        "quantity": 5
+        "quantity": 5,
+        "sortId": 100014
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 12,
         "stageName": "2-4",
-        "itemSanityCost": 28.38,
+        "itemSanityCost": 28.4,
         "dropRate": 0.42
       },
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "4-7",
-        "itemSanityCost": 884.34,
+        "itemSanityCost": 885.97,
         "dropRate": 0.02
       }
     }
@@ -636,25 +705,28 @@
     "id": "30014",
     "name": "Orirock Concentration",
     "tier": 4,
+    "sortId": 100012,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 300
+        "quantity": 300,
+        "sortId": 10004
       },
       {
         "id": "30013",
         "name": "Orirock Cluster",
         "tier": 3,
-        "quantity": 4
+        "quantity": 4,
+        "sortId": 100013
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "4-6",
-        "itemSanityCost": 334.42,
+        "itemSanityCost": 334.96,
         "dropRate": 0.05
       }
     }
@@ -663,6 +735,7 @@
     "id": "30021",
     "name": "Sugar Substitute",
     "tier": 1,
+    "sortId": 100027,
     "stages": {
       "leastSanity": {
         "stageSanityCost": 12,
@@ -671,10 +744,10 @@
         "dropRate": 2.44
       },
       "mostEfficient": {
-        "stageSanityCost": 6,
-        "stageName": "1-7",
-        "itemSanityCost": 105.91,
-        "dropRate": 0.06
+        "stageSanityCost": 18,
+        "stageName": "7-4",
+        "itemSanityCost": 105.51,
+        "dropRate": 0.17
       }
     }
   },
@@ -682,18 +755,21 @@
     "id": "30022",
     "name": "Sugar",
     "tier": 2,
+    "sortId": 100026,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 100
+        "quantity": 100,
+        "sortId": 10004
       },
       {
         "id": "30021",
         "name": "Sugar Substitute",
         "tier": 1,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 100027
       }
     ],
     "stages": {
@@ -706,7 +782,7 @@
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "7-15",
-        "itemSanityCost": 91.78,
+        "itemSanityCost": 91.91,
         "dropRate": 0.2
       }
     }
@@ -715,18 +791,21 @@
     "id": "30023",
     "name": "Sugar Pack",
     "tier": 3,
+    "sortId": 100025,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 200
+        "quantity": 200,
+        "sortId": 10004
       },
       {
         "id": "30022",
         "name": "Sugar",
         "tier": 2,
-        "quantity": 4
+        "quantity": 4,
+        "sortId": 100026
       }
     ],
     "stages": {
@@ -748,30 +827,35 @@
     "id": "30024",
     "name": "Sugar Lump",
     "tier": 4,
+    "sortId": 100024,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 300
+        "quantity": 300,
+        "sortId": 10004
       },
       {
         "id": "30023",
         "name": "Sugar Pack",
         "tier": 3,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 100025
       },
       {
         "id": "30043",
         "name": "Oriron Cluster",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100029
       },
       {
         "id": "30083",
         "name": "Manganese Ore",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100007
       }
     ],
     "stages": {
@@ -793,6 +877,7 @@
     "id": "30031",
     "name": "Ester",
     "tier": 1,
+    "sortId": 100023,
     "stages": {
       "leastSanity": {
         "stageSanityCost": 12,
@@ -812,18 +897,21 @@
     "id": "30032",
     "name": "Polyester",
     "tier": 2,
+    "sortId": 100022,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 100
+        "quantity": 100,
+        "sortId": 10004
       },
       {
         "id": "30031",
         "name": "Ester",
         "tier": 1,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 100023
       }
     ],
     "stages": {
@@ -836,7 +924,7 @@
       "mostEfficient": {
         "stageSanityCost": 15,
         "stageName": "S3-6",
-        "itemSanityCost": 105.58,
+        "itemSanityCost": 105.02,
         "dropRate": 0.14
       }
     }
@@ -845,18 +933,21 @@
     "id": "30033",
     "name": "Polyester Pack",
     "tier": 3,
+    "sortId": 100021,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 200
+        "quantity": 200,
+        "sortId": 10004
       },
       {
         "id": "30032",
         "name": "Polyester",
         "tier": 2,
-        "quantity": 4
+        "quantity": 4,
+        "sortId": 100022
       }
     ],
     "stages": {
@@ -878,30 +969,35 @@
     "id": "30034",
     "name": "Polyester Lump",
     "tier": 4,
+    "sortId": 100020,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 300
+        "quantity": 300,
+        "sortId": 10004
       },
       {
         "id": "30033",
         "name": "Polyester Pack",
         "tier": 3,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 100021
       },
       {
         "id": "30053",
         "name": "Aketon",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100033
       },
       {
         "id": "30073",
         "name": "Loxic Kohl",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100005
       }
     ],
     "stages": {
@@ -917,6 +1013,7 @@
     "id": "30041",
     "name": "Oriron Shard",
     "tier": 1,
+    "sortId": 100031,
     "stages": {
       "leastSanity": {
         "stageSanityCost": 6,
@@ -927,7 +1024,7 @@
       "mostEfficient": {
         "stageSanityCost": 6,
         "stageName": "1-7",
-        "itemSanityCost": 128.82,
+        "itemSanityCost": 128.69,
         "dropRate": 0.05
       }
     }
@@ -936,18 +1033,21 @@
     "id": "30042",
     "name": "Oriron",
     "tier": 2,
+    "sortId": 100030,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 100
+        "quantity": 100,
+        "sortId": 10004
       },
       {
         "id": "30041",
         "name": "Oriron Shard",
         "tier": 1,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 100031
       }
     ],
     "stages": {
@@ -960,7 +1060,7 @@
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "7-15",
-        "itemSanityCost": 113,
+        "itemSanityCost": 113.09,
         "dropRate": 0.16
       }
     }
@@ -969,31 +1069,34 @@
     "id": "30043",
     "name": "Oriron Cluster",
     "tier": 3,
+    "sortId": 100029,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 200
+        "quantity": 200,
+        "sortId": 10004
       },
       {
         "id": "30042",
         "name": "Oriron",
         "tier": 2,
-        "quantity": 4
+        "quantity": 4,
+        "sortId": 100030
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 21,
         "stageName": "7-18",
-        "itemSanityCost": 51.73,
+        "itemSanityCost": 51.67,
         "dropRate": 0.41
       },
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "5-5",
-        "itemSanityCost": 61.99,
+        "itemSanityCost": 61.94,
         "dropRate": 0.29
       }
     }
@@ -1002,43 +1105,48 @@
     "id": "30044",
     "name": "Oriron Block",
     "tier": 4,
+    "sortId": 100028,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 300
+        "quantity": 300,
+        "sortId": 10004
       },
       {
         "id": "30043",
         "name": "Oriron Cluster",
         "tier": 3,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 100029
       },
       {
         "id": "30063",
         "name": "Integrated Device",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100017
       },
       {
         "id": "30033",
         "name": "Polyester Pack",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100021
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "5-5",
-        "itemSanityCost": 468.8,
+        "itemSanityCost": 468.93,
         "dropRate": 0.04
       },
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "5-5",
-        "itemSanityCost": 468.8,
+        "itemSanityCost": 468.93,
         "dropRate": 0.04
       }
     }
@@ -1047,6 +1155,7 @@
     "id": "30051",
     "name": "Diketon",
     "tier": 1,
+    "sortId": 100035,
     "stages": {
       "leastSanity": {
         "stageSanityCost": 12,
@@ -1057,7 +1166,7 @@
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "4-5",
-        "itemSanityCost": 54.43,
+        "itemSanityCost": 54.42,
         "dropRate": 0.33
       }
     }
@@ -1066,18 +1175,21 @@
     "id": "30052",
     "name": "Polyketon",
     "tier": 2,
+    "sortId": 100034,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 100
+        "quantity": 100,
+        "sortId": 10004
       },
       {
         "id": "30051",
         "name": "Diketon",
         "tier": 1,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 100035
       }
     ],
     "stages": {
@@ -1090,7 +1202,7 @@
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "4-5",
-        "itemSanityCost": 187.47,
+        "itemSanityCost": 187.48,
         "dropRate": 0.1
       }
     }
@@ -1099,18 +1211,21 @@
     "id": "30053",
     "name": "Aketon",
     "tier": 3,
+    "sortId": 100033,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 200
+        "quantity": 200,
+        "sortId": 10004
       },
       {
         "id": "30052",
         "name": "Polyketon",
         "tier": 2,
-        "quantity": 4
+        "quantity": 4,
+        "sortId": 100034
       }
     ],
     "stages": {
@@ -1132,43 +1247,48 @@
     "id": "30054",
     "name": "Keton Colloid",
     "tier": 4,
+    "sortId": 100032,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 300
+        "quantity": 300,
+        "sortId": 10004
       },
       {
         "id": "30053",
         "name": "Aketon",
         "tier": 3,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 100033
       },
       {
         "id": "30023",
         "name": "Sugar Pack",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100025
       },
       {
         "id": "30083",
         "name": "Manganese Ore",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100007
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "4-5",
-        "itemSanityCost": 501.56,
+        "itemSanityCost": 501.59,
         "dropRate": 0.04
       },
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "4-5",
-        "itemSanityCost": 501.56,
+        "itemSanityCost": 501.59,
         "dropRate": 0.04
       }
     }
@@ -1177,17 +1297,18 @@
     "id": "30061",
     "name": "Damaged Device",
     "tier": 1,
+    "sortId": 100019,
     "stages": {
       "leastSanity": {
         "stageSanityCost": 6,
         "stageName": "1-5",
-        "itemSanityCost": 7.69,
-        "dropRate": 0.78
+        "itemSanityCost": 7.77,
+        "dropRate": 0.77
       },
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "4-7",
-        "itemSanityCost": 159.07,
+        "itemSanityCost": 159.04,
         "dropRate": 0.11
       }
     }
@@ -1196,26 +1317,29 @@
     "id": "30062",
     "name": "Device",
     "tier": 2,
+    "sortId": 100018,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 100
+        "quantity": 100,
+        "sortId": 10004
       },
       {
         "id": "30061",
         "name": "Damaged Device",
         "tier": 1,
-        "quantity": 3
+        "quantity": 3,
+        "sortId": 100019
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 15,
         "stageName": "S3-4",
-        "itemSanityCost": 16.53,
-        "dropRate": 0.91
+        "itemSanityCost": 16.73,
+        "dropRate": 0.9
       },
       "mostEfficient": {
         "stageSanityCost": 18,
@@ -1229,31 +1353,34 @@
     "id": "30063",
     "name": "Integrated Device",
     "tier": 3,
+    "sortId": 100017,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 200
+        "quantity": 200,
+        "sortId": 10004
       },
       {
         "id": "30062",
         "name": "Device",
         "tier": 2,
-        "quantity": 4
+        "quantity": 4,
+        "sortId": 100018
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "7-15",
-        "itemSanityCost": 54.33,
+        "itemSanityCost": 54.28,
         "dropRate": 0.33
       },
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "7-15",
-        "itemSanityCost": 54.33,
+        "itemSanityCost": 54.28,
         "dropRate": 0.33
       }
     }
@@ -1262,37 +1389,42 @@
     "id": "30064",
     "name": "Optimized Device",
     "tier": 4,
+    "sortId": 100016,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 300
+        "quantity": 300,
+        "sortId": 10004
       },
       {
         "id": "30063",
         "name": "Integrated Device",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100017
       },
       {
         "id": "30013",
         "name": "Orirock Cluster",
         "tier": 3,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 100013
       },
       {
         "id": "30093",
         "name": "Grindstone",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100009
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 21,
         "stageName": "4-10",
-        "itemSanityCost": 695.24,
+        "itemSanityCost": 697.06,
         "dropRate": 0.03
       }
     }
@@ -1301,17 +1433,18 @@
     "id": "30073",
     "name": "Loxic Kohl",
     "tier": 3,
+    "sortId": 100005,
     "stages": {
       "leastSanity": {
         "stageSanityCost": 21,
         "stageName": "6-11",
-        "itemSanityCost": 42.96,
+        "itemSanityCost": 42.93,
         "dropRate": 0.49
       },
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "4-4",
-        "itemSanityCost": 48.45,
+        "itemSanityCost": 48.46,
         "dropRate": 0.37
       }
     }
@@ -1320,43 +1453,48 @@
     "id": "30074",
     "name": "White Horse Kohl",
     "tier": 4,
+    "sortId": 100004,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 300
+        "quantity": 300,
+        "sortId": 10004
       },
       {
         "id": "30073",
         "name": "Loxic Kohl",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100005
       },
       {
         "id": "30023",
         "name": "Sugar Pack",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100025
       },
       {
         "id": "30103",
         "name": "RMA70-12",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100011
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "4-4",
-        "itemSanityCost": 347.15,
+        "itemSanityCost": 346.56,
         "dropRate": 0.05
       },
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "4-4",
-        "itemSanityCost": 347.15,
+        "itemSanityCost": 346.56,
         "dropRate": 0.05
       }
     }
@@ -1365,11 +1503,12 @@
     "id": "30083",
     "name": "Manganese Ore",
     "tier": 3,
+    "sortId": 100007,
     "stages": {
       "leastSanity": {
         "stageSanityCost": 15,
         "stageName": "3-2",
-        "itemSanityCost": 40.73,
+        "itemSanityCost": 40.74,
         "dropRate": 0.37
       },
       "mostEfficient": {
@@ -1384,43 +1523,48 @@
     "id": "30084",
     "name": "Manganese Trihydrate",
     "tier": 4,
+    "sortId": 100006,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 300
+        "quantity": 300,
+        "sortId": 10004
       },
       {
         "id": "30083",
         "name": "Manganese Ore",
         "tier": 3,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 100007
       },
       {
         "id": "30033",
         "name": "Polyester Pack",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100021
       },
       {
         "id": "30073",
         "name": "Loxic Kohl",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100005
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "4-7",
-        "itemSanityCost": 449.49,
+        "itemSanityCost": 449.88,
         "dropRate": 0.04
       },
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "4-7",
-        "itemSanityCost": 449.49,
+        "itemSanityCost": 449.88,
         "dropRate": 0.04
       }
     }
@@ -1429,17 +1573,18 @@
     "id": "30093",
     "name": "Grindstone",
     "tier": 3,
+    "sortId": 100009,
     "stages": {
       "leastSanity": {
         "stageSanityCost": 15,
         "stageName": "3-3",
-        "itemSanityCost": 47.67,
+        "itemSanityCost": 47.63,
         "dropRate": 0.31
       },
       "mostEfficient": {
         "stageSanityCost": 21,
         "stageName": "7-17",
-        "itemSanityCost": 65.33,
+        "itemSanityCost": 65.41,
         "dropRate": 0.32
       }
     }
@@ -1448,43 +1593,48 @@
     "id": "30094",
     "name": "Grindstone Pentahydrate",
     "tier": 4,
+    "sortId": 100008,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 300
+        "quantity": 300,
+        "sortId": 10004
       },
       {
         "id": "30093",
         "name": "Grindstone",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100009
       },
       {
         "id": "30043",
         "name": "Oriron Cluster",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100029
       },
       {
         "id": "30063",
         "name": "Integrated Device",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100017
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 21,
         "stageName": "4-8",
-        "itemSanityCost": 437.68,
+        "itemSanityCost": 438.1,
         "dropRate": 0.05
       },
       "mostEfficient": {
         "stageSanityCost": 21,
         "stageName": "7-17",
-        "itemSanityCost": 441.19,
+        "itemSanityCost": 441.43,
         "dropRate": 0.05
       }
     }
@@ -1493,6 +1643,7 @@
     "id": "30103",
     "name": "RMA70-12",
     "tier": 3,
+    "sortId": 100011,
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
@@ -1503,7 +1654,7 @@
       "mostEfficient": {
         "stageSanityCost": 21,
         "stageName": "4-9",
-        "itemSanityCost": 69.94,
+        "itemSanityCost": 69.93,
         "dropRate": 0.3
       }
     }
@@ -1512,43 +1663,48 @@
     "id": "30104",
     "name": "RMA70-24",
     "tier": 4,
+    "sortId": 100010,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 300
+        "quantity": 300,
+        "sortId": 10004
       },
       {
         "id": "30103",
         "name": "RMA70-12",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100011
       },
       {
         "id": "30013",
         "name": "Orirock Cluster",
         "tier": 3,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 100013
       },
       {
         "id": "30053",
         "name": "Aketon",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100033
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 21,
         "stageName": "4-9",
-        "itemSanityCost": 478.25,
+        "itemSanityCost": 477.6,
         "dropRate": 0.04
       },
       "mostEfficient": {
         "stageSanityCost": 21,
         "stageName": "4-9",
-        "itemSanityCost": 478.25,
+        "itemSanityCost": 477.6,
         "dropRate": 0.04
       }
     }
@@ -1557,30 +1713,35 @@
     "id": "30115",
     "name": "Polymerization Preparation",
     "tier": 5,
+    "sortId": 100003,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 400
+        "quantity": 400,
+        "sortId": 10004
       },
       {
         "id": "30014",
         "name": "Orirock Concentration",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100012
       },
       {
         "id": "30044",
         "name": "Oriron Block",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100028
       },
       {
         "id": "30054",
         "name": "Keton Colloid",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100032
       }
     ]
   },
@@ -1588,24 +1749,28 @@
     "id": "30125",
     "name": "Bipolar Nanoflake",
     "tier": 5,
+    "sortId": 100002,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 400
+        "quantity": 400,
+        "sortId": 10004
       },
       {
         "id": "30064",
         "name": "Optimized Device",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100016
       },
       {
         "id": "30074",
         "name": "White Horse Kohl",
         "tier": 4,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 100004
       }
     ]
   },
@@ -1613,30 +1778,35 @@
     "id": "30135",
     "name": "D32 Steel",
     "tier": 5,
+    "sortId": 100001,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 400
+        "quantity": 400,
+        "sortId": 10004
       },
       {
         "id": "30084",
         "name": "Manganese Trihydrate",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100006
       },
       {
         "id": "30094",
         "name": "Grindstone Pentahydrate",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100008
       },
       {
         "id": "30104",
         "name": "RMA70-24",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100010
       }
     ]
   },
@@ -1644,30 +1814,35 @@
     "id": "30145",
     "name": "Crystal Electronic Unit",
     "tier": 5,
+    "sortId": 100040,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 400
+        "quantity": 400,
+        "sortId": 10004
       },
       {
         "id": "31034",
         "name": "Crystal Circuit",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100041
       },
       {
         "id": "31014",
         "name": "Polymerized Gel",
         "tier": 4,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 100036
       },
       {
         "id": "31024",
         "name": "Incandescent Alloy Block",
         "tier": 4,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100038
       }
     ]
   },
@@ -1675,18 +1850,19 @@
     "id": "31013",
     "name": "Coagulating Gel",
     "tier": 3,
+    "sortId": 100037,
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "S4-10",
-        "itemSanityCost": 62.85,
+        "itemSanityCost": 62.99,
         "dropRate": 0.29
       },
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "S5-7",
-        "itemSanityCost": 70.65,
-        "dropRate": 0.25
+        "itemSanityCost": 70.54,
+        "dropRate": 0.26
       }
     }
   },
@@ -1694,43 +1870,48 @@
     "id": "31014",
     "name": "Polymerized Gel",
     "tier": 4,
+    "sortId": 100036,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 300
+        "quantity": 300,
+        "sortId": 10004
       },
       {
         "id": "30043",
         "name": "Oriron Cluster",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100029
       },
       {
         "id": "31013",
         "name": "Coagulating Gel",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100037
       },
       {
         "id": "31023",
         "name": "Incandescent Alloy",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100039
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "7-8",
-        "itemSanityCost": 414,
+        "itemSanityCost": 419.14,
         "dropRate": 0.04
       },
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "S5-7",
-        "itemSanityCost": 490.74,
+        "itemSanityCost": 491.58,
         "dropRate": 0.04
       }
     }
@@ -1739,17 +1920,18 @@
     "id": "31023",
     "name": "Incandescent Alloy",
     "tier": 3,
+    "sortId": 100039,
     "stages": {
       "leastSanity": {
         "stageSanityCost": 15,
         "stageName": "S3-6",
-        "itemSanityCost": 38.08,
+        "itemSanityCost": 38.28,
         "dropRate": 0.39
       },
       "mostEfficient": {
         "stageSanityCost": 15,
         "stageName": "S3-6",
-        "itemSanityCost": 38.08,
+        "itemSanityCost": 38.28,
         "dropRate": 0.39
       }
     }
@@ -1758,37 +1940,42 @@
     "id": "31024",
     "name": "Incandescent Alloy Block",
     "tier": 4,
+    "sortId": 100038,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 300
+        "quantity": 300,
+        "sortId": 10004
       },
       {
         "id": "30063",
         "name": "Integrated Device",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100017
       },
       {
         "id": "30093",
         "name": "Grindstone",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100009
       },
       {
         "id": "31023",
         "name": "Incandescent Alloy",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100039
       }
     ],
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "S5-8",
-        "itemSanityCost": 447.31,
+        "itemSanityCost": 442.24,
         "dropRate": 0.04
       }
     }
@@ -1797,17 +1984,18 @@
     "id": "31033",
     "name": "Crystal Component",
     "tier": 3,
+    "sortId": 100042,
     "stages": {
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "6-10",
-        "itemSanityCost": 108,
-        "dropRate": 0.17
+        "itemSanityCost": 162,
+        "dropRate": 0.11
       },
       "mostEfficient": {
         "stageSanityCost": 21,
         "stageName": "4-9",
-        "itemSanityCost": 1907.5,
+        "itemSanityCost": 2023,
         "dropRate": 0.01
       }
     }
@@ -1816,36 +2004,42 @@
     "id": "31034",
     "name": "Crystal Circuit",
     "tier": 4,
+    "sortId": 100041,
     "ingredients": [
       {
         "id": "4001",
         "name": "LMD",
         "tier": 4,
-        "quantity": 300
+        "quantity": 300,
+        "sortId": 10004
       },
       {
         "id": "31033",
         "name": "Crystal Component",
         "tier": 3,
-        "quantity": 2
+        "quantity": 2,
+        "sortId": 100042
       },
       {
         "id": "31013",
         "name": "Coagulating Gel",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100037
       },
       {
         "id": "31023",
         "name": "Incandescent Alloy",
         "tier": 3,
-        "quantity": 1
+        "quantity": 1,
+        "sortId": 100039
       }
     ]
   },
   {
     "id": "32001",
     "name": "Chip Catalyst",
-    "tier": 4
+    "tier": 4,
+    "sortId": 400001
   }
 ]

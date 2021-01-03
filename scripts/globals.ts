@@ -10,6 +10,7 @@ export interface Ingredient {
   name: string;
   tier: number;
   quantity: number;
+  sortId: number;
 }
 
 export interface InternalItemRequirement {
@@ -67,6 +68,7 @@ export function getEliteLMDCost(
     name: "LMD",
     tier: 4,
     quantity,
+    sortId: 10004,
   };
 }
 
@@ -93,5 +95,6 @@ export function toIngredient({
     name: getItemName(id),
     tier: getItemTier(id),
     quantity: count,
+    sortId: cnItemTable[id as keyof typeof cnItemTable].sortId,
   };
 }

@@ -51,16 +51,18 @@ const GoalOverview = React.memo(function GoalOverview(
         nodes {
           name
           tier
+          sortId
           ingredients {
             name
             quantity
             tier
+            sortId
           }
         }
       }
     }
   `);
-  const items: Record<string, Item> = Object.fromEntries(
+  const items: Record<string, Item & { sortId: number }> = Object.fromEntries(
     data.allItemsJson.nodes.map((node: { name: string }) => [node.name, node])
   );
   const { goals, onGoalDeleted, onClearAllGoals } = props;
@@ -206,11 +208,11 @@ const GoalOverview = React.memo(function GoalOverview(
   ): React.ReactElement[] {
     return objectEntries
       .sort(
-        // FIXME doesn't sort by item category at the moment
         ([nameA, _], [nameB, __]) =>
           (isMaterialComplete(nameA) ? 1 : 0) -
             (isMaterialComplete(nameB) ? 1 : 0) ||
           items[nameB].tier - items[nameA].tier ||
+          items[nameA].sortId - items[nameB].sortId ||
           nameA.localeCompare(nameB)
       )
       .map(([name, needed]) => {
