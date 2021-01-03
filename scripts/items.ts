@@ -219,15 +219,21 @@ interface FarmingStage {
   stageName: string;
 }
 
-function buildFarmingStage(stageItem: StageItem): FarmingStage {
+function buildFarmingStage(itemId: string, stageItem: StageItem): FarmingStage {
   const stageData =
     cnStageTable[stageItem.stageId as keyof typeof cnStageTable];
+  const itemName = getItemName(itemId);
+  const dropRate =
+    itemName.endsWith("Chip") || itemName.endsWith("Chip Pack")
+      ? 0.5
+      : Math.round((stageItem.dropRate + Number.EPSILON) * 100) / 100;
+
   return {
     stageSanityCost: stageData.apCost,
     stageName: stageData.code,
     itemSanityCost:
       Math.round((stageItem.sanityCost + Number.EPSILON) * 100) / 100,
-    dropRate: Math.round((stageItem.dropRate + Number.EPSILON) * 100) / 100,
+    dropRate,
   };
 }
 
@@ -242,10 +248,16 @@ function buildFarmingStage(stageItem: StageItem): FarmingStage {
   const itemsWithStages = items.map((item) => {
     const stages: Record<string, FarmingStage> = {};
     if (Object.prototype.hasOwnProperty.call(itemFastestStages, item.id)) {
-      stages.leastSanity = buildFarmingStage(itemFastestStages[item.id]);
+      stages.leastSanity = buildFarmingStage(
+        item.id,
+        itemFastestStages[item.id]
+      );
     }
     if (Object.prototype.hasOwnProperty.call(itemEfficientStages, item.id)) {
-      stages.mostEfficient = buildFarmingStage(itemEfficientStages[item.id]);
+      stages.mostEfficient = buildFarmingStage(
+        item.id,
+        itemEfficientStages[item.id]
+      );
     }
     if (Object.keys(stages).length > 0) {
       return {
