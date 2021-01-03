@@ -9,6 +9,7 @@ import {
   useTheme,
   Button,
   Divider,
+  NoSsr,
 } from "@material-ui/core";
 import ClearAllIcon from "@material-ui/icons/ClearAll";
 import RotateLeftIcon from "@material-ui/icons/RotateLeft";
@@ -295,7 +296,7 @@ const GoalOverview = React.memo(function GoalOverview(
               </Grid>
             </Box>
             <Grid container spacing={1}>
-              {renderItemsNeeded(requiredMaterials)}
+              <NoSsr>{renderItemsNeeded(requiredMaterials)}</NoSsr>
             </Grid>
           </CardContent>
         </Card>
@@ -326,14 +327,16 @@ const GoalOverview = React.memo(function GoalOverview(
               </CardContent>
             </Card>
           </Box>
-          {goals.map((goal) => (
-            <OperatorGoalCard
-              key={`${goal.operatorName}${goal.goalName}`}
-              goal={goal}
-              skill={goal.skill}
-              onDelete={onGoalDeleted}
-            />
-          ))}
+          <NoSsr>
+            {goals.map((goal) => (
+              <OperatorGoalCard
+                key={`${goal.operatorName}${goal.goalName}`}
+                goal={goal}
+                skill={goal.skill}
+                onDelete={onGoalDeleted}
+              />
+            ))}
+          </NoSsr>
         </>
       </Grid>
     </Grid>
