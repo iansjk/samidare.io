@@ -96,7 +96,9 @@ function ListItemLink({ to, primary }: { to: string; primary: string }) {
   const renderLink = React.useMemo(
     () =>
       React.forwardRef<HTMLAnchorElement>((itemProps, ref) => (
-        <GatsbyLink to={to} ref={ref} {...itemProps} />
+        <li>
+          <GatsbyLink to={to} ref={ref} {...itemProps} />
+        </li>
       )),
     [to]
   );
