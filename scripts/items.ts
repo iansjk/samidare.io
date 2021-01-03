@@ -188,13 +188,9 @@ async function getStagesForItems(
   );
   const { matrix } = response.data;
   matrix
-    .filter((cell) => {
-      const cnStageData =
-        cnStageTable[cell.stageId as keyof typeof cnStageTable];
-      const enStageData =
-        enStageTable[cell.stageId as keyof typeof enStageTable];
-      return enStageData || cnStageData?.zoneId === "main_7";
-    })
+    .filter((cell) =>
+      Object.prototype.hasOwnProperty.call(enStageTable, cell.stageId)
+    )
     .forEach((cell) => {
       const dropRate = cell.quantity / cell.times;
       const stageData = cnStageTable[cell.stageId as keyof typeof cnStageTable];
