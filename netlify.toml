@@ -1,0 +1,4 @@
+[build]
+  command = "yarn netlify:deploy"
+  functions = "built-lambda"
+  publish = "public"

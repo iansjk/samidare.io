@@ -5,20 +5,27 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "pwa-chrome",
-      "request": "launch",
-      "name": "Launch Chrome against localhost",
-      "url": "http://localhost:8000",
-      "webRoot": "${workspaceFolder}"
-    },
-    {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "Launch Script",
       "runtimeArgs": ["-r", "ts-node/register"],
       "args": ["${relativeFile}"],
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "/Users/Ian/.nvm/versions/node/v12.20.0/bin/node"
+    },
+    {
+      "name": "Attach to Netlify Dev",
+      "port": 9229,
+      "request": "attach",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "pwa-node",
+      "sourceMapPathOverrides": {
+        "meteor://💻app/*": "${workspaceFolder}/*",
+        "webpack:///./~/*": "${workspaceFolder}/node_modules/*",
+        "webpack://?:*/*": "${workspaceFolder}/src/functions/*"
+      }
     }
   ]
 }
