@@ -7,7 +7,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Script",
+      "name": "Run Script",
       "runtimeArgs": ["-r", "ts-node/register"],
       "args": ["${relativeFile}"],
       "cwd": "${workspaceFolder}",
