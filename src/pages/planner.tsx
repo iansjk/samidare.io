@@ -13,7 +13,7 @@ import AddIcon from "@material-ui/icons/Add";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import React, { useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import useLocalStorage from "../hooks/useLocalStorage";
+import usePersistence from "../hooks/usePersistence";
 import GoalOverview from "../components/GoalOverview";
 import OperatorGoalIconography from "../components/OperatorGoalIconography";
 import {
@@ -79,10 +79,7 @@ function Planner(): React.ReactElement {
   const operators: Operator[] = data.allOperatorsJson.nodes;
   const [operatorName, setOperatorName] = useState<string | null>(null);
   const [goalNames, setGoalNames] = useState<string[]>([] as string[]);
-  const [operatorGoals, setOperatorGoals] = useLocalStorage<OperatorGoal[]>(
-    "operatorGoals",
-    []
-  );
+  const { operatorGoals, setOperatorGoals } = usePersistence();
   const operator = operators.find((op) => op.name === operatorName);
   const goalSelectMenuProps = {
     getContentAnchorEl: null,
