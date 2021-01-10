@@ -70,8 +70,8 @@ function OperatorGoalIconography(
           alt={skill?.skillName}
           width={30}
           height={30}
-          crop="fit"
         >
+          <Transformation width={30} height={30} crop="fit" />
           <Transformation effect="sharpen" />
           <Transformation quality="auto" fetchFormat="auto" />
         </Image>
