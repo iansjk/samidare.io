@@ -6,7 +6,6 @@ import {
   makeStyles,
   TextField,
   ButtonBase,
-  Backdrop,
   Popover,
 } from "@material-ui/core";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
@@ -122,7 +121,6 @@ const ItemNeeded = React.memo(function ItemNeeded({
         <Popover
           BackdropProps={{
             invisible: false,
-            transitionDuration: 250,
           }}
           className={classes.itemInfoPopover}
           hideBackdrop={false}
@@ -133,11 +131,6 @@ const ItemNeeded = React.memo(function ItemNeeded({
           transformOrigin={{
             vertical: "center",
             horizontal: "left",
-          }}
-          transitionDuration={{
-            appear: 0,
-            enter: 250,
-            exit: 0,
           }}
           {...bindPopover(popoverState)}
         >
