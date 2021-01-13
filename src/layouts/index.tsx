@@ -1,6 +1,6 @@
 import {
-  Container as div,
   AppBar,
+  Container,
   Toolbar,
   Typography,
   Box,
@@ -14,16 +14,17 @@ import {
   ListItem,
   ListItemText,
   useTheme,
-  Container,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import clsx from "clsx";
-import React from "react";
+import React, { useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import { Link as GatsbyLink } from "gatsby-theme-material-ui";
+import netlifyIdentity from "netlify-identity-widget";
 import AppFooter from "../components/AppFooter";
 import favicon from "../data/images/favicon.ico";
+import NetlifyLogin from "./components/NetlifyLogin";
 
 const drawerWidth = 220;
 
@@ -67,6 +68,12 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
+  },
+  mainToolbar: {
+    display: "flex",
+  },
+  pageTitle: {
+    flexGrow: 1,
   },
 }));
 
@@ -143,7 +150,7 @@ function Layout(props: LayoutProps): React.ReactElement {
         component="h1"
         variant="h5"
       >
-        Arknights Tools
+        {title}
       </Typography>
       <Divider />
       <List>
@@ -157,11 +164,13 @@ function Layout(props: LayoutProps): React.ReactElement {
   const container =
     typeof window !== "undefined" ? window.document.body : undefined;
 
+  useEffect(() => netlifyIdentity.init(), []);
+
   return (
     <>
       <Helmet>
         <html lang="en" />
-        <title>{pageTitle}</title>
+        <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="icon" type="image/x-icon" href={favicon} />
       </Helmet>
@@ -169,7 +178,7 @@ function Layout(props: LayoutProps): React.ReactElement {
       <div className={classes.appWrapper}>
         <div className={classes.appContainer}>
           <AppBar position="fixed" className={classes.headerFooter}>
-            <Toolbar>
+            <Toolbar className={classes.mainToolbar}>
               <IconButton
                 color="inherit"
                 aria-label="open drawer"
@@ -179,9 +188,15 @@ function Layout(props: LayoutProps): React.ReactElement {
               >
                 <MenuIcon />
               </IconButton>
-              <Typography component="h2" variant="h5" noWrap>
+              <Typography
+                component="h2"
+                variant="h5"
+                noWrap
+                className={classes.pageTitle}
+              >
                 {pageTitle}
               </Typography>
+              <NetlifyLogin />
             </Toolbar>
           </AppBar>
           <nav className={classes.drawer} aria-label="mailbox folders">
