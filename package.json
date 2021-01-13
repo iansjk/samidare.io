@@ -32,6 +32,7 @@
     "cloudinary-react": "^1.6.8",
     "clsx": "^1.1.1",
     "dotenv": "^8.2.0",
+    "encoding": "^0.1.13",
     "eslint-plugin-prettier": "^3.3.0",
     "faunadb": "^4.0.0",
     "gatsby": "^2.26.1",
