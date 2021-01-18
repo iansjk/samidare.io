@@ -13,8 +13,10 @@ const client = new Client({
 const handler = async (event, context) => {
   let userId = "";
   if (process.env.CONTEXT === "dev") {
+    console.log("uh oh why is process.env.CONTEXT === dev");
     userId = event.queryStringParameters.userId;
   } else {
+    console.log(JSON.stringify(context.clientContext));
     userId =
       context.clientContext && context.clientContext.user
         ? context.clientContext.user.id
