@@ -89,6 +89,11 @@ function usePersistence(): UserData & WithSetters<UserData> {
                 params: {
                   userId: user?.id,
                 },
+                headers: {
+                  Accept: "application/json",
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${user?.token?.access_token}`,
+                },
               }
             )
             .then(() => setIsDirty(false));
