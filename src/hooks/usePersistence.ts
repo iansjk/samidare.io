@@ -1,8 +1,11 @@
 import netlifyIdentity from "netlify-identity-widget";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { Item, OperatorGoal } from "../types";
 import useLocalStorage from "./useLocalStorage";
+
+// amount of time in ms to wait after a single state change until updating remote
+const TIME_UNTIL_REMOTE_UPDATE = 5000;
 
 interface UserData {
   operatorGoals: OperatorGoal[];
@@ -16,18 +19,29 @@ type WithSetters<T> = {
 };
 
 function usePersistence(): UserData & WithSetters<UserData> {
-  const [operatorGoals, setOperatorGoals] = useLocalStorage<OperatorGoal[]>(
+  const [isDirty, setIsDirty] = useState(false);
+  const [operatorGoals, rawSetOperatorGoals] = useLocalStorage<OperatorGoal[]>(
     "operatorGoals",
     []
   );
-  const [materialsOwned, setMaterialsOwned] = useLocalStorage(
+  const [materialsOwned, rawSetMaterialsOwned] = useLocalStorage(
     "materialsOwned",
     {} as Record<string, number | null>
   );
-  const [itemsToCraft, setItemsToCraft] = useLocalStorage(
+  const [itemsToCraft, rawSetItemsToCraft] = useLocalStorage(
     "itemsToCraft",
     {} as Record<string, Item>
   );
+
+  function controlledSetter<T>(
+    rawSetter: React.Dispatch<React.SetStateAction<T>>
+  ) {
+    return ((value: T) => {
+      console.log("State changed, marking as dirty");
+      setIsDirty(true);
+      rawSetter(value);
+    }) as React.Dispatch<React.SetStateAction<T>>;
+  }
 
   useEffect(() => {
     netlifyIdentity.on("login", async (user) => {
@@ -46,22 +60,35 @@ function usePersistence(): UserData & WithSetters<UserData> {
             },
           }
         );
-        setItemsToCraft(response.data.itemsToCraft);
-        setMaterialsOwned(response.data.materialsOwned);
-        setOperatorGoals(response.data.operatorGoals);
+        rawSetItemsToCraft(response.data.itemsToCraft);
+        rawSetMaterialsOwned(response.data.materialsOwned);
+        rawSetOperatorGoals(response.data.operatorGoals);
       } catch (e) {
         console.warn("Failed to fetch user data", e);
       }
     });
-  }, [setItemsToCraft, setMaterialsOwned, setOperatorGoals]);
+
+    const timerId = setTimeout(() => {
+      if (isDirty) {
+        try {
+          console.log("Local state dirty, updating remote");
+          // TODO do stuff
+          setIsDirty(false);
+        } catch (e) {
+          console.warn("Failed to update state", e);
+        }
+      }
+    }, TIME_UNTIL_REMOTE_UPDATE);
+    return () => clearTimeout(timerId);
+  }, [rawSetItemsToCraft, rawSetMaterialsOwned, rawSetOperatorGoals, isDirty]);
 
   return {
     operatorGoals,
-    setOperatorGoals,
+    setOperatorGoals: controlledSetter(rawSetOperatorGoals),
     materialsOwned,
-    setMaterialsOwned,
+    setMaterialsOwned: controlledSetter(rawSetMaterialsOwned),
     itemsToCraft,
-    setItemsToCraft,
+    setItemsToCraft: controlledSetter(rawSetItemsToCraft),
   } as const;
 }
 
