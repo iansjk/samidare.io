@@ -6,9 +6,19 @@ function NetlifyLogin(): React.ReactElement {
   const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
-    netlifyIdentity.on("init", (currentUser) => setUser(currentUser));
-    netlifyIdentity.on("login", (currentUser) => setUser(currentUser));
+    let isMounted = true;
+    netlifyIdentity.on(
+      "init",
+      (currentUser) => isMounted && setUser(currentUser)
+    );
+    netlifyIdentity.on(
+      "login",
+      (currentUser) => isMounted && setUser(currentUser)
+    );
     netlifyIdentity.on("logout", () => setUser(null));
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   return (
