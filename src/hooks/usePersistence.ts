@@ -33,16 +33,19 @@ function usePersistence(): UserData & WithSetters<UserData> {
     netlifyIdentity.on("login", async (user) => {
       console.log("Someone logged in, time to update my localStorage keys");
       try {
-        const response = await axios.get<UserData>("/.netlify/functions/user-data", {
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${user.token?.access_token}`
-          },
-          params: {
-            userId: user.id,
+        const response = await axios.get<UserData>(
+          "/.netlify/functions/user-data",
+          {
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${user.token?.access_token}`,
+            },
+            params: {
+              userId: user.id,
+            },
           }
-        });
+        );
         setItemsToCraft(response.data.itemsToCraft);
         setMaterialsOwned(response.data.materialsOwned);
         setOperatorGoals(response.data.operatorGoals);
