@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   longerListItem: {
     fontSize: `min(3.05vw, ${theme.typography.body2.fontSize})`,
   },
-  myDiscordTag: {
+  discordTag: {
     fontSize: theme.typography.fontSize,
   },
 }));
@@ -54,7 +54,7 @@ export default function AppFooter({ className }): React.ReactElement {
         <li>
           <Typography variant="body2">
             site made by&nbsp;
-            <code className={classes.myDiscordTag}>
+            <code className={classes.discordTag}>
               samidare&nbsp;
               <span role="img" aria-label="umbrella">
                 ☔
@@ -103,19 +103,9 @@ export default function AppFooter({ className }): React.ReactElement {
           </Link>
         </li>
         <li>
-          <Typography className={classes.longerListItem} variant="body2">
-            stage efficiency calcs:&nbsp;
-            <code>
-              <span role="img" aria-label="peach">
-                🍑
-              </span>
-              Moe
-              <span role="img" aria-label="peach">
-                🍑
-              </span>
-              #2568
-            </code>
-            , <code>Luzark#8152</code>
+          <Typography variant="body2">
+            efficiency calcs:&nbsp;
+            <code className={classes.discordTag}>Luzark#8152</code>
           </Typography>
         </li>
         <li>
