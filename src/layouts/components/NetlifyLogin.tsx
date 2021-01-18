@@ -9,7 +9,7 @@ function NetlifyLogin(): React.ReactElement {
     netlifyIdentity.on("init", (currentUser) => setUser(currentUser));
     netlifyIdentity.on("login", (currentUser) => setUser(currentUser));
     netlifyIdentity.on("logout", () => setUser(null));
-  });
+  }, []);
 
   return (
     <Box display="flex">
