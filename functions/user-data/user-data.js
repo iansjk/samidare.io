@@ -37,7 +37,19 @@ const handler = async (event, context) => {
       };
     }
     if (event.httpMethod === "POST") {
-      // not yet supported
+      await client.query(
+        query.Update(
+          query.Select(
+            ["ref"],
+            query.Get(query.Match(query.Index("userdata_by_userId"), userId))
+          ),
+          { data: { ...JSON.parse(event.body) } }
+        )
+      );
+      return {
+        statusCode: 200,
+        body: "Update successful",
+      };
     }
     return {
       statusCode: 400,

@@ -1,4 +1,5 @@
-import netlifyIdentity from "netlify-identity-widget";
+/* eslint-disable no-console */
+import netlifyIdentity, { User } from "netlify-identity-widget";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Item, OperatorGoal } from "../types";
@@ -19,6 +20,7 @@ type WithSetters<T> = {
 };
 
 function usePersistence(): UserData & WithSetters<UserData> {
+  const [user, setUser] = useState<User | null>(null);
   const [isDirty, setIsDirty] = useState(false);
   const [operatorGoals, rawSetOperatorGoals] = useLocalStorage<OperatorGoal[]>(
     "operatorGoals",
@@ -44,8 +46,9 @@ function usePersistence(): UserData & WithSetters<UserData> {
   }
 
   useEffect(() => {
-    netlifyIdentity.on("login", async (user) => {
+    netlifyIdentity.on("login", async (newUser) => {
       console.log("Someone logged in, time to update my localStorage keys");
+      setUser(newUser);
       try {
         const response = await axios.get<UserData>(
           "/.netlify/functions/user-data",
@@ -53,10 +56,10 @@ function usePersistence(): UserData & WithSetters<UserData> {
             headers: {
               Accept: "application/json",
               "Content-Type": "application/json",
-              Authorization: `Bearer ${user.token?.access_token}`,
+              Authorization: `Bearer ${newUser.token?.access_token}`,
             },
             params: {
-              userId: user.id,
+              userId: newUser.id,
             },
           }
         );
@@ -67,20 +70,35 @@ function usePersistence(): UserData & WithSetters<UserData> {
         console.warn("Failed to fetch user data", e);
       }
     });
+  }, [rawSetItemsToCraft, rawSetMaterialsOwned, rawSetOperatorGoals]);
 
+  useEffect(() => {
     const timerId = setTimeout(() => {
       if (isDirty) {
         try {
           console.log("Local state dirty, updating remote");
-          // TODO do stuff
-          setIsDirty(false);
+          axios
+            .post(
+              "/.netlify/functions/user-data",
+              {
+                itemsToCraft,
+                materialsOwned,
+                operatorGoals,
+              },
+              {
+                params: {
+                  userId: user?.id,
+                },
+              }
+            )
+            .then(() => setIsDirty(false));
         } catch (e) {
           console.warn("Failed to update state", e);
         }
       }
     }, TIME_UNTIL_REMOTE_UPDATE);
     return () => clearTimeout(timerId);
-  }, [rawSetItemsToCraft, rawSetMaterialsOwned, rawSetOperatorGoals, isDirty]);
+  }, [isDirty, itemsToCraft, materialsOwned, operatorGoals, user]);
 
   return {
     operatorGoals,
