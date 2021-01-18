@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { query, Client } = require("faunadb");
 
@@ -11,17 +12,19 @@ const client = new Client({
 });
 
 const handler = async (event, context) => {
+  console.log(JSON.stringify(event, null, 2));
   let userId = "";
   if (process.env.CONTEXT === "dev") {
-    console.log("uh oh why is process.env.CONTEXT === dev");
+    console.warn("$CONTEXT === dev, bypassing access_token check");
     userId = event.queryStringParameters.userId;
   } else {
-    console.log(JSON.stringify(context.clientContext));
+    console.log(JSON.stringify(context.clientContext, null, 2));
     userId =
       context.clientContext && context.clientContext.user
         ? context.clientContext.user.sub
         : "";
   }
+  console.log("User id:", userId);
   if (!userId) {
     return {
       statusCode: 403,
@@ -58,6 +61,7 @@ const handler = async (event, context) => {
       body: `Unknown HTTP method ${event.httpMethod}`,
     };
   } catch (e) {
+    console.error(e);
     if (e && e.name === "NotFound") {
       return {
         statusCode: 404,
