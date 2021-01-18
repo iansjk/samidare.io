@@ -19,7 +19,7 @@ const handler = async (event, context) => {
     console.log(JSON.stringify(context.clientContext));
     userId =
       context.clientContext && context.clientContext.user
-        ? context.clientContext.user.id
+        ? context.clientContext.user.sub
         : "";
   }
   if (!userId) {
