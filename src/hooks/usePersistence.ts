@@ -1,5 +1,6 @@
 import netlifyIdentity from "netlify-identity-widget";
 import { useEffect } from "react";
+import axios from "axios";
 import { Item, OperatorGoal } from "../types";
 import useLocalStorage from "./useLocalStorage";
 
@@ -29,8 +30,27 @@ function usePersistence(): UserData & WithSetters<UserData> {
   );
 
   useEffect(() => {
-    netlifyIdentity.on("login", () => { console.log("Someone logged in, time to update my localStorage keys")});
-  }, []);
+    netlifyIdentity.on("login", async (user) => {
+      console.log("Someone logged in, time to update my localStorage keys");
+      try {
+        const response = await axios.get<UserData>("/.netlify/functions/user-data", {
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${user.token?.access_token}`
+          },
+          params: {
+            userId: user.id,
+          }
+        });
+        setItemsToCraft(response.data.itemsToCraft);
+        setMaterialsOwned(response.data.materialsOwned);
+        setOperatorGoals(response.data.operatorGoals);
+      } catch (e) {
+        console.warn("Failed to fetch user data", e);
+      }
+    });
+  }, [setItemsToCraft, setMaterialsOwned, setOperatorGoals]);
 
   return {
     operatorGoals,

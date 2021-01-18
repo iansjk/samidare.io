@@ -1,0 +1,47 @@
+{
+  "itemsToCraft": {
+    "Orirock Cube": {
+      "name": "Orirock Cube",
+      "tier": 2,
+      "sortId": 100014,
+      "ingredients": [
+        { "name": "LMD", "quantity": 100, "tier": 4, "sortId": 10004 },
+        { "name": "Orirock", "quantity": 3, "tier": 1, "sortId": 100015 }
+      ]
+    }
+  },
+  "materialsOwned": {
+    "RMA70-12": 3,
+    "Grindstone Pentahydrate": 2,
+    "Orirock Cube": 4,
+    "Sugar": 5,
+    "Sniper Dualchip": 1,
+    "Sniper Chip": 4
+  },
+  "operatorGoals": [
+    {
+      "operatorName": "Andreana",
+      "eliteLevel": 1,
+      "goalCategory": 0,
+      "goalName": "Elite 1",
+      "ingredients": [
+        { "name": "LMD", "tier": 4, "quantity": 20000 },
+        { "name": "Sniper Chip", "tier": 3, "quantity": 4 },
+        { "name": "Orirock Cube", "tier": 2, "quantity": 8 },
+        { "name": "Sugar", "tier": 2, "quantity": 2 }
+      ]
+    },
+    {
+      "operatorName": "Andreana",
+      "eliteLevel": 2,
+      "goalCategory": 0,
+      "goalName": "Elite 2",
+      "ingredients": [
+        { "name": "LMD", "tier": 4, "quantity": 120000 },
+        { "name": "Sniper Dualchip", "tier": 5, "quantity": 3 },
+        { "name": "Grindstone Pentahydrate", "tier": 4, "quantity": 8 },
+        { "name": "RMA70-12", "tier": 3, "quantity": 8 }
+      ]
+    }
+  ]
+}

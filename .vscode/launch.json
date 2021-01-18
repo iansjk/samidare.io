@@ -19,6 +19,15 @@
       "args": ["${relativeFile}"],
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "/Users/Ian/.nvm/versions/node/v12.20.0/bin/node"
+    },
+    {
+      "name": "Attach",
+      "port": 9229,
+      "request": "attach",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "pwa-node"
     }
   ]
 }

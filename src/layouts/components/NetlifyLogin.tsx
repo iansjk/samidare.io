@@ -15,7 +15,7 @@ function NetlifyLogin(): React.ReactElement {
       "login",
       (currentUser) => isMounted && setUser(currentUser)
     );
-    netlifyIdentity.on("logout", () => setUser(null));
+    netlifyIdentity.on("logout", () => isMounted && setUser(null));
     return () => {
       isMounted = false;
     };
