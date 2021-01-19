@@ -46,7 +46,7 @@ function usePersistence(): UserData & WithSetters<UserData> {
   }
 
   useEffect(() => {
-    const handler = async (newUser: User) => {
+    const loginHandler = async (newUser: User) => {
       console.log("Someone logged in, time to update my localStorage keys");
       setUser(newUser);
       try {
@@ -70,8 +70,16 @@ function usePersistence(): UserData & WithSetters<UserData> {
         console.warn("Failed to fetch user data", e);
       }
     };
-    netlifyIdentity.on("login", handler);
-    return () => netlifyIdentity.off("login", handler);
+    netlifyIdentity.on("login", loginHandler);
+    const logoutHandler = () => {
+      netlifyIdentity.off("login", loginHandler);
+      setUser(null);
+    };
+    netlifyIdentity.on("logout", logoutHandler);
+    return () => {
+      netlifyIdentity.off("login", loginHandler);
+      netlifyIdentity.off("logout", logoutHandler);
+    };
   }, [rawSetItemsToCraft, rawSetMaterialsOwned, rawSetOperatorGoals]);
 
   useEffect(() => {
