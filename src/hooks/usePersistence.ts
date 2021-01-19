@@ -80,7 +80,8 @@ function usePersistence(): UserData & WithSetters<UserData> {
       netlifyIdentity.off("login", loginHandler);
       netlifyIdentity.off("logout", logoutHandler);
     };
-  }, [rawSetItemsToCraft, rawSetMaterialsOwned, rawSetOperatorGoals]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     const timerId = setTimeout(() => {
