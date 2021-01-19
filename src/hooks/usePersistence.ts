@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import netlifyIdentity, { User } from "netlify-identity-widget";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import { Item, OperatorGoal } from "../types";
 import useLocalStorage from "./useLocalStorage";
@@ -45,8 +45,8 @@ function usePersistence(): UserData & WithSetters<UserData> {
     }) as React.Dispatch<React.SetStateAction<T>>;
   }
 
-  useEffect(() => {
-    const loginHandler = async (newUser: User) => {
+  const loginHandler = useCallback(
+    async (newUser: User) => {
       console.log("Someone logged in, time to update my localStorage keys");
       setUser(newUser);
       try {
@@ -69,18 +69,25 @@ function usePersistence(): UserData & WithSetters<UserData> {
       } catch (e) {
         console.warn("Failed to fetch user data", e);
       }
-    };
+    },
+    [rawSetItemsToCraft, rawSetMaterialsOwned, rawSetOperatorGoals]
+  );
+
+  const logoutHandler = useCallback(() => {
+    netlifyIdentity.off("login", loginHandler);
+    setUser(null);
+  }, [loginHandler]);
+
+  useEffect(() => {
+    console.log("useEffect: setting handlers");
     netlifyIdentity.on("login", loginHandler);
-    const logoutHandler = () => {
-      netlifyIdentity.off("login", loginHandler);
-      setUser(null);
-    };
     netlifyIdentity.on("logout", logoutHandler);
     return () => {
+      console.log("useEffect cleanup");
       netlifyIdentity.off("login", loginHandler);
       netlifyIdentity.off("logout", logoutHandler);
     };
-  }, [rawSetItemsToCraft, rawSetMaterialsOwned, rawSetOperatorGoals]);
+  }, [loginHandler, logoutHandler]);
 
   useEffect(() => {
     const timerId = setTimeout(() => {
