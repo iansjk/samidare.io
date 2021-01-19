@@ -46,7 +46,7 @@ function usePersistence(): UserData & WithSetters<UserData> {
   }
 
   useEffect(() => {
-    netlifyIdentity.on("login", async (newUser) => {
+    const handler = async (newUser: User) => {
       console.log("Someone logged in, time to update my localStorage keys");
       setUser(newUser);
       try {
@@ -69,7 +69,9 @@ function usePersistence(): UserData & WithSetters<UserData> {
       } catch (e) {
         console.warn("Failed to fetch user data", e);
       }
-    });
+    };
+    netlifyIdentity.on("login", handler);
+    return () => netlifyIdentity.off("login", handler);
   }, [rawSetItemsToCraft, rawSetMaterialsOwned, rawSetOperatorGoals]);
 
   useEffect(() => {
