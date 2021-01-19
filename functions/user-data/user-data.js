@@ -43,12 +43,21 @@ const handler = async (event, context) => {
     }
     if (event.httpMethod === "POST") {
       await client.query(
-        query.Update(
-          query.Select(
-            ["ref"],
-            query.Get(query.Match(query.Index("userdata_by_userId"), userId))
+        query.If(
+          query.Exists(query.Match(query.Index("userdata_by_userId"), userId)),
+          query.Update(
+            query.Select(
+              ["ref"],
+              query.Get(query.Match(query.Index("userdata_by_userId"), userId))
+            ),
+            { data: JSON.parse(event.body) }
           ),
-          { data: { ...JSON.parse(event.body) } }
+          query.Create(query.Collection("userdata"), {
+            data: {
+              userId,
+              ...JSON.parse(event.body),
+            },
+          })
         )
       );
       return {
