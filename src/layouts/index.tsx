@@ -17,14 +17,15 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import clsx from "clsx";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import { Link as GatsbyLink } from "gatsby-theme-material-ui";
-import netlifyIdentity from "netlify-identity-widget";
+import netlifyIdentity, { User } from "netlify-identity-widget";
 import AppFooter from "../components/AppFooter";
 import favicon from "../data/images/favicon.ico";
 import NetlifyLogin from "./components/NetlifyLogin";
+import NetlifyLoginContext from "./components/NetlifyLoginContext";
 
 const drawerWidth = 220;
 
@@ -138,6 +139,8 @@ function Layout(props: LayoutProps): React.ReactElement {
   const theme = useTheme();
   const pageTitle = getPageTitle(title, uri);
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [currentUser, setCurrentUser] = useState<User | null>(null);
+  const [isDirty, setIsDirty] = useState(false);
 
   function handleDrawerToggle() {
     setMobileOpen(!mobileOpen);
@@ -167,7 +170,7 @@ function Layout(props: LayoutProps): React.ReactElement {
   useEffect(() => netlifyIdentity.init(), []);
 
   return (
-    <>
+    <NetlifyLoginContext.Provider value={{ currentUser, setCurrentUser }}>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -238,7 +241,7 @@ function Layout(props: LayoutProps): React.ReactElement {
         <Box flexGrow={1} />
         <AppFooter className={classes.headerFooter} />
       </div>
-    </>
+    </NetlifyLoginContext.Provider>
   );
 }
 export default Layout;

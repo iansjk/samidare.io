@@ -1,9 +1,10 @@
 /* eslint-disable no-console */
 import netlifyIdentity, { User } from "netlify-identity-widget";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { Item, OperatorGoal } from "../types";
 import useLocalStorage from "./useLocalStorage";
+import NetlifyLoginContext from "../layouts/components/NetlifyLoginContext";
 
 // amount of time in ms to wait after a single state change until updating remote
 const TIME_UNTIL_REMOTE_UPDATE = 5000;
@@ -20,7 +21,7 @@ type WithSetters<T> = {
 };
 
 function usePersistence(): UserData & WithSetters<UserData> {
-  const [user, setUser] = useState<User | null>(null);
+  const { currentUser } = useContext(NetlifyLoginContext);
   const [isDirty, setIsDirty] = useState(false);
   const [operatorGoals, rawSetOperatorGoals] = useLocalStorage<OperatorGoal[]>(
     "operatorGoals",
@@ -48,7 +49,6 @@ function usePersistence(): UserData & WithSetters<UserData> {
   const loginHandler = useCallback(
     async (newUser: User) => {
       console.log("Someone logged in, time to update my localStorage keys");
-      setUser(newUser);
       try {
         const response = await axios.get<UserData>(
           "/.netlify/functions/user-data",
@@ -67,31 +67,35 @@ function usePersistence(): UserData & WithSetters<UserData> {
         rawSetMaterialsOwned(response.data.materialsOwned);
         rawSetOperatorGoals(response.data.operatorGoals);
       } catch (e) {
-        console.warn("Failed to fetch user data", e);
+        if (e.response.status === 404) {
+          console.log(
+            "No data saved for this user yet, setting dirty immediately"
+          );
+          setIsDirty(true);
+        } else {
+          console.warn("Failed to fetch user data", e);
+        }
       }
     },
     [rawSetItemsToCraft, rawSetMaterialsOwned, rawSetOperatorGoals]
   );
 
-  const logoutHandler = useCallback(() => {
-    netlifyIdentity.off("login", loginHandler);
-    setUser(null);
+  useEffect(() => {
+    // @ts-expect-error check window flag
+    if (typeof window !== undefined && window.loginHandlerBound !== true) {
+      console.log("useEffect: setting handlers");
+      netlifyIdentity.on("login", loginHandler);
+      // @ts-expect-error set window flag
+      window.loginHandlerBound = true;
+    }
+    return () => {
+      netlifyIdentity.off("login", loginHandler);
+    };
   }, [loginHandler]);
 
   useEffect(() => {
-    console.log("useEffect: setting handlers");
-    netlifyIdentity.on("login", loginHandler);
-    netlifyIdentity.on("logout", logoutHandler);
-    return () => {
-      console.log("useEffect cleanup");
-      netlifyIdentity.off("login", loginHandler);
-      netlifyIdentity.off("logout", logoutHandler);
-    };
-  }, [loginHandler, logoutHandler]);
-
-  useEffect(() => {
     const timerId = setTimeout(() => {
-      if (isDirty) {
+      if (currentUser && isDirty) {
         try {
           console.log("Local state dirty, updating remote");
           axios
@@ -104,12 +108,12 @@ function usePersistence(): UserData & WithSetters<UserData> {
               },
               {
                 params: {
-                  userId: user?.id,
+                  userId: currentUser?.id,
                 },
                 headers: {
                   Accept: "application/json",
                   "Content-Type": "application/json",
-                  Authorization: `Bearer ${user?.token?.access_token}`,
+                  Authorization: `Bearer ${currentUser?.token?.access_token}`,
                 },
               }
             )
@@ -120,7 +124,7 @@ function usePersistence(): UserData & WithSetters<UserData> {
       }
     }, TIME_UNTIL_REMOTE_UPDATE);
     return () => clearTimeout(timerId);
-  }, [isDirty, itemsToCraft, materialsOwned, operatorGoals, user]);
+  }, [isDirty, itemsToCraft, materialsOwned, operatorGoals, currentUser]);
 
   return {
     operatorGoals,
