@@ -7,7 +7,7 @@ import useLocalStorage from "./useLocalStorage";
 import NetlifyLoginContext from "../layouts/components/NetlifyLoginContext";
 
 // amount of time in ms to wait after a single state change until updating remote
-const TIME_UNTIL_REMOTE_UPDATE = 5000;
+const TIME_UNTIL_REMOTE_UPDATE = 2000;
 
 interface UserData {
   operatorGoals: OperatorGoal[];
