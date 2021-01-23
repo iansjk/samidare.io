@@ -124,6 +124,7 @@ function Recruitment(): React.ReactElement {
         renderInput={(params) => (
           <TextField
             {...params}
+            autoFocus
             label="Available recruitment tags"
             variant="outlined"
           />
