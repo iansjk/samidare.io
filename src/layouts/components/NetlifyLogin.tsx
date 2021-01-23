@@ -13,10 +13,14 @@ import NetlifyLoginContext from "./NetlifyLoginContext";
 const useStyles = makeStyles((theme) => ({
   loginWrapper: {
     display: "flex",
-    alignItems: "baseline",
+    alignItems: "center",
     "& > *": {
       marginLeft: theme.spacing(1),
     },
+  },
+  logoutButton: {
+    marginLeft: theme.spacing(1),
+    paddingTop: "7px",
   },
 }));
 
@@ -36,32 +40,39 @@ function NetlifyLogin(): React.ReactElement {
   }, [setCurrentUser]);
 
   return (
-    <div className={classes.loginWrapper}>
-      {currentUser ? (
-        <NoSsr>
-          {currentUser.user_metadata.avatar_url ? (
-            <Avatar alt="" src={currentUser.user_metadata.avatar_url} />
-          ) : (
-            <Avatar>{currentUser.user_metadata.full_name.charAt(0)}</Avatar>
-          )}
-          <Typography variant="h6">
-            {currentUser.user_metadata.full_name}
-          </Typography>
-          <Box clone ml={1}>
-            <Button onClick={() => netlifyIdentity.logout()}>Log out</Button>
-          </Box>
-        </NoSsr>
-      ) : (
-        <NoSsr>
-          <Button onClick={() => netlifyIdentity.open("login")}>Log in</Button>
-          <Box clone ml={1}>
-            <Button onClick={() => netlifyIdentity.open("signup")}>
-              Register
+    <NoSsr>
+      <div className={classes.loginWrapper}>
+        {currentUser ? (
+          <>
+            {currentUser.user_metadata.avatar_url ? (
+              <Avatar alt="" src={currentUser.user_metadata.avatar_url} />
+            ) : (
+              <Avatar>{currentUser.user_metadata.full_name.charAt(0)}</Avatar>
+            )}
+            <Typography variant="h6">
+              {currentUser.user_metadata.full_name}
+            </Typography>
+            <Button
+              className={classes.logoutButton}
+              onClick={() => netlifyIdentity.logout()}
+            >
+              Log out
             </Button>
-          </Box>
-        </NoSsr>
-      )}
-    </div>
+          </>
+        ) : (
+          <>
+            <Button onClick={() => netlifyIdentity.open("login")}>
+              Log in
+            </Button>
+            <Box clone ml={1}>
+              <Button onClick={() => netlifyIdentity.open("signup")}>
+                Register
+              </Button>
+            </Box>
+          </>
+        )}
+      </div>
+    </NoSsr>
   );
 }
 export default NetlifyLogin;
