@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import {
   Box,
@@ -88,6 +88,8 @@ function Recruitment(): React.ReactElement {
   const recruitableOperators: RecruitableOperator[] =
     data.allRecruitmentJson.nodes;
   const [activeTags, setActiveTags] = useState<string[]>([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const textinput = useRef(null);
   const tagCombinations = getTagCombinations(activeTags);
   const matchingOperators: Record<string, RecruitableOperator[]> = {};
   recruitableOperators.forEach((recruitmentData) => {
@@ -112,18 +114,27 @@ function Recruitment(): React.ReactElement {
     if (value.length <= 5) {
       setActiveTags(value);
     }
+    if (value.length === 5) {
+      setIsOpen(false);
+      textinput.current?.blur();
+    }
   }
 
   return (
     <>
       <Autocomplete
+        key="input"
         options={Object.values(tagsByCategory).flat()}
         multiple
         autoHighlight
+        open={isOpen}
+        onOpen={() => setIsOpen(true)}
+        onClose={() => setIsOpen(false)}
         disableCloseOnSelect
         renderInput={(params) => (
           <TextField
             {...params}
+            inputRef={textinput}
             autoFocus
             label="Available recruitment tags"
             variant="outlined"
