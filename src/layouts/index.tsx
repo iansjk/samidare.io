@@ -140,7 +140,6 @@ function Layout(props: LayoutProps): React.ReactElement {
   const pageTitle = getPageTitle(title, uri);
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [currentUser, setCurrentUser] = useState<User | null>(null);
-  const [isDirty, setIsDirty] = useState(false);
 
   function handleDrawerToggle() {
     setMobileOpen(!mobileOpen);
