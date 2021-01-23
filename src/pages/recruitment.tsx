@@ -141,25 +141,38 @@ function Recruitment(): React.ReactElement {
               ) || tagSetB.split(",").length - tagSetA.split(",").length
         )
         .map(([tagSet, recruitments]) => (
-          <>
-            <Grid container className={classes.recruitmentResult} spacing={2}>
-              <Box
-                clone
-                justifyContent={isXSmallScreen ? "center" : "flex-end"}
-              >
-                <Grid item xs={12} sm={3} className={classes.chipContainer}>
-                  {tagSet.split(",").map((tag) => (
-                    <Chip key={tag} label={tag} />
-                  ))}
-                </Grid>
-              </Box>
-              <Grid item xs={12} sm={9} className={classes.chipContainer}>
-                {recruitments.map(({ name, rarity, tags }) => (
-                  <RecruitableOperatorChip {...{ name, rarity, tags }} />
+          <Grid
+            container
+            className={classes.recruitmentResult}
+            spacing={2}
+            key={tagSet}
+          >
+            <Box
+              key="tags"
+              clone
+              justifyContent={isXSmallScreen ? "center" : "flex-end"}
+            >
+              <Grid item xs={12} sm={3} className={classes.chipContainer}>
+                {tagSet.split(",").map((tag) => (
+                  <Chip key={tag} label={tag} />
                 ))}
               </Grid>
+            </Box>
+            <Grid
+              item
+              xs={12}
+              sm={9}
+              className={classes.chipContainer}
+              key="operators"
+            >
+              {recruitments.map(({ name, rarity, tags }) => (
+                <RecruitableOperatorChip
+                  key={name}
+                  {...{ name, rarity, tags }}
+                />
+              ))}
             </Grid>
-          </>
+          </Grid>
         ))}
     </>
   );
