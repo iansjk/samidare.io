@@ -224,7 +224,11 @@ const GoalOverview = React.memo(function GoalOverview(
             ingredients={item.ingredients}
             size={isXSmallScreen ? 75 : undefined}
             needed={needed}
-            owned={materialsOwned[name] || 0}
+            owned={
+              !Object.prototype.hasOwnProperty.call(materialsOwned, name)
+                ? 0
+                : materialsOwned[name]
+            }
             complete={isMaterialComplete(name)}
             crafting={Object.prototype.hasOwnProperty.call(itemsToCraft, name)}
             ingredientFor={ingredientMapping[name]}

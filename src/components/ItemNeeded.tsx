@@ -145,7 +145,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
           size="small"
           fullWidth
           variant="outlined"
-          value={owned}
+          value={owned === null ? "" : owned}
           onFocus={(event) => event.target.select()}
           onChange={(event) => onChange(name, event.target.value)}
           inputProps={{
@@ -153,6 +153,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
             className: classes.input,
             min: 0,
             step: 1,
+            "aria-label": "Quantity owned",
           }}
           InputProps={{
             classes: outlinedInputClasses,
