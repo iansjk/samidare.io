@@ -2,6 +2,7 @@ import path from "path";
 import fs from "fs";
 import cnCharacterTable from "./ArknightsData/zh-CN/gamedata/excel/character_table.json";
 import cnSkillTable from "./ArknightsData/zh-CN/gamedata/excel/skill_table.json";
+import { patchChars as cnCharacterPatchTable } from "./ArknightsData/zh-CN/gamedata/excel/char_patch_table.json";
 import enCharacterTable from "./ArknightsData/en-US/gamedata/excel/character_table.json";
 import enSkillTable from "./ArknightsData/en-US/gamedata/excel/skill_table.json";
 import {
@@ -41,91 +42,104 @@ interface SkillLevelEntry {
   lvlUpCost: InternalItemRequirement[];
 }
 
-const operatorIds = Object.keys(cnCharacterTable)
-  .filter((id) => {
-    const entry = cnCharacterTable[id as keyof typeof cnCharacterTable];
-    return (
-      // internal rarity is 0-indexed; we only want 3* and above
-      // ids starting with "token_" are summons, not operators
-      !id.startsWith("token") && !entry.isNotObtainable && entry.rarity + 1 >= 3
-    );
-  })
-  .sort((a, b) => a.localeCompare(b));
+const operatorIds = [
+  ...Object.keys(cnCharacterTable)
+    .filter((id) => {
+      const entry = cnCharacterTable[id as keyof typeof cnCharacterTable];
+      return (
+        // internal rarity is 0-indexed; we only want 3* and above
+        // ids starting with "token_" are summons, not operators
+        Object.prototype.hasOwnProperty.call(cnCharacterPatchTable, id) ||
+        (!id.startsWith("token") &&
+          !entry.isNotObtainable &&
+          entry.rarity + 1 >= 3)
+      );
+    })
+    .sort((a, b) => a.localeCompare(b)),
+  ...Object.keys(cnCharacterPatchTable),
+];
 
 const operatorEntries = operatorIds.map((id: string) => {
   const operatorId = id as keyof typeof cnCharacterTable;
   const name = getOperatorName(operatorId);
+  const isAlternateCharacter = Object.prototype.hasOwnProperty.call(
+    cnCharacterPatchTable,
+    operatorId
+  );
   const isCnOnly =
-    enCharacterTable[operatorId as keyof typeof enCharacterTable] === undefined;
-  const rarity = cnCharacterTable[operatorId].rarity + 1;
-  const skillLevels: OperatorGoal[] = (cnCharacterTable[operatorId]
-    .allSkillLvlup as SkillLevelEntry[]).map((skillLevelEntry, i) => {
-    const cost = skillLevelEntry.lvlUpCost;
-    const ingredients = cost.map(toIngredient);
-    return {
-      // we want to return the result of a skillup,
-      // and since [0] points to skill level 1 -> 2, we add 2
-      skillLevel: i + 2,
-      ingredients,
-      goalName: `Skill Level ${i + 1} → ${i + 2}`,
-      goalShortName: `Skill Level ${i + 2}`,
-      goalCategory: GoalCategory["Skill Level"],
-    };
-  });
-  // operatorData[id].phases[0] is E0, so we skip that one
-  const elite: OperatorGoal[] = (cnCharacterTable[operatorId].phases.slice(
-    1
-  ) as EliteLevelEntry[]).map(({ evolveCost }, i) => {
-    const ingredients = evolveCost.map(toIngredient);
-    ingredients.unshift(getEliteLMDCost(rarity, i + 1));
-    // [0] points to E1, [1] points to E2, so add 1
-    return {
-      eliteLevel: i + 1,
-      ingredients,
-      goalName: `Elite ${i + 1}`,
-      goalCategory: GoalCategory.Elite,
-    };
-  });
-  const baseObj = {
+    typeof enCharacterTable[operatorId as keyof typeof enCharacterTable] ===
+      "undefined" || isAlternateCharacter;
+  const entry: any = {
     name,
-    rarity,
-    elite,
-    skillLevels,
     isCnOnly,
   };
-  if (rarity < 4) {
-    return baseObj;
+  if (!isAlternateCharacter) {
+    entry.rarity = cnCharacterTable[operatorId].rarity + 1;
+    entry.skillLevels = (cnCharacterTable[operatorId]
+      .allSkillLvlup as SkillLevelEntry[]).map((skillLevelEntry, i) => {
+      const cost = skillLevelEntry.lvlUpCost;
+      const ingredients = cost.map(toIngredient);
+      return {
+        // we want to return the result of a skillup,
+        // and since [0] points to skill level 1 -> 2, we add 2
+        skillLevel: i + 2,
+        ingredients,
+        goalName: `Skill Level ${i + 1} → ${i + 2}`,
+        goalShortName: `Skill Level ${i + 2}`,
+        goalCategory: GoalCategory["Skill Level"],
+      };
+    });
+    // operatorData[id].phases[0] is E0, so we skip that one
+    entry.elite = (cnCharacterTable[operatorId].phases.slice(
+      1
+    ) as EliteLevelEntry[]).map(({ evolveCost }, i) => {
+      const ingredients = evolveCost.map(toIngredient);
+      ingredients.unshift(getEliteLMDCost(entry.rarity, i + 1));
+      // [0] points to E1, [1] points to E2, so add 1
+      return {
+        eliteLevel: i + 1,
+        ingredients,
+        goalName: `Elite ${i + 1}`,
+        goalCategory: GoalCategory.Elite,
+      };
+    });
   }
-  const skillTable = isCnOnly ? cnSkillTable : enSkillTable;
-  const skills = (cnCharacterTable[operatorId]
-    .skills as MasteryLevelEntry[]).map((masteryLevelEntry, i) => {
-    // masteryLevelEntry contains data on all 3 mastery levels for one skill
-    const masteries: OperatorGoal[] = masteryLevelEntry.levelUpCostCond.map(
-      ({ levelUpCost }, j) => {
-        const ingredients = levelUpCost.map(toIngredient);
-        // mastery level -> array of ingredients
-        return {
-          masteryLevel: j + 1,
-          ingredients,
-          goalName: `Skill ${i + 1} Mastery ${j + 1}`,
-          goalShortName: `S${i + 1} M${j + 1}`,
-          goalCategory: GoalCategory.Mastery,
-        };
-      }
-    );
-    // skill # -> { skill name, skill 1 masteries, skill 2 masteries, ... }
-    return {
-      slot: i + 1,
-      skillId: masteryLevelEntry.skillId,
-      iconId:
-        skillTable[masteryLevelEntry.skillId as keyof typeof skillTable].iconId,
-      skillName:
-        skillTable[masteryLevelEntry.skillId as keyof typeof skillTable]
-          .levels[0].name,
-      masteries,
-    };
-  });
-  return Object.assign(baseObj, { skills });
+  if (isAlternateCharacter || entry.rarity > 3) {
+    const skillTable = isCnOnly ? cnSkillTable : enSkillTable;
+    const masteryEntries = (isAlternateCharacter
+      ? cnCharacterPatchTable[operatorId as keyof typeof cnCharacterPatchTable]
+          .skills
+      : cnCharacterTable[operatorId].skills) as MasteryLevelEntry[];
+    entry.skills = masteryEntries.map((masteryLevelEntry, i) => {
+      // masteryLevelEntry contains data on all 3 mastery levels for one skill
+      const masteries: OperatorGoal[] = masteryLevelEntry.levelUpCostCond.map(
+        ({ levelUpCost }, j) => {
+          const ingredients = levelUpCost.map(toIngredient);
+          // mastery level -> array of ingredients
+          return {
+            masteryLevel: j + 1,
+            ingredients,
+            goalName: `Skill ${i + 1} Mastery ${j + 1}`,
+            goalShortName: `S${i + 1} M${j + 1}`,
+            goalCategory: GoalCategory.Mastery,
+          };
+        }
+      );
+      // skill # -> { skill name, skill 1 masteries, skill 2 masteries, ... }
+      return {
+        slot: i + 1,
+        skillId: masteryLevelEntry.skillId,
+        iconId:
+          skillTable[masteryLevelEntry.skillId as keyof typeof skillTable]
+            .iconId,
+        skillName:
+          skillTable[masteryLevelEntry.skillId as keyof typeof skillTable]
+            .levels[0].name,
+        masteries,
+      };
+    });
+  }
+  return entry;
 });
 
 fs.mkdirSync(ARKNIGHTS_DATA_DIR, { recursive: true });

@@ -33,6 +33,9 @@ const itemNameOverride: Record<string, string> = {
 };
 
 export function getOperatorName(operatorId: string): string | null {
+  if (operatorId === "char_1001_amiya2") {
+    return "Amiya (Guard)";
+  }
   const entry = cnCharacterTable[operatorId as keyof typeof cnCharacterTable];
   if (entry === undefined || entry.isNotObtainable) {
     return null;

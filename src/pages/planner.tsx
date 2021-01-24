@@ -94,20 +94,20 @@ function Planner(): React.ReactElement {
   };
 
   const handleAddGoals = () => {
+    if (!operator) {
+      return;
+    }
     setOperatorGoals((prevOperatorGoals) => {
       const goalNamesSet = new Set(goalNames);
-      const masteries =
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        operator!.rarity <= 3
-          ? []
-          : // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-            operator!.skills!.flatMap((skill) => skill.masteries);
+      const elite = operator.elite || [];
+      const masteries = operator.skills
+        ? [...operator.skills.flatMap((skill) => skill.masteries)]
+        : [];
+      const skillLevels = operator.skillLevels || [];
       const goalsToAdd = [
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        ...operator!.elite,
+        ...elite,
         ...masteries,
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        ...operator!.skillLevels,
+        ...skillLevels,
       ].filter((goal) => goalNamesSet.has(goal.goalName));
       const deduplicated = Object.fromEntries([
         ...prevOperatorGoals.map((opGoal) => [
@@ -124,7 +124,7 @@ function Planner(): React.ReactElement {
               key,
               Object.assign(goalObject, {
                 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-                skill: operator!.skills!.find((skill) => skill.slot === slot),
+                skill: operator.skills!.find((skill) => skill.slot === slot),
               }),
             ];
           }
@@ -194,27 +194,26 @@ function Planner(): React.ReactElement {
       return <MenuItem>Please select an operator first.</MenuItem>;
     }
 
-    const elite = [
-      <ListSubheader key="elite">Elite Levels</ListSubheader>,
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      ...operator!.elite.map((goal) => renderGoalMenuItem(goal)),
-    ];
-    const masteries =
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      operator!.rarity <= 3
-        ? []
-        : [
-            <ListSubheader key="masteries">Masteries</ListSubheader>,
-            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-            ...operator!.skills!.map((skill) =>
-              skill.masteries.map((goal) => renderGoalMenuItem(goal, skill))
-            ),
-          ];
-    const skillLevels = [
-      <ListSubheader key="skillLevels">Skill Levels</ListSubheader>,
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      ...operator!.skillLevels.map((goal) => renderGoalMenuItem(goal)),
-    ];
+    const elite = operator?.elite
+      ? [
+          <ListSubheader key="elite">Elite Levels</ListSubheader>,
+          ...operator.elite.map((goal) => renderGoalMenuItem(goal)),
+        ]
+      : [];
+    const masteries = operator?.skills
+      ? [
+          <ListSubheader key="masteries">Masteries</ListSubheader>,
+          ...operator.skills.map((skill) =>
+            skill.masteries.map((goal) => renderGoalMenuItem(goal, skill))
+          ),
+        ]
+      : [];
+    const skillLevels = operator?.skillLevels
+      ? [
+          <ListSubheader key="skillLevels">Skill Levels</ListSubheader>,
+          ...operator.skillLevels.map((goal) => renderGoalMenuItem(goal)),
+        ]
+      : [];
     return [...elite, ...masteries, ...skillLevels];
   };
 
