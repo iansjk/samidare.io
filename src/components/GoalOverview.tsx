@@ -195,6 +195,24 @@ const GoalOverview = React.memo(function GoalOverview(
     [setItemsToCraft, items]
   );
 
+  const handleCraftOne = React.useCallback(
+    function handleCraftOne(itemName: string) {
+      const item = itemsToCraft[itemName];
+      setMaterialsOwned((prevOwned) => {
+        const newOwned = { ...prevOwned };
+        item.ingredients?.forEach((ingredient) => {
+          newOwned[ingredient.name] = Math.max(
+            (newOwned[ingredient.name] || 0) - ingredient.quantity,
+            0
+          );
+        });
+        newOwned[itemName] = (newOwned[itemName] || 0) + 1;
+        return newOwned;
+      });
+    },
+    [itemsToCraft, setMaterialsOwned]
+  );
+
   const handleReset = React.useCallback(
     function handleReset() {
       setItemsToCraft({});
@@ -236,6 +254,7 @@ const GoalOverview = React.memo(function GoalOverview(
             onDecrement={handleDecrementOwned}
             onChange={handleChangeOwned}
             onCraftingToggle={handleCraftingToggle}
+            onCraftOne={handleCraftOne}
           />
         );
         const outer = isLargeScreen ? (

@@ -7,10 +7,10 @@ import {
   TextField,
   ButtonBase,
   Popover,
+  ButtonGroup,
 } from "@material-ui/core";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
 import RemoveCircleIcon from "@material-ui/icons/RemoveCircle";
-import GavelIcon from "@material-ui/icons/Gavel";
 import React from "react";
 import {
   bindPopover,
@@ -55,10 +55,6 @@ const useStyles = makeStyles({
       "-moz-appearance": "textfield",
     },
   },
-  notCraftableDisabledButton: {
-    height: "2rem",
-    fontSize: "smaller",
-  },
   itemButton: {
     "&:focus, &:active": {
       filter: "brightness(0.5)",
@@ -66,6 +62,9 @@ const useStyles = makeStyles({
   },
   itemInfoPopover: {
     opacity: 0.9,
+  },
+  craftOneButton: {
+    width: "auto",
   },
 });
 
@@ -80,6 +79,7 @@ interface ItemNeededProps {
   onDecrement: (itemName: string) => void;
   onChange: (itemName: string, rawInput: string) => void;
   onCraftingToggle: (itemName: string) => void;
+  onCraftOne: (itemName: string) => void;
 }
 type Props = ItemNeededProps & Item;
 
@@ -97,6 +97,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
   onDecrement,
   onChange,
   onCraftingToggle,
+  onCraftOne,
 }: Props): React.ReactElement {
   const outlinedInputClasses = useOutlinedInputStyles();
   const inputAdornmentClasses = useInputAdornmentStyles();
@@ -183,24 +184,25 @@ const ItemNeeded = React.memo(function ItemNeeded({
           }}
         />
         {ingredients ? (
-          <Button
-            size="small"
-            fullWidth
-            color="secondary"
-            variant={crafting ? "contained" : "outlined"}
-            onClick={() => onCraftingToggle(name)}
-          >
-            <GavelIcon />
-            {crafting ? "Crafting" : "Craft"}
-          </Button>
+          <ButtonGroup color="secondary" fullWidth>
+            <Button
+              variant={crafting ? "contained" : "outlined"}
+              onClick={() => onCraftingToggle(name)}
+              aria-label="Toggle crafting"
+            >
+              {crafting ? "Crafting" : "Craft"}
+            </Button>
+            <Button
+              className={classes.craftOneButton}
+              aria-label="Craft one"
+              disabled={!crafting}
+              onClick={() => onCraftOne(name)}
+            >
+              +1
+            </Button>
+          </ButtonGroup>
         ) : (
-          <Button
-            className={classes.notCraftableDisabledButton}
-            size="small"
-            fullWidth
-            variant="outlined"
-            disabled
-          >
+          <Button fullWidth variant="outlined" disabled>
             (Uncraftable)
           </Button>
         )}
