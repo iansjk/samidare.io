@@ -241,8 +241,14 @@ function IngredientForInfo(props: IngredientForInfoProps) {
       </div>
       <Grid container spacing={1}>
         {ingredientFor.map((craftedItem) => (
-          <Box clone textAlign="center" display="flex" flexDirection="column">
-            <Grid item key={craftedItem.name} xs>
+          <Box
+            clone
+            textAlign="center"
+            display="flex"
+            flexDirection="column"
+            key={craftedItem.name}
+          >
+            <Grid item xs>
               <Box
                 display="flex"
                 justifyContent="center"
