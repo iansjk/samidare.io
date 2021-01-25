@@ -200,12 +200,14 @@ const GoalOverview = React.memo(function GoalOverview(
       const item = itemsToCraft[itemName];
       setMaterialsOwned((prevOwned) => {
         const newOwned = { ...prevOwned };
-        item.ingredients?.forEach((ingredient) => {
-          newOwned[ingredient.name] = Math.max(
-            (newOwned[ingredient.name] || 0) - ingredient.quantity,
-            0
-          );
-        });
+        item.ingredients
+          ?.filter((ingredient) => ingredient.name !== "LMD")
+          .forEach((ingredient) => {
+            newOwned[ingredient.name] = Math.max(
+              (newOwned[ingredient.name] || 0) - ingredient.quantity,
+              0
+            );
+          });
         newOwned[itemName] = (newOwned[itemName] || 0) + 1;
         return newOwned;
       });
