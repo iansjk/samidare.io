@@ -190,13 +190,13 @@ function StageInfo(props: StageInfoProps): React.ReactElement {
           <Grid container spacing={2}>
             {stages.mostEfficient && (
               <Grid item className={classes.stageType} xs>
-                {hasTwoRecommended && <Typography>Most efficient</Typography>}
+                <Typography>Most efficient</Typography>
                 {renderStage(stages.mostEfficient)}
               </Grid>
             )}
             {stages.leastSanity && (
               <Grid item className={classes.stageType} xs>
-                {hasTwoRecommended && <Typography>Least sanity</Typography>}
+                <Typography>Least sanity</Typography>
                 {renderStage(stages.leastSanity)}
               </Grid>
             )}
