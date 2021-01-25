@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { Combination } from "js-combinatorics";
 import { ARKNIGHTS_DATA_DIR } from "./globals";
 import { recruitDetail } from "./ArknightsData/en-US/gamedata/excel/gacha_table.json";
 import characterTable from "./ArknightsData/en-US/gamedata/excel/character_table.json";
@@ -7,6 +8,37 @@ import characterTable from "./ArknightsData/en-US/gamedata/excel/character_table
 const nameOverrides: Record<string, string> = {
   "THRM-EX": "Thermal-EX",
 };
+
+const RECRUITMENT_TAGS = [
+  "Top Operator",
+  "Senior Operator",
+  "Starter",
+  "Robot",
+  "Melee",
+  "Ranged",
+  "Caster",
+  "Defender",
+  "Guard",
+  "Medic",
+  "Sniper",
+  "Specialist",
+  "Supporter",
+  "Vanguard",
+  "AoE",
+  "Crowd-Control",
+  "DP-Recovery",
+  "DPS",
+  "Debuff",
+  "Defense",
+  "Fast-Redeploy",
+  "Healing",
+  "Nuker",
+  "Shift",
+  "Slow",
+  "Summon",
+  "Support",
+  "Survival",
+];
 
 function toTitleCase(string: string) {
   return [...string.toLowerCase()]
@@ -82,7 +114,18 @@ const recruitment = recruitableOperators.flatMap((opNames, rarity) =>
     })
 );
 
+const tagSets = Array(3)
+  .fill(0)
+  .flatMap((_, i) => [...new Combination<string>(RECRUITMENT_TAGS, i + 1)]);
+const recruitmentResults = tagSets
+  .map((tagSet) => ({
+    tags: tagSet.sort(),
+    operators: recruitment.filter((recruitable) =>
+      tagSet.every((tag) => recruitable.tags.includes(tag))
+    ),
+  }))
+  .filter((recruitData) => recruitData.operators.length > 0);
 fs.writeFileSync(
   path.join(ARKNIGHTS_DATA_DIR, "recruitment.json"),
-  JSON.stringify(recruitment, null, 2)
+  JSON.stringify(recruitmentResults, null, 2)
 );

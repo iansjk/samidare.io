@@ -11,9 +11,7 @@ import {
 } from "@material-ui/core";
 import { Combination } from "js-combinatorics";
 import Autocomplete from "@material-ui/lab/Autocomplete";
-import RecruitableOperatorChip, {
-  RecruitableOperator,
-} from "../components/RecruitableOperatorChip";
+import RecruitableOperatorChip from "../components/RecruitableOperatorChip";
 
 const tagsByCategory = {
   rarity: ["Top Operator", "Senior Operator", "Starter", "Robot"],
@@ -53,7 +51,9 @@ function getTagCombinations(activeTags: string[]) {
   const range = Array(activeTags.length)
     .fill(0)
     .map((_, i) => i + 1);
-  return range.flatMap((k) => [...new Combination<string>(activeTags, k)]);
+  return range.flatMap((k) =>
+    [...new Combination<string>(activeTags, k)].sort()
+  );
 }
 
 const useStyles = makeStyles((theme) => ({
@@ -73,42 +73,45 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+interface RecruitmentResult {
+  tags: string[];
+  operators: {
+    name: string;
+    rarity: number;
+    tags: string[];
+  }[];
+}
+
 function Recruitment(): React.ReactElement {
   const data = useStaticQuery(graphql`
     query {
-      allRecruitmentJson(sort: { order: DESC, fields: rarity }) {
+      allRecruitmentJson {
         nodes {
-          name
-          rarity
           tags
+          operators {
+            name
+            rarity
+            tags
+          }
         }
       }
     }
   `);
-  const recruitableOperators: RecruitableOperator[] =
+  const allRecruitmentResults: RecruitmentResult[] =
     data.allRecruitmentJson.nodes;
   const [activeTags, setActiveTags] = useState<string[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const textinput = useRef(null);
-  const tagCombinations = getTagCombinations(activeTags);
-  const matchingOperators: Record<string, RecruitableOperator[]> = {};
-  recruitableOperators.forEach((recruitmentData) => {
-    tagCombinations.forEach((tagCombination) => {
-      if (
-        tagCombination.filter((tag) => recruitmentData.tags.includes(tag))
-          .length === tagCombination.length &&
-        (recruitmentData.rarity < 6 || tagCombination.includes("Top Operator"))
-      ) {
-        matchingOperators[tagCombination.join(",")] = [
-          ...(matchingOperators[tagCombination.join(",")] || []),
-          recruitmentData,
-        ];
-      }
-    });
-  });
   const classes = useStyles();
   const theme = useTheme();
   const isXSmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
+
+  const activeTagCombinations = getTagCombinations(activeTags);
+  const matchingOperators = allRecruitmentResults.filter((result) =>
+    activeTagCombinations.find(
+      (tags) => tags.toString() === result.tags.toString()
+    )
+  );
 
   function handleTagsChanged(_: unknown, value: string[]) {
     if (value.length <= 5) {
@@ -143,20 +146,23 @@ function Recruitment(): React.ReactElement {
         value={activeTags}
         onChange={handleTagsChanged}
       />
-      {Object.entries(matchingOperators)
+      {matchingOperators
         .sort(
-          ([tagSetA, opSetA], [tagSetB, opSetB]) =>
+          (
+            { tags: tagSetA, operators: opSetA },
+            { tags: tagSetB, operators: opSetB }
+          ) =>
             Math.min(...opSetB.map((op) => (op.rarity === 1 ? 4 : op.rarity))) -
               Math.min(
                 ...opSetA.map((op) => (op.rarity === 1 ? 4 : op.rarity))
-              ) || tagSetB.split(",").length - tagSetA.split(",").length
+              ) || tagSetB.length - tagSetA.length
         )
-        .map(([tagSet, recruitments]) => (
+        .map(({ tags, operators }) => (
           <Grid
             container
             className={classes.recruitmentResult}
             spacing={2}
-            key={tagSet}
+            key={tags.join(",")}
           >
             <Box
               key="tags"
@@ -164,7 +170,7 @@ function Recruitment(): React.ReactElement {
               justifyContent={isXSmallScreen ? "center" : "flex-end"}
             >
               <Grid item xs={12} sm={3} className={classes.chipContainer}>
-                {tagSet.split(",").map((tag) => (
+                {tags.map((tag) => (
                   <Chip key={tag} label={tag} />
                 ))}
               </Grid>
@@ -176,10 +182,10 @@ function Recruitment(): React.ReactElement {
               className={classes.chipContainer}
               key="operators"
             >
-              {recruitments.map(({ name, rarity, tags }) => (
+              {operators.map(({ name, rarity, tags: operatorTags }) => (
                 <RecruitableOperatorChip
                   key={name}
-                  {...{ name, rarity, tags }}
+                  {...{ name, rarity, tags: operatorTags }}
                 />
               ))}
             </Grid>
