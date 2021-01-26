@@ -402,126 +402,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Exusiai",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -1017,79 +897,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -1423,53 +1230,6 @@
           "Caster",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Exusiai",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -1554,18 +1314,6 @@
           "Slow",
           "Ranged",
           "Caster",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -1675,31 +1423,6 @@
           "Shift",
           "Melee",
           "Defender",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -1839,42 +1562,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -1958,30 +1645,6 @@
           "Support",
           "Ranged",
           "Medic",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -2108,17 +1771,6 @@
           "Nuker",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Exusiai",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -2354,18 +2006,6 @@
           "Vanguard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -2460,18 +2100,6 @@
           "Debuff",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -2591,18 +2219,6 @@
           "Vanguard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -2895,77 +2511,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Exusiai",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -3012,18 +2557,6 @@
           "Debuff",
           "Ranged",
           "Supporter",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -3133,31 +2666,6 @@
           "Shift",
           "Melee",
           "Defender",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -3316,43 +2824,6 @@
           "Caster",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -3379,18 +2850,6 @@
           "Nuker",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -3629,55 +3088,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -3778,18 +3188,6 @@
           "Survival",
           "Melee",
           "Specialist",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -4690,79 +4088,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -4899,53 +4224,6 @@
           "Caster",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Exusiai",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -4964,18 +4242,6 @@
           "Slow",
           "Ranged",
           "Caster",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -5031,31 +4297,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -5097,42 +4338,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -5171,30 +4376,6 @@
           "Support",
           "Ranged",
           "Medic",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -5255,17 +4436,6 @@
           "Nuker",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Exusiai",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -5390,18 +4560,6 @@
           "Vanguard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -5430,18 +4588,6 @@
           "Debuff",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -5513,18 +4659,6 @@
           "Crowd-Control",
           "Melee",
           "Vanguard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -5666,77 +4800,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Exusiai",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -5764,18 +4827,6 @@
           "Debuff",
           "Ranged",
           "Supporter",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -5829,31 +4880,6 @@
           "Shift",
           "Melee",
           "Defender",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -5938,43 +4964,6 @@
           "Caster",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -5992,18 +4981,6 @@
           "Nuker",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -6160,55 +5137,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -6260,18 +5188,6 @@
           "Survival",
           "Melee",
           "Specialist",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -6686,31 +5602,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -6847,42 +5738,6 @@
           "Support",
           "Melee",
           "Guard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -7063,18 +5918,6 @@
           "Vanguard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -7222,18 +6065,6 @@
           "Vanguard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -7406,66 +6237,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -7576,31 +6347,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -7669,19 +6415,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -7699,18 +6432,6 @@
           "Melee",
           "Specialist",
           "Robot"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
         ]
       }
     ]
@@ -7850,31 +6571,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -7968,18 +6664,6 @@
           "Specialist",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -8067,18 +6751,6 @@
           "Caster",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -8163,30 +6835,6 @@
           "Support",
           "Ranged",
           "Medic",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -8316,17 +6964,6 @@
           "Sniper",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Exusiai",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -8449,18 +7086,6 @@
           "Debuff",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -8611,17 +7236,6 @@
           "Caster",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Exusiai",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -8669,18 +7283,6 @@
           "Debuff",
           "Ranged",
           "Supporter",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -8779,30 +7381,6 @@
           "Slow",
           "Ranged",
           "Caster",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -8942,30 +7520,6 @@
           "Medic",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -9019,18 +7573,6 @@
           "Slow",
           "Ranged",
           "Caster"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
-          "Senior Operator"
         ]
       }
     ]
@@ -9088,18 +7630,6 @@
           "Debuff",
           "Ranged",
           "Caster"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
-          "Senior Operator"
         ]
       }
     ]
@@ -9180,18 +7710,6 @@
           "DPS",
           "Melee",
           "Defender",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -9294,31 +7812,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -9358,19 +7851,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -9388,27 +7868,6 @@
           "Shift",
           "Melee",
           "Defender",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Defender",
-      "Support"
-    ],
-    "operators": [
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -9567,62 +8026,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Guard",
-      "Nuker"
-    ],
-    "operators": [
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -9678,18 +8081,6 @@
           "Support",
           "Melee",
           "Guard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -9760,18 +8151,6 @@
           "Survival",
           "Melee",
           "Guard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -9860,30 +8239,6 @@
           "Medic",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -9912,30 +8267,6 @@
           "Support",
           "Ranged",
           "Medic",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -10061,17 +8392,6 @@
           "Nuker",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Exusiai",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -10567,18 +8887,6 @@
           "Vanguard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -10617,18 +8925,6 @@
           "Melee",
           "Vanguard"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -10665,18 +8961,6 @@
           "Debuff",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -10841,18 +9125,6 @@
           "Melee",
           "Vanguard"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -10931,18 +9203,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -10980,18 +9240,6 @@
           "Nuker",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -11083,18 +9331,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -11167,18 +9403,6 @@
           "Specialist",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -11236,19 +9460,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -11266,27 +9477,6 @@
           "Shift",
           "Melee",
           "Defender",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Defense",
-      "Support"
-    ],
-    "operators": [
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -11357,43 +9547,6 @@
           "Support",
           "Ranged",
           "Medic",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -13221,31 +11374,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -13286,42 +11414,6 @@
           "Support",
           "Melee",
           "Guard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -13408,18 +11500,6 @@
           "Vanguard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -13502,18 +11582,6 @@
           "Vanguard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -13590,66 +11658,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -13704,31 +11712,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -13767,40 +11750,6 @@
           "Healing",
           "Melee",
           "Defender",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Melee",
-      "Nuker",
-      "Senior Operator"
-    ],
-    "operators": [
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -13896,31 +11845,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -13975,18 +11899,6 @@
           "Specialist",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -14006,18 +11918,6 @@
           "Slow",
           "Ranged",
           "Caster",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -14059,30 +11959,6 @@
           "Support",
           "Ranged",
           "Medic",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -14146,17 +12022,6 @@
           "Sniper",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Exusiai",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -14216,18 +12081,6 @@
           "Debuff",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -14323,17 +12176,6 @@
           "Caster",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Exusiai",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -14362,18 +12204,6 @@
           "Debuff",
           "Ranged",
           "Supporter",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -14427,30 +12257,6 @@
           "Slow",
           "Ranged",
           "Caster",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -14556,51 +12362,6 @@
           "Medic",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "AoE",
-      "Caster",
-      "Senior Operator"
-    ],
-    "operators": [
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -14620,27 +12381,6 @@
           "Slow",
           "Ranged",
           "Caster",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Caster",
-      "Debuff",
-      "Senior Operator"
-    ],
-    "operators": [
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -14717,18 +12457,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -14783,31 +12511,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -14828,19 +12531,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -14859,28 +12549,6 @@
           "Shift",
           "Melee",
           "Defender",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Defender",
-      "Senior Operator",
-      "Support"
-    ],
-    "operators": [
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -14955,63 +12623,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Guard",
-      "Nuker",
-      "Senior Operator"
-    ],
-    "operators": [
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -15030,18 +12641,6 @@
           "Support",
           "Melee",
           "Guard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -15073,18 +12672,6 @@
           "Survival",
           "Melee",
           "Guard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -15128,30 +12715,6 @@
           "Medic",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -15181,30 +12744,6 @@
           "Support",
           "Ranged",
           "Medic",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -15275,17 +12814,6 @@
           "Nuker",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Exusiai",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -15620,39 +13148,6 @@
           "Vanguard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "DPS",
-      "Senior Operator",
-      "Vanguard"
-    ],
-    "operators": [
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -15691,18 +13186,6 @@
           "Debuff",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -15791,27 +13274,6 @@
   {
     "tags": [
       "DP-Recovery",
-      "DPS",
-      "Senior Operator"
-    ],
-    "operators": [
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "DP-Recovery",
       "Senior Operator",
       "Support"
     ],
@@ -15858,18 +13320,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -15909,18 +13359,6 @@
           "Nuker",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -15995,18 +13433,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -16050,18 +13476,6 @@
           "Specialist",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -16082,19 +13496,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -16113,28 +13514,6 @@
           "Shift",
           "Melee",
           "Defender",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Defense",
-      "Senior Operator",
-      "Support"
-    ],
-    "operators": [
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -16208,43 +13587,6 @@
           "Support",
           "Ranged",
           "Medic",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -16556,18 +13898,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -16669,31 +13999,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -16734,19 +14039,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -16765,28 +14057,6 @@
           "Shift",
           "Melee",
           "Defender",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Defender",
-      "Melee",
-      "Support"
-    ],
-    "operators": [
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -16948,63 +14218,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Guard",
-      "Melee",
-      "Nuker"
-    ],
-    "operators": [
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -17062,18 +14275,6 @@
           "Support",
           "Melee",
           "Guard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -17145,18 +14346,6 @@
           "Survival",
           "Melee",
           "Guard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -17466,18 +14655,6 @@
           "Vanguard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -17516,18 +14693,6 @@
           "DP-Recovery",
           "Melee",
           "Vanguard"
-        ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
         ]
       }
     ]
@@ -17668,18 +14833,6 @@
           "Melee",
           "Vanguard"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -17730,39 +14883,6 @@
           "DPS",
           "Melee",
           "Defender",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "DPS",
-      "Melee",
-      "Nuker"
-    ],
-    "operators": [
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -17834,18 +14954,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -17909,18 +15017,6 @@
           "Specialist",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -17980,19 +15076,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -18020,28 +15103,6 @@
     "tags": [
       "Defense",
       "Melee",
-      "Support"
-    ],
-    "operators": [
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Defense",
-      "Melee",
       "Survival"
     ],
     "operators": [
@@ -18054,28 +15115,6 @@
           "DPS",
           "Melee",
           "Defender",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Healing",
-      "Melee",
-      "Support"
-    ],
-    "operators": [
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -18135,18 +15174,6 @@
           "Ranged",
           "Caster"
         ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -18205,18 +15232,6 @@
           "Debuff",
           "Ranged",
           "Caster"
-        ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
-          "Senior Operator"
         ]
       }
     ]
@@ -18357,30 +15372,6 @@
           "Medic",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -18410,30 +15401,6 @@
           "Support",
           "Ranged",
           "Medic",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -18561,17 +15528,6 @@
           "Nuker",
           "Ranged",
           "Sniper",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Exusiai",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -18799,18 +15755,6 @@
           "Sniper",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -19033,51 +15977,6 @@
           "Medic",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "AoE",
-      "Caster",
-      "Debuff"
-    ],
-    "operators": [
-      {
-        "name": "Ifrit",
-        "rarity": 6,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Caster",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -19211,18 +16110,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Hoshiguma",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -19284,19 +16171,6 @@
           "Defender",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -19324,28 +16198,6 @@
     "tags": [
       "Defender",
       "Defense",
-      "Support"
-    ],
-    "operators": [
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Defender",
-      "Defense",
       "Survival"
     ],
     "operators": [
@@ -19358,28 +16210,6 @@
           "DPS",
           "Melee",
           "Defender",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Defender",
-      "Healing",
-      "Support"
-    ],
-    "operators": [
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -19420,27 +16250,6 @@
           "Survival",
           "Melee",
           "Guard",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "DPS",
-      "Guard",
-      "Nuker"
-    ],
-    "operators": [
-      {
-        "name": "Ch'en",
-        "rarity": 6,
-        "tags": [
-          "Nuker",
-          "DPS",
-          "Melee",
-          "Guard",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -19492,18 +16301,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "SilverAsh",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -19544,18 +16341,6 @@
           "Guard",
           "Senior Operator"
         ]
-      },
-      {
-        "name": "Skadi",
-        "rarity": 6,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -19585,30 +16370,6 @@
           "Support",
           "Ranged",
           "Medic",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Shining",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightingale",
-        "rarity": 6,
-        "tags": [
-          "Healing",
-          "Support",
-          "Ranged",
-          "Medic",
-          "Top Operator",
           "Senior Operator"
         ]
       }
@@ -19906,18 +16667,6 @@
           "Melee",
           "Vanguard"
         ]
-      },
-      {
-        "name": "Siege",
-        "rarity": 6,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard",
-          "Top Operator",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -19978,28 +16727,6 @@
           "Slow",
           "Ranged",
           "Caster",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Defense",
-      "Healing",
-      "Support"
-    ],
-    "operators": [
-      {
-        "name": "Saria",
-        "rarity": 6,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Support",
-          "Melee",
-          "Defender",
-          "Top Operator",
           "Senior Operator"
         ]
       }

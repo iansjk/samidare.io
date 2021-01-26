@@ -121,7 +121,11 @@ const recruitmentResults = tagSets
   .map((tagSet) => ({
     tags: tagSet.sort(),
     operators: recruitment.filter((recruitable) =>
-      tagSet.every((tag) => recruitable.tags.includes(tag))
+      tagSet.every(
+        (tag) =>
+          recruitable.tags.includes(tag) &&
+          (recruitable.rarity < 6 || tagSet.includes("Top Operator"))
+      )
     ),
   }))
   .filter((recruitData) => recruitData.operators.length > 0);
