@@ -36,7 +36,7 @@ const useChipStyles = makeStyles((theme) => ({
   },
 }));
 
-function RecruitableOperatorChip({
+const RecruitableOperatorChip = React.memo(function RecruitableOperatorChip({
   name,
   rarity,
   tags,
@@ -85,5 +85,5 @@ function RecruitableOperatorChip({
       </Hidden>
     </>
   );
-}
+});
 export default RecruitableOperatorChip;
