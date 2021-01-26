@@ -118,13 +118,15 @@ const tagSets = Array(3)
 const recruitmentResults = tagSets
   .map((tagSet) => ({
     tags: tagSet.sort(),
-    operators: recruitment.filter((recruitable) =>
-      tagSet.every(
-        (tag) =>
-          recruitable.tags.includes(tag) &&
-          (recruitable.rarity < 6 || tagSet.includes("Top Operator"))
+    operators: recruitment
+      .filter((recruitable) =>
+        tagSet.every(
+          (tag) =>
+            recruitable.tags.includes(tag) &&
+            (recruitable.rarity < 6 || tagSet.includes("Top Operator"))
+        )
       )
-    ),
+      .sort((op1, op2) => op2.rarity - op1.rarity),
   }))
   .filter((recruitData) => recruitData.operators.length > 0);
 fs.writeFileSync(

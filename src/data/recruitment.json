@@ -500,254 +500,6 @@
     ],
     "operators": [
       {
-        "name": "Castle-3",
-        "rarity": 1,
-        "tags": [
-          "Support",
-          "Melee",
-          "Guard",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Thermal-EX",
-        "rarity": 1,
-        "tags": [
-          "Nuker",
-          "Melee",
-          "Specialist",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Yato",
-        "rarity": 2,
-        "tags": [
-          "Starter",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Noir Corne",
-        "rarity": 2,
-        "tags": [
-          "Starter",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Fang",
-        "rarity": 3,
-        "tags": [
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Vanilla",
-        "rarity": 3,
-        "tags": [
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Plume",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Melantha",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Beagle",
-        "rarity": 3,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Midnight",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Popukar",
-        "rarity": 3,
-        "tags": [
-          "AoE",
-          "Survival",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Spot",
-        "rarity": 3,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Estelle",
-        "rarity": 4,
-        "tags": [
-          "AoE",
-          "Survival",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Scavenger",
-        "rarity": 4,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Vigna",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Dobermann",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Matoimaru",
-        "rarity": 4,
-        "tags": [
-          "Survival",
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Frostleaf",
-        "rarity": 4,
-        "tags": [
-          "Slow",
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Mousse",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Gravel",
-        "rarity": 4,
-        "tags": [
-          "Fast-Redeploy",
-          "Defense",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
-        "name": "Rope",
-        "rarity": 4,
-        "tags": [
-          "Shift",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
-        "name": "Matterhorn",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Cuora",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Gummy",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Shaw",
-        "rarity": 4,
-        "tags": [
-          "Shift",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
-        "name": "Beehunter",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
         "name": "Indra",
         "rarity": 5,
         "tags": [
@@ -889,6 +641,254 @@
           "Melee",
           "Guard",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Estelle",
+        "rarity": 4,
+        "tags": [
+          "AoE",
+          "Survival",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Scavenger",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "DPS",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Vigna",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Dobermann",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Matoimaru",
+        "rarity": 4,
+        "tags": [
+          "Survival",
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Frostleaf",
+        "rarity": 4,
+        "tags": [
+          "Slow",
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Mousse",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Gravel",
+        "rarity": 4,
+        "tags": [
+          "Fast-Redeploy",
+          "Defense",
+          "Melee",
+          "Specialist"
+        ]
+      },
+      {
+        "name": "Rope",
+        "rarity": 4,
+        "tags": [
+          "Shift",
+          "Melee",
+          "Specialist"
+        ]
+      },
+      {
+        "name": "Matterhorn",
+        "rarity": 4,
+        "tags": [
+          "Defense",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Cuora",
+        "rarity": 4,
+        "tags": [
+          "Defense",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Gummy",
+        "rarity": 4,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Shaw",
+        "rarity": 4,
+        "tags": [
+          "Shift",
+          "Melee",
+          "Specialist"
+        ]
+      },
+      {
+        "name": "Beehunter",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Fang",
+        "rarity": 3,
+        "tags": [
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Vanilla",
+        "rarity": 3,
+        "tags": [
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Plume",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Melantha",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Beagle",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Midnight",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Popukar",
+        "rarity": 3,
+        "tags": [
+          "AoE",
+          "Survival",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Spot",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Yato",
+        "rarity": 2,
+        "tags": [
+          "Starter",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Noir Corne",
+        "rarity": 2,
+        "tags": [
+          "Starter",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Castle-3",
+        "rarity": 1,
+        "tags": [
+          "Support",
+          "Melee",
+          "Guard",
+          "Robot"
+        ]
+      },
+      {
+        "name": "Thermal-EX",
+        "rarity": 1,
+        "tags": [
+          "Nuker",
+          "Melee",
+          "Specialist",
+          "Robot"
         ]
       }
     ]
@@ -899,201 +899,6 @@
     ],
     "operators": [
       {
-        "name": "Lancet-2",
-        "rarity": 1,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Rangers",
-        "rarity": 2,
-        "tags": [
-          "Starter",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Durin",
-        "rarity": 2,
-        "tags": [
-          "Starter",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "12F",
-        "rarity": 2,
-        "tags": [
-          "Starter",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "Adnachiel",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Kroos",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Lava",
-        "rarity": 3,
-        "tags": [
-          "AoE",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "Hibiscus",
-        "rarity": 3,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Ansel",
-        "rarity": 3,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Steward",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "Orchid",
-        "rarity": 3,
-        "tags": [
-          "Slow",
-          "Ranged",
-          "Supporter"
-        ]
-      },
-      {
-        "name": "Catapult",
-        "rarity": 3,
-        "tags": [
-          "AoE",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Haze",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Debuff",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "Gitano",
-        "rarity": 4,
-        "tags": [
-          "AoE",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "Jessica",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Meteor",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Debuff",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Shirayuki",
-        "rarity": 4,
-        "tags": [
-          "AoE",
-          "Slow",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Myrrh",
-        "rarity": 4,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Perfumer",
-        "rarity": 4,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Earthspirit",
-        "rarity": 4,
-        "tags": [
-          "Slow",
-          "Ranged",
-          "Supporter"
-        ]
-      },
-      {
-        "name": "Greyy",
-        "rarity": 4,
-        "tags": [
-          "AoE",
-          "Slow",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
         "name": "Ptilopsis",
         "rarity": 5,
         "tags": [
@@ -1220,14 +1025,174 @@
           "Caster",
           "Senior Operator"
         ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Caster"
-    ],
-    "operators": [
+      },
+      {
+        "name": "Haze",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Debuff",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
+        "name": "Gitano",
+        "rarity": 4,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
+        "name": "Jessica",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Meteor",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Debuff",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Shirayuki",
+        "rarity": 4,
+        "tags": [
+          "AoE",
+          "Slow",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Myrrh",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Perfumer",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Earthspirit",
+        "rarity": 4,
+        "tags": [
+          "Slow",
+          "Ranged",
+          "Supporter"
+        ]
+      },
+      {
+        "name": "Greyy",
+        "rarity": 4,
+        "tags": [
+          "AoE",
+          "Slow",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
+        "name": "Adnachiel",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Kroos",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Lava",
+        "rarity": 3,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
+        "name": "Hibiscus",
+        "rarity": 3,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Ansel",
+        "rarity": 3,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Steward",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
+        "name": "Orchid",
+        "rarity": 3,
+        "tags": [
+          "Slow",
+          "Ranged",
+          "Supporter"
+        ]
+      },
+      {
+        "name": "Catapult",
+        "rarity": 3,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Rangers",
+        "rarity": 2,
+        "tags": [
+          "Starter",
+          "Ranged",
+          "Sniper"
+        ]
+      },
       {
         "name": "Durin",
         "rarity": 2,
@@ -1247,21 +1212,32 @@
         ]
       },
       {
-        "name": "Lava",
-        "rarity": 3,
+        "name": "Lancet-2",
+        "rarity": 1,
         "tags": [
-          "AoE",
+          "Healing",
           "Ranged",
-          "Caster"
+          "Medic",
+          "Robot"
         ]
-      },
+      }
+    ]
+  },
+  {
+    "tags": [
+      "Caster"
+    ],
+    "operators": [
       {
-        "name": "Steward",
-        "rarity": 3,
+        "name": "Nightmare",
+        "rarity": 5,
         "tags": [
           "DPS",
+          "Healing",
+          "Slow",
           "Ranged",
-          "Caster"
+          "Caster",
+          "Senior Operator"
         ]
       },
       {
@@ -1294,15 +1270,39 @@
         ]
       },
       {
-        "name": "Nightmare",
-        "rarity": 5,
+        "name": "Lava",
+        "rarity": 3,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
+        "name": "Steward",
+        "rarity": 3,
         "tags": [
           "DPS",
-          "Healing",
-          "Slow",
           "Ranged",
-          "Caster",
-          "Senior Operator"
+          "Caster"
+        ]
+      },
+      {
+        "name": "Durin",
+        "rarity": 2,
+        "tags": [
+          "Starter",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
+        "name": "12F",
+        "rarity": 2,
+        "tags": [
+          "Starter",
+          "Ranged",
+          "Caster"
         ]
       }
     ]
@@ -1312,62 +1312,6 @@
       "Defender"
     ],
     "operators": [
-      {
-        "name": "Noir Corne",
-        "rarity": 2,
-        "tags": [
-          "Starter",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Beagle",
-        "rarity": 3,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Spot",
-        "rarity": 3,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Matterhorn",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Cuora",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Gummy",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Melee",
-          "Defender"
-        ]
-      },
       {
         "name": "Vulcan",
         "rarity": 5,
@@ -1412,6 +1356,62 @@
           "Defender",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Matterhorn",
+        "rarity": 4,
+        "tags": [
+          "Defense",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Cuora",
+        "rarity": 4,
+        "tags": [
+          "Defense",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Gummy",
+        "rarity": 4,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Beagle",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Spot",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Noir Corne",
+        "rarity": 2,
+        "tags": [
+          "Starter",
+          "Melee",
+          "Defender"
+        ]
       }
     ]
   },
@@ -1421,42 +1421,36 @@
     ],
     "operators": [
       {
-        "name": "Castle-3",
-        "rarity": 1,
-        "tags": [
-          "Support",
-          "Melee",
-          "Guard",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Melantha",
-        "rarity": 3,
+        "name": "Indra",
+        "rarity": 5,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
-        "name": "Midnight",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Popukar",
-        "rarity": 3,
+        "name": "Specter",
+        "rarity": 5,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Swire",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
@@ -1518,36 +1512,42 @@
         ]
       },
       {
-        "name": "Indra",
-        "rarity": 5,
+        "name": "Melantha",
+        "rarity": 3,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       },
       {
-        "name": "Specter",
-        "rarity": 5,
+        "name": "Midnight",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Popukar",
+        "rarity": 3,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       },
       {
-        "name": "Swire",
-        "rarity": 5,
+        "name": "Castle-3",
+        "rarity": 1,
         "tags": [
-          "DPS",
           "Support",
           "Melee",
           "Guard",
-          "Senior Operator"
+          "Robot"
         ]
       }
     ]
@@ -1557,52 +1557,6 @@
       "Medic"
     ],
     "operators": [
-      {
-        "name": "Lancet-2",
-        "rarity": 1,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Hibiscus",
-        "rarity": 3,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Ansel",
-        "rarity": 3,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Myrrh",
-        "rarity": 4,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Perfumer",
-        "rarity": 4,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
       {
         "name": "Ptilopsis",
         "rarity": 5,
@@ -1634,6 +1588,52 @@
           "Medic",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Myrrh",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Perfumer",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Hibiscus",
+        "rarity": 3,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Ansel",
+        "rarity": 3,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Lancet-2",
+        "rarity": 1,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic",
+          "Robot"
+        ]
       }
     ]
   },
@@ -1642,72 +1642,6 @@
       "Sniper"
     ],
     "operators": [
-      {
-        "name": "Rangers",
-        "rarity": 2,
-        "tags": [
-          "Starter",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Adnachiel",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Kroos",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Catapult",
-        "rarity": 3,
-        "tags": [
-          "AoE",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Jessica",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Meteor",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Debuff",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Shirayuki",
-        "rarity": 4,
-        "tags": [
-          "AoE",
-          "Slow",
-          "Ranged",
-          "Sniper"
-        ]
-      },
       {
         "name": "Blue Poison",
         "rarity": 5,
@@ -1759,6 +1693,72 @@
           "Sniper",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Jessica",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Meteor",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Debuff",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Shirayuki",
+        "rarity": 4,
+        "tags": [
+          "AoE",
+          "Slow",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Adnachiel",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Kroos",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Catapult",
+        "rarity": 3,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Rangers",
+        "rarity": 2,
+        "tags": [
+          "Starter",
+          "Ranged",
+          "Sniper"
+        ]
       }
     ]
   },
@@ -1767,44 +1767,6 @@
       "Specialist"
     ],
     "operators": [
-      {
-        "name": "Thermal-EX",
-        "rarity": 1,
-        "tags": [
-          "Nuker",
-          "Melee",
-          "Specialist",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Gravel",
-        "rarity": 4,
-        "tags": [
-          "Fast-Redeploy",
-          "Defense",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
-        "name": "Rope",
-        "rarity": 4,
-        "tags": [
-          "Shift",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
-        "name": "Shaw",
-        "rarity": 4,
-        "tags": [
-          "Shift",
-          "Melee",
-          "Specialist"
-        ]
-      },
       {
         "name": "Projekt Red",
         "rarity": 5,
@@ -1848,6 +1810,44 @@
           "Specialist",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Gravel",
+        "rarity": 4,
+        "tags": [
+          "Fast-Redeploy",
+          "Defense",
+          "Melee",
+          "Specialist"
+        ]
+      },
+      {
+        "name": "Rope",
+        "rarity": 4,
+        "tags": [
+          "Shift",
+          "Melee",
+          "Specialist"
+        ]
+      },
+      {
+        "name": "Shaw",
+        "rarity": 4,
+        "tags": [
+          "Shift",
+          "Melee",
+          "Specialist"
+        ]
+      },
+      {
+        "name": "Thermal-EX",
+        "rarity": 1,
+        "tags": [
+          "Nuker",
+          "Melee",
+          "Specialist",
+          "Robot"
+        ]
       }
     ]
   },
@@ -1856,24 +1856,6 @@
       "Supporter"
     ],
     "operators": [
-      {
-        "name": "Orchid",
-        "rarity": 3,
-        "tags": [
-          "Slow",
-          "Ranged",
-          "Supporter"
-        ]
-      },
-      {
-        "name": "Earthspirit",
-        "rarity": 4,
-        "tags": [
-          "Slow",
-          "Ranged",
-          "Supporter"
-        ]
-      },
       {
         "name": "Mayer",
         "rarity": 5,
@@ -1905,6 +1887,24 @@
           "Supporter",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Earthspirit",
+        "rarity": 4,
+        "tags": [
+          "Slow",
+          "Ranged",
+          "Supporter"
+        ]
+      },
+      {
+        "name": "Orchid",
+        "rarity": 3,
+        "tags": [
+          "Slow",
+          "Ranged",
+          "Supporter"
+        ]
       }
     ]
   },
@@ -1914,10 +1914,43 @@
     ],
     "operators": [
       {
-        "name": "Yato",
-        "rarity": 2,
+        "name": "Zima",
+        "rarity": 5,
         "tags": [
-          "Starter",
+          "DP-Recovery",
+          "Support",
+          "Melee",
+          "Vanguard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Texas",
+        "rarity": 5,
+        "tags": [
+          "DP-Recovery",
+          "Crowd-Control",
+          "Melee",
+          "Vanguard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Scavenger",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "DPS",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Vigna",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
           "Melee",
           "Vanguard"
         ]
@@ -1951,45 +1984,12 @@
         ]
       },
       {
-        "name": "Scavenger",
-        "rarity": 4,
+        "name": "Yato",
+        "rarity": 2,
         "tags": [
-          "DP-Recovery",
-          "DPS",
+          "Starter",
           "Melee",
           "Vanguard"
-        ]
-      },
-      {
-        "name": "Vigna",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Zima",
-        "rarity": 5,
-        "tags": [
-          "DP-Recovery",
-          "Support",
-          "Melee",
-          "Vanguard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Texas",
-        "rarity": 5,
-        "tags": [
-          "DP-Recovery",
-          "Crowd-Control",
-          "Melee",
-          "Vanguard",
-          "Senior Operator"
         ]
       }
     ]
@@ -2000,31 +2000,25 @@
     ],
     "operators": [
       {
-        "name": "Lava",
-        "rarity": 3,
-        "tags": [
-          "AoE",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "Catapult",
-        "rarity": 3,
-        "tags": [
-          "AoE",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Popukar",
-        "rarity": 3,
+        "name": "Specter",
+        "rarity": 5,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Meteorite",
+        "rarity": 5,
+        "tags": [
+          "AoE",
+          "Debuff",
+          "Ranged",
+          "Sniper",
+          "Senior Operator"
         ]
       },
       {
@@ -2067,25 +2061,31 @@
         ]
       },
       {
-        "name": "Specter",
-        "rarity": 5,
+        "name": "Lava",
+        "rarity": 3,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
+        "name": "Catapult",
+        "rarity": 3,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Popukar",
+        "rarity": 3,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Meteorite",
-        "rarity": 5,
-        "tags": [
-          "AoE",
-          "Debuff",
-          "Ranged",
-          "Sniper",
-          "Senior Operator"
+          "Guard"
         ]
       }
     ]
@@ -2136,6 +2136,48 @@
     ],
     "operators": [
       {
+        "name": "Zima",
+        "rarity": 5,
+        "tags": [
+          "DP-Recovery",
+          "Support",
+          "Melee",
+          "Vanguard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Texas",
+        "rarity": 5,
+        "tags": [
+          "DP-Recovery",
+          "Crowd-Control",
+          "Melee",
+          "Vanguard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Scavenger",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "DPS",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Vigna",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
         "name": "Fang",
         "rarity": 3,
         "tags": [
@@ -2162,48 +2204,6 @@
           "Melee",
           "Vanguard"
         ]
-      },
-      {
-        "name": "Scavenger",
-        "rarity": 4,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Vigna",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Zima",
-        "rarity": 5,
-        "tags": [
-          "DP-Recovery",
-          "Support",
-          "Melee",
-          "Vanguard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Texas",
-        "rarity": 5,
-        "tags": [
-          "DP-Recovery",
-          "Crowd-Control",
-          "Melee",
-          "Vanguard",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -2212,160 +2212,6 @@
       "DPS"
     ],
     "operators": [
-      {
-        "name": "Adnachiel",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Plume",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Melantha",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Kroos",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Steward",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "Midnight",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Haze",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Debuff",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "Jessica",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Meteor",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Debuff",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Scavenger",
-        "rarity": 4,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Vigna",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Dobermann",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Matoimaru",
-        "rarity": 4,
-        "tags": [
-          "Survival",
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Frostleaf",
-        "rarity": 4,
-        "tags": [
-          "Slow",
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Mousse",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Beehunter",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
       {
         "name": "Indra",
         "rarity": 5,
@@ -2496,14 +2342,7 @@
           "Guard",
           "Senior Operator"
         ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Debuff"
-    ],
-    "operators": [
+      },
       {
         "name": "Haze",
         "rarity": 4,
@@ -2512,6 +2351,16 @@
           "Debuff",
           "Ranged",
           "Caster"
+        ]
+      },
+      {
+        "name": "Jessica",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Ranged",
+          "Sniper"
         ]
       },
       {
@@ -2524,6 +2373,137 @@
           "Sniper"
         ]
       },
+      {
+        "name": "Scavenger",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "DPS",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Vigna",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Dobermann",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Matoimaru",
+        "rarity": 4,
+        "tags": [
+          "Survival",
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Frostleaf",
+        "rarity": 4,
+        "tags": [
+          "Slow",
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Mousse",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Beehunter",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Adnachiel",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Plume",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Melantha",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Kroos",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Steward",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
+        "name": "Midnight",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      }
+    ]
+  },
+  {
+    "tags": [
+      "Debuff"
+    ],
+    "operators": [
       {
         "name": "Meteorite",
         "rarity": 5,
@@ -2544,6 +2524,26 @@
           "Supporter",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Haze",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Debuff",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
+        "name": "Meteor",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Debuff",
+          "Ranged",
+          "Sniper"
+        ]
       }
     ]
   },
@@ -2552,63 +2552,6 @@
       "Defense"
     ],
     "operators": [
-      {
-        "name": "Beagle",
-        "rarity": 3,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Spot",
-        "rarity": 3,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Gravel",
-        "rarity": 4,
-        "tags": [
-          "Fast-Redeploy",
-          "Defense",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
-        "name": "Matterhorn",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Cuora",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Gummy",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Melee",
-          "Defender"
-        ]
-      },
       {
         "name": "Vulcan",
         "rarity": 5,
@@ -2653,14 +2596,7 @@
           "Defender",
           "Senior Operator"
         ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Fast-Redeploy"
-    ],
-    "operators": [
+      },
       {
         "name": "Gravel",
         "rarity": 4,
@@ -2672,77 +2608,21 @@
         ]
       },
       {
-        "name": "Projekt Red",
-        "rarity": 5,
-        "tags": [
-          "Fast-Redeploy",
-          "Crowd-Control",
-          "Melee",
-          "Specialist",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Healing"
-    ],
-    "operators": [
-      {
-        "name": "Lancet-2",
-        "rarity": 1,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Hibiscus",
-        "rarity": 3,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Ansel",
-        "rarity": 3,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Spot",
-        "rarity": 3,
+        "name": "Matterhorn",
+        "rarity": 4,
         "tags": [
           "Defense",
-          "Healing",
           "Melee",
           "Defender"
         ]
       },
       {
-        "name": "Myrrh",
+        "name": "Cuora",
         "rarity": 4,
         "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Perfumer",
-        "rarity": 4,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
+          "Defense",
+          "Melee",
+          "Defender"
         ]
       },
       {
@@ -2755,6 +2635,60 @@
           "Defender"
         ]
       },
+      {
+        "name": "Beagle",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Spot",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      }
+    ]
+  },
+  {
+    "tags": [
+      "Fast-Redeploy"
+    ],
+    "operators": [
+      {
+        "name": "Projekt Red",
+        "rarity": 5,
+        "tags": [
+          "Fast-Redeploy",
+          "Crowd-Control",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Gravel",
+        "rarity": 4,
+        "tags": [
+          "Fast-Redeploy",
+          "Defense",
+          "Melee",
+          "Specialist"
+        ]
+      }
+    ]
+  },
+  {
+    "tags": [
+      "Healing"
+    ],
+    "operators": [
       {
         "name": "Ptilopsis",
         "rarity": 5,
@@ -2809,6 +2743,72 @@
           "Caster",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Myrrh",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Perfumer",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Gummy",
+        "rarity": 4,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Hibiscus",
+        "rarity": 3,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Ansel",
+        "rarity": 3,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Spot",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Lancet-2",
+        "rarity": 1,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic",
+          "Robot"
+        ]
       }
     ]
   },
@@ -2817,16 +2817,6 @@
       "Nuker"
     ],
     "operators": [
-      {
-        "name": "Thermal-EX",
-        "rarity": 1,
-        "tags": [
-          "Nuker",
-          "Melee",
-          "Specialist",
-          "Robot"
-        ]
-      },
       {
         "name": "Firewatch",
         "rarity": 5,
@@ -2837,6 +2827,16 @@
           "Sniper",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Thermal-EX",
+        "rarity": 1,
+        "tags": [
+          "Nuker",
+          "Melee",
+          "Specialist",
+          "Robot"
+        ]
       }
     ]
   },
@@ -2845,24 +2845,6 @@
       "Shift"
     ],
     "operators": [
-      {
-        "name": "Rope",
-        "rarity": 4,
-        "tags": [
-          "Shift",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
-        "name": "Shaw",
-        "rarity": 4,
-        "tags": [
-          "Shift",
-          "Melee",
-          "Specialist"
-        ]
-      },
       {
         "name": "Croissant",
         "rarity": 5,
@@ -2895,6 +2877,24 @@
           "Specialist",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Rope",
+        "rarity": 4,
+        "tags": [
+          "Shift",
+          "Melee",
+          "Specialist"
+        ]
+      },
+      {
+        "name": "Shaw",
+        "rarity": 4,
+        "tags": [
+          "Shift",
+          "Melee",
+          "Specialist"
+        ]
       }
     ]
   },
@@ -2904,12 +2904,37 @@
     ],
     "operators": [
       {
-        "name": "Orchid",
-        "rarity": 3,
+        "name": "Istina",
+        "rarity": 5,
         "tags": [
           "Slow",
+          "DPS",
           "Ranged",
-          "Supporter"
+          "Supporter",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "FEater",
+        "rarity": 5,
+        "tags": [
+          "Shift",
+          "Slow",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Nightmare",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Healing",
+          "Slow",
+          "Ranged",
+          "Caster",
+          "Senior Operator"
         ]
       },
       {
@@ -2952,37 +2977,12 @@
         ]
       },
       {
-        "name": "Istina",
-        "rarity": 5,
+        "name": "Orchid",
+        "rarity": 3,
         "tags": [
-          "Slow",
-          "DPS",
-          "Ranged",
-          "Supporter",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "FEater",
-        "rarity": 5,
-        "tags": [
-          "Shift",
-          "Slow",
-          "Melee",
-          "Specialist",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightmare",
-        "rarity": 5,
-        "tags": [
-          "DPS",
-          "Healing",
           "Slow",
           "Ranged",
-          "Caster",
-          "Senior Operator"
+          "Supporter"
         ]
       }
     ]
@@ -3010,26 +3010,6 @@
       "Support"
     ],
     "operators": [
-      {
-        "name": "Castle-3",
-        "rarity": 1,
-        "tags": [
-          "Support",
-          "Melee",
-          "Guard",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Dobermann",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard"
-        ]
-      },
       {
         "name": "Ptilopsis",
         "rarity": 5,
@@ -3073,6 +3053,26 @@
           "Guard",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Dobermann",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Castle-3",
+        "rarity": 1,
+        "tags": [
+          "Support",
+          "Melee",
+          "Guard",
+          "Robot"
+        ]
       }
     ]
   },
@@ -3081,56 +3081,6 @@
       "Survival"
     ],
     "operators": [
-      {
-        "name": "Melantha",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Popukar",
-        "rarity": 3,
-        "tags": [
-          "AoE",
-          "Survival",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Estelle",
-        "rarity": 4,
-        "tags": [
-          "AoE",
-          "Survival",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Jessica",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Matoimaru",
-        "rarity": 4,
-        "tags": [
-          "Survival",
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
       {
         "name": "Indra",
         "rarity": 5,
@@ -3174,6 +3124,56 @@
           "Melee",
           "Specialist",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Estelle",
+        "rarity": 4,
+        "tags": [
+          "AoE",
+          "Survival",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Jessica",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Matoimaru",
+        "rarity": 4,
+        "tags": [
+          "Survival",
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Melantha",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Popukar",
+        "rarity": 3,
+        "tags": [
+          "AoE",
+          "Survival",
+          "Melee",
+          "Guard"
         ]
       }
     ]
@@ -5477,62 +5477,6 @@
     ],
     "operators": [
       {
-        "name": "Noir Corne",
-        "rarity": 2,
-        "tags": [
-          "Starter",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Beagle",
-        "rarity": 3,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Spot",
-        "rarity": 3,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Matterhorn",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Cuora",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Gummy",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
         "name": "Vulcan",
         "rarity": 5,
         "tags": [
@@ -5576,6 +5520,62 @@
           "Defender",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Matterhorn",
+        "rarity": 4,
+        "tags": [
+          "Defense",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Cuora",
+        "rarity": 4,
+        "tags": [
+          "Defense",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Gummy",
+        "rarity": 4,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Beagle",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Spot",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Noir Corne",
+        "rarity": 2,
+        "tags": [
+          "Starter",
+          "Melee",
+          "Defender"
+        ]
       }
     ]
   },
@@ -5586,42 +5586,36 @@
     ],
     "operators": [
       {
-        "name": "Castle-3",
-        "rarity": 1,
-        "tags": [
-          "Support",
-          "Melee",
-          "Guard",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Melantha",
-        "rarity": 3,
+        "name": "Indra",
+        "rarity": 5,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
-        "name": "Midnight",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Popukar",
-        "rarity": 3,
+        "name": "Specter",
+        "rarity": 5,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Swire",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
@@ -5683,36 +5677,42 @@
         ]
       },
       {
-        "name": "Indra",
-        "rarity": 5,
+        "name": "Melantha",
+        "rarity": 3,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       },
       {
-        "name": "Specter",
-        "rarity": 5,
+        "name": "Midnight",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Popukar",
+        "rarity": 3,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       },
       {
-        "name": "Swire",
-        "rarity": 5,
+        "name": "Castle-3",
+        "rarity": 1,
         "tags": [
-          "DPS",
           "Support",
           "Melee",
           "Guard",
-          "Senior Operator"
+          "Robot"
         ]
       }
     ]
@@ -5723,44 +5723,6 @@
       "Specialist"
     ],
     "operators": [
-      {
-        "name": "Thermal-EX",
-        "rarity": 1,
-        "tags": [
-          "Nuker",
-          "Melee",
-          "Specialist",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Gravel",
-        "rarity": 4,
-        "tags": [
-          "Fast-Redeploy",
-          "Defense",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
-        "name": "Rope",
-        "rarity": 4,
-        "tags": [
-          "Shift",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
-        "name": "Shaw",
-        "rarity": 4,
-        "tags": [
-          "Shift",
-          "Melee",
-          "Specialist"
-        ]
-      },
       {
         "name": "Projekt Red",
         "rarity": 5,
@@ -5804,6 +5766,44 @@
           "Specialist",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Gravel",
+        "rarity": 4,
+        "tags": [
+          "Fast-Redeploy",
+          "Defense",
+          "Melee",
+          "Specialist"
+        ]
+      },
+      {
+        "name": "Rope",
+        "rarity": 4,
+        "tags": [
+          "Shift",
+          "Melee",
+          "Specialist"
+        ]
+      },
+      {
+        "name": "Shaw",
+        "rarity": 4,
+        "tags": [
+          "Shift",
+          "Melee",
+          "Specialist"
+        ]
+      },
+      {
+        "name": "Thermal-EX",
+        "rarity": 1,
+        "tags": [
+          "Nuker",
+          "Melee",
+          "Specialist",
+          "Robot"
+        ]
       }
     ]
   },
@@ -5814,10 +5814,43 @@
     ],
     "operators": [
       {
-        "name": "Yato",
-        "rarity": 2,
+        "name": "Zima",
+        "rarity": 5,
         "tags": [
-          "Starter",
+          "DP-Recovery",
+          "Support",
+          "Melee",
+          "Vanguard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Texas",
+        "rarity": 5,
+        "tags": [
+          "DP-Recovery",
+          "Crowd-Control",
+          "Melee",
+          "Vanguard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Scavenger",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "DPS",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Vigna",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
           "Melee",
           "Vanguard"
         ]
@@ -5851,45 +5884,12 @@
         ]
       },
       {
-        "name": "Scavenger",
-        "rarity": 4,
+        "name": "Yato",
+        "rarity": 2,
         "tags": [
-          "DP-Recovery",
-          "DPS",
+          "Starter",
           "Melee",
           "Vanguard"
-        ]
-      },
-      {
-        "name": "Vigna",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Zima",
-        "rarity": 5,
-        "tags": [
-          "DP-Recovery",
-          "Support",
-          "Melee",
-          "Vanguard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Texas",
-        "rarity": 5,
-        "tags": [
-          "DP-Recovery",
-          "Crowd-Control",
-          "Melee",
-          "Vanguard",
-          "Senior Operator"
         ]
       }
     ]
@@ -5901,13 +5901,14 @@
     ],
     "operators": [
       {
-        "name": "Popukar",
-        "rarity": 3,
+        "name": "Specter",
+        "rarity": 5,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
@@ -5921,14 +5922,13 @@
         ]
       },
       {
-        "name": "Specter",
-        "rarity": 5,
+        "name": "Popukar",
+        "rarity": 3,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       }
     ]
@@ -5970,6 +5970,48 @@
     ],
     "operators": [
       {
+        "name": "Zima",
+        "rarity": 5,
+        "tags": [
+          "DP-Recovery",
+          "Support",
+          "Melee",
+          "Vanguard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Texas",
+        "rarity": 5,
+        "tags": [
+          "DP-Recovery",
+          "Crowd-Control",
+          "Melee",
+          "Vanguard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Scavenger",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "DPS",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Vigna",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
         "name": "Fang",
         "rarity": 3,
         "tags": [
@@ -5996,48 +6038,6 @@
           "Melee",
           "Vanguard"
         ]
-      },
-      {
-        "name": "Scavenger",
-        "rarity": 4,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Vigna",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Zima",
-        "rarity": 5,
-        "tags": [
-          "DP-Recovery",
-          "Support",
-          "Melee",
-          "Vanguard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Texas",
-        "rarity": 5,
-        "tags": [
-          "DP-Recovery",
-          "Crowd-Control",
-          "Melee",
-          "Vanguard",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -6048,32 +6048,70 @@
     ],
     "operators": [
       {
-        "name": "Plume",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Melantha",
-        "rarity": 3,
+        "name": "Indra",
+        "rarity": 5,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
-        "name": "Midnight",
-        "rarity": 3,
+        "name": "Vulcan",
+        "rarity": 5,
         "tags": [
+          "Survival",
+          "Defense",
           "DPS",
           "Melee",
-          "Guard"
+          "Defender",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Liskarm",
+        "rarity": 5,
+        "tags": [
+          "Defense",
+          "DPS",
+          "Melee",
+          "Defender",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Cliffheart",
+        "rarity": 5,
+        "tags": [
+          "Shift",
+          "DPS",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Manticore",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Swire",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
@@ -6145,16 +6183,42 @@
         ]
       },
       {
-        "name": "Indra",
-        "rarity": 5,
+        "name": "Plume",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Melantha",
+        "rarity": 3,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       },
+      {
+        "name": "Midnight",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      }
+    ]
+  },
+  {
+    "tags": [
+      "Defense",
+      "Melee"
+    ],
+    "operators": [
       {
         "name": "Vulcan",
         "rarity": 5,
@@ -6162,6 +6226,17 @@
           "Survival",
           "Defense",
           "DPS",
+          "Melee",
+          "Defender",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Nearl",
+        "rarity": 5,
+        "tags": [
+          "Defense",
+          "Healing",
           "Melee",
           "Defender",
           "Senior Operator"
@@ -6179,63 +6254,14 @@
         ]
       },
       {
-        "name": "Cliffheart",
+        "name": "Croissant",
         "rarity": 5,
         "tags": [
+          "Defense",
           "Shift",
-          "DPS",
           "Melee",
-          "Specialist",
+          "Defender",
           "Senior Operator"
-        ]
-      },
-      {
-        "name": "Manticore",
-        "rarity": 5,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Specialist",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Swire",
-        "rarity": 5,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard",
-          "Senior Operator"
-        ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Defense",
-      "Melee"
-    ],
-    "operators": [
-      {
-        "name": "Beagle",
-        "rarity": 3,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Spot",
-        "rarity": 3,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Melee",
-          "Defender"
         ]
       },
       {
@@ -6277,48 +6303,22 @@
         ]
       },
       {
-        "name": "Vulcan",
-        "rarity": 5,
+        "name": "Beagle",
+        "rarity": 3,
         "tags": [
-          "Survival",
           "Defense",
-          "DPS",
           "Melee",
-          "Defender",
-          "Senior Operator"
+          "Defender"
         ]
       },
       {
-        "name": "Nearl",
-        "rarity": 5,
+        "name": "Spot",
+        "rarity": 3,
         "tags": [
           "Defense",
           "Healing",
           "Melee",
-          "Defender",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Liskarm",
-        "rarity": 5,
-        "tags": [
-          "Defense",
-          "DPS",
-          "Melee",
-          "Defender",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Croissant",
-        "rarity": 5,
-        "tags": [
-          "Defense",
-          "Shift",
-          "Melee",
-          "Defender",
-          "Senior Operator"
+          "Defender"
         ]
       }
     ]
@@ -6330,16 +6330,6 @@
     ],
     "operators": [
       {
-        "name": "Gravel",
-        "rarity": 4,
-        "tags": [
-          "Fast-Redeploy",
-          "Defense",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
         "name": "Projekt Red",
         "rarity": 5,
         "tags": [
@@ -6348,6 +6338,16 @@
           "Melee",
           "Specialist",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Gravel",
+        "rarity": 4,
+        "tags": [
+          "Fast-Redeploy",
+          "Defense",
+          "Melee",
+          "Specialist"
         ]
       }
     ]
@@ -6359,13 +6359,14 @@
     ],
     "operators": [
       {
-        "name": "Spot",
-        "rarity": 3,
+        "name": "Nearl",
+        "rarity": 5,
         "tags": [
           "Defense",
           "Healing",
           "Melee",
-          "Defender"
+          "Defender",
+          "Senior Operator"
         ]
       },
       {
@@ -6379,14 +6380,13 @@
         ]
       },
       {
-        "name": "Nearl",
-        "rarity": 5,
+        "name": "Spot",
+        "rarity": 3,
         "tags": [
           "Defense",
           "Healing",
           "Melee",
-          "Defender",
-          "Senior Operator"
+          "Defender"
         ]
       }
     ]
@@ -6415,24 +6415,6 @@
       "Shift"
     ],
     "operators": [
-      {
-        "name": "Rope",
-        "rarity": 4,
-        "tags": [
-          "Shift",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
-        "name": "Shaw",
-        "rarity": 4,
-        "tags": [
-          "Shift",
-          "Melee",
-          "Specialist"
-        ]
-      },
       {
         "name": "Croissant",
         "rarity": 5,
@@ -6465,6 +6447,24 @@
           "Specialist",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Rope",
+        "rarity": 4,
+        "tags": [
+          "Shift",
+          "Melee",
+          "Specialist"
+        ]
+      },
+      {
+        "name": "Shaw",
+        "rarity": 4,
+        "tags": [
+          "Shift",
+          "Melee",
+          "Specialist"
+        ]
       }
     ]
   },
@@ -6475,16 +6475,6 @@
     ],
     "operators": [
       {
-        "name": "Frostleaf",
-        "rarity": 4,
-        "tags": [
-          "Slow",
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
         "name": "FEater",
         "rarity": 5,
         "tags": [
@@ -6493,6 +6483,16 @@
           "Melee",
           "Specialist",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Frostleaf",
+        "rarity": 4,
+        "tags": [
+          "Slow",
+          "DPS",
+          "Melee",
+          "Guard"
         ]
       }
     ]
@@ -6503,26 +6503,6 @@
       "Support"
     ],
     "operators": [
-      {
-        "name": "Castle-3",
-        "rarity": 1,
-        "tags": [
-          "Support",
-          "Melee",
-          "Guard",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Dobermann",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard"
-        ]
-      },
       {
         "name": "Zima",
         "rarity": 5,
@@ -6544,6 +6524,26 @@
           "Guard",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Dobermann",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Castle-3",
+        "rarity": 1,
+        "tags": [
+          "Support",
+          "Melee",
+          "Guard",
+          "Robot"
+        ]
       }
     ]
   },
@@ -6553,46 +6553,6 @@
       "Survival"
     ],
     "operators": [
-      {
-        "name": "Melantha",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Popukar",
-        "rarity": 3,
-        "tags": [
-          "AoE",
-          "Survival",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Estelle",
-        "rarity": 4,
-        "tags": [
-          "AoE",
-          "Survival",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Matoimaru",
-        "rarity": 4,
-        "tags": [
-          "Survival",
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
       {
         "name": "Indra",
         "rarity": 5,
@@ -6637,6 +6597,46 @@
           "Specialist",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Estelle",
+        "rarity": 4,
+        "tags": [
+          "AoE",
+          "Survival",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Matoimaru",
+        "rarity": 4,
+        "tags": [
+          "Survival",
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Melantha",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Popukar",
+        "rarity": 3,
+        "tags": [
+          "AoE",
+          "Survival",
+          "Melee",
+          "Guard"
+        ]
       }
     ]
   },
@@ -6647,39 +6647,15 @@
     ],
     "operators": [
       {
-        "name": "Durin",
-        "rarity": 2,
-        "tags": [
-          "Starter",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "12F",
-        "rarity": 2,
-        "tags": [
-          "Starter",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "Lava",
-        "rarity": 3,
-        "tags": [
-          "AoE",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "Steward",
-        "rarity": 3,
+        "name": "Nightmare",
+        "rarity": 5,
         "tags": [
           "DPS",
+          "Healing",
+          "Slow",
           "Ranged",
-          "Caster"
+          "Caster",
+          "Senior Operator"
         ]
       },
       {
@@ -6712,15 +6688,39 @@
         ]
       },
       {
-        "name": "Nightmare",
-        "rarity": 5,
+        "name": "Lava",
+        "rarity": 3,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
+        "name": "Steward",
+        "rarity": 3,
         "tags": [
           "DPS",
-          "Healing",
-          "Slow",
           "Ranged",
-          "Caster",
-          "Senior Operator"
+          "Caster"
+        ]
+      },
+      {
+        "name": "Durin",
+        "rarity": 2,
+        "tags": [
+          "Starter",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
+        "name": "12F",
+        "rarity": 2,
+        "tags": [
+          "Starter",
+          "Ranged",
+          "Caster"
         ]
       }
     ]
@@ -6731,52 +6731,6 @@
       "Ranged"
     ],
     "operators": [
-      {
-        "name": "Lancet-2",
-        "rarity": 1,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Hibiscus",
-        "rarity": 3,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Ansel",
-        "rarity": 3,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Myrrh",
-        "rarity": 4,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Perfumer",
-        "rarity": 4,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
       {
         "name": "Ptilopsis",
         "rarity": 5,
@@ -6808,6 +6762,52 @@
           "Medic",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Myrrh",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Perfumer",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Hibiscus",
+        "rarity": 3,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Ansel",
+        "rarity": 3,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Lancet-2",
+        "rarity": 1,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic",
+          "Robot"
+        ]
       }
     ]
   },
@@ -6817,72 +6817,6 @@
       "Sniper"
     ],
     "operators": [
-      {
-        "name": "Rangers",
-        "rarity": 2,
-        "tags": [
-          "Starter",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Adnachiel",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Kroos",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Catapult",
-        "rarity": 3,
-        "tags": [
-          "AoE",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Jessica",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Meteor",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Debuff",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Shirayuki",
-        "rarity": 4,
-        "tags": [
-          "AoE",
-          "Slow",
-          "Ranged",
-          "Sniper"
-        ]
-      },
       {
         "name": "Blue Poison",
         "rarity": 5,
@@ -6934,6 +6868,72 @@
           "Sniper",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Jessica",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Meteor",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Debuff",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Shirayuki",
+        "rarity": 4,
+        "tags": [
+          "AoE",
+          "Slow",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Adnachiel",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Kroos",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Catapult",
+        "rarity": 3,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Rangers",
+        "rarity": 2,
+        "tags": [
+          "Starter",
+          "Ranged",
+          "Sniper"
+        ]
       }
     ]
   },
@@ -6943,24 +6943,6 @@
       "Supporter"
     ],
     "operators": [
-      {
-        "name": "Orchid",
-        "rarity": 3,
-        "tags": [
-          "Slow",
-          "Ranged",
-          "Supporter"
-        ]
-      },
-      {
-        "name": "Earthspirit",
-        "rarity": 4,
-        "tags": [
-          "Slow",
-          "Ranged",
-          "Supporter"
-        ]
-      },
       {
         "name": "Mayer",
         "rarity": 5,
@@ -6992,6 +6974,24 @@
           "Supporter",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Earthspirit",
+        "rarity": 4,
+        "tags": [
+          "Slow",
+          "Ranged",
+          "Supporter"
+        ]
+      },
+      {
+        "name": "Orchid",
+        "rarity": 3,
+        "tags": [
+          "Slow",
+          "Ranged",
+          "Supporter"
+        ]
       }
     ]
   },
@@ -7002,21 +7002,14 @@
     ],
     "operators": [
       {
-        "name": "Lava",
-        "rarity": 3,
+        "name": "Meteorite",
+        "rarity": 5,
         "tags": [
           "AoE",
+          "Debuff",
           "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "Catapult",
-        "rarity": 3,
-        "tags": [
-          "AoE",
-          "Ranged",
-          "Sniper"
+          "Sniper",
+          "Senior Operator"
         ]
       },
       {
@@ -7049,14 +7042,21 @@
         ]
       },
       {
-        "name": "Meteorite",
-        "rarity": 5,
+        "name": "Lava",
+        "rarity": 3,
         "tags": [
           "AoE",
-          "Debuff",
           "Ranged",
-          "Sniper",
-          "Senior Operator"
+          "Caster"
+        ]
+      },
+      {
+        "name": "Catapult",
+        "rarity": 3,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Sniper"
         ]
       }
     ]
@@ -7087,63 +7087,6 @@
     ],
     "operators": [
       {
-        "name": "Adnachiel",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Kroos",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Steward",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "Haze",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Debuff",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
-        "name": "Jessica",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Meteor",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Debuff",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
         "name": "Blue Poison",
         "rarity": 5,
         "tags": [
@@ -7206,15 +7149,7 @@
           "Caster",
           "Senior Operator"
         ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Debuff",
-      "Ranged"
-    ],
-    "operators": [
+      },
       {
         "name": "Haze",
         "rarity": 4,
@@ -7223,6 +7158,16 @@
           "Debuff",
           "Ranged",
           "Caster"
+        ]
+      },
+      {
+        "name": "Jessica",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Ranged",
+          "Sniper"
         ]
       },
       {
@@ -7235,6 +7180,41 @@
           "Sniper"
         ]
       },
+      {
+        "name": "Adnachiel",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Kroos",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Steward",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Caster"
+        ]
+      }
+    ]
+  },
+  {
+    "tags": [
+      "Debuff",
+      "Ranged"
+    ],
+    "operators": [
       {
         "name": "Meteorite",
         "rarity": 5,
@@ -7255,6 +7235,26 @@
           "Supporter",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Haze",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Debuff",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
+        "name": "Meteor",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Debuff",
+          "Ranged",
+          "Sniper"
+        ]
       }
     ]
   },
@@ -7264,52 +7264,6 @@
       "Ranged"
     ],
     "operators": [
-      {
-        "name": "Lancet-2",
-        "rarity": 1,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Hibiscus",
-        "rarity": 3,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Ansel",
-        "rarity": 3,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Myrrh",
-        "rarity": 4,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Perfumer",
-        "rarity": 4,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
       {
         "name": "Ptilopsis",
         "rarity": 5,
@@ -7353,6 +7307,52 @@
           "Caster",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Myrrh",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Perfumer",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Hibiscus",
+        "rarity": 3,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Ansel",
+        "rarity": 3,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Lancet-2",
+        "rarity": 1,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic",
+          "Robot"
+        ]
       }
     ]
   },
@@ -7382,12 +7382,26 @@
     ],
     "operators": [
       {
-        "name": "Orchid",
-        "rarity": 3,
+        "name": "Istina",
+        "rarity": 5,
         "tags": [
           "Slow",
+          "DPS",
           "Ranged",
-          "Supporter"
+          "Supporter",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Nightmare",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Healing",
+          "Slow",
+          "Ranged",
+          "Caster",
+          "Senior Operator"
         ]
       },
       {
@@ -7420,26 +7434,12 @@
         ]
       },
       {
-        "name": "Istina",
-        "rarity": 5,
+        "name": "Orchid",
+        "rarity": 3,
         "tags": [
           "Slow",
-          "DPS",
           "Ranged",
-          "Supporter",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Nightmare",
-        "rarity": 5,
-        "tags": [
-          "DPS",
-          "Healing",
-          "Slow",
-          "Ranged",
-          "Caster",
-          "Senior Operator"
+          "Supporter"
         ]
       }
     ]
@@ -7518,15 +7518,6 @@
     ],
     "operators": [
       {
-        "name": "Lava",
-        "rarity": 3,
-        "tags": [
-          "AoE",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
         "name": "Gitano",
         "rarity": 4,
         "tags": [
@@ -7544,6 +7535,15 @@
           "Ranged",
           "Caster"
         ]
+      },
+      {
+        "name": "Lava",
+        "rarity": 3,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Caster"
+        ]
       }
     ]
   },
@@ -7554,12 +7554,15 @@
     ],
     "operators": [
       {
-        "name": "Steward",
-        "rarity": 3,
+        "name": "Nightmare",
+        "rarity": 5,
         "tags": [
           "DPS",
+          "Healing",
+          "Slow",
           "Ranged",
-          "Caster"
+          "Caster",
+          "Senior Operator"
         ]
       },
       {
@@ -7573,15 +7576,12 @@
         ]
       },
       {
-        "name": "Nightmare",
-        "rarity": 5,
+        "name": "Steward",
+        "rarity": 3,
         "tags": [
           "DPS",
-          "Healing",
-          "Slow",
           "Ranged",
-          "Caster",
-          "Senior Operator"
+          "Caster"
         ]
       }
     ]
@@ -7631,16 +7631,6 @@
     ],
     "operators": [
       {
-        "name": "Greyy",
-        "rarity": 4,
-        "tags": [
-          "AoE",
-          "Slow",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
         "name": "Nightmare",
         "rarity": 5,
         "tags": [
@@ -7650,6 +7640,16 @@
           "Ranged",
           "Caster",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Greyy",
+        "rarity": 4,
+        "tags": [
+          "AoE",
+          "Slow",
+          "Ranged",
+          "Caster"
         ]
       }
     ]
@@ -7691,53 +7691,6 @@
       "Defense"
     ],
     "operators": [
-      {
-        "name": "Beagle",
-        "rarity": 3,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Spot",
-        "rarity": 3,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Matterhorn",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Cuora",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Gummy",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Melee",
-          "Defender"
-        ]
-      },
       {
         "name": "Vulcan",
         "rarity": 5,
@@ -7782,21 +7735,21 @@
           "Defender",
           "Senior Operator"
         ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Defender",
-      "Healing"
-    ],
-    "operators": [
+      },
       {
-        "name": "Spot",
-        "rarity": 3,
+        "name": "Matterhorn",
+        "rarity": 4,
         "tags": [
           "Defense",
-          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Cuora",
+        "rarity": 4,
+        "tags": [
+          "Defense",
           "Melee",
           "Defender"
         ]
@@ -7812,6 +7765,33 @@
         ]
       },
       {
+        "name": "Beagle",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Spot",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      }
+    ]
+  },
+  {
+    "tags": [
+      "Defender",
+      "Healing"
+    ],
+    "operators": [
+      {
         "name": "Nearl",
         "rarity": 5,
         "tags": [
@@ -7820,6 +7800,26 @@
           "Melee",
           "Defender",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Gummy",
+        "rarity": 4,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Spot",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
         ]
       }
     ]
@@ -7870,13 +7870,14 @@
     ],
     "operators": [
       {
-        "name": "Popukar",
-        "rarity": 3,
+        "name": "Specter",
+        "rarity": 5,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
@@ -7890,14 +7891,13 @@
         ]
       },
       {
-        "name": "Specter",
-        "rarity": 5,
+        "name": "Popukar",
+        "rarity": 3,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       }
     ]
@@ -7909,22 +7909,25 @@
     ],
     "operators": [
       {
-        "name": "Melantha",
-        "rarity": 3,
+        "name": "Indra",
+        "rarity": 5,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
-        "name": "Midnight",
-        "rarity": 3,
+        "name": "Swire",
+        "rarity": 5,
         "tags": [
           "DPS",
+          "Support",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
@@ -7976,25 +7979,22 @@
         ]
       },
       {
-        "name": "Indra",
-        "rarity": 5,
+        "name": "Melantha",
+        "rarity": 3,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       },
       {
-        "name": "Swire",
-        "rarity": 5,
+        "name": "Midnight",
+        "rarity": 3,
         "tags": [
           "DPS",
-          "Support",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       }
     ]
@@ -8024,13 +8024,14 @@
     ],
     "operators": [
       {
-        "name": "Castle-3",
-        "rarity": 1,
+        "name": "Swire",
+        "rarity": 5,
         "tags": [
+          "DPS",
           "Support",
           "Melee",
           "Guard",
-          "Robot"
+          "Senior Operator"
         ]
       },
       {
@@ -8044,14 +8045,13 @@
         ]
       },
       {
-        "name": "Swire",
-        "rarity": 5,
+        "name": "Castle-3",
+        "rarity": 1,
         "tags": [
-          "DPS",
           "Support",
           "Melee",
           "Guard",
-          "Senior Operator"
+          "Robot"
         ]
       }
     ]
@@ -8063,23 +8063,25 @@
     ],
     "operators": [
       {
-        "name": "Melantha",
-        "rarity": 3,
+        "name": "Indra",
+        "rarity": 5,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
-        "name": "Popukar",
-        "rarity": 3,
+        "name": "Specter",
+        "rarity": 5,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
@@ -8103,25 +8105,23 @@
         ]
       },
       {
-        "name": "Indra",
-        "rarity": 5,
+        "name": "Melantha",
+        "rarity": 3,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       },
       {
-        "name": "Specter",
-        "rarity": 5,
+        "name": "Popukar",
+        "rarity": 3,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       }
     ]
@@ -8132,52 +8132,6 @@
       "Medic"
     ],
     "operators": [
-      {
-        "name": "Lancet-2",
-        "rarity": 1,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Hibiscus",
-        "rarity": 3,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Ansel",
-        "rarity": 3,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Myrrh",
-        "rarity": 4,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Perfumer",
-        "rarity": 4,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
       {
         "name": "Ptilopsis",
         "rarity": 5,
@@ -8208,6 +8162,52 @@
           "Ranged",
           "Medic",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Myrrh",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Perfumer",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Hibiscus",
+        "rarity": 3,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Ansel",
+        "rarity": 3,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Lancet-2",
+        "rarity": 1,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic",
+          "Robot"
         ]
       }
     ]
@@ -8249,12 +8249,14 @@
     ],
     "operators": [
       {
-        "name": "Catapult",
-        "rarity": 3,
+        "name": "Meteorite",
+        "rarity": 5,
         "tags": [
           "AoE",
+          "Debuff",
           "Ranged",
-          "Sniper"
+          "Sniper",
+          "Senior Operator"
         ]
       },
       {
@@ -8268,14 +8270,12 @@
         ]
       },
       {
-        "name": "Meteorite",
-        "rarity": 5,
+        "name": "Catapult",
+        "rarity": 3,
         "tags": [
           "AoE",
-          "Debuff",
           "Ranged",
-          "Sniper",
-          "Senior Operator"
+          "Sniper"
         ]
       }
     ]
@@ -8286,44 +8286,6 @@
       "Sniper"
     ],
     "operators": [
-      {
-        "name": "Adnachiel",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Kroos",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Jessica",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Meteor",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Debuff",
-          "Ranged",
-          "Sniper"
-        ]
-      },
       {
         "name": "Blue Poison",
         "rarity": 5,
@@ -8364,15 +8326,17 @@
           "Sniper",
           "Senior Operator"
         ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Debuff",
-      "Sniper"
-    ],
-    "operators": [
+      },
+      {
+        "name": "Jessica",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Ranged",
+          "Sniper"
+        ]
+      },
       {
         "name": "Meteor",
         "rarity": 4,
@@ -8384,6 +8348,32 @@
         ]
       },
       {
+        "name": "Adnachiel",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Kroos",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
+        ]
+      }
+    ]
+  },
+  {
+    "tags": [
+      "Debuff",
+      "Sniper"
+    ],
+    "operators": [
+      {
         "name": "Meteorite",
         "rarity": 5,
         "tags": [
@@ -8392,6 +8382,16 @@
           "Ranged",
           "Sniper",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Meteor",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Debuff",
+          "Ranged",
+          "Sniper"
         ]
       }
     ]
@@ -8525,16 +8525,6 @@
     ],
     "operators": [
       {
-        "name": "Gravel",
-        "rarity": 4,
-        "tags": [
-          "Fast-Redeploy",
-          "Defense",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
         "name": "Projekt Red",
         "rarity": 5,
         "tags": [
@@ -8543,6 +8533,16 @@
           "Melee",
           "Specialist",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Gravel",
+        "rarity": 4,
+        "tags": [
+          "Fast-Redeploy",
+          "Defense",
+          "Melee",
+          "Specialist"
         ]
       }
     ]
@@ -8572,24 +8572,6 @@
     ],
     "operators": [
       {
-        "name": "Rope",
-        "rarity": 4,
-        "tags": [
-          "Shift",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
-        "name": "Shaw",
-        "rarity": 4,
-        "tags": [
-          "Shift",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
         "name": "Cliffheart",
         "rarity": 5,
         "tags": [
@@ -8609,6 +8591,24 @@
           "Melee",
           "Specialist",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Rope",
+        "rarity": 4,
+        "tags": [
+          "Shift",
+          "Melee",
+          "Specialist"
+        ]
+      },
+      {
+        "name": "Shaw",
+        "rarity": 4,
+        "tags": [
+          "Shift",
+          "Melee",
+          "Specialist"
         ]
       }
     ]
@@ -8714,12 +8714,14 @@
     ],
     "operators": [
       {
-        "name": "Orchid",
-        "rarity": 3,
+        "name": "Istina",
+        "rarity": 5,
         "tags": [
           "Slow",
+          "DPS",
           "Ranged",
-          "Supporter"
+          "Supporter",
+          "Senior Operator"
         ]
       },
       {
@@ -8732,14 +8734,12 @@
         ]
       },
       {
-        "name": "Istina",
-        "rarity": 5,
+        "name": "Orchid",
+        "rarity": 3,
         "tags": [
           "Slow",
-          "DPS",
           "Ranged",
-          "Supporter",
-          "Senior Operator"
+          "Supporter"
         ]
       }
     ]
@@ -8789,6 +8789,48 @@
     ],
     "operators": [
       {
+        "name": "Zima",
+        "rarity": 5,
+        "tags": [
+          "DP-Recovery",
+          "Support",
+          "Melee",
+          "Vanguard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Texas",
+        "rarity": 5,
+        "tags": [
+          "DP-Recovery",
+          "Crowd-Control",
+          "Melee",
+          "Vanguard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Scavenger",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "DPS",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Vigna",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
         "name": "Fang",
         "rarity": 3,
         "tags": [
@@ -8815,48 +8857,6 @@
           "Melee",
           "Vanguard"
         ]
-      },
-      {
-        "name": "Scavenger",
-        "rarity": 4,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Vigna",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Zima",
-        "rarity": 5,
-        "tags": [
-          "DP-Recovery",
-          "Support",
-          "Melee",
-          "Vanguard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Texas",
-        "rarity": 5,
-        "tags": [
-          "DP-Recovery",
-          "Crowd-Control",
-          "Melee",
-          "Vanguard",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -8867,16 +8867,6 @@
     ],
     "operators": [
       {
-        "name": "Plume",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
         "name": "Scavenger",
         "rarity": 4,
         "tags": [
@@ -8889,6 +8879,16 @@
       {
         "name": "Vigna",
         "rarity": 4,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Plume",
+        "rarity": 3,
         "tags": [
           "DPS",
           "DP-Recovery",
@@ -8971,13 +8971,14 @@
     ],
     "operators": [
       {
-        "name": "Popukar",
-        "rarity": 3,
+        "name": "Specter",
+        "rarity": 5,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
@@ -8991,14 +8992,13 @@
         ]
       },
       {
-        "name": "Specter",
-        "rarity": 5,
+        "name": "Popukar",
+        "rarity": 3,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       }
     ]
@@ -9067,16 +9067,6 @@
     ],
     "operators": [
       {
-        "name": "Plume",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
         "name": "Scavenger",
         "rarity": 4,
         "tags": [
@@ -9089,6 +9079,16 @@
       {
         "name": "Vigna",
         "rarity": 4,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Plume",
+        "rarity": 3,
         "tags": [
           "DPS",
           "DP-Recovery",
@@ -9241,16 +9241,6 @@
     ],
     "operators": [
       {
-        "name": "Frostleaf",
-        "rarity": 4,
-        "tags": [
-          "Slow",
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
         "name": "Istina",
         "rarity": 5,
         "tags": [
@@ -9272,6 +9262,16 @@
           "Caster",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Frostleaf",
+        "rarity": 4,
+        "tags": [
+          "Slow",
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
       }
     ]
   },
@@ -9282,16 +9282,6 @@
     ],
     "operators": [
       {
-        "name": "Dobermann",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
         "name": "Swire",
         "rarity": 5,
         "tags": [
@@ -9300,6 +9290,16 @@
           "Melee",
           "Guard",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Dobermann",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard"
         ]
       }
     ]
@@ -9310,36 +9310,6 @@
       "Survival"
     ],
     "operators": [
-      {
-        "name": "Melantha",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Jessica",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Matoimaru",
-        "rarity": 4,
-        "tags": [
-          "Survival",
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
       {
         "name": "Indra",
         "rarity": 5,
@@ -9373,6 +9343,36 @@
           "Specialist",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Jessica",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Matoimaru",
+        "rarity": 4,
+        "tags": [
+          "Survival",
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Melantha",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard"
+        ]
       }
     ]
   },
@@ -9401,13 +9401,14 @@
     ],
     "operators": [
       {
-        "name": "Spot",
-        "rarity": 3,
+        "name": "Nearl",
+        "rarity": 5,
         "tags": [
           "Defense",
           "Healing",
           "Melee",
-          "Defender"
+          "Defender",
+          "Senior Operator"
         ]
       },
       {
@@ -9421,14 +9422,13 @@
         ]
       },
       {
-        "name": "Nearl",
-        "rarity": 5,
+        "name": "Spot",
+        "rarity": 3,
         "tags": [
           "Defense",
           "Healing",
           "Melee",
-          "Defender",
-          "Senior Operator"
+          "Defender"
         ]
       }
     ]
@@ -13874,53 +13874,6 @@
     ],
     "operators": [
       {
-        "name": "Beagle",
-        "rarity": 3,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Spot",
-        "rarity": 3,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Matterhorn",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Cuora",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
-        "name": "Gummy",
-        "rarity": 4,
-        "tags": [
-          "Defense",
-          "Healing",
-          "Melee",
-          "Defender"
-        ]
-      },
-      {
         "name": "Vulcan",
         "rarity": 5,
         "tags": [
@@ -13964,22 +13917,21 @@
           "Defender",
           "Senior Operator"
         ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Defender",
-      "Healing",
-      "Melee"
-    ],
-    "operators": [
+      },
       {
-        "name": "Spot",
-        "rarity": 3,
+        "name": "Matterhorn",
+        "rarity": 4,
         "tags": [
           "Defense",
-          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Cuora",
+        "rarity": 4,
+        "tags": [
+          "Defense",
           "Melee",
           "Defender"
         ]
@@ -13995,6 +13947,34 @@
         ]
       },
       {
+        "name": "Beagle",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Spot",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      }
+    ]
+  },
+  {
+    "tags": [
+      "Defender",
+      "Healing",
+      "Melee"
+    ],
+    "operators": [
+      {
         "name": "Nearl",
         "rarity": 5,
         "tags": [
@@ -14003,6 +13983,26 @@
           "Melee",
           "Defender",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Gummy",
+        "rarity": 4,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
+        ]
+      },
+      {
+        "name": "Spot",
+        "rarity": 3,
+        "tags": [
+          "Defense",
+          "Healing",
+          "Melee",
+          "Defender"
         ]
       }
     ]
@@ -14056,13 +14056,14 @@
     ],
     "operators": [
       {
-        "name": "Popukar",
-        "rarity": 3,
+        "name": "Specter",
+        "rarity": 5,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
@@ -14076,14 +14077,13 @@
         ]
       },
       {
-        "name": "Specter",
-        "rarity": 5,
+        "name": "Popukar",
+        "rarity": 3,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       }
     ]
@@ -14096,22 +14096,25 @@
     ],
     "operators": [
       {
-        "name": "Melantha",
-        "rarity": 3,
+        "name": "Indra",
+        "rarity": 5,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
-        "name": "Midnight",
-        "rarity": 3,
+        "name": "Swire",
+        "rarity": 5,
         "tags": [
           "DPS",
+          "Support",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
@@ -14163,25 +14166,22 @@
         ]
       },
       {
-        "name": "Indra",
-        "rarity": 5,
+        "name": "Melantha",
+        "rarity": 3,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       },
       {
-        "name": "Swire",
-        "rarity": 5,
+        "name": "Midnight",
+        "rarity": 3,
         "tags": [
           "DPS",
-          "Support",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       }
     ]
@@ -14213,13 +14213,14 @@
     ],
     "operators": [
       {
-        "name": "Castle-3",
-        "rarity": 1,
+        "name": "Swire",
+        "rarity": 5,
         "tags": [
+          "DPS",
           "Support",
           "Melee",
           "Guard",
-          "Robot"
+          "Senior Operator"
         ]
       },
       {
@@ -14233,14 +14234,13 @@
         ]
       },
       {
-        "name": "Swire",
-        "rarity": 5,
+        "name": "Castle-3",
+        "rarity": 1,
         "tags": [
-          "DPS",
           "Support",
           "Melee",
           "Guard",
-          "Senior Operator"
+          "Robot"
         ]
       }
     ]
@@ -14253,23 +14253,25 @@
     ],
     "operators": [
       {
-        "name": "Melantha",
-        "rarity": 3,
+        "name": "Indra",
+        "rarity": 5,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
-        "name": "Popukar",
-        "rarity": 3,
+        "name": "Specter",
+        "rarity": 5,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
@@ -14293,25 +14295,23 @@
         ]
       },
       {
-        "name": "Indra",
-        "rarity": 5,
+        "name": "Melantha",
+        "rarity": 3,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       },
       {
-        "name": "Specter",
-        "rarity": 5,
+        "name": "Popukar",
+        "rarity": 3,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       }
     ]
@@ -14394,16 +14394,6 @@
     ],
     "operators": [
       {
-        "name": "Gravel",
-        "rarity": 4,
-        "tags": [
-          "Fast-Redeploy",
-          "Defense",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
         "name": "Projekt Red",
         "rarity": 5,
         "tags": [
@@ -14412,6 +14402,16 @@
           "Melee",
           "Specialist",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Gravel",
+        "rarity": 4,
+        "tags": [
+          "Fast-Redeploy",
+          "Defense",
+          "Melee",
+          "Specialist"
         ]
       }
     ]
@@ -14443,24 +14443,6 @@
     ],
     "operators": [
       {
-        "name": "Rope",
-        "rarity": 4,
-        "tags": [
-          "Shift",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
-        "name": "Shaw",
-        "rarity": 4,
-        "tags": [
-          "Shift",
-          "Melee",
-          "Specialist"
-        ]
-      },
-      {
         "name": "Cliffheart",
         "rarity": 5,
         "tags": [
@@ -14480,6 +14462,24 @@
           "Melee",
           "Specialist",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Rope",
+        "rarity": 4,
+        "tags": [
+          "Shift",
+          "Melee",
+          "Specialist"
+        ]
+      },
+      {
+        "name": "Shaw",
+        "rarity": 4,
+        "tags": [
+          "Shift",
+          "Melee",
+          "Specialist"
         ]
       }
     ]
@@ -14552,6 +14552,48 @@
     ],
     "operators": [
       {
+        "name": "Zima",
+        "rarity": 5,
+        "tags": [
+          "DP-Recovery",
+          "Support",
+          "Melee",
+          "Vanguard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Texas",
+        "rarity": 5,
+        "tags": [
+          "DP-Recovery",
+          "Crowd-Control",
+          "Melee",
+          "Vanguard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Scavenger",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "DPS",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Vigna",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
         "name": "Fang",
         "rarity": 3,
         "tags": [
@@ -14578,48 +14620,6 @@
           "Melee",
           "Vanguard"
         ]
-      },
-      {
-        "name": "Scavenger",
-        "rarity": 4,
-        "tags": [
-          "DP-Recovery",
-          "DPS",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Vigna",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Zima",
-        "rarity": 5,
-        "tags": [
-          "DP-Recovery",
-          "Support",
-          "Melee",
-          "Vanguard",
-          "Senior Operator"
-        ]
-      },
-      {
-        "name": "Texas",
-        "rarity": 5,
-        "tags": [
-          "DP-Recovery",
-          "Crowd-Control",
-          "Melee",
-          "Vanguard",
-          "Senior Operator"
-        ]
       }
     ]
   },
@@ -14631,16 +14631,6 @@
     ],
     "operators": [
       {
-        "name": "Plume",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
         "name": "Scavenger",
         "rarity": 4,
         "tags": [
@@ -14653,6 +14643,16 @@
       {
         "name": "Vigna",
         "rarity": 4,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Plume",
+        "rarity": 3,
         "tags": [
           "DPS",
           "DP-Recovery",
@@ -14690,13 +14690,14 @@
     ],
     "operators": [
       {
-        "name": "Popukar",
-        "rarity": 3,
+        "name": "Specter",
+        "rarity": 5,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
@@ -14710,14 +14711,13 @@
         ]
       },
       {
-        "name": "Specter",
-        "rarity": 5,
+        "name": "Popukar",
+        "rarity": 3,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       }
     ]
@@ -14770,16 +14770,6 @@
     ],
     "operators": [
       {
-        "name": "Plume",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
         "name": "Scavenger",
         "rarity": 4,
         "tags": [
@@ -14792,6 +14782,16 @@
       {
         "name": "Vigna",
         "rarity": 4,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Plume",
+        "rarity": 3,
         "tags": [
           "DPS",
           "DP-Recovery",
@@ -14900,16 +14900,6 @@
     ],
     "operators": [
       {
-        "name": "Dobermann",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
         "name": "Swire",
         "rarity": 5,
         "tags": [
@@ -14918,6 +14908,16 @@
           "Melee",
           "Guard",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Dobermann",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard"
         ]
       }
     ]
@@ -14929,26 +14929,6 @@
       "Survival"
     ],
     "operators": [
-      {
-        "name": "Melantha",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
-        "name": "Matoimaru",
-        "rarity": 4,
-        "tags": [
-          "Survival",
-          "DPS",
-          "Melee",
-          "Guard"
-        ]
-      },
       {
         "name": "Indra",
         "rarity": 5,
@@ -14982,6 +14962,26 @@
           "Specialist",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Matoimaru",
+        "rarity": 4,
+        "tags": [
+          "Survival",
+          "DPS",
+          "Melee",
+          "Guard"
+        ]
+      },
+      {
+        "name": "Melantha",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard"
+        ]
       }
     ]
   },
@@ -15012,13 +15012,14 @@
     ],
     "operators": [
       {
-        "name": "Spot",
-        "rarity": 3,
+        "name": "Nearl",
+        "rarity": 5,
         "tags": [
           "Defense",
           "Healing",
           "Melee",
-          "Defender"
+          "Defender",
+          "Senior Operator"
         ]
       },
       {
@@ -15032,14 +15033,13 @@
         ]
       },
       {
-        "name": "Nearl",
-        "rarity": 5,
+        "name": "Spot",
+        "rarity": 3,
         "tags": [
           "Defense",
           "Healing",
           "Melee",
-          "Defender",
-          "Senior Operator"
+          "Defender"
         ]
       }
     ]
@@ -15113,15 +15113,6 @@
     ],
     "operators": [
       {
-        "name": "Lava",
-        "rarity": 3,
-        "tags": [
-          "AoE",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
         "name": "Gitano",
         "rarity": 4,
         "tags": [
@@ -15139,6 +15130,15 @@
           "Ranged",
           "Caster"
         ]
+      },
+      {
+        "name": "Lava",
+        "rarity": 3,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Caster"
+        ]
       }
     ]
   },
@@ -15150,12 +15150,15 @@
     ],
     "operators": [
       {
-        "name": "Steward",
-        "rarity": 3,
+        "name": "Nightmare",
+        "rarity": 5,
         "tags": [
           "DPS",
+          "Healing",
+          "Slow",
           "Ranged",
-          "Caster"
+          "Caster",
+          "Senior Operator"
         ]
       },
       {
@@ -15169,15 +15172,12 @@
         ]
       },
       {
-        "name": "Nightmare",
-        "rarity": 5,
+        "name": "Steward",
+        "rarity": 3,
         "tags": [
           "DPS",
-          "Healing",
-          "Slow",
           "Ranged",
-          "Caster",
-          "Senior Operator"
+          "Caster"
         ]
       }
     ]
@@ -15230,16 +15230,6 @@
     ],
     "operators": [
       {
-        "name": "Greyy",
-        "rarity": 4,
-        "tags": [
-          "AoE",
-          "Slow",
-          "Ranged",
-          "Caster"
-        ]
-      },
-      {
         "name": "Nightmare",
         "rarity": 5,
         "tags": [
@@ -15249,6 +15239,16 @@
           "Ranged",
           "Caster",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Greyy",
+        "rarity": 4,
+        "tags": [
+          "AoE",
+          "Slow",
+          "Ranged",
+          "Caster"
         ]
       }
     ]
@@ -15260,52 +15260,6 @@
       "Ranged"
     ],
     "operators": [
-      {
-        "name": "Lancet-2",
-        "rarity": 1,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic",
-          "Robot"
-        ]
-      },
-      {
-        "name": "Hibiscus",
-        "rarity": 3,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Ansel",
-        "rarity": 3,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Myrrh",
-        "rarity": 4,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
-      {
-        "name": "Perfumer",
-        "rarity": 4,
-        "tags": [
-          "Healing",
-          "Ranged",
-          "Medic"
-        ]
-      },
       {
         "name": "Ptilopsis",
         "rarity": 5,
@@ -15336,6 +15290,52 @@
           "Ranged",
           "Medic",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Myrrh",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Perfumer",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Hibiscus",
+        "rarity": 3,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Ansel",
+        "rarity": 3,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Lancet-2",
+        "rarity": 1,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic",
+          "Robot"
         ]
       }
     ]
@@ -15379,12 +15379,14 @@
     ],
     "operators": [
       {
-        "name": "Catapult",
-        "rarity": 3,
+        "name": "Meteorite",
+        "rarity": 5,
         "tags": [
           "AoE",
+          "Debuff",
           "Ranged",
-          "Sniper"
+          "Sniper",
+          "Senior Operator"
         ]
       },
       {
@@ -15398,14 +15400,12 @@
         ]
       },
       {
-        "name": "Meteorite",
-        "rarity": 5,
+        "name": "Catapult",
+        "rarity": 3,
         "tags": [
           "AoE",
-          "Debuff",
           "Ranged",
-          "Sniper",
-          "Senior Operator"
+          "Sniper"
         ]
       }
     ]
@@ -15417,44 +15417,6 @@
       "Sniper"
     ],
     "operators": [
-      {
-        "name": "Adnachiel",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Kroos",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Jessica",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Survival",
-          "Ranged",
-          "Sniper"
-        ]
-      },
-      {
-        "name": "Meteor",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Debuff",
-          "Ranged",
-          "Sniper"
-        ]
-      },
       {
         "name": "Blue Poison",
         "rarity": 5,
@@ -15495,16 +15457,17 @@
           "Sniper",
           "Senior Operator"
         ]
-      }
-    ]
-  },
-  {
-    "tags": [
-      "Debuff",
-      "Ranged",
-      "Sniper"
-    ],
-    "operators": [
+      },
+      {
+        "name": "Jessica",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Ranged",
+          "Sniper"
+        ]
+      },
       {
         "name": "Meteor",
         "rarity": 4,
@@ -15516,6 +15479,33 @@
         ]
       },
       {
+        "name": "Adnachiel",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Kroos",
+        "rarity": 3,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
+        ]
+      }
+    ]
+  },
+  {
+    "tags": [
+      "Debuff",
+      "Ranged",
+      "Sniper"
+    ],
+    "operators": [
+      {
         "name": "Meteorite",
         "rarity": 5,
         "tags": [
@@ -15524,6 +15514,16 @@
           "Ranged",
           "Sniper",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Meteor",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Debuff",
+          "Ranged",
+          "Sniper"
         ]
       }
     ]
@@ -15653,12 +15653,14 @@
     ],
     "operators": [
       {
-        "name": "Orchid",
-        "rarity": 3,
+        "name": "Istina",
+        "rarity": 5,
         "tags": [
           "Slow",
+          "DPS",
           "Ranged",
-          "Supporter"
+          "Supporter",
+          "Senior Operator"
         ]
       },
       {
@@ -15671,14 +15673,12 @@
         ]
       },
       {
-        "name": "Istina",
-        "rarity": 5,
+        "name": "Orchid",
+        "rarity": 3,
         "tags": [
           "Slow",
-          "DPS",
           "Ranged",
-          "Supporter",
-          "Senior Operator"
+          "Supporter"
         ]
       }
     ]
@@ -16107,13 +16107,14 @@
     ],
     "operators": [
       {
-        "name": "Spot",
-        "rarity": 3,
+        "name": "Nearl",
+        "rarity": 5,
         "tags": [
           "Defense",
           "Healing",
           "Melee",
-          "Defender"
+          "Defender",
+          "Senior Operator"
         ]
       },
       {
@@ -16127,14 +16128,13 @@
         ]
       },
       {
-        "name": "Nearl",
-        "rarity": 5,
+        "name": "Spot",
+        "rarity": 3,
         "tags": [
           "Defense",
           "Healing",
           "Melee",
-          "Defender",
-          "Senior Operator"
+          "Defender"
         ]
       }
     ]
@@ -16188,13 +16188,14 @@
     ],
     "operators": [
       {
-        "name": "Popukar",
-        "rarity": 3,
+        "name": "Specter",
+        "rarity": 5,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
@@ -16208,14 +16209,13 @@
         ]
       },
       {
-        "name": "Specter",
-        "rarity": 5,
+        "name": "Popukar",
+        "rarity": 3,
         "tags": [
           "AoE",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       }
     ]
@@ -16247,16 +16247,6 @@
     ],
     "operators": [
       {
-        "name": "Dobermann",
-        "rarity": 4,
-        "tags": [
-          "DPS",
-          "Support",
-          "Melee",
-          "Guard"
-        ]
-      },
-      {
         "name": "Swire",
         "rarity": 5,
         "tags": [
@@ -16265,6 +16255,16 @@
           "Melee",
           "Guard",
           "Senior Operator"
+        ]
+      },
+      {
+        "name": "Dobermann",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard"
         ]
       }
     ]
@@ -16277,13 +16277,14 @@
     ],
     "operators": [
       {
-        "name": "Melantha",
-        "rarity": 3,
+        "name": "Indra",
+        "rarity": 5,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard"
+          "Guard",
+          "Senior Operator"
         ]
       },
       {
@@ -16297,14 +16298,13 @@
         ]
       },
       {
-        "name": "Indra",
-        "rarity": 5,
+        "name": "Melantha",
+        "rarity": 3,
         "tags": [
           "DPS",
           "Survival",
           "Melee",
-          "Guard",
-          "Senior Operator"
+          "Guard"
         ]
       }
     ]
@@ -16604,16 +16604,6 @@
     ],
     "operators": [
       {
-        "name": "Plume",
-        "rarity": 3,
-        "tags": [
-          "DPS",
-          "DP-Recovery",
-          "Melee",
-          "Vanguard"
-        ]
-      },
-      {
         "name": "Scavenger",
         "rarity": 4,
         "tags": [
@@ -16626,6 +16616,16 @@
       {
         "name": "Vigna",
         "rarity": 4,
+        "tags": [
+          "DPS",
+          "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Plume",
+        "rarity": 3,
         "tags": [
           "DPS",
           "DP-Recovery",
