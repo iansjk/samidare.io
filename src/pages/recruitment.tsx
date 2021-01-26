@@ -100,7 +100,7 @@ function Recruitment(): React.ReactElement {
   const allRecruitmentResults: RecruitmentResult[] =
     data.allRecruitmentJson.nodes;
   const [activeTags, setActiveTags] = useState<string[]>([]);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const textinput = useRef(null);
   const classes = useStyles();
   const theme = useTheme();
