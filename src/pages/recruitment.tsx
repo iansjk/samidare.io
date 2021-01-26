@@ -107,10 +107,14 @@ function Recruitment(): React.ReactElement {
   const isXSmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
 
   const activeTagCombinations = getTagCombinations(activeTags);
-  const matchingOperators = allRecruitmentResults.filter((result) =>
-    activeTagCombinations.find(
-      (tags) => tags.toString() === result.tags.toString()
-    )
+  const matchingOperators = React.useMemo(
+    () =>
+      allRecruitmentResults.filter((result) =>
+        activeTagCombinations.find(
+          (tags) => tags.toString() === result.tags.toString()
+        )
+      ),
+    [activeTagCombinations, allRecruitmentResults]
   );
 
   function handleTagsChanged(_: unknown, value: string[]) {
