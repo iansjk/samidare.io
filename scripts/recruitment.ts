@@ -98,8 +98,6 @@ const recruitment = recruitableOperators.flatMap((opNames, rarity) =>
       ];
       if (rarity === 1) {
         tags.push("Robot");
-      } else if (rarity === 2) {
-        tags.push("Starter");
       } else if (rarity === 6) {
         tags.push("Top Operator");
       }
