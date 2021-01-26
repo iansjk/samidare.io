@@ -13,10 +13,10 @@ import { Combination } from "js-combinatorics";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import RecruitableOperatorChip from "../components/RecruitableOperatorChip";
 
-const tagsByCategory = {
-  rarity: ["Top Operator", "Senior Operator", "Starter", "Robot"],
-  position: ["Melee", "Ranged"],
-  classes: [
+const TAGS_BY_CATEGORY = {
+  Rarity: ["Top Operator", "Senior Operator", "Starter", "Robot"],
+  Position: ["Melee", "Ranged"],
+  Class: [
     "Caster",
     "Defender",
     "Guard",
@@ -26,7 +26,7 @@ const tagsByCategory = {
     "Supporter",
     "Vanguard",
   ],
-  other: [
+  Other: [
     "AoE",
     "Crowd-Control",
     "DP-Recovery",
@@ -43,6 +43,9 @@ const tagsByCategory = {
     "Survival",
   ],
 };
+const options = Object.entries(TAGS_BY_CATEGORY).flatMap(([type, tagArray]) =>
+  tagArray.flatMap((tag) => ({ type, value: tag }))
+);
 
 function getTagCombinations(activeTags: string[]) {
   if (activeTags.length === 0) {
@@ -117,11 +120,17 @@ function Recruitment(): React.ReactElement {
     [activeTagCombinations, allRecruitmentResults]
   );
 
-  function handleTagsChanged(_: unknown, value: string[]) {
-    if (value.length <= 5) {
-      setActiveTags(value);
+  function handleTagsChanged(
+    _: unknown,
+    selectedOptions: {
+      type: string;
+      value: string;
+    }[]
+  ) {
+    if (selectedOptions.length <= 5) {
+      setActiveTags(selectedOptions.map((option) => option.value));
     }
-    if (value.length === 5) {
+    if (selectedOptions.length === 5) {
       setIsOpen(false);
       textinput.current?.blur();
     }
@@ -131,12 +140,14 @@ function Recruitment(): React.ReactElement {
     <>
       <Autocomplete
         key="input"
-        options={Object.values(tagsByCategory).flat()}
+        options={options}
         multiple
         autoHighlight
         open={isOpen}
         onOpen={() => setIsOpen(true)}
         onClose={() => setIsOpen(false)}
+        groupBy={(option) => option.type}
+        getOptionLabel={(option) => option.value}
         disableCloseOnSelect
         renderInput={(params) => (
           <TextField
@@ -147,7 +158,6 @@ function Recruitment(): React.ReactElement {
             variant="outlined"
           />
         )}
-        value={activeTags}
         onChange={handleTagsChanged}
       />
       {matchingOperators
