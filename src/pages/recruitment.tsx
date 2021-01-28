@@ -134,7 +134,7 @@ function Recruitment(): React.ReactElement {
     }[]
   ) {
     if (selectedOptions.length <= 5) {
-      setActiveTags(selectedOptions.map((option) => option.value));
+      setActiveTags(selectedOptions.map((option) => option.value).sort());
     }
     if (selectedOptions.length === 5) {
       setIsOpen(false);
