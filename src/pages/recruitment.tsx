@@ -74,6 +74,10 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: theme.spacing(2),
     },
   },
+  guaranteeChip: {
+    background: "white",
+    color: "black",
+  },
 }));
 
 interface RecruitmentResult {
@@ -83,6 +87,7 @@ interface RecruitmentResult {
     rarity: number;
     tags: string[];
   }[];
+  guarantees: number[];
 }
 
 function Recruitment(): React.ReactElement {
@@ -96,6 +101,7 @@ function Recruitment(): React.ReactElement {
             rarity
             tags
           }
+          guarantees
         }
       }
     }
@@ -171,7 +177,7 @@ function Recruitment(): React.ReactElement {
                 ...opSetA.map((op) => (op.rarity === 1 ? 4 : op.rarity))
               ) || tagSetB.length - tagSetA.length
         )
-        .map(({ tags, operators }) => (
+        .map(({ tags, operators, guarantees }) => (
           <Grid
             container
             className={classes.recruitmentResult}
@@ -184,6 +190,13 @@ function Recruitment(): React.ReactElement {
               justifyContent={isXSmallScreen ? "center" : "flex-end"}
             >
               <Grid item xs={12} sm={3} className={classes.chipContainer}>
+                {guarantees.map((guaranteedRarity) => (
+                  <Chip
+                    className={classes.guaranteeChip}
+                    key={`guaranteed${guaranteedRarity}`}
+                    label={`${guaranteedRarity}★`}
+                  />
+                ))}
                 {tags.map((tag) => (
                   <Chip key={tag} label={tag} />
                 ))}
