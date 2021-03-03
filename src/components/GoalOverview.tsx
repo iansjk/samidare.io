@@ -78,7 +78,7 @@ const GoalOverview = React.memo(function GoalOverview(
   const isLargeScreen = useMediaQuery(theme.breakpoints.up("lg"));
   const classes = useStyles();
   const ingredientMapping: Record<string, Ingredient[]> = {};
-
+  const isComplete: Record<string, boolean> = {};
   const materialsNeeded: Record<string, number> = {};
   goals.forEach((goal) =>
     goal.ingredients.forEach((item) => {
@@ -87,23 +87,27 @@ const GoalOverview = React.memo(function GoalOverview(
     })
   );
   Object.values(items).forEach((item) => {
-    if (
-      Object.prototype.hasOwnProperty.call(itemsToCraft, item.name) &&
-      Object.prototype.hasOwnProperty.call(materialsNeeded, item.name)
-    ) {
+    if (Object.prototype.hasOwnProperty.call(materialsNeeded, item.name)) {
       const needed = Math.max(
         materialsNeeded[item.name] - (materialsOwned[item.name] || 0),
         0
       );
-      item?.ingredients?.forEach((ingredient) => {
-        ingredientMapping[ingredient.name] = [
-          ...(ingredientMapping[ingredient.name] || []),
-          { name: item.name, tier: item.tier, quantity: ingredient.quantity },
-        ];
-        materialsNeeded[ingredient.name] =
-          (materialsNeeded[ingredient.name] || 0) +
-          needed * ingredient.quantity;
-      });
+      if (needed === 0) {
+        isComplete[item.name] = true;
+      } else if (
+        needed > 0 &&
+        Object.prototype.hasOwnProperty.call(itemsToCraft, item.name)
+      ) {
+        item?.ingredients?.forEach((ingredient) => {
+          ingredientMapping[ingredient.name] = [
+            ...(ingredientMapping[ingredient.name] || []),
+            { name: item.name, tier: item.tier, quantity: ingredient.quantity },
+          ];
+          materialsNeeded[ingredient.name] =
+            (materialsNeeded[ingredient.name] || 0) +
+            needed * ingredient.quantity;
+        });
+      }
     }
   });
   const craftingMaterialsOwned = { ...materialsOwned };
@@ -131,10 +135,9 @@ const GoalOverview = React.memo(function GoalOverview(
           0
         );
       });
-      materialsNeeded[craftedItemName] = Math.max(
-        materialsNeeded[craftedItemName] - numCraftable,
-        0
-      );
+      if (materialsNeeded[craftedItemName] - numCraftable <= 0) {
+        isComplete[craftedItemName] = true;
+      }
       craftingMaterialsOwned[craftedItemName] =
         (craftingMaterialsOwned[craftedItemName] || 0) + numCraftable;
     });
@@ -171,14 +174,6 @@ const GoalOverview = React.memo(function GoalOverview(
     },
     [setMaterialsOwned]
   );
-
-  function isMaterialComplete(name: string): boolean {
-    let multiplier = 1;
-    if (name === "LMD") {
-      multiplier = 1000;
-    }
-    return (materialsOwned[name] || 0) * multiplier >= materialsNeeded[name];
-  }
 
   const handleCraftingToggle = React.useCallback(
     function handleCraftingToggle(itemName: string) {
@@ -229,8 +224,7 @@ const GoalOverview = React.memo(function GoalOverview(
     return objectEntries
       .sort(
         ([nameA, _], [nameB, __]) =>
-          (isMaterialComplete(nameA) ? 1 : 0) -
-            (isMaterialComplete(nameB) ? 1 : 0) ||
+          (isComplete[nameA] ? 1 : 0) - (isComplete[nameB] ? 1 : 0) ||
           items[nameB].tier - items[nameA].tier ||
           items[nameA].sortId - items[nameB].sortId ||
           nameA.localeCompare(nameB)
@@ -249,7 +243,7 @@ const GoalOverview = React.memo(function GoalOverview(
                 ? 0
                 : materialsOwned[name]
             }
-            complete={isMaterialComplete(name)}
+            complete={isComplete[name]}
             crafting={Object.prototype.hasOwnProperty.call(itemsToCraft, name)}
             ingredientFor={ingredientMapping[name]}
             onIncrement={handleIncrementOwned}
