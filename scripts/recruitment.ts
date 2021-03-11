@@ -3,8 +3,8 @@ import fs from "fs";
 import path from "path";
 import { Combination } from "js-combinatorics";
 import { ARKNIGHTS_DATA_DIR } from "./globals";
-import { recruitDetail } from "./ArknightsData/en-US/gamedata/excel/gacha_table.json";
-import characterTable from "./ArknightsData/en-US/gamedata/excel/character_table.json";
+import { recruitDetail } from "./ArknightsGameData/en_US/gamedata/excel/gacha_table.json";
+import characterTable from "./ArknightsGameData/en_US/gamedata/excel/character_table.json";
 
 const nameOverrides: Record<string, string> = {
   "THRM-EX": "Thermal-EX",

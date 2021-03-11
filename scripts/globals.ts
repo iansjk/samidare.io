@@ -1,8 +1,8 @@
 import path from "path";
 
-import { items as enItemTable } from "./ArknightsData/en-US/gamedata/excel/item_table.json";
-import { items as cnItemTable } from "./ArknightsData/zh-CN/gamedata/excel/item_table.json";
-import cnCharacterTable from "./ArknightsData/zh-CN/gamedata/excel/character_table.json";
+import { items as enItemTable } from "./ArknightsGameData/en_US/gamedata/excel/item_table.json";
+import { items as cnItemTable } from "./ArknightsGameData/zh_CN/gamedata/excel/item_table.json";
+import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json";
 
 export const ARKNIGHTS_DATA_DIR = path.join(__dirname, "../src/data");
 export interface Ingredient {

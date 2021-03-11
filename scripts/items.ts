@@ -2,10 +2,10 @@ import fs from "fs";
 import path from "path";
 
 import axios from "axios";
-import { items as cnItemTable } from "./ArknightsData/zh-CN/gamedata/excel/item_table.json";
-import cnBuildingData from "./ArknightsData/zh-CN/gamedata/excel/building_data.json";
-import { stages as enStageTable } from "./ArknightsData/en-US/gamedata/excel/stage_table.json";
-import { stages as cnStageTable } from "./ArknightsData/zh-CN/gamedata/excel/stage_table.json";
+import { items as cnItemTable } from "./ArknightsGameData/zh_CN/gamedata/excel/item_table.json";
+import cnBuildingData from "./ArknightsGameData/zh_CN/gamedata/excel/building_data.json";
+import { stages as enStageTable } from "./ArknightsGameData/en_US/gamedata/excel/stage_table.json";
+import { stages as cnStageTable } from "./ArknightsGameData/zh_CN/gamedata/excel/stage_table.json";
 import {
   ARKNIGHTS_DATA_DIR,
   getItemName,

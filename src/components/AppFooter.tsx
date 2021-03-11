@@ -68,12 +68,12 @@ export default function AppFooter({ className }): React.ReactElement {
             game data:&nbsp;
             <Link
               className={classes.footerLink}
-              href="https://github.com/Dimbreath/ArknightsData"
+              href="https://github.com/Kengxxiao/ArknightsGameData"
               target="_blank"
               rel="noopener"
               variant="inherit"
             >
-              Dimbreath
+              Kengxxiao
             </Link>
           </Typography>
         </li>

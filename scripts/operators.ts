@@ -1,10 +1,10 @@
 import path from "path";
 import fs from "fs";
-import cnCharacterTable from "./ArknightsData/zh-CN/gamedata/excel/character_table.json";
-import cnSkillTable from "./ArknightsData/zh-CN/gamedata/excel/skill_table.json";
-import { patchChars as cnCharacterPatchTable } from "./ArknightsData/zh-CN/gamedata/excel/char_patch_table.json";
-import enCharacterTable from "./ArknightsData/en-US/gamedata/excel/character_table.json";
-import enSkillTable from "./ArknightsData/en-US/gamedata/excel/skill_table.json";
+import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json";
+import cnSkillTable from "./ArknightsGameData/zh_CN/gamedata/excel/skill_table.json";
+import { patchChars as cnCharacterPatchTable } from "./ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json";
+import enCharacterTable from "./ArknightsGameData/en_US/gamedata/excel/character_table.json";
+import enSkillTable from "./ArknightsGameData/en_US/gamedata/excel/skill_table.json";
 import {
   getOperatorName,
   getEliteLMDCost,

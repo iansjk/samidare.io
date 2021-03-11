@@ -1,6 +1,6 @@
-[submodule "scripts/arknights/ArknightsData"]
-	path = scripts/ArknightsData
-	url = https://github.com/Dimbreath/ArknightsData
 [submodule "scripts/arknights/aceship"]
 	path = scripts/aceship
 	url = https://github.com/iansjk/aceship.git
+[submodule "scripts/ArknightsGameData"]
+	path = scripts/ArknightsGameData
+	url = https://github.com/Kengxxiao/ArknightsGameData.git
