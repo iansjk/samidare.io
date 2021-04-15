@@ -153,7 +153,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30062",
@@ -188,7 +188,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30014",
@@ -1675,7 +1675,7 @@
             "name": "Supporter Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400023
+            "sortId": 400024
           },
           {
             "id": "30042",
@@ -1710,7 +1710,7 @@
             "name": "Supporter Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400007
+            "sortId": 400008
           },
           {
             "id": "30074",
@@ -1925,7 +1925,7 @@
     ]
   },
   {
-    "name": "Purgatory",
+    "name": "Lava the Purgatory",
     "isCnOnly": true,
     "rarity": 5,
     "skillLevels": [
@@ -2078,7 +2078,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30012",
@@ -2113,7 +2113,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30074",
@@ -2898,7 +2898,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30012",
@@ -2933,7 +2933,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30115",
@@ -3799,7 +3799,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30022",
@@ -3834,7 +3834,7 @@
             "name": "Defender Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400005
+            "sortId": 400004
           },
           {
             "id": "30094",
@@ -4202,7 +4202,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30042",
@@ -4237,7 +4237,7 @@
             "name": "Medic Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400006
+            "sortId": 400007
           },
           {
             "id": "30054",
@@ -4598,7 +4598,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30022",
@@ -4633,7 +4633,7 @@
             "name": "Caster Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400016
+            "sortId": 400014
           },
           {
             "id": "30023",
@@ -4994,7 +4994,7 @@
             "name": "Supporter Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400023
+            "sortId": 400024
           },
           {
             "id": "30032",
@@ -5029,7 +5029,7 @@
             "name": "Supporter Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400015
+            "sortId": 400016
           },
           {
             "id": "30013",
@@ -5923,7 +5923,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30012",
@@ -5958,7 +5958,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30125",
@@ -6817,7 +6817,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30032",
@@ -6852,7 +6852,7 @@
             "name": "Medic Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400014
+            "sortId": 400015
           },
           {
             "id": "30053",
@@ -7213,7 +7213,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30052",
@@ -7248,7 +7248,7 @@
             "name": "Sniper Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400012
+            "sortId": 400013
           },
           {
             "id": "30053",
@@ -8349,7 +8349,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30042",
@@ -8384,7 +8384,7 @@
             "name": "Sniper Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400012
+            "sortId": 400013
           },
           {
             "id": "30043",
@@ -9148,7 +9148,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30012",
@@ -9183,7 +9183,7 @@
             "name": "Medic Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400006
+            "sortId": 400007
           },
           {
             "id": "30014",
@@ -9551,7 +9551,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30032",
@@ -9586,7 +9586,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30084",
@@ -10746,7 +10746,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30042",
@@ -10781,7 +10781,7 @@
             "name": "Sniper Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400012
+            "sortId": 400013
           },
           {
             "id": "30043",
@@ -11163,7 +11163,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30032",
@@ -11198,7 +11198,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30135",
@@ -11675,7 +11675,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30012",
@@ -11710,7 +11710,7 @@
             "name": "Defender Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400005
+            "sortId": 400004
           },
           {
             "id": "30115",
@@ -12965,7 +12965,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30012",
@@ -13000,7 +13000,7 @@
             "name": "Caster Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400016
+            "sortId": 400014
           },
           {
             "id": "30013",
@@ -14174,7 +14174,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30052",
@@ -14209,7 +14209,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30024",
@@ -14591,7 +14591,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30052",
@@ -14626,7 +14626,7 @@
             "name": "Medic Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400006
+            "sortId": 400007
           },
           {
             "id": "30125",
@@ -15089,7 +15089,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30062",
@@ -15124,7 +15124,7 @@
             "name": "Defender Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400005
+            "sortId": 400004
           },
           {
             "id": "30074",
@@ -15881,7 +15881,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30012",
@@ -15916,7 +15916,7 @@
             "name": "Defender Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400013
+            "sortId": 400012
           },
           {
             "id": "30093",
@@ -17083,7 +17083,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30062",
@@ -17118,7 +17118,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30034",
@@ -17334,7 +17334,7 @@
   },
   {
     "name": "Conviction",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "rarity": 4,
     "skillLevels": [
       {
@@ -17540,7 +17540,7 @@
         "slot": 1,
         "skillId": "skchr_peacok_1",
         "iconId": null,
-        "skillName": "断罪",
+        "skillName": "Judgment",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -17635,7 +17635,7 @@
         "slot": 2,
         "skillId": "skchr_peacok_2",
         "iconId": null,
-        "skillName": "创世纪",
+        "skillName": "Genesis",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -17882,7 +17882,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30042",
@@ -17917,7 +17917,7 @@
             "name": "Defender Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400005
+            "sortId": 400004
           },
           {
             "id": "30014",
@@ -18285,7 +18285,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30012",
@@ -18320,7 +18320,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30024",
@@ -18688,7 +18688,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30022",
@@ -18723,7 +18723,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30034",
@@ -19091,7 +19091,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30052",
@@ -19126,7 +19126,7 @@
             "name": "Medic Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400006
+            "sortId": 400007
           },
           {
             "id": "30064",
@@ -20409,7 +20409,7 @@
             "name": "Supporter Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400023
+            "sortId": 400024
           },
           {
             "id": "30022",
@@ -20444,7 +20444,7 @@
             "name": "Supporter Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400007
+            "sortId": 400008
           },
           {
             "id": "30054",
@@ -20826,7 +20826,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30062",
@@ -20861,7 +20861,7 @@
             "name": "Medic Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400006
+            "sortId": 400007
           },
           {
             "id": "30135",
@@ -21338,7 +21338,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30042",
@@ -21373,7 +21373,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30115",
@@ -21829,7 +21829,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30052",
@@ -21864,7 +21864,7 @@
             "name": "Medic Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400014
+            "sortId": 400015
           },
           {
             "id": "30073",
@@ -22225,7 +22225,7 @@
             "name": "Supporter Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400023
+            "sortId": 400024
           },
           {
             "id": "30042",
@@ -22260,7 +22260,7 @@
             "name": "Supporter Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400015
+            "sortId": 400016
           },
           {
             "id": "30023",
@@ -23017,7 +23017,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30042",
@@ -23052,7 +23052,7 @@
             "name": "Medic Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400014
+            "sortId": 400015
           },
           {
             "id": "30063",
@@ -23925,7 +23925,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30032",
@@ -23960,7 +23960,7 @@
             "name": "Sniper Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400012
+            "sortId": 400013
           },
           {
             "id": "30033",
@@ -24872,7 +24872,7 @@
             "name": "Supporter Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400023
+            "sortId": 400024
           },
           {
             "id": "30032",
@@ -24907,7 +24907,7 @@
             "name": "Supporter Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400007
+            "sortId": 400008
           },
           {
             "id": "30064",
@@ -25268,7 +25268,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30022",
@@ -25303,7 +25303,7 @@
             "name": "Defender Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400013
+            "sortId": 400012
           },
           {
             "id": "30103",
@@ -25685,7 +25685,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30022",
@@ -25720,7 +25720,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30125",
@@ -26572,7 +26572,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30062",
@@ -26607,7 +26607,7 @@
             "name": "Defender Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400013
+            "sortId": 400012
           },
           {
             "id": "30083",
@@ -26975,7 +26975,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30032",
@@ -27010,7 +27010,7 @@
             "name": "Defender Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400005
+            "sortId": 400004
           },
           {
             "id": "30104",
@@ -27392,7 +27392,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30042",
@@ -27427,7 +27427,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30125",
@@ -27904,7 +27904,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30012",
@@ -27939,7 +27939,7 @@
             "name": "Defender Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400005
+            "sortId": 400004
           },
           {
             "id": "30115",
@@ -28416,7 +28416,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30062",
@@ -28451,7 +28451,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30145",
@@ -28928,7 +28928,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30022",
@@ -28963,7 +28963,7 @@
             "name": "Defender Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400005
+            "sortId": 400004
           },
           {
             "id": "30125",
@@ -29426,7 +29426,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30042",
@@ -29461,7 +29461,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30094",
@@ -30583,7 +30583,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30052",
@@ -30618,7 +30618,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30125",
@@ -31887,7 +31887,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30012",
@@ -31922,7 +31922,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30094",
@@ -32290,7 +32290,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30052",
@@ -32325,7 +32325,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30104",
@@ -34120,7 +34120,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30032",
@@ -34155,7 +34155,7 @@
             "name": "Defender Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400005
+            "sortId": 400004
           },
           {
             "id": "31024",
@@ -34919,7 +34919,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30032",
@@ -34954,7 +34954,7 @@
             "name": "Sniper Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400012
+            "sortId": 400013
           },
           {
             "id": "30073",
@@ -36665,7 +36665,7 @@
             "name": "Supporter Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400023
+            "sortId": 400024
           },
           {
             "id": "30032",
@@ -36700,7 +36700,7 @@
             "name": "Supporter Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400007
+            "sortId": 400008
           },
           {
             "id": "30044",
@@ -37485,7 +37485,7 @@
             "name": "Supporter Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400023
+            "sortId": 400024
           },
           {
             "id": "30042",
@@ -37520,7 +37520,7 @@
             "name": "Supporter Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400007
+            "sortId": 400008
           },
           {
             "id": "30115",
@@ -38891,7 +38891,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30042",
@@ -38926,7 +38926,7 @@
             "name": "Caster Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400016
+            "sortId": 400014
           },
           {
             "id": "30083",
@@ -39294,7 +39294,7 @@
             "name": "Supporter Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400023
+            "sortId": 400024
           },
           {
             "id": "30022",
@@ -39329,7 +39329,7 @@
             "name": "Supporter Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400007
+            "sortId": 400008
           },
           {
             "id": "30014",
@@ -39690,7 +39690,7 @@
             "name": "Supporter Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400023
+            "sortId": 400024
           },
           {
             "id": "30032",
@@ -39725,7 +39725,7 @@
             "name": "Supporter Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400015
+            "sortId": 400016
           },
           {
             "id": "31023",
@@ -40086,7 +40086,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30012",
@@ -40121,7 +40121,7 @@
             "name": "Defender Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400013
+            "sortId": 400012
           },
           {
             "id": "30013",
@@ -41764,7 +41764,7 @@
   },
   {
     "name": "Whislash",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "rarity": 5,
     "skillLevels": [
       {
@@ -41977,7 +41977,7 @@
         "slot": 1,
         "skillId": "skchr_sophia_1",
         "iconId": null,
-        "skillName": "激励艺术",
+        "skillName": "Motivational Skills",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -42072,7 +42072,7 @@
         "slot": 2,
         "skillId": "skchr_sophia_2",
         "iconId": null,
-        "skillName": "鞭刃",
+        "skillName": "Whip Sword",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -42167,7 +42167,7 @@
   },
   {
     "name": "Arene",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "rarity": 4,
     "skillLevels": [
       {
@@ -42373,7 +42373,7 @@
         "slot": 1,
         "skillId": "skchr_spikes_1",
         "iconId": null,
-        "skillName": "小玩笑",
+        "skillName": "Just Kidding",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -42468,7 +42468,7 @@
         "slot": 2,
         "skillId": "skchr_spikes_2",
         "iconId": null,
-        "skillName": "致命恶作剧",
+        "skillName": "Deadly Prank",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -43514,7 +43514,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30062",
@@ -43549,7 +43549,7 @@
             "name": "Medic Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400006
+            "sortId": 400007
           },
           {
             "id": "30064",
@@ -44461,7 +44461,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30022",
@@ -44496,7 +44496,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30084",
@@ -46262,7 +46262,7 @@
             "name": "Supporter Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400023
+            "sortId": 400024
           },
           {
             "id": "30052",
@@ -46297,7 +46297,7 @@
             "name": "Supporter Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400007
+            "sortId": 400008
           },
           {
             "id": "30125",
@@ -47025,7 +47025,7 @@
         "slot": 3,
         "skillId": "skchr_thorns_3",
         "iconId": null,
-        "skillName": "Supreme Arts",
+        "skillName": "Destreza",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -47668,7 +47668,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30062",
@@ -47703,7 +47703,7 @@
             "name": "Medic Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400014
+            "sortId": 400015
           },
           {
             "id": "30103",
@@ -48460,7 +48460,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30052",
@@ -48495,7 +48495,7 @@
             "name": "Sniper Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400012
+            "sortId": 400013
           },
           {
             "id": "30043",
@@ -48710,6 +48710,409 @@
     ]
   },
   {
+    "name": "Heavyrain",
+    "isCnOnly": true,
+    "rarity": 5,
+    "skillLevels": [
+      {
+        "skillLevel": 2,
+        "ingredients": [
+          {
+            "id": "3301",
+            "name": "Skill Summary - 1",
+            "tier": 2,
+            "quantity": 4,
+            "sortId": 80003
+          }
+        ],
+        "goalName": "Skill Level 1 → 2",
+        "goalShortName": "Skill Level 2",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 3,
+        "ingredients": [
+          {
+            "id": "3301",
+            "name": "Skill Summary - 1",
+            "tier": 2,
+            "quantity": 4,
+            "sortId": 80003
+          },
+          {
+            "id": "30011",
+            "name": "Orirock",
+            "tier": 1,
+            "quantity": 10,
+            "sortId": 100015
+          }
+        ],
+        "goalName": "Skill Level 2 → 3",
+        "goalShortName": "Skill Level 3",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 4,
+        "ingredients": [
+          {
+            "id": "3302",
+            "name": "Skill Summary - 2",
+            "tier": 3,
+            "quantity": 6,
+            "sortId": 80002
+          },
+          {
+            "id": "30022",
+            "name": "Sugar",
+            "tier": 2,
+            "quantity": 3,
+            "sortId": 100026
+          }
+        ],
+        "goalName": "Skill Level 3 → 4",
+        "goalShortName": "Skill Level 4",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 5,
+        "ingredients": [
+          {
+            "id": "3302",
+            "name": "Skill Summary - 2",
+            "tier": 3,
+            "quantity": 6,
+            "sortId": 80002
+          },
+          {
+            "id": "30032",
+            "name": "Polyester",
+            "tier": 2,
+            "quantity": 5,
+            "sortId": 100022
+          }
+        ],
+        "goalName": "Skill Level 4 → 5",
+        "goalShortName": "Skill Level 5",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 6,
+        "ingredients": [
+          {
+            "id": "3302",
+            "name": "Skill Summary - 2",
+            "tier": 3,
+            "quantity": 6,
+            "sortId": 80002
+          },
+          {
+            "id": "30053",
+            "name": "Aketon",
+            "tier": 3,
+            "quantity": 4,
+            "sortId": 100033
+          }
+        ],
+        "goalName": "Skill Level 5 → 6",
+        "goalShortName": "Skill Level 6",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 7,
+        "ingredients": [
+          {
+            "id": "3303",
+            "name": "Skill Summary - 3",
+            "tier": 4,
+            "quantity": 6,
+            "sortId": 80001
+          },
+          {
+            "id": "30063",
+            "name": "Integrated Device",
+            "tier": 3,
+            "quantity": 2,
+            "sortId": 100017
+          },
+          {
+            "id": "31013",
+            "name": "Coagulating Gel",
+            "tier": 3,
+            "quantity": 3,
+            "sortId": 100037
+          }
+        ],
+        "goalName": "Skill Level 6 → 7",
+        "goalShortName": "Skill Level 7",
+        "goalCategory": 2
+      }
+    ],
+    "elite": [
+      {
+        "eliteLevel": 1,
+        "ingredients": [
+          {
+            "id": "4001",
+            "name": "LMD",
+            "tier": 4,
+            "quantity": 20000,
+            "sortId": 10004
+          },
+          {
+            "id": "3231",
+            "name": "Defender Chip",
+            "tier": 3,
+            "quantity": 4,
+            "sortId": 400020
+          },
+          {
+            "id": "30062",
+            "name": "Device",
+            "tier": 2,
+            "quantity": 4,
+            "sortId": 100018
+          },
+          {
+            "id": "30042",
+            "name": "Oriron",
+            "tier": 2,
+            "quantity": 4,
+            "sortId": 100030
+          }
+        ],
+        "goalName": "Elite 1",
+        "goalCategory": 0
+      },
+      {
+        "eliteLevel": 2,
+        "ingredients": [
+          {
+            "id": "4001",
+            "name": "LMD",
+            "tier": 4,
+            "quantity": 120000,
+            "sortId": 10004
+          },
+          {
+            "id": "3233",
+            "name": "Defender Dualchip",
+            "tier": 5,
+            "quantity": 3,
+            "sortId": 400004
+          },
+          {
+            "id": "30014",
+            "name": "Orirock Concentration",
+            "tier": 4,
+            "quantity": 9,
+            "sortId": 100012
+          },
+          {
+            "id": "30043",
+            "name": "Oriron Cluster",
+            "tier": 3,
+            "quantity": 14,
+            "sortId": 100029
+          }
+        ],
+        "goalName": "Elite 2",
+        "goalCategory": 0
+      }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skchr_zebra_1",
+        "iconId": null,
+        "skillName": "应急迷彩",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 5,
+                "sortId": 80001
+              },
+              {
+                "id": "30084",
+                "name": "Manganese Trihydrate",
+                "tier": 4,
+                "quantity": 3,
+                "sortId": 100006
+              },
+              {
+                "id": "30063",
+                "name": "Integrated Device",
+                "tier": 3,
+                "quantity": 2,
+                "sortId": 100017
+              }
+            ],
+            "goalName": "Skill 1 Mastery 1",
+            "goalShortName": "S1 M1",
+            "goalCategory": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 6,
+                "sortId": 80001
+              },
+              {
+                "id": "30014",
+                "name": "Orirock Concentration",
+                "tier": 4,
+                "quantity": 3,
+                "sortId": 100012
+              },
+              {
+                "id": "30094",
+                "name": "Grindstone Pentahydrate",
+                "tier": 4,
+                "quantity": 6,
+                "sortId": 100008
+              }
+            ],
+            "goalName": "Skill 1 Mastery 2",
+            "goalShortName": "S1 M2",
+            "goalCategory": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 10,
+                "sortId": 80001
+              },
+              {
+                "id": "30135",
+                "name": "D32 Steel",
+                "tier": 5,
+                "quantity": 4,
+                "sortId": 100001
+              },
+              {
+                "id": "31034",
+                "name": "Crystal Circuit",
+                "tier": 4,
+                "quantity": 3,
+                "sortId": 100041
+              }
+            ],
+            "goalName": "Skill 1 Mastery 3",
+            "goalShortName": "S1 M3",
+            "goalCategory": 1
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "skillId": "skchr_zebra_2",
+        "iconId": null,
+        "skillName": "群体迷彩",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 5,
+                "sortId": 80001
+              },
+              {
+                "id": "30094",
+                "name": "Grindstone Pentahydrate",
+                "tier": 4,
+                "quantity": 3,
+                "sortId": 100008
+              },
+              {
+                "id": "30073",
+                "name": "Loxic Kohl",
+                "tier": 3,
+                "quantity": 4,
+                "sortId": 100005
+              }
+            ],
+            "goalName": "Skill 2 Mastery 1",
+            "goalShortName": "S2 M1",
+            "goalCategory": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 6,
+                "sortId": 80001
+              },
+              {
+                "id": "31014",
+                "name": "Polymerized Gel",
+                "tier": 4,
+                "quantity": 3,
+                "sortId": 100036
+              },
+              {
+                "id": "30014",
+                "name": "Orirock Concentration",
+                "tier": 4,
+                "quantity": 7,
+                "sortId": 100012
+              }
+            ],
+            "goalName": "Skill 2 Mastery 2",
+            "goalShortName": "S2 M2",
+            "goalCategory": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 10,
+                "sortId": 80001
+              },
+              {
+                "id": "30145",
+                "name": "Crystal Electronic Unit",
+                "tier": 5,
+                "quantity": 4,
+                "sortId": 100040
+              },
+              {
+                "id": "31024",
+                "name": "Incandescent Alloy Block",
+                "tier": 4,
+                "quantity": 3,
+                "sortId": 100038
+              }
+            ],
+            "goalName": "Skill 2 Mastery 3",
+            "goalShortName": "S2 M3",
+            "goalCategory": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Leizi",
     "isCnOnly": false,
     "rarity": 5,
@@ -48863,7 +49266,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30062",
@@ -48898,7 +49301,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30104",
@@ -49683,7 +50086,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30012",
@@ -49718,7 +50121,7 @@
             "name": "Defender Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400005
+            "sortId": 400004
           },
           {
             "id": "30145",
@@ -50181,7 +50584,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30032",
@@ -50216,7 +50619,7 @@
             "name": "Defender Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400005
+            "sortId": 400004
           },
           {
             "id": "30094",
@@ -50584,7 +50987,7 @@
             "name": "Supporter Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400023
+            "sortId": 400024
           },
           {
             "id": "30052",
@@ -50619,7 +51022,7 @@
             "name": "Supporter Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400007
+            "sortId": 400008
           },
           {
             "id": "30054",
@@ -50980,7 +51383,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30042",
@@ -51015,7 +51418,7 @@
             "name": "Caster Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400016
+            "sortId": 400014
           },
           {
             "id": "30083",
@@ -51397,7 +51800,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30042",
@@ -51432,7 +51835,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30115",
@@ -52298,7 +52701,7 @@
             "name": "Supporter Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400023
+            "sortId": 400024
           },
           {
             "id": "30052",
@@ -52333,7 +52736,7 @@
             "name": "Supporter Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400007
+            "sortId": 400008
           },
           {
             "id": "30074",
@@ -53097,7 +53500,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30042",
@@ -53132,7 +53535,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30044",
@@ -53514,7 +53917,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30032",
@@ -53549,7 +53952,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30135",
@@ -54012,7 +54415,7 @@
             "name": "Supporter Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400023
+            "sortId": 400024
           },
           {
             "id": "30062",
@@ -54047,7 +54450,7 @@
             "name": "Supporter Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400007
+            "sortId": 400008
           },
           {
             "id": "30074",
@@ -54415,7 +54818,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30042",
@@ -54450,7 +54853,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30064",
@@ -54818,7 +55221,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30032",
@@ -54853,7 +55256,7 @@
             "name": "Medic Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400006
+            "sortId": 400007
           },
           {
             "id": "30054",
@@ -55069,7 +55472,7 @@
   },
   {
     "name": "Aosta",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "rarity": 5,
     "skillLevels": [
       {
@@ -55221,7 +55624,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30062",
@@ -55256,7 +55659,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30044",
@@ -55282,7 +55685,7 @@
         "slot": 1,
         "skillId": "skcom_quickattack[3]",
         "iconId": null,
-        "skillName": "迅捷打击·γ型",
+        "skillName": "Swift Strike γ",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -55377,7 +55780,7 @@
         "slot": 2,
         "skillId": "skchr_aosta_2",
         "iconId": null,
-        "skillName": "影钉",
+        "skillName": "Shadow Nails",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -56020,7 +56423,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30042",
@@ -56055,7 +56458,7 @@
             "name": "Medic Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400006
+            "sortId": 400007
           },
           {
             "id": "30044",
@@ -56674,7 +57077,7 @@
   },
   {
     "name": "Surtr",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "rarity": 6,
     "skillLevels": [
       {
@@ -56901,7 +57304,7 @@
         "slot": 1,
         "skillId": "skchr_surtr_1",
         "iconId": null,
-        "skillName": "烈焰魔剑",
+        "skillName": "Laevatain",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -56996,7 +57399,7 @@
         "slot": 2,
         "skillId": "skchr_surtr_2",
         "iconId": null,
-        "skillName": "熔核巨影",
+        "skillName": "Molten Giant",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -57091,7 +57494,7 @@
         "slot": 3,
         "skillId": "skchr_surtr_3",
         "iconId": null,
-        "skillName": "黄昏",
+        "skillName": "Twilight",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -58151,7 +58554,7 @@
             "name": "Supporter Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400023
+            "sortId": 400024
           },
           {
             "id": "30032",
@@ -58186,7 +58589,7 @@
             "name": "Supporter Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400007
+            "sortId": 400008
           },
           {
             "id": "30135",
@@ -59008,8 +59411,411 @@
     ]
   },
   {
-    "name": "April",
+    "name": "Toddifons",
     "isCnOnly": true,
+    "rarity": 5,
+    "skillLevels": [
+      {
+        "skillLevel": 2,
+        "ingredients": [
+          {
+            "id": "3301",
+            "name": "Skill Summary - 1",
+            "tier": 2,
+            "quantity": 4,
+            "sortId": 80003
+          }
+        ],
+        "goalName": "Skill Level 1 → 2",
+        "goalShortName": "Skill Level 2",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 3,
+        "ingredients": [
+          {
+            "id": "3301",
+            "name": "Skill Summary - 1",
+            "tier": 2,
+            "quantity": 4,
+            "sortId": 80003
+          },
+          {
+            "id": "30061",
+            "name": "Damaged Device",
+            "tier": 1,
+            "quantity": 4,
+            "sortId": 100019
+          }
+        ],
+        "goalName": "Skill Level 2 → 3",
+        "goalShortName": "Skill Level 3",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 4,
+        "ingredients": [
+          {
+            "id": "3302",
+            "name": "Skill Summary - 2",
+            "tier": 3,
+            "quantity": 6,
+            "sortId": 80002
+          },
+          {
+            "id": "30012",
+            "name": "Orirock Cube",
+            "tier": 2,
+            "quantity": 4,
+            "sortId": 100014
+          }
+        ],
+        "goalName": "Skill Level 3 → 4",
+        "goalShortName": "Skill Level 4",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 5,
+        "ingredients": [
+          {
+            "id": "3302",
+            "name": "Skill Summary - 2",
+            "tier": 3,
+            "quantity": 6,
+            "sortId": 80002
+          },
+          {
+            "id": "30022",
+            "name": "Sugar",
+            "tier": 2,
+            "quantity": 5,
+            "sortId": 100026
+          }
+        ],
+        "goalName": "Skill Level 4 → 5",
+        "goalShortName": "Skill Level 5",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 6,
+        "ingredients": [
+          {
+            "id": "3302",
+            "name": "Skill Summary - 2",
+            "tier": 3,
+            "quantity": 6,
+            "sortId": 80002
+          },
+          {
+            "id": "30043",
+            "name": "Oriron Cluster",
+            "tier": 3,
+            "quantity": 4,
+            "sortId": 100029
+          }
+        ],
+        "goalName": "Skill Level 5 → 6",
+        "goalShortName": "Skill Level 6",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 7,
+        "ingredients": [
+          {
+            "id": "3303",
+            "name": "Skill Summary - 3",
+            "tier": 4,
+            "quantity": 6,
+            "sortId": 80001
+          },
+          {
+            "id": "30053",
+            "name": "Aketon",
+            "tier": 3,
+            "quantity": 2,
+            "sortId": 100033
+          },
+          {
+            "id": "30073",
+            "name": "Loxic Kohl",
+            "tier": 3,
+            "quantity": 4,
+            "sortId": 100005
+          }
+        ],
+        "goalName": "Skill Level 6 → 7",
+        "goalShortName": "Skill Level 7",
+        "goalCategory": 2
+      }
+    ],
+    "elite": [
+      {
+        "eliteLevel": 1,
+        "ingredients": [
+          {
+            "id": "4001",
+            "name": "LMD",
+            "tier": 4,
+            "quantity": 20000,
+            "sortId": 10004
+          },
+          {
+            "id": "3241",
+            "name": "Sniper Chip",
+            "tier": 3,
+            "quantity": 4,
+            "sortId": 400021
+          },
+          {
+            "id": "30052",
+            "name": "Polyketon",
+            "tier": 2,
+            "quantity": 4,
+            "sortId": 100034
+          },
+          {
+            "id": "30032",
+            "name": "Polyester",
+            "tier": 2,
+            "quantity": 3,
+            "sortId": 100022
+          }
+        ],
+        "goalName": "Elite 1",
+        "goalCategory": 0
+      },
+      {
+        "eliteLevel": 2,
+        "ingredients": [
+          {
+            "id": "4001",
+            "name": "LMD",
+            "tier": 4,
+            "quantity": 120000,
+            "sortId": 10004
+          },
+          {
+            "id": "3243",
+            "name": "Sniper Dualchip",
+            "tier": 5,
+            "quantity": 3,
+            "sortId": 400005
+          },
+          {
+            "id": "31034",
+            "name": "Crystal Circuit",
+            "tier": 4,
+            "quantity": 10,
+            "sortId": 100041
+          },
+          {
+            "id": "31023",
+            "name": "Incandescent Alloy",
+            "tier": 3,
+            "quantity": 10,
+            "sortId": 100039
+          }
+        ],
+        "goalName": "Elite 2",
+        "goalCategory": 0
+      }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skchr_toddi_1",
+        "iconId": null,
+        "skillName": "信号矢",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 5,
+                "sortId": 80001
+              },
+              {
+                "id": "30064",
+                "name": "Optimized Device",
+                "tier": 4,
+                "quantity": 2,
+                "sortId": 100016
+              },
+              {
+                "id": "30043",
+                "name": "Oriron Cluster",
+                "tier": 3,
+                "quantity": 3,
+                "sortId": 100029
+              }
+            ],
+            "goalName": "Skill 1 Mastery 1",
+            "goalShortName": "S1 M1",
+            "goalCategory": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 6,
+                "sortId": 80001
+              },
+              {
+                "id": "30104",
+                "name": "RMA70-24",
+                "tier": 4,
+                "quantity": 3,
+                "sortId": 100010
+              },
+              {
+                "id": "30084",
+                "name": "Manganese Trihydrate",
+                "tier": 4,
+                "quantity": 5,
+                "sortId": 100006
+              }
+            ],
+            "goalName": "Skill 1 Mastery 2",
+            "goalShortName": "S1 M2",
+            "goalCategory": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 10,
+                "sortId": 80001
+              },
+              {
+                "id": "30125",
+                "name": "Bipolar Nanoflake",
+                "tier": 5,
+                "quantity": 4,
+                "sortId": 100002
+              },
+              {
+                "id": "30054",
+                "name": "Keton Colloid",
+                "tier": 4,
+                "quantity": 3,
+                "sortId": 100032
+              }
+            ],
+            "goalName": "Skill 1 Mastery 3",
+            "goalShortName": "S1 M3",
+            "goalCategory": 1
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "skillId": "skchr_toddi_2",
+        "iconId": null,
+        "skillName": "便携破城矢",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 5,
+                "sortId": 80001
+              },
+              {
+                "id": "30074",
+                "name": "White Horse Kohl",
+                "tier": 4,
+                "quantity": 3,
+                "sortId": 100004
+              },
+              {
+                "id": "30053",
+                "name": "Aketon",
+                "tier": 3,
+                "quantity": 5,
+                "sortId": 100033
+              }
+            ],
+            "goalName": "Skill 2 Mastery 1",
+            "goalShortName": "S2 M1",
+            "goalCategory": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 6,
+                "sortId": 80001
+              },
+              {
+                "id": "31034",
+                "name": "Crystal Circuit",
+                "tier": 4,
+                "quantity": 3,
+                "sortId": 100041
+              },
+              {
+                "id": "31014",
+                "name": "Polymerized Gel",
+                "tier": 4,
+                "quantity": 5,
+                "sortId": 100036
+              }
+            ],
+            "goalName": "Skill 2 Mastery 2",
+            "goalShortName": "S2 M2",
+            "goalCategory": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 10,
+                "sortId": 80001
+              },
+              {
+                "id": "30115",
+                "name": "Polymerization Preparation",
+                "tier": 5,
+                "quantity": 4,
+                "sortId": 100003
+              },
+              {
+                "id": "30104",
+                "name": "RMA70-24",
+                "tier": 4,
+                "quantity": 4,
+                "sortId": 100010
+              }
+            ],
+            "goalName": "Skill 2 Mastery 3",
+            "goalShortName": "S2 M3",
+            "goalCategory": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "April",
+    "isCnOnly": false,
     "rarity": 5,
     "skillLevels": [
       {
@@ -59161,7 +59967,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30042",
@@ -59196,7 +60002,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "31014",
@@ -59222,7 +60028,7 @@
         "slot": 1,
         "skillId": "skchr_aprl_1",
         "iconId": null,
-        "skillName": "精准射击",
+        "skillName": "Precise Shooting",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -59317,7 +60123,7 @@
         "slot": 2,
         "skillId": "skchr_aprl_2",
         "iconId": null,
-        "skillName": "灵活伪装",
+        "skillName": "Flexible Camouflage",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -59557,7 +60363,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30062",
@@ -59592,7 +60398,7 @@
             "name": "Sniper Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400012
+            "sortId": 400013
           },
           {
             "id": "30103",
@@ -59960,7 +60766,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30012",
@@ -59995,7 +60801,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30044",
@@ -60363,7 +61169,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30042",
@@ -60398,7 +61204,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30054",
@@ -60766,7 +61572,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30052",
@@ -60801,7 +61607,7 @@
             "name": "Defender Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400005
+            "sortId": 400004
           },
           {
             "id": "30064",
@@ -61169,7 +61975,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30052",
@@ -61204,7 +62010,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30094",
@@ -61420,7 +62226,7 @@
   },
   {
     "name": "Bubble",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "rarity": 4,
     "skillLevels": [
       {
@@ -61565,7 +62371,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30022",
@@ -61600,7 +62406,7 @@
             "name": "Defender Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400013
+            "sortId": 400012
           },
           {
             "id": "31013",
@@ -61626,7 +62432,7 @@
         "slot": 1,
         "skillId": "skcom_def_up[2]",
         "iconId": null,
-        "skillName": "防御力强化·β型",
+        "skillName": "DEF Up β",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -61721,7 +62527,7 @@
         "slot": 2,
         "skillId": "skchr_bubble_2",
         "iconId": null,
-        "skillName": "“挨打”",
+        "skillName": "\"Beaten Up\"",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -62364,7 +63170,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30012",
@@ -62399,7 +63205,7 @@
             "name": "Medic Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400014
+            "sortId": 400015
           },
           {
             "id": "30063",
@@ -62615,7 +63421,7 @@
   },
   {
     "name": "Mint",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "rarity": 5,
     "skillLevels": [
       {
@@ -62767,7 +63573,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30052",
@@ -62802,7 +63608,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "31024",
@@ -62828,7 +63634,7 @@
         "slot": 1,
         "skillId": "skchr_mint_1",
         "iconId": null,
-        "skillName": "风语",
+        "skillName": "Wind Whispers",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -62923,7 +63729,7 @@
         "slot": 2,
         "skillId": "skchr_mint_2",
         "iconId": null,
-        "skillName": "聚能涡旋",
+        "skillName": "Swirling Vortex",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -63184,7 +63990,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30022",
@@ -63219,7 +64025,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30135",
@@ -64597,7 +65403,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30052",
@@ -64632,7 +65438,7 @@
             "name": "Medic Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400006
+            "sortId": 400007
           },
           {
             "id": "30054",
@@ -65000,7 +65806,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30012",
@@ -65035,7 +65841,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30014",
@@ -65403,7 +66209,7 @@
             "name": "Caster Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400024
+            "sortId": 400022
           },
           {
             "id": "30022",
@@ -65438,7 +66244,7 @@
             "name": "Caster Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400008
+            "sortId": 400006
           },
           {
             "id": "30104",
@@ -65464,7 +66270,7 @@
         "slot": 1,
         "skillId": "skchr_tomimi_1",
         "iconId": null,
-        "skillName": "Tribe Skill",
+        "skillName": "Tribal Techniques",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -65559,7 +66365,7 @@
         "slot": 2,
         "skillId": "skchr_tomimi_2",
         "iconId": null,
-        "skillName": "Protection Plan for Gavial",
+        "skillName": "Gavial's Protection Plan",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -65867,7 +66673,7 @@
         "slot": 1,
         "skillId": "skchr_flint_1",
         "iconId": null,
-        "skillName": "Ceaseless",
+        "skillName": "Relentless",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -65962,7 +66768,7 @@
         "slot": 2,
         "skillId": "skchr_flint_2",
         "iconId": null,
-        "skillName": "Rampage",
+        "skillName": "Display of Might",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -66223,7 +67029,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30052",
@@ -66258,7 +67064,7 @@
             "name": "Defender Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400005
+            "sortId": 400004
           },
           {
             "id": "30125",
@@ -66569,7 +67375,7 @@
   },
   {
     "name": "Blemishine",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "rarity": 6,
     "skillLevels": [
       {
@@ -66735,7 +67541,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30062",
@@ -66770,7 +67576,7 @@
             "name": "Defender Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400005
+            "sortId": 400004
           },
           {
             "id": "30135",
@@ -66796,7 +67602,7 @@
         "slot": 1,
         "skillId": "skchr_blemsh_1",
         "iconId": null,
-        "skillName": "光芒涌动",
+        "skillName": "Surging Brilliance",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -66891,7 +67697,7 @@
         "slot": 2,
         "skillId": "skchr_blemsh_2",
         "iconId": null,
-        "skillName": "慑敌辉光",
+        "skillName": "Deterring Radiance",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -66986,7 +67792,7 @@
         "slot": 3,
         "skillId": "skchr_blemsh_3",
         "iconId": null,
-        "skillName": "先贤化身",
+        "skillName": "Divine Avatar",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -67233,7 +68039,7 @@
             "name": "Medic Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400022
+            "sortId": 400023
           },
           {
             "id": "30012",
@@ -67268,7 +68074,7 @@
             "name": "Medic Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400006
+            "sortId": 400007
           },
           {
             "id": "30014",
@@ -67629,7 +68435,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 3,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30052",
@@ -67664,7 +68470,7 @@
             "name": "Sniper Chip Pack",
             "tier": 4,
             "quantity": 5,
-            "sortId": 400012
+            "sortId": 400013
           },
           {
             "id": "31023",
@@ -69248,7 +70054,7 @@
             "name": "Sniper Chip",
             "tier": 3,
             "quantity": 5,
-            "sortId": 400020
+            "sortId": 400021
           },
           {
             "id": "30012",
@@ -69283,7 +70089,7 @@
             "name": "Sniper Dualchip",
             "tier": 5,
             "quantity": 4,
-            "sortId": 400004
+            "sortId": 400005
           },
           {
             "id": "30135",
@@ -69746,7 +70552,7 @@
             "name": "Defender Chip",
             "tier": 3,
             "quantity": 4,
-            "sortId": 400021
+            "sortId": 400020
           },
           {
             "id": "30022",
@@ -69781,7 +70587,7 @@
             "name": "Defender Dualchip",
             "tier": 5,
             "quantity": 3,
-            "sortId": 400005
+            "sortId": 400004
           },
           {
             "id": "30084",
@@ -70795,6 +71601,518 @@
             ],
             "goalName": "Skill 2 Mastery 3",
             "goalShortName": "S2 M3",
+            "goalCategory": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Passenger",
+    "isCnOnly": true,
+    "rarity": 6,
+    "skillLevels": [
+      {
+        "skillLevel": 2,
+        "ingredients": [
+          {
+            "id": "3301",
+            "name": "Skill Summary - 1",
+            "tier": 2,
+            "quantity": 5,
+            "sortId": 80003
+          }
+        ],
+        "goalName": "Skill Level 1 → 2",
+        "goalShortName": "Skill Level 2",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 3,
+        "ingredients": [
+          {
+            "id": "3301",
+            "name": "Skill Summary - 1",
+            "tier": 2,
+            "quantity": 5,
+            "sortId": 80003
+          },
+          {
+            "id": "30031",
+            "name": "Ester",
+            "tier": 1,
+            "quantity": 6,
+            "sortId": 100023
+          },
+          {
+            "id": "30041",
+            "name": "Oriron Shard",
+            "tier": 1,
+            "quantity": 4,
+            "sortId": 100031
+          }
+        ],
+        "goalName": "Skill Level 2 → 3",
+        "goalShortName": "Skill Level 3",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 4,
+        "ingredients": [
+          {
+            "id": "3302",
+            "name": "Skill Summary - 2",
+            "tier": 3,
+            "quantity": 8,
+            "sortId": 80002
+          },
+          {
+            "id": "30042",
+            "name": "Oriron",
+            "tier": 2,
+            "quantity": 4,
+            "sortId": 100030
+          }
+        ],
+        "goalName": "Skill Level 3 → 4",
+        "goalShortName": "Skill Level 4",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 5,
+        "ingredients": [
+          {
+            "id": "3302",
+            "name": "Skill Summary - 2",
+            "tier": 3,
+            "quantity": 8,
+            "sortId": 80002
+          },
+          {
+            "id": "30052",
+            "name": "Polyketon",
+            "tier": 2,
+            "quantity": 4,
+            "sortId": 100034
+          },
+          {
+            "id": "30012",
+            "name": "Orirock Cube",
+            "tier": 2,
+            "quantity": 5,
+            "sortId": 100014
+          }
+        ],
+        "goalName": "Skill Level 4 → 5",
+        "goalShortName": "Skill Level 5",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 6,
+        "ingredients": [
+          {
+            "id": "3302",
+            "name": "Skill Summary - 2",
+            "tier": 3,
+            "quantity": 8,
+            "sortId": 80002
+          },
+          {
+            "id": "30013",
+            "name": "Orirock Cluster",
+            "tier": 3,
+            "quantity": 8,
+            "sortId": 100013
+          }
+        ],
+        "goalName": "Skill Level 5 → 6",
+        "goalShortName": "Skill Level 6",
+        "goalCategory": 2
+      },
+      {
+        "skillLevel": 7,
+        "ingredients": [
+          {
+            "id": "3303",
+            "name": "Skill Summary - 3",
+            "tier": 4,
+            "quantity": 8,
+            "sortId": 80001
+          },
+          {
+            "id": "31013",
+            "name": "Coagulating Gel",
+            "tier": 3,
+            "quantity": 4,
+            "sortId": 100037
+          },
+          {
+            "id": "30043",
+            "name": "Oriron Cluster",
+            "tier": 3,
+            "quantity": 4,
+            "sortId": 100029
+          }
+        ],
+        "goalName": "Skill Level 6 → 7",
+        "goalShortName": "Skill Level 7",
+        "goalCategory": 2
+      }
+    ],
+    "elite": [
+      {
+        "eliteLevel": 1,
+        "ingredients": [
+          {
+            "id": "4001",
+            "name": "LMD",
+            "tier": 4,
+            "quantity": 30000,
+            "sortId": 10004
+          },
+          {
+            "id": "3251",
+            "name": "Caster Chip",
+            "tier": 3,
+            "quantity": 5,
+            "sortId": 400022
+          },
+          {
+            "id": "30042",
+            "name": "Oriron",
+            "tier": 2,
+            "quantity": 8,
+            "sortId": 100030
+          },
+          {
+            "id": "30012",
+            "name": "Orirock Cube",
+            "tier": 2,
+            "quantity": 5,
+            "sortId": 100014
+          }
+        ],
+        "goalName": "Elite 1",
+        "goalCategory": 0
+      },
+      {
+        "eliteLevel": 2,
+        "ingredients": [
+          {
+            "id": "4001",
+            "name": "LMD",
+            "tier": 4,
+            "quantity": 180000,
+            "sortId": 10004
+          },
+          {
+            "id": "3253",
+            "name": "Caster Dualchip",
+            "tier": 5,
+            "quantity": 4,
+            "sortId": 400006
+          },
+          {
+            "id": "30125",
+            "name": "Bipolar Nanoflake",
+            "tier": 5,
+            "quantity": 4,
+            "sortId": 100002
+          },
+          {
+            "id": "30044",
+            "name": "Oriron Block",
+            "tier": 4,
+            "quantity": 5,
+            "sortId": 100028
+          }
+        ],
+        "goalName": "Elite 2",
+        "goalCategory": 0
+      }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skchr_pasngr_1",
+        "iconId": null,
+        "skillName": "电能之触",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 8,
+                "sortId": 80001
+              },
+              {
+                "id": "30074",
+                "name": "White Horse Kohl",
+                "tier": 4,
+                "quantity": 4,
+                "sortId": 100004
+              },
+              {
+                "id": "30053",
+                "name": "Aketon",
+                "tier": 3,
+                "quantity": 8,
+                "sortId": 100033
+              }
+            ],
+            "goalName": "Skill 1 Mastery 1",
+            "goalShortName": "S1 M1",
+            "goalCategory": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 12,
+                "sortId": 80001
+              },
+              {
+                "id": "31034",
+                "name": "Crystal Circuit",
+                "tier": 4,
+                "quantity": 4,
+                "sortId": 100041
+              },
+              {
+                "id": "31014",
+                "name": "Polymerized Gel",
+                "tier": 4,
+                "quantity": 8,
+                "sortId": 100036
+              }
+            ],
+            "goalName": "Skill 1 Mastery 2",
+            "goalShortName": "S1 M2",
+            "goalCategory": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 15,
+                "sortId": 80001
+              },
+              {
+                "id": "30115",
+                "name": "Polymerization Preparation",
+                "tier": 5,
+                "quantity": 6,
+                "sortId": 100003
+              },
+              {
+                "id": "30104",
+                "name": "RMA70-24",
+                "tier": 4,
+                "quantity": 6,
+                "sortId": 100010
+              }
+            ],
+            "goalName": "Skill 1 Mastery 3",
+            "goalShortName": "S1 M3",
+            "goalCategory": 1
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "skillId": "skchr_pasngr_2",
+        "iconId": null,
+        "skillName": "聚焦指令",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 8,
+                "sortId": 80001
+              },
+              {
+                "id": "30084",
+                "name": "Manganese Trihydrate",
+                "tier": 4,
+                "quantity": 4,
+                "sortId": 100006
+              },
+              {
+                "id": "30063",
+                "name": "Integrated Device",
+                "tier": 3,
+                "quantity": 4,
+                "sortId": 100017
+              }
+            ],
+            "goalName": "Skill 2 Mastery 1",
+            "goalShortName": "S2 M1",
+            "goalCategory": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 12,
+                "sortId": 80001
+              },
+              {
+                "id": "30014",
+                "name": "Orirock Concentration",
+                "tier": 4,
+                "quantity": 4,
+                "sortId": 100012
+              },
+              {
+                "id": "30094",
+                "name": "Grindstone Pentahydrate",
+                "tier": 4,
+                "quantity": 9,
+                "sortId": 100008
+              }
+            ],
+            "goalName": "Skill 2 Mastery 2",
+            "goalShortName": "S2 M2",
+            "goalCategory": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 15,
+                "sortId": 80001
+              },
+              {
+                "id": "30135",
+                "name": "D32 Steel",
+                "tier": 5,
+                "quantity": 6,
+                "sortId": 100001
+              },
+              {
+                "id": "31034",
+                "name": "Crystal Circuit",
+                "tier": 4,
+                "quantity": 5,
+                "sortId": 100041
+              }
+            ],
+            "goalName": "Skill 2 Mastery 3",
+            "goalShortName": "S2 M3",
+            "goalCategory": 1
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "skillId": "skchr_pasngr_3",
+        "iconId": null,
+        "skillName": "辉煌裂片",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 8,
+                "sortId": 80001
+              },
+              {
+                "id": "31034",
+                "name": "Crystal Circuit",
+                "tier": 4,
+                "quantity": 4,
+                "sortId": 100041
+              },
+              {
+                "id": "31013",
+                "name": "Coagulating Gel",
+                "tier": 3,
+                "quantity": 3,
+                "sortId": 100037
+              }
+            ],
+            "goalName": "Skill 3 Mastery 1",
+            "goalShortName": "S3 M1",
+            "goalCategory": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 12,
+                "sortId": 80001
+              },
+              {
+                "id": "31014",
+                "name": "Polymerized Gel",
+                "tier": 4,
+                "quantity": 4,
+                "sortId": 100036
+              },
+              {
+                "id": "30014",
+                "name": "Orirock Concentration",
+                "tier": 4,
+                "quantity": 10,
+                "sortId": 100012
+              }
+            ],
+            "goalName": "Skill 3 Mastery 2",
+            "goalShortName": "S3 M2",
+            "goalCategory": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "name": "Skill Summary - 3",
+                "tier": 4,
+                "quantity": 15,
+                "sortId": 80001
+              },
+              {
+                "id": "30145",
+                "name": "Crystal Electronic Unit",
+                "tier": 5,
+                "quantity": 6,
+                "sortId": 100040
+              },
+              {
+                "id": "31024",
+                "name": "Incandescent Alloy Block",
+                "tier": 4,
+                "quantity": 4,
+                "sortId": 100038
+              }
+            ],
+            "goalName": "Skill 3 Mastery 3",
+            "goalShortName": "S3 M3",
             "goalCategory": 1
           }
         ]
