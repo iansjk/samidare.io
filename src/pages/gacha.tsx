@@ -52,7 +52,7 @@ const Gacha: React.FC = () => {
       }
     }
     return finalOdds;
-  }, [pity, pulls]);
+  }, [pity, pulls, subrate]);
 
   const toPercentage = (p: number) => {
     return `${sprintf("%.4g", p * 100)}%`;
