@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { Grid } from "@material-ui/core";
+import { FormControl, InputLabel, Select, TextField } from "@material-ui/core";
 import { sprintf } from "sprintf-js";
 
 const Gacha: React.FC = () => {
@@ -43,9 +43,48 @@ const Gacha: React.FC = () => {
     return `${sprintf("%.4g", p * 100)}%`;
   };
 
+  const handleFocus = (e: React.FocusEvent<HTMLInputElement>) =>
+    e.target.select();
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {};
+
   return (
-    <Grid container>
-      <label>
+    <>
+      <TextField
+        label="Number of pulls"
+        variant="outlined"
+        type="number"
+        defaultValue="0"
+        name="pulls"
+        onFocus={handleFocus}
+        onChange={handleChange}
+      />
+      <TextField
+        label="Initial pity"
+        variant="outlined"
+        type="number"
+        defaultValue="0"
+        name="pity"
+        onFocus={handleFocus}
+        onChange={handleChange}
+      />
+      <FormControl variant="outlined">
+        <InputLabel htmlFor="banner-type">Banner type</InputLabel>
+        <Select
+          native
+          label="Banner type"
+          inputProps={{
+            id: "banner-type",
+          }}
+        >
+          <option value="event">Event (one rate-up 6⭐️, 50%)</option>
+          <option value="standard">
+            Standard (two rate-up 6⭐️, each 25%)
+          </option>
+          <option value="limited">Limited (two rate-up 6⭐️, each 35%)</option>
+        </Select>
+      </FormControl>
+      {/* <label>
         Number of pulls:{" "}
         <input
           type="number"
@@ -83,8 +122,8 @@ const Gacha: React.FC = () => {
         ))}
         <br />
         <li>{`P[at least 1 surtr] = ${toPercentage(1 - finalOdds[0])}`}</li>
-      </ul>
-    </Grid>
+      </ul> */}
+    </>
   );
 };
 export default Gacha;
