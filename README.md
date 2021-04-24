@@ -5,6 +5,7 @@ The site is available at [samidare.io/arknights](https://www.samidare.io/arknigh
 Features:
 - Operator goal tracker
 - Recruitment calculator
+- Pull probability calculator
 
 ## License
 BSD0

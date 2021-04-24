@@ -81,6 +81,7 @@ const useStyles = makeStyles((theme) => ({
 const links = {
   "/planner": "Operator Planner",
   "/recruitment": "Recruitment Calculator",
+  "/gacha": "Pull Probability Calculator",
 };
 
 function getPageTitle(title: string, uri: string): string | undefined {
