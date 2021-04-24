@@ -177,6 +177,24 @@ const Gacha: React.FC = () => {
                   </Typography>
                 </Box>
               </Grid>
+              {(bannerType === "standard" || bannerType === "limited") && (
+                <>
+                  <Grid item xs={8}>
+                    <Typography variant="body1">
+                      Chance of obtaining <strong>at least 1 of each</strong>{" "}
+                      rate-up:
+                    </Typography>
+                  </Grid>
+                  <Grid item>
+                    <Box clone pl={2}>
+                      <Typography variant="h6">
+                        {/* TODO */}
+                        0%
+                      </Typography>
+                    </Box>
+                  </Grid>
+                </>
+              )}
             </Grid>
           </Paper>
         </Box>
