@@ -60,7 +60,12 @@ const Gacha: React.FC = () => {
   }, [pity, pulls, subrate]);
 
   const toPercentage = (p: number) => {
-    return `${sprintf("%.4g", p * 100)}%`;
+    const percentage = p * 100;
+    if (percentage > 1e-6) {
+      return `${sprintf("%.4g", percentage)}%`;
+    } else {
+      return `${sprintf("%.12f", percentage)}%`;
+    }
   };
 
   const handleFocus = (e: React.FocusEvent<HTMLInputElement>) =>
