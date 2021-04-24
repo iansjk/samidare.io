@@ -4,9 +4,18 @@ import { sprintf } from "sprintf-js";
 
 const Gacha: React.FC = () => {
   const [pulls, setPulls] = useState(0);
+  const [pullsHasError, setPullsHasError] = useState(false);
   const [pity, setPity] = useState(0);
-
-  const surtrSubrate = 0.5;
+  const [pityHasError, setPityHasError] = useState(false);
+  const [bannerType, setBannerType] = useState<
+    "event" | "standard" | "limited"
+  >("event");
+  let subrate = 0.5;
+  if (bannerType === "standard") {
+    subrate = 0.25;
+  } else if (bannerType === "limited") {
+    subrate = 0.35;
+  }
 
   const finalOdds = useMemo(() => {
     let probabilities = Array(99)
@@ -23,9 +32,9 @@ const Gacha: React.FC = () => {
           newProbabilities[Math.min(i + 1, 98)][j] +=
             probabilities[i][j] * (1 - sixStarChance);
           newProbabilities[0][j] +=
-            probabilities[i][j] * sixStarChance * (1 - surtrSubrate);
+            probabilities[i][j] * sixStarChance * (1 - subrate);
           newProbabilities[0][Math.min(j + 1, 6)] +=
-            probabilities[i][j] * sixStarChance * surtrSubrate;
+            probabilities[i][j] * sixStarChance * subrate;
         }
       }
       probabilities = newProbabilities;
@@ -46,7 +55,28 @@ const Gacha: React.FC = () => {
   const handleFocus = (e: React.FocusEvent<HTMLInputElement>) =>
     e.target.select();
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {};
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.name === "pulls" || e.target.name === "pity") {
+      const toInt = parseInt(e.target.value, 10);
+      if (!Number.isNaN(toInt) && 0 <= toInt) {
+        if (e.target.name === "pulls") {
+          setPulls(toInt);
+          setPullsHasError(false);
+        } else {
+          setPity(toInt);
+          setPityHasError(false);
+        }
+      } else {
+        if (e.target.name === "pulls") {
+          setPullsHasError(true);
+        } else {
+          setPityHasError(true);
+        }
+      }
+    } else if (e.target.name === "banner-type") {
+      setBannerType(e.target.value as "event" | "standard" | "limited");
+    }
+  };
 
   return (
     <>
@@ -56,6 +86,7 @@ const Gacha: React.FC = () => {
         type="number"
         defaultValue="0"
         name="pulls"
+        error={pullsHasError}
         onFocus={handleFocus}
         onChange={handleChange}
       />
@@ -65,6 +96,7 @@ const Gacha: React.FC = () => {
         type="number"
         defaultValue="0"
         name="pity"
+        error={pityHasError}
         onFocus={handleFocus}
         onChange={handleChange}
       />
@@ -74,6 +106,7 @@ const Gacha: React.FC = () => {
           native
           label="Banner type"
           inputProps={{
+            name: "banner-type",
             id: "banner-type",
           }}
         >
