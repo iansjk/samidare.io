@@ -117,45 +117,14 @@ const Gacha: React.FC = () => {
           <option value="limited">Limited (two rate-up 6⭐️, each 35%)</option>
         </Select>
       </FormControl>
-      {/* <label>
-        Number of pulls:{" "}
-        <input
-          type="number"
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-            const toNumber = parseInt(e.target.value, 10);
-            if (!Number.isNaN(toNumber) && 0 <= toNumber) {
-              setPulls(toNumber);
-            } else {
-              setPulls(0);
-            }
-          }}
-          defaultValue={pulls}
-        />
-      </label>
-      <br />
-      <label>
-        Initial pity:{" "}
-        <input
-          type="number"
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-            const toNumber = parseInt(e.target.value, 10);
-            if (!Number.isNaN(toNumber) && 0 <= toNumber && toNumber < 99) {
-              setPity(toNumber);
-            } else {
-              setPity(0);
-            }
-          }}
-          defaultValue={pity}
-        />
-      </label>
-
+      <h3>Probabilities</h3>
       <ul>
         {[...Array(7).keys()].map((i) => (
           <li key={i}>{`P[${i} surtrs] = ${toPercentage(finalOdds[i])}`}</li>
         ))}
         <br />
         <li>{`P[at least 1 surtr] = ${toPercentage(1 - finalOdds[0])}`}</li>
-      </ul> */}
+      </ul>
     </>
   );
 };
