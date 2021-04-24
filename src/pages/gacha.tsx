@@ -92,7 +92,7 @@ const Gacha: React.FC = () => {
 
   return (
     <Grid container direction="column" spacing={2}>
-      <Grid item>
+      <Grid item xs={10}>
         <TextField
           label="Number of pulls"
           variant="outlined"
@@ -134,32 +134,48 @@ const Gacha: React.FC = () => {
           </Select>
         </FormControl>
       </Grid>
-      <Grid item>
+      <Grid item xs={6}>
         <Box clone padding={2}>
           <Paper elevation={3}>
-            <Typography variant="h6" component="h3">
+            <Typography variant="h6" component="h3" gutterBottom>
               Probabilities
             </Typography>
-            <Grid container>
-              {[...Array(7).keys()].map((i) => (
-                <React.Fragment key={i}>
-                  <Grid item xs={4}>
-                    Chance of obtaining <strong>{i}</strong> rate-up
-                    {i !== 1 && "s"}:
-                  </Grid>
-                  <Grid item xs={8}>
-                    <strong>{toPercentage(finalOdds[i])}</strong>
-                  </Grid>
-                </React.Fragment>
-              ))}
-            </Grid>
-            <Divider />
-            <Grid container>
-              <Grid item xs={4}>
-                Chance of obtaining <strong>at least 1</strong> rate-up:
+            <Box clone mt={2}>
+              <Grid container alignItems="center">
+                {[...Array(7).keys()].map((i) => (
+                  <React.Fragment key={i}>
+                    <Grid item xs={8}>
+                      <Typography variant="body1">
+                        Chance of obtaining <strong>{i}</strong> rate-up
+                        {i !== 1 && "s"}:
+                      </Typography>
+                    </Grid>
+                    <Grid item>
+                      <Box clone pl={2}>
+                        <Typography variant="h6">
+                          {toPercentage(finalOdds[i])}
+                        </Typography>
+                      </Box>
+                    </Grid>
+                  </React.Fragment>
+                ))}
               </Grid>
+            </Box>
+            <Box clone my={2}>
+              <Divider />
+            </Box>
+            <Grid container alignItems="center">
               <Grid item xs={8}>
-                <strong>{toPercentage(1 - finalOdds[0])}</strong>
+                <Typography variant="body1">
+                  Chance of obtaining <strong>at least 1</strong> rate-up:
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Box clone pl={2}>
+                  <Typography variant="h6">
+                    {toPercentage(1 - finalOdds[0])}
+                  </Typography>
+                </Box>
               </Grid>
             </Grid>
           </Paper>
