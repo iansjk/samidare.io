@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import {
   Box,
+  Container,
   Divider,
   FormControl,
   Grid,
@@ -91,115 +92,119 @@ const Gacha: React.FC = () => {
   };
 
   return (
-    <Grid container direction="column" spacing={2}>
-      <Grid item xs={10}>
-        <TextField
-          label="Number of pulls"
-          variant="outlined"
-          type="number"
-          defaultValue="0"
-          name="pulls"
-          error={pullsHasError}
-          onFocus={handleFocus}
-          onChange={handleChange}
-        />
-        <TextField
-          label="Initial pity"
-          variant="outlined"
-          type="number"
-          defaultValue="0"
-          name="pity"
-          error={pityHasError}
-          onFocus={handleFocus}
-          onChange={handleChange}
-        />
-        <FormControl variant="outlined">
-          <InputLabel htmlFor="banner-type">Banner type</InputLabel>
-          <Select
-            native
-            label="Banner type"
-            inputProps={{
-              name: "banner-type",
-              id: "banner-type",
-            }}
-            onChange={handleChange}
-          >
-            <option value="event">Event (one rate-up 6⭐️, 50%)</option>
-            <option value="standard">
-              Standard (two rate-up 6⭐️, each 25%)
-            </option>
-            <option value="limited">
-              Limited (two rate-up 6⭐️, each 35%)
-            </option>
-          </Select>
-        </FormControl>
-      </Grid>
-      <Grid item xs={6}>
-        <Box clone padding={2}>
-          <Paper elevation={3}>
-            <Typography variant="h6" component="h3" gutterBottom>
-              Probabilities
-            </Typography>
-            <Box clone mt={2}>
+    <Box maxWidth="730px" margin="auto">
+      <Grid container direction="column" spacing={2}>
+        <Box clone display="flex" justifyContent="space-between">
+          <Grid item>
+            <TextField
+              label="Number of pulls"
+              variant="outlined"
+              type="number"
+              defaultValue="0"
+              name="pulls"
+              error={pullsHasError}
+              onFocus={handleFocus}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Initial pity"
+              variant="outlined"
+              type="number"
+              defaultValue="0"
+              name="pity"
+              error={pityHasError}
+              onFocus={handleFocus}
+              onChange={handleChange}
+            />
+            <FormControl variant="outlined">
+              <InputLabel htmlFor="banner-type">Banner type</InputLabel>
+              <Select
+                native
+                label="Banner type"
+                inputProps={{
+                  name: "banner-type",
+                  id: "banner-type",
+                }}
+                onChange={handleChange}
+              >
+                <option value="event">Event (one rate-up 6⭐️, 50%)</option>
+                <option value="standard">
+                  Standard (two rate-up 6⭐️, each 25%)
+                </option>
+                <option value="limited">
+                  Limited (two rate-up 6⭐️, each 35%)
+                </option>
+              </Select>
+            </FormControl>
+          </Grid>
+        </Box>
+        <Grid item>
+          <Box clone pt={2} pr={2} pl={3} pb={3}>
+            <Paper elevation={3}>
+              <Typography variant="h6" component="h3" gutterBottom>
+                Probabilities
+              </Typography>
+              <Box clone mt={2}>
+                <Grid container alignItems="center">
+                  {[...Array(7).keys()].map((i) => (
+                    <React.Fragment key={i}>
+                      <Grid item xs={8}>
+                        <Typography variant="body1">
+                          Chance of obtaining <strong>{i}</strong> rate-up
+                          {i !== 1 && "s"}:
+                        </Typography>
+                      </Grid>
+                      <Grid item>
+                        <Box clone pl={2}>
+                          <Typography variant="h6">
+                            {toPercentage(finalOdds[i])}
+                          </Typography>
+                        </Box>
+                      </Grid>
+                    </React.Fragment>
+                  ))}
+                </Grid>
+              </Box>
+              <Box clone mt={1} mb={2}>
+                <Divider />
+              </Box>
               <Grid container alignItems="center">
-                {[...Array(7).keys()].map((i) => (
-                  <React.Fragment key={i}>
+                <Grid item xs={8}>
+                  <Typography variant="body1">
+                    Chance of obtaining <strong>at least 1</strong> rate-up:
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Box clone pl={2}>
+                    <Typography variant="h6">
+                      {toPercentage(1 - finalOdds[0])}
+                    </Typography>
+                  </Box>
+                </Grid>
+                {(bannerType === "standard" || bannerType === "limited") && (
+                  <>
                     <Grid item xs={8}>
                       <Typography variant="body1">
-                        Chance of obtaining <strong>{i}</strong> rate-up
-                        {i !== 1 && "s"}:
+                        Chance of obtaining <strong>at least 1 of each</strong>{" "}
+                        rate-up:
                       </Typography>
                     </Grid>
                     <Grid item>
                       <Box clone pl={2}>
                         <Typography variant="h6">
-                          {toPercentage(finalOdds[i])}
+                          {/* TODO */}
+                          0%
                         </Typography>
                       </Box>
                     </Grid>
-                  </React.Fragment>
-                ))}
+                  </>
+                )}
               </Grid>
-            </Box>
-            <Box clone my={2}>
-              <Divider />
-            </Box>
-            <Grid container alignItems="center">
-              <Grid item xs={8}>
-                <Typography variant="body1">
-                  Chance of obtaining <strong>at least 1</strong> rate-up:
-                </Typography>
-              </Grid>
-              <Grid item>
-                <Box clone pl={2}>
-                  <Typography variant="h6">
-                    {toPercentage(1 - finalOdds[0])}
-                  </Typography>
-                </Box>
-              </Grid>
-              {(bannerType === "standard" || bannerType === "limited") && (
-                <>
-                  <Grid item xs={8}>
-                    <Typography variant="body1">
-                      Chance of obtaining <strong>at least 1 of each</strong>{" "}
-                      rate-up:
-                    </Typography>
-                  </Grid>
-                  <Grid item>
-                    <Box clone pl={2}>
-                      <Typography variant="h6">
-                        {/* TODO */}
-                        0%
-                      </Typography>
-                    </Box>
-                  </Grid>
-                </>
-              )}
-            </Grid>
-          </Paper>
-        </Box>
+            </Paper>
+          </Box>
+        </Grid>
       </Grid>
-    </Grid>
+    </Box>
   );
 };
 export default Gacha;
