@@ -1,5 +1,11 @@
 import React, { useMemo, useState } from "react";
-import { FormControl, InputLabel, Select, TextField } from "@material-ui/core";
+import {
+  FormControl,
+  Grid,
+  InputLabel,
+  Select,
+  TextField,
+} from "@material-ui/core";
 import { sprintf } from "sprintf-js";
 
 const Gacha: React.FC = () => {
@@ -79,53 +85,62 @@ const Gacha: React.FC = () => {
   };
 
   return (
-    <>
-      <TextField
-        label="Number of pulls"
-        variant="outlined"
-        type="number"
-        defaultValue="0"
-        name="pulls"
-        error={pullsHasError}
-        onFocus={handleFocus}
-        onChange={handleChange}
-      />
-      <TextField
-        label="Initial pity"
-        variant="outlined"
-        type="number"
-        defaultValue="0"
-        name="pity"
-        error={pityHasError}
-        onFocus={handleFocus}
-        onChange={handleChange}
-      />
-      <FormControl variant="outlined">
-        <InputLabel htmlFor="banner-type">Banner type</InputLabel>
-        <Select
-          native
-          label="Banner type"
-          inputProps={{
-            name: "banner-type",
-            id: "banner-type",
-          }}
-        >
-          <option value="event">Event (one rate-up 6⭐️, 50%)</option>
-          <option value="standard">
-            Standard (two rate-up 6⭐️, each 25%)
-          </option>
-          <option value="limited">Limited (two rate-up 6⭐️, each 35%)</option>
-        </Select>
-      </FormControl>
-      <h3>Probabilities</h3>
-      <ul>
-        {[...Array(7).keys()].map((i) => (
-          <li key={i}>{`P[${i} surtrs] = ${toPercentage(finalOdds[i])}`}</li>
-        ))}
-        <br />
-        <li>{`P[at least 1 surtr] = ${toPercentage(1 - finalOdds[0])}`}</li>
-      </ul>
-    </>
+    <Grid container direction="column">
+      <Grid item>
+        <TextField
+          label="Number of pulls"
+          variant="outlined"
+          type="number"
+          defaultValue="0"
+          name="pulls"
+          error={pullsHasError}
+          onFocus={handleFocus}
+          onChange={handleChange}
+        />
+        <TextField
+          label="Initial pity"
+          variant="outlined"
+          type="number"
+          defaultValue="0"
+          name="pity"
+          error={pityHasError}
+          onFocus={handleFocus}
+          onChange={handleChange}
+        />
+        <FormControl variant="outlined">
+          <InputLabel htmlFor="banner-type">Banner type</InputLabel>
+          <Select
+            native
+            label="Banner type"
+            inputProps={{
+              name: "banner-type",
+              id: "banner-type",
+            }}
+          >
+            <option value="event">Event (one rate-up 6⭐️, 50%)</option>
+            <option value="standard">
+              Standard (two rate-up 6⭐️, each 25%)
+            </option>
+            <option value="limited">
+              Limited (two rate-up 6⭐️, each 35%)
+            </option>
+          </Select>
+        </FormControl>
+      </Grid>
+      <Grid item>
+        <h3>Probabilities</h3>
+        <dl>
+          {[...Array(7).keys()].map((i) => (
+            <React.Fragment key={i}>
+              <dt>
+                Chance of obtaining {i + 1} rate-up{i >= 1 && "s"}
+              </dt>
+              <dd>{toPercentage(finalOdds[i])}</dd>
+            </React.Fragment>
+          ))}
+        </dl>
+      </Grid>
+    </Grid>
   );
 };
 export default Gacha;
