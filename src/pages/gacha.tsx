@@ -1,10 +1,14 @@
 import React, { useMemo, useState } from "react";
 import {
+  Box,
+  Divider,
   FormControl,
   Grid,
   InputLabel,
+  Paper,
   Select,
   TextField,
+  Typography,
 } from "@material-ui/core";
 import { sprintf } from "sprintf-js";
 
@@ -87,7 +91,7 @@ const Gacha: React.FC = () => {
   };
 
   return (
-    <Grid container direction="column">
+    <Grid container direction="column" spacing={2}>
       <Grid item>
         <TextField
           label="Number of pulls"
@@ -131,17 +135,35 @@ const Gacha: React.FC = () => {
         </FormControl>
       </Grid>
       <Grid item>
-        <h3>Probabilities</h3>
-        <dl>
-          {[...Array(7).keys()].map((i) => (
-            <React.Fragment key={i}>
-              <dt>
-                Chance of obtaining {i + 1} rate-up{i >= 1 && "s"}
-              </dt>
-              <dd>{toPercentage(finalOdds[i])}</dd>
-            </React.Fragment>
-          ))}
-        </dl>
+        <Box clone padding={2}>
+          <Paper elevation={3}>
+            <Typography variant="h6" component="h3">
+              Probabilities
+            </Typography>
+            <Grid container>
+              {[...Array(7).keys()].map((i) => (
+                <React.Fragment key={i}>
+                  <Grid item xs={4}>
+                    Chance of obtaining <strong>{i}</strong> rate-up
+                    {i !== 1 && "s"}:
+                  </Grid>
+                  <Grid item xs={8}>
+                    <strong>{toPercentage(finalOdds[i])}</strong>
+                  </Grid>
+                </React.Fragment>
+              ))}
+            </Grid>
+            <Divider />
+            <Grid container>
+              <Grid item xs={4}>
+                Chance of obtaining <strong>at least 1</strong> rate-up:
+              </Grid>
+              <Grid item xs={8}>
+                <strong>{toPercentage(1 - finalOdds[0])}</strong>
+              </Grid>
+            </Grid>
+          </Paper>
+        </Box>
       </Grid>
     </Grid>
   );
