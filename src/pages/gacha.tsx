@@ -61,9 +61,11 @@ const Gacha: React.FC = () => {
   const handleFocus = (e: React.FocusEvent<HTMLInputElement>) =>
     e.target.select();
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<{ name?: string; value: unknown }>
+  ) => {
     if (e.target.name === "pulls" || e.target.name === "pity") {
-      const toInt = parseInt(e.target.value, 10);
+      const toInt = parseInt(e.target.value as string, 10);
       if (!Number.isNaN(toInt) && 0 <= toInt) {
         if (e.target.name === "pulls") {
           setPulls(toInt);
@@ -116,6 +118,7 @@ const Gacha: React.FC = () => {
               name: "banner-type",
               id: "banner-type",
             }}
+            onChange={handleChange}
           >
             <option value="event">Event (one rate-up 6⭐️, 50%)</option>
             <option value="standard">
