@@ -27,33 +27,50 @@ const Gacha: React.FC = () => {
   } else if (bannerType === "limited") {
     subrate = 0.35;
   }
+  const secondRateupLimit = bannerType === "event" ? 1 : 7;
 
   const finalOdds = useMemo(() => {
     let probabilities = Array(99)
       .fill(0)
-      .map(() => Array(7).fill(0));
-    probabilities[pity][0] = 1;
+      .map(() =>
+        Array(7)
+          .fill(0)
+          .map(() => Array(secondRateupLimit).fill(0))
+      );
+    probabilities[pity][0][0] = 1;
     for (let a = 0; a < pulls; a++) {
       const newProbabilities = Array(99)
         .fill(0)
-        .map(() => Array(7).fill(0));
+        .map(() =>
+          Array(7)
+            .fill(0)
+            .map(() => Array(secondRateupLimit).fill(0))
+        );
       for (let i = 0; i < 99; i++) {
         const sixStarChance = i <= 49 ? 0.02 : 0.02 * (i - 48);
         for (let j = 0; j < 7; j++) {
-          newProbabilities[Math.min(i + 1, 98)][j] +=
-            probabilities[i][j] * (1 - sixStarChance);
-          newProbabilities[0][j] +=
-            probabilities[i][j] * sixStarChance * (1 - subrate);
-          newProbabilities[0][Math.min(j + 1, 6)] +=
-            probabilities[i][j] * sixStarChance * subrate;
+          for (let k = 0; k < secondRateupLimit; k++) {
+            newProbabilities[Math.min(i + 1, 98)][j][k] +=
+              probabilities[i][j][k] * (1 - sixStarChance);
+            newProbabilities[0][j][k] +=
+              probabilities[i][j][k] * sixStarChance * (1 - subrate * 2);
+            newProbabilities[0][Math.min(j + 1, 6)][k] +=
+              probabilities[i][j][k] * sixStarChance * subrate;
+            newProbabilities[0][j][Math.min(k + 1, secondRateupLimit)] +=
+              probabilities[i][j][k] * sixStarChance * subrate;
+          }
         }
       }
       probabilities = newProbabilities;
     }
-    const finalOdds = Array(7).fill(0);
+    const finalOdds = Array(7)
+      .fill(0)
+      .map(() => Array(secondRateupLimit).fill(0));
     for (let i = 0; i < 99; i++) {
       for (let j = 0; j < 7; j++) {
-        finalOdds[j] += probabilities[i][j];
+        for (let k = 0; k < secondRateupLimit; k++) {
+          finalOdds[j][k] += probabilities[i][j][k];
+        }
       }
     }
     return finalOdds;
@@ -162,7 +179,11 @@ const Gacha: React.FC = () => {
                       <Grid item>
                         <Box clone pl={2}>
                           <Typography variant="h6">
-                            {toPercentage(finalOdds[i])}
+                            {toPercentage(
+                              bannerType === "event"
+                                ? finalOdds[i][0]
+                                : chanceMultiRateups(finalOdds, i)
+                            )}
                           </Typography>
                         </Box>
                       </Grid>
@@ -182,7 +203,7 @@ const Gacha: React.FC = () => {
                 <Grid item>
                   <Box clone pl={2}>
                     <Typography variant="h6">
-                      {toPercentage(1 - finalOdds[0])}
+                      {toPercentage(1 - finalOdds[0][0])}
                     </Typography>
                   </Box>
                 </Grid>
@@ -197,8 +218,9 @@ const Gacha: React.FC = () => {
                     <Grid item>
                       <Box clone pl={2}>
                         <Typography variant="h6">
-                          {/* TODO */}
-                          0%
+                          {toPercentage(
+                            chanceOneOfEach(finalOdds, secondRateupLimit)
+                          )}
                         </Typography>
                       </Box>
                     </Grid>
@@ -207,9 +229,33 @@ const Gacha: React.FC = () => {
               </Grid>
             </Paper>
           </Box>
+          <Box mt={3} fontSize="16px">
+            <h3>
+              <code>finalOdds</code>
+            </h3>
+            <pre>{JSON.stringify(finalOdds, null, 2)}</pre>
+          </Box>
         </Grid>
       </Grid>
     </Box>
   );
 };
 export default Gacha;
+
+const chanceOneOfEach = (finalOdds: number[][], secondRateupLimit: number) => {
+  let chance = 0;
+  for (let j = 1; j < 7; j++) {
+    for (let k = 1; k < secondRateupLimit; k++) {
+      chance += finalOdds[j][k];
+    }
+  }
+  return chance;
+};
+
+const chanceMultiRateups = (finalOdds: number[][], numRateups: number) => {
+  let chance = 0;
+  for (let i = 0; i <= numRateups; i++) {
+    chance += finalOdds[i][numRateups - i];
+  }
+  return chance;
+};
