@@ -49,15 +49,24 @@ const Gacha: React.FC = () => {
       for (let i = 0; i < 99; i++) {
         const sixStarChance = i <= 49 ? 0.02 : 0.02 * (i - 48);
         for (let j = 0; j < 7; j++) {
-          for (let k = 0; k < secondRateupLimit; k++) {
-            newProbabilities[Math.min(i + 1, 98)][j][k] +=
-              probabilities[i][j][k] * (1 - sixStarChance);
-            newProbabilities[0][j][k] +=
-              probabilities[i][j][k] * sixStarChance * (1 - subrate * 2);
-            newProbabilities[0][Math.min(j + 1, 6)][k] +=
-              probabilities[i][j][k] * sixStarChance * subrate;
-            newProbabilities[0][j][Math.min(k + 1, secondRateupLimit)] +=
-              probabilities[i][j][k] * sixStarChance * subrate;
+          if (bannerType !== "event") {
+            for (let k = 0; k < secondRateupLimit; k++) {
+              newProbabilities[Math.min(i + 1, 98)][j][k] +=
+                probabilities[i][j][k] * (1 - sixStarChance);
+              newProbabilities[0][j][k] +=
+                probabilities[i][j][k] * sixStarChance * (1 - subrate * 2);
+              newProbabilities[0][Math.min(j + 1, 6)][k] +=
+                probabilities[i][j][k] * sixStarChance * subrate;
+              newProbabilities[0][j][Math.min(k + 1, secondRateupLimit)] +=
+                probabilities[i][j][k] * sixStarChance * subrate;
+            }
+          } else {
+            newProbabilities[Math.min(i + 1, 98)][j][0] +=
+              probabilities[i][j][0] * (1 - sixStarChance);
+            newProbabilities[0][j][0] +=
+              probabilities[i][j][0] * sixStarChance * (1 - subrate);
+            newProbabilities[0][Math.min(j + 1, 6)][0] +=
+              probabilities[i][j][0] * sixStarChance * subrate;
           }
         }
       }
