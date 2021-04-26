@@ -27,7 +27,6 @@ const Gacha: React.FC = () => {
   } else if (bannerType === "limited") {
     subrate = 0.35;
   }
-  const secondRateupLimit = bannerType === "event" ? 1 : 7;
 
   const finalOdds = useMemo(() => {
     let probabilities = Array(99)
@@ -35,7 +34,7 @@ const Gacha: React.FC = () => {
       .map(() =>
         Array(7)
           .fill(0)
-          .map(() => Array(secondRateupLimit).fill(0))
+          .map(() => Array(7).fill(0))
       );
     probabilities[pity][0][0] = 1;
     for (let a = 0; a < pulls; a++) {
@@ -44,20 +43,20 @@ const Gacha: React.FC = () => {
         .map(() =>
           Array(7)
             .fill(0)
-            .map(() => Array(secondRateupLimit).fill(0))
+            .map(() => Array(7).fill(0))
         );
       for (let i = 0; i < 99; i++) {
         const sixStarChance = i <= 49 ? 0.02 : 0.02 * (i - 48);
         for (let j = 0; j < 7; j++) {
           if (bannerType !== "event") {
-            for (let k = 0; k < secondRateupLimit; k++) {
+            for (let k = 0; k < 7; k++) {
               newProbabilities[Math.min(i + 1, 98)][j][k] +=
                 probabilities[i][j][k] * (1 - sixStarChance);
               newProbabilities[0][j][k] +=
                 probabilities[i][j][k] * sixStarChance * (1 - subrate * 2);
               newProbabilities[0][Math.min(j + 1, 6)][k] +=
                 probabilities[i][j][k] * sixStarChance * subrate;
-              newProbabilities[0][j][Math.min(k + 1, secondRateupLimit)] +=
+              newProbabilities[0][j][Math.min(k + 1, 7)] +=
                 probabilities[i][j][k] * sixStarChance * subrate;
             }
           } else {
@@ -74,10 +73,10 @@ const Gacha: React.FC = () => {
     }
     const finalOdds = Array(7)
       .fill(0)
-      .map(() => Array(secondRateupLimit).fill(0));
+      .map(() => Array(7).fill(0));
     for (let i = 0; i < 99; i++) {
       for (let j = 0; j < 7; j++) {
-        for (let k = 0; k < secondRateupLimit; k++) {
+        for (let k = 0; k < 7; k++) {
           finalOdds[j][k] += probabilities[i][j][k];
         }
       }
@@ -228,7 +227,7 @@ const Gacha: React.FC = () => {
                       <Box clone pl={2}>
                         <Typography variant="h6">
                           {toPercentage(
-                            chanceOneOfEach(finalOdds, secondRateupLimit)
+                            chanceOneOfEach(finalOdds)
                           )}
                         </Typography>
                       </Box>
@@ -251,10 +250,10 @@ const Gacha: React.FC = () => {
 };
 export default Gacha;
 
-const chanceOneOfEach = (finalOdds: number[][], secondRateupLimit: number) => {
+const chanceOneOfEach = (finalOdds: number[][]) => {
   let chance = 0;
   for (let j = 1; j < 7; j++) {
-    for (let k = 1; k < secondRateupLimit; k++) {
+    for (let k = 1; k < 7; k++) {
       chance += finalOdds[j][k];
     }
   }
