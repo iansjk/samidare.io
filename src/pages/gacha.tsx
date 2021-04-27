@@ -87,6 +87,9 @@ const Gacha: React.FC = () => {
   }, [pity, pulls, subrate]);
 
   const toPercentage = (p: number) => {
+    if (p === 0) {
+      return "0.000%";
+    }
     const percentage = p * 100;
     if (percentage > 1e-6) {
       return `${sprintf("%.4g", percentage)}%`;
