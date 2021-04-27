@@ -13,6 +13,8 @@ import {
 } from "@material-ui/core";
 import { sprintf } from "sprintf-js";
 
+const MAX_PULL_COUNT = 2000;
+
 const Gacha: React.FC = () => {
   const [pulls, setPulls] = useState(0);
   const [pullsHasError, setPullsHasError] = useState(false);
@@ -101,19 +103,19 @@ const Gacha: React.FC = () => {
   ) => {
     if (e.target.name === "pulls" || e.target.name === "pity") {
       const toInt = parseInt(e.target.value as string, 10);
-      if (!Number.isNaN(toInt) && 0 <= toInt) {
-        if (e.target.name === "pulls") {
-          setPulls(toInt);
-          setPullsHasError(false);
-        } else {
-          setPity(toInt);
-          setPityHasError(false);
-        }
-      } else {
-        if (e.target.name === "pulls") {
+      if (e.target.name === "pulls") {
+        if (Number.isNaN(toInt)) {
           setPullsHasError(true);
         } else {
+          setPulls(Math.max(0, Math.min(toInt, MAX_PULL_COUNT)));
+          setPullsHasError(toInt < 0 || toInt > MAX_PULL_COUNT);
+        }
+      } else {
+        if (Number.isNaN(toInt)) {
           setPityHasError(true);
+        } else {
+          setPity(Math.max(0, Math.min(toInt, 98)));
+          setPityHasError(toInt < 0 || toInt > 98);
         }
       }
     } else if (e.target.name === "banner-type") {
@@ -132,6 +134,7 @@ const Gacha: React.FC = () => {
               type="number"
               defaultValue="0"
               name="pulls"
+              helperText={`Max ${MAX_PULL_COUNT}`}
               error={pullsHasError}
               onFocus={handleFocus}
               onChange={handleChange}
@@ -142,6 +145,7 @@ const Gacha: React.FC = () => {
               type="number"
               defaultValue="0"
               name="pity"
+              helperText="Between 0 and 98"
               error={pityHasError}
               onFocus={handleFocus}
               onChange={handleChange}
