@@ -89,12 +89,15 @@ const Gacha: React.FC = () => {
   const toPercentage = (p: number) => {
     if (p === 0) {
       return "0.000%";
-    }
-    const percentage = p * 100;
-    if (percentage > 1e-6) {
-      return `${sprintf("%.4g", percentage)}%`;
     } else {
-      return `${sprintf("%.12f", percentage)}%`;
+      const percentage = p * 100;
+      if (percentage > 1e-6) {
+        return `${sprintf("%.4g", percentage)}%`;
+      } else if (percentage > 0 && percentage < 1e-12) {
+        return "< 0.0000000000001%";
+      } else {
+        return `${sprintf("%.12f", percentage)}%`;
+      }
     }
   };
 
