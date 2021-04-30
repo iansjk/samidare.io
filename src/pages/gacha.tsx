@@ -186,38 +186,6 @@ const Gacha: React.FC = () => {
               <Typography variant="h6" component="h3" gutterBottom>
                 Probabilities
               </Typography>
-              <Box clone mt={2}>
-                <Grid container alignItems="center">
-                  {[...Array(7).keys()].map((i) => (
-                    <React.Fragment key={i}>
-                      <Grid item xs={8}>
-                        <Typography variant="body1">
-                          Chance of obtaining{" "}
-                          <strong>
-                            {i === 6 ? "6 or more" : `exactly ${i}`}
-                          </strong>{" "}
-                          rate-up
-                          {i !== 1 && "s"}:
-                        </Typography>
-                      </Grid>
-                      <Grid item>
-                        <Box clone pl={2}>
-                          <Typography variant="h6">
-                            {toPercentage(
-                              bannerType === "event"
-                                ? finalOdds[i][0]
-                                : chanceMultiRateups(finalOdds, i)
-                            )}
-                          </Typography>
-                        </Box>
-                      </Grid>
-                    </React.Fragment>
-                  ))}
-                </Grid>
-              </Box>
-              <Box clone mt={1} mb={2}>
-                <Divider />
-              </Box>
               <Grid container alignItems="center">
                 <Grid item xs={8}>
                   <Typography variant="body1">
@@ -249,6 +217,38 @@ const Gacha: React.FC = () => {
                   </>
                 )}
               </Grid>
+              <Box clone mt={1} mb={2}>
+                <Divider />
+              </Box>
+              <Box clone mt={2}>
+                <Grid container alignItems="center">
+                  {[...Array(7).keys()].map((i) => (
+                    <React.Fragment key={i}>
+                      <Grid item xs={8}>
+                        <Typography variant="body1">
+                          Chance of obtaining{" "}
+                          <strong>
+                            {i === 6 ? "6 or more" : `exactly ${i}`}
+                          </strong>{" "}
+                          rate-up
+                          {i !== 1 && "s"}:
+                        </Typography>
+                      </Grid>
+                      <Grid item>
+                        <Box clone pl={2}>
+                          <Typography variant="h6">
+                            {toPercentage(
+                              bannerType === "event"
+                                ? finalOdds[i][0]
+                                : chanceMultiRateups(finalOdds, i)
+                            )}
+                          </Typography>
+                        </Box>
+                      </Grid>
+                    </React.Fragment>
+                  ))}
+                </Grid>
+              </Box>
             </Paper>
           </Box>
         </Grid>
