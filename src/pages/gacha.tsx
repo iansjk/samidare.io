@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from "react";
 import {
   Box,
-  Container,
   Divider,
   FormControl,
   Grid,
@@ -271,6 +270,13 @@ const Gacha: React.FC = () => {
               </Box>
             </Paper>
           </Box>
+          {bannerType === "limited" && (
+            <Box mt={2}>
+              <Typography variant="caption">
+                * Spark system is not factored into these probabilities
+              </Typography>
+            </Box>
+          )}
           <Box mt={3} fontSize="16px">
             <h3>
               <code>finalOdds</code>
