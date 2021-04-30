@@ -1517,10 +1517,16 @@
       }
     ],
     "stages": {
-      "mostEfficient": {
+      "leastSanity": {
         "stageSanityCost": 21,
         "stageName": "7-17",
         "itemSanityCost": 433.17,
+        "dropRate": 0.05
+      },
+      "mostEfficient": {
+        "stageSanityCost": 21,
+        "stageName": "4-8",
+        "itemSanityCost": 433.91,
         "dropRate": 0.05
       }
     }
@@ -1866,7 +1872,7 @@
     "tier": 3,
     "sortId": 100042,
     "stages": {
-      "leastSanity": {
+      "mostEfficient": {
         "stageSanityCost": 21,
         "stageName": "R8-11",
         "itemSanityCost": 38.39,
@@ -1914,6 +1920,12 @@
         "stageSanityCost": 18,
         "stageName": "S5-9",
         "itemSanityCost": 681,
+        "dropRate": 0.03
+      },
+      "mostEfficient": {
+        "stageSanityCost": 21,
+        "stageName": "R8-11",
+        "itemSanityCost": 684.99,
         "dropRate": 0.03
       }
     }
