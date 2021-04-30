@@ -189,7 +189,11 @@ const Gacha: React.FC = () => {
               <Grid container alignItems="center">
                 <Grid item xs={8}>
                   <Typography variant="body1">
-                    Chance of obtaining <strong>at least 1</strong> rate-up:
+                    Chance of obtaining{" "}
+                    <strong>
+                      at least 1{bannerType !== "event" && " of any"}
+                    </strong>{" "}
+                    rate-up:
                   </Typography>
                 </Grid>
                 <Grid item>
@@ -201,6 +205,19 @@ const Gacha: React.FC = () => {
                 </Grid>
                 {(bannerType === "standard" || bannerType === "limited") && (
                   <>
+                    <Grid item xs={8}>
+                      <Typography variant="body1">
+                        Chance of obtaining{" "}
+                        <strong>at least 1 of a specific</strong> rate-up:
+                      </Typography>
+                    </Grid>
+                    <Grid item>
+                      <Box clone pl={2}>
+                        <Typography variant="h6">
+                          {toPercentage((1 - finalOdds[0][0]) / 2)}
+                        </Typography>
+                      </Box>
+                    </Grid>
                     <Grid item xs={8}>
                       <Typography variant="body1">
                         Chance of obtaining <strong>at least 1 of each</strong>{" "}
@@ -229,6 +246,8 @@ const Gacha: React.FC = () => {
                           Chance of obtaining{" "}
                           <strong>
                             {i === 6 ? "6 or more" : `exactly ${i}`}
+
+                            {bannerType !== "event" && " of any"}
                           </strong>{" "}
                           rate-up
                           {i !== 1 && "s"}:
