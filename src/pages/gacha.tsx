@@ -277,12 +277,6 @@ const Gacha: React.FC = () => {
               </Typography>
             </Box>
           )}
-          <Box mt={3} fontSize="16px">
-            <h3>
-              <code>finalOdds</code>
-            </h3>
-            <pre>{JSON.stringify(finalOdds, null, 2)}</pre>
-          </Box>
         </Grid>
       </Grid>
     </Box>
