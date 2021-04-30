@@ -91,7 +91,9 @@ const Gacha: React.FC = () => {
       return "0.000%";
     } else {
       const percentage = p * 100;
-      if (percentage > 1e-6) {
+      if (percentage > 100 - 1e-6) {
+        return `~ 100%`;
+      } else if (percentage > 1e-6) {
         return `${sprintf("%.4g", percentage)}%`;
       } else if (percentage > 0 && percentage < 1e-12) {
         return "< 0.0000000000001%";
@@ -190,7 +192,11 @@ const Gacha: React.FC = () => {
                     <React.Fragment key={i}>
                       <Grid item xs={8}>
                         <Typography variant="body1">
-                          Chance of obtaining <strong>{i}</strong> rate-up
+                          Chance of obtaining{" "}
+                          <strong>
+                            {i === 6 ? "6 or more" : `exactly ${i}`}
+                          </strong>{" "}
+                          rate-up
                           {i !== 1 && "s"}:
                         </Typography>
                       </Grid>
