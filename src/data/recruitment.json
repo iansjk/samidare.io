@@ -123,6 +123,29 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Schwarz",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Hellagur",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -405,6 +428,28 @@
           "Guard",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -654,6 +699,17 @@
         ]
       },
       {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Estelle",
         "rarity": 4,
         "tags": [
@@ -785,6 +841,16 @@
           "DPS",
           "Melee",
           "Guard"
+        ]
+      },
+      {
+        "name": "Myrtle",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "Healing",
+          "Melee",
+          "Vanguard"
         ]
       },
       {
@@ -1038,6 +1104,17 @@
         ]
       },
       {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Haze",
         "rarity": 4,
         "tags": [
@@ -1121,6 +1198,15 @@
           "Slow",
           "Ranged",
           "Caster"
+        ]
+      },
+      {
+        "name": "Sussurro",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
         ]
       },
       {
@@ -1468,6 +1554,17 @@
         ]
       },
       {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Estelle",
         "rarity": 4,
         "tags": [
@@ -1615,6 +1712,15 @@
       },
       {
         "name": "Perfumer",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Sussurro",
         "rarity": 4,
         "tags": [
           "Healing",
@@ -1909,6 +2015,17 @@
         ]
       },
       {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Earthspirit",
         "rarity": 4,
         "tags": [
@@ -1972,6 +2089,16 @@
         "tags": [
           "DPS",
           "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Myrtle",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "Healing",
           "Melee",
           "Vanguard"
         ]
@@ -2150,6 +2277,17 @@
           "Specialist",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -2199,6 +2337,16 @@
         "tags": [
           "DPS",
           "DP-Recovery",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Myrtle",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "Healing",
           "Melee",
           "Vanguard"
         ]
@@ -2365,6 +2513,17 @@
         "tags": [
           "DPS",
           "Support",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
           "Melee",
           "Guard",
           "Senior Operator"
@@ -2629,6 +2788,17 @@
         ]
       },
       {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Gravel",
         "rarity": 4,
         "tags": [
@@ -2808,6 +2978,25 @@
         ]
       },
       {
+        "name": "Sussurro",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Myrtle",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "Healing",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
         "name": "Hibiscus",
         "rarity": 3,
         "tags": [
@@ -2977,6 +3166,17 @@
           "Slow",
           "Ranged",
           "Caster",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
           "Senior Operator"
         ]
       },
@@ -3354,6 +3554,29 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Schwarz",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Hellagur",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -3438,6 +3661,18 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Hellagur",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -3493,6 +3728,17 @@
           "Support",
           "Ranged",
           "Medic",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Schwarz",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper",
           "Top Operator",
           "Senior Operator"
         ]
@@ -3602,6 +3848,18 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Hellagur",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -3651,6 +3909,17 @@
     "operators": [
       {
         "name": "Exusiai",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Schwarz",
         "rarity": 6,
         "tags": [
           "DPS",
@@ -3805,6 +4074,29 @@
         "tags": [
           "Nuker",
           "DPS",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Schwarz",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Hellagur",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
           "Melee",
           "Guard",
           "Top Operator",
@@ -4023,6 +4315,18 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Hellagur",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -4178,6 +4482,17 @@
           "Guard",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -4317,6 +4632,17 @@
           "Caster",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -4436,6 +4762,17 @@
         "tags": [
           "DPS",
           "Support",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
           "Melee",
           "Guard",
           "Senior Operator"
@@ -4644,6 +4981,17 @@
           "Supporter",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -4752,6 +5100,17 @@
           "Crowd-Control",
           "Melee",
           "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
           "Senior Operator"
         ]
       }
@@ -4929,6 +5288,17 @@
           "Guard",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -5015,6 +5385,17 @@
           "Shift",
           "Melee",
           "Defender",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
           "Senior Operator"
         ]
       }
@@ -5214,6 +5595,17 @@
           "Slow",
           "Ranged",
           "Caster",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
           "Senior Operator"
         ]
       }
@@ -5827,6 +6219,17 @@
         ]
       },
       {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Estelle",
         "rarity": 4,
         "tags": [
@@ -6068,6 +6471,16 @@
         ]
       },
       {
+        "name": "Myrtle",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "Healing",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
         "name": "Fang",
         "rarity": 3,
         "tags": [
@@ -6229,6 +6642,16 @@
         ]
       },
       {
+        "name": "Myrtle",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "Healing",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
         "name": "Fang",
         "rarity": 3,
         "tags": [
@@ -6327,6 +6750,17 @@
         "tags": [
           "DPS",
           "Support",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
           "Melee",
           "Guard",
           "Senior Operator"
@@ -6484,6 +6918,17 @@
         ]
       },
       {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Gravel",
         "rarity": 4,
         "tags": [
@@ -6600,6 +7045,16 @@
           "Healing",
           "Melee",
           "Defender"
+        ]
+      },
+      {
+        "name": "Myrtle",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "Healing",
+          "Melee",
+          "Vanguard"
         ]
       },
       {
@@ -7020,6 +7475,15 @@
         ]
       },
       {
+        "name": "Sussurro",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
         "name": "Hibiscus",
         "rarity": 3,
         "tags": [
@@ -7216,6 +7680,17 @@
         ]
       },
       {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Earthspirit",
         "rarity": 4,
         "tags": [
@@ -7314,6 +7789,17 @@
         "rarity": 5,
         "tags": [
           "Summon",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
           "Crowd-Control",
           "Ranged",
           "Supporter",
@@ -7576,6 +8062,15 @@
         ]
       },
       {
+        "name": "Sussurro",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
         "name": "Hibiscus",
         "rarity": 3,
         "tags": [
@@ -7654,6 +8149,17 @@
           "Slow",
           "Ranged",
           "Caster",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
           "Senior Operator"
         ]
       },
@@ -8217,6 +8723,17 @@
         ]
       },
       {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Dobermann",
         "rarity": 4,
         "tags": [
@@ -8285,6 +8802,28 @@
       }
     ],
     "guarantees": []
+  },
+  {
+    "tags": [
+      "Defense",
+      "Guard"
+    ],
+    "operators": [
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      5
+    ]
   },
   {
     "tags": [
@@ -8469,6 +9008,15 @@
       },
       {
         "name": "Perfumer",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
+        "name": "Sussurro",
         "rarity": 4,
         "tags": [
           "Healing",
@@ -9003,6 +9551,17 @@
           "Supporter",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -9064,6 +9623,17 @@
         "tags": [
           "Slow",
           "DPS",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
           "Ranged",
           "Supporter",
           "Senior Operator"
@@ -9183,6 +9753,16 @@
         ]
       },
       {
+        "name": "Myrtle",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "Healing",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
         "name": "Fang",
         "rarity": 3,
         "tags": [
@@ -9251,6 +9831,27 @@
       }
     ],
     "guarantees": []
+  },
+  {
+    "tags": [
+      "Healing",
+      "Vanguard"
+    ],
+    "operators": [
+      {
+        "name": "Myrtle",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "Healing",
+          "Melee",
+          "Vanguard"
+        ]
+      }
+    ],
+    "guarantees": [
+      4
+    ]
   },
   {
     "tags": [
@@ -9414,6 +10015,28 @@
   {
     "tags": [
       "Crowd-Control",
+      "Slow"
+    ],
+    "operators": [
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      5
+    ]
+  },
+  {
+    "tags": [
+      "Crowd-Control",
       "Summon"
     ],
     "operators": [
@@ -9471,6 +10094,27 @@
       }
     ],
     "guarantees": []
+  },
+  {
+    "tags": [
+      "DP-Recovery",
+      "Healing"
+    ],
+    "operators": [
+      {
+        "name": "Myrtle",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "Healing",
+          "Melee",
+          "Vanguard"
+        ]
+      }
+    ],
+    "guarantees": [
+      4
+    ]
   },
   {
     "tags": [
@@ -9551,6 +10195,17 @@
           "DPS",
           "Melee",
           "Defender",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
           "Senior Operator"
         ]
       }
@@ -10038,6 +10693,18 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Hellagur",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -10094,6 +10761,17 @@
           "Support",
           "Ranged",
           "Medic",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Schwarz",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper",
           "Top Operator",
           "Senior Operator"
         ]
@@ -10201,6 +10879,18 @@
         "tags": [
           "Nuker",
           "DPS",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Hellagur",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
           "Melee",
           "Guard",
           "Top Operator",
@@ -10265,6 +10955,17 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Schwarz",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -10415,6 +11116,29 @@
         "tags": [
           "Nuker",
           "DPS",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Schwarz",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Hellagur",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
           "Melee",
           "Guard",
           "Top Operator",
@@ -10639,6 +11363,18 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Hellagur",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -10719,6 +11455,18 @@
         "tags": [
           "Nuker",
           "DPS",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Hellagur",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
           "Melee",
           "Guard",
           "Top Operator",
@@ -10839,6 +11587,18 @@
         "tags": [
           "Nuker",
           "DPS",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Hellagur",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
           "Melee",
           "Guard",
           "Top Operator",
@@ -10982,6 +11742,18 @@
     "operators": [
       {
         "name": "Skadi",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Hellagur",
         "rarity": 6,
         "tags": [
           "DPS",
@@ -11074,6 +11846,17 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Schwarz",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -11113,6 +11896,17 @@
     "operators": [
       {
         "name": "Exusiai",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Schwarz",
         "rarity": 6,
         "tags": [
           "DPS",
@@ -11424,6 +12218,18 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Hellagur",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -11487,6 +12293,18 @@
     "operators": [
       {
         "name": "Skadi",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Hellagur",
         "rarity": 6,
         "tags": [
           "DPS",
@@ -11591,6 +12409,17 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Schwarz",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -11774,6 +12603,18 @@
     "operators": [
       {
         "name": "Skadi",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Hellagur",
         "rarity": 6,
         "tags": [
           "DPS",
@@ -11980,6 +12821,17 @@
         "tags": [
           "DPS",
           "Support",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
           "Melee",
           "Guard",
           "Senior Operator"
@@ -12244,6 +13096,17 @@
           "Guard",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -12299,6 +13162,17 @@
           "Shift",
           "Melee",
           "Defender",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
           "Senior Operator"
         ]
       }
@@ -12682,6 +13556,17 @@
           "Supporter",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -12723,6 +13608,17 @@
         "rarity": 5,
         "tags": [
           "Summon",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
           "Crowd-Control",
           "Ranged",
           "Supporter",
@@ -12949,6 +13845,17 @@
           "Slow",
           "Ranged",
           "Caster",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
           "Senior Operator"
         ]
       }
@@ -13295,6 +14202,40 @@
         "tags": [
           "DPS",
           "Support",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      5
+    ]
+  },
+  {
+    "tags": [
+      "Defense",
+      "Guard",
+      "Senior Operator"
+    ],
+    "operators": [
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
           "Melee",
           "Guard",
           "Senior Operator"
@@ -13739,6 +14680,17 @@
           "Supporter",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -13803,6 +14755,17 @@
         "tags": [
           "Slow",
           "DPS",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
           "Ranged",
           "Supporter",
           "Senior Operator"
@@ -14012,6 +14975,29 @@
     "tags": [
       "Crowd-Control",
       "Senior Operator",
+      "Slow"
+    ],
+    "operators": [
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      5
+    ]
+  },
+  {
+    "tags": [
+      "Crowd-Control",
+      "Senior Operator",
       "Summon"
     ],
     "operators": [
@@ -14081,6 +15067,17 @@
           "DPS",
           "Melee",
           "Defender",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
           "Senior Operator"
         ]
       }
@@ -14993,6 +15990,17 @@
         ]
       },
       {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Dobermann",
         "rarity": 4,
         "tags": [
@@ -15061,6 +16069,29 @@
       }
     ],
     "guarantees": []
+  },
+  {
+    "tags": [
+      "Defense",
+      "Guard",
+      "Melee"
+    ],
+    "operators": [
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      5
+    ]
   },
   {
     "tags": [
@@ -15504,6 +16535,16 @@
         ]
       },
       {
+        "name": "Myrtle",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "Healing",
+          "Melee",
+          "Vanguard"
+        ]
+      },
+      {
         "name": "Fang",
         "rarity": 3,
         "tags": [
@@ -15573,6 +16614,28 @@
       }
     ],
     "guarantees": []
+  },
+  {
+    "tags": [
+      "Healing",
+      "Melee",
+      "Vanguard"
+    ],
+    "operators": [
+      {
+        "name": "Myrtle",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "Healing",
+          "Melee",
+          "Vanguard"
+        ]
+      }
+    ],
+    "guarantees": [
+      4
+    ]
   },
   {
     "tags": [
@@ -15727,6 +16790,28 @@
   {
     "tags": [
       "DP-Recovery",
+      "Healing",
+      "Melee"
+    ],
+    "operators": [
+      {
+        "name": "Myrtle",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "Healing",
+          "Melee",
+          "Vanguard"
+        ]
+      }
+    ],
+    "guarantees": [
+      4
+    ]
+  },
+  {
+    "tags": [
+      "DP-Recovery",
       "Melee",
       "Support"
     ],
@@ -15774,6 +16859,17 @@
           "DPS",
           "Melee",
           "Defender",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
           "Senior Operator"
         ]
       }
@@ -16274,6 +17370,15 @@
         ]
       },
       {
+        "name": "Sussurro",
+        "rarity": 4,
+        "tags": [
+          "Healing",
+          "Ranged",
+          "Medic"
+        ]
+      },
+      {
         "name": "Hibiscus",
         "rarity": 3,
         "tags": [
@@ -16584,6 +17689,17 @@
           "Supporter",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -16648,6 +17764,17 @@
         "tags": [
           "Slow",
           "DPS",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
           "Ranged",
           "Supporter",
           "Senior Operator"
@@ -16750,6 +17877,29 @@
     ],
     "guarantees": [
       4
+    ]
+  },
+  {
+    "tags": [
+      "Crowd-Control",
+      "Ranged",
+      "Slow"
+    ],
+    "operators": [
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      5
     ]
   },
   {
@@ -17276,6 +18426,29 @@
   {
     "tags": [
       "DPS",
+      "Defense",
+      "Guard"
+    ],
+    "operators": [
+      {
+        "name": "Astesia",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Defense",
+          "Melee",
+          "Guard",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      5
+    ]
+  },
+  {
+    "tags": [
+      "DPS",
       "Guard",
       "Slow"
     ],
@@ -17632,6 +18805,29 @@
   {
     "tags": [
       "Crowd-Control",
+      "Slow",
+      "Supporter"
+    ],
+    "operators": [
+      {
+        "name": "Glaucus",
+        "rarity": 5,
+        "tags": [
+          "Slow",
+          "Crowd-Control",
+          "Ranged",
+          "Supporter",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      5
+    ]
+  },
+  {
+    "tags": [
+      "Crowd-Control",
       "Summon",
       "Supporter"
     ],
@@ -17737,6 +18933,28 @@
       }
     ],
     "guarantees": []
+  },
+  {
+    "tags": [
+      "DP-Recovery",
+      "Healing",
+      "Vanguard"
+    ],
+    "operators": [
+      {
+        "name": "Myrtle",
+        "rarity": 4,
+        "tags": [
+          "DP-Recovery",
+          "Healing",
+          "Melee",
+          "Vanguard"
+        ]
+      }
+    ],
+    "guarantees": [
+      4
+    ]
   },
   {
     "tags": [

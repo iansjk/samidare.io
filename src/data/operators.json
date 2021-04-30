@@ -2022,7 +2022,7 @@
           },
           {
             "id": "31033",
-            "name": "Crystal Component",
+            "name": "Crystalline Component",
             "tier": 3,
             "quantity": 4,
             "sortId": 100042
@@ -2182,7 +2182,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 3,
                 "sortId": 100041
@@ -2306,7 +2306,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 4,
                 "sortId": 100040
@@ -28455,7 +28455,7 @@
           },
           {
             "id": "30145",
-            "name": "Crystal Electronic Unit",
+            "name": "Crystalline Electroassembly",
             "tier": 5,
             "quantity": 4,
             "sortId": 100040
@@ -28549,7 +28549,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 6,
                 "sortId": 100040
@@ -28622,7 +28622,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 5,
                 "sortId": 100041
@@ -28739,7 +28739,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 6,
                 "sortId": 100040
@@ -31309,7 +31309,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 4,
                 "sortId": 100040
@@ -41457,7 +41457,7 @@
           },
           {
             "id": "30145",
-            "name": "Crystal Electronic Unit",
+            "name": "Crystalline Electroassembly",
             "tier": 5,
             "quantity": 4,
             "sortId": 100040
@@ -41646,7 +41646,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 6,
                 "sortId": 100040
@@ -49003,7 +49003,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 3,
                 "sortId": 100041
@@ -49091,7 +49091,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 4,
                 "sortId": 100040
@@ -49920,7 +49920,7 @@
   },
   {
     "name": "Mudrock",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "rarity": 6,
     "skillLevels": [
       {
@@ -50125,7 +50125,7 @@
           },
           {
             "id": "30145",
-            "name": "Crystal Electronic Unit",
+            "name": "Crystalline Electroassembly",
             "tier": 5,
             "quantity": 4,
             "sortId": 100040
@@ -50147,7 +50147,7 @@
         "slot": 1,
         "skillId": "skcom_def_up[3]",
         "iconId": null,
-        "skillName": "防御力强化·γ型",
+        "skillName": "DEF Up γ",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -50226,7 +50226,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 4,
                 "sortId": 100041
@@ -50242,7 +50242,7 @@
         "slot": 2,
         "skillId": "skchr_mudrok_2",
         "iconId": null,
-        "skillName": "岩崩锤",
+        "skillName": "Crag Splitter",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -50256,7 +50256,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 4,
                 "sortId": 100041
@@ -50337,7 +50337,7 @@
         "slot": 3,
         "skillId": "skchr_mudrok_3",
         "iconId": null,
-        "skillName": "秽壤的血脉",
+        "skillName": "Bloodline of Desecrated Earth",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -51999,7 +51999,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 4,
                 "sortId": 100041
@@ -52123,7 +52123,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 6,
                 "sortId": 100040
@@ -53728,7 +53728,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 4,
                 "sortId": 100040
@@ -55875,7 +55875,7 @@
   },
   {
     "name": "Jackie",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "rarity": 4,
     "skillLevels": [
       {
@@ -56081,7 +56081,7 @@
         "slot": 1,
         "skillId": "skchr_jaksel_1",
         "iconId": null,
-        "skillName": "给你一拳！",
+        "skillName": "Grit Those Teeth!",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -56160,7 +56160,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 2,
                 "sortId": 100041
@@ -56176,7 +56176,7 @@
         "slot": 2,
         "skillId": "skchr_jaksel_2",
         "iconId": null,
-        "skillName": "全神贯注！",
+        "skillName": "Pay Close Attention!",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -56219,7 +56219,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 2,
                 "sortId": 100041
@@ -59032,7 +59032,7 @@
           },
           {
             "id": "31033",
-            "name": "Crystal Component",
+            "name": "Crystalline Component",
             "tier": 3,
             "quantity": 4,
             "sortId": 100042
@@ -59141,7 +59141,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 4,
                 "sortId": 100041
@@ -59603,7 +59603,7 @@
           },
           {
             "id": "31034",
-            "name": "Crystal Circuit",
+            "name": "Crystalline Circuit",
             "tier": 4,
             "quantity": 10,
             "sortId": 100041
@@ -59763,7 +59763,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 3,
                 "sortId": 100041
@@ -63824,7 +63824,7 @@
   },
   {
     "name": "Rosmontis",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "rarity": 6,
     "skillLevels": [
       {
@@ -64051,7 +64051,7 @@
         "slot": 1,
         "skillId": "skchr_rosmon_1",
         "iconId": null,
-        "skillName": "思维膨大",
+        "skillName": "Expanded Cognition",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -64123,7 +64123,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 6,
                 "sortId": 100040
@@ -64146,7 +64146,7 @@
         "slot": 2,
         "skillId": "skchr_rosmon_2",
         "iconId": null,
-        "skillName": "末梢阻断",
+        "skillName": "Nociceptor Inhibition",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -64241,7 +64241,7 @@
         "slot": 3,
         "skillId": "skchr_rosmon_3",
         "iconId": null,
-        "skillName": "“如你所愿”",
+        "skillName": "“As You Wish”",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -64313,7 +64313,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 6,
                 "sortId": 100040
@@ -67887,7 +67887,7 @@
   },
   {
     "name": "Whisperain",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "rarity": 5,
     "skillLevels": [
       {
@@ -68085,7 +68085,7 @@
           },
           {
             "id": "31033",
-            "name": "Crystal Component",
+            "name": "Crystalline Component",
             "tier": 3,
             "quantity": 13,
             "sortId": 100042
@@ -68100,7 +68100,7 @@
         "slot": 1,
         "skillId": "skchr_whispr_1",
         "iconId": null,
-        "skillName": "定向诊断",
+        "skillName": "Oriented Diagnosis",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -68179,7 +68179,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 3,
                 "sortId": 100041
@@ -68195,7 +68195,7 @@
         "slot": 2,
         "skillId": "skchr_whispr_2",
         "iconId": null,
-        "skillName": "痛觉抑制",
+        "skillName": "Pain Suppression",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -68913,7 +68913,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 3,
                 "sortId": 100041
@@ -69462,7 +69462,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 2,
                 "sortId": 100040
@@ -69603,7 +69603,7 @@
           },
           {
             "id": "31033",
-            "name": "Crystal Component",
+            "name": "Crystalline Component",
             "tier": 3,
             "quantity": 3,
             "sortId": 100042
@@ -69998,7 +69998,7 @@
           },
           {
             "id": "31033",
-            "name": "Crystal Component",
+            "name": "Crystalline Component",
             "tier": 3,
             "quantity": 6,
             "sortId": 100042
@@ -70282,7 +70282,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 6,
                 "sortId": 100040
@@ -71183,7 +71183,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 4,
                 "sortId": 100040
@@ -71528,7 +71528,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 3,
                 "sortId": 100041
@@ -71586,7 +71586,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 4,
                 "sortId": 100040
@@ -71879,7 +71879,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 4,
                 "sortId": 100041
@@ -72010,7 +72010,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 5,
                 "sortId": 100041
@@ -72040,7 +72040,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 4,
                 "sortId": 100041
@@ -72098,7 +72098,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 6,
                 "sortId": 100040
@@ -72141,7 +72141,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 4,
                 "sortId": 100041
@@ -72199,7 +72199,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 4,
                 "sortId": 100040
@@ -72265,7 +72265,7 @@
               },
               {
                 "id": "31034",
-                "name": "Crystal Circuit",
+                "name": "Crystalline Circuit",
                 "tier": 4,
                 "quantity": 4,
                 "sortId": 100041
@@ -72294,7 +72294,7 @@
               },
               {
                 "id": "30145",
-                "name": "Crystal Electronic Unit",
+                "name": "Crystalline Electroassembly",
                 "tier": 5,
                 "quantity": 4,
                 "sortId": 100040

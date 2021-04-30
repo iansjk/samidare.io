@@ -27,9 +27,6 @@ const operatorNameOverride: Record<string, string> = {
 };
 
 const itemNameOverride: Record<string, string> = {
-  31033: "Crystal Component",
-  31034: "Crystal Circuit",
-  30145: "Crystal Electronic Unit",
 };
 
 export function getOperatorName(operatorId: string): string | null {
