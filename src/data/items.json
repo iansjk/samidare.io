@@ -153,7 +153,7 @@
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "PR-A-1",
-        "itemSanityCost": 35.44,
+        "itemSanityCost": 35.39,
         "dropRate": 0.5
       }
     }
@@ -176,7 +176,7 @@
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-A-2",
-        "itemSanityCost": 72.97,
+        "itemSanityCost": 72.89,
         "dropRate": 0.5
       }
     }
@@ -221,7 +221,7 @@
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "PR-B-1",
-        "itemSanityCost": 37.45,
+        "itemSanityCost": 37.41,
         "dropRate": 0.5
       }
     }
@@ -244,7 +244,7 @@
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-B-2",
-        "itemSanityCost": 72,
+        "itemSanityCost": 72.05,
         "dropRate": 0.5
       }
     }
@@ -289,7 +289,7 @@
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "PR-B-1",
-        "itemSanityCost": 34.65,
+        "itemSanityCost": 34.69,
         "dropRate": 0.5
       }
     }
@@ -312,7 +312,7 @@
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-B-2",
-        "itemSanityCost": 72,
+        "itemSanityCost": 71.95,
         "dropRate": 0.5
       }
     }
@@ -357,7 +357,7 @@
       "leastSanity": {
         "stageSanityCost": 18,
         "stageName": "PR-A-1",
-        "itemSanityCost": 36.58,
+        "itemSanityCost": 36.63,
         "dropRate": 0.5
       }
     }
@@ -380,7 +380,7 @@
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-A-2",
-        "itemSanityCost": 71.05,
+        "itemSanityCost": 71.13,
         "dropRate": 0.5
       }
     }
@@ -912,7 +912,7 @@
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "7-4",
-        "itemSanityCost": 32.32,
+        "itemSanityCost": 32.33,
         "dropRate": 0.56
       }
     }
@@ -1278,7 +1278,7 @@
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "7-15",
-        "itemSanityCost": 54.18,
+        "itemSanityCost": 54.17,
         "dropRate": 0.33
       }
     }
@@ -1386,7 +1386,7 @@
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "4-4",
-        "itemSanityCost": 346.56,
+        "itemSanityCost": 346.58,
         "dropRate": 0.05
       }
     }
@@ -1685,6 +1685,42 @@
     ]
   },
   {
+    "id": "30145",
+    "name": "Crystalline Electroassembly",
+    "tier": 5,
+    "sortId": 100040,
+    "ingredients": [
+      {
+        "id": "4001",
+        "name": "LMD",
+        "tier": 4,
+        "quantity": 400,
+        "sortId": 10004
+      },
+      {
+        "id": "31034",
+        "name": "Crystalline Circuit",
+        "tier": 4,
+        "quantity": 1,
+        "sortId": 100041
+      },
+      {
+        "id": "31014",
+        "name": "Polymerized Gel",
+        "tier": 4,
+        "quantity": 2,
+        "sortId": 100036
+      },
+      {
+        "id": "31024",
+        "name": "Incandescent Alloy Block",
+        "tier": 4,
+        "quantity": 1,
+        "sortId": 100038
+      }
+    ]
+  },
+  {
     "id": "31013",
     "name": "Coagulating Gel",
     "tier": 3,
@@ -1757,7 +1793,7 @@
       "mostEfficient": {
         "stageSanityCost": 15,
         "stageName": "S3-6",
-        "itemSanityCost": 37.88,
+        "itemSanityCost": 37.87,
         "dropRate": 0.4
       }
     }
@@ -1803,6 +1839,64 @@
         "stageName": "R8-7",
         "itemSanityCost": 405.73,
         "dropRate": 0.04
+      }
+    }
+  },
+  {
+    "id": "31033",
+    "name": "Crystalline Component",
+    "tier": 3,
+    "sortId": 100042,
+    "stages": {
+      "leastSanity": {
+        "stageSanityCost": 21,
+        "stageName": "R8-11",
+        "itemSanityCost": 38.4,
+        "dropRate": 0.55
+      }
+    }
+  },
+  {
+    "id": "31034",
+    "name": "Crystalline Circuit",
+    "tier": 4,
+    "sortId": 100041,
+    "ingredients": [
+      {
+        "id": "4001",
+        "name": "LMD",
+        "tier": 4,
+        "quantity": 300,
+        "sortId": 10004
+      },
+      {
+        "id": "31033",
+        "name": "Crystalline Component",
+        "tier": 3,
+        "quantity": 2,
+        "sortId": 100042
+      },
+      {
+        "id": "31013",
+        "name": "Coagulating Gel",
+        "tier": 3,
+        "quantity": 1,
+        "sortId": 100037
+      },
+      {
+        "id": "31023",
+        "name": "Incandescent Alloy",
+        "tier": 3,
+        "quantity": 1,
+        "sortId": 100039
+      }
+    ],
+    "stages": {
+      "leastSanity": {
+        "stageSanityCost": 18,
+        "stageName": "S5-9",
+        "itemSanityCost": 681,
+        "dropRate": 0.03
       }
     }
   },
