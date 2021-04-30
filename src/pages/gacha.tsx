@@ -88,7 +88,7 @@ const Gacha: React.FC = () => {
 
   const toPercentage = (p: number) => {
     if (p === 0) {
-      return "0.000%";
+      return "0%";
     } else {
       const percentage = p * 100;
       if (percentage > 100 - 1e-6) {
