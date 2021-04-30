@@ -79,7 +79,6 @@ const RecruitableOperatorChip = React.memo(function RecruitableOperatorChip({
           height={24}
         >
           <Transformation width={24} height={24} crop="pad" />
-          <Transformation effect="sharpen" />
           <Transformation quality="auto" fetchFormat="auto" />
         </Image>
       </Hidden>
