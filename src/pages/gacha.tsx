@@ -214,7 +214,9 @@ const Gacha: React.FC = () => {
                     <Grid item>
                       <Box clone pl={2}>
                         <Typography variant="h6">
-                          {toPercentage((1 - finalOdds[0][0]) / 2)}
+                          {toPercentage(
+                            1 - finalOdds[0].reduce((a, b) => a + b)
+                          )}
                         </Typography>
                       </Box>
                     </Grid>
