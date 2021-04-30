@@ -106,17 +106,18 @@ const WHITELISTED_ITEMS = new Set([
 const EFFICIENT_STAGES = [
   "wk_fly_5", // "CA-5",
   "main_01-07", // "1-7",
+  "main_04-02", // "4-2"
   "main_04-04", // "4-4",
-  "main_04-05", // "4-5",
   "main_04-07", // "4-7",
+  "main_04-08", // "4-8"
   "main_04-09", // "4-9",
-  "main_05-02", // "5-2",
-  "main_05-05", // "5-5",
-  "sub_03-3-1", // "S3-6",
+  "sub_04-1-1", // "S4-1"
   "main_07-03", // "7-4",
-  "main_07-06", // "7-8",
   "main_07-13", // "7-15",
   "main_07-15", // "7-17",
+  "main_08-07", // "R8-7",
+  "main_08-16", // "JT8-2",
+  "main_08-17", // JT8-3
 ];
 
 const PENGUIN_STATS_MATRIX_URL =
