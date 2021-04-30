@@ -246,7 +246,6 @@ const Gacha: React.FC = () => {
                           Chance of obtaining{" "}
                           <strong>
                             {i === 6 ? "6 or more" : `exactly ${i}`}
-
                             {bannerType !== "event" && " of any"}
                           </strong>{" "}
                           rate-up
@@ -295,8 +294,18 @@ const chanceOneOfEach = (finalOdds: number[][]) => {
 
 const chanceMultiRateups = (finalOdds: number[][], numRateups: number) => {
   let chance = 0;
-  for (let i = 0; i <= numRateups; i++) {
-    chance += finalOdds[i][numRateups - i];
+  if (numRateups === 6) {
+    // we're calculating 6+, not "exactly 6"
+    chance =
+      1 -
+      Array(6)
+        .fill(0)
+        .map((_, i) => chanceMultiRateups(finalOdds, i))
+        .reduce((a, b) => a + b);
+  } else {
+    for (let i = 0; i <= numRateups; i++) {
+      chance += finalOdds[i][numRateups - i];
+    }
   }
   return chance;
 };
