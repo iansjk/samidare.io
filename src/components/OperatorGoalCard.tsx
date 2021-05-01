@@ -8,11 +8,9 @@ import {
   Typography,
   useTheme,
   useMediaQuery,
-  Hidden,
 } from "@material-ui/core";
-import React, { useState } from "react";
+import React from "react";
 import CancelIcon from "@material-ui/icons/Cancel";
-import { Image, Transformation } from "cloudinary-react";
 import ItemStack from "./ItemStack";
 import OperatorGoalIconography from "./OperatorGoalIconography";
 import {
@@ -52,7 +50,6 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
   props: OperatorGoalCardProps
 ): React.ReactElement {
   const { goal, skill, onDelete } = props;
-  const [operatorImageUrl, setOperatorImageUrl] = useState("");
   const classes = useStyles();
   const theme = useTheme();
   const isXSmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
@@ -70,6 +67,10 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
   } else if (isEliteGoal(goal)) {
     eliteLevel = goal.eliteLevel;
   }
+  const operatorImageUrl = `https://res.cloudinary.com/samidare/image/upload/e_sharpen/f_auto,q_auto/v1/${getOperatorImagePublicId(
+    goal.operatorName,
+    eliteLevel
+  )}`;
   const goalCardStyle = {
     backgroundImage: `linear-gradient(to right, transparent, ${theme.palette.background.paper} ${gradientEnd}), url("${operatorImageUrl}")`,
     paddingLeft: shouldTextBeCollapsed ? "2rem" : "3rem",
@@ -77,25 +78,8 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
   };
   const handleClick = React.useCallback(() => onDelete(goal), [goal, onDelete]);
 
-  const callbackRef = (ref) => {
-    if (ref) {
-      setOperatorImageUrl(ref.getAttributes().src);
-    }
-  };
-
   return (
     <Box mb={1} position="relative">
-      <Hidden xlDown implementation="css">
-        <Image
-          ref={callbackRef}
-          cloudName={process.env.GATSBY_CLOUDINARY_CLOUD_NAME}
-          publicId={getOperatorImagePublicId(goal.operatorName, eliteLevel)}
-          alt=""
-        >
-          <Transformation effect="sharpen" />
-          <Transformation quality="auto" fetchFormat="auto" />
-        </Image>
-      </Hidden>
       <Card className={classes.goalCard} style={goalCardStyle}>
         <CardContent>
           <Grid container className={classes.goalOuterGridContainer}>
