@@ -1,6 +1,5 @@
-import { Chip, Avatar, makeStyles, Tooltip, Hidden } from "@material-ui/core";
-import { Image, Transformation } from "cloudinary-react";
-import React, { useState } from "react";
+import { Chip, Avatar, makeStyles, Tooltip } from "@material-ui/core";
+import React from "react";
 import { getOperatorImagePublicId } from "../utils";
 
 export interface RecruitableOperator {
@@ -42,13 +41,6 @@ const RecruitableOperatorChip = React.memo(function RecruitableOperatorChip({
   tags,
 }: RecruitableOperator): React.ReactElement {
   const chipClasses = useChipStyles();
-  const [operatorImageUrl, setOperatorImageUrl] = useState("");
-
-  const callbackRef = (ref) => {
-    if (ref) {
-      setOperatorImageUrl(ref.getAttributes().src);
-    }
-  };
 
   return (
     <>
@@ -65,23 +57,17 @@ const RecruitableOperatorChip = React.memo(function RecruitableOperatorChip({
             root: chipClasses.root,
             label: chipClasses.label,
           }}
-          avatar={<Avatar alt="" src={operatorImageUrl} />}
+          avatar={
+            <Avatar
+              alt=""
+              src={`https://res.cloudinary.com/samidare/image/upload/c_pad,h_24,w_24/f_auto,q_auto/v1/${getOperatorImagePublicId(
+                name
+              )}`}
+            />
+          }
           label={name}
         />
       </Tooltip>
-      <Hidden xlDown implementation="css" key="imageProvider">
-        <Image
-          ref={callbackRef}
-          cloudName={process.env.GATSBY_CLOUDINARY_CLOUD_NAME}
-          publicId={getOperatorImagePublicId(name)}
-          alt=""
-          width={24}
-          height={24}
-        >
-          <Transformation width={24} height={24} crop="pad" />
-          <Transformation quality="auto" fetchFormat="auto" />
-        </Image>
-      </Hidden>
     </>
   );
 });
