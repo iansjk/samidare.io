@@ -1,7 +1,6 @@
 import { Box, makeStyles } from "@material-ui/core";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import React from "react";
-import { Image, Transformation } from "cloudinary-react";
 import slugify from "../utils";
 import { Item } from "../types";
 import tier1 from "../data/images/tier1.png";

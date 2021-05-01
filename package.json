@@ -23,7 +23,6 @@
     "@material-ui/lab": "^4.0.0-alpha.57",
     "axios": "^0.21.1",
     "cloudinary": "^1.23.0",
-    "cloudinary-react": "^1.6.8",
     "clsx": "^1.1.1",
     "dotenv": "^8.2.0",
     "eslint-plugin-prettier": "^3.3.0",
