@@ -1937,43 +1937,81 @@
     "sortId": 400001
   },
   {
-    "id": "31033",
+    "id": "Crystal Component",
     "name": "Crystal Component",
     "tier": 3,
-    "sortId": 100042,
-    "stages": {
-      "mostEfficient": {
-        "stageSanityCost": 21,
-        "stageName": "R8-11",
-        "itemSanityCost": 38.4,
-        "dropRate": 0.55
-      }
-    }
+    "sortId": 100042
   },
   {
-    "id": "31034",
+    "id": "Crystal Circuit",
     "name": "Crystal Circuit",
     "tier": 4,
     "sortId": 100041,
-    "stages": {
-      "leastSanity": {
-        "stageSanityCost": 18,
-        "stageName": "S5-9",
-        "itemSanityCost": 681,
-        "dropRate": 0.03
+    "ingredients": [
+      {
+        "id": "4001",
+        "name": "LMD",
+        "tier": 4,
+        "quantity": 300,
+        "sortId": 10004
       },
-      "mostEfficient": {
-        "stageSanityCost": 21,
-        "stageName": "R8-11",
-        "itemSanityCost": 685.26,
-        "dropRate": 0.03
+      {
+        "id": "31033",
+        "name": "Crystalline Component",
+        "tier": 3,
+        "quantity": 2,
+        "sortId": 100042
+      },
+      {
+        "id": "31013",
+        "name": "Coagulating Gel",
+        "tier": 3,
+        "quantity": 1,
+        "sortId": 100037
+      },
+      {
+        "id": "31023",
+        "name": "Incandescent Alloy",
+        "tier": 3,
+        "quantity": 1,
+        "sortId": 100039
       }
-    }
+    ]
   },
   {
-    "id": "30145",
+    "id": "Crystal Electronic Unit",
     "name": "Crystal Electronic Unit",
     "tier": 5,
-    "sortId": 100040
+    "sortId": 100040,
+    "ingredients": [
+      {
+        "id": "4001",
+        "name": "LMD",
+        "tier": 4,
+        "quantity": 400,
+        "sortId": 10004
+      },
+      {
+        "id": "31034",
+        "name": "Crystalline Circuit",
+        "tier": 4,
+        "quantity": 1,
+        "sortId": 100041
+      },
+      {
+        "id": "31014",
+        "name": "Polymerized Gel",
+        "tier": 4,
+        "quantity": 2,
+        "sortId": 100036
+      },
+      {
+        "id": "31024",
+        "name": "Incandescent Alloy Block",
+        "tier": 4,
+        "quantity": 1,
+        "sortId": 100038
+      }
+    ]
   }
 ]

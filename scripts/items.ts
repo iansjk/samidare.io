@@ -173,10 +173,9 @@ const crystalItems = {
 Object.entries(crystalItems).map(([oldName, newName]) => {
   const newEntry = items.find((item) => item.name === newName)!;
   items.push({
-    id: newEntry.id,
+    ...newEntry,
     name: oldName,
-    tier: newEntry.tier,
-    sortId: newEntry.sortId
+    id: oldName,
   })
 });
 
