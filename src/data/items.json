@@ -108,7 +108,7 @@
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-D-2",
-        "itemSanityCost": 71.32,
+        "itemSanityCost": 71.17,
         "dropRate": 0.5
       }
     }
@@ -176,7 +176,7 @@
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-A-2",
-        "itemSanityCost": 72.82,
+        "itemSanityCost": 72.89,
         "dropRate": 0.5
       }
     }
@@ -244,7 +244,7 @@
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-B-2",
-        "itemSanityCost": 71.95,
+        "itemSanityCost": 71.71,
         "dropRate": 0.5
       }
     }
@@ -312,7 +312,7 @@
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-B-2",
-        "itemSanityCost": 72.05,
+        "itemSanityCost": 72.29,
         "dropRate": 0.5
       }
     }
@@ -380,7 +380,7 @@
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-A-2",
-        "itemSanityCost": 71.2,
+        "itemSanityCost": 71.13,
         "dropRate": 0.5
       }
     }
@@ -516,7 +516,7 @@
       "leastSanity": {
         "stageSanityCost": 36,
         "stageName": "PR-D-2",
-        "itemSanityCost": 72.7,
+        "itemSanityCost": 72.85,
         "dropRate": 0.5
       }
     }
@@ -788,7 +788,7 @@
       "leastSanity": {
         "stageSanityCost": 12,
         "stageName": "2-5",
-        "itemSanityCost": 32.67,
+        "itemSanityCost": 32.68,
         "dropRate": 0.37
       },
       "mostEfficient": {
@@ -1092,7 +1092,7 @@
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "S4-1",
-        "itemSanityCost": 535.56,
+        "itemSanityCost": 535.58,
         "dropRate": 0.03
       }
     }
@@ -1284,7 +1284,7 @@
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "7-15",
-        "itemSanityCost": 54.17,
+        "itemSanityCost": 54.16,
         "dropRate": 0.33
       }
     }
@@ -1328,7 +1328,7 @@
       "leastSanity": {
         "stageSanityCost": 21,
         "stageName": "4-10",
-        "itemSanityCost": 682.19,
+        "itemSanityCost": 682.85,
         "dropRate": 0.03
       }
     }
@@ -1348,7 +1348,7 @@
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "4-4",
-        "itemSanityCost": 48.52,
+        "itemSanityCost": 48.53,
         "dropRate": 0.37
       }
     }
@@ -1392,7 +1392,7 @@
       "mostEfficient": {
         "stageSanityCost": 18,
         "stageName": "4-4",
-        "itemSanityCost": 346.58,
+        "itemSanityCost": 346.66,
         "dropRate": 0.05
       }
     }
@@ -1520,7 +1520,7 @@
       "leastSanity": {
         "stageSanityCost": 21,
         "stageName": "7-17",
-        "itemSanityCost": 433.17,
+        "itemSanityCost": 433.32,
         "dropRate": 0.05
       },
       "mostEfficient": {
@@ -1747,7 +1747,7 @@
       "mostEfficient": {
         "stageSanityCost": 21,
         "stageName": "JT8-2",
-        "itemSanityCost": 63.63,
+        "itemSanityCost": 63.59,
         "dropRate": 0.33
       }
     }
@@ -1797,7 +1797,7 @@
       "mostEfficient": {
         "stageSanityCost": 21,
         "stageName": "JT8-2",
-        "itemSanityCost": 453.93,
+        "itemSanityCost": 454.4,
         "dropRate": 0.05
       }
     }
@@ -1875,7 +1875,7 @@
       "mostEfficient": {
         "stageSanityCost": 21,
         "stageName": "R8-11",
-        "itemSanityCost": 38.39,
+        "itemSanityCost": 38.4,
         "dropRate": 0.55
       }
     }
@@ -1925,7 +1925,7 @@
       "mostEfficient": {
         "stageSanityCost": 21,
         "stageName": "R8-11",
-        "itemSanityCost": 684.99,
+        "itemSanityCost": 685.26,
         "dropRate": 0.03
       }
     }
@@ -1935,5 +1935,45 @@
     "name": "Chip Catalyst",
     "tier": 4,
     "sortId": 400001
+  },
+  {
+    "id": "31033",
+    "name": "Crystal Component",
+    "tier": 3,
+    "sortId": 100042,
+    "stages": {
+      "mostEfficient": {
+        "stageSanityCost": 21,
+        "stageName": "R8-11",
+        "itemSanityCost": 38.4,
+        "dropRate": 0.55
+      }
+    }
+  },
+  {
+    "id": "31034",
+    "name": "Crystal Circuit",
+    "tier": 4,
+    "sortId": 100041,
+    "stages": {
+      "leastSanity": {
+        "stageSanityCost": 18,
+        "stageName": "S5-9",
+        "itemSanityCost": 681,
+        "dropRate": 0.03
+      },
+      "mostEfficient": {
+        "stageSanityCost": 21,
+        "stageName": "R8-11",
+        "itemSanityCost": 685.26,
+        "dropRate": 0.03
+      }
+    }
+  },
+  {
+    "id": "30145",
+    "name": "Crystal Electronic Unit",
+    "tier": 5,
+    "sortId": 100040
   }
 ]

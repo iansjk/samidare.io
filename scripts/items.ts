@@ -164,6 +164,22 @@ const items = Object.keys(cnItemTable)
     return baseObj;
   });
 
+const crystalItems = {
+  "Crystal Component": "Crystalline Component",
+  "Crystal Circuit": "Crystalline Circuit",
+  "Crystal Electronic Unit": "Crystalline Electroassembly"
+};
+
+Object.entries(crystalItems).map(([oldName, newName]) => {
+  const newEntry = items.find((item) => item.name === newName)!;
+  items.push({
+    id: newEntry.id,
+    name: oldName,
+    tier: newEntry.tier,
+    sortId: newEntry.sortId
+  })
+});
+
 interface PenguinStatsMatrixCell {
   stageId: string;
   itemId: string;
