@@ -1,6 +1,5 @@
 import { Box } from "@material-ui/core";
 import React from "react";
-import { Image, Transformation } from "cloudinary-react";
 import {
   EliteGoal,
   isEliteGoal,
@@ -64,17 +63,9 @@ function OperatorGoalIconography(
     const iconFilename = skill?.iconId ?? skill?.skillId;
     return (
       <Box mr={0.5}>
-        <Image
-          cloudName={process.env.GATSBY_CLOUDINARY_CLOUD_NAME}
-          publicId={`/arknights/skills/${iconFilename}`}
-          alt={skill?.skillName}
-          width={30}
-          height={30}
-        >
-          <Transformation width={30} height={30} crop="fit" />
-          <Transformation effect="sharpen" />
-          <Transformation quality="auto" fetchFormat="auto" />
-        </Image>
+        <img
+          src={`https://res.cloudinary.com/samidare/image/upload/c_fit,h_30,w_30/f_auto,q_auto/e_sharpen/v1/arknights/skills/${iconFilename}`}
+        />
         <img
           src={masteryImage(goal)}
           alt={`Mastery ${goal.masteryLevel}`}
