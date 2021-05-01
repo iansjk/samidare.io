@@ -70,17 +70,12 @@ const ItemBase = React.memo(function ItemBase({
   return (
     <Box position="relative">
       <div className={classes.itemBackground} style={itemBackgroundStyle}>
-        <Image
-          cloudName={process.env.GATSBY_CLOUDINARY_CLOUD_NAME}
-          publicId={`/arknights/items/${slugify(name)}`}
+        <img
+          src={`https://res.cloudinary.com/samidare/image/upload/c_pad,h_${size},w_${size}/e_sharpen/f_auto,q_auto/v1/arknights/items/${slugify(
+            name
+          )}`}
           alt={name}
-          width={size}
-          height={size}
-        >
-          <Transformation width={size} height={size} crop="pad" />
-          <Transformation effect="sharpen" />
-          <Transformation quality="auto" fetchFormat="auto" />
-        </Image>
+        />
       </div>
       {complete && (
         <Box
