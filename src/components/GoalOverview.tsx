@@ -20,6 +20,7 @@ import ItemNeeded from "./ItemNeeded";
 import OperatorGoalCard from "./OperatorGoalCard";
 import lmdIcon from "../data/images/lmd.png";
 import usePersistence from "../hooks/usePersistence";
+import { Virtuoso } from "react-virtuoso";
 
 const useStyles = makeStyles((theme) => ({
   lmdIcon: {
@@ -345,16 +346,18 @@ const GoalOverview = React.memo(function GoalOverview(
               </CardContent>
             </Card>
           </Box>
-          <NoSsr>
-            {goals.map((goal) => (
+          <Virtuoso
+            useWindowScroll
+            data={goals}
+            itemContent={(_, goal) => (
               <OperatorGoalCard
                 key={`${goal.operatorName}${goal.goalName}`}
                 goal={goal}
                 skill={goal.skill}
                 onDelete={onGoalDeleted}
               />
-            ))}
-          </NoSsr>
+            )}
+          />
         </>
       </Grid>
     </Grid>
