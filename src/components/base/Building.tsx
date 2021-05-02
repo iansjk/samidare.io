@@ -32,12 +32,7 @@ const LevelIndicator: React.FC<{ color: string }> = (props) => {
 
   return (
     <Box mr="1px">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="11"
-        height="26"
-        viewBox="0 0 11 26.4"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 11 26.4">
         <path d="M5.5 0.7 0.5 5.7v15l5 5 5-5V5.7Z" style={{ fill: color }} />
       </svg>
     </Box>
@@ -63,7 +58,7 @@ const Building: React.FC<Props> = (props) => {
         />
       )}
       <Paper elevation={3} className={classes.facilityInfo}>
-        <Box display="flex">
+        <Box display="flex" alignItems="flex-end">
           <Box mr={0.5}>
             <Typography variant="subtitle1">{name}</Typography>
           </Box>
