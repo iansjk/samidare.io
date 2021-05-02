@@ -1,15 +1,7 @@
 import React from "react";
-import Building from "./Building";
+import Building, { SingleSlotBuildingProps } from "./Building";
 
-const Office: React.FC<{ level: number; operator?: string }> = ({
-  level,
-  operator,
-}) => (
-  <Building
-    name="Office"
-    level={level}
-    slots={1}
-    operators={operator ? [operator] : undefined}
-  />
+const Office: React.FC<SingleSlotBuildingProps> = (props) => (
+  <Building name="Office" slots={1} {...props} />
 );
 export default Office;

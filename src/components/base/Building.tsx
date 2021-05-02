@@ -53,16 +53,24 @@ export interface BuildingProps {
   operators?: string[];
 }
 
+export interface SingleSlotBuildingProps {
+  level: number;
+  operator?: string;
+}
+
 interface BuildingBaseProps {
   name: string;
   slots?: number;
   color?: string;
 }
-const Building: React.FC<BuildingProps & BuildingBaseProps> = (props) => {
-  const { level, name, color } = props;
+
+const Building: React.FC<
+  SingleSlotBuildingProps & BuildingProps & BuildingBaseProps
+> = (props) => {
+  const { level, name, color, operator } = props;
   const slots = props.slots ?? props.level;
   const classes = useStyles();
-  const operators = props.operators ?? [];
+  const operators = operator ? [operator] : props.operators ?? [];
   operators.length = slots;
 
   return (
