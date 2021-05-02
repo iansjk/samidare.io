@@ -20,7 +20,7 @@ import ItemNeeded from "./ItemNeeded";
 import OperatorGoalCard from "./OperatorGoalCard";
 import lmdIcon from "../data/images/lmd.png";
 import usePersistence from "../hooks/usePersistence";
-import { Virtuoso } from "react-virtuoso";
+import { Virtuoso, VirtuosoGrid } from "react-virtuoso";
 
 const useStyles = makeStyles((theme) => ({
   lmdIcon: {
@@ -219,57 +219,15 @@ const GoalOverview = React.memo(function GoalOverview(
     [setItemsToCraft, setMaterialsOwned]
   );
 
-  function renderItemsNeeded(
-    objectEntries: [string, number][]
-  ): React.ReactElement[] {
-    return objectEntries
-      .sort(
-        ([nameA, _], [nameB, __]) =>
-          (isComplete[nameA] ? 1 : 0) - (isComplete[nameB] ? 1 : 0) ||
-          items[nameB].tier - items[nameA].tier ||
-          items[nameA].sortId - items[nameB].sortId ||
-          nameA.localeCompare(nameB)
-      )
-      .map(([name, needed]) => {
-        const item = items[name];
-        const inner = (
-          <ItemNeeded
-            name={name}
-            tier={item.tier}
-            ingredients={item.ingredients}
-            size={isXSmallScreen ? 75 : undefined}
-            needed={needed}
-            owned={
-              !Object.prototype.hasOwnProperty.call(materialsOwned, name)
-                ? 0
-                : materialsOwned[name]
-            }
-            complete={isComplete[name]}
-            crafting={Object.prototype.hasOwnProperty.call(itemsToCraft, name)}
-            ingredientFor={ingredientMapping[name]}
-            onIncrement={handleIncrementOwned}
-            onDecrement={handleDecrementOwned}
-            onChange={handleChangeOwned}
-            onCraftingToggle={handleCraftingToggle}
-            onCraftOne={handleCraftOne}
-          />
-        );
-        const outer = isLargeScreen ? (
-          <Box key={name} data-testid={name} width="20%" px={0.5} mt={1}>
-            {inner}
-          </Box>
-        ) : (
-          <Grid key={name} data-testid={name} item xs={4} sm={3} md={3}>
-            {inner}
-          </Grid>
-        );
-        return outer;
-      });
-  }
-
-  const requiredMaterials = Object.entries(materialsNeeded).filter(
-    ([name, _]) => name !== "LMD"
-  );
+  const requiredMaterials = Object.entries(materialsNeeded)
+    .filter(([name, _]) => name !== "LMD")
+    .sort(
+      ([nameA, _], [nameB, __]) =>
+        (isComplete[nameA] ? 1 : 0) - (isComplete[nameB] ? 1 : 0) ||
+        items[nameB].tier - items[nameA].tier ||
+        items[nameA].sortId - items[nameB].sortId ||
+        nameA.localeCompare(nameB)
+    );
 
   return (
     <Grid container spacing={2}>
@@ -314,9 +272,55 @@ const GoalOverview = React.memo(function GoalOverview(
                 </Grid>
               </Grid>
             </Box>
-            <Grid container spacing={1}>
-              <NoSsr>{renderItemsNeeded(requiredMaterials)}</NoSsr>
-            </Grid>
+            <VirtuosoGrid
+              overscan={{ main: 171, reverse: 171 }}
+              useWindowScroll
+              totalCount={requiredMaterials.length}
+              components={{
+                Item: ({ children }) => (
+                  <Grid item xs={3}>
+                    {children}
+                  </Grid>
+                ),
+                List: React.forwardRef(({ children }, listRef) => (
+                  <Grid container spacing={1} ref={listRef}>
+                    {children}
+                  </Grid>
+                )),
+              }}
+              itemContent={(i) => {
+                const [name, needed] = requiredMaterials[i];
+                const item = items[name];
+                return (
+                  <ItemNeeded
+                    name={name}
+                    tier={item.tier}
+                    ingredients={item.ingredients}
+                    size={isXSmallScreen ? 75 : undefined}
+                    needed={needed}
+                    owned={
+                      !Object.prototype.hasOwnProperty.call(
+                        materialsOwned,
+                        name
+                      )
+                        ? 0
+                        : materialsOwned[name]
+                    }
+                    complete={isComplete[name]}
+                    crafting={Object.prototype.hasOwnProperty.call(
+                      itemsToCraft,
+                      name
+                    )}
+                    ingredientFor={ingredientMapping[name]}
+                    onIncrement={handleIncrementOwned}
+                    onDecrement={handleDecrementOwned}
+                    onChange={handleChangeOwned}
+                    onCraftingToggle={handleCraftingToggle}
+                    onCraftOne={handleCraftOne}
+                  />
+                );
+              }}
+            />
           </CardContent>
         </Card>
       </Grid>
@@ -348,6 +352,7 @@ const GoalOverview = React.memo(function GoalOverview(
           </Box>
           <Virtuoso
             useWindowScroll
+            overscan={{ main: 107, reverse: 107 }}
             data={goals}
             itemContent={(_, goal) => (
               <OperatorGoalCard
