@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Avatar,
   Box,
   createStyles,
   makeStyles,
@@ -41,14 +42,16 @@ const LevelIndicator: React.FC<{ color: string }> = (props) => {
 interface Props {
   level: number;
   name: string;
+  slots?: number;
   color?: string;
 }
 const Building: React.FC<Props> = (props) => {
   const { level, name, color } = props;
+  const slots = props.slots ?? props.level;
   const classes = useStyles();
 
   return (
-    <Box whiteSpace="nowrap" display="flex" mb={1} position="relative">
+    <Box whiteSpace="nowrap" display="flex" m={1} position="relative">
       {LEFT_SIDE_BUILDING_NAMES.has(name) && (
         <Paper
           elevation={3}
@@ -56,18 +59,35 @@ const Building: React.FC<Props> = (props) => {
           style={{ backgroundColor: color }}
         />
       )}
-      <Paper elevation={3} className={classes.facilityInfo}>
-        <Box display="flex" alignItems="flex-end">
-          <Box mr={0.5}>
-            <Typography variant="subtitle1">{name}</Typography>
+      <Box
+        clone
+        display="flex"
+        alignItems="center"
+        maxWidth={270}
+        flexGrow="1"
+        flexWrap="wrap"
+      >
+        <Paper elevation={3} className={classes.facilityInfo}>
+          <Box display="flex" alignItems="flex-end">
+            <Box mr={0.5}>
+              <Typography variant="subtitle1">{name}</Typography>
+            </Box>
+            {Array(level)
+              .fill(0)
+              .map((_, i) => (
+                <LevelIndicator key={i} color={color || "#ffffff"} />
+              ))}
           </Box>
-          {Array(level)
-            .fill(0)
-            .map((_, i) => (
-              <LevelIndicator key={i} color={color || "#ffffff"} />
-            ))}
-        </Box>
-      </Paper>
+          <Box flexGrow="1" />
+          <Box display="flex">
+            {Array(slots)
+              .fill(0)
+              .map((_, i) => (
+                <Avatar key={i} variant="square" alt="Any Operator" />
+              ))}
+          </Box>
+        </Paper>
+      </Box>
     </Box>
   );
 };
