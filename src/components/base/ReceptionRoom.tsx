@@ -1,0 +1,7 @@
+import React from "react";
+import Building from "./Building";
+
+const ReceptionRoom: React.FC<{ level: number }> = ({ level }) => (
+  <Building name="Reception Room" level={level} />
+);
+export default ReceptionRoom;

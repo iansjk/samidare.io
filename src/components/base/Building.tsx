@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme: Theme) =>
       width: theme.spacing(2),
     },
     facilityInfo: {
-      flexGrow: 1,
       padding: theme.spacing(1),
     },
   })
