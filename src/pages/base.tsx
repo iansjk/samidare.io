@@ -14,9 +14,9 @@ import {
   Factory,
   CommandCenter,
   Dorm,
+  Office,
+  ReceptionRoom,
 } from "../components/base";
-import Office from "../components/base/Office";
-import ReceptionRoom from "../components/base/ReceptionRoom";
 
 const Base: React.FC = () => {
   return (
