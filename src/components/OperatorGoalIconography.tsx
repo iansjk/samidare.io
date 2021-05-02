@@ -65,6 +65,8 @@ function OperatorGoalIconography(
       <Box mr={0.5}>
         <img
           src={`https://res.cloudinary.com/samidare/image/upload/c_fit,h_30,w_30/f_auto,q_auto/e_sharpen/v1/arknights/skills/${iconFilename}`}
+          width={30}
+          height={30}
         />
         <img
           src={masteryImage(goal)}

@@ -74,6 +74,8 @@ const ItemBase = React.memo(function ItemBase({
             name
           )}`}
           alt={name}
+          width={size}
+          height={size}
         />
       </div>
       {complete && (
