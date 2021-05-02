@@ -9,6 +9,8 @@ import {
   Typography,
 } from "@material-ui/core";
 import { getOperatorImagePublicId } from "../../utils";
+import elite1 from "../../data/images/elite1.png";
+import elite2 from "../../data/images/elite2.png";
 
 const LEFT_SIDE_BUILDING_NAMES = new Set([
   "Trading Post",
@@ -121,14 +123,30 @@ const Building: React.FC<
                     eliteLevel
                   )}`;
                 return (
-                  <Avatar
-                    className={classes.operatorAvatar}
-                    key={i}
-                    variant="square"
-                    aria-label={name == null ? "Any Operator" : undefined}
-                    alt={name ?? "Any Operator"}
-                    src={url}
-                  />
+                  <Box position="relative">
+                    {(eliteLevel === 1 || eliteLevel === 2) && (
+                      <Box position="absolute" right={0} bottom={-6} zIndex={1}>
+                        <img
+                          src={eliteLevel === 1 ? elite1 : elite2}
+                          width="20"
+                          height="20"
+                          alt={`Elite ${eliteLevel}`}
+                          style={{
+                            filter:
+                              "drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black)",
+                          }}
+                        />
+                      </Box>
+                    )}
+                    <Avatar
+                      className={classes.operatorAvatar}
+                      key={i}
+                      variant="square"
+                      aria-label={name == null ? "Any Operator" : undefined}
+                      alt={name ?? "Any Operator"}
+                      src={url}
+                    />
+                  </Box>
                 );
               })}
           </Box>
