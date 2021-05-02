@@ -8,7 +8,7 @@ import {
   TimelineContent,
 } from "@material-ui/lab";
 import { Grid } from "@material-ui/core";
-import { Building } from "../components/base";
+import { PowerPlant, TradingPost, Factory } from "../components/base";
 
 const Base: React.FC = () => {
   return (
@@ -38,15 +38,15 @@ const Base: React.FC = () => {
         </Timeline>
       </Grid>
       <Grid item>
-        <Building name="Trading Post" level={3} />
-        <Building name="Trading Post" level={3} />
-        <Building name="Factory" level={3} />
-        <Building name="Factory" level={2} />
-        <Building name="Factory" level={2} />
-        <Building name="Factory" level={2} />
-        <Building name="Factory" level={2} />
-        <Building name="Power Plant" level={3} />
-        <Building name="Power Plant" level={3} />
+        <TradingPost level={3} />
+        <TradingPost level={3} />
+        <Factory level={3} />
+        <Factory level={2} />
+        <Factory level={2} />
+        <Factory level={2} />
+        <Factory level={2} />
+        <PowerPlant level={3} />
+        <PowerPlant level={3} />
       </Grid>
     </Grid>
   );

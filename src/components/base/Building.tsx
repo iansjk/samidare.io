@@ -7,7 +7,12 @@ import {
   Theme,
   Typography,
 } from "@material-ui/core";
-import colors from "./colors";
+
+const LEFT_SIDE_BUILDING_NAMES = new Set([
+  "Trading Post",
+  "Factory",
+  "Power Plant",
+]);
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -41,19 +46,22 @@ const LevelIndicator: React.FC<{ color: string }> = (props) => {
 
 interface Props {
   level: number;
-  name: "Factory" | "Power Plant" | "Trading Post";
+  name: string;
+  color?: string;
 }
 const Building: React.FC<Props> = (props) => {
-  const { level, name } = props;
+  const { level, name, color } = props;
   const classes = useStyles();
 
   return (
     <Box whiteSpace="nowrap" display="flex" mb={1} position="relative">
-      <Paper
-        elevation={3}
-        className={classes.facilityRibbon}
-        style={{ backgroundColor: colors[name].main }}
-      />
+      {LEFT_SIDE_BUILDING_NAMES.has(name) && (
+        <Paper
+          elevation={3}
+          className={classes.facilityRibbon}
+          style={{ backgroundColor: color }}
+        />
+      )}
       <Paper elevation={3} className={classes.facilityInfo}>
         <Box display="flex">
           <Box mr={0.5}>
@@ -62,7 +70,7 @@ const Building: React.FC<Props> = (props) => {
           {Array(level)
             .fill(0)
             .map((_, i) => (
-              <LevelIndicator key={i} color={colors[name].main} />
+              <LevelIndicator key={i} color={color || "#ffffff"} />
             ))}
         </Box>
       </Paper>
