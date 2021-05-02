@@ -1,7 +1,7 @@
 import React from "react";
-import Building from "./Building";
+import Building, { BuildingProps } from "./Building";
 
-const Dorm: React.FC<{ level: number }> = ({ level }) => (
-  <Building name="Dormitory" level={level} slots={5} />
+const Dorm: React.FC<BuildingProps> = (props) => (
+  <Building name="Dormitory" slots={5} {...props} />
 );
 export default Dorm;

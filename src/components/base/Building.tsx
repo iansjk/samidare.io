@@ -8,6 +8,7 @@ import {
   Theme,
   Typography,
 } from "@material-ui/core";
+import { getOperatorImagePublicId } from "../../utils";
 
 const LEFT_SIDE_BUILDING_NAMES = new Set([
   "Trading Post",
@@ -21,8 +22,16 @@ const useStyles = makeStyles((theme: Theme) =>
       flexShrink: 0,
       width: theme.spacing(2),
     },
-    facilityInfo: {
-      padding: theme.spacing(1),
+    operatorAvatar: {
+      "&": {
+        width: 50,
+        height: 50,
+        border: `1px solid rgba(255, 255, 255, 0.5)`,
+        marginLeft: -1,
+      },
+      "&:last-child": {
+        marginRight: 1,
+      },
     },
   })
 );
@@ -39,19 +48,25 @@ const LevelIndicator: React.FC<{ color: string }> = (props) => {
   );
 };
 
-interface Props {
+export interface BuildingProps {
   level: number;
+  operators?: string[];
+}
+
+interface BuildingBaseProps {
   name: string;
   slots?: number;
   color?: string;
 }
-const Building: React.FC<Props> = (props) => {
+const Building: React.FC<BuildingProps & BuildingBaseProps> = (props) => {
   const { level, name, color } = props;
   const slots = props.slots ?? props.level;
   const classes = useStyles();
+  const operators = props.operators ?? [];
+  operators.length = slots;
 
   return (
-    <Box whiteSpace="nowrap" display="flex" m={1} position="relative">
+    <Box whiteSpace="nowrap" display="flex" m={1}>
       {LEFT_SIDE_BUILDING_NAMES.has(name) && (
         <Paper
           elevation={3}
@@ -63,11 +78,13 @@ const Building: React.FC<Props> = (props) => {
         clone
         display="flex"
         alignItems="center"
-        maxWidth={270}
+        maxWidth={300}
         flexGrow="1"
         flexWrap="wrap"
+        padding={1}
+        pl={LEFT_SIDE_BUILDING_NAMES.has(name) ? 1 : 2}
       >
-        <Paper elevation={3} className={classes.facilityInfo}>
+        <Paper elevation={3}>
           <Box display="flex" alignItems="flex-end">
             <Box mr={0.5}>
               <Typography variant="subtitle1">{name}</Typography>
@@ -82,9 +99,24 @@ const Building: React.FC<Props> = (props) => {
           <Box display="flex">
             {Array(slots)
               .fill(0)
-              .map((_, i) => (
-                <Avatar key={i} variant="square" alt="Any Operator" />
-              ))}
+              .map((_, i) => {
+                const name = operators[i];
+                const url =
+                  name &&
+                  `https://res.cloudinary.com/samidare/image/upload/f_auto,q_auto/v1/${getOperatorImagePublicId(
+                    name
+                  )}`;
+                return (
+                  <Avatar
+                    className={classes.operatorAvatar}
+                    key={i}
+                    variant="square"
+                    aria-label={name == null ? "Any Operator" : undefined}
+                    alt={name ?? "Any Operator"}
+                    src={url}
+                  />
+                );
+              })}
           </Box>
         </Paper>
       </Box>

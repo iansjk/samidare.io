@@ -1,8 +1,8 @@
 import React from "react";
-import Building from "./Building";
+import Building, { BuildingProps } from "./Building";
 import colors from "./colors";
 
-const TradingPost: React.FC<{ level: number }> = ({ level }) => (
-  <Building name="Trading Post" level={level} color={colors.tradingPost.main} />
+const TradingPost: React.FC<BuildingProps> = (props) => (
+  <Building name="Trading Post" color={colors.tradingPost.main} {...props} />
 );
 export default TradingPost;

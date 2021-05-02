@@ -1,7 +1,7 @@
 import React from "react";
-import Building from "./Building";
+import Building, { BuildingProps } from "./Building";
 
-const CommandCenter: React.FC<{ level: number }> = ({ level }) => (
-  <Building name="Command Center" level={level} />
+const CommandCenter: React.FC<BuildingProps> = (props) => (
+  <Building name="Command Center" {...props} />
 );
 export default CommandCenter;

@@ -48,26 +48,32 @@ const Base: React.FC = () => {
       <Grid item xs={10}>
         <Grid container>
           <Grid item justify="center" xs={4}>
-            <TradingPost level={3} />
-            <TradingPost level={3} />
-            <Factory level={3} />
-            <Factory level={2} />
-            <Factory level={2} />
-            <Factory level={2} />
-            <Factory level={2} />
-            <PowerPlant level={3} />
-            <PowerPlant level={3} />
+            <TradingPost level={3} operators={["Jaye", "Texas", "Lappland"]} />
+            <TradingPost
+              level={3}
+              operators={["Exusiai", "Gummy", "Midnight"]}
+            />
+            <Factory level={3} operators={["Vermeil", "Ceobe", "Scene"]} />
+            <Factory level={2} operators={["Spot", "Gravel"]} />
+            <Factory level={2} operators={["Steward", "Ptilopsis"]} />
+            <Factory level={2} operators={["Haze", "Perfumer"]} />
+            <Factory level={2} operators={["Castle-3", "FEater"]} />
+            <PowerPlant level={3} operator="Greyy" />
+            <PowerPlant level={3} operator="Shaw" />
           </Grid>
           <Grid item justify="center" xs={4}>
-            <CommandCenter level={5} />
+            <CommandCenter
+              level={5}
+              operators={["Amiya", "Dobermann", "Scavenger"]}
+            />
             <Dorm level={2} />
             <Dorm level={1} />
             <Dorm level={1} />
             <Dorm level={1} />
           </Grid>
           <Grid item justify="center" xs={4}>
-            <ReceptionRoom level={3} />
-            <Office level={3} />
+            <ReceptionRoom level={3} operators={["Ch'en", "Gitano"]} />
+            <Office level={3} operator="Orchid" />
           </Grid>
         </Grid>
       </Grid>
