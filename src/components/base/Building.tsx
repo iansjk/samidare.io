@@ -48,14 +48,15 @@ const LevelIndicator: React.FC<{ color: string }> = (props) => {
   );
 };
 
+type Operator = [string, -1 | 0 | 1 | 2] | string;
 export interface BuildingProps {
   level: number;
-  operators?: string[];
+  operators?: Operator[];
 }
 
 export interface SingleSlotBuildingProps {
   level: number;
-  operator?: string;
+  operator?: Operator;
 }
 
 interface BuildingBaseProps {
@@ -108,11 +109,16 @@ const Building: React.FC<
             {Array(slots)
               .fill(0)
               .map((_, i) => {
-                const name = operators[i];
+                const operator = operators[i];
+                const name =
+                  typeof operator === "object" ? operator[0] : operator;
+                const eliteLevel =
+                  typeof operator === "object" ? operator[1] : undefined;
                 const url =
                   name &&
                   `https://res.cloudinary.com/samidare/image/upload/f_auto,q_auto/v1/${getOperatorImagePublicId(
-                    name
+                    name,
+                    eliteLevel
                   )}`;
                 return (
                   <Avatar

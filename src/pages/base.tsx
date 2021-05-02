@@ -48,18 +48,50 @@ const Base: React.FC = () => {
       <Grid item xs={10}>
         <Grid container>
           <Grid item justify="center" xs={4}>
-            <TradingPost level={3} operators={["Jaye", "Texas", "Lappland"]} />
             <TradingPost
               level={3}
-              operators={["Exusiai", "Gummy", "Midnight"]}
+              operators={[
+                ["Jaye", 0],
+                ["Texas", 2],
+                ["Lappland", 2],
+              ]}
             />
-            <Factory level={3} operators={["Vermeil", "Ceobe", "Scene"]} />
-            <Factory level={2} operators={["Spot", "Gravel"]} />
-            <Factory level={2} operators={["Steward", "Ptilopsis"]} />
-            <Factory level={2} operators={["Haze", "Perfumer"]} />
-            <Factory level={2} operators={["Castle-3", "FEater"]} />
+            <TradingPost
+              level={3}
+              operators={[["Exusiai", 2], "Gummy", "Midnight"]}
+            />
+            <Factory
+              level={3}
+              operators={[
+                ["Vermeil", 1],
+                ["Ceobe", 2],
+                ["Scene", 2],
+              ]}
+            />
+            <Factory
+              level={2}
+              operators={[
+                ["Spot", 1],
+                ["Gravel", 1],
+              ]}
+            />
+            <Factory
+              level={2}
+              operators={[
+                ["Steward", 1],
+                ["Ptilopsis", 2],
+              ]}
+            />
+            <Factory level={2} operators={["Haze", ["Perfumer", 1]]} />
+            <Factory
+              level={2}
+              operators={[
+                ["Castle-3", -1],
+                ["FEater", 0],
+              ]}
+            />
             <PowerPlant level={3} operator="Greyy" />
-            <PowerPlant level={3} operator="Shaw" />
+            <PowerPlant level={3} operator={["Shaw", 1]} />
           </Grid>
           <Grid item justify="center" xs={4}>
             <CommandCenter
@@ -72,8 +104,8 @@ const Base: React.FC = () => {
             <Dorm level={1} />
           </Grid>
           <Grid item justify="center" xs={4}>
-            <ReceptionRoom level={3} operators={["Ch'en", "Gitano"]} />
-            <Office level={3} operator="Orchid" />
+            <ReceptionRoom level={3} operators={[["Ch'en", 2], "Gitano"]} />
+            <Office level={3} operator={["Orchid", 0]} />
           </Grid>
         </Grid>
       </Grid>
