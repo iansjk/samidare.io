@@ -57,7 +57,7 @@ const Gacha: React.FC = () => {
                 probabilities[i][j][k] * sixStarChance * (1 - subrate * 2);
               newProbabilities[0][Math.min(j + 1, 6)][k] +=
                 probabilities[i][j][k] * sixStarChance * subrate;
-              newProbabilities[0][j][Math.min(k + 1, 7)] +=
+              newProbabilities[0][j][Math.min(k + 1, 6)] +=
                 probabilities[i][j][k] * sixStarChance * subrate;
             }
           } else {
