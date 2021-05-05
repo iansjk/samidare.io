@@ -10,5 +10,41 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  viewport: {
+    viewports: {
+      xSmall: {
+        name: "xSmall (portrait phone)",
+        styles: {
+          width: '320px',
+          height: '568px',
+        },
+        type: 'mobile'
+      },
+      small: {
+        name: "Small (landscape phone)",
+        styles: {
+          width: '600px',
+          height: '600px',
+        },
+        type: 'mobile'
+      },
+      medium: {
+        name: "Medium (tablet)",
+        styles: {
+          width: '960px',
+          height: '960px',
+        },
+        type: 'tablet'
+      },
+      large: {
+        name: "Large (desktop)",
+        styles: {
+          width: '1280px',
+          height: '960px',
+        },
+        type: 'desktop'
+      }
+    }
+  }
 }
 export const decorators = [(Story) => <ThemeProvider theme={appTheme}><Story /></ThemeProvider>];
