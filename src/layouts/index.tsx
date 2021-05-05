@@ -42,20 +42,20 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
   },
   drawer: {
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up("lg")]: {
       width: drawerWidth,
       flexShrink: 0,
     },
   },
   headerFooter: {
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up("lg")]: {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
     },
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up("lg")]: {
       display: "none",
     },
   },
@@ -204,7 +204,7 @@ function Layout(props: LayoutProps): React.ReactElement {
           </AppBar>
           <nav className={classes.drawer} aria-label="mailbox folders">
             {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-            <Hidden mdUp implementation="css">
+            <Hidden lgUp implementation="css">
               <Drawer
                 container={container}
                 variant="temporary"
@@ -221,7 +221,7 @@ function Layout(props: LayoutProps): React.ReactElement {
                 {drawer}
               </Drawer>
             </Hidden>
-            <Hidden smDown implementation="css">
+            <Hidden mdDown implementation="css">
               <Drawer
                 classes={{
                   paper: classes.drawerPaper,
