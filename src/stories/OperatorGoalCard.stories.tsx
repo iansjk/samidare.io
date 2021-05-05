@@ -4,7 +4,6 @@ import { Grid } from "@material-ui/core";
 import OperatorGoalCard, {
   OperatorGoalCardProps,
 } from "../components/OperatorGoalCard";
-import { OperatorGoalCategory } from "../types";
 
 export default {
   title: "Planner/OperatorGoalCard",
