@@ -15,7 +15,9 @@
     "ak:update:images": "git submodule update --remote && ts-node-script scripts/images.ts",
     "ak:update:items": "git submodule update --remote && ts-node-script scripts/items.ts",
     "ak:update:recruitment": "git submodule update --remote && ts-node-script -r esm scripts/recruitment.ts",
-    "netlify:deploy": "yarn ak:update && yarn build && mv public arknights && mkdir public && mv arknights public && mv public/arknights/_* public"
+    "netlify:deploy": "yarn ak:update && yarn build && mv public arknights && mkdir public && mv arknights public && mv public/arknights/_* public",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.2",
@@ -44,12 +46,18 @@
     "sprintf-js": "^1.1.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/react": "^6.2.9",
     "@types/netlify-identity-widget": "^1.9.1",
     "@types/node": "^14.14.14",
     "@types/react-helmet": "^6.1.0",
     "@types/sprintf-js": "^1.1.2",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.0.0",
+    "babel-loader": "^8.2.2",
     "cypress": "^6.2.0",
     "eslint": "^7.14.0",
     "eslint-config-airbnb-typescript": "^12.0.0",
