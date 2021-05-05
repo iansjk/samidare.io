@@ -14,10 +14,13 @@ import CancelIcon from "@material-ui/icons/Cancel";
 import ItemStack from "./ItemStack";
 import OperatorGoalIconography from "./OperatorGoalIconography";
 import {
+  EliteGoal,
   isEliteGoal,
   isMasteryGoal,
+  MasteryGoal,
   OperatorGoal,
   OperatorSkill,
+  SkillLevelGoal,
 } from "../types";
 import { getOperatorImagePublicId } from "../utils";
 
@@ -41,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export interface OperatorGoalCardProps {
-  goal: OperatorGoal;
+  goal: OperatorGoal & (EliteGoal | MasteryGoal | SkillLevelGoal);
   skill?: OperatorSkill;
   onDelete: (goal: OperatorGoal) => void;
 }
