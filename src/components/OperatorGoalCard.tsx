@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-interface OperatorGoalCardProps {
+export interface OperatorGoalCardProps {
   goal: OperatorGoal;
   skill?: OperatorSkill;
   onDelete: (goal: OperatorGoal) => void;
