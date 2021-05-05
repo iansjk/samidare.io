@@ -20,10 +20,16 @@ const Template: Story<OperatorGoalCardProps> = (args) => (
 export const OperatorGoalCardDefault = Template.bind({});
 OperatorGoalCardDefault.args = {
   goal: {
-    operatorName: "Amiya",
-    goalName: "Elite 1",
-    ingredients: [{ name: "Sniper Chip Pack", tier: 3, quantity: 5 }],
-    goalCategory: OperatorGoalCategory.Elite,
+    operatorName: "Skadi the Corrupting Heart",
+    eliteLevel: 2,
+    goalCategory: 0,
+    goalName: "Elite 2",
+    ingredients: [
+      { name: "LMD", tier: 4, quantity: 180000 },
+      { name: "Supporter Dualchip", tier: 5, quantity: 4 },
+      { name: "Polymerization Preparation", tier: 5, quantity: 4 },
+      { name: "Grindstone Pentahydrate", tier: 4, quantity: 5 },
+    ],
   },
   onDelete: () => alert("onDelete called"),
 };
