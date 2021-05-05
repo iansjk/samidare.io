@@ -31,5 +31,6 @@ OperatorGoalCardDefault.args = {
       { name: "Grindstone Pentahydrate", tier: 4, quantity: 5 },
     ],
   },
+  // eslint-disable-next-line no-alert
   onDelete: () => alert("onDelete called"),
 };
