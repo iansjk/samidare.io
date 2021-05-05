@@ -37,6 +37,8 @@ const useStyles = makeStyles((theme) => ({
   goalCard: {
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
+    paddingLeft: "2rem",
+    backgroundPosition: "-40px center",
   },
   goalShortName: {
     lineHeight: theme.typography.h6.lineHeight,
@@ -56,14 +58,6 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
   const classes = useStyles();
   const theme = useTheme();
   const isXSmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
-  const isMdScreen = useMediaQuery(theme.breakpoints.only("md"));
-  const shouldTextBeCollapsed = isXSmallScreen || isMdScreen;
-  const gradientEnd = shouldTextBeCollapsed ? "130px" : "100px";
-  const bgImagePositionX = shouldTextBeCollapsed ? "-40px" : "-30px";
-  const operatorNameStyle = {
-    flexGrow: shouldTextBeCollapsed ? 0 : 1,
-    paddingLeft: shouldTextBeCollapsed ? "1rem" : 0,
-  };
   let eliteLevel = 1;
   if (isMasteryGoal(goal)) {
     eliteLevel = 2;
@@ -75,46 +69,43 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
     eliteLevel
   )}`;
   const goalCardStyle = {
-    backgroundImage: `linear-gradient(to right, transparent, ${theme.palette.background.paper} ${gradientEnd}), url("${operatorImageUrl}")`,
-    paddingLeft: shouldTextBeCollapsed ? "2rem" : "3rem",
-    backgroundPosition: `${bgImagePositionX} center`,
+    backgroundImage: `linear-gradient(to right, transparent, ${theme.palette.background.paper} 130px), url("${operatorImageUrl}")`,
   };
   const handleClick = React.useCallback(() => onDelete(goal), [goal, onDelete]);
-
+  const [alter, appellation] = goal.operatorName.split(" the ");
   return (
     <Box mb={1} position="relative">
       <Card className={classes.goalCard} style={goalCardStyle}>
         <CardContent>
           <Grid container className={classes.goalOuterGridContainer}>
-            <Grid item xs={12} sm={4} md={12} lg={4}>
-              <Grid container>
-                <Grid style={operatorNameStyle} item xs sm={12} md lg={12}>
-                  <Box mr={2}>
-                    <Typography component="h3" variant="h6">
-                      {goal.operatorName}
+            <Grid item xs={12}>
+              <Box display="flex">
+                <Typography component="h3" variant="h6">
+                  {appellation && !isXSmallScreen && (
+                    <Typography component="span" variant="overline">
+                      {alter} the&nbsp;
                     </Typography>
-                  </Box>
-                </Grid>
+                  )}
+                  {appellation ?? goal.operatorName}
+                </Typography>
                 <Box
-                  clone
-                  display="flex"
                   whiteSpace="nowrap"
                   alignItems="center"
+                  display="flex"
+                  marginLeft={1}
                 >
-                  <Grid item xs sm={12} md lg={12}>
-                    <OperatorGoalIconography goal={goal} skill={skill} />
-                    <Typography
-                      className={classes.goalShortName}
-                      component="h4"
-                      variant="subtitle1"
-                    >
-                      {goal.goalShortName ?? goal.goalName}
-                    </Typography>
-                  </Grid>
+                  <OperatorGoalIconography goal={goal} skill={skill} />
+                  <Typography
+                    className={classes.goalShortName}
+                    component="h4"
+                    variant="subtitle1"
+                  >
+                    {goal.goalShortName ?? goal.goalName}
+                  </Typography>
                 </Box>
-              </Grid>
+              </Box>
             </Grid>
-            <Grid item xs={12} sm={8} md={12} lg={8}>
+            <Grid item xs={12}>
               <Box clone justifyContent="space-evenly">
                 <Grid container>
                   {goal.ingredients.map((ingredient) => (
@@ -123,7 +114,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
                         name={ingredient.name}
                         tier={ingredient.tier}
                         quantity={ingredient.quantity}
-                        size={70}
+                        size={60}
                       />
                     </Grid>
                   ))}
