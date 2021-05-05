@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from "react";
 import { Story, Meta } from "@storybook/react";
 import { Grid } from "@material-ui/core";
