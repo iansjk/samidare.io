@@ -1,5 +1,6 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react";
+import { Grid } from "@material-ui/core";
 import OperatorGoalCard, {
   OperatorGoalCardProps,
 } from "../components/OperatorGoalCard";
@@ -11,7 +12,9 @@ export default {
 } as Meta;
 
 const Template: Story<OperatorGoalCardProps> = (args) => (
-  <OperatorGoalCard {...args} />
+  <Grid item xs={12} md={5}>
+    <OperatorGoalCard {...args} />
+  </Grid>
 );
 
 export const OperatorGoalCardDefault = Template.bind({});
