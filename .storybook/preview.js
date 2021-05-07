@@ -15,16 +15,16 @@ export const parameters = {
       xSmall: {
         name: "xSmall (portrait phone)",
         styles: {
-          width: '320px',
-          height: '568px',
+          width: '360px',
+          height: '640px',
         },
         type: 'mobile'
       },
       small: {
         name: "Small (landscape phone)",
         styles: {
-          width: '600px',
-          height: '600px',
+          width: '640px',
+          height: '360px',
         },
         type: 'mobile'
       },
@@ -32,7 +32,7 @@ export const parameters = {
         name: "Medium (tablet)",
         styles: {
           width: '960px',
-          height: '960px',
+          height: '600px',
         },
         type: 'tablet'
       },
@@ -40,7 +40,7 @@ export const parameters = {
         name: "Large (desktop)",
         styles: {
           width: '1280px',
-          height: '960px',
+          height: '720px',
         },
         type: 'desktop'
       }
