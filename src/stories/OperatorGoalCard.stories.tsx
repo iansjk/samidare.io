@@ -21,15 +21,57 @@ export const OperatorGoalCardDefault = Template.bind({});
 OperatorGoalCardDefault.args = {
   goal: {
     operatorName: "Skadi the Corrupting Heart",
-    eliteLevel: 2,
-    goalCategory: 0,
-    goalName: "Elite 2",
+    goalCategory: 1,
+    goalName: "Skill 3 Mastery 3",
+    goalShortName: "S3 M3",
     ingredients: [
       { name: "LMD", tier: 4, quantity: 180000 },
       { name: "Supporter Dualchip", tier: 5, quantity: 4 },
       { name: "Polymerization Preparation", tier: 5, quantity: 4 },
       { name: "Grindstone Pentahydrate", tier: 4, quantity: 5 },
     ],
+    masteryLevel: 3,
+  },
+  skill: {
+    iconId: null,
+    masteries: [
+      {
+        goalCategory: 1,
+        goalName: "Skill 3 Mastery 1",
+        goalShortName: "S3 M1",
+        ingredients: [
+          { name: "Skill Summary - 3", tier: 4, quantity: 8 },
+          { name: "Orirock Concentration", tier: 4, quantity: 4 },
+          { name: "Grindstone", tier: 3, quantity: 7 },
+        ],
+        masteryLevel: 1,
+      },
+      {
+        goalCategory: 1,
+        goalName: "Skill 3 Mastery 2",
+        goalShortName: "S3 M2",
+        ingredients: [
+          { name: "Skill Summary - 3", tier: 4, quantity: 12 },
+          { name: "Keton Colloid", tier: 4, quantity: 4 },
+          { name: "Polymerized Gel", tier: 4, quantity: 9 },
+        ],
+        masteryLevel: 2,
+      },
+      {
+        goalCategory: 1,
+        goalName: "Skill 3 Mastery 3",
+        goalShortName: "S3 M3",
+        ingredients: [
+          { name: "Skill Summary - 3", tier: 4, quantity: 15 },
+          { name: "Polymerization Preparation", tier: 5, quantity: 6 },
+          { name: "Incandescent Alloy Block", tier: 4, quantity: 6 },
+        ],
+        masteryLevel: 3,
+      },
+    ],
+    skillId: "skchr_skadi2_3",
+    skillName: '"潮涌，潮枯"',
+    slot: 3,
   },
   // eslint-disable-next-line no-alert
   onDelete: () => alert("onDelete called"),
