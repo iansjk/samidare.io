@@ -38,6 +38,7 @@ Feature: Operator Planner - crafting
     When I stop crafting an item
     Then I should not see its ingredients in the required materials section
 
+  @ignore
   Scenario: User stops crafting an item: ingredients needed by other goals
     Given I have added a goal to my planner
     And I have marked some items to be crafted
