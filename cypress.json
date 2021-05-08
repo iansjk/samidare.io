@@ -6,5 +6,6 @@
   "testFiles": "**/*.feature",
   "env": {
     "TAGS": "not @ignore"
-  }
+  },
+  "projectId": "9fpui2"
 }
