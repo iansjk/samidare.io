@@ -37,11 +37,17 @@ const useStyles = makeStyles((theme) => ({
   goalCard: {
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
-    paddingLeft: "2rem",
-    backgroundPosition: "-40px center",
   },
   goalShortName: {
     lineHeight: theme.typography.h6.lineHeight,
+  },
+  operatorNameWrapper: {
+    overflow: "hidden",
+    whiteSpace: "nowrap",
+  },
+  operatorName: {
+    overflow: "hidden",
+    textOverflow: "ellipsis",
   },
 }));
 
@@ -58,6 +64,10 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
   const classes = useStyles();
   const theme = useTheme();
   const isXSmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
+  const isMdScreen = useMediaQuery(theme.breakpoints.only("md"));
+  const shouldTextBeCollapsed = isXSmallScreen || isMdScreen;
+  const gradientEnd = shouldTextBeCollapsed ? "130px" : "100px";
+  const bgImagePositionX = shouldTextBeCollapsed ? "-40px" : "-30px";
   let eliteLevel = 1;
   if (isMasteryGoal(goal)) {
     eliteLevel = 2;
@@ -69,8 +79,21 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
     eliteLevel
   )}`;
   const goalCardStyle = {
-    backgroundImage: `linear-gradient(to right, transparent, ${theme.palette.background.paper} 130px), url("${operatorImageUrl}")`,
+    backgroundImage: `linear-gradient(to right, transparent, ${theme.palette.background.paper} ${gradientEnd}), url("${operatorImageUrl}")`,
+    paddingLeft: shouldTextBeCollapsed ? "2rem" : "3rem",
+    backgroundPosition: `${bgImagePositionX} center`,
   };
+  const operatorAlterTextStyle = isXSmallScreen
+    ? {
+        clip: "rect(0 0 0 0)",
+        clipPath: "inset(50%)",
+        height: "1px",
+        overflow: "hidden",
+        position: "absolute" as const,
+        whiteSpace: "nowrap" as const,
+        width: "1px",
+      }
+    : {};
   const handleClick = React.useCallback(() => onDelete(goal), [goal, onDelete]);
   const [alter, appellation] = goal.operatorName.split(" the ");
   return (
@@ -78,48 +101,67 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
       <Card className={classes.goalCard} style={goalCardStyle}>
         <CardContent>
           <Grid container className={classes.goalOuterGridContainer}>
-            <Grid item xs={12}>
-              <Box display="flex">
-                <Typography component="h3" variant="h6">
-                  {appellation && !isXSmallScreen && (
-                    <Typography component="span" variant="overline">
-                      {alter} the&nbsp;
+            <Grid item xs sm={4} md lg={4}>
+              <Grid container>
+                <Grid
+                  className={classes.operatorNameWrapper}
+                  item
+                  xs
+                  sm={12}
+                  md
+                  lg={12}
+                >
+                  <Box mr={2}>
+                    <Typography
+                      component="h3"
+                      variant="h6"
+                      className={classes.operatorName}
+                    >
+                      {appellation && (
+                        <Typography
+                          component="span"
+                          variant="overline"
+                          style={operatorAlterTextStyle}
+                        >
+                          {alter} the&nbsp;
+                        </Typography>
+                      )}
+                      {appellation ?? goal.operatorName}
                     </Typography>
-                  )}
-                  {appellation ?? goal.operatorName}
-                </Typography>
+                  </Box>
+                </Grid>
                 <Box
+                  clone
+                  display="flex"
                   whiteSpace="nowrap"
                   alignItems="center"
-                  display="flex"
-                  marginLeft={1}
                 >
-                  <OperatorGoalIconography goal={goal} skill={skill} />
-                  <Typography
-                    className={classes.goalShortName}
-                    component="h4"
-                    variant="subtitle1"
-                  >
-                    {goal.goalShortName ?? goal.goalName}
-                  </Typography>
+                  <Grid item xs sm={12} md lg={12}>
+                    <OperatorGoalIconography goal={goal} skill={skill} />
+                    <Typography
+                      className={classes.goalShortName}
+                      component="h4"
+                      variant="subtitle1"
+                    >
+                      {goal.goalShortName ?? goal.goalName}
+                    </Typography>
+                  </Grid>
                 </Box>
-              </Box>
+              </Grid>
             </Grid>
-            <Grid item xs={12}>
-              <Box clone justifyContent="space-evenly">
-                <Grid container>
-                  {goal.ingredients.map((ingredient) => (
-                    <Grid item xs={3} key={ingredient.name}>
-                      <ItemStack
-                        name={ingredient.name}
-                        tier={ingredient.tier}
-                        quantity={ingredient.quantity}
-                        size={60}
-                      />
-                    </Grid>
-                  ))}
-                </Grid>
-              </Box>
+            <Grid item xs={12} sm={8} md={12} lg={8}>
+              <Grid container justify="space-evenly">
+                {goal.ingredients.map((ingredient) => (
+                  <Grid item xs={3} key={ingredient.name}>
+                    <ItemStack
+                      name={ingredient.name}
+                      tier={ingredient.tier}
+                      quantity={ingredient.quantity}
+                      size={60}
+                    />
+                  </Grid>
+                ))}
+              </Grid>
             </Grid>
           </Grid>
           <IconButton
