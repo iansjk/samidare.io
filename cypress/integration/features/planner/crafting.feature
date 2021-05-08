@@ -1,13 +1,16 @@
 Feature: Operator Planner - crafting
   Rule: If an item can be crafted, users can mark it as crafted in the planner
+    @ignore
     Example: Craftable item
       When I add a goal to my planner
       Then I should be able to craft the higher tier, craftable items
 
+    @ignore
     Example: Uncraftable item
       When I add a goal to my planner
       Then I should not be able to craft the uncraftable items
 
+    @ignore
     Example: Chain crafting items
       Given I have added a goal to my planner
       When I mark an item to be crafted that has a craftable ingredient
@@ -19,19 +22,23 @@ Feature: Operator Planner - crafting
       Given I have added a goal to my planner
       And I have marked some items to be crafted
 
+    @ignore
     Example: Items being crafted aren't shown if their goal is removed
       When I remove the goal from my planner
       Then I shouldn't see the items to be crafted in the required materials section
 
+    @ignore
     Example: Items being crafted are shown if another goal needs them
       When I add another goal that has the same crafted item
       And I remove the first goal from my planner
       Then I should still see the item to be crafted in the required materials section
 
+    @ignore
     Example: User stops crafting an item: ingredients no longer appear
       When I stop crafting an item
       Then I should not see its ingredients in the required materials section
 
+    @ignore
     Example: User stops crafting an item: ingredients needed by other goals
       When I add another goal that requires some of the crafted items' ingredients
       Then I should see the required number of ingredients added together
@@ -43,14 +50,17 @@ Feature: Operator Planner - crafting
       Given I have added a goal to my planner
       And I have marked some items to be crafted
 
+    @ignore
     Example: Ingredient requirements update with crafted item changes
       When I obtain some more of the item to be crafted
       Then I should see that I need less of its ingredients
 
+    @ignore
     Example: Items being crafted are marked as complete when their ingredients are complete
       When I collect all the ingredients for those crafted items
       Then I should see those crafted items marked as complete
 
+    @ignore
     Scenario: Planner saves crafting state of items
       Given I have added a goal to my planner
       And I have marked some items to be crafted
