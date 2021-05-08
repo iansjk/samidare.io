@@ -16,5 +16,11 @@ When("I add a goal to my planner", () => {
 });
 
 Then("I should see my goal in the operator goals list", () => {
-  cy.get('[data-testid="goalsList"]').contains("Amiya Elite 2");
+  cy.get('[data-cy="goalsList"]').as("goalsList");
+  cy.get("@goalsList")
+    .find('[data-cy="operatorGoalCard"]')
+    .as("addedGoal")
+    .should("have.length", 1);
+  cy.get("@addedGoal").find('[data-cy="operatorName"]').contains("Amiya");
+  cy.get("@addedGoal").find('[data-cy="goalName"]').contains("Elite 2");
 });
