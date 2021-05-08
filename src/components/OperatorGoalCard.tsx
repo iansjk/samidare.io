@@ -142,6 +142,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
                       className={classes.goalShortName}
                       component="h4"
                       variant="subtitle1"
+                      aria-label={goal.goalName}
                     >
                       {goal.goalShortName ?? goal.goalName}
                     </Typography>
