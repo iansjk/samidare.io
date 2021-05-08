@@ -227,7 +227,12 @@ function Planner(): React.ReactElement {
           value={operatorName}
           onChange={handleOperatorNameChanged}
           renderInput={(params) => (
-            <TextField {...params} label="Operator name" variant="outlined" />
+            <TextField
+              {...params}
+              name="operator-name"
+              label="Operator name"
+              variant="outlined"
+            />
           )}
         />
       </Grid>

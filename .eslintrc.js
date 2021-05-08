@@ -58,7 +58,7 @@ module.exports = {
       },
     ],
     "import/no-extraneous-dependencies": ["error", {
-      "devDependencies": ["**/*.stories.tsx"]
+      "devDependencies": ["**/*.stories.tsx", "cypress/**/*.ts", "cypress/plugins/index.js"]
     }]
   },
 };

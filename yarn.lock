@@ -204,6 +204,20 @@
     "@babel/helper-annotate-as-pure" "^7.12.13"
     regexpu-core "^4.7.1"
 
+"@babel/helper-define-polyfill-provider@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.npmjs.org/@babel/helper-define-polyfill-provider/-/helper-define-polyfill-provider-0.1.5.tgz#3c2f91b7971b9fc11fe779c945c014065dea340e"
+  integrity sha512-nXuzCSwlJ/WKr8qxzW816gwyT6VZgiJG17zR40fou70yfAcqjoNyTLl/DQ+FExw5Hx5KNqshmN8Ldl/r2N7cTg==
+  dependencies:
+    "@babel/helper-compilation-targets" "^7.13.0"
+    "@babel/helper-module-imports" "^7.12.13"
+    "@babel/helper-plugin-utils" "^7.13.0"
+    "@babel/traverse" "^7.13.0"
+    debug "^4.1.1"
+    lodash.debounce "^4.0.8"
+    resolve "^1.14.2"
+    semver "^6.1.2"
+
 "@babel/helper-define-polyfill-provider@^0.2.0":
   version "0.2.0"
   resolved "https://registry.npmjs.org/@babel/helper-define-polyfill-provider/-/helper-define-polyfill-provider-0.2.0.tgz#a640051772045fedaaecc6f0c6c69f02bdd34bf1"
@@ -2863,6 +2877,11 @@
   version "2.8.10"
   resolved "https://registry.npmjs.org/@types/cors/-/cors-2.8.10.tgz#61cc8469849e5bcdd0c7044122265c39cec10cf4"
   integrity sha512-C7srjHiVG3Ey1nR6d511dtDkCEjxuN9W1HWAEjGq8kpcwmNM6JJkpC0xvabM7BXTG2wDq8Eu33iH9aQKa7IvLQ==
+
+"@types/cypress-cucumber-preprocessor@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/@types/cypress-cucumber-preprocessor/-/cypress-cucumber-preprocessor-4.0.0.tgz#b113e7ffb5b011d651103aae421dee5163768b42"
+  integrity sha512-M4H03hwyYXviYExzhLKBCfdX5TnvMOcVpHZoruB9mkLcKnC3aNanOk68nEM7nT9tZa+7HRBEPWxS/qzUMiiofA==
 
 "@types/debug@^0.0.30":
   version "0.0.30"
@@ -5781,6 +5800,14 @@ core-js-compat@^3.1.1, core-js-compat@^3.9.0, core-js-compat@^3.9.1:
   version "3.11.2"
   resolved "https://registry.npmjs.org/core-js-compat/-/core-js-compat-3.11.2.tgz#5048e367851cfd2c6c0cb81310757b4da296e385"
   integrity sha512-gYhNwu7AJjecNtRrIfyoBabQ3ZG+llfPmg9BifIX8yxIpDyfNLRM73zIjINSm6z3dMdI1nwNC9C7uiy4pIC6cw==
+  dependencies:
+    browserslist "^4.16.6"
+    semver "7.0.0"
+
+core-js-compat@^3.8.1:
+  version "3.12.0"
+  resolved "https://registry.npmjs.org/core-js-compat/-/core-js-compat-3.12.0.tgz#a031e51fe411085e33cb629bfee2acaa53bc309a"
+  integrity sha512-vvaN8EOvYBEjrr+MN3vCKrMNc/xdYZI+Rt/uPMROi4T5Hj8Fz6TiPQm2mrB9aZoQVW1lCFHYmMrv99aUct9mkg==
   dependencies:
     browserslist "^4.16.6"
     semver "7.0.0"

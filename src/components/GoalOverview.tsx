@@ -319,7 +319,7 @@ const GoalOverview = React.memo(function GoalOverview(
           </CardContent>
         </Card>
       </Grid>
-      <Grid component="section" item xs={12} md={5}>
+      <Grid component="section" item xs={12} md={5} data-testid="goalsList">
         <>
           <Box clone mb={1}>
             <Card>
