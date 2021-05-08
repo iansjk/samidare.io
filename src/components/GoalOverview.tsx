@@ -254,11 +254,11 @@ const GoalOverview = React.memo(function GoalOverview(
           />
         );
         const outer = isLargeScreen ? (
-          <Box key={name} data-testid={name} width="20%" px={0.5} mt={1}>
+          <Box key={name} data-cy={name} width="20%" px={0.5} mt={1}>
             {inner}
           </Box>
         ) : (
-          <Grid key={name} data-testid={name} item xs={4} sm={3} md={3}>
+          <Grid key={name} data-cy={name} item xs={4} sm={3} md={3}>
             {inner}
           </Grid>
         );
@@ -272,7 +272,7 @@ const GoalOverview = React.memo(function GoalOverview(
 
   return (
     <Grid container spacing={2}>
-      <Grid component="section" item md={7} data-testid="materialsLists">
+      <Grid component="section" item md={7} data-cy="materialsLists">
         <Card>
           <CardContent>
             <Box clone mb={1}>
@@ -319,7 +319,7 @@ const GoalOverview = React.memo(function GoalOverview(
           </CardContent>
         </Card>
       </Grid>
-      <Grid component="section" item xs={12} md={5} data-testid="goalsList">
+      <Grid component="section" item xs={12} md={5} data-cy="goalsList">
         <>
           <Box clone mb={1}>
             <Card>

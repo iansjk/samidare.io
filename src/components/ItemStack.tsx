@@ -50,7 +50,7 @@ const ItemStack = React.memo(function ItemStack({
         px={1.5}
         boxShadow={3}
       >
-        <Typography variant="button" data-testid="quantity">
+        <Typography variant="button" data-cy="quantity">
           {formatQuantity(quantity)}
         </Typography>
       </Box>
