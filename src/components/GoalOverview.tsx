@@ -258,7 +258,7 @@ const GoalOverview = React.memo(function GoalOverview(
             {inner}
           </Box>
         ) : (
-          <Grid key={name} data-cy={name} item xs={4} sm={3} md={3}>
+          <Grid key={name} data-cy={name} item xs={6} sm={3} md={3}>
             {inner}
           </Grid>
         );
@@ -272,7 +272,7 @@ const GoalOverview = React.memo(function GoalOverview(
 
   return (
     <Grid container spacing={2}>
-      <Grid component="section" item md={7} data-cy="materialsLists">
+      <Grid component="section" item md={7} data-cy="materialsList">
         <Card>
           <CardContent>
             <Box clone mb={1}>

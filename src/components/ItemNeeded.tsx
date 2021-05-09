@@ -149,6 +149,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
           value={owned === null ? "" : owned}
           onFocus={(event) => event.target.select()}
           onChange={(event) => onChange(name, event.target.value)}
+          data-cy="owned"
           inputProps={{
             type: "number",
             className: classes.input,
@@ -165,6 +166,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
                   edge="start"
                   disabled={owned === 0}
                   onClick={() => onDecrement(name)}
+                  data-cy="decrement"
                 >
                   <RemoveCircleIcon />
                 </IconButton>
@@ -176,6 +178,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
                   aria-label="add 1 to owned amount"
                   edge="end"
                   onClick={() => onIncrement(name)}
+                  data-cy="increment"
                 >
                   <AddCircleIcon />
                 </IconButton>
