@@ -5,7 +5,7 @@ Feature: Operator Planner
     And I should see its required materials in the required materials section
     And I can type how many of the required materials I have
     And I can increment them
-    And I can decrement them
+    And I can decrement them if I have at least one to decrement
 
   @ignore
   Scenario: Planner groups together common required materials for multiple goals

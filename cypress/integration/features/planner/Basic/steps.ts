@@ -69,10 +69,19 @@ Then("I can increment them", () => {
     });
 });
 
-Then("I can decrement them", () => {
+Then("I can decrement them if I have at least one to decrement", () => {
   cy.get("@materialsList")
     .find('[data-cy="decrement"]')
     .each(($el) => {
+      cy.wrap($el)
+        .closest('[data-cy="owned"]')
+        .find("input")
+        .as("ownedInput")
+        .type("0");
+      cy.wrap($el).should("be.disabled");
+      cy.get("@ownedInput").type("1");
+      cy.wrap($el).should("not.be.disabled");
       cy.wrap($el).click();
+      cy.get("@ownedInput").should("have.value", 0);
     });
 });
