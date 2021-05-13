@@ -22,6 +22,18 @@ When("I add another goal with some common materials", () => {
   cy.contains("Add").click();
 });
 
+When("I have obtained all of the items for it", () => {
+  cy.get("@amiyaE2Goal").then((goal: any) => {
+    goal.ingredients
+      .filter((ingredient) => ingredient.name !== "LMD")
+      .forEach((ingredient) => {
+        cy.get(`[data-cy="${ingredient.name}"]`)
+          .find('[data-cy="ownedInput"]')
+          .type(ingredient.quantity);
+      });
+  });
+});
+
 Then("I should see my goal in the operator goals list", () => {
   cy.get('[data-cy="goalsList"]').as("goalsList");
   cy.get("@goalsList")
@@ -114,3 +126,13 @@ Then(
     });
   }
 );
+
+Then("the required materials should be marked as completed", () => {
+  cy.get("@amiyaE2Goal").then((goal: any) => {
+    goal.ingredients
+      .filter((ingredient) => ingredient.name !== "LMD")
+      .forEach((ingredient) => {
+        cy.get(`[data-cy="${ingredient.name}"]`).find('[data-cy="complete"]');
+      });
+  });
+});

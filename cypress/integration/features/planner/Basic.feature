@@ -12,7 +12,6 @@ Feature: Operator Planner
     When I add another goal with some common materials
     Then I should see the required materials grouped in the required materials section
 
-  @ignore
   Scenario: Required materials are marked as complete when the user obtains enough of them
     Given I have added a goal to my planner
     When I have obtained all of the items for it
