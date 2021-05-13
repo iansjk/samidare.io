@@ -11,13 +11,6 @@ Before(() => {
     });
 });
 
-When(/^I (?:have )?add(?:ed)? a goal to my planner$/, () => {
-  cy.get('input[name="operator-name"]').type("Amiya{enter}");
-  cy.get("#goal-select").click();
-  cy.get('li[role="option"]').contains("Elite 2").click().type("{esc}");
-  cy.contains("Add").click();
-});
-
 When("I add another goal with some common materials", () => {
   cy.get('input[name="operator-name"]').type("Rosmontis{enter}");
   cy.get("#goal-select").click();
@@ -40,10 +33,6 @@ When(
     });
   }
 );
-
-When("I refresh the page", () => {
-  cy.visit("/planner");
-});
 
 Then("I should see my goal in the operator goals list", () => {
   cy.get('[data-cy="goalsList"]').as("goalsList");
