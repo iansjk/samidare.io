@@ -109,7 +109,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
 
   return (
     <>
-      <Box position="relative">
+      <Box position="relative" data-cy="itemNeeded">
         <Box width="100%" textAlign="center">
           <ButtonBase
             className={classes.itemButton}
@@ -149,13 +149,13 @@ const ItemNeeded = React.memo(function ItemNeeded({
           value={owned === null ? "" : owned}
           onFocus={(event) => event.target.select()}
           onChange={(event) => onChange(name, event.target.value)}
-          data-cy="owned"
           inputProps={{
             type: "number",
             className: classes.input,
             min: 0,
             step: 1,
             "aria-label": "Quantity owned",
+            "data-cy": "ownedInput",
           }}
           InputProps={{
             classes: outlinedInputClasses,

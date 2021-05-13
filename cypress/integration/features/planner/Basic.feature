@@ -7,7 +7,6 @@ Feature: Operator Planner
     And I can increment them
     And I can decrement them if I have at least one to decrement
 
-  @ignore
   Scenario: Planner groups together common required materials for multiple goals
     Given I have added a goal to my planner
     When I add another goal with some common materials
