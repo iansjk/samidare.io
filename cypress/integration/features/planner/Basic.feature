@@ -14,12 +14,11 @@ Feature: Operator Planner
 
   Scenario: Required materials are marked as complete when the user obtains enough of them
     Given I have added a goal to my planner
-    When I have obtained all of the items for it
+    When I have obtained all of the required materials for it
     Then the required materials should be marked as completed
 
-  @ignore
   Scenario: Planner shows the same state when re-visiting the page
     Given I have added a goal to my planner
-    And I have obtained some of the required materials
+    And I have obtained some of the required materials for it
     When I refresh the page
     Then I should see my previous item counts

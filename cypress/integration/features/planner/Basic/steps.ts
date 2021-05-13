@@ -2,10 +2,16 @@ import { Before, When, Then } from "cypress-cucumber-preprocessor/steps";
 
 Before(() => {
   cy.visit("/planner");
-  cy.fixture("amiya-e2.json").as("amiyaE2Goal");
+  cy.fixture("amiya-e2.json")
+    .as("amiyaE2Goal")
+    .then((goal) => {
+      cy.wrap(
+        goal.ingredients.filter((ingredient) => ingredient.name !== "LMD")
+      ).as("amiyaE2GoalMaterials");
+    });
 });
 
-When(/I (?:have )?add(?:ed)? a goal to my planner/, () => {
+When(/^I (?:have )?add(?:ed)? a goal to my planner$/, () => {
   cy.get('input[name="operator-name"]').type("Amiya{enter}");
   cy.get("#goal-select").click();
   cy.get('li[role="option"]').contains("Elite 2").click().type("{esc}");
@@ -22,16 +28,21 @@ When("I add another goal with some common materials", () => {
   cy.contains("Add").click();
 });
 
-When("I have obtained all of the items for it", () => {
-  cy.get("@amiyaE2Goal").then((goal: any) => {
-    goal.ingredients
-      .filter((ingredient) => ingredient.name !== "LMD")
-      .forEach((ingredient) => {
-        cy.get(`[data-cy="${ingredient.name}"]`)
+When(
+  /^I have obtained (all|some) of the required materials for it$/,
+  (howMany) => {
+    cy.get("@amiyaE2GoalMaterials").then((materials: any) => {
+      materials.forEach((material) => {
+        cy.get(`[data-cy="${material.name}"]`)
           .find('[data-cy="ownedInput"]')
-          .type(ingredient.quantity);
+          .type(howMany === "all" ? material.quantity : 1);
       });
-  });
+    });
+  }
+);
+
+When("I refresh the page", () => {
+  cy.visit("/planner");
 });
 
 Then("I should see my goal in the operator goals list", () => {
@@ -52,29 +63,27 @@ Then(
         .as("materialsList")
         .find('[data-cy="LMD"]')
         .should("not.exist");
-      goal.ingredients
-        .filter((ingredient) => ingredient.name !== "LMD")
-        .map((ingredient) =>
-          cy
-            .get("@materialsList")
-            .find(`[data-cy="${ingredient.name}"]`)
-            .find('[data-cy="quantity"]')
-            .should("have.text", ingredient.quantity)
-        );
+    });
+    cy.get("@amiyaE2GoalMaterials").then((materials: any) => {
+      materials.map((material) =>
+        cy
+          .get("@materialsList")
+          .find(`[data-cy="${material.name}"]`)
+          .find('[data-cy="quantity"]')
+          .should("have.text", material.quantity)
+      );
     });
   }
 );
 
 Then("I can type how many of the required materials I have", () => {
-  cy.get("@amiyaE2Goal").then((goal: any) => {
-    goal.ingredients
-      .filter((ingredient) => ingredient.name !== "LMD")
-      .map((ingredient) =>
-        cy
-          .get(`[data-cy="${ingredient.name}"]`)
-          .find('[data-cy="ownedInput"]')
-          .type("1")
-      );
+  cy.get("@amiyaE2GoalMaterials").then((materials: any) => {
+    materials.map((material) =>
+      cy
+        .get(`[data-cy="${material.name}"]`)
+        .find('[data-cy="ownedInput"]')
+        .type("1")
+    );
   });
 });
 
@@ -128,11 +137,19 @@ Then(
 );
 
 Then("the required materials should be marked as completed", () => {
-  cy.get("@amiyaE2Goal").then((goal: any) => {
-    goal.ingredients
-      .filter((ingredient) => ingredient.name !== "LMD")
-      .forEach((ingredient) => {
-        cy.get(`[data-cy="${ingredient.name}"]`).find('[data-cy="complete"]');
-      });
+  cy.get("@amiyaE2GoalMaterials").then((materials: any) => {
+    materials.forEach((material) => {
+      cy.get(`[data-cy="${material.name}"]`).find('[data-cy="complete"]');
+    });
+  });
+});
+
+Then("I should see my previous item counts", () => {
+  cy.get("@amiyaE2GoalMaterials").then((materials: any) => {
+    materials.forEach((material) => {
+      cy.get(`[data-cy="${material.name}"]`)
+        .find('[data-cy="ownedInput"]')
+        .should("have.value", "1");
+    });
   });
 });
