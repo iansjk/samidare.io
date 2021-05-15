@@ -20,6 +20,7 @@ const {
 
 interface FormulaEntry {
   goldCost?: number;
+  count: number;
   costs: InternalItemRequirement[];
 }
 
@@ -159,7 +160,7 @@ const items = Object.keys(cnItemTable)
           sortId: 10004,
         });
       }
-      return Object.assign(baseObj, { ingredients });
+      return Object.assign(baseObj, { ingredients, yield: formula.count });
     }
     return baseObj;
   });
