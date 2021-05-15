@@ -42,7 +42,6 @@ Feature: Operator Planner - crafting
     And if I stop crafting items for the first goal
     Then I should only see the ingredients that are still needed by the other goal
 
-  @ignore
   Scenario: Ingredient requirements update with crafted item changes
     Given I have added a goal to my planner
     And I have marked some items to be crafted
