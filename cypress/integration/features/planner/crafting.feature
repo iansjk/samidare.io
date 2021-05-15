@@ -7,7 +7,6 @@ Feature: Operator Planner - crafting
     When I add a goal to my planner
     Then I should not be able to craft the uncraftable items
 
-  @ignore
   Scenario: Items can be chain crafted
     Given I have added a goal to my planner
     When I mark an item to be crafted that has a craftable ingredient
