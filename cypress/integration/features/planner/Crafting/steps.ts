@@ -1,4 +1,5 @@
 import { Before, Given, Then, When } from "cypress-cucumber-preprocessor/steps";
+import { addGoal, removeGoal } from "../utils";
 
 Before(() => {
   cy.visit("/planner");
@@ -24,6 +25,14 @@ When("I mark that ingredient to be crafted too", () => {
 
 When("I remove the goal from my planner", () => {
   cy.get('[data-cy="deleteGoal"]').click();
+});
+
+When("I add another goal that has the same crafted item", () => {
+  addGoal("Absinthe", "Elite 2");
+});
+
+When("I remove the first goal from my planner", () => {
+  removeGoal("Amiya", "Elite 2");
 });
 
 Then("I should be able to craft the higher tier, craftable items", () => {
@@ -61,3 +70,14 @@ Then("I should see that I'm still crafting those items", () => {
       .should("have.attr", "data-crafting", "true");
   });
 });
+
+Then(
+  "I should still see the item to be crafted in the required materials section",
+  () => {
+    ["Orirock Cluster", "Chip Catalyst", "Caster Chip Pack"].forEach(
+      (ingredientName) => {
+        cy.get(`[data-cy="${ingredientName}"]`);
+      }
+    );
+  }
+);

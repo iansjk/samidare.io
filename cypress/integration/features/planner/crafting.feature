@@ -19,7 +19,6 @@ Feature: Operator Planner - crafting
     When I remove the goal from my planner
     Then I shouldn't see the items to be crafted in the required materials section
 
-  @ignore
   Scenario: Items being crafted are shown if another goal needs them
     Given I have added a goal to my planner
     And I have marked some items to be crafted

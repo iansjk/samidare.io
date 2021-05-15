@@ -1,11 +1,8 @@
 import { When } from "cypress-cucumber-preprocessor/steps";
+import { addGoal } from "../features/planner/utils";
 
 When(/^I (?:have )?add(?:ed)? a goal to my planner$/, () => {
-  cy.get('input[name="operator-name"]').type("Amiya{enter}");
-  cy.wait(100);
-  cy.get("#goal-select").click();
-  cy.get('li[role="option"]').contains("Elite 2").click().type("{esc}");
-  cy.contains("Add").click();
+  addGoal("Amiya", "Elite 2");
 });
 
 When("I refresh the page", () => {

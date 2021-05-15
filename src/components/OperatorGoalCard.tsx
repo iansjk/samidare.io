@@ -97,7 +97,13 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
   const handleClick = React.useCallback(() => onDelete(goal), [goal, onDelete]);
   const [alter, appellation] = goal.operatorName.split(" the ");
   return (
-    <Box mb={1} position="relative" data-cy="operatorGoalCard">
+    <Box
+      mb={1}
+      position="relative"
+      data-cy="operatorGoalCard"
+      data-operator-name={goal.operatorName}
+      data-goal-name={goal.goalName}
+    >
       <Card className={classes.goalCard} style={goalCardStyle}>
         <CardContent>
           <Grid container className={classes.goalOuterGridContainer}>

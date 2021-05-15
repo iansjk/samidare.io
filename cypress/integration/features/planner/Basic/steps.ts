@@ -1,4 +1,5 @@
 import { Before, When, Then } from "cypress-cucumber-preprocessor/steps";
+import { addGoal } from "../utils";
 
 Before(() => {
   cy.visit("/planner");
@@ -12,13 +13,7 @@ Before(() => {
 });
 
 When("I add another goal with some common materials", () => {
-  cy.get('input[name="operator-name"]').type("Rosmontis{enter}");
-  cy.get("#goal-select").click();
-  cy.get('li[role="option"]')
-    .contains("Skill 1 Mastery 3")
-    .click()
-    .type("{esc}");
-  cy.contains("Add").click();
+  addGoal("Rosmontis", "Skill 1 Mastery 3");
 });
 
 When(
