@@ -53,3 +53,11 @@ Then(
     );
   }
 );
+
+Then("I should see that I'm still crafting those items", () => {
+  ["Orirock Concentration", "Caster Dualchip"].forEach((itemName) => {
+    cy.get(`[data-cy="${itemName}"]`)
+      .find('[data-cy="craftingToggle"]')
+      .should("have.attr", "data-crafting", "true");
+  });
+});

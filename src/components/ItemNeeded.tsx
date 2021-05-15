@@ -193,6 +193,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
               onClick={() => onCraftingToggle(name)}
               aria-label="Toggle crafting"
               data-cy="craftingToggle"
+              data-crafting={crafting}
             >
               {crafting ? "Crafting" : "Craft"}
             </Button>

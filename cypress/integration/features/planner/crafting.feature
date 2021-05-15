@@ -57,7 +57,6 @@ Feature: Operator Planner - crafting
     When I collect all the ingredients for those crafted items
     Then I should see those crafted items marked as complete
 
-  @ignore
   Scenario: Planner saves crafting state of items
     Given I have added a goal to my planner
     And I have marked some items to be crafted
