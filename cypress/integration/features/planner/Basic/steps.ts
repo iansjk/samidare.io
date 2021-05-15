@@ -47,12 +47,10 @@ Then("I should see my goal in the operator goals list", () => {
 Then(
   "I should see its required materials in the required materials section",
   () => {
-    cy.get("@amiyaE2Goal").then((goal: any) => {
-      cy.get('[data-cy="materialsList"]')
-        .as("materialsList")
-        .find('[data-cy="LMD"]')
-        .should("not.exist");
-    });
+    cy.get('[data-cy="materialsList"]')
+      .as("materialsList")
+      .find('[data-cy="LMD"]')
+      .should("not.exist");
     cy.get("@amiyaE2GoalMaterials").then((materials: any) => {
       materials.map((material) =>
         cy
