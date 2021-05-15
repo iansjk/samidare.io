@@ -254,11 +254,11 @@ const GoalOverview = React.memo(function GoalOverview(
           />
         );
         const outer = isLargeScreen ? (
-          <Box key={name} data-testid={name} width="20%" px={0.5} mt={1}>
+          <Box key={name} data-cy={name} width="20%" px={0.5} mt={1}>
             {inner}
           </Box>
         ) : (
-          <Grid key={name} data-testid={name} item xs={4} sm={3} md={3}>
+          <Grid key={name} data-cy={name} item xs={6} sm={3} md={3}>
             {inner}
           </Grid>
         );
@@ -270,9 +270,11 @@ const GoalOverview = React.memo(function GoalOverview(
     ([name, _]) => name !== "LMD"
   );
 
+  const totalCost = materialsNeeded.LMD ?? 0;
+
   return (
     <Grid container spacing={2}>
-      <Grid component="section" item md={7} data-testid="materialsLists">
+      <Grid component="section" item md={7} data-cy="materialsList">
         <Card>
           <CardContent>
             <Box clone mb={1}>
@@ -288,9 +290,11 @@ const GoalOverview = React.memo(function GoalOverview(
                     className={classes.totalCostHeader}
                     component="span"
                     variant="h6"
+                    data-cy="totalCost"
+                    data-total-cost={totalCost}
                   >
                     Total cost:&nbsp;
-                    <b>{(materialsNeeded.LMD ?? 0).toLocaleString()}</b>
+                    <b>{totalCost.toLocaleString()}</b>
                     <img
                       className={classes.lmdIcon}
                       src={lmdIcon}
@@ -319,7 +323,7 @@ const GoalOverview = React.memo(function GoalOverview(
           </CardContent>
         </Card>
       </Grid>
-      <Grid component="section" item xs={12} md={5}>
+      <Grid component="section" item xs={12} md={5} data-cy="goalsList">
         <>
           <Box clone mb={1}>
             <Card>

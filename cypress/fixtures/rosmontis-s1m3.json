@@ -1,0 +1,101 @@
+{
+  "operatorName": "Rosmontis",
+  "goalCategory": 1,
+  "goalName": "Skill 1 Mastery 3",
+  "goalShortName": "S1 M3",
+  "ingredients": [
+    {
+      "name": "Skill Summary - 3",
+      "tier": 4,
+      "quantity": 15
+    },
+    {
+      "name": "Crystalline Electroassembly",
+      "tier": 5,
+      "quantity": 6
+    },
+    {
+      "name": "Orirock Concentration",
+      "tier": 4,
+      "quantity": 4
+    }
+  ],
+  "masteryLevel": 3,
+  "skill": {
+    "iconId": null,
+    "masteries": [
+      {
+        "goalCategory": 1,
+        "goalName": "Skill 1 Mastery 1",
+        "goalShortName": "S1 M1",
+        "ingredients": [
+          {
+            "name": "Skill Summary - 3",
+            "tier": 4,
+            "quantity": 8
+          },
+          {
+            "name": "Grindstone Pentahydrate",
+            "tier": 4,
+            "quantity": 4
+          },
+          {
+            "name": "Loxic Kohl",
+            "tier": 3,
+            "quantity": 7
+          }
+        ],
+        "masteryLevel": 1
+      },
+      {
+        "goalCategory": 1,
+        "goalName": "Skill 1 Mastery 2",
+        "goalShortName": "S1 M2",
+        "ingredients": [
+          {
+            "name": "Skill Summary - 3",
+            "tier": 4,
+            "quantity": 12
+          },
+          {
+            "name": "Oriron Block",
+            "tier": 4,
+            "quantity": 4
+          },
+          {
+            "name": "Incandescent Alloy Block",
+            "tier": 4,
+            "quantity": 7
+          }
+        ],
+        "masteryLevel": 2
+      },
+      {
+        "goalCategory": 1,
+        "goalName": "Skill 1 Mastery 3",
+        "goalShortName": "S1 M3",
+        "ingredients": [
+          {
+            "name": "Skill Summary - 3",
+            "tier": 4,
+            "quantity": 15
+          },
+          {
+            "name": "Crystalline Electroassembly",
+            "tier": 5,
+            "quantity": 6
+          },
+          {
+            "name": "Orirock Concentration",
+            "tier": 4,
+            "quantity": 4
+          }
+        ],
+        "masteryLevel": 3
+      }
+    ],
+    "skillId": "skchr_rosmon_1",
+    "skillName": "Expanded Cognition",
+    "slot": 1
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "eliteLevel": 2,
+  "ingredients": [
+    {
+      "id": "4001",
+      "name": "LMD",
+      "tier": 4,
+      "quantity": 120000,
+      "sortId": 10004
+    },
+    {
+      "id": "3253",
+      "name": "Caster Dualchip",
+      "tier": 5,
+      "quantity": 3,
+      "sortId": 400006
+    },
+    {
+      "id": "30014",
+      "name": "Orirock Concentration",
+      "tier": 4,
+      "quantity": 10,
+      "sortId": 100012
+    },
+    {
+      "id": "30073",
+      "name": "Loxic Kohl",
+      "tier": 3,
+      "quantity": 10,
+      "sortId": 100005
+    }
+  ],
+  "goalName": "Elite 2",
+  "goalCategory": 0
+}

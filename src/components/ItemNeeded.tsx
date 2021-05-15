@@ -109,7 +109,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
 
   return (
     <>
-      <Box position="relative">
+      <Box position="relative" data-cy="itemNeeded">
         <Box width="100%" textAlign="center">
           <ButtonBase
             className={classes.itemButton}
@@ -155,6 +155,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
             min: 0,
             step: 1,
             "aria-label": "Quantity owned",
+            "data-cy": "ownedInput",
           }}
           InputProps={{
             classes: outlinedInputClasses,
@@ -165,6 +166,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
                   edge="start"
                   disabled={owned === 0}
                   onClick={() => onDecrement(name)}
+                  data-cy="decrement"
                 >
                   <RemoveCircleIcon />
                 </IconButton>
@@ -176,6 +178,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
                   aria-label="add 1 to owned amount"
                   edge="end"
                   onClick={() => onIncrement(name)}
+                  data-cy="increment"
                 >
                   <AddCircleIcon />
                 </IconButton>
@@ -189,6 +192,8 @@ const ItemNeeded = React.memo(function ItemNeeded({
               variant={crafting ? "contained" : "outlined"}
               onClick={() => onCraftingToggle(name)}
               aria-label="Toggle crafting"
+              data-cy="craftingToggle"
+              data-crafting={crafting}
             >
               {crafting ? "Crafting" : "Craft"}
             </Button>

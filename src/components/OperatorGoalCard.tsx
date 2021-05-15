@@ -97,7 +97,13 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
   const handleClick = React.useCallback(() => onDelete(goal), [goal, onDelete]);
   const [alter, appellation] = goal.operatorName.split(" the ");
   return (
-    <Box mb={1} position="relative">
+    <Box
+      mb={1}
+      position="relative"
+      data-cy="operatorGoalCard"
+      data-operator-name={goal.operatorName}
+      data-goal-name={goal.goalName}
+    >
       <Card className={classes.goalCard} style={goalCardStyle}>
         <CardContent>
           <Grid container className={classes.goalOuterGridContainer}>
@@ -116,6 +122,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
                       component="h3"
                       variant="h6"
                       className={classes.operatorName}
+                      data-cy="operatorName"
                     >
                       {appellation && (
                         <Typography
@@ -135,6 +142,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
                   display="flex"
                   whiteSpace="nowrap"
                   alignItems="center"
+                  data-cy="goalName"
                 >
                   <Grid item xs sm={12} md lg={12}>
                     <OperatorGoalIconography goal={goal} skill={skill} />
@@ -169,6 +177,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
             aria-label="Delete this goal"
             className={classes.deleteIconButton}
             onClick={handleClick}
+            data-cy="deleteGoal"
           >
             <CancelIcon />
           </IconButton>

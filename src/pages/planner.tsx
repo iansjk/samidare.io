@@ -227,7 +227,12 @@ function Planner(): React.ReactElement {
           value={operatorName}
           onChange={handleOperatorNameChanged}
           renderInput={(params) => (
-            <TextField {...params} label="Operator name" variant="outlined" />
+            <TextField
+              {...params}
+              name="operator-name"
+              label="Operator name"
+              variant="outlined"
+            />
           )}
         />
       </Grid>
@@ -235,7 +240,7 @@ function Planner(): React.ReactElement {
         <Box display="flex">
           <Box mr={2} flexGrow={1} minWidth={0} width="100%">
             <FormControl variant="outlined" fullWidth>
-              <InputLabel id="goal-select">Goals</InputLabel>
+              <InputLabel htmlFor="goal-select">Goals</InputLabel>
               <Select
                 id="goal-select"
                 autoWidth
