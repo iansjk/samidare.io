@@ -1,4 +1,10 @@
-import { Before, Given, Then, When } from "cypress-cucumber-preprocessor/steps";
+import {
+  And,
+  Before,
+  Given,
+  Then,
+  When,
+} from "cypress-cucumber-preprocessor/steps";
 import { addGoal, removeGoal } from "../utils";
 
 const ITEMS_TO_CRAFT = ["Orirock Concentration", "Caster Dualchip"];
@@ -65,6 +71,21 @@ When("I collect all the ingredients for those crafted items", () => {
     cy.get(`[data-cy="${itemName}"]`)
       .find('[data-cy="ownedInput"]')
       .type("999");
+  });
+});
+
+When(
+  "I add another goal that requires some of the crafted items' ingredients",
+  () => {
+    addGoal("Haze", "Elite 2");
+  }
+);
+
+And("if I stop crafting items for the first goal", () => {
+  ITEMS_TO_CRAFT.forEach((itemName) => {
+    cy.get(`[data-cy="${itemName}"]`)
+      .find('[data-cy="craftingToggle"]')
+      .click();
   });
 });
 
@@ -158,5 +179,20 @@ Then(
     CRAFTED_ITEM_INGREDIENTS.forEach((ingredientName) => {
       cy.get(`[data-cy="${ingredientName}"]`).should("not.exist");
     });
+  }
+);
+
+Then("I should see the required number of ingredients added together", () => {
+  cy.get('[data-cy="Caster Chip Pack"]')
+    .find('[data-cy="quantity"]')
+    .should("have.text", "11");
+});
+
+Then(
+  "I should only see the ingredients that are still needed by the other goal",
+  () => {
+    cy.get('[data-cy="Caster Chip Pack"]')
+      .find('[data-cy="quantity"]')
+      .should("have.text", "5");
   }
 );
