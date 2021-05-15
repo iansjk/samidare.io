@@ -22,6 +22,10 @@ When("I mark that ingredient to be crafted too", () => {
   craftItem("Orirock Cluster");
 });
 
+When("I remove the goal from my planner", () => {
+  cy.get('[data-cy="deleteGoal"]').click();
+});
+
 Then("I should be able to craft the higher tier, craftable items", () => {
   cy.get('[data-cy="Orirock Concentration"]').find(
     '[data-cy="craftingToggle"]'
@@ -36,5 +40,16 @@ Then(
   "I should see that ingredient's ingredients in the required materials section",
   () => {
     cy.get('[data-cy="Orirock Cube"]');
+  }
+);
+
+Then(
+  "I shouldn't see the items to be crafted in the required materials section",
+  () => {
+    ["Orirock Cluster", "Chip Catalyst", "Caster Dualchip"].forEach(
+      (ingredientName) => {
+        cy.get(`[data-id="${ingredientName}"]`).should("not.exist");
+      }
+    );
   }
 );

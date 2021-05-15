@@ -13,7 +13,6 @@ Feature: Operator Planner - crafting
     And I mark that ingredient to be crafted too
     Then I should see that ingredient's ingredients in the required materials section
 
-  @ignore
   Scenario: Items being crafted aren't shown if their goal is removed
     Given I have added a goal to my planner
     And I have marked some items to be crafted

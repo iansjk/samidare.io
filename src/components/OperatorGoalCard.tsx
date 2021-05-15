@@ -171,6 +171,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
             aria-label="Delete this goal"
             className={classes.deleteIconButton}
             onClick={handleClick}
+            data-cy="deleteGoal"
           >
             <CancelIcon />
           </IconButton>
