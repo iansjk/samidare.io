@@ -66,3 +66,15 @@ Feature: Operator Planner - crafting
     Then Defender Chip Pack should be marked as complete
     And if I obtain 4 Chip Catalyst
     Then Defender Dualchip should be marked as complete
+
+  # If a user requires Defender Chip, they can craft them from Medic Chips, but they shouldn't then
+  # be able to mark Medic Chips as being crafted from Defender Chips (since that's what they needed
+  # in the first place!)
+  Scenario: Chips can't be circuitously crafted
+    Given I have added "Mudrock - Elite 1" to my planner
+    And I have added "Kal'tsit - Elite 1" to my planner
+    When I start crafting Defender Chip
+    Then I should not be able to craft Medic Chip
+    But if I stop crafting Defender Chip
+    And I start crafting Medic Chip
+    Then I should not be able to craft Defender Chip

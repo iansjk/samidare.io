@@ -1,6 +1,7 @@
 import {
   And,
   Before,
+  But,
   Given,
   Then,
   When,
@@ -222,4 +223,12 @@ Then(/^I should need (\d) (.+)$/, (needed, itemName) => {
 
 Then(/^(.+) should be marked as complete$/, (completedItem) => {
   cy.get(`[data-cy="${completedItem}"]`).find('[data-cy="complete"]');
+});
+
+Then(/^I should not be able to craft (.+)$/, (notCraftableItem) => {
+  cy.get(`[data-cy="${notCraftableItem}"]`).contains("Uncraftable");
+});
+
+But(/^if I stop crafting (.+)$/, (itemName) => {
+  toggleCrafting(itemName);
 });
