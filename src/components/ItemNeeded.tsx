@@ -106,7 +106,16 @@ const ItemNeeded = React.memo(function ItemNeeded({
     variant: "popover",
     popupId: `${slugify(name)}-popover`,
   });
-
+  // don't allow crafting if this item is already used to craft an ingredient of it
+  // (e.g. chips: users shouldn't be allowed to craft defender chips from medic chips
+  // if they are already crafting medic chips from defender chips)
+  // note that this is O(N^2), but we expect N to be very small (~5 at most)
+  const isCraftable =
+    ingredients &&
+    (!ingredientFor ||
+      ingredientFor.filter((target) =>
+        ingredients.find((ingredient) => ingredient.name === target.name)
+      ).length === 0);
   return (
     <>
       <Box position="relative" data-cy="itemNeeded">
@@ -186,7 +195,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
             ),
           }}
         />
-        {ingredients ? (
+        {isCraftable ? (
           <ButtonGroup color="secondary" fullWidth>
             <Button
               variant={crafting ? "contained" : "outlined"}
