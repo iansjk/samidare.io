@@ -44,12 +44,11 @@ Feature: Operator Planner - crafting
     When I obtain some more of the item to be crafted
     Then I should see that I need less of its ingredients
 
-  @ignore
   Scenario: Items being crafted are marked as complete when their ingredients are complete
     Given I have added a goal to my planner
     And I have marked some items to be crafted
     When I collect all the ingredients for those crafted items
-    Then I should see those crafted items marked as complete
+    Then I should no longer see their ingredients in the required materials section
 
   Scenario: Planner saves crafting state of items
     Given I have added a goal to my planner

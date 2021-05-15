@@ -59,6 +59,15 @@ When("I stop crafting an item", () => {
     .click();
 });
 
+When("I collect all the ingredients for those crafted items", () => {
+  cy.scrollTo("top"); // workaround for inputs being obscured by site header
+  ITEMS_TO_CRAFT.forEach((itemName) => {
+    cy.get(`[data-cy="${itemName}"]`)
+      .find('[data-cy="ownedInput"]')
+      .type("999");
+  });
+});
+
 Then("I should be able to craft the craftable items", () => {
   cy.get('[data-cy="Orirock Concentration"]').find(
     '[data-cy="craftingToggle"]'
@@ -140,5 +149,14 @@ Then(
       "data-total-cost",
       FIVE_STAR_ELITE_2_LMD_COST
     );
+  }
+);
+
+Then(
+  "I should no longer see their ingredients in the required materials section",
+  () => {
+    CRAFTED_ITEM_INGREDIENTS.forEach((ingredientName) => {
+      cy.get(`[data-cy="${ingredientName}"]`).should("not.exist");
+    });
   }
 );
