@@ -51,7 +51,7 @@ When("I obtain some more of the item to be crafted", () => {
   });
 });
 
-Then("I should be able to craft the higher tier, craftable items", () => {
+Then("I should be able to craft the craftable items", () => {
   cy.get('[data-cy="Orirock Concentration"]').find(
     '[data-cy="craftingToggle"]'
   );
