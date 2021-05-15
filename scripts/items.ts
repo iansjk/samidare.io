@@ -167,16 +167,17 @@ const items = Object.keys(cnItemTable)
 const crystalItems = {
   "Crystal Component": "Crystalline Component",
   "Crystal Circuit": "Crystalline Circuit",
-  "Crystal Electronic Unit": "Crystalline Electroassembly"
+  "Crystal Electronic Unit": "Crystalline Electroassembly",
 };
 
-Object.entries(crystalItems).map(([oldName, newName]) => {
+Object.entries(crystalItems).forEach(([oldName, newName]) => {
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const newEntry = items.find((item) => item.name === newName)!;
   items.push({
     ...newEntry,
     name: oldName,
     id: oldName,
-  })
+  });
 });
 
 interface PenguinStatsMatrixCell {
