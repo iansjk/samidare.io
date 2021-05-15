@@ -7,6 +7,8 @@ const CRAFTED_ITEM_INGREDIENTS = [
   "Chip Catalyst",
   "Caster Chip Pack",
 ];
+const FIVE_STAR_ELITE_2_LMD_COST = 120_000;
+const CRAFTED_ITEM_LMD_COST = 3000;
 
 Before(() => {
   cy.visit("/planner");
@@ -65,6 +67,11 @@ Then(
   "I should see that ingredient's ingredients in the required materials section",
   () => {
     cy.get('[data-cy="Orirock Cube"]');
+    cy.get('[data-cy="totalCost"]').should(
+      "have.attr",
+      "data-total-cost",
+      FIVE_STAR_ELITE_2_LMD_COST + CRAFTED_ITEM_LMD_COST + 40 * 200 // 40 orirock clusters, 200 LMD to craft one
+    );
   }
 );
 
@@ -74,6 +81,7 @@ Then(
     CRAFTED_ITEM_INGREDIENTS.forEach((ingredientName) => {
       cy.get(`[data-cy="${ingredientName}"]`).should("not.exist");
     });
+    cy.get('[data-cy="totalCost"]').should("have.attr", "data-total-cost", 0);
   }
 );
 
@@ -91,6 +99,11 @@ Then(
     CRAFTED_ITEM_INGREDIENTS.forEach((ingredientName) => {
       cy.get(`[data-cy="${ingredientName}"]`);
     });
+    cy.get('[data-cy="totalCost"]').should(
+      "have.attr",
+      "data-total-cost",
+      FIVE_STAR_ELITE_2_LMD_COST + CRAFTED_ITEM_LMD_COST
+    );
   }
 );
 
@@ -104,5 +117,10 @@ Then("I should see that I need less of its ingredients", () => {
     cy.get(`[data-cy="${ingredientName}"]`)
       .find('[data-cy="quantity"]')
       .should("have.text", expectedCounts[ingredientName]);
+    cy.get('[data-cy="totalCost"]').should(
+      "have.attr",
+      "data-total-cost",
+      FIVE_STAR_ELITE_2_LMD_COST + 300 * 9 // 9 orirock concentrations left, 300 LMD to craft one
+    );
   });
 });

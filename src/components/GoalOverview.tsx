@@ -270,6 +270,8 @@ const GoalOverview = React.memo(function GoalOverview(
     ([name, _]) => name !== "LMD"
   );
 
+  const totalCost = materialsNeeded.LMD ?? 0;
+
   return (
     <Grid container spacing={2}>
       <Grid component="section" item md={7} data-cy="materialsList">
@@ -288,9 +290,11 @@ const GoalOverview = React.memo(function GoalOverview(
                     className={classes.totalCostHeader}
                     component="span"
                     variant="h6"
+                    data-cy="totalCost"
+                    data-total-cost={totalCost}
                   >
                     Total cost:&nbsp;
-                    <b>{(materialsNeeded.LMD ?? 0).toLocaleString()}</b>
+                    <b>{totalCost.toLocaleString()}</b>
                     <img
                       className={classes.lmdIcon}
                       src={lmdIcon}
