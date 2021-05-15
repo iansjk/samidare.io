@@ -54,3 +54,13 @@ Feature: Operator Planner - crafting
     And I have marked some items to be crafted
     When I refresh the page
     Then I should see that I'm still crafting those items
+
+  # Regression test for T-20, Chip crafting incorrectly calculates material requirements
+  Scenario: Chips can be crafted from other chips
+    Given I have added "Mudrock - Elite 2" to my planner
+    And I am crafting Defender Dualchip
+    And I already have 6 Defender Chip Pack
+    When I start crafting Defender Chip Pack
+    Then I should need 4 Medic Chip Pack
+    And if I obtain 4 Medic Chip Pack
+    Then Defender Chip Pack and Defender Dualchip should be marked as complete
