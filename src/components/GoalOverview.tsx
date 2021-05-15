@@ -53,6 +53,7 @@ const GoalOverview = React.memo(function GoalOverview(
           name
           tier
           sortId
+          yield
           ingredients {
             name
             quantity
@@ -98,14 +99,15 @@ const GoalOverview = React.memo(function GoalOverview(
         needed > 0 &&
         Object.prototype.hasOwnProperty.call(itemsToCraft, item.name)
       ) {
-        item?.ingredients?.forEach((ingredient) => {
+        const multiplier = Math.ceil(needed / (item.yield ?? 1));
+        item.ingredients?.forEach((ingredient) => {
           ingredientMapping[ingredient.name] = [
             ...(ingredientMapping[ingredient.name] || []),
             { name: item.name, tier: item.tier, quantity: ingredient.quantity },
           ];
           materialsNeeded[ingredient.name] =
             (materialsNeeded[ingredient.name] || 0) +
-            needed * ingredient.quantity;
+            ingredient.quantity * multiplier;
         });
       }
     }
@@ -113,34 +115,61 @@ const GoalOverview = React.memo(function GoalOverview(
   const craftingMaterialsOwned = { ...materialsOwned };
   Object.keys(itemsToCraft)
     .filter(
-      (itemName) => materialsNeeded[itemName] && materialsNeeded[itemName] > 0
+      (itemName) =>
+        materialsNeeded[itemName] &&
+        materialsNeeded[itemName] - (materialsOwned[itemName] ?? 0) > 0
     )
     .sort((a, b) => itemsToCraft[a].tier - itemsToCraft[b].tier)
     .forEach((craftedItemName) => {
+      const shortage =
+        materialsNeeded[craftedItemName] -
+        (materialsOwned[craftedItemName] ?? 0);
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       const ingredients = itemsToCraft[craftedItemName].ingredients!.filter(
         (ingredient) => ingredient.name !== "LMD"
       );
-      const numCraftable = Math.min(
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      const multiplier = itemsToCraft[craftedItemName].yield!;
+      // numTimesCraftable = how many times the *formula* can be performed
+      const numTimesCraftable = Math.min(
         ...ingredients.map((ingredient) => {
           return Math.floor(
             (craftingMaterialsOwned[ingredient.name] || 0) / ingredient.quantity
           );
         })
       );
-      ingredients?.forEach((ingredient) => {
+      // numTimesToCraft = how many times we'll actually execute this formula
+      const numTimesToCraft = Math.min(
+        numTimesCraftable,
+        Math.ceil(shortage / multiplier)
+      );
+      // now we deduct from our crafting mats supply
+      ingredients.forEach((ingredient) => {
         craftingMaterialsOwned[ingredient.name] = Math.max(
           (craftingMaterialsOwned[ingredient.name] || 0) -
-            ingredient.quantity * numCraftable,
+            ingredient.quantity * numTimesToCraft,
           0
         );
       });
-      if (materialsNeeded[craftedItemName] - numCraftable <= 0) {
+      // if we were able to satisfy the shortage, then the end product is complete
+      if (shortage - numTimesToCraft <= 0) {
         isComplete[craftedItemName] = true;
       }
+      // in any case, update our new counts after crafting up our materials
       craftingMaterialsOwned[craftedItemName] =
-        (craftingMaterialsOwned[craftedItemName] || 0) + numCraftable;
+        (craftingMaterialsOwned[craftedItemName] || 0) +
+        numTimesToCraft * multiplier;
     });
+  // now that we've finished crafting, if we have any ingredients left over, mark those complete
+  Object.keys(ingredientMapping).forEach((ingredientName) => {
+    if (
+      (materialsNeeded[ingredientName] ?? 0) -
+        (craftingMaterialsOwned[ingredientName] ?? 0) <=
+      0
+    ) {
+      isComplete[ingredientName] = true;
+    }
+  });
 
   const handleIncrementOwned = React.useCallback(
     function handleIncrementOwned(itemName: string): void {

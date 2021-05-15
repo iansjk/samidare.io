@@ -220,9 +220,6 @@ Then(/^I should need (\d) (.+)$/, (needed, itemName) => {
     .should("have.text", needed);
 });
 
-Then(/^(.+) should be marked as complete$/, (completedItems) => {
-  const completed = completedItems.split(" and ");
-  completed.forEach((itemName) => {
-    cy.get(`[data-cy="${itemName}"]`).find('[data-cy="complete"]');
-  });
+Then(/^(.+) should be marked as complete$/, (completedItem) => {
+  cy.get(`[data-cy="${completedItem}"]`).find('[data-cy="complete"]');
 });

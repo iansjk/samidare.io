@@ -63,4 +63,6 @@ Feature: Operator Planner - crafting
     When I start crafting Defender Chip Pack
     Then I should need 3 Medic Chip Pack
     And if I obtain 3 Medic Chip Pack
-    Then Defender Chip Pack and Defender Dualchip should be marked as complete
+    Then Defender Chip Pack should be marked as complete
+    And if I obtain 4 Chip Catalyst
+    Then Defender Dualchip should be marked as complete
