@@ -25,7 +25,4 @@ module.exports = {
     },
     "gatsby-plugin-netlify",
   ],
-  flags: {
-    DEV_SSR: true,
-  },
 };
