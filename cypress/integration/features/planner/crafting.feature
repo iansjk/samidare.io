@@ -52,7 +52,7 @@ Feature: Operator Planner - crafting
     Then I should see that I need less of its ingredients
 
   @ignore
-  Scenario: Scenario name: Items being crafted are marked as complete when their ingredients are complete
+  Scenario: Items being crafted are marked as complete when their ingredients are complete
     Given I have added a goal to my planner
     And I have marked some items to be crafted
     When I collect all the ingredients for those crafted items
