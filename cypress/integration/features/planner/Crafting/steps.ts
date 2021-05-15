@@ -53,6 +53,12 @@ When("I obtain some more of the item to be crafted", () => {
   });
 });
 
+When("I stop crafting an item", () => {
+  cy.get('[data-cy="Orirock Concentration"]')
+    .find('[data-cy="craftingToggle"]')
+    .click();
+});
+
 Then("I should be able to craft the craftable items", () => {
   cy.get('[data-cy="Orirock Concentration"]').find(
     '[data-cy="craftingToggle"]'
@@ -124,3 +130,15 @@ Then("I should see that I need less of its ingredients", () => {
     );
   });
 });
+
+Then(
+  "I should not see its ingredients in the required materials section",
+  () => {
+    cy.get('[data-cy="Orirock Cluster"]').should("not.exist");
+    cy.get('[data-cy="totalCost"]').should(
+      "have.attr",
+      "data-total-cost",
+      FIVE_STAR_ELITE_2_LMD_COST
+    );
+  }
+);

@@ -23,7 +23,6 @@ Feature: Operator Planner - crafting
     And I remove the first goal from my planner
     Then I should still see the item to be crafted in the required materials section
 
-  @ignore
   Scenario: User stops crafting an item: ingredients no longer appear
     Given I have added a goal to my planner
     And I have marked some items to be crafted
