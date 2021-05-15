@@ -45,7 +45,7 @@ When("I obtain some more of the item to be crafted", () => {
     cy.get(`[data-cy="${itemName}"]`)
       .find('[data-cy="increment"]')
       .then((incrementButton) => {
-        cy.scrollTo("top");
+        cy.scrollTo("top"); // workaround for increment buttons being obscured by site header
         cy.wrap(incrementButton).click();
       });
   });
