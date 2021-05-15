@@ -192,6 +192,7 @@ const ItemNeeded = React.memo(function ItemNeeded({
               variant={crafting ? "contained" : "outlined"}
               onClick={() => onCraftingToggle(name)}
               aria-label="Toggle crafting"
+              data-cy="craftingToggle"
             >
               {crafting ? "Crafting" : "Craft"}
             </Button>

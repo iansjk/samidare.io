@@ -1,10 +1,8 @@
 Feature: Operator Planner - crafting
-  @ignore
   Scenario: Craftable items can be crafted
     When I add a goal to my planner
     Then I should be able to craft the higher tier, craftable items
 
-  @ignore
   Scenario: Uncraftable items can't be crafted
     When I add a goal to my planner
     Then I should not be able to craft the uncraftable items
