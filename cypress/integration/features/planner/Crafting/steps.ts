@@ -20,12 +20,12 @@ Before(() => {
   cy.visit("/planner");
 });
 
-function craftItem(itemName: string) {
+function toggleCrafting(itemName: string) {
   cy.get(`[data-cy="${itemName}"]`).find('[data-cy="craftingToggle"]').click();
 }
 
 Given("I have marked some items to be crafted", () => {
-  ITEMS_TO_CRAFT.forEach((itemName) => craftItem(itemName));
+  ITEMS_TO_CRAFT.forEach((itemName) => toggleCrafting(itemName));
 });
 
 Given(/^I have added "([^"]+)" to my planner$/, (operatorGoal) => {
@@ -34,7 +34,7 @@ Given(/^I have added "([^"]+)" to my planner$/, (operatorGoal) => {
 });
 
 Given(/^I am crafting (.+)$/, (itemName) => {
-  craftItem(itemName);
+  toggleCrafting(itemName);
 });
 
 Given(/^I already have (\d) (.+)$/, (owned, itemName) => {
@@ -42,11 +42,11 @@ Given(/^I already have (\d) (.+)$/, (owned, itemName) => {
 });
 
 When("I mark an item to be crafted that has a craftable ingredient", () => {
-  craftItem("Orirock Concentration");
+  toggleCrafting("Orirock Concentration");
 });
 
 When("I mark that ingredient to be crafted too", () => {
-  craftItem("Orirock Cluster");
+  toggleCrafting("Orirock Cluster");
 });
 
 When("I remove the goal from my planner", () => {
@@ -73,7 +73,7 @@ When("I obtain some more of the item to be crafted", () => {
 });
 
 When("I stop crafting an item", () => {
-  craftItem("Orirock Concentration");
+  toggleCrafting("Orirock Concentration");
 });
 
 When("I collect all the ingredients for those crafted items", () => {
@@ -93,11 +93,11 @@ When(
 );
 
 When(/^I start crafting (.+)$/, (itemName) => {
-  craftItem(itemName);
+  toggleCrafting(itemName);
 });
 
 And("if I stop crafting items for the first goal", () => {
-  ITEMS_TO_CRAFT.forEach((itemName) => craftItem(itemName));
+  ITEMS_TO_CRAFT.forEach((itemName) => toggleCrafting(itemName));
 });
 
 And(/^if I obtain (\d) (.+)$/, (obtained, itemName) => {
