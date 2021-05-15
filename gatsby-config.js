@@ -25,4 +25,10 @@ module.exports = {
     },
     "gatsby-plugin-netlify",
   ],
+  flags: {
+    DEV_SSR: true,
+    FAST_REFRESH: true,
+    PRESERVE_WEBPACK_CACHE: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+  },
 };
