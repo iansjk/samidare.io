@@ -46,9 +46,9 @@ Then(
 Then(
   "I shouldn't see the items to be crafted in the required materials section",
   () => {
-    ["Orirock Cluster", "Chip Catalyst", "Caster Dualchip"].forEach(
+    ["Orirock Cluster", "Chip Catalyst", "Caster Chip Pack"].forEach(
       (ingredientName) => {
-        cy.get(`[data-id="${ingredientName}"]`).should("not.exist");
+        cy.get(`[data-cy="${ingredientName}"]`).should("not.exist");
       }
     );
   }
