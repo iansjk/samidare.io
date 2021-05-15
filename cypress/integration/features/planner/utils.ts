@@ -4,7 +4,7 @@ export function addGoal(
   goalName: string
 ): Cypress.Chainable {
   cy.get('input[name="operator-name"]').type(`${operatorName}{enter}`);
-  cy.wait(100);
+  cy.wait(300);
   cy.get("#goal-select").click();
   cy.get('li[role="option"]').contains(goalName).click().type("{esc}");
   return cy.contains("Add").click();
