@@ -112,9 +112,9 @@ function Planner(): React.ReactElement {
       } else if (
         presetName === "Skill 3 Mastery 1 → 3" &&
         operator.skills &&
-        operator.skills[3]
+        operator.skills[2]
       ) {
-        goals = operator.skills[3].masteries;
+        goals = operator.skills[2].masteries;
       } else if (presetName === "Everything") {
         goals = [
           ...(operator.elite || []),
