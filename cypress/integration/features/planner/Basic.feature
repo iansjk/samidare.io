@@ -39,7 +39,7 @@ Feature: Operator Planner
   Scenario Outline: Operators with 3 skills have three presets
     When I am adding goals for <3-skill-operator>
     Then I should see an "Elite 1, Skill Level 1 → 7" preset
-    And I should see a "Skill 3, Mastery 1 → 3" preset
+    And I should see a "Skill 3 Mastery 1 → 3" preset
     And I should see an "Everything" preset
 
     Examples:
