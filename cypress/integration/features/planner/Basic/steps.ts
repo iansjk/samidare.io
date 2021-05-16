@@ -150,11 +150,75 @@ Then(/^I should see an? "([^"]+)" preset$/, (presetName) => {
   cy.get('[data-cy="preset"]').contains(presetName).as("presetToSelect");
 });
 
-// TODO
-Then(
-  /^the goals making up that preset should be (un)?selected$/,
-  (negated) => {}
-);
+Then(/^the goals making up that preset should be (un)?selected$/, (negated) => {
+  cy.get("@presetToSelect").then((selectedPreset) => {
+    cy.get("#operator-name")
+      .invoke("val")
+      .then((operatorName) => {
+        const presetName = selectedPreset.text();
+        let maxElite = 0;
+        let numSkills = 1;
+        let numSkillLevels = 6;
+        let goals: string[] = [];
+        if (presetName === "Everything") {
+          if (operatorName === "Spot") {
+            maxElite = 1;
+          } else if (operatorName === "Cutter") {
+            maxElite = 2;
+            numSkills = 2;
+          } else if (operatorName === "Aak") {
+            maxElite = 2;
+            numSkills = 3;
+          } else if (operatorName === "Amiya (Guard)") {
+            numSkills = 2;
+            numSkillLevels = 0;
+          } else {
+            throw new Error(
+              `Don't know how to handle operator: ${JSON.stringify(
+                operatorName
+              )}`
+            );
+          }
+        } else if (presetName === "Elite 1, Skill Level 1 → 7") {
+          maxElite = 1;
+          numSkills = 0;
+        } else if (presetName === "Skill 3 Mastery 1 → 3") {
+          goals = Array(3)
+            .fill(0)
+            .map((_, i) => `Skill 3 Mastery ${i + 1}`);
+        } else {
+          throw new Error(
+            `Don't know how to handle preset name: ${presetName}`
+          );
+        }
+
+        if (goals.length === 0) {
+          goals = [
+            ...Array(maxElite)
+              .fill(0)
+              .map((_, i) => `Elite ${i + 1}`),
+            ...Array(numSkills)
+              .fill(0)
+              .flatMap((_, i) =>
+                Array(3)
+                  .fill(0)
+                  .flatMap((__, j) => `Skill ${i + 1} Mastery ${j + 1}`)
+              ),
+            ...Array(numSkillLevels)
+              .fill(0)
+              .flatMap((_, i) => `Skill Level ${i + 1} → ${i + 2}`),
+          ];
+        }
+
+        goals.forEach((goalName) => {
+          cy.get("#menu-goal-select")
+            .find('[data-cy="goalOption"]')
+            .contains(goalName)
+            .should("have.attr", "aria-selected", negated ? "false" : "true");
+        });
+      });
+  });
+});
 
 Then('I should only see an "Everything" preset', () => {
   cy.get('[data-cy="preset"]')

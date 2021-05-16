@@ -225,7 +225,7 @@ function Planner(): React.ReactElement {
       );
     }
     return (
-      <MenuItem key={goal.goalName} value={goal.goalName}>
+      <MenuItem key={goal.goalName} value={goal.goalName} data-cy="goalOption">
         {child}
         {goal.goalName}
       </MenuItem>
