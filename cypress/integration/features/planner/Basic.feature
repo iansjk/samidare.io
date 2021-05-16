@@ -46,3 +46,7 @@ Feature: Operator Planner
       | 3-skill-operator |
       | Amiya            |
       | Aak              |
+
+  Scenario: Amiya (Guard) only has one preset
+    When I am adding goals for Amiya (Guard)
+    Then I should only see an "Everything" preset
