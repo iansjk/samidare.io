@@ -48,8 +48,8 @@ Feature: Operator Planner
     Then I should see a <preset-name> preset
     And when I select that preset
     Then the goals making up that preset should be selected
-    And when I deselect that preset
-    Then the goals making up that preset should be unselected
+    # And when I deselect that preset
+    # Then the goals making up that preset should be unselected
 
     Examples:
       | operator-name | preset-name                  |
