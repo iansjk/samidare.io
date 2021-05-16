@@ -1,4 +1,10 @@
-import { Before, When, Then, But } from "cypress-cucumber-preprocessor/steps";
+import {
+  Before,
+  When,
+  Then,
+  But,
+  And,
+} from "cypress-cucumber-preprocessor/steps";
 import { addGoal, enterOperatorName } from "../utils";
 
 Before(() => {
@@ -29,8 +35,8 @@ When(
   }
 );
 
-When("I am adding goals for Spot", () => {
-  enterOperatorName("Spot");
+When(/^I am adding goals for (.+)$/, (operatorName) => {
+  enterOperatorName(operatorName);
 });
 
 Then("I should see my goal in the operator goals list", () => {
@@ -138,6 +144,26 @@ Then("I should see my previous item counts", () => {
         .should("have.value", "1");
     });
   });
+});
+
+Then(/^I should see an? "([^"]+)" preset$/, (presetName) => {
+  cy.get('[data-cy="preset"]').contains(presetName).as("presetToSelect");
+});
+
+// TODO
+Then(
+  /^the goals making up that preset should be (un)?selected$/,
+  (negated) => {}
+);
+
+Then('I should only see an "Everything" preset', () => {
+  cy.get('[data-cy="preset"]')
+    .should("have.length", 1)
+    .should("have.attr", "data-value", "Everything");
+});
+
+And(/^when I (?:de)?select that preset$/, () => {
+  cy.get("@presetToSelect").click();
 });
 
 But("when I am adding goals for Amiya", () => {

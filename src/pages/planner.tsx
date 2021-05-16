@@ -95,7 +95,9 @@ function Planner(): React.ReactElement {
 
   const operatorPresets: string[] = [];
   if (operator) {
-    operatorPresets.push("Elite 1, Skill Level 1 → 7");
+    if (operator.elite && operator.skillLevels) {
+      operatorPresets.push("Elite 1, Skill Level 1 → 7");
+    }
     if (operator.skills?.length === 3) {
       operatorPresets.push("Skill 3 Mastery 1 → 3");
     }
@@ -115,9 +117,9 @@ function Planner(): React.ReactElement {
         goals = operator.skills[3].masteries;
       } else if (presetName === "Everything") {
         goals = [
-          ...operator.elite,
+          ...(operator.elite || []),
           ...(operator.skills?.flatMap((skill) => skill.masteries) || []),
-          ...operator.skillLevels,
+          ...(operator.skillLevels || []),
         ];
       }
       return goals.map((goal) => goal.goalName);
@@ -240,7 +242,7 @@ function Planner(): React.ReactElement {
         ? [
             <ListSubheader key="presets">Presets</ListSubheader>,
             ...operatorPresets.map((presetName) => (
-              <MenuItem key={presetName} value={presetName} data-preset>
+              <MenuItem key={presetName} value={presetName} data-cy="preset">
                 {presetName}
               </MenuItem>
             )),
