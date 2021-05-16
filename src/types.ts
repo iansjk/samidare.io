@@ -2,6 +2,7 @@ export interface Item {
   name: string;
   tier: number;
   ingredients?: Ingredient[];
+  yield?: number;
 }
 
 export interface Ingredient {

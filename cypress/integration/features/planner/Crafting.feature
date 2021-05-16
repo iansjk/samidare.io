@@ -54,3 +54,27 @@ Feature: Operator Planner - crafting
     And I have marked some items to be crafted
     When I refresh the page
     Then I should see that I'm still crafting those items
+
+  # Regression test for T-20, Chip crafting incorrectly calculates material requirements
+  Scenario: Chips can be crafted from other chips
+    Given I have added "Mudrock - Elite 2" to my planner
+    And I am crafting Defender Dualchip
+    And I already have 6 Defender Chip Pack
+    When I start crafting Defender Chip Pack
+    Then I should need 3 Medic Chip Pack
+    And if I obtain 3 Medic Chip Pack
+    Then Defender Chip Pack should be marked as complete
+    And if I obtain 4 Chip Catalyst
+    Then Defender Dualchip should be marked as complete
+
+  # If a user requires Defender Chip, they can craft them from Medic Chips, but they shouldn't then
+  # be able to mark Medic Chips as being crafted from Defender Chips (since that's what they needed
+  # in the first place!)
+  Scenario: Chips can't be circuitously crafted
+    Given I have added "Mudrock - Elite 1" to my planner
+    And I have added "Kal'tsit - Elite 1" to my planner
+    When I start crafting Defender Chip
+    Then I should not be able to craft Medic Chip
+    But if I stop crafting Defender Chip
+    And I start crafting Medic Chip
+    Then I should not be able to craft Defender Chip
