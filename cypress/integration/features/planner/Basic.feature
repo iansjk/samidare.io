@@ -25,7 +25,24 @@ Feature: Operator Planner
 
   Scenario: Users can select goal presets to add many goals at once
     When I am adding goals for Spot
-    Then I should see an Elite 1 and Skill Level 7 preset
-    And an Everything preset
-    But when I am adding goals for Amiya
-    Then I should also see a Skill 3 Mastery 3 preset
+    Then I should see an "Elite 1, Skill Level 1 → 7" preset
+    And when I select that preset
+    Then the goals making up that preset should be selected
+    And when I deselect that preset
+    Then the goals making up that preset should be unselected
+
+  Scenario: Operators with fewer than 3 skills have two presets
+    When I am adding goals for Spot
+    Then I should see an "Elite 1, Skill Level 1 → 7" preset
+    And I should see an "Everything" preset
+
+  Scenario Outline: Operators with 3 skills have three presets
+    When I am adding goals for <3-skill-operator>
+    Then I should see an "Elite 1, Skill Level 1 → 7" preset
+    And I should see a "Skill 3, Mastery 1 → 3" preset
+    And I should see an "Everything" preset
+
+    Examples:
+      | 3-skill-operator |
+      | Amiya            |
+      | Aak              |
