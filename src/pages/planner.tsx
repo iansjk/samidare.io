@@ -93,6 +93,38 @@ function Planner(): React.ReactElement {
     },
   };
 
+  const operatorPresets: string[] = [];
+  if (operator) {
+    operatorPresets.push("Elite 1, Skill Level 1 → 7");
+    if (operator.skills?.length === 3) {
+      operatorPresets.push("Skill 3 Mastery 1 → 3");
+    }
+    operatorPresets.push("Everything");
+  }
+
+  const expandPreset = (presetName: string) => {
+    if (operator) {
+      let goals: Goal[] = [];
+      if (presetName === "Elite 1, Skill Level 1 → 7") {
+        goals = [operator.elite[0], ...operator.skillLevels];
+      } else if (
+        presetName === "Skill 3 Mastery 1 → 3" &&
+        operator.skills &&
+        operator.skills[3]
+      ) {
+        goals = operator.skills[3].masteries;
+      } else if (presetName === "Everything") {
+        goals = [
+          ...operator.elite,
+          ...(operator.skills?.flatMap((skill) => skill.masteries) || []),
+          ...operator.skillLevels,
+        ];
+      }
+      return goals.map((goal) => goal.goalName);
+    }
+    return [];
+  };
+
   const handleAddGoals = () => {
     if (!operator) {
       return;
@@ -155,7 +187,18 @@ function Planner(): React.ReactElement {
   const handleGoalsChanged = (
     e: React.ChangeEvent<{ name?: string; value: unknown }>
   ) => {
-    setGoalNames((e.target.value as string[]).filter((name) => !!name));
+    setGoalNames((oldGoalNames) => {
+      const rawValues = e.target.value as string[];
+      const newGoalNames: string[] = rawValues
+        .filter((name) => !!name)
+        .flatMap((value) => {
+          if (operatorPresets.includes(value)) {
+            return expandPreset(value);
+          }
+          return value;
+        });
+      return newGoalNames;
+    });
   };
 
   const handleOperatorNameChanged = (_: unknown, value: string | null) => {
@@ -194,6 +237,18 @@ function Planner(): React.ReactElement {
       return <MenuItem>Please select an operator first.</MenuItem>;
     }
 
+    const presets =
+      operatorPresets.length > 0
+        ? [
+            <ListSubheader key="presets">Presets</ListSubheader>,
+            ...operatorPresets.map((presetName) => (
+              <MenuItem key={presetName} value={presetName} data-preset>
+                {presetName}
+              </MenuItem>
+            )),
+          ]
+        : [];
+
     const elite = operator?.elite
       ? [
           <ListSubheader key="elite">Elite Levels</ListSubheader>,
@@ -214,7 +269,7 @@ function Planner(): React.ReactElement {
           ...operator.skillLevels.map((goal) => renderGoalMenuItem(goal)),
         ]
       : [];
-    return [...elite, ...masteries, ...skillLevels];
+    return [...presets, ...elite, ...masteries, ...skillLevels];
   };
 
   return (
