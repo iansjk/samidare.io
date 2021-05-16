@@ -166,7 +166,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
                       name={ingredient.name}
                       tier={ingredient.tier}
                       quantity={ingredient.quantity}
-                      size={60}
+                      size={isXSmallScreen ? 60 : 70}
                     />
                   </Grid>
                 ))}
