@@ -279,6 +279,7 @@ function Planner(): React.ReactElement {
           autoHighlight
           value={operatorName}
           onChange={handleOperatorNameChanged}
+          id="operator-name"
           renderInput={(params) => (
             <TextField
               {...params}
@@ -296,6 +297,7 @@ function Planner(): React.ReactElement {
               <InputLabel htmlFor="goal-select">Goals</InputLabel>
               <Select
                 id="goal-select"
+                name="goal-select"
                 autoWidth
                 multiple
                 displayEmpty
