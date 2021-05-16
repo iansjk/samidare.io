@@ -22,3 +22,38 @@ Feature: Operator Planner
     And I have obtained some of the required materials for it
     When I refresh the page
     Then I should see my previous item counts
+
+  Scenario: Goal presets: operators with fewer than 3 skills have two presets
+    When I am adding goals for Spot
+    Then I should see an "Elite 1, Skill Level 1 → 7" preset
+    And I should see an "Everything" preset
+
+  Scenario Outline: Goal presets: operators with 3 skills have three presets
+    When I am adding goals for <3-skill-operator>
+    Then I should see an "Elite 1, Skill Level 1 → 7" preset
+    And I should see a "Skill 3 Mastery 1 → 3" preset
+    And I should see an "Everything" preset
+
+    Examples:
+      | 3-skill-operator |
+      | Amiya            |
+      | Aak              |
+
+  Scenario: Goal presets: Amiya (Guard) only has one preset
+    When I am adding goals for Amiya (Guard)
+    Then I should only see an "Everything" preset
+
+  Scenario Outline: Goal presets: selecting a preset adds/removes multiple goals at once
+    When I am adding goals for <operator-name>
+    Then I should see a <preset-name> preset
+    And when I select that preset
+    Then the goals making up that preset should be selected
+    # And when I deselect that preset
+    # Then the goals making up that preset should be unselected
+
+    Examples:
+      | operator-name | preset-name                  |
+      | Spot          | "Elite 1, Skill Level 1 → 7" |
+      | Cutter        | "Everything"                 |
+      | Aak           | "Skill 3 Mastery 1 → 3"      |
+      | Amiya (Guard) | "Everything"                 |

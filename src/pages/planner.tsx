@@ -93,6 +93,40 @@ function Planner(): React.ReactElement {
     },
   };
 
+  const operatorPresets: string[] = [];
+  if (operator) {
+    if (operator.elite && operator.skillLevels) {
+      operatorPresets.push("Elite 1, Skill Level 1 → 7");
+    }
+    if (operator.skills?.length === 3) {
+      operatorPresets.push("Skill 3 Mastery 1 → 3");
+    }
+    operatorPresets.push("Everything");
+  }
+
+  const expandPreset = (presetName: string) => {
+    if (operator) {
+      let goals: Goal[] = [];
+      if (presetName === "Elite 1, Skill Level 1 → 7") {
+        goals = [operator.elite[0], ...operator.skillLevels];
+      } else if (
+        presetName === "Skill 3 Mastery 1 → 3" &&
+        operator.skills &&
+        operator.skills[2]
+      ) {
+        goals = operator.skills[2].masteries;
+      } else if (presetName === "Everything") {
+        goals = [
+          ...(operator.elite || []),
+          ...(operator.skills?.flatMap((skill) => skill.masteries) || []),
+          ...(operator.skillLevels || []),
+        ];
+      }
+      return goals.map((goal) => goal.goalName);
+    }
+    return [];
+  };
+
   const handleAddGoals = () => {
     if (!operator) {
       return;
@@ -155,7 +189,16 @@ function Planner(): React.ReactElement {
   const handleGoalsChanged = (
     e: React.ChangeEvent<{ name?: string; value: unknown }>
   ) => {
-    setGoalNames((e.target.value as string[]).filter((name) => !!name));
+    setGoalNames((oldGoalNames) => {
+      const rawValues = (e.target.value as string[]).filter((name) => !!name);
+      const newPresets = rawValues.filter((value) =>
+        operatorPresets.find((preset) => preset === value)
+      );
+      if (newPresets.length > 0) {
+        return [...new Set([...oldGoalNames, ...expandPreset(newPresets[0])])];
+      }
+      return rawValues;
+    });
   };
 
   const handleOperatorNameChanged = (_: unknown, value: string | null) => {
@@ -182,7 +225,7 @@ function Planner(): React.ReactElement {
       );
     }
     return (
-      <MenuItem key={goal.goalName} value={goal.goalName}>
+      <MenuItem key={goal.goalName} value={goal.goalName} data-cy="goalOption">
         {child}
         {goal.goalName}
       </MenuItem>
@@ -193,6 +236,18 @@ function Planner(): React.ReactElement {
     if (!operatorName) {
       return <MenuItem>Please select an operator first.</MenuItem>;
     }
+
+    const presets =
+      operatorPresets.length > 0
+        ? [
+            <ListSubheader key="presets">Presets</ListSubheader>,
+            ...operatorPresets.map((presetName) => (
+              <MenuItem key={presetName} value={presetName} data-cy="preset">
+                {presetName}
+              </MenuItem>
+            )),
+          ]
+        : [];
 
     const elite = operator?.elite
       ? [
@@ -214,7 +269,7 @@ function Planner(): React.ReactElement {
           ...operator.skillLevels.map((goal) => renderGoalMenuItem(goal)),
         ]
       : [];
-    return [...elite, ...masteries, ...skillLevels];
+    return [...presets, ...elite, ...masteries, ...skillLevels];
   };
 
   return (
@@ -226,6 +281,7 @@ function Planner(): React.ReactElement {
           autoHighlight
           value={operatorName}
           onChange={handleOperatorNameChanged}
+          id="operator-name"
           renderInput={(params) => (
             <TextField
               {...params}
@@ -243,6 +299,7 @@ function Planner(): React.ReactElement {
               <InputLabel htmlFor="goal-select">Goals</InputLabel>
               <Select
                 id="goal-select"
+                name="goal-select"
                 autoWidth
                 multiple
                 displayEmpty
