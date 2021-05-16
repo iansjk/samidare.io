@@ -188,16 +188,14 @@ function Planner(): React.ReactElement {
     e: React.ChangeEvent<{ name?: string; value: unknown }>
   ) => {
     setGoalNames((oldGoalNames) => {
-      const rawValues = e.target.value as string[];
-      const newGoalNames: string[] = rawValues
-        .filter((name) => !!name)
-        .flatMap((value) => {
-          if (operatorPresets.includes(value)) {
-            return expandPreset(value);
-          }
-          return value;
-        });
-      return newGoalNames;
+      const rawValues = (e.target.value as string[]).filter((name) => !!name);
+      const newPresets = rawValues.filter((value) =>
+        operatorPresets.find((preset) => preset === value)
+      );
+      if (newPresets.length > 0) {
+        return [...new Set([...oldGoalNames, ...expandPreset(newPresets[0])])];
+      }
+      return rawValues;
     });
   };
 
