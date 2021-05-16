@@ -1,5 +1,5 @@
-import { Before, When, Then } from "cypress-cucumber-preprocessor/steps";
-import { addGoal } from "../utils";
+import { Before, When, Then, But } from "cypress-cucumber-preprocessor/steps";
+import { addGoal, enterOperatorName } from "../utils";
 
 Before(() => {
   cy.visit("/planner");
@@ -28,6 +28,10 @@ When(
     });
   }
 );
+
+When("I am adding goals for Spot", () => {
+  enterOperatorName("Spot");
+});
 
 Then("I should see my goal in the operator goals list", () => {
   cy.get('[data-cy="goalsList"]').as("goalsList");
@@ -134,4 +138,8 @@ Then("I should see my previous item counts", () => {
         .should("have.value", "1");
     });
   });
+});
+
+But("when I am adding goals for Amiya", () => {
+  enterOperatorName("Amiya");
 });

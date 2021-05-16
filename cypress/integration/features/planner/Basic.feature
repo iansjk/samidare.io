@@ -22,3 +22,10 @@ Feature: Operator Planner
     And I have obtained some of the required materials for it
     When I refresh the page
     Then I should see my previous item counts
+
+  Scenario: Users can select goal presets to add many goals at once
+    When I am adding goals for Spot
+    Then I should see an Elite 1 and Skill Level 7 preset
+    And an Everything preset
+    But when I am adding goals for Amiya
+    Then I should also see a Skill 3 Mastery 3 preset
