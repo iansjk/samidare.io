@@ -15,7 +15,7 @@ jobs:
         with:
           build: npm run build
           start: npm start
-          wait-on: 'http://localhost:8000' 
+          wait-on: 'http://localhost:8888' 
           record: true
         env:
           # pass the Dashboard record key as an environment variable
