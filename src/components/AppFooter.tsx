@@ -104,7 +104,7 @@ export default function AppFooter({ className }): React.ReactElement {
         </li>
         <li>
           <Typography variant="body2" className={classes.longerListItem}>
-            stage efficiency and pull probability calculations:&nbsp;
+            efficiency and pull probability calculations:&nbsp;
             <code className={classes.discordTag}>Luzark#8152</code>
           </Typography>
         </li>
