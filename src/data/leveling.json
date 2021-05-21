@@ -1,5 +1,5 @@
 {
-  "maxLevelByElite": [
+  "maxLevelByRarity": [
     [
       30
     ],
@@ -579,7 +579,7 @@
       37745
     ]
   ],
-  "eliteLmdCostByElite": [
+  "eliteLmdCost": [
     [
       -1,
       -1

@@ -1,9 +1,9 @@
 import React from "react";
 import {
-  eliteLmdCostByElite,
+  eliteLmdCost,
   expCostByElite,
   lmdCostByElite,
-  maxLevelByElite,
+  maxLevelByRarity,
 } from "../data/leveling.json";
 
 interface LevelingCost {
