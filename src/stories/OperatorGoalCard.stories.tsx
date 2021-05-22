@@ -25,10 +25,9 @@ SkadiAlterSkill3Mastery3.args = {
     goalName: "Skill 3 Mastery 3",
     goalShortName: "S3 M3",
     ingredients: [
-      { name: "LMD", tier: 4, quantity: 180000 },
-      { name: "Supporter Dualchip", tier: 5, quantity: 4 },
-      { name: "Polymerization Preparation", tier: 5, quantity: 4 },
-      { name: "Grindstone Pentahydrate", tier: 4, quantity: 5 },
+      { name: "Skill Summary - 3", tier: 4, quantity: 15 },
+      { name: "Polymerization Preparation", tier: 5, quantity: 6 },
+      { name: "Incandescent Alloy Block", tier: 4, quantity: 6 },
     ],
     masteryLevel: 3,
   },
