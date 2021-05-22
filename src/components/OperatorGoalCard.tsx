@@ -117,7 +117,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
                   md
                   lg={12}
                 >
-                  <Box mr={2}>
+                  <Box mr={2} pl={shouldTextBeCollapsed ? "0.5em" : 0}>
                     <Typography
                       component="h3"
                       variant="h6"
