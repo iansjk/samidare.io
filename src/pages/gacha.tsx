@@ -6,12 +6,26 @@ import {
   FormControl,
   Grid,
   InputLabel,
+  makeStyles,
   Paper,
   Select,
   TextField,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@material-ui/core";
 import { sprintf } from "sprintf-js";
+
+const useStyles = makeStyles((theme) => ({
+  inputContainer: {
+    marginBottom: theme.spacing(1),
+  },
+  probabilityLabel: {
+    "&:first-letter": {
+      textTransform: "capitalize",
+    },
+  },
+}));
 
 const MAX_PULL_COUNT = 2000;
 
@@ -51,6 +65,10 @@ const Gacha: React.FC = () => {
   const [bannerType, setBannerType] = useState<
     "event" | "standard" | "limited"
   >("event");
+  const classes = useStyles();
+  const theme = useTheme();
+  const isXSmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
+
   let subrate = 0.5;
   if (bannerType === "standard") {
     subrate = 0.25;
@@ -158,154 +176,161 @@ const Gacha: React.FC = () => {
   };
 
   return (
-    <Box maxWidth="730px" margin="auto">
-      <Grid container direction="column" spacing={2}>
-        <Box clone display="flex" justifyContent="space-between">
-          <Grid item>
-            <TextField
-              label="Number of pulls"
-              variant="outlined"
-              type="number"
-              defaultValue="0"
-              name="pulls"
-              helperText={`Max ${MAX_PULL_COUNT}`}
-              error={pullsHasError}
-              onFocus={handleFocus}
+    <Box maxWidth="750px" margin="auto">
+      <Grid container spacing={2} className={classes.inputContainer}>
+        <Grid item xs={6} sm={3}>
+          <TextField
+            label="Number of pulls"
+            variant="outlined"
+            type="number"
+            defaultValue="0"
+            name="pulls"
+            helperText={`Max ${MAX_PULL_COUNT}`}
+            error={pullsHasError}
+            onFocus={handleFocus}
+            onChange={handleChange}
+          />
+        </Grid>
+        <Grid item xs={6} sm={3}>
+          <TextField
+            label="Initial pity"
+            variant="outlined"
+            type="number"
+            defaultValue="0"
+            name="pity"
+            helperText="Between 0 and 98"
+            error={pityHasError}
+            onFocus={handleFocus}
+            onChange={handleChange}
+          />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <FormControl variant="outlined" fullWidth>
+            <InputLabel htmlFor="banner-type">Banner type</InputLabel>
+            <Select
+              native
+              label="Banner type"
+              inputProps={{
+                name: "banner-type",
+                id: "banner-type",
+              }}
               onChange={handleChange}
-            />
-            <TextField
-              label="Initial pity"
-              variant="outlined"
-              type="number"
-              defaultValue="0"
-              name="pity"
-              helperText="Between 0 and 98"
-              error={pityHasError}
-              onFocus={handleFocus}
-              onChange={handleChange}
-            />
-            <FormControl variant="outlined">
-              <InputLabel htmlFor="banner-type">Banner type</InputLabel>
-              <Select
-                native
-                label="Banner type"
-                inputProps={{
-                  name: "banner-type",
-                  id: "banner-type",
-                }}
-                onChange={handleChange}
-              >
-                <option value="event">Event (one rate-up 6⭐️, 50%)</option>
-                <option value="standard">
-                  Standard (two rate-up 6⭐️, each 25%)
-                </option>
-                <option value="limited">
-                  Limited (two rate-up 6⭐️, each 35%)
-                </option>
-              </Select>
-            </FormControl>
-          </Grid>
-        </Box>
-        <Grid item>
-          <Box clone pt={2} pr={2} pl={3} pb={3}>
-            <Paper elevation={3}>
-              <Typography variant="h6" component="h3" gutterBottom>
-                Probabilities
+            >
+              <option value="event">Event (one rate-up 6⭐️, 50%)</option>
+              <option value="standard">
+                Standard (two rate-up 6⭐️, each 25%)
+              </option>
+              <option value="limited">
+                Limited (two rate-up 6⭐️, each 35%)
+              </option>
+            </Select>
+          </FormControl>
+        </Grid>
+      </Grid>
+      <Box clone pt={2} pr={2} pl={3} pb={3}>
+        <Paper elevation={3}>
+          <Typography variant="h6" component="h3" gutterBottom>
+            Probabilities
+          </Typography>
+          <Grid container alignItems="center">
+            <Grid item xs={8}>
+              <Typography variant="body1" className={classes.probabilityLabel}>
+                {!isXSmallScreen && "Chance of obtaining "}
+                <strong>
+                  at least 1{bannerType !== "event" && " of any"}
+                </strong>{" "}
+                rate-up:
               </Typography>
-              <Grid container alignItems="center">
+            </Grid>
+            <Grid item>
+              <Box clone pl={2}>
+                <Typography variant="h6">
+                  {toPercentage(1 - finalOdds[0][0])}
+                </Typography>
+              </Box>
+            </Grid>
+            {(bannerType === "standard" || bannerType === "limited") && (
+              <>
                 <Grid item xs={8}>
-                  <Typography variant="body1">
-                    Chance of obtaining{" "}
-                    <strong>
-                      at least 1{bannerType !== "event" && " of any"}
-                    </strong>{" "}
-                    rate-up:
+                  <Typography
+                    variant="body1"
+                    className={classes.probabilityLabel}
+                  >
+                    {!isXSmallScreen && "Chance of obtaining "}
+                    <strong>at least 1 of a specific</strong> rate-up:
                   </Typography>
                 </Grid>
                 <Grid item>
                   <Box clone pl={2}>
                     <Typography variant="h6">
-                      {toPercentage(1 - finalOdds[0][0])}
+                      {toPercentage(1 - finalOdds[0].reduce((a, b) => a + b))}
                     </Typography>
                   </Box>
                 </Grid>
-                {(bannerType === "standard" || bannerType === "limited") && (
-                  <>
-                    <Grid item xs={8}>
-                      <Typography variant="body1">
-                        Chance of obtaining{" "}
-                        <strong>at least 1 of a specific</strong> rate-up:
-                      </Typography>
-                    </Grid>
-                    <Grid item>
-                      <Box clone pl={2}>
-                        <Typography variant="h6">
-                          {toPercentage(
-                            1 - finalOdds[0].reduce((a, b) => a + b)
-                          )}
-                        </Typography>
-                      </Box>
-                    </Grid>
-                    <Grid item xs={8}>
-                      <Typography variant="body1">
-                        Chance of obtaining <strong>at least 1 of each</strong>{" "}
-                        rate-up:
-                      </Typography>
-                    </Grid>
-                    <Grid item>
-                      <Box clone pl={2}>
-                        <Typography variant="h6">
-                          {toPercentage(chanceOneOfEach(finalOdds))}
-                        </Typography>
-                      </Box>
-                    </Grid>
-                  </>
-                )}
-              </Grid>
-              <Box clone mt={1} mb={2}>
-                <Divider />
-              </Box>
-              <Box clone mt={2}>
-                <Grid container alignItems="center">
-                  {[...Array(7).keys()].map((i) => (
-                    <React.Fragment key={i}>
-                      <Grid item xs={8}>
-                        <Typography variant="body1">
-                          Chance of obtaining{" "}
-                          <strong>
-                            {i === 6 ? "6 or more" : `exactly ${i}`}
-                            {bannerType !== "event" && " of any"}
-                          </strong>{" "}
-                          rate-up
-                          {i !== 1 && "s"}:
-                        </Typography>
-                      </Grid>
-                      <Grid item>
-                        <Box clone pl={2}>
-                          <Typography variant="h6">
-                            {toPercentage(
-                              bannerType === "event"
-                                ? finalOdds[i][0]
-                                : chanceMultiRateups(finalOdds, i)
-                            )}
-                          </Typography>
-                        </Box>
-                      </Grid>
-                    </React.Fragment>
-                  ))}
+                <Grid item xs={8}>
+                  <Typography
+                    variant="body1"
+                    className={classes.probabilityLabel}
+                  >
+                    {!isXSmallScreen && "Chance of obtaining "}
+                    <strong>at least 1 of each</strong> rate-up:
+                  </Typography>
                 </Grid>
-              </Box>
-            </Paper>
+                <Grid item>
+                  <Box clone pl={2}>
+                    <Typography variant="h6">
+                      {toPercentage(chanceOneOfEach(finalOdds))}
+                    </Typography>
+                  </Box>
+                </Grid>
+              </>
+            )}
+          </Grid>
+          <Box clone mt={1} mb={2}>
+            <Divider />
           </Box>
-          {bannerType === "limited" && (
-            <Box mt={2}>
-              <Typography variant="caption">
-                * Spark system is not factored into these probabilities
-              </Typography>
-            </Box>
-          )}
-        </Grid>
-      </Grid>
+          <Box clone mt={2}>
+            <Grid container alignItems="center">
+              {[...Array(7).keys()].map((i) => (
+                <React.Fragment key={i}>
+                  <Grid item xs={8}>
+                    <Typography
+                      variant="body1"
+                      className={classes.probabilityLabel}
+                    >
+                      {!isXSmallScreen && "Chance of obtaining "}
+                      <strong>
+                        {i === 6 ? "6 or more" : `exactly ${i}`}
+                        {bannerType !== "event" && " of any"}
+                      </strong>{" "}
+                      rate-up
+                      {i !== 1 && "s"}:
+                    </Typography>
+                  </Grid>
+                  <Grid item>
+                    <Box clone pl={2}>
+                      <Typography variant="h6">
+                        {toPercentage(
+                          bannerType === "event"
+                            ? finalOdds[i][0]
+                            : chanceMultiRateups(finalOdds, i)
+                        )}
+                      </Typography>
+                    </Box>
+                  </Grid>
+                </React.Fragment>
+              ))}
+            </Grid>
+          </Box>
+        </Paper>
+      </Box>
+      {bannerType === "limited" && (
+        <Box mt={2}>
+          <Typography variant="caption">
+            * Spark system is not factored into these probabilities
+          </Typography>
+        </Box>
+      )}
     </Box>
   );
 };
