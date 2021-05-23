@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 import React, { useMemo, useState } from "react";
 import {
   Box,
@@ -13,6 +14,34 @@ import {
 import { sprintf } from "sprintf-js";
 
 const MAX_PULL_COUNT = 2000;
+
+const chanceOneOfEach = (finalOdds: number[][]) => {
+  let chance = 0;
+  for (let j = 1; j < 7; j++) {
+    for (let k = 1; k < 7; k++) {
+      chance += finalOdds[j][k];
+    }
+  }
+  return chance;
+};
+
+const chanceMultiRateups = (finalOdds: number[][], numRateups: number) => {
+  let chance = 0;
+  if (numRateups === 6) {
+    // we're calculating 6+, not "exactly 6"
+    chance =
+      1 -
+      Array(6)
+        .fill(0)
+        .map((_, i) => chanceMultiRateups(finalOdds, i))
+        .reduce((a, b) => a + b);
+  } else {
+    for (let i = 0; i <= numRateups; i++) {
+      chance += finalOdds[i][numRateups - i];
+    }
+  }
+  return chance;
+};
 
 const Gacha: React.FC = () => {
   const [pulls, setPulls] = useState(0);
@@ -72,34 +101,34 @@ const Gacha: React.FC = () => {
       }
       probabilities = newProbabilities;
     }
-    const finalOdds = Array(7)
+    const odds = Array(7)
       .fill(0)
       .map(() => Array(7).fill(0));
     for (let i = 0; i < 99; i++) {
       for (let j = 0; j < 7; j++) {
         for (let k = 0; k < 7; k++) {
-          finalOdds[j][k] += probabilities[i][j][k];
+          odds[j][k] += probabilities[i][j][k];
         }
       }
     }
-    return finalOdds;
-  }, [pity, pulls, subrate]);
+    return odds;
+  }, [pity, pulls, subrate, bannerType]);
 
   const toPercentage = (p: number) => {
     if (p === 0) {
       return "0%";
-    } else {
-      const percentage = p * 100;
-      if (percentage < 100 && percentage > 100 - 1e-6) {
-        return `~ 100%`;
-      } else if (percentage > 1e-6) {
-        return `${sprintf("%.4g", percentage)}%`;
-      } else if (percentage > 0 && percentage < 1e-12) {
-        return "< 0.0000000000001%";
-      } else {
-        return `${sprintf("%.12f", percentage)}%`;
-      }
     }
+    const percentage = p * 100;
+    if (percentage < 100 && percentage > 100 - 1e-6) {
+      return `~ 100%`;
+    }
+    if (percentage > 1e-6) {
+      return `${sprintf("%.4g", percentage)}%`;
+    }
+    if (percentage > 0 && percentage < 1e-12) {
+      return "< 0.0000000000001%";
+    }
+    return `${sprintf("%.12f", percentage)}%`;
   };
 
   const handleFocus = (e: React.FocusEvent<HTMLInputElement>) =>
@@ -117,13 +146,11 @@ const Gacha: React.FC = () => {
           setPulls(Math.max(0, Math.min(toInt, MAX_PULL_COUNT)));
           setPullsHasError(toInt < 0 || toInt > MAX_PULL_COUNT);
         }
+      } else if (Number.isNaN(toInt)) {
+        setPityHasError(true);
       } else {
-        if (Number.isNaN(toInt)) {
-          setPityHasError(true);
-        } else {
-          setPity(Math.max(0, Math.min(toInt, 98)));
-          setPityHasError(toInt < 0 || toInt > 98);
-        }
+        setPity(Math.max(0, Math.min(toInt, 98)));
+        setPityHasError(toInt < 0 || toInt > 98);
       }
     } else if (e.target.name === "banner-type") {
       setBannerType(e.target.value as "event" | "standard" | "limited");
@@ -283,31 +310,3 @@ const Gacha: React.FC = () => {
   );
 };
 export default Gacha;
-
-const chanceOneOfEach = (finalOdds: number[][]) => {
-  let chance = 0;
-  for (let j = 1; j < 7; j++) {
-    for (let k = 1; k < 7; k++) {
-      chance += finalOdds[j][k];
-    }
-  }
-  return chance;
-};
-
-const chanceMultiRateups = (finalOdds: number[][], numRateups: number) => {
-  let chance = 0;
-  if (numRateups === 6) {
-    // we're calculating 6+, not "exactly 6"
-    chance =
-      1 -
-      Array(6)
-        .fill(0)
-        .map((_, i) => chanceMultiRateups(finalOdds, i))
-        .reduce((a, b) => a + b);
-  } else {
-    for (let i = 0; i <= numRateups; i++) {
-      chance += finalOdds[i][numRateups - i];
-    }
-  }
-  return chance;
-};
