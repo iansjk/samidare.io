@@ -110,7 +110,6 @@ function Recruitment(): React.ReactElement {
     data.allRecruitmentJson.nodes;
   const [activeTags, setActiveTags] = useState<string[]>([]);
   const [isOpen, setIsOpen] = useState(true);
-  const textinput = useRef(null);
   const classes = useStyles();
   const theme = useTheme();
   const isXSmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
@@ -157,7 +156,6 @@ function Recruitment(): React.ReactElement {
         renderInput={(params) => (
           <TextField
             {...params}
-            inputRef={textinput}
             autoFocus
             label="Available recruitment tags"
             variant="outlined"
