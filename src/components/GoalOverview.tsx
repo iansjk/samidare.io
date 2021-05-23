@@ -299,16 +299,8 @@ const GoalOverview = React.memo(function GoalOverview(
             {inner}
           </Box>
         ) : (
-          <Box clone display="block">
-            <Grid
-              key={name}
-              data-cy={name}
-              item
-              xs={6}
-              sm={3}
-              md={3}
-              component="li"
-            >
+          <Box clone display="block" key={name}>
+            <Grid data-cy={name} item xs={6} sm={3} md={3} component="li">
               {inner}
             </Grid>
           </Box>
