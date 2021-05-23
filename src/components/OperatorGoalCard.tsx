@@ -103,6 +103,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
       data-cy="operatorGoalCard"
       data-operator-name={goal.operatorName}
       data-goal-name={goal.goalName}
+      component="li"
     >
       <Card className={classes.goalCard} style={goalCardStyle}>
         <CardContent>

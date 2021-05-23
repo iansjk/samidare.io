@@ -35,6 +35,10 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: theme.spacing(2),
     },
   },
+  list: {
+    listStyle: "none",
+    padding: 0,
+  },
 }));
 
 interface GoalOverviewProps {
@@ -283,11 +287,26 @@ const GoalOverview = React.memo(function GoalOverview(
           />
         );
         const outer = isLargeScreen ? (
-          <Box key={name} data-cy={name} width="20%" px={0.5} mt={1}>
+          <Box
+            key={name}
+            data-cy={name}
+            width="20%"
+            px={0.5}
+            mt={1}
+            component="li"
+          >
             {inner}
           </Box>
         ) : (
-          <Grid key={name} data-cy={name} item xs={6} sm={3} md={3}>
+          <Grid
+            key={name}
+            data-cy={name}
+            item
+            xs={6}
+            sm={3}
+            md={3}
+            component="li"
+          >
             {inner}
           </Grid>
         );
@@ -346,7 +365,7 @@ const GoalOverview = React.memo(function GoalOverview(
                 </Grid>
               </Grid>
             </Box>
-            <Grid container spacing={1}>
+            <Grid container spacing={1} component="ul" className={classes.list}>
               <NoSsr>{renderItemsNeeded(requiredMaterials)}</NoSsr>
             </Grid>
           </CardContent>
@@ -379,14 +398,16 @@ const GoalOverview = React.memo(function GoalOverview(
             </Card>
           </Box>
           <NoSsr>
-            {goals.map((goal) => (
-              <OperatorGoalCard
-                key={`${goal.operatorName}${goal.goalName}`}
-                goal={goal}
-                skill={goal.skill}
-                onDelete={onGoalDeleted}
-              />
-            ))}
+            <ul className={classes.list}>
+              {goals.map((goal) => (
+                <OperatorGoalCard
+                  key={`${goal.operatorName}${goal.goalName}`}
+                  goal={goal}
+                  skill={goal.skill}
+                  onDelete={onGoalDeleted}
+                />
+              ))}
+            </ul>
           </NoSsr>
         </>
       </Grid>
