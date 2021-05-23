@@ -121,7 +121,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
                 >
                   <Box mr={2} pl={shouldTextBeCollapsed ? "0.5em" : 0}>
                     <Typography
-                      component="h3"
+                      component="span"
                       variant="h6"
                       className={classes.operatorName}
                       data-cy="operatorName"
@@ -150,7 +150,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
                     <OperatorGoalIconography goal={goal} skill={skill} />
                     <Typography
                       className={classes.goalShortName}
-                      component="h4"
+                      component="span"
                       variant="subtitle1"
                       aria-label={goal.goalName}
                     >
