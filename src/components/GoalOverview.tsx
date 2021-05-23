@@ -293,22 +293,25 @@ const GoalOverview = React.memo(function GoalOverview(
             width="20%"
             px={0.5}
             mt={1}
+            display="block"
             component="li"
           >
             {inner}
           </Box>
         ) : (
-          <Grid
-            key={name}
-            data-cy={name}
-            item
-            xs={6}
-            sm={3}
-            md={3}
-            component="li"
-          >
-            {inner}
-          </Grid>
+          <Box clone display="block">
+            <Grid
+              key={name}
+              data-cy={name}
+              item
+              xs={6}
+              sm={3}
+              md={3}
+              component="li"
+            >
+              {inner}
+            </Grid>
+          </Box>
         );
         return outer;
       });
