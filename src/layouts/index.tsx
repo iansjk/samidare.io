@@ -147,7 +147,7 @@ function Layout(props: LayoutProps): React.ReactElement {
   }
 
   const drawer = (
-    <div>
+    <>
       <Typography
         className={clsx(classes.toolbar, classes.siteHeader)}
         component="h1"
@@ -161,7 +161,7 @@ function Layout(props: LayoutProps): React.ReactElement {
           <ListItemLink key={pageUri} to={pageUri} primary={pageName} />
         ))}
       </List>
-    </div>
+    </>
   );
 
   const container =
