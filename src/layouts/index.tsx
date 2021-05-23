@@ -202,7 +202,7 @@ function Layout(props: LayoutProps): React.ReactElement {
               <NetlifyLogin />
             </Toolbar>
           </AppBar>
-          <nav className={classes.drawer} aria-label="pages">
+          <nav className={classes.drawer}>
             {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
             <Hidden lgUp implementation="css">
               <Drawer
