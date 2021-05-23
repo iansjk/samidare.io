@@ -138,7 +138,6 @@ function Recruitment(): React.ReactElement {
     }
     if (selectedOptions.length === 5) {
       setIsOpen(false);
-      textinput.current?.blur();
     }
   }
 
