@@ -199,7 +199,7 @@ function Layout(props: LayoutProps): React.ReactElement {
               >
                 {pageTitle}
               </Typography>
-              <NetlifyLogin />
+              {/* <NetlifyLogin /> */}
             </Toolbar>
           </AppBar>
           <nav className={classes.drawer}>
