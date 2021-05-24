@@ -103,6 +103,8 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
       data-cy="operatorGoalCard"
       data-operator-name={goal.operatorName}
       data-goal-name={goal.goalName}
+      display="block"
+      component="li"
     >
       <Card className={classes.goalCard} style={goalCardStyle}>
         <CardContent>
@@ -117,9 +119,9 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
                   md
                   lg={12}
                 >
-                  <Box mr={2}>
+                  <Box mr={2} pl={shouldTextBeCollapsed ? "0.5em" : 0}>
                     <Typography
-                      component="h3"
+                      component="span"
                       variant="h6"
                       className={classes.operatorName}
                       data-cy="operatorName"
@@ -148,7 +150,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
                     <OperatorGoalIconography goal={goal} skill={skill} />
                     <Typography
                       className={classes.goalShortName}
-                      component="h4"
+                      component="span"
                       variant="subtitle1"
                       aria-label={goal.goalName}
                     >
@@ -166,7 +168,7 @@ const OperatorGoalCard = React.memo(function OperatorGoalCard(
                       name={ingredient.name}
                       tier={ingredient.tier}
                       quantity={ingredient.quantity}
-                      size={60}
+                      size={isXSmallScreen ? 60 : 70}
                     />
                   </Grid>
                 ))}

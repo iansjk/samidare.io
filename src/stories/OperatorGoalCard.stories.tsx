@@ -17,18 +17,17 @@ const Template: Story<OperatorGoalCardProps> = (args) => (
   </Grid>
 );
 
-export const OperatorGoalCardDefault = Template.bind({});
-OperatorGoalCardDefault.args = {
+export const SkadiAlterSkill3Mastery3 = Template.bind({});
+SkadiAlterSkill3Mastery3.args = {
   goal: {
     operatorName: "Skadi the Corrupting Heart",
     goalCategory: 1,
     goalName: "Skill 3 Mastery 3",
     goalShortName: "S3 M3",
     ingredients: [
-      { name: "LMD", tier: 4, quantity: 180000 },
-      { name: "Supporter Dualchip", tier: 5, quantity: 4 },
-      { name: "Polymerization Preparation", tier: 5, quantity: 4 },
-      { name: "Grindstone Pentahydrate", tier: 4, quantity: 5 },
+      { name: "Skill Summary - 3", tier: 4, quantity: 15 },
+      { name: "Polymerization Preparation", tier: 5, quantity: 6 },
+      { name: "Incandescent Alloy Block", tier: 4, quantity: 6 },
     ],
     masteryLevel: 3,
   },
@@ -73,6 +72,35 @@ OperatorGoalCardDefault.args = {
     skillName: '"潮涌，潮枯"',
     slot: 3,
   },
-  // eslint-disable-next-line no-alert
-  onDelete: () => alert("onDelete called"),
+};
+
+export const AakElite1 = Template.bind({});
+AakElite1.args = {
+  goal: {
+    operatorName: "Aak",
+    eliteLevel: 1,
+    goalCategory: 0,
+    goalName: "Elite 1",
+    ingredients: [
+      { name: "LMD", tier: 4, quantity: 30000 },
+      { name: "Specialist Chip", tier: 3, quantity: 5 },
+      { name: "Sugar", tier: 2, quantity: 8 },
+      { name: "Oriron", tier: 2, quantity: 5 },
+    ],
+  },
+};
+
+export const WhisperainSkillLevel5 = Template.bind({});
+WhisperainSkillLevel5.args = {
+  goal: {
+    operatorName: "Whisperain",
+    goalCategory: 2,
+    goalName: "Skill Level 4 → 5",
+    goalShortName: "Skill Level 5",
+    skillLevel: 5,
+    ingredients: [
+      { name: "Skill Summary - 2", tier: 3, quantity: 6 },
+      { name: "Oriron", tier: 2, quantity: 4 },
+    ],
+  },
 };

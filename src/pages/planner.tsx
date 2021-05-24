@@ -274,7 +274,7 @@ function Planner(): React.ReactElement {
 
   return (
     <Grid container spacing={2}>
-      <Grid item xs={12} lg={3}>
+      <Grid item xs={12} md={4}>
         <Autocomplete
           options={operators.map((op) => op.name)}
           autoComplete
@@ -292,7 +292,7 @@ function Planner(): React.ReactElement {
           )}
         />
       </Grid>
-      <Grid item xs={12} lg={9}>
+      <Grid item xs={12} md={8}>
         <Box display="flex">
           <Box mr={2} flexGrow={1} minWidth={0} width="100%">
             <FormControl variant="outlined" fullWidth>

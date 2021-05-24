@@ -147,7 +147,7 @@ function Layout(props: LayoutProps): React.ReactElement {
   }
 
   const drawer = (
-    <div>
+    <>
       <Typography
         className={clsx(classes.toolbar, classes.siteHeader)}
         component="h1"
@@ -161,7 +161,7 @@ function Layout(props: LayoutProps): React.ReactElement {
           <ListItemLink key={pageUri} to={pageUri} primary={pageName} />
         ))}
       </List>
-    </div>
+    </>
   );
 
   const container =
@@ -180,29 +180,7 @@ function Layout(props: LayoutProps): React.ReactElement {
       <CssBaseline />
       <div className={classes.appWrapper}>
         <div className={classes.appContainer}>
-          <AppBar position="fixed" className={classes.headerFooter}>
-            <Toolbar className={classes.mainToolbar}>
-              <IconButton
-                color="inherit"
-                aria-label="open drawer"
-                edge="start"
-                onClick={handleDrawerToggle}
-                className={classes.menuButton}
-              >
-                <MenuIcon />
-              </IconButton>
-              <Typography
-                component="h2"
-                variant="h5"
-                noWrap
-                className={classes.pageTitle}
-              >
-                {pageTitle}
-              </Typography>
-              <NetlifyLogin />
-            </Toolbar>
-          </AppBar>
-          <nav className={classes.drawer} aria-label="pages">
+          <nav className={classes.drawer}>
             {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
             <Hidden lgUp implementation="css">
               <Drawer
@@ -233,6 +211,28 @@ function Layout(props: LayoutProps): React.ReactElement {
               </Drawer>
             </Hidden>
           </nav>
+          <AppBar position="fixed" className={classes.headerFooter}>
+            <Toolbar className={classes.mainToolbar}>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+                className={classes.menuButton}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Typography
+                component="h2"
+                variant="h5"
+                noWrap
+                className={classes.pageTitle}
+              >
+                {pageTitle}
+              </Typography>
+              {/* <NetlifyLogin /> */}
+            </Toolbar>
+          </AppBar>
           <Container className={classes.content} component="main" maxWidth="lg">
             <div className={classes.toolbar} />
             {children}
