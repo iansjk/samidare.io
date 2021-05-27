@@ -17,12 +17,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React, { useState } from "react";
 import { Operator } from "../types";
 import { getOperatorImagePublicId } from "../utils";
-import {
-  maxLevelByRarity,
-  expCostByElite,
-  lmdCostByElite,
-  eliteLmdCost,
-} from "../data/leveling.json";
+import leveling from "../data/leveling.json";
 
 const useStyles = makeStyles((theme) => ({
   arrowIcon: {
@@ -63,14 +58,15 @@ function levelingCost(
       const eliteTargetLevel =
         elite === targetElite
           ? targetLevel
-          : maxLevelByRarity[rarity - 1][elite];
-      const xp = expCostByElite[elite]
-        .slice(eliteStartingLevel - 1, eliteTargetLevel)
+          : leveling.maxLevelByRarity[rarity - 1][elite];
+      const xp = leveling.expCostByElite[elite]
+        .slice(eliteStartingLevel - 1, eliteTargetLevel - 1)
         .reduce((a, b) => a + b);
-      const levelingLmd = lmdCostByElite[elite]
-        .slice(eliteStartingLevel - 1, eliteTargetLevel)
+      const levelingLmd = leveling.lmdCostByElite[elite]
+        .slice(eliteStartingLevel - 1, eliteTargetLevel - 1)
         .reduce((a, b) => a + b);
-      const eliteLmd = elite === 0 ? 0 : eliteLmdCost[rarity - 1][elite - 1];
+      const eliteLmd =
+        elite === 0 ? 0 : leveling.eliteLmdCost[rarity - 1][elite - 1];
       return {
         xp,
         lmd: levelingLmd + eliteLmd,
