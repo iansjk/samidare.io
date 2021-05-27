@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 interface LevelingCost {
-  xp: number;
+  exp: number;
   lmd: number;
   levelingLmd: number;
   eliteLmd: number;
@@ -59,7 +59,7 @@ function levelingCost(
         elite === targetElite
           ? targetLevel
           : leveling.maxLevelByRarity[rarity - 1][elite];
-      const xp = leveling.expCostByElite[elite]
+      const exp = leveling.expCostByElite[elite]
         .slice(eliteStartingLevel - 1, eliteTargetLevel - 1)
         .reduce((a, b) => a + b);
       const levelingLmd = leveling.lmdCostByElite[elite]
@@ -68,21 +68,21 @@ function levelingCost(
       const eliteLmd =
         elite === 0 ? 0 : leveling.eliteLmdCost[rarity - 1][elite - 1];
       return {
-        xp,
+        exp,
         lmd: levelingLmd + eliteLmd,
         eliteLmd,
         levelingLmd,
       };
     });
   const initialValue = {
-    xp: 0,
+    exp: 0,
     lmd: 0,
     eliteLmd: 0,
     levelingLmd: 0,
   };
   return costsByElite.reduce(
     (a, b) => ({
-      xp: a.xp + b.xp,
+      exp: a.exp + b.exp,
       lmd: a.lmd + b.lmd,
       eliteLmd: a.eliteLmd + b.eliteLmd,
       levelingLmd: a.levelingLmd + b.levelingLmd,
@@ -112,7 +112,7 @@ const Leveling: React.FC = () => {
   const [targetLevel, setTargetLevel] = useState(1);
   const classes = useStyles();
   const operator = operators.find((op) => op.name === operatorName);
-  const { xp, lmd, levelingLmd, eliteLmd } = operator
+  const { exp, lmd, levelingLmd, eliteLmd } = operator
     ? levelingCost(
         operator.rarity,
         startingElite,
@@ -120,7 +120,7 @@ const Leveling: React.FC = () => {
         targetElite,
         targetLevel
       )
-    : { xp: 0, lmd: 0, levelingLmd: 0, eliteLmd: 0 };
+    : { exp: 0, lmd: 0, levelingLmd: 0, eliteLmd: 0 };
 
   return (
     <Grid container spacing={2}>
@@ -256,7 +256,7 @@ const Leveling: React.FC = () => {
           <CardContent>
             Total LMD cost: {lmd}
             <br />
-            Total XP cost: {xp}
+            Total EXP cost: {exp}
             <Divider />
             LMD cost for leveling: {levelingLmd}
             <br />
