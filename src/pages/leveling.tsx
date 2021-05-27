@@ -17,6 +17,12 @@ import { graphql, useStaticQuery } from "gatsby";
 import React, { useState } from "react";
 import { Operator } from "../types";
 import { getOperatorImagePublicId } from "../utils";
+import {
+  maxLevelByRarity,
+  expCostByElite,
+  lmdCostByElite,
+  eliteLmdCost,
+} from "../data/leveling.json";
 
 const useStyles = makeStyles((theme) => ({
   arrowIcon: {
@@ -50,12 +56,34 @@ function levelingCost(
   targetElite: number,
   targetLevel: number
 ): LevelingCost {
-  return {
-    xp: 0,
-    lmd: 0,
-    levelingLmd: 0,
-    eliteLmd: 0,
-  };
+  const costsByElite = Array(targetElite - startingElite + 1)
+    .fill(0)
+    .map((_, elite) => {
+      const eliteStartingLevel = elite === startingElite ? startingLevel : 1;
+      const eliteTargetLevel =
+        elite === targetElite
+          ? targetLevel
+          : maxLevelByRarity[rarity - 1][elite];
+      const xp = expCostByElite[elite]
+        .slice(eliteStartingLevel - 1, eliteTargetLevel)
+        .reduce((a, b) => a + b);
+      const levelingLmd = lmdCostByElite[elite]
+        .slice(eliteStartingLevel - 1, eliteTargetLevel)
+        .reduce((a, b) => a + b);
+      const eliteLmd = elite === 0 ? 0 : eliteLmdCost[rarity - 1][elite - 1];
+      return {
+        xp,
+        lmd: levelingLmd + eliteLmd,
+        eliteLmd,
+        levelingLmd,
+      };
+    });
+  return costsByElite.reduce((a, b) => ({
+    xp: a.xp + b.xp,
+    lmd: a.lmd + b.lmd,
+    eliteLmd: a.eliteLmd + b.eliteLmd,
+    levelingLmd: a.levelingLmd + b.levelingLmd,
+  }));
 }
 
 const Leveling: React.FC = () => {
