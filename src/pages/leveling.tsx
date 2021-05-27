@@ -74,12 +74,21 @@ function levelingCost(
         levelingLmd,
       };
     });
-  return costsByElite.reduce((a, b) => ({
-    xp: a.xp + b.xp,
-    lmd: a.lmd + b.lmd,
-    eliteLmd: a.eliteLmd + b.eliteLmd,
-    levelingLmd: a.levelingLmd + b.levelingLmd,
-  }));
+  const initialValue = {
+    xp: 0,
+    lmd: 0,
+    eliteLmd: 0,
+    levelingLmd: 0,
+  };
+  return costsByElite.reduce(
+    (a, b) => ({
+      xp: a.xp + b.xp,
+      lmd: a.lmd + b.lmd,
+      eliteLmd: a.eliteLmd + b.eliteLmd,
+      levelingLmd: a.levelingLmd + b.levelingLmd,
+    }),
+    initialValue
+  );
 }
 
 const Leveling: React.FC = () => {
