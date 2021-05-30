@@ -61,10 +61,10 @@ function levelingCost(
           : leveling.maxLevelByRarity[rarity - 1][elite];
       const exp = leveling.expCostByElite[elite]
         .slice(eliteStartingLevel - 1, eliteTargetLevel - 1)
-        .reduce((a, b) => a + b);
+        .reduce((a, b) => a + b, 0);
       const levelingLmd = leveling.lmdCostByElite[elite]
         .slice(eliteStartingLevel - 1, eliteTargetLevel - 1)
-        .reduce((a, b) => a + b);
+        .reduce((a, b) => a + b, 0);
       const eliteLmd =
         elite === 0 ? 0 : leveling.eliteLmdCost[rarity - 1][elite - 1];
       return {
@@ -254,13 +254,15 @@ const Leveling: React.FC = () => {
       <Grid item xs={12} lg={4}>
         <Card>
           <CardContent>
-            Total LMD cost: {lmd}
+            Total LMD cost: <span data-cy="lmd">{lmd}</span>
             <br />
-            Total EXP cost: {exp}
+            Total EXP cost: <span data-cy="exp">{exp}</span>
             <Divider />
-            LMD cost for leveling: {levelingLmd}
+            LMD cost for leveling:{" "}
+            <span data-cy="levelingLmd">{levelingLmd}</span>
             <br />
-            LMD cost for elite promotions: {eliteLmd}
+            LMD cost for elite promotions:{" "}
+            <span data-cy="eliteLmd">{eliteLmd}</span>
           </CardContent>
         </Card>
       </Grid>
