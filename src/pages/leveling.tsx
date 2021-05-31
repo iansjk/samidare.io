@@ -23,9 +23,8 @@ const OPERATOR_IMAGE_SIZE = 100;
 
 const useStyles = makeStyles((theme) => ({
   lmdIcon: {
-    marginLeft: theme.spacing(0.25),
     position: "relative",
-    top: theme.spacing(0.25),
+    top: 3,
   },
   arrowIcon: {
     fontSize: "3rem",
@@ -173,7 +172,7 @@ const Leveling: React.FC = () => {
   };
 
   return (
-    <Grid container spacing={4}>
+    <Grid container spacing={3}>
       <Grid container item xs={12} md={7}>
         <Autocomplete
           fullWidth
