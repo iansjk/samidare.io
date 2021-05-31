@@ -15,9 +15,9 @@ import cx from "classnames";
 import { graphql, useStaticQuery } from "gatsby";
 import React, { useState } from "react";
 import { Operator } from "../types";
-import { getOperatorImagePublicId } from "../utils";
 import leveling from "../data/leveling.json";
 import lmdIcon from "../data/images/lmd.png";
+import OperatorImage from "../components/OperatorImage";
 
 const OPERATOR_IMAGE_SIZE = 100;
 
@@ -48,13 +48,6 @@ const useStyles = makeStyles((theme) => ({
     "& + &": {
       marginTop: theme.spacing(1),
     },
-  },
-  operatorImage: {
-    width: OPERATOR_IMAGE_SIZE,
-    height: OPERATOR_IMAGE_SIZE,
-    marginRight: theme.spacing(2),
-    lineHeight: 0,
-    border: "1px solid #c0c0c0",
   },
   costList: {
     paddingLeft: 0,
@@ -213,20 +206,13 @@ const Leveling: React.FC = () => {
               Start point
             </Typography>
             <Box display="flex" flexDirection="row">
-              <img
-                className={classes.operatorImage}
-                src={
-                  operator
-                    ? `https://res.cloudinary.com/samidare/image/upload/v1/${getOperatorImagePublicId(
-                        operator.name,
-                        startingElite
-                      )}`
-                    : ""
-                }
-                alt={operator ? `${operator.name} Elite ${startingElite}` : ""}
-                width={OPERATOR_IMAGE_SIZE}
-                height={OPERATOR_IMAGE_SIZE}
-              />
+              <Box mr={2}>
+                <OperatorImage
+                  name={operator?.name}
+                  elite={startingElite as 0 | 1 | 2 | undefined}
+                  size={OPERATOR_IMAGE_SIZE}
+                />
+              </Box>
               <Box>
                 <FormControl
                   variant="outlined"
@@ -290,20 +276,13 @@ const Leveling: React.FC = () => {
               End point
             </Typography>
             <Box display="flex" flexDirection="row">
-              <img
-                src={
-                  operator
-                    ? `https://res.cloudinary.com/samidare/image/upload/v1/${getOperatorImagePublicId(
-                        operator.name,
-                        targetElite
-                      )}`
-                    : ""
-                }
-                className={classes.operatorImage}
-                alt={operator ? `${operator.name} Elite ${targetElite}` : ""}
-                width={OPERATOR_IMAGE_SIZE}
-                height={OPERATOR_IMAGE_SIZE}
-              />
+              <Box mr={2}>
+                <OperatorImage
+                  name={operator?.name}
+                  elite={targetElite as 0 | 1 | 2 | undefined}
+                  size={OPERATOR_IMAGE_SIZE}
+                />
+              </Box>
               <Box>
                 <FormControl
                   variant="outlined"
