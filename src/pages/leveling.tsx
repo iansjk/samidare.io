@@ -10,6 +10,7 @@ import {
   Paper,
   Select,
   TextField,
+  Typography,
 } from "@material-ui/core";
 import TrendingFlatIcon from "@material-ui/icons/TrendingFlat";
 import { Autocomplete } from "@material-ui/lab";
@@ -123,8 +124,8 @@ const Leveling: React.FC = () => {
     : { exp: 0, lmd: 0, levelingLmd: 0, eliteLmd: 0 };
 
   return (
-    <Grid container spacing={2}>
-      <Grid container item xs={12} lg={8}>
+    <Grid container spacing={4}>
+      <Grid container item xs={12} md={7}>
         <Autocomplete
           fullWidth
           options={operators.map((op) => op.name)}
@@ -146,22 +147,25 @@ const Leveling: React.FC = () => {
         <Box display="flex" alignItems="center" mt={2}>
           <Paper elevation={3} className={classes.startOrEndWrapper}>
             <Box mr={1} lineHeight={0}>
-              {operator && (
-                <img
-                  src={`https://res.cloudinary.com/samidare/image/upload/c_pad,h_125,w_125/f_auto/v1/${getOperatorImagePublicId(
-                    operator.name,
-                    startingElite
-                  )}`}
-                  alt={`${operator.name} Elite ${startingElite}`}
-                  width={125}
-                  height={125}
-                />
-              )}
+              <img
+                src={
+                  operator
+                    ? `https://res.cloudinary.com/samidare/image/upload/c_pad,h_100,w_100/v1/${getOperatorImagePublicId(
+                        operator.name,
+                        startingElite
+                      )}`
+                    : ""
+                }
+                alt={operator ? `${operator.name} Elite ${startingElite}` : ""}
+                width={100}
+                height={100}
+              />
             </Box>
             <Box>
               <FormControl variant="outlined" fullWidth>
                 <InputLabel htmlFor="starting-elite">Starting elite</InputLabel>
                 <Select
+                  disabled={!operator}
                   native
                   value={startingElite}
                   label="Starting elite"
@@ -185,6 +189,7 @@ const Leveling: React.FC = () => {
                 </Select>
               </FormControl>
               <TextField
+                disabled={!operator}
                 id="starting-level"
                 label="Starting level"
                 type="numeric"
@@ -199,22 +204,25 @@ const Leveling: React.FC = () => {
           <TrendingFlatIcon className={classes.arrowIcon} />
           <Paper elevation={3} className={classes.startOrEndWrapper}>
             <Box mr={1} lineHeight={0}>
-              {operator && (
-                <img
-                  src={`https://res.cloudinary.com/samidare/image/upload/c_pad,h_125,w_125/f_auto/v1/${getOperatorImagePublicId(
-                    operator.name,
-                    targetElite
-                  )}`}
-                  alt={`${operator.name} Elite ${targetElite}`}
-                  width={125}
-                  height={125}
-                />
-              )}
+              <img
+                src={
+                  operator
+                    ? `https://res.cloudinary.com/samidare/image/upload/c_pad,h_100,w_100/v1/${getOperatorImagePublicId(
+                        operator.name,
+                        targetElite
+                      )}`
+                    : ""
+                }
+                alt={operator ? `${operator.name} Elite ${targetElite}` : ""}
+                width={100}
+                height={100}
+              />
             </Box>
             <Box>
               <FormControl variant="outlined" fullWidth>
-                <InputLabel htmlFor="starting-elite">Ending elite</InputLabel>
+                <InputLabel htmlFor="starting-elite">Target elite</InputLabel>
                 <Select
+                  disabled={!operator}
                   native
                   value={targetElite}
                   label="Target elite"
@@ -238,6 +246,7 @@ const Leveling: React.FC = () => {
                 </Select>
               </FormControl>
               <TextField
+                disabled={!operator}
                 id="target-level"
                 label="Target level"
                 type="numeric"
@@ -251,18 +260,36 @@ const Leveling: React.FC = () => {
           </Paper>
         </Box>
       </Grid>
-      <Grid item xs={12} lg={4}>
+      <Grid item xs={12} md={5}>
         <Card>
           <CardContent>
-            Total LMD cost: <span data-cy="lmd">{lmd}</span>
+            <Typography variant="body1" component="span">
+              Total <strong>LMD</strong> cost:{" "}
+              <span data-cy="lmd" data-lmd={lmd}>
+                {lmd.toLocaleString()}
+              </span>
+            </Typography>
             <br />
-            Total EXP cost: <span data-cy="exp">{exp}</span>
+            <Typography variant="body1" component="span">
+              Total <strong>EXP</strong> cost:{" "}
+              <span data-cy="exp" data-exp={exp}>
+                {exp.toLocaleString()}
+              </span>
+            </Typography>
             <Divider />
-            LMD cost for leveling:{" "}
-            <span data-cy="levelingLmd">{levelingLmd}</span>
+            <Typography variant="body1" component="span">
+              LMD cost for leveling:{" "}
+              <span data-cy="levelingLmd" data-levelingLmd={levelingLmd}>
+                {levelingLmd.toLocaleString()}
+              </span>
+            </Typography>
             <br />
-            LMD cost for elite promotions:{" "}
-            <span data-cy="eliteLmd">{eliteLmd}</span>
+            <Typography variant="body1" component="span">
+              LMD cost for elite promotions:{" "}
+              <span data-cy="eliteLmd" data-eliteLmd={eliteLmd}>
+                {eliteLmd.toLocaleString()}
+              </span>
+            </Typography>
           </CardContent>
         </Card>
       </Grid>
