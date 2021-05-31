@@ -36,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
     flexBasis: "100%",
     padding: theme.spacing(2),
   },
+  eliteInput: {
+    marginBottom: theme.spacing(2),
+  },
 }));
 
 interface LevelingCost {
@@ -183,7 +186,11 @@ const Leveling: React.FC = () => {
               />
             </Box>
             <Box>
-              <FormControl variant="outlined" fullWidth>
+              <FormControl
+                variant="outlined"
+                fullWidth
+                className={classes.eliteInput}
+              >
                 <InputLabel htmlFor="starting-elite">Starting elite</InputLabel>
                 <Select
                   disabled={!operator}
@@ -213,6 +220,7 @@ const Leveling: React.FC = () => {
                 label="Starting level"
                 type="numeric"
                 value={startingLevel}
+                onFocus={(e) => e.target.select()}
                 onChange={(e) => setStartingLevel(parseInt(e.target.value, 10))}
                 helperText={startingLevelHelpText}
                 variant="outlined"
@@ -238,7 +246,11 @@ const Leveling: React.FC = () => {
               />
             </Box>
             <Box>
-              <FormControl variant="outlined" fullWidth>
+              <FormControl
+                variant="outlined"
+                fullWidth
+                className={classes.eliteInput}
+              >
                 <InputLabel htmlFor="starting-elite">Target elite</InputLabel>
                 <Select
                   disabled={!operator}
@@ -270,6 +282,7 @@ const Leveling: React.FC = () => {
                 label="Target level"
                 type="numeric"
                 value={targetLevel}
+                onFocus={(e) => e.target.select()}
                 onChange={(e) => setTargetLevel(parseInt(e.target.value, 10))}
                 helperText={targetLevelHelpText}
                 variant="outlined"
