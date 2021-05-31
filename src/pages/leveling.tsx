@@ -17,10 +17,16 @@ import React, { useState } from "react";
 import { Operator } from "../types";
 import { getOperatorImagePublicId } from "../utils";
 import leveling from "../data/leveling.json";
+import lmdIcon from "../data/images/lmd.png";
 
 const OPERATOR_IMAGE_SIZE = 100;
 
 const useStyles = makeStyles((theme) => ({
+  lmdIcon: {
+    marginLeft: theme.spacing(0.25),
+    position: "relative",
+    top: theme.spacing(0.25),
+  },
   arrowIcon: {
     fontSize: "3rem",
     color: "rgba(255, 255, 255, 0.8)",
@@ -366,7 +372,13 @@ const Leveling: React.FC = () => {
               <strong data-cy="lmd" data-lmd={lmd}>
                 {lmd.toLocaleString()}
               </strong>{" "}
-              LMD
+              <img
+                className={classes.lmdIcon}
+                alt="LMD"
+                src={lmdIcon}
+                width={26}
+                height={18}
+              />
               <ul className={classes.subcostList}>
                 <Typography
                   variant="body1"
