@@ -122,6 +122,14 @@ const Leveling: React.FC = () => {
         targetLevel
       )
     : { exp: 0, lmd: 0, levelingLmd: 0, eliteLmd: 0 };
+  const startingLevelHelpText = operator
+    ? `Between 1 and ${
+        leveling.maxLevelByRarity[operator.rarity][startingElite]
+      }`
+    : "";
+  const targetLevelHelpText = operator
+    ? `Between 1 and ${leveling.maxLevelByRarity[operator.rarity][targetElite]}`
+    : "";
 
   const handleChangeStartingElite = (
     e: React.ChangeEvent<{
@@ -206,7 +214,7 @@ const Leveling: React.FC = () => {
                 type="numeric"
                 value={startingLevel}
                 onChange={(e) => setStartingLevel(parseInt(e.target.value, 10))}
-                helperText="Between x and y"
+                helperText={startingLevelHelpText}
                 variant="outlined"
                 fullWidth
               />
@@ -263,7 +271,7 @@ const Leveling: React.FC = () => {
                 type="numeric"
                 value={targetLevel}
                 onChange={(e) => setTargetLevel(parseInt(e.target.value, 10))}
-                helperText="Between x and y"
+                helperText={targetLevelHelpText}
                 variant="outlined"
                 fullWidth
               />
