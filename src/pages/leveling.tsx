@@ -99,7 +99,10 @@ const Leveling: React.FC = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        allOperatorsJson(sort: { fields: name, order: ASC }) {
+        allOperatorsJson(
+          sort: { fields: name, order: ASC }
+          filter: { name: { ne: "Amiya (Guard)" } }
+        ) {
           nodes {
             name
             rarity
