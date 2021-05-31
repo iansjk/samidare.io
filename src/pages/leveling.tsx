@@ -366,7 +366,14 @@ const Leveling: React.FC = () => {
                   LMD cost for leveling:{" "}
                   <span data-cy="levelingLmd" data-levelingLmd={levelingLmd}>
                     {levelingLmd.toLocaleString()}
-                  </span>
+                  </span>{" "}
+                  <img
+                    className={classes.lmdIcon}
+                    alt="LMD"
+                    src={lmdIcon}
+                    width={26}
+                    height={18}
+                  />
                 </Typography>
                 <Typography
                   variant="body1"
@@ -376,7 +383,14 @@ const Leveling: React.FC = () => {
                   LMD cost for elite promotions:{" "}
                   <span data-cy="eliteLmd" data-eliteLmd={eliteLmd}>
                     {eliteLmd.toLocaleString()}
-                  </span>
+                  </span>{" "}
+                  <img
+                    className={classes.lmdIcon}
+                    alt="LMD"
+                    src={lmdIcon}
+                    width={26}
+                    height={18}
+                  />
                 </Typography>
               </ul>
             </Typography>
