@@ -12,6 +12,9 @@ const Template: Story<OperatorImageProps> = (args) => (
   <OperatorImage {...args} />
 );
 
+export const Empty = Template.bind({});
+Empty.args = {};
+
 export const Castle3 = Template.bind({});
 Castle3.args = {
   name: "Castle-3",
