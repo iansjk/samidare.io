@@ -1,8 +1,5 @@
 import {
   Box,
-  Card,
-  CardContent,
-  Divider,
   FormControl,
   Grid,
   InputLabel,
@@ -14,11 +11,14 @@ import {
 } from "@material-ui/core";
 import TrendingFlatIcon from "@material-ui/icons/TrendingFlat";
 import { Autocomplete } from "@material-ui/lab";
+import cx from "classnames";
 import { graphql, useStaticQuery } from "gatsby";
 import React, { useState } from "react";
 import { Operator } from "../types";
 import { getOperatorImagePublicId } from "../utils";
 import leveling from "../data/leveling.json";
+
+const OPERATOR_IMAGE_SIZE = 100;
 
 const useStyles = makeStyles((theme) => ({
   arrowIcon: {
@@ -26,18 +26,39 @@ const useStyles = makeStyles((theme) => ({
     color: "rgba(255, 255, 255, 0.8)",
     stroke: "black",
     strokeWidth: "0.2px",
-    margin: theme.spacing(2),
+    margin: theme.spacing(0, 1),
   },
-  startOrEndWrapper: {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    flexGrow: 1,
-    flexBasis: "100%",
+  section: {
     padding: theme.spacing(2),
+  },
+  noOperatorSection: {
+    paddingBottom: theme.spacing(3),
   },
   eliteInput: {
     marginBottom: theme.spacing(2),
+  },
+  cost: {
+    display: "block",
+    "& + &": {
+      marginTop: theme.spacing(1),
+    },
+  },
+  operatorImage: {
+    width: OPERATOR_IMAGE_SIZE,
+    height: OPERATOR_IMAGE_SIZE,
+    marginRight: theme.spacing(2),
+    lineHeight: 0,
+    border: "1px solid #c0c0c0",
+  },
+  costList: {
+    paddingLeft: 0,
+  },
+  subcostList: {
+    marginTop: theme.spacing(1),
+    "& > li": {
+      display: "list-item",
+      listStyle: "disc",
+    },
   },
 }));
 
@@ -130,11 +151,13 @@ const Leveling: React.FC = () => {
     : { exp: 0, lmd: 0, levelingLmd: 0, eliteLmd: 0 };
   const startingLevelHelpText = operator
     ? `Between 1 and ${
-        leveling.maxLevelByRarity[operator.rarity][startingElite]
+        leveling.maxLevelByRarity[operator.rarity - 1][startingElite]
       }`
     : "";
   const targetLevelHelpText = operator
-    ? `Between 1 and ${leveling.maxLevelByRarity[operator.rarity][targetElite]}`
+    ? `Between 1 and ${
+        leveling.maxLevelByRarity[operator.rarity - 1][targetElite]
+      }`
     : "";
 
   const handleChangeStartingElite = (
@@ -172,161 +195,203 @@ const Leveling: React.FC = () => {
           )}
         />
         <Box display="flex" alignItems="center" mt={2}>
-          <Paper elevation={3} className={classes.startOrEndWrapper}>
-            <Box mr={1} lineHeight={0}>
+          <Paper
+            elevation={3}
+            className={cx(
+              classes.section,
+              !operator && classes.noOperatorSection
+            )}
+            component="section"
+          >
+            <Typography component="h3" variant="h5" gutterBottom>
+              Start point
+            </Typography>
+            <Box display="flex" flexDirection="row">
               <img
+                className={classes.operatorImage}
                 src={
                   operator
-                    ? `https://res.cloudinary.com/samidare/image/upload/c_pad,h_100,w_100/v1/${getOperatorImagePublicId(
+                    ? `https://res.cloudinary.com/samidare/image/upload/v1/${getOperatorImagePublicId(
                         operator.name,
                         startingElite
                       )}`
                     : ""
                 }
                 alt={operator ? `${operator.name} Elite ${startingElite}` : ""}
-                width={100}
-                height={100}
+                width={OPERATOR_IMAGE_SIZE}
+                height={OPERATOR_IMAGE_SIZE}
               />
-            </Box>
-            <Box>
-              <FormControl
-                variant="outlined"
-                fullWidth
-                className={classes.eliteInput}
-              >
-                <InputLabel htmlFor="starting-elite">Starting elite</InputLabel>
-                <Select
-                  disabled={!operator}
-                  native
-                  value={startingElite}
-                  label="Starting elite"
-                  onChange={handleChangeStartingElite}
-                  inputProps={{
-                    name: "starting-elite",
-                    id: "starting-elite",
-                  }}
+              <Box>
+                <FormControl
+                  variant="outlined"
+                  size="small"
+                  fullWidth
+                  className={classes.eliteInput}
                 >
-                  <option value={0}>Elite 0</option>
-                  {Array(operator && operator.rarity >= 4 ? 2 : 1)
-                    .fill(0)
-                    .map((_, i) => (
-                      // eslint-disable-next-line react/no-array-index-key
-                      <option key={i + 1} value={i + 1}>
-                        Elite {i + 1}
-                      </option>
-                    ))}
-                </Select>
-              </FormControl>
-              <TextField
-                disabled={!operator}
-                id="starting-level"
-                label="Starting level"
-                type="numeric"
-                value={startingLevel}
-                onFocus={(e) => e.target.select()}
-                onChange={(e) => setStartingLevel(parseInt(e.target.value, 10))}
-                helperText={startingLevelHelpText}
-                variant="outlined"
-                fullWidth
-              />
+                  <InputLabel htmlFor="starting-elite">
+                    Starting elite
+                  </InputLabel>
+                  <Select
+                    disabled={!operator}
+                    native
+                    value={startingElite}
+                    label="Starting elite"
+                    onChange={handleChangeStartingElite}
+                    inputProps={{
+                      name: "starting-elite",
+                      id: "starting-elite",
+                    }}
+                  >
+                    <option value={0}>Elite 0</option>
+                    {Array(operator && operator.rarity >= 4 ? 2 : 1)
+                      .fill(0)
+                      .map((_, i) => (
+                        // eslint-disable-next-line react/no-array-index-key
+                        <option key={i + 1} value={i + 1}>
+                          Elite {i + 1}
+                        </option>
+                      ))}
+                  </Select>
+                </FormControl>
+                <TextField
+                  size="small"
+                  disabled={!operator}
+                  id="starting-level"
+                  label="Starting level"
+                  type="numeric"
+                  value={startingLevel}
+                  onFocus={(e) => e.target.select()}
+                  onChange={(e) =>
+                    setStartingLevel(parseInt(e.target.value, 10))
+                  }
+                  helperText={startingLevelHelpText}
+                  variant="outlined"
+                  fullWidth
+                />
+              </Box>
             </Box>
           </Paper>
           <TrendingFlatIcon className={classes.arrowIcon} />
-          <Paper elevation={3} className={classes.startOrEndWrapper}>
-            <Box mr={1} lineHeight={0}>
+          <Paper
+            elevation={3}
+            className={cx(
+              classes.section,
+              !operator && classes.noOperatorSection
+            )}
+            component="section"
+          >
+            <Typography component="h3" variant="h5" gutterBottom>
+              End point
+            </Typography>
+            <Box display="flex" flexDirection="row">
               <img
                 src={
                   operator
-                    ? `https://res.cloudinary.com/samidare/image/upload/c_pad,h_100,w_100/v1/${getOperatorImagePublicId(
+                    ? `https://res.cloudinary.com/samidare/image/upload/v1/${getOperatorImagePublicId(
                         operator.name,
                         targetElite
                       )}`
                     : ""
                 }
+                className={classes.operatorImage}
                 alt={operator ? `${operator.name} Elite ${targetElite}` : ""}
-                width={100}
-                height={100}
+                width={OPERATOR_IMAGE_SIZE}
+                height={OPERATOR_IMAGE_SIZE}
               />
-            </Box>
-            <Box>
-              <FormControl
-                variant="outlined"
-                fullWidth
-                className={classes.eliteInput}
-              >
-                <InputLabel htmlFor="starting-elite">Target elite</InputLabel>
-                <Select
-                  disabled={!operator}
-                  native
-                  value={targetElite}
-                  label="Target elite"
-                  onChange={(e) => {
-                    setTargetElite(parseInt(e.target.value as string, 10));
-                  }}
-                  inputProps={{
-                    name: "target-elite",
-                    id: "target-elite",
-                  }}
+              <Box>
+                <FormControl
+                  variant="outlined"
+                  size="small"
+                  fullWidth
+                  className={classes.eliteInput}
                 >
-                  <option value={0}>Elite 0</option>
-                  {Array(operator && operator.rarity >= 4 ? 2 : 1)
-                    .fill(0)
-                    .map((_, i) => (
-                      // eslint-disable-next-line react/no-array-index-key
-                      <option key={i + 1} value={i + 1}>
-                        Elite {i + 1}
-                      </option>
-                    ))}
-                </Select>
-              </FormControl>
-              <TextField
-                disabled={!operator}
-                id="target-level"
-                label="Target level"
-                type="numeric"
-                value={targetLevel}
-                onFocus={(e) => e.target.select()}
-                onChange={(e) => setTargetLevel(parseInt(e.target.value, 10))}
-                helperText={targetLevelHelpText}
-                variant="outlined"
-                fullWidth
-              />
+                  <InputLabel htmlFor="starting-elite">Target elite</InputLabel>
+                  <Select
+                    disabled={!operator}
+                    native
+                    value={targetElite}
+                    label="Target elite"
+                    onChange={(e) => {
+                      setTargetElite(parseInt(e.target.value as string, 10));
+                    }}
+                    inputProps={{
+                      name: "target-elite",
+                      id: "target-elite",
+                    }}
+                  >
+                    <option value={0}>Elite 0</option>
+                    {Array(operator && operator.rarity >= 4 ? 2 : 1)
+                      .fill(0)
+                      .map((_, i) => (
+                        // eslint-disable-next-line react/no-array-index-key
+                        <option key={i + 1} value={i + 1}>
+                          Elite {i + 1}
+                        </option>
+                      ))}
+                  </Select>
+                </FormControl>
+                <TextField
+                  size="small"
+                  disabled={!operator}
+                  id="target-level"
+                  label="Target level"
+                  type="numeric"
+                  value={targetLevel}
+                  onFocus={(e) => e.target.select()}
+                  onChange={(e) => setTargetLevel(parseInt(e.target.value, 10))}
+                  helperText={targetLevelHelpText}
+                  variant="outlined"
+                  fullWidth
+                />
+              </Box>
             </Box>
           </Paper>
         </Box>
       </Grid>
       <Grid item xs={12} md={5}>
-        <Card>
-          <CardContent>
-            <Typography variant="body1" component="span">
-              Total <strong>LMD</strong> cost:{" "}
-              <span data-cy="lmd" data-lmd={lmd}>
-                {lmd.toLocaleString()}
-              </span>
-            </Typography>
-            <br />
-            <Typography variant="body1" component="span">
-              Total <strong>EXP</strong> cost:{" "}
-              <span data-cy="exp" data-exp={exp}>
+        <Paper elevation={3} component="section" className={classes.section}>
+          <Typography component="h3" variant="h5" gutterBottom>
+            Costs
+          </Typography>
+          <ul className={classes.costList}>
+            <Typography variant="body1" component="li" className={classes.cost}>
+              Total EXP cost:{" "}
+              <strong data-cy="exp" data-exp={exp}>
                 {exp.toLocaleString()}
-              </span>
+              </strong>{" "}
+              EXP
             </Typography>
-            <Divider />
-            <Typography variant="body1" component="span">
-              LMD cost for leveling:{" "}
-              <span data-cy="levelingLmd" data-levelingLmd={levelingLmd}>
-                {levelingLmd.toLocaleString()}
-              </span>
+            <Typography variant="body1" component="li" className={classes.cost}>
+              Total LMD cost:{" "}
+              <strong data-cy="lmd" data-lmd={lmd}>
+                {lmd.toLocaleString()}
+              </strong>{" "}
+              LMD
+              <ul className={classes.subcostList}>
+                <Typography
+                  variant="body1"
+                  component="li"
+                  className={classes.cost}
+                >
+                  LMD cost for leveling:{" "}
+                  <span data-cy="levelingLmd" data-levelingLmd={levelingLmd}>
+                    {levelingLmd.toLocaleString()}
+                  </span>
+                </Typography>
+                <Typography
+                  variant="body1"
+                  component="li"
+                  className={classes.cost}
+                >
+                  LMD cost for elite promotions:{" "}
+                  <span data-cy="eliteLmd" data-eliteLmd={eliteLmd}>
+                    {eliteLmd.toLocaleString()}
+                  </span>
+                </Typography>
+              </ul>
             </Typography>
-            <br />
-            <Typography variant="body1" component="span">
-              LMD cost for elite promotions:{" "}
-              <span data-cy="eliteLmd" data-eliteLmd={eliteLmd}>
-                {eliteLmd.toLocaleString()}
-              </span>
-            </Typography>
-          </CardContent>
-        </Card>
+          </ul>
+        </Paper>
       </Grid>
     </Grid>
   );
