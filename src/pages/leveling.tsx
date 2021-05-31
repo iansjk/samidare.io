@@ -123,6 +123,19 @@ const Leveling: React.FC = () => {
       )
     : { exp: 0, lmd: 0, levelingLmd: 0, eliteLmd: 0 };
 
+  const handleChangeStartingElite = (
+    e: React.ChangeEvent<{
+      name?: string | undefined;
+      value: unknown;
+    }>
+  ) => {
+    const newStartingElite = parseInt(e.target.value as string, 10);
+    setStartingElite(newStartingElite);
+    if (targetElite < newStartingElite) {
+      setTargetElite(newStartingElite);
+    }
+  };
+
   return (
     <Grid container spacing={4}>
       <Grid container item xs={12} md={7}>
@@ -169,9 +182,7 @@ const Leveling: React.FC = () => {
                   native
                   value={startingElite}
                   label="Starting elite"
-                  onChange={(e) => {
-                    setStartingElite(parseInt(e.target.value as string, 10));
-                  }}
+                  onChange={handleChangeStartingElite}
                   inputProps={{
                     name: "starting-elite",
                     id: "starting-elite",
