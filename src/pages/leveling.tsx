@@ -8,6 +8,8 @@ import {
   Select,
   TextField,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@material-ui/core";
 import TrendingFlatIcon from "@material-ui/icons/TrendingFlat";
 import { Autocomplete } from "@material-ui/lab";
@@ -137,6 +139,8 @@ const Leveling: React.FC = () => {
   const [targetElite, setTargetElite] = useState(0);
   const [targetLevel, setTargetLevel] = useState(1);
   const classes = useStyles();
+  const theme = useTheme();
+  const isXSmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
   const operator = operators.find((op) => op.name === operatorName);
   const { exp, lmd, levelingLmd, eliteLmd } = operator
     ? levelingCost(
@@ -195,7 +199,7 @@ const Leveling: React.FC = () => {
           />
         </Grid>
         <Grid item xs={12} container alignItems="center" justify="center">
-          <Grid item xs={5}>
+          <Grid item xs={12} sm={5}>
             <Paper
               elevation={3}
               className={cx(
@@ -266,10 +270,14 @@ const Leveling: React.FC = () => {
               </Box>
             </Paper>
           </Grid>
-          <Grid item xs={2}>
-            <TrendingFlatIcon className={classes.arrowIcon} />
+          <Grid item xs={12}>
+            {!isXSmallScreen ? (
+              <TrendingFlatIcon className={classes.arrowIcon} />
+            ) : (
+              <>&nbsp;</>
+            )}
           </Grid>
-          <Grid item xs={5}>
+          <Grid item xs={12} sm={5}>
             <Paper
               elevation={3}
               className={cx(
