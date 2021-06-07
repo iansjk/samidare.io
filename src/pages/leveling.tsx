@@ -176,7 +176,7 @@ const Leveling: React.FC = () => {
   };
 
   return (
-    <Box margin="auto" maxWidth="800">
+    <Box margin="auto" maxWidth="800px">
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Autocomplete
