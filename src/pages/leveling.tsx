@@ -270,7 +270,7 @@ const Leveling: React.FC = () => {
               </Box>
             </Paper>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={2}>
             {!isXSmallScreen ? (
               <TrendingFlatIcon className={classes.arrowIcon} />
             ) : (
