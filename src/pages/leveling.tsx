@@ -207,6 +207,7 @@ const Leveling: React.FC = () => {
                 !operator && classes.noOperatorSection
               )}
               component="section"
+              data-cy="startPoint"
             >
               <Typography component="h3" variant="h5" gutterBottom>
                 Start point
@@ -285,6 +286,7 @@ const Leveling: React.FC = () => {
                 !operator && classes.noOperatorSection
               )}
               component="section"
+              data-cy="endPoint"
             >
               <Typography component="h3" variant="h5" gutterBottom>
                 End point

@@ -3,18 +3,18 @@ Feature: Leveling cost calculator
   Scenario Outline: Shows the maximum level for rarity chosen
     Given I have chosen <operator-name> to level
     And that operator is <operator-rarity>
-    When I click on the Elite dropdown
-    Then I should see the correct <max-elite>
-    And I should see the correct <max-level>
+    When I click on the target elite dropdown
+    Then I should see the correct <max-ending-elite>
+    And I should see the correct <max-ending-level>
 
     Examples:
-      | operator-name | operator-rarity | max-elite | max-level |
-      | Lancet-2      | 1*              | E0        | 30        |
-      | Yato          | 2*              | E0        | 30        |
-      | Spot          | 3*              | E1        | 55        |
-      | Cutter        | 4*              | E2        | 60        |
-      | Ptilopsis     | 5*              | E2        | 70        |
-      | Shining       | 6*              | E2        | 80        |
+      | operator-name | operator-rarity | max-ending-elite | max-ending-level |
+      | Lancet-2      | 1*              | E0               | 30               |
+      | Yato          | 2*              | E0               | 30               |
+      | Spot          | 3*              | E1               | 55               |
+      | Cutter        | 4*              | E2               | 70               |
+      | Ptilopsis     | 5*              | E2               | 80               |
+      | Shining       | 6*              | E2               | 90               |
 
   Scenario: Displays cost for E0 L1 -> E1 level 1 Spot
     Given I have chosen Spot to level
