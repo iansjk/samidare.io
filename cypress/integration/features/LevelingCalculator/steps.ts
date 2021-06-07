@@ -1,10 +1,4 @@
-import {
-  And,
-  Before,
-  Given,
-  Then,
-  When,
-} from "cypress-cucumber-preprocessor/steps";
+import { Before, Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 import { enterOperatorName } from "../../common/utils";
 
 Before(() => {
@@ -19,19 +13,19 @@ Given(/^that operator is (\d)\*$/, (_rarity) => {
   // no-op
 });
 
-Given(
-  /^I am starting from elite (\d) level (\d+)$/,
-  (startingElite, startingLevel) => {
-    cy.get("#starting-elite").select(`Elite ${startingElite}`);
-    cy.get("#starting-level").type(startingLevel);
-  }
-);
+Given(/^I am starting from elite E(\d)$/, (startingElite) => {
+  cy.get("#starting-elite").select(`Elite ${startingElite}`);
+});
+
+Given(/^I am starting from level (\d+)$/, (startingLevel) => {
+  cy.get("#starting-level").type(startingLevel);
+});
 
 When("I click on the target elite dropdown", () => {
   // no-operator
 });
 
-When(/^I select target elite (\d)$/, (targetElite) => {
+When(/^I select target elite E(\d)$/, (targetElite) => {
   cy.get("#target-elite").select(`Elite ${targetElite}`);
 });
 
@@ -68,10 +62,29 @@ Then(/^I should see the correct (\d+)$/, (maxEndingLevel) => {
   });
 });
 
+Then(/^I should see that it costs (\d+) EXP$/, (totalExp) => {
+  cy.get('[data-cy="exp"]').should("have.attr", "data-exp", totalExp);
+});
+
+Then(/^I should see that it costs (\d+) LMD$/, (totalLmd) => {
+  cy.get('[data-cy="lmd"]').should("have.attr", "data-lmd", totalLmd);
+});
+
 Then(
-  /^I should see that it costs (\d+) LMD and (\d+) EXP$/,
-  (lmdCost, expCost) => {
-    cy.get('[data-cy="lmd"]').should("have.attr", "data-lmd", lmdCost);
-    cy.get('[data-cy="exp"]').should("have.attr", "data-exp", expCost);
+  /^I should see that it costs (\d+) LMD for the elite promotions$/,
+  (eliteLmd) => {
+    cy.get('[data-cy="eliteLmd"]').should(
+      "have.attr",
+      "data-elite-lmd",
+      eliteLmd
+    );
   }
 );
+
+Then(/^I should see that it costs (\d+) LMD for the levels$/, (levelingLmd) => {
+  cy.get('[data-cy="levelingLmd"]').should(
+    "have.attr",
+    "data-leveling-lmd",
+    levelingLmd
+  );
+});

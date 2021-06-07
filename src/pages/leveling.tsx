@@ -394,7 +394,7 @@ const Leveling: React.FC = () => {
                     className={classes.cost}
                   >
                     LMD cost for leveling:{" "}
-                    <span data-cy="levelingLmd" data-levelingLmd={levelingLmd}>
+                    <span data-cy="levelingLmd" data-leveling-lmd={levelingLmd}>
                       {levelingLmd.toLocaleString()}
                     </span>{" "}
                     <img
@@ -411,7 +411,7 @@ const Leveling: React.FC = () => {
                     className={classes.cost}
                   >
                     LMD cost for elite promotions:{" "}
-                    <span data-cy="eliteLmd" data-eliteLmd={eliteLmd}>
+                    <span data-cy="eliteLmd" data-elite-lmd={eliteLmd}>
                       {eliteLmd.toLocaleString()}
                     </span>{" "}
                     <img
