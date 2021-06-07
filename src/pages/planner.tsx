@@ -29,7 +29,10 @@ function Planner(): React.ReactElement {
   const data = useStaticQuery(
     graphql`
       query {
-        allOperatorsJson(sort: { fields: name, order: ASC }) {
+        allOperatorsJson(
+          sort: { fields: name, order: ASC }
+          filter: { rarity: { gte: 3 } }
+        ) {
           nodes {
             name
             rarity
