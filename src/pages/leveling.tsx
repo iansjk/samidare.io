@@ -78,7 +78,8 @@ function levelingCost(
 ): LevelingCost {
   const costsByElite = Array(targetElite - startingElite + 1)
     .fill(0)
-    .map((_, elite) => {
+    .map((_, i) => {
+      const elite = startingElite + i;
       const eliteStartingLevel = elite === startingElite ? startingLevel : 1;
       const eliteTargetLevel =
         elite === targetElite
@@ -91,7 +92,9 @@ function levelingCost(
         .slice(eliteStartingLevel - 1, eliteTargetLevel - 1)
         .reduce((a, b) => a + b, 0);
       const eliteLmd =
-        elite === 0 ? 0 : leveling.eliteLmdCost[rarity - 1][elite - 1];
+        elite === startingElite
+          ? 0
+          : leveling.eliteLmdCost[rarity - 1][elite - 1];
       return {
         exp,
         lmd: levelingLmd + eliteLmd,
