@@ -304,9 +304,7 @@ const Leveling: React.FC = () => {
                     fullWidth
                     className={classes.eliteInput}
                   >
-                    <InputLabel htmlFor="starting-elite">
-                      Target elite
-                    </InputLabel>
+                    <InputLabel htmlFor="target-elite">Target elite</InputLabel>
                     <Select
                       disabled={!operator}
                       native
