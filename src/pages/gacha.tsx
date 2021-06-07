@@ -17,10 +17,6 @@ import {
 import { sprintf } from "sprintf-js";
 
 const useStyles = makeStyles({
-  wrapper: {
-    maxWidth: 800,
-    margin: "auto",
-  },
   probabilityLabel: {
     "&:first-letter": {
       textTransform: "capitalize",
@@ -177,8 +173,8 @@ const Gacha: React.FC = () => {
   };
 
   return (
-    <>
-      <Grid container spacing={2} className={classes.wrapper}>
+    <Box margin="auto" maxWidth="800">
+      <Grid container spacing={2}>
         <Grid item xs={6} sm={3}>
           <TextField
             fullWidth
@@ -341,7 +337,7 @@ const Gacha: React.FC = () => {
           )}
         </Grid>
       </Grid>
-    </>
+    </Box>
   );
 };
 export default Gacha;
