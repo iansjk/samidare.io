@@ -50,9 +50,7 @@ const operatorIds = [
         // internal rarity is 0-indexed; we only want 3* and above
         // ids starting with "token_" are summons, not operators
         Object.prototype.hasOwnProperty.call(cnCharacterPatchTable, id) ||
-        (!id.startsWith("token") &&
-          !entry.isNotObtainable &&
-          entry.rarity + 1 >= 3)
+        (!id.startsWith("token") && !entry.isNotObtainable)
       );
     })
     .sort((a, b) => a.localeCompare(b)),
