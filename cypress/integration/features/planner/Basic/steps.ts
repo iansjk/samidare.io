@@ -5,7 +5,8 @@ import {
   But,
   And,
 } from "cypress-cucumber-preprocessor/steps";
-import { addGoal, enterOperatorName } from "../utils";
+import { enterOperatorName } from "../../../common/utils";
+import { addGoal } from "../utils";
 
 Before(() => {
   cy.visit("/planner");
