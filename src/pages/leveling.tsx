@@ -154,6 +154,12 @@ const Leveling: React.FC = () => {
         targetLevel
       )
     : { exp: 0, lmd: 0, levelingLmd: 0, eliteLmd: 0 };
+  let maxElite = 2;
+  if (operator && operator.rarity <= 2) {
+    maxElite = 0;
+  } else if (operator && operator.rarity === 3) {
+    maxElite = 1;
+  }
   const startingLevelHelpText = operator
     ? `Between 1 and ${
         leveling.maxLevelByRarity[operator.rarity - 1][startingElite]
@@ -245,7 +251,7 @@ const Leveling: React.FC = () => {
                       }}
                     >
                       <option value={0}>Elite 0</option>
-                      {Array(operator && operator.rarity >= 4 ? 2 : 1)
+                      {Array(maxElite)
                         .fill(0)
                         .map((_, i) => (
                           // eslint-disable-next-line react/no-array-index-key
@@ -324,7 +330,7 @@ const Leveling: React.FC = () => {
                       }}
                     >
                       <option value={0}>Elite 0</option>
-                      {Array(operator && operator.rarity >= 4 ? 2 : 1)
+                      {Array(maxElite)
                         .fill(0)
                         .map((_, i) => (
                           // eslint-disable-next-line react/no-array-index-key
