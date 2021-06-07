@@ -76089,13 +76089,14 @@
   },
   {
     "name": "Amiya (Guard)",
-    "isCnOnly": true,
+    "isCnOnly": false,
+    "rarity": 5,
     "skills": [
       {
         "slot": 1,
         "skillId": "skchr_amiya2_1",
         "iconId": null,
-        "skillName": "影霄·奔夜",
+        "skillName": "Ying Xiao - Fleeting Night",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -76190,7 +76191,7 @@
         "slot": 2,
         "skillId": "skchr_amiya2_2",
         "iconId": null,
-        "skillName": "影霄·绝影",
+        "skillName": "Ying Xiao - Shadowless",
         "masteries": [
           {
             "masteryLevel": 1,

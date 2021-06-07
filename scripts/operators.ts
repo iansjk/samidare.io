@@ -4,6 +4,7 @@ import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character
 import cnSkillTable from "./ArknightsGameData/zh_CN/gamedata/excel/skill_table.json";
 import { patchChars as cnCharacterPatchTable } from "./ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json";
 import enCharacterTable from "./ArknightsGameData/en_US/gamedata/excel/character_table.json";
+import { patchChars as enCharacterPatchTable } from "./ArknightsGameData/en_US/gamedata/excel/char_patch_table.json";
 import enSkillTable from "./ArknightsGameData/en_US/gamedata/excel/skill_table.json";
 import {
   getOperatorName,
@@ -60,18 +61,24 @@ const operatorIds = [
 const operatorEntries = operatorIds.map((id: string) => {
   const operatorId = id as keyof typeof cnCharacterTable;
   const name = getOperatorName(operatorId);
-  const isAlternateCharacter = Object.prototype.hasOwnProperty.call(
+  const isPatchCharacter = Object.prototype.hasOwnProperty.call(
     cnCharacterPatchTable,
     operatorId
   );
   const isCnOnly =
     typeof enCharacterTable[operatorId as keyof typeof enCharacterTable] ===
-      "undefined" || isAlternateCharacter;
+      "undefined" &&
+    typeof enCharacterPatchTable[
+      operatorId as keyof typeof enCharacterPatchTable
+    ] === "undefined";
   const entry: any = {
     name,
     isCnOnly,
   };
-  if (!isAlternateCharacter) {
+  if (name === "Amiya (Guard)") {
+    entry.rarity = 5;
+  }
+  if (!isPatchCharacter) {
     entry.rarity = cnCharacterTable[operatorId].rarity + 1;
     entry.skillLevels = (cnCharacterTable[operatorId]
       .allSkillLvlup as SkillLevelEntry[]).map((skillLevelEntry, i) => {
@@ -102,9 +109,9 @@ const operatorEntries = operatorIds.map((id: string) => {
       };
     });
   }
-  if (isAlternateCharacter || entry.rarity > 3) {
+  if (isPatchCharacter || entry.rarity > 3) {
     const skillTable = isCnOnly ? cnSkillTable : enSkillTable;
-    const masteryEntries = (isAlternateCharacter
+    const masteryEntries = (isPatchCharacter
       ? cnCharacterPatchTable[operatorId as keyof typeof cnCharacterPatchTable]
           .skills
       : cnCharacterTable[operatorId].skills) as MasteryLevelEntry[];
