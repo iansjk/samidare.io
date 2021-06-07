@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     color: "rgba(255, 255, 255, 0.8)",
     stroke: "black",
     strokeWidth: "0.2px",
-    margin: theme.spacing(0, 1),
+    width: "100%",
   },
   section: {
     padding: theme.spacing(2),
@@ -194,8 +194,8 @@ const Leveling: React.FC = () => {
             )}
           />
         </Grid>
-        <Grid item xs={12}>
-          <Box display="flex" alignItems="center">
+        <Grid item xs={12} container alignItems="center" justify="center">
+          <Grid item xs={5}>
             <Paper
               elevation={3}
               className={cx(
@@ -265,7 +265,11 @@ const Leveling: React.FC = () => {
                 </Box>
               </Box>
             </Paper>
+          </Grid>
+          <Grid item xs={2}>
             <TrendingFlatIcon className={classes.arrowIcon} />
+          </Grid>
+          <Grid item xs={5}>
             <Paper
               elevation={3}
               className={cx(
@@ -337,7 +341,7 @@ const Leveling: React.FC = () => {
                 </Box>
               </Box>
             </Paper>
-          </Box>
+          </Grid>
         </Grid>
         <Grid item xs={12}>
           <Paper elevation={3} component="section" className={classes.section}>
