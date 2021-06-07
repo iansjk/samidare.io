@@ -22,6 +22,10 @@ import OperatorImage from "../components/OperatorImage";
 const OPERATOR_IMAGE_SIZE = 100;
 
 const useStyles = makeStyles((theme) => ({
+  wrapper: {
+    maxWidth: 800,
+    margin: "auto",
+  },
   lmdIcon: {
     position: "relative",
     top: 3,
@@ -172,8 +176,8 @@ const Leveling: React.FC = () => {
   };
 
   return (
-    <Grid container spacing={3}>
-      <Grid container item xs={12} md={7}>
+    <Grid container spacing={2} className={classes.wrapper}>
+      <Grid item xs={12}>
         <Autocomplete
           fullWidth
           options={operators.map((op) => op.name)}
@@ -192,7 +196,9 @@ const Leveling: React.FC = () => {
             />
           )}
         />
-        <Box display="flex" alignItems="center" mt={2}>
+      </Grid>
+      <Grid item xs={12}>
+        <Box display="flex" alignItems="center">
           <Paper
             elevation={3}
             className={cx(
@@ -332,7 +338,7 @@ const Leveling: React.FC = () => {
           </Paper>
         </Box>
       </Grid>
-      <Grid item xs={12} md={5}>
+      <Grid item xs={12}>
         <Paper elevation={3} component="section" className={classes.section}>
           <Typography component="h3" variant="h5" gutterBottom>
             Costs
