@@ -45,14 +45,17 @@ const useStyles = makeStyles((theme) => ({
   eliteInput: {
     marginBottom: theme.spacing(2),
   },
-  cost: {
+  costList: {
+    paddingLeft: 0,
+  },
+  costEntry: {
     display: "block",
     "& + &": {
       marginTop: theme.spacing(1),
     },
   },
-  costList: {
-    paddingLeft: 0,
+  cost: {
+    whiteSpace: "nowrap",
   },
   subcostList: {
     marginTop: theme.spacing(1),
@@ -416,64 +419,75 @@ const Leveling: React.FC = () => {
               <Typography
                 variant="body1"
                 component="li"
-                className={classes.cost}
+                className={classes.costEntry}
               >
                 Total EXP cost:{" "}
-                <strong data-cy="exp" data-exp={exp}>
-                  {exp.toLocaleString()}
-                </strong>{" "}
-                EXP
+                <span className={classes.cost}>
+                  <strong data-cy="exp" data-exp={exp}>
+                    {exp.toLocaleString()}
+                  </strong>{" "}
+                  EXP
+                </span>
               </Typography>
               <Typography
                 variant="body1"
                 component="li"
-                className={classes.cost}
+                className={classes.costEntry}
               >
                 Total LMD cost:{" "}
-                <strong data-cy="lmd" data-lmd={lmd}>
-                  {lmd.toLocaleString()}
-                </strong>{" "}
-                <img
-                  className={classes.lmdIcon}
-                  alt="LMD"
-                  src={lmdIcon}
-                  width={26}
-                  height={18}
-                />
+                <span className={classes.cost}>
+                  <strong data-cy="lmd" data-lmd={lmd}>
+                    {lmd.toLocaleString()}
+                  </strong>{" "}
+                  <img
+                    className={classes.lmdIcon}
+                    alt="LMD"
+                    src={lmdIcon}
+                    width={26}
+                    height={18}
+                  />
+                </span>
                 <ul className={classes.subcostList}>
                   <Typography
                     variant="body1"
                     component="li"
-                    className={classes.cost}
+                    className={classes.costEntry}
                   >
                     LMD cost for leveling:{" "}
-                    <span data-cy="levelingLmd" data-leveling-lmd={levelingLmd}>
-                      {levelingLmd.toLocaleString()}
-                    </span>{" "}
-                    <img
-                      className={classes.lmdIcon}
-                      alt="LMD"
-                      src={lmdIcon}
-                      width={26}
-                      height={18}
-                    />
+                    <span className={classes.cost}>
+                      <span
+                        data-cy="levelingLmd"
+                        data-leveling-lmd={levelingLmd}
+                      >
+                        {levelingLmd.toLocaleString()}
+                      </span>{" "}
+                      <img
+                        className={classes.lmdIcon}
+                        alt="LMD"
+                        src={lmdIcon}
+                        width={26}
+                        height={18}
+                      />
+                    </span>
                   </Typography>
                   <Typography
                     variant="body1"
                     component="li"
-                    className={classes.cost}
+                    className={classes.costEntry}
                   >
                     LMD cost for elite promotions:{" "}
-                    <span data-cy="eliteLmd" data-elite-lmd={eliteLmd}>
-                      {eliteLmd.toLocaleString()}
-                    </span>{" "}
-                    <img
-                      className={classes.lmdIcon}
-                      alt="LMD"
-                      src={lmdIcon}
-                      width={26}
-                      height={18}
-                    />
+                    <span className={classes.cost}>
+                      <span data-cy="eliteLmd" data-elite-lmd={eliteLmd}>
+                        {eliteLmd.toLocaleString()}
+                      </span>{" "}
+                      <img
+                        className={classes.lmdIcon}
+                        alt="LMD"
+                        src={lmdIcon}
+                        width={26}
+                        height={18}
+                      />
+                    </span>
                   </Typography>
                 </ul>
               </Typography>
