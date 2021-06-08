@@ -48,9 +48,9 @@ const operatorIds = [
     .filter((id) => {
       const entry = cnCharacterTable[id as keyof typeof cnCharacterTable];
       return (
-        // ids starting with "token_" are summons, not operators
+        // only ids starting with "char_" are operators
         Object.prototype.hasOwnProperty.call(cnCharacterPatchTable, id) ||
-        (!id.startsWith("token") && !entry.isNotObtainable)
+        (id.startsWith("char") && !entry.isNotObtainable)
       );
     })
     .sort((a, b) => a.localeCompare(b)),
