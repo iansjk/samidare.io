@@ -20,6 +20,7 @@ import { Operator } from "../types";
 import leveling from "../data/leveling.json";
 import lmdIcon from "../data/images/lmd.png";
 import OperatorImage from "../components/OperatorImage";
+import ValidatedTextField from "../components/ValidatedTextField";
 
 const OPERATOR_IMAGE_SIZE = 100;
 
@@ -160,16 +161,16 @@ const Leveling: React.FC = () => {
   } else if (operator && operator.rarity === 3) {
     maxElite = 1;
   }
+  const maxStartingLevel = operator
+    ? leveling.maxLevelByRarity[operator.rarity - 1][startingElite]
+    : 0;
+  const maxTargetLevel = operator
+    ? leveling.maxLevelByRarity[operator.rarity - 1][targetElite]
+    : 0;
   const startingLevelHelpText = operator
-    ? `Between 1 and ${
-        leveling.maxLevelByRarity[operator.rarity - 1][startingElite]
-      }`
+    ? `Between 1 and ${maxStartingLevel}`
     : "";
-  const targetLevelHelpText = operator
-    ? `Between 1 and ${
-        leveling.maxLevelByRarity[operator.rarity - 1][targetElite]
-      }`
-    : "";
+  const targetLevelHelpText = operator ? `Between 1 and ${maxTargetLevel}` : "";
 
   const handleChangeStartingElite = (
     e: React.ChangeEvent<{
@@ -261,17 +262,25 @@ const Leveling: React.FC = () => {
                         ))}
                     </Select>
                   </FormControl>
-                  <TextField
+                  <ValidatedTextField
                     size="small"
                     disabled={!operator}
                     id="starting-level"
                     label="Starting level"
                     type="numeric"
-                    value={startingLevel}
+                    defaultValue={startingLevel}
                     onFocus={(e) => e.target.select()}
                     onChange={(e) =>
                       setStartingLevel(parseInt(e.target.value, 10))
                     }
+                    validator={(value) => {
+                      const numericValue = parseInt(value, 10);
+                      return (
+                        !Number.isNaN(numericValue) &&
+                        numericValue >= 1 &&
+                        numericValue <= maxStartingLevel
+                      );
+                    }}
                     helperText={startingLevelHelpText}
                     variant="outlined"
                     fullWidth
@@ -340,17 +349,25 @@ const Leveling: React.FC = () => {
                         ))}
                     </Select>
                   </FormControl>
-                  <TextField
+                  <ValidatedTextField
                     size="small"
                     disabled={!operator}
                     id="target-level"
                     label="Target level"
                     type="numeric"
-                    value={targetLevel}
+                    defaultValue={targetLevel}
                     onFocus={(e) => e.target.select()}
                     onChange={(e) =>
                       setTargetLevel(parseInt(e.target.value, 10))
                     }
+                    validator={(value) => {
+                      const numericValue = parseInt(value, 10);
+                      return (
+                        !Number.isNaN(numericValue) &&
+                        numericValue >= 1 &&
+                        numericValue <= maxTargetLevel
+                      );
+                    }}
                     helperText={targetLevelHelpText}
                     variant="outlined"
                     fullWidth
