@@ -82,6 +82,7 @@ const links = {
   "/planner": "Operator Planner",
   "/recruitment": "Recruitment Calculator",
   "/gacha": "Pull Probability Calculator",
+  "/leveling": "Leveling Costs",
 };
 
 function getPageTitle(title: string, uri: string): string | undefined {

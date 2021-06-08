@@ -1,15 +1,12 @@
 /* eslint-disable import/prefer-default-export */
-export function enterOperatorName(operatorName: string): Cypress.Chainable {
-  cy.get("#operator-name").type(`${operatorName}{enter}`);
-  cy.wait(300);
-  return cy.get("#goal-select").click();
-}
+import { enterOperatorName } from "../../common/utils";
 
 export function addGoal(
   operatorName: string,
   goalName: string
 ): Cypress.Chainable {
   enterOperatorName(operatorName);
+  cy.get("#goal-select").click();
   cy.get("#menu-goal-select").contains(goalName).click().type("{esc}");
   return cy.contains("Add").click();
 }

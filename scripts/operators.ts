@@ -4,6 +4,7 @@ import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character
 import cnSkillTable from "./ArknightsGameData/zh_CN/gamedata/excel/skill_table.json";
 import { patchChars as cnCharacterPatchTable } from "./ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json";
 import enCharacterTable from "./ArknightsGameData/en_US/gamedata/excel/character_table.json";
+import { patchChars as enCharacterPatchTable } from "./ArknightsGameData/en_US/gamedata/excel/char_patch_table.json";
 import enSkillTable from "./ArknightsGameData/en_US/gamedata/excel/skill_table.json";
 import {
   getOperatorName,
@@ -47,12 +48,9 @@ const operatorIds = [
     .filter((id) => {
       const entry = cnCharacterTable[id as keyof typeof cnCharacterTable];
       return (
-        // internal rarity is 0-indexed; we only want 3* and above
-        // ids starting with "token_" are summons, not operators
+        // only ids starting with "char_" are operators
         Object.prototype.hasOwnProperty.call(cnCharacterPatchTable, id) ||
-        (!id.startsWith("token") &&
-          !entry.isNotObtainable &&
-          entry.rarity + 1 >= 3)
+        (id.startsWith("char") && !entry.isNotObtainable)
       );
     })
     .sort((a, b) => a.localeCompare(b)),
@@ -62,18 +60,24 @@ const operatorIds = [
 const operatorEntries = operatorIds.map((id: string) => {
   const operatorId = id as keyof typeof cnCharacterTable;
   const name = getOperatorName(operatorId);
-  const isAlternateCharacter = Object.prototype.hasOwnProperty.call(
+  const isPatchCharacter = Object.prototype.hasOwnProperty.call(
     cnCharacterPatchTable,
     operatorId
   );
   const isCnOnly =
     typeof enCharacterTable[operatorId as keyof typeof enCharacterTable] ===
-      "undefined" || isAlternateCharacter;
+      "undefined" &&
+    typeof enCharacterPatchTable[
+      operatorId as keyof typeof enCharacterPatchTable
+    ] === "undefined";
   const entry: any = {
     name,
     isCnOnly,
   };
-  if (!isAlternateCharacter) {
+  if (name === "Amiya (Guard)") {
+    entry.rarity = 5;
+  }
+  if (!isPatchCharacter) {
     entry.rarity = cnCharacterTable[operatorId].rarity + 1;
     entry.skillLevels = (cnCharacterTable[operatorId]
       .allSkillLvlup as SkillLevelEntry[]).map((skillLevelEntry, i) => {
@@ -104,9 +108,9 @@ const operatorEntries = operatorIds.map((id: string) => {
       };
     });
   }
-  if (isAlternateCharacter || entry.rarity > 3) {
+  if (isPatchCharacter || entry.rarity > 3) {
     const skillTable = isCnOnly ? cnSkillTable : enSkillTable;
-    const masteryEntries = (isAlternateCharacter
+    const masteryEntries = (isPatchCharacter
       ? cnCharacterPatchTable[operatorId as keyof typeof cnCharacterPatchTable]
           .skills
       : cnCharacterTable[operatorId].skills) as MasteryLevelEntry[];

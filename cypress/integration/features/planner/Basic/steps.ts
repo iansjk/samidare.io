@@ -5,7 +5,8 @@ import {
   But,
   And,
 } from "cypress-cucumber-preprocessor/steps";
-import { addGoal, enterOperatorName } from "../utils";
+import { enterOperatorName } from "../../../common/utils";
+import { addGoal } from "../utils";
 
 Before(() => {
   cy.visit("/planner");
@@ -37,6 +38,7 @@ When(
 
 When(/^I am adding goals for (.+)$/, (operatorName) => {
   enterOperatorName(operatorName);
+  cy.get("#goal-select").click();
 });
 
 Then("I should see my goal in the operator goals list", () => {
@@ -232,4 +234,5 @@ And(/^when I (?:de)?select that preset$/, () => {
 
 But("when I am adding goals for Amiya", () => {
   enterOperatorName("Amiya");
+  cy.get("#goal-select").click();
 });
