@@ -120,6 +120,28 @@ function levelingCost(
   );
 }
 
+function maxElite(rarity: number | undefined) {
+  if (rarity == null) {
+    return 0;
+  }
+  switch (rarity) {
+    case 1:
+    case 2:
+      return 0;
+    case 3:
+      return 1;
+    default:
+      return 2;
+  }
+}
+
+function maxLevel(rarity: number | undefined, elite: number | undefined) {
+  if (rarity == null || elite == null) {
+    return 0;
+  }
+  return leveling.maxLevelByRarity[rarity - 1][elite];
+}
+
 const Leveling: React.FC = () => {
   const data = useStaticQuery(
     graphql`
@@ -136,7 +158,9 @@ const Leveling: React.FC = () => {
       }
     `
   );
-  const operators: Operator[] = data.allOperatorsJson.nodes;
+  const operators: Record<string, Operator> = Object.fromEntries(
+    data.allOperatorsJson.nodes.map((op: Operator) => [op.name, op])
+  );
   const [operatorName, setOperatorName] = useState<string | null>(null);
   const [startingElite, setStartingElite] = useState(0);
   const [startingLevel, setStartingLevel] = useState(1);
@@ -145,7 +169,7 @@ const Leveling: React.FC = () => {
   const classes = useStyles();
   const theme = useTheme();
   const isXSmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
-  const operator = operators.find((op) => op.name === operatorName);
+  const operator = operatorName ? operators[operatorName] : null;
   const { exp, lmd, levelingLmd, eliteLmd } = operator
     ? levelingCost(
         operator.rarity,
@@ -155,22 +179,28 @@ const Leveling: React.FC = () => {
         targetLevel
       )
     : { exp: 0, lmd: 0, levelingLmd: 0, eliteLmd: 0 };
-  let maxElite = 2;
-  if (operator && operator.rarity <= 2) {
-    maxElite = 0;
-  } else if (operator && operator.rarity === 3) {
-    maxElite = 1;
-  }
-  const maxStartingLevel = operator
-    ? leveling.maxLevelByRarity[operator.rarity - 1][startingElite]
-    : 0;
-  const maxTargetLevel = operator
-    ? leveling.maxLevelByRarity[operator.rarity - 1][targetElite]
-    : 0;
+  const maxStartingLevel = maxLevel(operator?.rarity, startingElite);
+  const maxTargetLevel = maxLevel(operator?.rarity, targetElite);
   const startingLevelHelpText = operator
     ? `Between 1 and ${maxStartingLevel}`
     : "";
   const targetLevelHelpText = operator ? `Between 1 and ${maxTargetLevel}` : "";
+
+  const handleChangeOperatorName = (_: unknown, value: string | null) => {
+    setOperatorName(value);
+    if (value != null) {
+      const newOperator = operators[value as keyof typeof operators];
+      const newMaxElite = maxElite(newOperator.rarity);
+      if (startingElite > newMaxElite) {
+        setStartingElite(newMaxElite);
+        setStartingLevel(1);
+      }
+      if (targetElite > newMaxElite) {
+        setTargetElite(newMaxElite);
+        setTargetLevel(1);
+      }
+    }
+  };
 
   const handleChangeStartingElite = (
     e: React.ChangeEvent<{
@@ -191,11 +221,11 @@ const Leveling: React.FC = () => {
         <Grid item xs={12}>
           <Autocomplete
             fullWidth
-            options={operators.map((op) => op.name)}
+            options={Object.keys(operators)}
             autoComplete
             autoHighlight
             value={operatorName}
-            onChange={(_, value) => setOperatorName(value)}
+            onChange={handleChangeOperatorName}
             id="operator-name"
             renderInput={(params) => (
               <TextField
@@ -252,7 +282,7 @@ const Leveling: React.FC = () => {
                       }}
                     >
                       <option value={0}>Elite 0</option>
-                      {Array(maxElite)
+                      {Array(maxElite(operator?.rarity))
                         .fill(0)
                         .map((_, i) => (
                           // eslint-disable-next-line react/no-array-index-key
@@ -339,7 +369,7 @@ const Leveling: React.FC = () => {
                       }}
                     >
                       <option value={0}>Elite 0</option>
-                      {Array(maxElite)
+                      {Array(maxElite(operator?.rarity))
                         .fill(0)
                         .map((_, i) => (
                           // eslint-disable-next-line react/no-array-index-key
