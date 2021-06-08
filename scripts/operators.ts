@@ -48,7 +48,6 @@ const operatorIds = [
     .filter((id) => {
       const entry = cnCharacterTable[id as keyof typeof cnCharacterTable];
       return (
-        // internal rarity is 0-indexed; we only want 3* and above
         // ids starting with "token_" are summons, not operators
         Object.prototype.hasOwnProperty.call(cnCharacterPatchTable, id) ||
         (!id.startsWith("token") && !entry.isNotObtainable)
