@@ -308,6 +308,9 @@ const Leveling: React.FC = () => {
                     }
                     revalidateOn={[startingElite]}
                     validator={(value) => {
+                      if (!operator) {
+                        return true;
+                      }
                       const numericValue = parseInt(value, 10);
                       return (
                         !Number.isNaN(numericValue) &&
@@ -396,6 +399,9 @@ const Leveling: React.FC = () => {
                     }
                     revalidateOn={[targetElite]}
                     validator={(value) => {
+                      if (!operator) {
+                        return true;
+                      }
                       const numericValue = parseInt(value, 10);
                       return (
                         !Number.isNaN(numericValue) &&
