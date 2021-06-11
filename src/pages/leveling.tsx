@@ -306,6 +306,7 @@ const Leveling: React.FC = () => {
                     onChange={(e) =>
                       setStartingLevel(parseInt(e.target.value, 10))
                     }
+                    revalidateOn={[startingElite]}
                     validator={(value) => {
                       const numericValue = parseInt(value, 10);
                       return (
@@ -393,6 +394,7 @@ const Leveling: React.FC = () => {
                     onChange={(e) =>
                       setTargetLevel(parseInt(e.target.value, 10))
                     }
+                    revalidateOn={[targetElite]}
                     validator={(value) => {
                       const numericValue = parseInt(value, 10);
                       return (

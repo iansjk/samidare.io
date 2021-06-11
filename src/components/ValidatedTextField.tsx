@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { TextFieldProps } from "@material-ui/core/TextField";
 import { TextField } from "@material-ui/core";
 
@@ -7,11 +7,19 @@ interface Props {
   onChange: (
     e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
   ) => void;
+  revalidateOn?: unknown[];
 }
 
-const ValidatedTextField: React.FC<Props & TextFieldProps> = (props) => {
+const ValidatedTextField: React.FC<Props & TextFieldProps> = ({
+  validator,
+  onChange,
+  revalidateOn = [],
+  value: _value,
+  error: _error,
+  ...rest
+}) => {
   const [isValid, setIsValid] = useState(true);
-  const { validator, onChange, value, error, ...rest } = props;
+  const ref = useRef<HTMLInputElement>(null);
 
   const handleChange = useCallback(
     (e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
@@ -24,6 +32,19 @@ const ValidatedTextField: React.FC<Props & TextFieldProps> = (props) => {
     [onChange, validator]
   );
 
-  return <TextField onChange={handleChange} error={!isValid} {...rest} />;
+  useEffect(() => {
+    if (ref.current) {
+      setIsValid(validator(ref.current.value));
+    }
+  }, [revalidateOn, validator]);
+
+  return (
+    <TextField
+      inputRef={ref}
+      onChange={handleChange}
+      error={!isValid}
+      {...rest}
+    />
+  );
 };
 export default ValidatedTextField;
