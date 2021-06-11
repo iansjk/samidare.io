@@ -9,12 +9,12 @@ import {
   makeStyles,
   Paper,
   Select,
-  TextField,
   Typography,
   useMediaQuery,
   useTheme,
 } from "@material-ui/core";
 import { sprintf } from "sprintf-js";
+import ValidatedTextField from "../components/ValidatedTextField";
 
 const useStyles = makeStyles({
   probabilityLabel: {
@@ -56,9 +56,7 @@ const chanceMultiRateups = (finalOdds: number[][], numRateups: number) => {
 
 const Gacha: React.FC = () => {
   const [pulls, setPulls] = useState(0);
-  const [pullsHasError, setPullsHasError] = useState(false);
   const [pity, setPity] = useState(0);
-  const [pityHasError, setPityHasError] = useState(false);
   const [bannerType, setBannerType] = useState<
     "event" | "standard" | "limited"
   >("event");
@@ -155,17 +153,9 @@ const Gacha: React.FC = () => {
     if (e.target.name === "pulls" || e.target.name === "pity") {
       const toInt = parseInt(e.target.value as string, 10);
       if (e.target.name === "pulls") {
-        if (Number.isNaN(toInt)) {
-          setPullsHasError(true);
-        } else {
-          setPulls(Math.max(0, Math.min(toInt, MAX_PULL_COUNT)));
-          setPullsHasError(toInt < 0 || toInt > MAX_PULL_COUNT);
-        }
-      } else if (Number.isNaN(toInt)) {
-        setPityHasError(true);
+        setPulls(Math.max(0, Math.min(toInt, MAX_PULL_COUNT)));
       } else {
         setPity(Math.max(0, Math.min(toInt, 98)));
-        setPityHasError(toInt < 0 || toInt > 98);
       }
     } else if (e.target.name === "banner-type") {
       setBannerType(e.target.value as "event" | "standard" | "limited");
@@ -176,7 +166,7 @@ const Gacha: React.FC = () => {
     <Box margin="auto" maxWidth="800px">
       <Grid container spacing={2}>
         <Grid item xs={6} sm={3}>
-          <TextField
+          <ValidatedTextField
             fullWidth
             label="Number of pulls"
             variant="outlined"
@@ -184,13 +174,20 @@ const Gacha: React.FC = () => {
             defaultValue="0"
             name="pulls"
             helperText={`Max ${MAX_PULL_COUNT}`}
-            error={pullsHasError}
             onFocus={handleFocus}
             onChange={handleChange}
+            validator={(value) => {
+              const numericValue = parseInt(value, 10);
+              return (
+                !Number.isNaN(numericValue) &&
+                numericValue >= 0 &&
+                numericValue <= MAX_PULL_COUNT
+              );
+            }}
           />
         </Grid>
         <Grid item xs={6} sm={3}>
-          <TextField
+          <ValidatedTextField
             fullWidth
             label="Initial pity"
             variant="outlined"
@@ -198,9 +195,16 @@ const Gacha: React.FC = () => {
             defaultValue="0"
             name="pity"
             helperText="Between 0 and 98"
-            error={pityHasError}
             onFocus={handleFocus}
             onChange={handleChange}
+            validator={(value) => {
+              const numericValue = parseInt(value, 10);
+              return (
+                !Number.isNaN(numericValue) &&
+                numericValue >= 0 &&
+                numericValue <= 98
+              );
+            }}
           />
         </Grid>
         <Grid item xs={12} sm={6}>
