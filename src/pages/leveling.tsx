@@ -80,7 +80,7 @@ function levelingCost(
   targetElite: number,
   targetLevel: number
 ): LevelingCost {
-  const costsByElite = Array(targetElite - startingElite + 1)
+  const costsByElite = Array(Math.max(targetElite - startingElite + 1, 0))
     .fill(0)
     .map((_, i) => {
       const elite = startingElite + i;
