@@ -80,7 +80,7 @@ function levelingCost(
   targetElite: number,
   targetLevel: number
 ): LevelingCost {
-  const costsByElite = Array(targetElite - startingElite + 1)
+  const costsByElite = Array(Math.max(targetElite - startingElite + 1, 0))
     .fill(0)
     .map((_, i) => {
       const elite = startingElite + i;
@@ -306,7 +306,11 @@ const Leveling: React.FC = () => {
                     onChange={(e) =>
                       setStartingLevel(parseInt(e.target.value, 10))
                     }
+                    revalidateOn={[startingElite]}
                     validator={(value) => {
+                      if (!operator) {
+                        return true;
+                      }
                       const numericValue = parseInt(value, 10);
                       return (
                         !Number.isNaN(numericValue) &&
@@ -393,7 +397,11 @@ const Leveling: React.FC = () => {
                     onChange={(e) =>
                       setTargetLevel(parseInt(e.target.value, 10))
                     }
+                    revalidateOn={[targetElite]}
                     validator={(value) => {
+                      if (!operator) {
+                        return true;
+                      }
                       const numericValue = parseInt(value, 10);
                       return (
                         !Number.isNaN(numericValue) &&
