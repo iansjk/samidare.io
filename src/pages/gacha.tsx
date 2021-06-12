@@ -153,9 +153,9 @@ const Gacha: React.FC = () => {
     if (e.target.name === "pulls" || e.target.name === "pity") {
       const toInt = parseInt(e.target.value as string, 10);
       if (e.target.name === "pulls") {
-        setPulls(Math.max(0, Math.min(toInt, MAX_PULL_COUNT)));
+        setPulls(toInt);
       } else {
-        setPity(Math.max(0, Math.min(toInt, 98)));
+        setPity(toInt);
       }
     } else if (e.target.name === "banner-type") {
       setBannerType(e.target.value as "event" | "standard" | "limited");
