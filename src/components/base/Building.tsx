@@ -50,15 +50,15 @@ const LevelIndicator: React.FC<{ color: string }> = (props) => {
   );
 };
 
-type Operator = [string, -1 | 0 | 1 | 2] | string;
+export type BuildingOperator = [string, -1 | 0 | 1 | 2];
 export interface BuildingProps {
   level: number;
-  operators?: Operator[];
+  operators?: BuildingOperator[];
 }
 
 export interface SingleSlotBuildingProps {
   level: number;
-  operator?: Operator;
+  operator?: BuildingOperator;
 }
 
 interface BuildingBaseProps {
@@ -77,7 +77,7 @@ const Building: React.FC<
   operators.length = slots;
 
   return (
-    <Box whiteSpace="nowrap" display="flex" m={1}>
+    <Box whiteSpace="nowrap" display="flex" justifyContent="center" m={1}>
       {LEFT_SIDE_BUILDING_NAMES.has(name) && (
         <Paper
           elevation={3}

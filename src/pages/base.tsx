@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from "react";
 import {
   Timeline,
@@ -17,6 +18,9 @@ import {
   Office,
   ReceptionRoom,
 } from "../components/base";
+import { rotations } from "./rotations.json";
+import { BuildingOperator } from "../components/base/Building";
+import { Box } from "@material-ui/core";
 
 const Base: React.FC = () => {
   return (
@@ -46,68 +50,58 @@ const Base: React.FC = () => {
         </Timeline>
       </Grid>
       <Grid item xs={10}>
-        <Grid container>
-          <Grid item justify="center" xs={4}>
-            <TradingPost
-              level={3}
-              operators={[
-                ["Jaye", 0],
-                ["Texas", 2],
-                ["Lappland", 2],
-              ]}
-            />
-            <TradingPost
-              level={3}
-              operators={[["Exusiai", 2], "Gummy", "Midnight"]}
-            />
-            <Factory
-              level={3}
-              operators={[
-                ["Vermeil", 1],
-                ["Ceobe", 2],
-                ["Scene", 2],
-              ]}
-            />
-            <Factory
-              level={2}
-              operators={[
-                ["Spot", 1],
-                ["Gravel", 1],
-              ]}
-            />
-            <Factory
-              level={2}
-              operators={[
-                ["Steward", 1],
-                ["Ptilopsis", 2],
-              ]}
-            />
-            <Factory level={2} operators={["Haze", ["Perfumer", 1]]} />
-            <Factory
-              level={2}
-              operators={[
-                ["Castle-3", -1],
-                ["FEater", 0],
-              ]}
-            />
-            <PowerPlant level={3} operator="Greyy" />
-            <PowerPlant level={3} operator={["Shaw", 1]} />
-          </Grid>
-          <Grid item justify="center" xs={4}>
-            <CommandCenter
-              level={5}
-              operators={["Amiya", "Dobermann", "Scavenger"]}
-            />
-            <Dorm level={2} />
-            <Dorm level={1} />
-            <Dorm level={1} />
-            <Dorm level={1} />
-          </Grid>
-          <Grid item justify="center" xs={4}>
-            <ReceptionRoom level={3} operators={[["Ch'en", 2], "Gitano"]} />
-            <Office level={3} operator={["Orchid", 0]} />
-          </Grid>
-        </Grid>
+        <Box>
+          {rotations.map((rotation, i) => (
+            <Grid container key={i}>
+              <Grid item xs={4}>
+                {rotation.tradingPosts.map((tradingPost, j) => (
+                  <TradingPost
+                    key={j}
+                    level={tradingPost.length}
+                    operators={tradingPost as BuildingOperator[]}
+                  />
+                ))}
+                {rotation.factories.map((factory, j) => (
+                  <Factory
+                    key={j}
+                    level={factory.length}
+                    operators={factory as BuildingOperator[]}
+                  />
+                ))}
+                {rotation.powerPlants.map((powerPlant, j) => (
+                  <PowerPlant
+                    key={j}
+                    level={3}
+                    operator={powerPlant as BuildingOperator}
+                  />
+                ))}
+              </Grid>
+              <Grid item xs={4}>
+                <CommandCenter
+                  level={5}
+                  operators={rotation.commandCenter as BuildingOperator[]}
+                />
+                {rotation.dorms.map((dorm, j) => (
+                  <Dorm
+                    key={j}
+                    level={j === 0 ? 2 : 1}
+                    operators={dorm as BuildingOperator[]}
+                  />
+                ))}
+              </Grid>
+              <Grid item xs={4}>
+                <ReceptionRoom
+                  level={3}
+                  operators={rotation.receptionRoom as BuildingOperator[]}
+                />
+                <Office
+                  level={3}
+                  operator={rotation.office as BuildingOperator}
+                />
+              </Grid>
+            </Grid>
+          ))}
+        </Box>
       </Grid>
     </Grid>
   );
