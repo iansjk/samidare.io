@@ -71,6 +71,7 @@ const operatorEntries = operatorIds.map((id: string) => {
       operatorId as keyof typeof enCharacterPatchTable
     ] === "undefined";
   const entry: any = {
+    id,
     name,
     isCnOnly,
   };
