@@ -26,6 +26,22 @@ const useStyles = makeStyles({
 
 const MAX_PULL_COUNT = 2000;
 
+const initialize2dArray = (): number[][] => {
+  const newArray: any = [];
+  for (let i = 0; i < 7; i++) {
+    newArray[i] = [0, 0, 0, 0, 0, 0, 0];
+  }
+  return newArray;
+};
+
+const initialize3dArray = (): number[][][] => {
+  const newArray: any = [];
+  for (let i = 0; i < 99; i++) {
+    newArray[i] = initialize2dArray();
+  }
+  return newArray;
+};
+
 const chanceOneOfEach = (finalOdds: number[][]) => {
   let chance = 0;
   for (let j = 1; j < 7; j++) {
@@ -72,22 +88,10 @@ const Gacha: React.FC = () => {
   }
 
   const finalOdds = useMemo(() => {
-    let probabilities = Array(99)
-      .fill(0)
-      .map(() =>
-        Array(7)
-          .fill(0)
-          .map(() => Array(7).fill(0))
-      );
+    let probabilities = initialize3dArray();
     probabilities[pity][0][0] = 1;
     for (let a = 0; a < pulls; a++) {
-      const newProbabilities = Array(99)
-        .fill(0)
-        .map(() =>
-          Array(7)
-            .fill(0)
-            .map(() => Array(7).fill(0))
-        );
+      const newProbabilities = initialize3dArray();
       for (let i = 0; i < 99; i++) {
         const sixStarChance = i <= 49 ? 0.02 : 0.02 * (i - 48);
         for (let j = 0; j < 7; j++) {
@@ -114,9 +118,7 @@ const Gacha: React.FC = () => {
       }
       probabilities = newProbabilities;
     }
-    const odds = Array(7)
-      .fill(0)
-      .map(() => Array(7).fill(0));
+    const odds = initialize2dArray();
     for (let i = 0; i < 99; i++) {
       for (let j = 0; j < 7; j++) {
         for (let k = 0; k < 7; k++) {
