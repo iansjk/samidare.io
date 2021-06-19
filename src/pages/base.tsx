@@ -8,7 +8,7 @@ import {
   TimelineConnector,
   TimelineContent,
 } from "@material-ui/lab";
-import { Grid } from "@material-ui/core";
+import { Box, Grid } from "@material-ui/core";
 import {
   PowerPlant,
   TradingPost,
@@ -18,9 +18,8 @@ import {
   Office,
   ReceptionRoom,
 } from "../components/base";
-import { rotations } from "./rotations.json";
+import rotationsJson from "./rotations.json";
 import { BuildingOperator } from "../components/base/Building";
-import { Box } from "@material-ui/core";
 
 const Base: React.FC = () => {
   return (
@@ -51,7 +50,7 @@ const Base: React.FC = () => {
       </Grid>
       <Grid item xs={10}>
         <Box>
-          {rotations.map((rotation, i) => (
+          {rotationsJson.rotations.map((rotation, i) => (
             <Grid container key={i}>
               <Grid item xs={4}>
                 {rotation.tradingPosts.map((tradingPost, j) => (
