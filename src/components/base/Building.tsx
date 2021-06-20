@@ -123,7 +123,8 @@ const Building: React.FC<
                     eliteLevel
                   )}`;
                 return (
-                  <Box position="relative">
+                  // eslint-disable-next-line react/no-array-index-key
+                  <Box position="relative" key={i}>
                     {(eliteLevel === 1 || eliteLevel === 2) && (
                       <Box position="absolute" right={0} bottom={-6} zIndex={1}>
                         <img
@@ -140,7 +141,6 @@ const Building: React.FC<
                     )}
                     <Avatar
                       className={classes.operatorAvatar}
-                      key={i}
                       variant="square"
                       aria-label={name == null ? "Any Operator" : undefined}
                       alt={name ?? "Any Operator"}
