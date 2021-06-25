@@ -50,7 +50,7 @@ const LevelIndicator: React.FC<{ color: string }> = (props) => {
   );
 };
 
-export type BuildingOperator = [string, -1 | 0 | 1 | 2];
+export type BuildingOperator = [string, number];
 export interface BuildingProps {
   level: number;
   operators?: BuildingOperator[];
