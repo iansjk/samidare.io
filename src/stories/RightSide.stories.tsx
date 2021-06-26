@@ -15,9 +15,9 @@ const Template: Story<BuildingProps & { type: "office" | "receptionroom" }> = (
   const { type } = args;
   switch (type) {
     case "office":
-      return <ReceptionRoomComponent {...args} />;
-    case "receptionroom":
       return <OfficeComponent {...args} />;
+    case "receptionroom":
+      return <ReceptionRoomComponent {...args} />;
     default:
       return <div>Don&apos;t know how to render {type}</div>;
   }
