@@ -26,6 +26,7 @@ const Template: Story<BuildingProps & { type: "office" | "receptionroom" }> = (
 export const ReceptionRoom = Template.bind({});
 ReceptionRoom.args = {
   type: "receptionroom",
+  level: 3,
   operators: [
     ["Ch'en", 2],
     ["Projekt Red", 2],
