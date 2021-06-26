@@ -1,17 +1,17 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from "react";
 import { Story, Meta } from "@storybook/react";
-import Base, { Rotation } from "../components/base/Base";
+import BaseComponent, { Rotation } from "../components/base/Base";
 
 export default {
-  title: "Base",
-  component: Base,
+  title: "Base/Base",
+  component: BaseComponent,
 } as Meta;
 
-const Template: Story<Rotation> = (args) => <Base {...args} />;
+const Template: Story<Rotation> = (args) => <BaseComponent {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
+export const Base = Template.bind({});
+Base.args = {
   tradingPosts: [
     [
       ["Jaye", 0],
