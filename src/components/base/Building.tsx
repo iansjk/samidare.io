@@ -26,14 +26,13 @@ const useStyles = makeStyles((theme: Theme) =>
       width: theme.spacing(2),
     },
     operatorAvatar: {
-      "&": {
-        width: 50,
-        height: 50,
-        border: `1px solid rgba(255, 255, 255, 0.5)`,
+      width: 50,
+      height: 50,
+      border: `1px solid rgba(255, 255, 255, 0.5)`,
+    },
+    operatorAvatarWrapper: {
+      "&:not(:first-child)": {
         marginLeft: -1,
-      },
-      "&:last-child": {
-        marginRight: 1,
       },
     },
   })
@@ -91,11 +90,10 @@ const Building: React.FC<BuildingProps> = (props) => {
       <Box
         clone
         display="flex"
-        alignItems="center"
-        minWidth={288}
-        flexWrap="wrap"
-        padding={1}
-        pl={LEFT_SIDE_BUILDING_NAMES.has(name) ? 1 : 2}
+        flexDirection="column"
+        minWidth={156}
+        pb={1}
+        px={LEFT_SIDE_BUILDING_NAMES.has(name) ? 1 : 1.5}
       >
         <Paper elevation={3}>
           <Box display="flex" alignItems="flex-end">
@@ -105,7 +103,7 @@ const Building: React.FC<BuildingProps> = (props) => {
             >
               {name}
             </Typography>
-            <Box ml={0.5} mr={1}>
+            <Box ml={0.5}>
               {Array(level)
                 .fill(0)
                 .map((_, i) => (
@@ -114,7 +112,6 @@ const Building: React.FC<BuildingProps> = (props) => {
                 ))}
             </Box>
           </Box>
-          <Box flexGrow={1} />
           <Box display="flex">
             {Array(slots)
               .fill(0)
@@ -132,7 +129,11 @@ const Building: React.FC<BuildingProps> = (props) => {
                   )}`;
                 return (
                   // eslint-disable-next-line react/no-array-index-key
-                  <Box position="relative" key={i}>
+                  <Box
+                    position="relative"
+                    key={i}
+                    className={classes.operatorAvatarWrapper}
+                  >
                     {(eliteLevel === 1 || eliteLevel === 2) && (
                       <Box position="absolute" right={0} bottom={-6} zIndex={1}>
                         <img
