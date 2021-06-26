@@ -7,6 +7,7 @@ const PowerPlant: React.FC<SingleSlotBuildingProps> = (props) => (
     name="Power Plant"
     color={colors.powerPlant.main}
     slots={1}
+    // eslint-disable-next-line react/jsx-props-no-spreading
     {...props}
   />
 );

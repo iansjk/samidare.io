@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import React from "react";
 import {
   Avatar,
@@ -42,7 +43,7 @@ const LevelIndicator: React.FC<{ color: string }> = (props) => {
   const { color } = props;
 
   return (
-    <Box mr="1px">
+    <Box clone mr="1px">
       <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 11 26.4">
         <path d="M5.5 0.7 0.5 5.7v15l5 5 5-5V5.7Z" style={{ fill: color }} />
       </svg>
@@ -51,7 +52,7 @@ const LevelIndicator: React.FC<{ color: string }> = (props) => {
 };
 
 export type BuildingOperator = [string, number];
-export interface BuildingProps {
+export interface MultiSlotBuildingProps {
   level: number;
   operators?: BuildingOperator[];
 }
@@ -67,9 +68,11 @@ interface BuildingBaseProps {
   color?: string;
 }
 
-const Building: React.FC<
-  SingleSlotBuildingProps & BuildingProps & BuildingBaseProps
-> = (props) => {
+export type BuildingProps = MultiSlotBuildingProps &
+  SingleSlotBuildingProps &
+  BuildingBaseProps;
+
+const Building: React.FC<BuildingProps> = (props) => {
   const { level, name, color, operator } = props;
   const slots = props.slots ?? props.level;
   const classes = useStyles();
@@ -89,24 +92,29 @@ const Building: React.FC<
         clone
         display="flex"
         alignItems="center"
-        maxWidth={300}
-        flexGrow="1"
+        minWidth={288}
         flexWrap="wrap"
         padding={1}
         pl={LEFT_SIDE_BUILDING_NAMES.has(name) ? 1 : 2}
       >
         <Paper elevation={3}>
           <Box display="flex" alignItems="flex-end">
-            <Box mr={0.5}>
-              <Typography variant="subtitle1">{name}</Typography>
+            <Typography
+              variant="subtitle1"
+              aria-label={`${name} level ${level}`}
+            >
+              {name}
+            </Typography>
+            <Box ml={0.5} mr={1}>
+              {Array(level)
+                .fill(0)
+                .map((_, i) => (
+                  // eslint-disable-next-line react/no-array-index-key
+                  <LevelIndicator key={i} color={color || "#ffffff"} />
+                ))}
             </Box>
-            {Array(level)
-              .fill(0)
-              .map((_, i) => (
-                <LevelIndicator key={i} color={color || "#ffffff"} />
-              ))}
           </Box>
-          <Box flexGrow="1" />
+          <Box flexGrow={1} />
           <Box display="flex">
             {Array(slots)
               .fill(0)

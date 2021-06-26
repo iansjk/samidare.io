@@ -10,8 +10,7 @@ export default {
 
 const Template: Story<Rotation> = (args) => <BaseComponent {...args} />;
 
-export const Base = Template.bind({});
-Base.args = {
+const exampleRotation = {
   tradingPosts: [
     [
       ["Jaye", 0],
@@ -63,3 +62,6 @@ Base.args = {
   ],
   office: ["Orchid", 0],
 };
+
+export const Base = Template.bind({});
+Base.args = (exampleRotation as unknown) as Rotation;
