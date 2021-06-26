@@ -8,7 +8,6 @@ import { BuildingProps } from "../components/base/Building";
 
 export default {
   title: "Base/Left Side",
-  component: FactoryComponent,
 } as Meta;
 
 const Template: Story<
