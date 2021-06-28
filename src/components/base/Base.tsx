@@ -60,9 +60,6 @@ const useStyles = makeStyles((theme) => ({
     gridTemplateColumns: "repeat(2, max-content)",
     [theme.breakpoints.up("sm")]: {
       gridTemplateColumns: "repeat(3, max-content)",
-    },
-    [theme.breakpoints.up("md")]: {
-      gridTemplateColumns: "repeat(3, max-content)",
       justifySelf: "center",
     },
   },
