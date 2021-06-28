@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
       "spacerL L L L M R spacerR"
       "spacerL L L L M . spacerR"
       "spacerL . . . M . spacerR"
-      "spacerL . . . M . spacerR"
     `,
     gridTemplateColumns:
       "1fr max-content max-content max-content max-content max-content 1fr",
@@ -46,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   middle: {
     gridArea: "M",
     display: "grid",
-    gridTemplateRows: "repeat(6, 1fr)",
+    gridTemplateRows: "repeat(5, 1fr)",
     rowGap: theme.spacing(1),
     margin: theme.spacing(0, 1),
   },

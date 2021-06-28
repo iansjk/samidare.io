@@ -55,7 +55,7 @@ const exampleRotation = {
     ["Dobermann", 0],
     ["Scavenger", 0],
   ],
-  dorms: [[], [], [], [], []],
+  dorms: [[], [], [], []],
   receptionRoom: [
     ["Ch'en", 2],
     ["Gitano", 0],
