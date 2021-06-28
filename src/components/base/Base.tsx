@@ -49,7 +49,8 @@ const useStyles = makeStyles((theme) => ({
     columnGap: theme.spacing(1),
     gridTemplateColumns: "repeat(3, 1fr)",
     [theme.breakpoints.down("xs")]: {
-      gridTemplateColumns: "repeat(2, 1fr)",
+      gridTemplateColumns: "repeat(2, max-content)",
+      justifySelf: "center",
     },
   },
   middle: {
