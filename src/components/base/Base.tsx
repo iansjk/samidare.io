@@ -34,13 +34,23 @@ const useStyles = makeStyles((theme) => ({
     `,
     gridTemplateColumns:
       "1fr max-content max-content max-content max-content max-content 1fr",
+    [theme.breakpoints.down("xs")]: {
+      gridTemplateAreas: `
+        "spacerL L spacerR"
+        "spacerL M spacerR"
+        "spacerL R spacerR"
+      `,
+    },
   },
   leftSide: {
     gridArea: "L",
     display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr",
     rowGap: theme.spacing(1),
     columnGap: theme.spacing(1),
+    gridTemplateColumns: "repeat(3, 1fr)",
+    [theme.breakpoints.down("xs")]: {
+      gridTemplateColumns: "repeat(2, 1fr)",
+    },
   },
   middle: {
     gridArea: "M",
@@ -48,12 +58,21 @@ const useStyles = makeStyles((theme) => ({
     gridTemplateRows: "repeat(5, 1fr)",
     rowGap: theme.spacing(1),
     margin: theme.spacing(0, 1),
+    [theme.breakpoints.down("xs")]: {
+      margin: theme.spacing(1, 0),
+    },
   },
   rightSide: {
     gridArea: "R",
     display: "grid",
     gridTemplateRows: "1fr 1fr",
     rowGap: theme.spacing(1),
+    [theme.breakpoints.down("xs")]: {
+      gridTemplateRows: "1fr",
+      gridTemplateColumns: "1fr 1fr",
+      rowGap: 0,
+      columnGap: theme.spacing(1),
+    },
   },
 }));
 
