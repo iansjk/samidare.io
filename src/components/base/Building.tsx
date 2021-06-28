@@ -7,7 +7,6 @@ import {
   Paper,
   Typography,
   useTheme,
-  useMediaQuery,
 } from "@material-ui/core";
 import { getOperatorImagePublicId } from "../../utils";
 import elite1 from "../../data/images/elite1.png";
@@ -74,10 +73,9 @@ const Building: React.FC<BuildingProps> = (props) => {
   const slots = props.slots ?? props.level;
   const classes = useStyles();
   const theme = useTheme();
-  const isXSmallScreen = useMediaQuery(theme.breakpoints.down("xs"));
   const operators = operator ? [operator] : props.operators ?? [];
   operators.length = slots;
-  const ribbonWidth = isXSmallScreen ? theme.spacing(1) : theme.spacing(2);
+  const ribbonWidth = theme.spacing(1);
   const isLeftSide = LEFT_SIDE_BUILDING_NAMES.has(name);
 
   return (
