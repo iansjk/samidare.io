@@ -1,5 +1,5 @@
 /* eslint-disable react/no-array-index-key */
-import { Box, makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
 import React from "react";
 import {
   TradingPost,
@@ -25,21 +25,30 @@ export interface Rotation {
 const useStyles = makeStyles((theme) => ({
   grid: {
     display: "grid",
+    justifyContent: "center",
     gridTemplateAreas: `
-      "spacerL . . . M . spacerR"
-      "spacerL L L L M R spacerR"
-      "spacerL L L L M R spacerR"
-      "spacerL L L L M . spacerR"
-      "spacerL . . . M . spacerR"
-    `,
-    gridTemplateColumns:
-      "1fr max-content max-content max-content max-content max-content 1fr",
-    [theme.breakpoints.down("xs")]: {
-      gridTemplateAreas: `
-        "spacerL L spacerR"
-        "spacerL M spacerR"
-        "spacerL R spacerR"
+        "L"
+        "M"
+        "R"
       `,
+    rowGap: theme.spacing(1),
+    [theme.breakpoints.up("sm")]: {
+      gridTemplateAreas: `
+        "L L L L"
+        ". M R ."
+      `,
+      gridTemplateColumns: "1fr max-content max-content 1fr",
+      columnGap: theme.spacing(1),
+    },
+    [theme.breakpoints.up("md")]: {
+      gridTemplateAreas: `
+      ". . . M ."
+      "L L L M R"
+      "L L L M R"
+      "L L L M ."
+      ". . . M ."
+    `,
+      gridTemplateColumns: "repeat(5, max-content)",
     },
   },
   leftSide: {
@@ -47,9 +56,13 @@ const useStyles = makeStyles((theme) => ({
     display: "grid",
     rowGap: theme.spacing(1),
     columnGap: theme.spacing(1),
-    gridTemplateColumns: "repeat(3, 1fr)",
-    [theme.breakpoints.down("xs")]: {
-      gridTemplateColumns: "repeat(2, max-content)",
+    justifyContent: "center",
+    gridTemplateColumns: "repeat(2, max-content)",
+    [theme.breakpoints.up("sm")]: {
+      gridTemplateColumns: "repeat(3, max-content)",
+    },
+    [theme.breakpoints.up("md")]: {
+      gridTemplateColumns: "repeat(3, max-content)",
       justifySelf: "center",
     },
   },
@@ -58,21 +71,17 @@ const useStyles = makeStyles((theme) => ({
     display: "grid",
     gridTemplateRows: "repeat(5, 1fr)",
     rowGap: theme.spacing(1),
-    margin: theme.spacing(0, 1),
-    [theme.breakpoints.down("xs")]: {
-      margin: theme.spacing(1, 0),
-    },
   },
   rightSide: {
     gridArea: "R",
     display: "grid",
-    gridTemplateRows: "1fr 1fr",
     rowGap: theme.spacing(1),
-    [theme.breakpoints.down("xs")]: {
-      gridTemplateRows: "1fr",
-      gridTemplateColumns: "1fr 1fr",
-      rowGap: 0,
-      columnGap: theme.spacing(1),
+    gridTemplateRows: "1fr 1fr",
+    [theme.breakpoints.up("sm")]: {
+      gridTemplateRows: "repeat(5, 1fr)",
+    },
+    [theme.breakpoints.up("md")]: {
+      gridTemplateRows: "1fr 1fr",
     },
   },
 }));
@@ -90,7 +99,6 @@ const Base: React.FC<Rotation> = (props) => {
   const classes = useStyles();
   return (
     <div className={classes.grid}>
-      <Box gridArea="spacerL" />
       <div className={classes.leftSide}>
         {tradingPosts.map((tradingPost, j) => (
           <TradingPost
@@ -116,7 +124,6 @@ const Base: React.FC<Rotation> = (props) => {
         <ReceptionRoom level={3} operators={receptionRoom} />
         <Office level={3} operator={office} />
       </div>
-      <Box gridArea="spacerR" />
     </div>
   );
 };
