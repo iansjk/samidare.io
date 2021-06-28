@@ -1,6 +1,5 @@
 /* eslint-disable react/no-array-index-key */
 import { Box, makeStyles } from "@material-ui/core";
-import Grid from "@material-ui/core/Grid";
 import React from "react";
 import {
   TradingPost,
@@ -36,7 +35,6 @@ const useStyles = makeStyles((theme) => ({
     `,
     gridTemplateColumns:
       "1fr max-content max-content max-content max-content max-content 1fr",
-    columnGap: theme.spacing(1),
   },
   leftSide: {
     gridArea: "L",
@@ -50,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
     display: "grid",
     gridTemplateRows: "repeat(6, 1fr)",
     rowGap: theme.spacing(1),
+    margin: theme.spacing(0, 1),
   },
   rightSide: {
     gridArea: "R",
