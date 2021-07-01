@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 
 import axios from "axios";
+import puppeteer from "puppeteer";
 import { items as cnItemTable } from "./ArknightsGameData/zh_CN/gamedata/excel/item_table.json";
 import cnBuildingData from "./ArknightsGameData/zh_CN/gamedata/excel/building_data.json";
 import { stages as enStageTable } from "./ArknightsGameData/en_US/gamedata/excel/stage_table.json";
@@ -32,6 +33,10 @@ const EFFICIENT_STAGE_MAX_ITEM_SANITY_COST_MULTIPLIER = 4;
 
 const WHITELISTED_ITEMS = new Set([
   "LMD",
+  "Drill Battle Record",
+  "Frontline Battle Record",
+  "Tactical Battle Record",
+  "Strategic Battle Record",
   "Orirock",
   "Orirock Cube",
   "Orirock Cluster",
@@ -104,23 +109,6 @@ const WHITELISTED_ITEMS = new Set([
   "Specialist Dualchip",
 ]);
 
-const EFFICIENT_STAGES = [
-  "wk_fly_5", // "CA-5",
-  "main_01-07", // "1-7",
-  "main_04-02", // "4-2"
-  "main_04-04", // "4-4",
-  "main_04-07", // "4-7",
-  "main_04-08", // "4-8"
-  "main_04-09", // "4-9",
-  "sub_04-1-1", // "S4-1"
-  "main_07-03", // "7-4",
-  "main_07-13", // "7-15",
-  "main_08-07", // "R8-7",
-  "main_08-13", // "R8-11"
-  "main_08-16", // "JT8-2",
-  "main_08-17", // JT8-3
-];
-
 const PENGUIN_STATS_MATRIX_URL =
   "https://penguin-stats.io/PenguinStats/api/v2/result/matrix";
 
@@ -181,6 +169,69 @@ Object.entries(crystalItems).forEach(([oldName, newName]) => {
   });
 });
 
+const LUZARK_LP_SOLVER_URL =
+  "https://colab.research.google.com/drive/1lHwJDG7WCAr3KMlxY-HLyD8-yG3boazq";
+const SANITY_VALUE_CELL_ID = "feRucRPwWGZo";
+const STAGE_INFO_CELL_ID = "znmVNbnNWIre";
+const stageRegex = /^Activity (?<stageName>[A-Z0-9-]+) \([^)]+\)/;
+const itemRegex = /^(?<itemName>[^:]+): (?<sanityValue>[0-9.]+) sanity value/;
+
+async function fetchLuzarkLPSolverOutput(): Promise<{
+  efficientStageNames: string[];
+  itemSanityValues: Record<string, number>;
+}> {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto(LUZARK_LP_SOLVER_URL);
+  await Promise.all([
+    page.waitForSelector(`#cell-${SANITY_VALUE_CELL_ID}`),
+    page.waitForSelector(`#cell-${STAGE_INFO_CELL_ID}`),
+  ]);
+
+  const stagesOutputElement = await page.$(
+    `#cell-${STAGE_INFO_CELL_ID} .output pre`
+  );
+  const stagesOutputText: string = await page.evaluate(
+    (el) => el.innerText,
+    stagesOutputElement
+  );
+  const efficientStageNames = stagesOutputText
+    .split("\n")
+    .map((line) => {
+      const result = line.match(stageRegex);
+      if (result && result.groups?.stageName) {
+        return result.groups.stageName;
+      }
+      return null;
+    })
+    .filter((item) => item != null) as string[];
+
+  const sanityValuesOutputElement = await page.$(
+    `#cell-${SANITY_VALUE_CELL_ID} .output pre`
+  );
+  const sanityValuesOutputText: string = await page.evaluate(
+    (el) => el.innerText,
+    sanityValuesOutputElement
+  );
+  const itemSanityValues = Object.fromEntries(
+    sanityValuesOutputText
+      .split("\n")
+      .map((line) => {
+        const result = line.match(itemRegex);
+        if (result && result.groups?.itemName && result.groups?.sanityValue) {
+          return [
+            result.groups.itemName,
+            parseFloat(result.groups.sanityValue),
+          ];
+        }
+        return [];
+      })
+      .filter((pair) => pair.length > 0)
+  );
+  await browser.close();
+  return { efficientStageNames, itemSanityValues };
+}
+
 interface PenguinStatsMatrixCell {
   stageId: string;
   itemId: string;
@@ -200,14 +251,18 @@ interface StageItem {
   stageId: string;
 }
 
-async function getStagesForItems(
-  { efficientStagesOnly } = { efficientStagesOnly: false }
-): Promise<Record<string, StageItem>> {
+async function getStagesForItems({
+  efficientStagesOnly = false,
+  efficientStageNames = [],
+}: Partial<{
+  efficientStagesOnly: boolean;
+  efficientStageNames: string[];
+}>): Promise<Record<string, StageItem>> {
   const itemStageMap: Record<string, StageItem> = {};
   let params = { itemFilter: items.map((item) => item.id).join(",") };
-  if (efficientStagesOnly) {
+  if (efficientStagesOnly && efficientStageNames) {
     params = Object.assign(params, {
-      stageFilter: EFFICIENT_STAGES.join(","),
+      stageFilter: efficientStageNames.join(","),
     });
   }
   const response = await axios.get<PenguinStatsResponse>(
@@ -263,25 +318,33 @@ function buildFarmingStage(itemId: string, stageItem: StageItem): FarmingStage {
 }
 
 (async () => {
+  const {
+    efficientStageNames,
+    itemSanityValues,
+  } = await fetchLuzarkLPSolverOutput();
+
   const [itemEfficientStages, itemFastestStages] = await Promise.all([
     getStagesForItems({
       efficientStagesOnly: true,
+      efficientStageNames,
     }),
-    getStagesForItems(),
+    getStagesForItems({ efficientStagesOnly: false }),
   ]);
 
-  const itemsWithStages = items.map((item) => {
+  const itemsWithStages = items.map((baseItem) => {
     const stages: Record<string, FarmingStage> = {};
-    if (Object.prototype.hasOwnProperty.call(itemFastestStages, item.id)) {
+    if (Object.prototype.hasOwnProperty.call(itemFastestStages, baseItem.id)) {
       stages.leastSanity = buildFarmingStage(
-        item.id,
-        itemFastestStages[item.id]
+        baseItem.id,
+        itemFastestStages[baseItem.id]
       );
     }
-    if (Object.prototype.hasOwnProperty.call(itemEfficientStages, item.id)) {
+    if (
+      Object.prototype.hasOwnProperty.call(itemEfficientStages, baseItem.id)
+    ) {
       const mostEfficientStage = buildFarmingStage(
-        item.id,
-        itemEfficientStages[item.id]
+        baseItem.id,
+        itemEfficientStages[baseItem.id]
       );
       if (stages.leastSanity) {
         if (
@@ -298,13 +361,11 @@ function buildFarmingStage(itemId: string, stageItem: StageItem): FarmingStage {
         }
       }
     }
-    if (Object.keys(stages).length > 0) {
-      return {
-        ...item,
-        stages,
-      };
-    }
-    return item;
+    return {
+      ...baseItem,
+      stages: Object.keys(stages).length > 0 ? stages : undefined,
+      sanityValue: itemSanityValues[baseItem.name],
+    };
   });
 
   fs.writeFileSync(
