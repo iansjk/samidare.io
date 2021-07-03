@@ -13,6 +13,7 @@ import {
   InternalItemRequirement,
   toIngredient,
 } from "./globals";
+import { Item } from "../src/types";
 
 const {
   workshopFormulas,
@@ -324,6 +325,16 @@ function buildFarmingStage(itemId: string, stageItem: StageItem): FarmingStage {
   };
 }
 
+function shouldAddStageRecommendation(item: Item): boolean {
+  if (item.name === "LMD" || item.name.endsWith("Battle Record")) return false;
+  return (
+    item.tier < 4 ||
+    item.name.endsWith("Chip") ||
+    item.name.endsWith("Chip Pack") ||
+    item.name.startsWith("Skill Summary")
+  );
+}
+
 (async () => {
   const {
     efficientStageNames,
@@ -340,30 +351,36 @@ function buildFarmingStage(itemId: string, stageItem: StageItem): FarmingStage {
 
   const itemsWithStages = items.map((baseItem) => {
     const stages: Record<string, FarmingStage> = {};
-    if (Object.prototype.hasOwnProperty.call(itemFastestStages, baseItem.id)) {
-      stages.leastSanity = buildFarmingStage(
-        baseItem.id,
-        itemFastestStages[baseItem.id]
-      );
-    }
-    if (
-      Object.prototype.hasOwnProperty.call(itemEfficientStages, baseItem.id)
-    ) {
-      const mostEfficientStage = buildFarmingStage(
-        baseItem.id,
-        itemEfficientStages[baseItem.id]
-      );
-      if (stages.leastSanity) {
-        if (
-          mostEfficientStage.itemSanityCost <=
-          stages.leastSanity.itemSanityCost *
-            EFFICIENT_STAGE_MAX_ITEM_SANITY_COST_MULTIPLIER
-        ) {
-          stages.mostEfficient = mostEfficientStage;
-          // if the least sanity stage and the most efficient stage are the same,
-          // display the stage only once as "most efficient"
-          if (stages.leastSanity.stageName === stages.mostEfficient.stageName) {
-            delete stages.leastSanity;
+    if (shouldAddStageRecommendation(baseItem)) {
+      if (
+        Object.prototype.hasOwnProperty.call(itemFastestStages, baseItem.id)
+      ) {
+        stages.leastSanity = buildFarmingStage(
+          baseItem.id,
+          itemFastestStages[baseItem.id]
+        );
+      }
+      if (
+        Object.prototype.hasOwnProperty.call(itemEfficientStages, baseItem.id)
+      ) {
+        const mostEfficientStage = buildFarmingStage(
+          baseItem.id,
+          itemEfficientStages[baseItem.id]
+        );
+        if (stages.leastSanity) {
+          if (
+            mostEfficientStage.itemSanityCost <=
+            stages.leastSanity.itemSanityCost *
+              EFFICIENT_STAGE_MAX_ITEM_SANITY_COST_MULTIPLIER
+          ) {
+            stages.mostEfficient = mostEfficientStage;
+            // if the least sanity stage and the most efficient stage are the same,
+            // display the stage only once as "most efficient"
+            if (
+              stages.leastSanity.stageName === stages.mostEfficient.stageName
+            ) {
+              delete stages.leastSanity;
+            }
           }
         }
       }
