@@ -87,6 +87,7 @@ const Building: React.FC<BuildingProps> = (props) => {
       )}
       <Box
         clone
+        boxSizing="content-box"
         display="flex"
         flexDirection="column"
         minWidth={
