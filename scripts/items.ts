@@ -173,7 +173,7 @@ const LUZARK_LP_SOLVER_URL =
   "https://colab.research.google.com/drive/1lHwJDG7WCAr3KMlxY-HLyD8-yG3boazq";
 const SANITY_VALUE_CELL_ID = "feRucRPwWGZo";
 const STAGE_INFO_CELL_ID = "znmVNbnNWIre";
-const stageRegex = /^Activity (?<stageName>[A-Z0-9-]+) \([^)]+\)/;
+const stageRegex = /^Activity (?<stageName>[A-Z0-9-]+) \([^)]+\).*Efficiency 100\.000%/;
 const itemRegex = /^(?<itemName>[^:]+): (?<sanityValue>[0-9.]+) sanity value/;
 
 async function fetchLuzarkLPSolverOutput(): Promise<{
