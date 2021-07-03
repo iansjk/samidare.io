@@ -175,6 +175,9 @@ const SANITY_VALUE_CELL_ID = "feRucRPwWGZo";
 const STAGE_INFO_CELL_ID = "znmVNbnNWIre";
 const stageRegex = /^Activity (?<stageName>[A-Z0-9-]+) \([^)]+\).*Efficiency 100\.000%/;
 const itemRegex = /^(?<itemName>[^:]+): (?<sanityValue>[0-9.]+) sanity value/;
+const stageNameToKey = Object.fromEntries(
+  Object.entries(cnStageTable).map(([key, value]) => [value.code, key])
+);
 
 async function fetchLuzarkLPSolverOutput(): Promise<{
   efficientStageNames: string[];
@@ -195,7 +198,7 @@ async function fetchLuzarkLPSolverOutput(): Promise<{
     (el) => el.innerText,
     stagesOutputElement
   );
-  const efficientStageNames = stagesOutputText
+  const efficientStageNames = (stagesOutputText
     .split("\n")
     .map((line) => {
       const result = line.match(stageRegex);
@@ -204,7 +207,9 @@ async function fetchLuzarkLPSolverOutput(): Promise<{
       }
       return null;
     })
-    .filter((item) => item != null) as string[];
+    .filter((item) => item != null) as string[]).map(
+    (stageName) => stageNameToKey[stageName]
+  );
 
   const sanityValuesOutputElement = await page.$(
     `#cell-${SANITY_VALUE_CELL_ID} .output pre`
