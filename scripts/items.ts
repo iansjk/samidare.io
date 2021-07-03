@@ -176,7 +176,9 @@ const STAGE_INFO_CELL_ID = "znmVNbnNWIre";
 const stageRegex = /^Activity (?<stageName>[A-Z0-9-]+) \([^)]+\).*Efficiency 100\.000%/;
 const itemRegex = /^(?<itemName>[^:]+): (?<sanityValue>[0-9.]+) sanity value/;
 const stageNameToKey = Object.fromEntries(
-  Object.entries(cnStageTable).map(([key, value]) => [value.code, key])
+  Object.entries(cnStageTable)
+    .filter(([key]) => !key.endsWith("#f#")) // challenge mode stage suffix
+    .map(([key, value]) => [value.code, key])
 );
 
 async function fetchLuzarkLPSolverOutput(): Promise<{
