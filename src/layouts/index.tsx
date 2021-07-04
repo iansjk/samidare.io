@@ -163,7 +163,9 @@ function Layout(props: LayoutProps): React.ReactElement {
     <NetlifyLoginContext.Provider value={{ currentUser, setCurrentUser }}>
       <Helmet>
         <html lang="en" />
-        <title>{title}</title>
+        <title>
+          {pageTitle} - {title}
+        </title>
         <meta name="description" content={description} />
         <link rel="icon" type="image/x-icon" href={favicon} />
       </Helmet>
