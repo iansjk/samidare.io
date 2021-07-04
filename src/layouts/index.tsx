@@ -190,7 +190,7 @@ function Layout(props: LayoutProps): React.ReactElement {
       <div className={classes.appWrapper}>
         <div className={classes.appContainer}>
           <nav className={classes.drawer}>
-            {/* The implementation can be swapped with js to avoid SEO duplication of paths. */}
+            {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
             <Hidden lgUp implementation="css">
               <Drawer
                 container={container}
