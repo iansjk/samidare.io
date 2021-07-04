@@ -87,7 +87,7 @@ const useLinkStyles = makeStyles((theme) => ({
   },
 }));
 
-function ListItemLink({ to, primary }: { to: string; primary: string }) {
+function ListItemLink({ to, linkText }: { to: string; linkText: string }) {
   const classes = useLinkStyles();
   const renderLink = React.useMemo(
     () =>
@@ -101,7 +101,7 @@ function ListItemLink({ to, primary }: { to: string; primary: string }) {
 
   return (
     <ListItem button component={renderLink}>
-      <ListItemText className={classes.link} primary={primary} />
+      <ListItemText className={classes.link} primary={linkText} />
     </ListItem>
   );
 }
@@ -110,20 +110,23 @@ interface LayoutProps {
   children: React.ReactNode;
   pageContext: {
     pageTitle: string;
-    paths: Record<string, string>;
   };
 }
 
 function Layout(props: LayoutProps): React.ReactElement {
   const { children, pageContext } = props;
-  const { pageTitle, paths } = pageContext;
+  const { pageTitle } = pageContext;
   const classes = useStyles();
-  const { title, description } = useStaticQuery(graphql`
+  const { title, description, pages } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
           title
           description
+          pages {
+            slug
+            pageTitle
+          }
         }
       }
     }
@@ -147,9 +150,18 @@ function Layout(props: LayoutProps): React.ReactElement {
       </Typography>
       <Divider />
       <List>
-        {Object.entries(paths).map(([pageUri, pageName]) => (
-          <ListItemLink key={pageUri} to={pageUri} primary={pageName} />
-        ))}
+        {pages.map(
+          ({
+            slug,
+            pageTitle: linkedPageTitle,
+          }: {
+            // eslint-disable-next-line react/no-unused-prop-types
+            slug: string;
+            pageTitle: string;
+          }) => (
+            <ListItemLink key={slug} to={slug} linkText={linkedPageTitle} />
+          )
+        )}
       </List>
     </>
   );
@@ -163,9 +175,7 @@ function Layout(props: LayoutProps): React.ReactElement {
     <NetlifyLoginContext.Provider value={{ currentUser, setCurrentUser }}>
       <Helmet>
         <html lang="en" />
-        <title>
-          {pageTitle} - {title}
-        </title>
+        <title>{pageTitle ? `${pageTitle} - ${title}` : title}</title>
         <meta name="description" content={description} />
         <link rel="icon" type="image/x-icon" href={favicon} />
       </Helmet>
