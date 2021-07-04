@@ -115,7 +115,6 @@ interface LayoutProps {
 }
 
 function Layout(props: LayoutProps): React.ReactElement {
-  console.log(props);
   const { children, pageContext } = props;
   const { pageTitle, paths } = pageContext;
   const classes = useStyles();
