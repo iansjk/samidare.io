@@ -24,7 +24,6 @@ import { Link as GatsbyLink } from "gatsby-theme-material-ui";
 import netlifyIdentity, { User } from "netlify-identity-widget";
 import AppFooter from "../components/AppFooter";
 import favicon from "../data/images/favicon.ico";
-import NetlifyLogin from "./components/NetlifyLogin";
 import NetlifyLoginContext from "./components/NetlifyLoginContext";
 
 const drawerWidth = 220;
@@ -239,7 +238,6 @@ function Layout(props: LayoutProps): React.ReactElement {
               >
                 {pageTitle}
               </Typography>
-              {/* <NetlifyLogin /> */}
             </Toolbar>
           </AppBar>
           <Container className={classes.content} component="main" maxWidth="lg">
