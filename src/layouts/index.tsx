@@ -78,20 +78,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const links = {
-  "/planner": "Operator Planner",
-  "/recruitment": "Recruitment Calculator",
-  "/gacha": "Pull Probability Calculator",
-  "/leveling": "Leveling Costs",
-};
-
-function getPageTitle(title: string, uri: string): string | undefined {
-  const subpage = Object.entries(links).find(([pageUri, _]) =>
-    uri.endsWith(pageUri)
-  );
-  return subpage?.[1];
-}
-
 const useLinkStyles = makeStyles((theme) => ({
   link: {
     color: theme.palette.text.primary,
@@ -122,11 +108,16 @@ function ListItemLink({ to, primary }: { to: string; primary: string }) {
 
 interface LayoutProps {
   children: React.ReactNode;
-  uri: string;
+  pageContext: {
+    pageTitle: string;
+    paths: Record<string, string>;
+  };
 }
 
 function Layout(props: LayoutProps): React.ReactElement {
-  const { children, uri } = props;
+  console.log(props);
+  const { children, pageContext } = props;
+  const { pageTitle, paths } = pageContext;
   const classes = useStyles();
   const { title, description } = useStaticQuery(graphql`
     query {
@@ -139,7 +130,6 @@ function Layout(props: LayoutProps): React.ReactElement {
     }
   `).site.siteMetadata;
   const theme = useTheme();
-  const pageTitle = getPageTitle(title, uri);
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [currentUser, setCurrentUser] = useState<User | null>(null);
 
@@ -158,7 +148,7 @@ function Layout(props: LayoutProps): React.ReactElement {
       </Typography>
       <Divider />
       <List>
-        {Object.entries(links).map(([pageUri, pageName]) => (
+        {Object.entries(paths).map(([pageUri, pageName]) => (
           <ListItemLink key={pageUri} to={pageUri} primary={pageName} />
         ))}
       </List>
@@ -182,7 +172,7 @@ function Layout(props: LayoutProps): React.ReactElement {
       <div className={classes.appWrapper}>
         <div className={classes.appContainer}>
           <nav className={classes.drawer}>
-            {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+            {/* The implementation can be swapped with js to avoid SEO duplication of paths. */}
             <Hidden lgUp implementation="css">
               <Drawer
                 container={container}
