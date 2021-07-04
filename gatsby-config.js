@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Arknights Tools",
+    siteTitle: "Arknights Tools",
     siteUrl: "https://samidare.io/arknights",
     description:
       "A collection of tools for Arknights, a tower defense mobile game by Hypergryph/Yostar",

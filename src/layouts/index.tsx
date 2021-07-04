@@ -107,6 +107,7 @@ function ListItemLink({ to, linkText }: { to: string; linkText: string }) {
 }
 
 interface LayoutProps {
+  uri: string;
   children: React.ReactNode;
   pageContext: {
     pageTitle: string;
@@ -114,14 +115,15 @@ interface LayoutProps {
 }
 
 function Layout(props: LayoutProps): React.ReactElement {
-  const { children, pageContext } = props;
+  const { uri, children, pageContext } = props;
   const { pageTitle } = pageContext;
   const classes = useStyles();
-  const { title, description, pages } = useStaticQuery(graphql`
+  const { siteTitle, siteUrl, description, pages } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
-          title
+          siteTitle
+          siteUrl
           description
           pages {
             slug
@@ -131,6 +133,7 @@ function Layout(props: LayoutProps): React.ReactElement {
       }
     }
   `).site.siteMetadata;
+  const title = pageTitle ? `${pageTitle} · ${siteTitle}` : siteTitle;
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [currentUser, setCurrentUser] = useState<User | null>(null);
@@ -146,7 +149,7 @@ function Layout(props: LayoutProps): React.ReactElement {
         component="h1"
         variant="h5"
       >
-        {title}
+        {siteTitle}
       </Typography>
       <Divider />
       <List>
@@ -175,8 +178,12 @@ function Layout(props: LayoutProps): React.ReactElement {
     <NetlifyLoginContext.Provider value={{ currentUser, setCurrentUser }}>
       <Helmet>
         <html lang="en" />
-        <title>{pageTitle ? `${pageTitle} - ${title}` : title}</title>
+        <title>{title}</title>
         <meta name="description" content={description} />
+        <meta property="og:title" content={title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={favicon} />
+        <meta property="og:url" content={`${siteUrl}${uri}`} />
         <link rel="icon" type="image/x-icon" href={favicon} />
       </Helmet>
       <CssBaseline />
