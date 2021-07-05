@@ -48,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
   operatorName: {
     overflow: "hidden",
     textOverflow: "ellipsis",
+    display: "block",
   },
 }));
 
