@@ -101,7 +101,7 @@ function Planner(): React.ReactElement {
     if (operator.elite && operator.skillLevels) {
       operatorPresets.push("Elite 1, Skill Level 1 → 7");
     }
-    if (operator.skills?.length === 3) {
+    if (operator.skills.length === 3) {
       operatorPresets.push("Skill 3 Mastery 1 → 3");
     }
     operatorPresets.push("Everything");
@@ -120,9 +120,9 @@ function Planner(): React.ReactElement {
         goals = operator.skills[2].masteries;
       } else if (presetName === "Everything") {
         goals = [
-          ...(operator.elite || []),
-          ...(operator.skills?.flatMap((skill) => skill.masteries) || []),
-          ...(operator.skillLevels || []),
+          ...operator.elite,
+          ...operator.skills.flatMap((skill) => skill.masteries),
+          ...operator.skillLevels,
         ];
       }
       return goals.map((goal) => goal.goalName);
@@ -160,8 +160,7 @@ function Planner(): React.ReactElement {
             return [
               key,
               Object.assign(goalObject, {
-                // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-                skill: operator.skills!.find((skill) => skill.slot === slot),
+                skill: operator.skills[slot - 1],
               }),
             ];
           }
