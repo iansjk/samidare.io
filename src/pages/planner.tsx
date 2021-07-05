@@ -98,10 +98,13 @@ function Planner(): React.ReactElement {
 
   const operatorPresets: string[] = [];
   if (operator) {
-    if (operator.elite && operator.skillLevels) {
+    if (operator.elite.length > 0 && operator.skillLevels.length > 0) {
       operatorPresets.push("Elite 1, Skill Level 1 → 7");
     }
-    if (operator.skills.length === 3) {
+    if (
+      operator.skills.length === 3 &&
+      operator.skills[2].masteries.length === 3
+    ) {
       operatorPresets.push("Skill 3 Mastery 1 → 3");
     }
     operatorPresets.push("Everything");
@@ -112,11 +115,7 @@ function Planner(): React.ReactElement {
       let goals: Goal[] = [];
       if (presetName === "Elite 1, Skill Level 1 → 7") {
         goals = [operator.elite[0], ...operator.skillLevels];
-      } else if (
-        presetName === "Skill 3 Mastery 1 → 3" &&
-        operator.skills &&
-        operator.skills[2]
-      ) {
+      } else if (presetName === "Skill 3 Mastery 1 → 3") {
         goals = operator.skills[2].masteries;
       } else if (presetName === "Everything") {
         goals = [
@@ -136,15 +135,11 @@ function Planner(): React.ReactElement {
     }
     setOperatorGoals((prevOperatorGoals) => {
       const goalNamesSet = new Set(goalNames);
-      const elite = operator.elite || [];
-      const masteries = operator.skills
-        ? [...operator.skills.flatMap((skill) => skill.masteries)]
-        : [];
-      const skillLevels = operator.skillLevels || [];
+      const masteries = operator.skills.flatMap((skill) => skill.masteries);
       const goalsToAdd = [
-        ...elite,
+        ...operator.elite,
         ...masteries,
-        ...skillLevels,
+        ...operator.skillLevels,
       ].filter((goal) => goalNamesSet.has(goal.goalName));
       const deduplicated = Object.fromEntries([
         ...prevOperatorGoals.map((opGoal) => [
@@ -235,7 +230,7 @@ function Planner(): React.ReactElement {
   };
 
   const renderGoalSelectOptions = () => {
-    if (!operatorName) {
+    if (!operatorName || !operator) {
       return <MenuItem>Please select an operator first.</MenuItem>;
     }
 
@@ -251,26 +246,29 @@ function Planner(): React.ReactElement {
           ]
         : [];
 
-    const elite = operator?.elite
-      ? [
-          <ListSubheader key="elite">Elite Levels</ListSubheader>,
-          ...operator.elite.map((goal) => renderGoalMenuItem(goal)),
-        ]
-      : [];
-    const masteries = operator?.skills
-      ? [
-          <ListSubheader key="masteries">Masteries</ListSubheader>,
-          ...operator.skills.map((skill) =>
-            skill.masteries.map((goal) => renderGoalMenuItem(goal, skill))
-          ),
-        ]
-      : [];
-    const skillLevels = operator?.skillLevels
-      ? [
-          <ListSubheader key="skillLevels">Skill Levels</ListSubheader>,
-          ...operator.skillLevels.map((goal) => renderGoalMenuItem(goal)),
-        ]
-      : [];
+    const elite =
+      operator.elite.length > 0
+        ? [
+            <ListSubheader key="elite">Elite Levels</ListSubheader>,
+            ...operator.elite.map((goal) => renderGoalMenuItem(goal)),
+          ]
+        : [];
+    const masteries =
+      operator.skills.length > 0 && operator.skills[0].masteries.length > 0
+        ? [
+            <ListSubheader key="masteries">Masteries</ListSubheader>,
+            ...operator.skills.map((skill) =>
+              skill.masteries.map((goal) => renderGoalMenuItem(goal, skill))
+            ),
+          ]
+        : [];
+    const skillLevels =
+      operator.skillLevels.length > 0
+        ? [
+            <ListSubheader key="skillLevels">Skill Levels</ListSubheader>,
+            ...operator.skillLevels.map((goal) => renderGoalMenuItem(goal)),
+          ]
+        : [];
     return [...presets, ...elite, ...masteries, ...skillLevels];
   };
 
