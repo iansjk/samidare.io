@@ -72,7 +72,6 @@ function Planner(): React.ReactElement {
               }
               skillId
               skillName
-              slot
             }
           }
         }
