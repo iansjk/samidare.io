@@ -27,6 +27,10 @@ module.exports = {
         slug: "/leveling",
         pageTitle: "Leveling Costs",
       },
+      {
+        slug: "/base",
+        pageTitle: "Base Rotation Visualizer",
+      },
     ],
   },
   pathPrefix: "/arknights",
