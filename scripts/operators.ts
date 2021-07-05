@@ -137,7 +137,6 @@ const operatorEntries = operatorIds.map((id: string) => {
     );
     // skill # -> { skill name, skill 1 masteries, skill 2 masteries, ... }
     return {
-      slot: i + 1,
       skillId: masteryLevelEntry.skillId,
       iconId:
         skillTable[masteryLevelEntry.skillId as keyof typeof skillTable].iconId,
