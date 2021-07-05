@@ -24,7 +24,6 @@ import { Link as GatsbyLink } from "gatsby-theme-material-ui";
 import netlifyIdentity, { User } from "netlify-identity-widget";
 import AppFooter from "../components/AppFooter";
 import favicon from "../data/images/favicon.ico";
-import NetlifyLogin from "./components/NetlifyLogin";
 import NetlifyLoginContext from "./components/NetlifyLoginContext";
 
 const drawerWidth = 220;
@@ -78,20 +77,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const links = {
-  "/planner": "Operator Planner",
-  "/recruitment": "Recruitment Calculator",
-  "/gacha": "Pull Probability Calculator",
-  "/leveling": "Leveling Costs",
-};
-
-function getPageTitle(title: string, uri: string): string | undefined {
-  const subpage = Object.entries(links).find(([pageUri, _]) =>
-    uri.endsWith(pageUri)
-  );
-  return subpage?.[1];
-}
-
 const useLinkStyles = makeStyles((theme) => ({
   link: {
     color: theme.palette.text.primary,
@@ -101,7 +86,7 @@ const useLinkStyles = makeStyles((theme) => ({
   },
 }));
 
-function ListItemLink({ to, primary }: { to: string; primary: string }) {
+function ListItemLink({ to, linkText }: { to: string; linkText: string }) {
   const classes = useLinkStyles();
   const renderLink = React.useMemo(
     () =>
@@ -115,31 +100,40 @@ function ListItemLink({ to, primary }: { to: string; primary: string }) {
 
   return (
     <ListItem button component={renderLink}>
-      <ListItemText className={classes.link} primary={primary} />
+      <ListItemText className={classes.link} primary={linkText} />
     </ListItem>
   );
 }
 
 interface LayoutProps {
-  children: React.ReactNode;
   uri: string;
+  children: React.ReactNode;
+  pageContext: {
+    pageTitle: string;
+  };
 }
 
 function Layout(props: LayoutProps): React.ReactElement {
-  const { children, uri } = props;
+  const { uri, children, pageContext } = props;
+  const { pageTitle } = pageContext;
   const classes = useStyles();
-  const { title, description } = useStaticQuery(graphql`
+  const { siteTitle, siteUrl, description, pages } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
-          title
+          siteTitle
+          siteUrl
           description
+          pages {
+            slug
+            pageTitle
+          }
         }
       }
     }
   `).site.siteMetadata;
+  const title = pageTitle ? `${pageTitle} · ${siteTitle}` : siteTitle;
   const theme = useTheme();
-  const pageTitle = getPageTitle(title, uri);
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [currentUser, setCurrentUser] = useState<User | null>(null);
 
@@ -154,13 +148,22 @@ function Layout(props: LayoutProps): React.ReactElement {
         component="h1"
         variant="h5"
       >
-        {title}
+        {siteTitle}
       </Typography>
       <Divider />
       <List>
-        {Object.entries(links).map(([pageUri, pageName]) => (
-          <ListItemLink key={pageUri} to={pageUri} primary={pageName} />
-        ))}
+        {pages.map(
+          ({
+            slug,
+            pageTitle: linkedPageTitle,
+          }: {
+            // eslint-disable-next-line react/no-unused-prop-types
+            slug: string;
+            pageTitle: string;
+          }) => (
+            <ListItemLink key={slug} to={slug} linkText={linkedPageTitle} />
+          )
+        )}
       </List>
     </>
   );
@@ -176,6 +179,10 @@ function Layout(props: LayoutProps): React.ReactElement {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
+        <meta property="og:title" content={title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={favicon} />
+        <meta property="og:url" content={`${siteUrl}${uri}`} />
         <link rel="icon" type="image/x-icon" href={favicon} />
       </Helmet>
       <CssBaseline />
@@ -231,7 +238,6 @@ function Layout(props: LayoutProps): React.ReactElement {
               >
                 {pageTitle}
               </Typography>
-              {/* <NetlifyLogin /> */}
             </Toolbar>
           </AppBar>
           <Container className={classes.content} component="main" maxWidth="lg">

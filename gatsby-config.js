@@ -6,10 +6,28 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Arknights Tools",
+    siteTitle: "Arknights Tools",
     siteUrl: "https://samidare.io/arknights",
     description:
       "A collection of tools for Arknights, a tower defense mobile game by Hypergryph/Yostar",
+    pages: [
+      {
+        slug: "/planner",
+        pageTitle: "Operator Planner",
+      },
+      {
+        slug: "/recruitment",
+        pageTitle: "Recruitment Calculator",
+      },
+      {
+        slug: "/gacha",
+        pageTitle: "Pull Probability Calculator",
+      },
+      {
+        slug: "/leveling",
+        pageTitle: "Leveling Costs",
+      },
+    ],
   },
   pathPrefix: "/arknights",
   plugins: [
@@ -24,5 +42,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-netlify",
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        ignore: ["*"],
+      },
+    },
   ],
 };
