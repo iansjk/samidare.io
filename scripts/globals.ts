@@ -26,8 +26,7 @@ const operatorNameOverride: Record<string, string> = {
   Роса: "Rosa",
 };
 
-const itemNameOverride: Record<string, string> = {
-};
+const itemNameOverride: Record<string, string> = {};
 
 export function getOperatorName(operatorId: string): string | null {
   if (operatorId === "char_1001_amiya2") {
@@ -97,4 +96,27 @@ export function toIngredient({
     quantity: count,
     sortId: cnItemTable[id as keyof typeof cnItemTable].sortId,
   };
+}
+
+export function toTitleCase(string: string): string {
+  return [...string.toLowerCase()]
+    .map((char, i) => (i === 0 ? char.toUpperCase() : char))
+    .join("");
+}
+
+export function professionToClass(profession: string): string {
+  switch (profession) {
+    case "PIONEER":
+      return "Vanguard";
+    case "WARRIOR":
+      return "Guard";
+    case "SPECIAL":
+      return "Specialist";
+    case "TANK":
+      return "Defender";
+    case "SUPPORT":
+      return "Supporter";
+    default:
+      return toTitleCase(profession);
+  }
 }

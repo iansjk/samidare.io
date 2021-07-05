@@ -70,7 +70,6 @@ SkadiAlterSkill3Mastery3.args = {
     ],
     skillId: "skchr_skadi2_3",
     skillName: '"潮涌，潮枯"',
-    slot: 3,
   },
 };
 

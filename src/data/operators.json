@@ -4,6 +4,7 @@
     "name": "Amiya",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -212,7 +213,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_magic_rage[3]",
         "iconId": null,
         "skillName": "Tactical Chant γ",
@@ -307,7 +307,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_amiya_2",
         "iconId": null,
         "skillName": "Spirit Burst",
@@ -402,7 +401,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_amiya_3",
         "iconId": null,
         "skillName": "Chimera",
@@ -503,6 +501,7 @@
     "name": "Kal'tsit",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -725,7 +724,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_kalts_1",
         "iconId": null,
         "skillName": "指令：结构加固",
@@ -820,7 +818,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_kalts_2",
         "iconId": null,
         "skillName": "指令：战术协同",
@@ -915,7 +912,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_kalts_3",
         "iconId": null,
         "skillName": "指令：熔毁",
@@ -1016,14 +1012,17 @@
     "name": "12F",
     "isCnOnly": false,
     "rarity": 2,
+    "class": "Caster",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_010_chen",
     "name": "Ch'en",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -1246,7 +1245,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_chen_1",
         "iconId": null,
         "skillName": "Sheathed Strike",
@@ -1341,7 +1339,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_chen_2",
         "iconId": null,
         "skillName": "Chi Xiao - Unsheath",
@@ -1436,7 +1433,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_chen_3",
         "iconId": null,
         "skillName": "Chi Xiao - Shadowless",
@@ -1537,6 +1533,7 @@
     "name": "Blaze",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -1759,7 +1756,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_huang_1",
         "iconId": "skcom_powerstrike[3]",
         "skillName": "Power Strike γ",
@@ -1854,7 +1850,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_huang_2",
         "iconId": null,
         "skillName": "Chainsaw Extension Module",
@@ -1949,7 +1944,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_huang_3",
         "iconId": null,
         "skillName": "Boiling Burst",
@@ -2050,6 +2044,7 @@
     "name": "Sora",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -2258,7 +2253,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_sora_1",
         "iconId": null,
         "skillName": "Hymn of Respite",
@@ -2353,7 +2347,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_sora_2",
         "iconId": null,
         "skillName": "Hymn of Battle",
@@ -2454,6 +2447,7 @@
     "name": "Lava the Purgatory",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -2662,7 +2656,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_lava2_1",
         "iconId": null,
         "skillName": "焰淬匕首",
@@ -2757,7 +2750,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_lava2_2",
         "iconId": null,
         "skillName": "狱火之环",
@@ -2858,6 +2850,7 @@
     "name": "Skadi the Corrupting Heart",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -3080,7 +3073,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_skadi2_1",
         "iconId": null,
         "skillName": "同归殊途之吟",
@@ -3175,7 +3167,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_skadi2_2",
         "iconId": null,
         "skillName": "同葬无光之愿",
@@ -3270,7 +3261,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_skadi2_3",
         "iconId": null,
         "skillName": "\"潮涌，潮枯\"",
@@ -3371,6 +3361,7 @@
     "name": "Texas",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -3579,7 +3570,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_charge_cost[3]",
         "iconId": null,
         "skillName": "Charge γ",
@@ -3674,7 +3664,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_texas_2",
         "iconId": null,
         "skillName": "Sword Rain",
@@ -3775,6 +3764,7 @@
     "name": "Exusiai",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -3997,7 +3987,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_angel_1",
         "iconId": null,
         "skillName": "Charging Mode",
@@ -4092,7 +4081,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_angel_2",
         "iconId": null,
         "skillName": "Shooting Mode",
@@ -4187,7 +4175,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_angel_3",
         "iconId": null,
         "skillName": "Overloading Mode",
@@ -4288,6 +4275,7 @@
     "name": "Franka",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -4496,7 +4484,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_quickattack[3]",
         "iconId": null,
         "skillName": "Swift Strike γ",
@@ -4591,7 +4578,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_franka_2",
         "iconId": null,
         "skillName": "Vorpal Edge",
@@ -4692,6 +4678,7 @@
     "name": "Liskarm",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -4900,7 +4887,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_liskam_1",
         "iconId": null,
         "skillName": "Charged Defense",
@@ -4995,7 +4981,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_liskam_2",
         "iconId": null,
         "skillName": "Counter Arc",
@@ -5096,6 +5081,7 @@
     "name": "Silence",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -5304,7 +5290,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_heal_up[3]",
         "iconId": null,
         "skillName": "Healing Up γ",
@@ -5399,7 +5384,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_silent_2",
         "iconId": null,
         "skillName": "Medical Drone",
@@ -5500,6 +5484,7 @@
     "name": "Gitano",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -5701,7 +5686,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_magic_rage[2]",
         "iconId": null,
         "skillName": "Tactical Chant β",
@@ -5796,7 +5780,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_fmout_2",
         "iconId": null,
         "skillName": "Destiny",
@@ -5897,6 +5880,7 @@
     "name": "Deepcolor",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -6098,7 +6082,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_deepcl_1",
         "iconId": null,
         "skillName": "Shadow Tentacle",
@@ -6193,7 +6176,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_deepcl_2",
         "iconId": null,
         "skillName": "Visual Trap",
@@ -6294,6 +6276,7 @@
     "name": "Siege",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -6516,7 +6499,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_charge_cost[3]",
         "iconId": null,
         "skillName": "Charge γ",
@@ -6611,7 +6593,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_siege_2",
         "iconId": null,
         "skillName": "Aerial Hammer",
@@ -6706,7 +6687,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_siege_3",
         "iconId": null,
         "skillName": "Skull Breaker",
@@ -6807,6 +6787,7 @@
     "name": "W",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -7029,7 +7010,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_cqbw_1",
         "iconId": null,
         "skillName": "King of Hearts",
@@ -7124,7 +7104,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_cqbw_2",
         "iconId": null,
         "skillName": "Jack in the Box",
@@ -7219,7 +7198,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_cqbw_3",
         "iconId": null,
         "skillName": "D12",
@@ -7320,6 +7298,7 @@
     "name": "Zima",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -7528,7 +7507,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_charge_cost[3]",
         "iconId": null,
         "skillName": "Charge γ",
@@ -7623,7 +7601,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_headbr_2",
         "iconId": null,
         "skillName": "Ursus's Roar",
@@ -7724,6 +7701,7 @@
     "name": "Myrrh",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -7925,7 +7903,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_myrrh_1",
         "iconId": null,
         "skillName": "Dual Healing",
@@ -8020,7 +7997,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_myrrh_2",
         "iconId": null,
         "skillName": "Medic Field",
@@ -8121,6 +8097,7 @@
     "name": "Shirayuki",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -8322,7 +8299,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_yuki_1",
         "iconId": null,
         "skillName": "Shuriken",
@@ -8417,7 +8393,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_yuki_2",
         "iconId": null,
         "skillName": "Fatal Shuriken",
@@ -8518,6 +8493,7 @@
     "name": "Hibiscus",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -8660,6 +8636,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skcom_heal_up[1]",
+        "iconId": null,
+        "skillName": "Healing Up α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -8667,6 +8651,7 @@
     "name": "Lava",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -8809,6 +8794,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skcom_magic_rage[1]",
+        "iconId": null,
+        "skillName": "Tactical Chant α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -8816,6 +8809,7 @@
     "name": "Beagle",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -8958,6 +8952,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skcom_def_up[1]",
+        "iconId": null,
+        "skillName": "DEF Up α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -8965,6 +8967,7 @@
     "name": "Fang",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -9107,6 +9110,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skcom_charge_cost[1]",
+        "iconId": null,
+        "skillName": "Charge α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -9114,6 +9125,7 @@
     "name": "Kroos",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -9256,6 +9268,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skchr_kroos_1",
+        "iconId": null,
+        "skillName": "Double Tap - Auto",
+        "masteries": []
+      }
     ]
   },
   {
@@ -9263,6 +9283,7 @@
     "name": "Meteor",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -9464,7 +9485,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_shotst_1",
         "iconId": null,
         "skillName": "Armor Breaker",
@@ -9559,7 +9579,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_shotst_2",
         "iconId": null,
         "skillName": "Armor Breaker - Spread",
@@ -9660,6 +9679,7 @@
     "name": "Estelle",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -9861,7 +9881,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[2]",
         "iconId": null,
         "skillName": "ATK Up β",
@@ -9956,7 +9975,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_estell_2",
         "iconId": null,
         "skillName": "Sacrificial Strike",
@@ -10057,6 +10075,7 @@
     "name": "Ptilopsis",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -10265,7 +10284,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_heal_up[3]",
         "iconId": null,
         "skillName": "Healing Up γ",
@@ -10360,7 +10378,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_plosis_2",
         "iconId": null,
         "skillName": "Enkephalin",
@@ -10461,6 +10478,7 @@
     "name": "Blue Poison",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -10669,7 +10687,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_bluep_1",
         "iconId": null,
         "skillName": "Twinshot - Auto",
@@ -10764,7 +10781,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_bluep_2",
         "iconId": null,
         "skillName": "Venom Spray",
@@ -10865,6 +10881,7 @@
     "name": "Dobermann",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -11066,7 +11083,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_doberm_1",
         "iconId": "skcom_powerstrike[2]",
         "skillName": "Power Strike β",
@@ -11161,7 +11177,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_doberm_2",
         "iconId": null,
         "skillName": "Spur",
@@ -11262,6 +11277,7 @@
     "name": "Flamebringer",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -11470,7 +11486,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_flameb_1",
         "iconId": null,
         "skillName": "Blood Pact",
@@ -11565,7 +11580,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_flameb_2",
         "iconId": null,
         "skillName": "Blade Demon",
@@ -11666,6 +11680,7 @@
     "name": "May",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -11867,7 +11882,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_mm_1",
         "iconId": null,
         "skillName": "Paralyzing Shell",
@@ -11962,7 +11976,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_mm_2",
         "iconId": null,
         "skillName": "Binding Shock",
@@ -12063,6 +12076,7 @@
     "name": "Ifrit",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -12285,7 +12299,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_ifrit_1",
         "iconId": null,
         "skillName": "Fanaticism",
@@ -12380,7 +12393,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_ifrit_2",
         "iconId": null,
         "skillName": "Pyroclasm",
@@ -12475,7 +12487,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_ifrit_3",
         "iconId": null,
         "skillName": "Scorched Earth",
@@ -12576,6 +12587,7 @@
     "name": "Hoshiguma",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -12798,7 +12810,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_hsguma_1",
         "iconId": null,
         "skillName": "Warpath",
@@ -12893,7 +12904,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_hsguma_2",
         "iconId": null,
         "skillName": "Thorns",
@@ -12988,7 +12998,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_hsguma_3",
         "iconId": null,
         "skillName": "Saw of Strength",
@@ -13089,6 +13098,7 @@
     "name": "Beehunter",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -13290,7 +13300,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_brownb_1",
         "iconId": null,
         "skillName": "Flexibility",
@@ -13385,7 +13394,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_brownb_2",
         "iconId": null,
         "skillName": "Soaring Fists",
@@ -13486,6 +13494,7 @@
     "name": "Lappland",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -13694,7 +13703,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_whitew_1",
         "iconId": null,
         "skillName": "Sundial",
@@ -13789,7 +13797,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_whitew_2",
         "iconId": null,
         "skillName": "Wolf Spirit",
@@ -13890,6 +13897,7 @@
     "name": "Haze",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -14091,7 +14099,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[2]",
         "iconId": null,
         "skillName": "ATK Up β",
@@ -14186,7 +14193,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_nights_2",
         "iconId": null,
         "skillName": "Crimson Eyes",
@@ -14287,6 +14293,7 @@
     "name": "Specter",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -14495,7 +14502,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[3]",
         "iconId": null,
         "skillName": "ATK Up γ",
@@ -14590,7 +14596,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_ghost_2",
         "iconId": null,
         "skillName": "Bone Fracture",
@@ -14691,6 +14696,7 @@
     "name": "Projekt Red",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -14899,7 +14905,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_red_1",
         "iconId": null,
         "skillName": "Execution Mode",
@@ -14994,7 +14999,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_red_2",
         "iconId": null,
         "skillName": "Wolfpack",
@@ -15095,6 +15099,7 @@
     "name": "Provence",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -15303,7 +15308,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_prove_1",
         "iconId": null,
         "skillName": "Wolf's Eye",
@@ -15398,7 +15402,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_prove_2",
         "iconId": null,
         "skillName": "Prey Seeker",
@@ -15499,6 +15502,7 @@
     "name": "Shining",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -15721,7 +15725,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_shining_1",
         "iconId": null,
         "skillName": "Creed",
@@ -15816,7 +15819,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_shining_2",
         "iconId": null,
         "skillName": "Auto Protect",
@@ -15911,7 +15913,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_shining_3",
         "iconId": null,
         "skillName": "Creed Field",
@@ -16012,6 +16013,7 @@
     "name": "Nearl",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -16220,7 +16222,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_nearl_1",
         "iconId": null,
         "skillName": "First Aid",
@@ -16315,7 +16316,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_nearl_2",
         "iconId": null,
         "skillName": "First Aid Mode",
@@ -16416,6 +16416,7 @@
     "name": "Scavenger",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -16617,7 +16618,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_charge_cost[2]",
         "iconId": null,
         "skillName": "Charge β",
@@ -16712,7 +16712,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_scave_2",
         "iconId": null,
         "skillName": "Command - Attack",
@@ -16813,6 +16812,7 @@
     "name": "Cuora",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -17014,7 +17014,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_def_up[2]",
         "iconId": null,
         "skillName": "DEF Up β",
@@ -17109,7 +17108,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_snakek_2",
         "iconId": null,
         "skillName": "Shell Defense",
@@ -17210,6 +17208,7 @@
     "name": "Myrtle",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -17411,7 +17410,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_assist_cost[2]",
         "iconId": null,
         "skillName": "Support β",
@@ -17506,7 +17504,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_myrtle_2",
         "iconId": null,
         "skillName": "Healing Wings",
@@ -17607,6 +17604,7 @@
     "name": "Indra",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -17815,7 +17813,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_tiger_1",
         "iconId": null,
         "skillName": "Armorcrusher",
@@ -17910,7 +17907,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_tiger_2",
         "iconId": null,
         "skillName": "Sundered Soul",
@@ -18011,6 +18007,7 @@
     "name": "Firewatch",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -18219,7 +18216,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_milu_1",
         "iconId": null,
         "skillName": "Camouflage",
@@ -18314,7 +18310,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_milu_2",
         "iconId": null,
         "skillName": "Tactical Transceiver",
@@ -18415,6 +18410,7 @@
     "name": "Conviction",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -18616,7 +18612,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_peacok_1",
         "iconId": null,
         "skillName": "Judgment",
@@ -18711,7 +18706,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_peacok_2",
         "iconId": null,
         "skillName": "Genesis",
@@ -18812,6 +18806,7 @@
     "name": "Vulcan",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -19020,7 +19015,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_hpsts_1",
         "iconId": null,
         "skillName": "Guardian Mode",
@@ -19115,7 +19109,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_hpsts_2",
         "iconId": null,
         "skillName": "Combat Mode",
@@ -19216,6 +19209,7 @@
     "name": "Nightmare",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -19424,7 +19418,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_nightm_1",
         "iconId": null,
         "skillName": "Drain Soul",
@@ -19519,7 +19512,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_nightm_2",
         "iconId": null,
         "skillName": "Night Phantom",
@@ -19620,6 +19612,7 @@
     "name": "Skyfire",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -19828,7 +19821,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[3]",
         "iconId": null,
         "skillName": "ATK Up γ",
@@ -19923,7 +19915,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_skfire_2",
         "iconId": null,
         "skillName": "Fire of Heaven",
@@ -20024,6 +20015,7 @@
     "name": "Warfarin",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -20232,7 +20224,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_bldsk_1",
         "iconId": null,
         "skillName": "Emergency Triage",
@@ -20327,7 +20318,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_bldsk_2",
         "iconId": null,
         "skillName": "Unstable Plasma",
@@ -20428,6 +20418,7 @@
     "name": "SilverAsh",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -20650,7 +20641,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_svrash_1",
         "iconId": "skcom_powerstrike[3]",
         "skillName": "Power Strike γ",
@@ -20745,7 +20735,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_svrash_2",
         "iconId": null,
         "skillName": "Rules of Survival",
@@ -20840,7 +20829,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_svrash_3",
         "iconId": null,
         "skillName": "Truesilver Slash",
@@ -20941,6 +20929,7 @@
     "name": "Cliffheart",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -21149,7 +21138,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_slchan_1",
         "iconId": null,
         "skillName": "Chain Hook",
@@ -21244,7 +21232,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_slchan_2",
         "iconId": null,
         "skillName": "Binding Chains",
@@ -21345,6 +21332,7 @@
     "name": "Pramanix",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -21553,7 +21541,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_slbell_1",
         "iconId": null,
         "skillName": "Echolocation",
@@ -21648,7 +21635,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_slbell_2",
         "iconId": null,
         "skillName": "Natural Deterrent",
@@ -21749,6 +21735,7 @@
     "name": "Nightingale",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -21971,7 +21958,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_heal_up[3]",
         "iconId": null,
         "skillName": "Healing Up γ",
@@ -22066,7 +22052,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_cgbird_2",
         "iconId": null,
         "skillName": "Arts Shield",
@@ -22161,7 +22146,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_cgbird_3",
         "iconId": null,
         "skillName": "Sanctuary",
@@ -22262,6 +22246,7 @@
     "name": "Eyjafjalla",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -22484,7 +22469,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_amgoat_1",
         "iconId": null,
         "skillName": "Duetto",
@@ -22579,7 +22563,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_amgoat_2",
         "iconId": null,
         "skillName": "Ignition",
@@ -22674,7 +22657,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_amgoat_3",
         "iconId": null,
         "skillName": "Volcano",
@@ -22775,6 +22757,7 @@
     "name": "Perfumer",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -22976,7 +22959,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_heal_up[2]",
         "iconId": null,
         "skillName": "Healing Up β",
@@ -23071,7 +23053,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_flower_2",
         "iconId": null,
         "skillName": "Fine Blending",
@@ -23172,6 +23153,7 @@
     "name": "Earthspirit",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -23373,7 +23355,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[2]",
         "iconId": null,
         "skillName": "ATK Up β",
@@ -23468,7 +23449,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_skgoat_2",
         "iconId": null,
         "skillName": "Quicksand Conversion",
@@ -23569,6 +23549,7 @@
     "name": "Mousse",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -23770,7 +23751,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_frncat_1",
         "iconId": null,
         "skillName": "Scratch",
@@ -23865,7 +23845,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_frncat_2",
         "iconId": null,
         "skillName": "Fury",
@@ -23966,6 +23945,7 @@
     "name": "Gavial",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -24167,7 +24147,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_ccheal_1",
         "iconId": null,
         "skillName": "Vitality Restoration",
@@ -24262,7 +24241,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_ccheal_2",
         "iconId": null,
         "skillName": "Vitality Restoration - Wide Range",
@@ -24363,6 +24341,7 @@
     "name": "Hellagur",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -24585,7 +24564,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_helage_1",
         "iconId": null,
         "skillName": "Crescent Moon",
@@ -24680,7 +24658,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_helage_2",
         "iconId": null,
         "skillName": "Half Moon",
@@ -24775,7 +24752,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_helage_3",
         "iconId": null,
         "skillName": "Full Moon",
@@ -24876,6 +24852,7 @@
     "name": "Vermeil",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -25077,7 +25054,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[2]",
         "iconId": null,
         "skillName": "ATK Up β",
@@ -25172,7 +25148,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_clour_2",
         "iconId": null,
         "skillName": "Double Shot",
@@ -25273,6 +25248,7 @@
     "name": "Plume",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -25415,6 +25391,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skcom_quickattack[1]",
+        "iconId": null,
+        "skillName": "Swift Strike α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -25422,6 +25406,7 @@
     "name": "Frostleaf",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -25623,7 +25608,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_frostl_1",
         "iconId": null,
         "skillName": "Frost Tomahawk",
@@ -25718,7 +25702,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_frostl_2",
         "iconId": null,
         "skillName": "Ice Tomahawk",
@@ -25819,6 +25802,7 @@
     "name": "Istina",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -26027,7 +26011,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_glassb_1",
         "iconId": null,
         "skillName": "Concentration",
@@ -26122,7 +26105,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_glassb_2",
         "iconId": null,
         "skillName": "Literature Storm",
@@ -26223,6 +26205,7 @@
     "name": "Gummy",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -26424,7 +26407,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_sunbr_1",
         "iconId": null,
         "skillName": "Provisions",
@@ -26519,7 +26501,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_sunbr_2",
         "iconId": null,
         "skillName": "Cooking",
@@ -26620,6 +26601,7 @@
     "name": "Rosa",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -26842,7 +26824,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[3]",
         "iconId": null,
         "skillName": "ATK Up γ",
@@ -26937,7 +26918,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_poca_2",
         "iconId": null,
         "skillName": "Split Shot",
@@ -27032,7 +27012,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_poca_3",
         "iconId": null,
         "skillName": "Avalanche Breaker",
@@ -27133,6 +27112,7 @@
     "name": "Courier",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -27334,7 +27314,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_charge_cost[2]",
         "iconId": null,
         "skillName": "Charge β",
@@ -27429,7 +27408,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_blackd_2",
         "iconId": null,
         "skillName": "Command - Defense",
@@ -27530,6 +27508,7 @@
     "name": "Matterhorn",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -27731,7 +27710,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_yak_1",
         "iconId": null,
         "skillName": "Stamina Enhancement",
@@ -27826,7 +27804,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_yak_2",
         "iconId": null,
         "skillName": "Cold Resistance",
@@ -27927,6 +27904,7 @@
     "name": "Croissant",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -28135,7 +28113,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_moeshd_1",
         "iconId": null,
         "skillName": "Auto Defense",
@@ -28230,7 +28207,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_moeshd_2",
         "iconId": null,
         "skillName": "Magnetic Hammer",
@@ -28331,6 +28307,7 @@
     "name": "Ceobe",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -28553,7 +28530,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_cerber_1",
         "iconId": null,
         "skillName": "\"Really Cold Axe\"",
@@ -28648,7 +28624,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_cerber_2",
         "iconId": null,
         "skillName": "\"Really Hot Knives\"",
@@ -28743,7 +28718,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_cerber_3",
         "iconId": null,
         "skillName": "\"Really Heavy Spear\"",
@@ -28844,6 +28818,7 @@
     "name": "Nian",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -29066,7 +29041,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_nian_1",
         "iconId": null,
         "skillName": "Tin Burning",
@@ -29161,7 +29135,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_nian_2",
         "iconId": null,
         "skillName": "Copper Seal",
@@ -29256,7 +29229,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_nian_3",
         "iconId": null,
         "skillName": "Iron Defense",
@@ -29357,6 +29329,7 @@
     "name": "Dusk",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -29579,7 +29552,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_dusk_1",
         "iconId": null,
         "skillName": "工笔入化",
@@ -29674,7 +29646,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_dusk_2",
         "iconId": null,
         "skillName": "泼墨淋漓",
@@ -29769,7 +29740,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_dusk_3",
         "iconId": null,
         "skillName": "写意胜形",
@@ -29870,6 +29840,7 @@
     "name": "Saria",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -30092,7 +30063,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_demkni_1",
         "iconId": null,
         "skillName": "First Aid",
@@ -30187,7 +30157,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_demkni_2",
         "iconId": null,
         "skillName": "Medicine Dispensing",
@@ -30282,7 +30251,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_demkni_3",
         "iconId": null,
         "skillName": "Calcification",
@@ -30383,6 +30351,7 @@
     "name": "Platinum",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -30591,7 +30560,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[3]",
         "iconId": null,
         "skillName": "ATK Up γ",
@@ -30686,7 +30654,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_platnm_2",
         "iconId": null,
         "skillName": "Pegasian Sight",
@@ -30787,6 +30754,7 @@
     "name": "Melantha",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -30929,6 +30897,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skcom_atk_up[1]",
+        "iconId": null,
+        "skillName": "ATK Up α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -30936,6 +30912,7 @@
     "name": "Cardigan",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -31078,6 +31055,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skcom_heal_self[1]",
+        "iconId": null,
+        "skillName": "Regeneration α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -31085,6 +31070,7 @@
     "name": "Steward",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -31227,6 +31213,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skchr_stward_1",
+        "iconId": "skcom_powerstrike[1]",
+        "skillName": "Power Strike α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -31234,6 +31228,7 @@
     "name": "Adnachiel",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -31376,6 +31371,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skcom_atk_up[1]",
+        "iconId": null,
+        "skillName": "ATK Up α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -31383,6 +31386,7 @@
     "name": "Ansel",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -31525,6 +31529,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skcom_range_extend",
+        "iconId": null,
+        "skillName": "Healing Range Up",
+        "masteries": []
+      }
     ]
   },
   {
@@ -31532,6 +31544,7 @@
     "name": "Mostima",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -31754,7 +31767,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[3]",
         "iconId": null,
         "skillName": "ATK Up γ",
@@ -31849,7 +31861,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_mostma_2",
         "iconId": null,
         "skillName": "Lock of Shattered Time",
@@ -31944,7 +31955,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_mostma_3",
         "iconId": null,
         "skillName": "Key of Chronology",
@@ -32045,6 +32055,7 @@
     "name": "Kafka",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -32253,7 +32264,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_kafka_1",
         "iconId": null,
         "skillName": "Cube of Absurdism",
@@ -32348,7 +32358,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_kafka_2",
         "iconId": null,
         "skillName": "Shears of Surrealism",
@@ -32449,6 +32458,7 @@
     "name": "Manticore",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -32657,7 +32667,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_mantic_1",
         "iconId": null,
         "skillName": "Scorpion Venom",
@@ -32752,7 +32761,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_mantic_2",
         "iconId": null,
         "skillName": "Toxic Overload",
@@ -32853,6 +32861,7 @@
     "name": "Andreana",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -33061,7 +33070,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[3]",
         "iconId": null,
         "skillName": "ATK Up γ",
@@ -33156,7 +33164,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_cuttle_2",
         "iconId": null,
         "skillName": "Interdictive Sniping Tactics",
@@ -33257,6 +33264,7 @@
     "name": "Meteorite",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -33465,7 +33473,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_meteo_1",
         "iconId": null,
         "skillName": "Buckshot",
@@ -33560,7 +33567,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_meteo_2",
         "iconId": null,
         "skillName": "High-Explosive Shell",
@@ -33661,6 +33667,7 @@
     "name": "Grani",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -33869,7 +33876,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_def_up[3]",
         "iconId": null,
         "skillName": "DEF Up γ",
@@ -33964,7 +33970,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_grani_2",
         "iconId": null,
         "skillName": "Press the Attack!",
@@ -34065,6 +34070,7 @@
     "name": "Bagpipe",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -34287,7 +34293,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_quickattack[3]",
         "iconId": null,
         "skillName": "Swift Strike γ",
@@ -34382,7 +34387,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_bpipe_2",
         "iconId": null,
         "skillName": "High-Impact Assault",
@@ -34477,7 +34481,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_bpipe_3",
         "iconId": null,
         "skillName": "Locked Breech Burst",
@@ -34578,6 +34581,7 @@
     "name": "Aak",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -34800,7 +34804,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_haak_1",
         "iconId": null,
         "skillName": "Rapid Fire",
@@ -34895,7 +34898,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_haak_2",
         "iconId": null,
         "skillName": "Type-γ Stimpack",
@@ -34990,7 +34992,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_haak_3",
         "iconId": null,
         "skillName": "Durian-Flavored Stimpack",
@@ -35091,6 +35092,7 @@
     "name": "Hung",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -35299,7 +35301,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_hmau_1",
         "iconId": null,
         "skillName": "Treatment Countermeasure",
@@ -35394,7 +35395,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_hmau_2",
         "iconId": null,
         "skillName": "Medical Mode Countermeasure",
@@ -35495,6 +35495,7 @@
     "name": "Savage",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -35703,7 +35704,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_savage_1",
         "iconId": "skcom_powerstrike[2]",
         "skillName": "Power Strike β",
@@ -35798,7 +35798,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_savage_2",
         "iconId": null,
         "skillName": "Precise Blast",
@@ -35899,6 +35898,7 @@
     "name": "Jessica",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -36100,7 +36100,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_jesica_1",
         "iconId": "skcom_powerstrike[2]",
         "skillName": "Power Strike β",
@@ -36195,7 +36194,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_jesica_2",
         "iconId": null,
         "skillName": "Smokescreen",
@@ -36296,6 +36294,7 @@
     "name": "Rope",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -36497,7 +36496,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_rope_1",
         "iconId": null,
         "skillName": "Hook Shot",
@@ -36592,7 +36590,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_rope_2",
         "iconId": null,
         "skillName": "Double Hook",
@@ -36693,6 +36690,7 @@
     "name": "Gravel",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -36894,7 +36892,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_gravel_1",
         "iconId": null,
         "skillName": "Shadow Assault",
@@ -36989,7 +36986,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_gravel_2",
         "iconId": null,
         "skillName": "Rat Swarm",
@@ -37090,6 +37086,7 @@
     "name": "Vanilla",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -37232,6 +37229,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skchr_wyvern_1",
+        "iconId": null,
+        "skillName": "Command - Reinforcement",
+        "masteries": []
+      }
     ]
   },
   {
@@ -37239,6 +37244,7 @@
     "name": "FEater",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -37447,7 +37453,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_panda_1",
         "iconId": null,
         "skillName": "Raging Iron Fist",
@@ -37542,7 +37547,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_panda_2",
         "iconId": null,
         "skillName": "Destructive Fist",
@@ -37643,6 +37647,7 @@
     "name": "Mayer",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -37851,7 +37856,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_otter_1",
         "iconId": null,
         "skillName": "Bionic Device",
@@ -37946,7 +37950,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_otter_2",
         "iconId": null,
         "skillName": "Detonate and Recycle",
@@ -38047,6 +38050,7 @@
     "name": "Waai Fu",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -38255,7 +38259,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_waaifu_1",
         "iconId": null,
         "skillName": "One-inch Punch",
@@ -38350,7 +38353,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_waaifu_2",
         "iconId": null,
         "skillName": "Seven-styles Kick",
@@ -38451,6 +38453,7 @@
     "name": "Magallan",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -38673,7 +38676,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_mgllan_1",
         "iconId": null,
         "skillName": "High-Efficiency Freezing Module",
@@ -38768,7 +38770,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_mgllan_2",
         "iconId": null,
         "skillName": "Laser Mining Module",
@@ -38863,7 +38864,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_mgllan_3",
         "iconId": null,
         "skillName": "Armed Combat Module",
@@ -38964,6 +38964,7 @@
     "name": "Phantom",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -39186,7 +39187,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_phatom_1",
         "iconId": null,
         "skillName": "Phantom of the Night",
@@ -39281,7 +39281,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_phatom_2",
         "iconId": null,
         "skillName": "Bloody Opus",
@@ -39376,7 +39375,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_phatom_3",
         "iconId": null,
         "skillName": "Night Raid",
@@ -39477,6 +39475,7 @@
     "name": "Bibeak",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -39685,7 +39684,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_bibeak_1",
         "iconId": null,
         "skillName": "Plumage Pins",
@@ -39780,7 +39778,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_bibeak_2",
         "iconId": null,
         "skillName": "Blade Swap",
@@ -39881,6 +39878,7 @@
     "name": "Greyy",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -40082,7 +40080,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_magic_rage[2]",
         "iconId": null,
         "skillName": "Tactical Chant β",
@@ -40177,7 +40174,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_greyy_2",
         "iconId": null,
         "skillName": "Electrostatic Discharge",
@@ -40278,6 +40274,7 @@
     "name": "Shamare",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -40486,7 +40483,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_vodfox_1",
         "iconId": null,
         "skillName": "Malediction",
@@ -40581,7 +40577,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_vodfox_2",
         "iconId": null,
         "skillName": "Cursed Doll",
@@ -40682,6 +40677,7 @@
     "name": "Podenco",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -40883,7 +40879,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_podego_1",
         "iconId": null,
         "skillName": "Aromatherapy",
@@ -40978,7 +40973,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_podego_2",
         "iconId": null,
         "skillName": "Spread Spores",
@@ -41079,6 +41073,7 @@
     "name": "Dur-nar",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -41280,7 +41275,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[2]",
         "iconId": null,
         "skillName": "ATK Up β",
@@ -41375,7 +41369,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_durnar_2",
         "iconId": null,
         "skillName": "Shielded Counterattack",
@@ -41476,6 +41469,7 @@
     "name": "Reed",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -41684,7 +41678,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_quickattack[3]",
         "iconId": null,
         "skillName": "Swift Strike γ",
@@ -41779,7 +41772,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_sddrag_2",
         "iconId": null,
         "skillName": "Soul Spark",
@@ -41880,6 +41872,7 @@
     "name": "Skadi",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -42102,7 +42095,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_quickattack[3]",
         "iconId": null,
         "skillName": "Swift Strike γ",
@@ -42197,7 +42189,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_skadi_2",
         "iconId": null,
         "skillName": "Wave Strike",
@@ -42292,7 +42283,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_skadi_3",
         "iconId": null,
         "skillName": "Tidal Elegy",
@@ -42393,6 +42383,7 @@
     "name": "Mountain",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -42615,7 +42606,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_f12yin_1",
         "iconId": null,
         "skillName": "Left Hook",
@@ -42710,7 +42700,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_f12yin_2",
         "iconId": null,
         "skillName": "Sweeping Stance",
@@ -42805,7 +42794,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_f12yin_3",
         "iconId": null,
         "skillName": "Earth-Shattering Smash",
@@ -42906,6 +42894,7 @@
     "name": "Whislash",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -43114,7 +43103,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_sophia_1",
         "iconId": null,
         "skillName": "Motivational Skills",
@@ -43209,7 +43197,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_sophia_2",
         "iconId": null,
         "skillName": "Whip Sword",
@@ -43310,6 +43297,7 @@
     "name": "Arene",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -43511,7 +43499,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_spikes_1",
         "iconId": null,
         "skillName": "Just Kidding",
@@ -43606,7 +43593,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_spikes_2",
         "iconId": null,
         "skillName": "Deadly Prank",
@@ -43707,6 +43693,7 @@
     "name": "Jaye",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -43908,7 +43895,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_strong_1",
         "iconId": null,
         "skillName": "Shell Splitter",
@@ -44003,7 +43989,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_strong_2",
         "iconId": null,
         "skillName": "Sashimi Platter",
@@ -44104,6 +44089,7 @@
     "name": "Astesia",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -44312,7 +44298,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_astesi_1",
         "iconId": null,
         "skillName": "Astral Protection",
@@ -44407,7 +44392,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_astesi_2",
         "iconId": null,
         "skillName": "Astral Sword",
@@ -44508,6 +44492,7 @@
     "name": "Breeze",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -44716,7 +44701,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_breeze_1",
         "iconId": null,
         "skillName": "Cluster Therapy",
@@ -44811,7 +44795,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_breeze_2",
         "iconId": null,
         "skillName": "Widespread Therapy",
@@ -44912,6 +44895,7 @@
     "name": "Shaw",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -45113,7 +45097,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_sqrrel_1",
         "iconId": null,
         "skillName": "Steam Pump",
@@ -45208,7 +45191,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_sqrrel_2",
         "iconId": null,
         "skillName": "High-Pressure Water Cannon",
@@ -45309,6 +45291,7 @@
     "name": "Orchid",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -45451,6 +45434,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skcom_quickattack[1]",
+        "iconId": null,
+        "skillName": "Swift Strike α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -45458,6 +45449,7 @@
     "name": "Executor",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -45666,7 +45658,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_excu_1",
         "iconId": null,
         "skillName": "Muzzle’s Elegy",
@@ -45761,7 +45752,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_excu_2",
         "iconId": null,
         "skillName": "Final Journey",
@@ -45862,6 +45852,7 @@
     "name": "Popukar",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -46004,6 +45995,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skcom_atk_up[1]",
+        "iconId": null,
+        "skillName": "ATK Up α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -46011,6 +46010,7 @@
     "name": "Catapult",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -46153,6 +46153,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skchr_catap_1",
+        "iconId": "skcom_blowrange_up[1]",
+        "skillName": "Blast Range Up α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -46160,6 +46168,7 @@
     "name": "Midnight",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -46302,6 +46311,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skchr_midn_1",
+        "iconId": "skcom_enchant[1]",
+        "skillName": "Enchant Weapon α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -46309,6 +46326,7 @@
     "name": "Spot",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -46451,6 +46469,14 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "skillId": "skchr_spot_1",
+        "iconId": null,
+        "skillName": "Secondary Healing Mode",
+        "masteries": []
+      }
     ]
   },
   {
@@ -46458,22 +46484,27 @@
     "name": "Lancet-2",
     "isCnOnly": false,
     "rarity": 1,
+    "class": "Medic",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_286_cast3",
     "name": "Castle-3",
     "isCnOnly": false,
     "rarity": 1,
+    "class": "Guard",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_289_gyuki",
     "name": "Matoimaru",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -46675,7 +46706,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_heal_self[2]",
         "iconId": null,
         "skillName": "Regeneration β",
@@ -46770,7 +46800,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_gyuki_2",
         "iconId": null,
         "skillName": "Demonic Power",
@@ -46871,6 +46900,7 @@
     "name": "Vigna",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -47072,7 +47102,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_vigna_1",
         "iconId": "skcom_atk_up[2]",
         "skillName": "ATK Up β",
@@ -47167,7 +47196,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_vigna_2",
         "iconId": null,
         "skillName": "Hammer-On",
@@ -47268,6 +47296,7 @@
     "name": "Angelina",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -47490,7 +47519,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_aglina_1",
         "iconId": null,
         "skillName": "Arcane Staff - Quick Charge Mode",
@@ -47585,7 +47613,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_aglina_2",
         "iconId": null,
         "skillName": "Arcane Staff - Particle Mode",
@@ -47680,7 +47707,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_aglina_3",
         "iconId": null,
         "skillName": "Arcane Staff - Anti-Gravity Mode",
@@ -47781,6 +47807,7 @@
     "name": "Thorns",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -48003,7 +48030,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[3]",
         "iconId": null,
         "skillName": "ATK Up γ",
@@ -48098,7 +48124,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_thorns_2",
         "iconId": null,
         "skillName": "Protective Spikes",
@@ -48193,7 +48218,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_thorns_3",
         "iconId": null,
         "skillName": "Destreza",
@@ -48294,6 +48318,7 @@
     "name": "Ayerscarpe",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -48502,7 +48527,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_ayer_1",
         "iconId": null,
         "skillName": "Shrapnel Burst",
@@ -48597,7 +48621,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_ayer_2",
         "iconId": null,
         "skillName": "Activate Phase Blades",
@@ -48698,6 +48721,7 @@
     "name": "Sussurro",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -48899,7 +48923,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_heal_up[2]",
         "iconId": null,
         "skillName": "Healing Up β",
@@ -48994,7 +49017,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_susuro_2",
         "iconId": null,
         "skillName": "Deep Healing",
@@ -49095,6 +49117,7 @@
     "name": "Cutter",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -49296,7 +49319,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_cutter_1",
         "iconId": null,
         "skillName": "Redshift",
@@ -49391,7 +49413,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_cutter_2",
         "iconId": null,
         "skillName": "Crimson Crescent",
@@ -49492,6 +49513,7 @@
     "name": "Ambriel",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -49693,7 +49715,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_glaze_1",
         "iconId": null,
         "skillName": "Snaring Shell",
@@ -49788,7 +49809,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_glaze_2",
         "iconId": null,
         "skillName": "Radar Sweep",
@@ -49889,6 +49909,7 @@
     "name": "Heavyrain",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -50097,7 +50118,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_zebra_1",
         "iconId": null,
         "skillName": "应急迷彩",
@@ -50192,7 +50212,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_zebra_2",
         "iconId": null,
         "skillName": "群体迷彩",
@@ -50293,6 +50312,7 @@
     "name": "Leizi",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -50501,7 +50521,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[3]",
         "iconId": null,
         "skillName": "ATK Up γ",
@@ -50596,7 +50615,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_leizi_2",
         "iconId": null,
         "skillName": "Thunderclap",
@@ -50697,6 +50715,7 @@
     "name": "Swire",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -50905,7 +50924,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_swire_1",
         "iconId": null,
         "skillName": "Command and Dispatch",
@@ -51000,7 +51018,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_swire_2",
         "iconId": null,
         "skillName": "Cooperative Combat",
@@ -51101,6 +51118,7 @@
     "name": "Mudrock",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -51323,7 +51341,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_def_up[3]",
         "iconId": null,
         "skillName": "DEF Up γ",
@@ -51418,7 +51435,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_mudrok_2",
         "iconId": null,
         "skillName": "Crag Splitter",
@@ -51513,7 +51529,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_mudrok_3",
         "iconId": null,
         "skillName": "Bloodline of Desecrated Earth",
@@ -51614,6 +51629,7 @@
     "name": "Bison",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -51822,7 +51838,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_def_up[3]",
         "iconId": null,
         "skillName": "DEF Up γ",
@@ -51917,7 +51932,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_bison_2",
         "iconId": null,
         "skillName": "Intensified Defense",
@@ -52018,6 +52032,7 @@
     "name": "Glaucus",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -52226,7 +52241,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_glacus_1",
         "iconId": null,
         "skillName": "Binary Reload",
@@ -52321,7 +52335,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_glacus_2",
         "iconId": null,
         "skillName": "Counter EMP",
@@ -52422,6 +52435,7 @@
     "name": "Click",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -52623,7 +52637,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[2]",
         "iconId": null,
         "skillName": "ATK Up β",
@@ -52718,7 +52731,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_cammou_2",
         "iconId": null,
         "skillName": "Synchronized Attack",
@@ -52819,6 +52831,7 @@
     "name": "Archetto",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -53041,7 +53054,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_archet_1",
         "iconId": null,
         "skillName": "箭矢·散逸",
@@ -53136,7 +53148,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_archet_2",
         "iconId": null,
         "skillName": "箭矢·追猎",
@@ -53231,7 +53242,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_archet_3",
         "iconId": null,
         "skillName": "箭矢·暴风",
@@ -53332,6 +53342,7 @@
     "name": "Sideroca",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -53540,7 +53551,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_heal_self[3]",
         "iconId": null,
         "skillName": "Regeneration γ",
@@ -53635,7 +53645,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_sidero_2",
         "iconId": null,
         "skillName": "Restorative Surge",
@@ -53736,6 +53745,7 @@
     "name": "Scene",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -53944,7 +53954,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_folivo_1",
         "iconId": null,
         "skillName": "Protective Camouflage",
@@ -54039,7 +54048,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_folivo_2",
         "iconId": null,
         "skillName": "Panoramic Overload",
@@ -54140,6 +54148,7 @@
     "name": "Utage",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -54341,7 +54350,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_utage_1",
         "iconId": null,
         "skillName": "Space Out",
@@ -54436,7 +54444,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_utage_2",
         "iconId": null,
         "skillName": "Descending Strike - Earth Splitter",
@@ -54537,6 +54544,7 @@
     "name": "Iris",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -54745,7 +54753,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_iris_1",
         "iconId": null,
         "skillName": "童话守卫者",
@@ -54840,7 +54847,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_iris_2",
         "iconId": null,
         "skillName": "梦乡摇篮",
@@ -54941,6 +54947,7 @@
     "name": "Schwarz",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -55163,7 +55170,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_shwaz_1",
         "iconId": null,
         "skillName": "Charged Shot",
@@ -55258,7 +55264,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_shwaz_2",
         "iconId": null,
         "skillName": "Sharp Eye",
@@ -55353,7 +55358,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_shwaz_3",
         "iconId": null,
         "skillName": "Final Tactics",
@@ -55454,6 +55458,7 @@
     "name": "Tsukinogi",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -55662,7 +55667,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_tknogi_1",
         "iconId": null,
         "skillName": "Without a Trace",
@@ -55757,7 +55761,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_tknogi_2",
         "iconId": null,
         "skillName": "Forest's Embrace",
@@ -55858,6 +55861,7 @@
     "name": "Beeswax",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -56066,7 +56070,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_beewax_1",
         "iconId": null,
         "skillName": "Growing Sandstorm",
@@ -56161,7 +56164,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_beewax_2",
         "iconId": null,
         "skillName": "Guardian Obelisk",
@@ -56262,6 +56264,7 @@
     "name": "Folinic",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -56470,7 +56473,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_folnic_1",
         "iconId": null,
         "skillName": "Max-Dosage Infusion",
@@ -56565,7 +56567,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_folnic_2",
         "iconId": null,
         "skillName": "Compound Drug Shell",
@@ -56666,6 +56667,7 @@
     "name": "Aosta",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -56874,7 +56876,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_quickattack[3]",
         "iconId": null,
         "skillName": "Swift Strike γ",
@@ -56969,7 +56970,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_aosta_2",
         "iconId": null,
         "skillName": "Shadow Nails",
@@ -57070,6 +57070,7 @@
     "name": "Jackie",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -57271,7 +57272,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_jaksel_1",
         "iconId": null,
         "skillName": "Grit Those Teeth!",
@@ -57366,7 +57366,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_jaksel_2",
         "iconId": null,
         "skillName": "Pay Close Attention!",
@@ -57467,6 +57466,7 @@
     "name": "Ceylon",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -57675,7 +57675,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_ceylon_1",
         "iconId": null,
         "skillName": "Concentrated Hydrotherapy",
@@ -57770,7 +57769,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_ceylon_2",
         "iconId": null,
         "skillName": "Water Blessing",
@@ -57871,6 +57869,7 @@
     "name": "Chiave",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -58079,7 +58078,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_charge_cost[3]",
         "iconId": null,
         "skillName": "Charge γ",
@@ -58174,7 +58172,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_chiave_2",
         "iconId": null,
         "skillName": "Blazing Wire Stripper",
@@ -58275,6 +58272,7 @@
     "name": "Surtr",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -58497,7 +58495,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_surtr_1",
         "iconId": null,
         "skillName": "Laevatain",
@@ -58592,7 +58589,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_surtr_2",
         "iconId": null,
         "skillName": "Molten Giant",
@@ -58687,7 +58683,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_surtr_3",
         "iconId": null,
         "skillName": "Twilight",
@@ -58788,6 +58783,7 @@
     "name": "Ethan",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -58989,7 +58985,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_ethan_1",
         "iconId": null,
         "skillName": "Fancy Maneuvers",
@@ -59084,7 +59079,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_ethan_2",
         "iconId": null,
         "skillName": "Suspended Cross",
@@ -59185,6 +59179,7 @@
     "name": "Broca",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -59393,7 +59388,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_broca_1",
         "iconId": null,
         "skillName": "Galvanize",
@@ -59488,7 +59482,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_broca_2",
         "iconId": null,
         "skillName": "High-Voltage Current",
@@ -59589,6 +59582,7 @@
     "name": "Suzuran",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -59811,7 +59805,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_lisa_1",
         "iconId": null,
         "skillName": "I'll Do My Best",
@@ -59906,7 +59899,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_lisa_2",
         "iconId": null,
         "skillName": "Childhood Frolic",
@@ -60001,7 +59993,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_lisa_3",
         "iconId": null,
         "skillName": "Foxfire Haze",
@@ -60102,6 +60093,7 @@
     "name": "Saga",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -60324,7 +60316,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_charge_cost[3]",
         "iconId": null,
         "skillName": "冲锋号令·γ型",
@@ -60419,7 +60410,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_saga_2",
         "iconId": null,
         "skillName": "除恶",
@@ -60514,7 +60504,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_saga_3",
         "iconId": null,
         "skillName": "怒目",
@@ -60615,6 +60604,7 @@
     "name": "Toddifons",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -60823,7 +60813,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_toddi_1",
         "iconId": null,
         "skillName": "信号矢",
@@ -60918,7 +60907,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_toddi_2",
         "iconId": null,
         "skillName": "便携破城矢",
@@ -61019,6 +61007,7 @@
     "name": "April",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -61227,7 +61216,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_aprl_1",
         "iconId": null,
         "skillName": "Precise Shooting",
@@ -61322,7 +61310,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_aprl_2",
         "iconId": null,
         "skillName": "Flexible Camouflage",
@@ -61423,6 +61410,7 @@
     "name": "Aciddrop",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -61624,7 +61612,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_acdrop_1",
         "iconId": null,
         "skillName": "Fancy Shot",
@@ -61719,7 +61706,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_acdrop_2",
         "iconId": null,
         "skillName": "Trigger Time",
@@ -61820,6 +61806,7 @@
     "name": "GreyThroat",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -62028,7 +62015,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_swllow_1",
         "iconId": null,
         "skillName": "Flying Feathers",
@@ -62123,7 +62109,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_swllow_2",
         "iconId": null,
         "skillName": "Counterflow",
@@ -62224,6 +62209,7 @@
     "name": "Bena",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -62432,7 +62418,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_bena_1",
         "iconId": null,
         "skillName": "奋力修剪",
@@ -62527,7 +62512,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_bena_2",
         "iconId": null,
         "skillName": "快速修剪",
@@ -62628,6 +62612,7 @@
     "name": "Leonhardt",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -62836,7 +62821,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[3]",
         "iconId": null,
         "skillName": "ATK Up γ",
@@ -62931,7 +62915,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_lionhd_2",
         "iconId": null,
         "skillName": "Deconstruct and Detonate",
@@ -63032,14 +63015,17 @@
     "name": "Thermal-EX",
     "isCnOnly": false,
     "rarity": 1,
+    "class": "Specialist",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_378_asbest",
     "name": "Asbestos",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -63248,7 +63234,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_asbest_1",
         "iconId": null,
         "skillName": "Resilient Mode",
@@ -63343,7 +63328,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_asbest_2",
         "iconId": null,
         "skillName": "Thermal Power Mode",
@@ -63444,6 +63428,7 @@
     "name": "Sesa",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -63652,7 +63637,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_atk_up[3]",
         "iconId": null,
         "skillName": "ATK Up γ",
@@ -63747,7 +63731,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_sesa_2",
         "iconId": null,
         "skillName": "Delayed Concussive Parts",
@@ -63848,6 +63831,7 @@
     "name": "Bubble",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -64049,7 +64033,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_def_up[2]",
         "iconId": null,
         "skillName": "DEF Up β",
@@ -64144,7 +64127,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_bubble_2",
         "iconId": null,
         "skillName": "\"Beaten Up\"",
@@ -64245,6 +64227,7 @@
     "name": "Snowsant",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -64453,7 +64436,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_snsant_1",
         "iconId": null,
         "skillName": "Barbed Clawhook",
@@ -64548,7 +64530,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_snsant_2",
         "iconId": null,
         "skillName": "Telescoping Electric Net",
@@ -64649,6 +64630,7 @@
     "name": "Purestream",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -64850,7 +64832,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_finlpp_1",
         "iconId": null,
         "skillName": "Healing Waves",
@@ -64945,7 +64926,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_finlpp_2",
         "iconId": null,
         "skillName": "Lifespring",
@@ -65046,6 +65026,7 @@
     "name": "Mint",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -65254,7 +65235,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_mint_1",
         "iconId": null,
         "skillName": "Wind Whispers",
@@ -65349,7 +65329,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_mint_2",
         "iconId": null,
         "skillName": "Swirling Vortex",
@@ -65450,6 +65429,7 @@
     "name": "Rosmontis",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -65672,7 +65652,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_rosmon_1",
         "iconId": null,
         "skillName": "Expanded Cognition",
@@ -65767,7 +65746,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_rosmon_2",
         "iconId": null,
         "skillName": "Nociceptor Inhibition",
@@ -65862,7 +65840,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_rosmon_3",
         "iconId": null,
         "skillName": "“As You Wish”",
@@ -65963,6 +65940,7 @@
     "name": "Weedy",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -66185,7 +66163,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_weedy_1",
         "iconId": null,
         "skillName": "Barrel Burst",
@@ -66280,7 +66257,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_weedy_2",
         "iconId": null,
         "skillName": "Hydraulics Mode",
@@ -66375,7 +66351,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_weedy_3",
         "iconId": null,
         "skillName": "Liquid Nitrogen Cannon",
@@ -66476,6 +66451,7 @@
     "name": "Elysium",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -66684,7 +66660,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skcom_assist_cost[3]",
         "iconId": null,
         "skillName": "Support γ",
@@ -66779,7 +66754,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_elysm_2",
         "iconId": null,
         "skillName": "Monitor",
@@ -66880,6 +66854,7 @@
     "name": "Tuye",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -67088,7 +67063,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_tuye_1",
         "iconId": null,
         "skillName": "水流环",
@@ -67183,7 +67157,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_tuye_2",
         "iconId": null,
         "skillName": "强心剂",
@@ -67284,6 +67257,7 @@
     "name": "Absinthe",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -67492,7 +67466,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_absin_1",
         "iconId": null,
         "skillName": "Enforcement Mode",
@@ -67587,7 +67560,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_absin_2",
         "iconId": null,
         "skillName": "Ultimatum",
@@ -67688,6 +67660,7 @@
     "name": "Tomimi",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -67896,7 +67869,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_tomimi_1",
         "iconId": null,
         "skillName": "Tribal Techniques",
@@ -67991,7 +67963,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_tomimi_2",
         "iconId": null,
         "skillName": "Gavial's Protection Plan",
@@ -68092,6 +68063,7 @@
     "name": "Flint",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -68300,7 +68272,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_flint_1",
         "iconId": null,
         "skillName": "Relentless",
@@ -68395,7 +68366,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_flint_2",
         "iconId": null,
         "skillName": "Display of Might",
@@ -68496,6 +68466,7 @@
     "name": "Eunectes",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -68718,7 +68689,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_zumama_1",
         "iconId": null,
         "skillName": "Tomahawk",
@@ -68813,7 +68783,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_zumama_2",
         "iconId": null,
         "skillName": "Menacing Slash",
@@ -68908,7 +68877,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_zumama_3",
         "iconId": null,
         "skillName": "Iron Will",
@@ -69009,6 +68977,7 @@
     "name": "Blemishine",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -69231,7 +69200,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_blemsh_1",
         "iconId": null,
         "skillName": "Surging Brilliance",
@@ -69326,7 +69294,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_blemsh_2",
         "iconId": null,
         "skillName": "Deterring Radiance",
@@ -69421,7 +69388,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_blemsh_3",
         "iconId": null,
         "skillName": "Divine Avatar",
@@ -69522,6 +69488,7 @@
     "name": "Carnelian",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -69744,7 +69711,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_billro_1",
         "iconId": null,
         "skillName": "沙暴守卫",
@@ -69839,7 +69805,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_billro_2",
         "iconId": null,
         "skillName": "沙缚镣锁",
@@ -69934,7 +69899,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_billro_3",
         "iconId": null,
         "skillName": "食噬之印",
@@ -70035,6 +69999,7 @@
     "name": "Whisperain",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -70243,7 +70208,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_whispr_1",
         "iconId": null,
         "skillName": "Oriented Diagnosis",
@@ -70338,7 +70302,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_whispr_2",
         "iconId": null,
         "skillName": "Pain Suppression",
@@ -70439,6 +70402,7 @@
     "name": "Pinecone",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -70640,7 +70604,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_pinecn_1",
         "iconId": null,
         "skillName": "RMA Spikes",
@@ -70735,7 +70698,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_pinecn_2",
         "iconId": null,
         "skillName": "Electrical Overcharge",
@@ -70836,6 +70798,7 @@
     "name": "Robin",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -71044,7 +71007,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_robin_1",
         "iconId": null,
         "skillName": "Binding “Clip”",
@@ -71139,7 +71101,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_robin_2",
         "iconId": null,
         "skillName": "Launching “Clip”",
@@ -71240,6 +71201,7 @@
     "name": "Beanstalk",
     "isCnOnly": true,
     "rarity": 4,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -71441,7 +71403,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_bstalk_1",
         "iconId": null,
         "skillName": "定点指令",
@@ -71536,7 +71497,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_bstalk_2",
         "iconId": null,
         "skillName": "“大家一起上”",
@@ -71637,6 +71597,7 @@
     "name": "Mr.Nothing",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -71845,7 +71806,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_nothin_1",
         "iconId": null,
         "skillName": "知难而退",
@@ -71940,7 +71900,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_nothin_2",
         "iconId": null,
         "skillName": "阴晴圆缺",
@@ -72041,6 +72000,7 @@
     "name": "Ash",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -72263,7 +72223,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_ash_1",
         "iconId": null,
         "skillName": "支援射击",
@@ -72358,7 +72317,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_ash_2",
         "iconId": null,
         "skillName": "突击战术",
@@ -72453,7 +72411,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_ash_3",
         "iconId": null,
         "skillName": "攻坚榴弹",
@@ -72554,6 +72511,7 @@
     "name": "Blitz",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -72762,7 +72720,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_blitz_1",
         "iconId": null,
         "skillName": "闪光护盾",
@@ -72857,7 +72814,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_blitz_2",
         "iconId": null,
         "skillName": "突破防线",
@@ -72958,6 +72914,7 @@
     "name": "Frost",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -73166,7 +73123,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_rfrost_1",
         "iconId": null,
         "skillName": "陷阱部署",
@@ -73261,7 +73217,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_rfrost_2",
         "iconId": null,
         "skillName": "击倒猎物",
@@ -73362,6 +73317,7 @@
     "name": "Tachanka",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -73570,7 +73526,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_tachak_1",
         "iconId": null,
         "skillName": "燃烧榴弹",
@@ -73665,7 +73620,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_tachak_2",
         "iconId": null,
         "skillName": "倾泻弹药",
@@ -73766,6 +73720,7 @@
     "name": "Indigo",
     "isCnOnly": true,
     "rarity": 4,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -73967,7 +73922,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_indigo_1",
         "iconId": null,
         "skillName": "灯塔守卫者",
@@ -74062,7 +74016,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_indigo_2",
         "iconId": null,
         "skillName": "光影迷宫",
@@ -74163,6 +74116,7 @@
     "name": "Passenger",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -74385,7 +74339,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_pasngr_1",
         "iconId": null,
         "skillName": "电能之触",
@@ -74480,7 +74433,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_pasngr_2",
         "iconId": null,
         "skillName": "聚焦指令",
@@ -74575,7 +74527,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_pasngr_3",
         "iconId": null,
         "skillName": "辉煌裂片",
@@ -74676,6 +74627,7 @@
     "name": "Gladiia",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -74898,7 +74850,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_glady_1",
         "iconId": null,
         "skillName": "缺水的大洋裂断",
@@ -74993,7 +74944,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_glady_2",
         "iconId": null,
         "skillName": "缺水的掌握怒海",
@@ -75088,7 +75038,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_glady_3",
         "iconId": null,
         "skillName": "缺水的碎漩狂舞",
@@ -75189,6 +75138,7 @@
     "name": "Akafuyu",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -75397,7 +75347,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_akafyu_1",
         "iconId": null,
         "skillName": "信影流·雷刀之势",
@@ -75492,7 +75441,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_akafyu_2",
         "iconId": null,
         "skillName": "信影流·十文字胜",
@@ -75593,6 +75541,7 @@
     "name": "Kirara",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -75801,7 +75750,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_kirara_1",
         "iconId": null,
         "skillName": "锚击",
@@ -75896,7 +75844,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_kirara_2",
         "iconId": null,
         "skillName": "锚点捕捉",
@@ -75997,6 +75944,7 @@
     "name": "Pallas",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -76219,7 +76167,6 @@
     ],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_pallas_1",
         "iconId": null,
         "skillName": "胜利的连击",
@@ -76314,7 +76261,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_pallas_2",
         "iconId": null,
         "skillName": "信念的长鞭",
@@ -76409,7 +76355,6 @@
         ]
       },
       {
-        "slot": 3,
         "skillId": "skchr_pallas_3",
         "iconId": null,
         "skillName": "英勇的祝福",
@@ -76510,41 +76455,51 @@
     "name": "Noir Corne",
     "isCnOnly": false,
     "rarity": 2,
+    "class": "Defender",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_501_durin",
     "name": "Durin",
     "isCnOnly": false,
     "rarity": 2,
+    "class": "Caster",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_502_nblade",
     "name": "Yato",
     "isCnOnly": false,
     "rarity": 2,
+    "class": "Vanguard",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_503_rang",
     "name": "Rangers",
     "isCnOnly": false,
     "rarity": 2,
+    "class": "Sniper",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_1001_amiya2",
     "name": "Amiya (Guard)",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
+    "skillLevels": [],
+    "elite": [],
     "skills": [
       {
-        "slot": 1,
         "skillId": "skchr_amiya2_1",
         "iconId": null,
         "skillName": "Ying Xiao - Fleeting Night",
@@ -76639,7 +76594,6 @@
         ]
       },
       {
-        "slot": 2,
         "skillId": "skchr_amiya2_2",
         "iconId": null,
         "skillName": "Ying Xiao - Shadowless",

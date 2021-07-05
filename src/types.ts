@@ -13,15 +13,15 @@ export interface Ingredient {
 
 export interface Operator {
   name: string;
+  class: string;
   rarity: number;
   isCnOnly: boolean;
   elite: EliteGoal[];
   skillLevels: SkillLevelGoal[];
-  skills?: OperatorSkill[];
+  skills: OperatorSkill[];
 }
 
 export interface OperatorSkill {
-  slot: number;
   skillId: string;
   iconId: string | null;
   skillName: string;

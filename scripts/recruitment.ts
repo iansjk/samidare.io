@@ -1,8 +1,7 @@
-import { Typography } from "@material-ui/core";
 import fs from "fs";
 import path from "path";
 import { Combination } from "js-combinatorics";
-import { ARKNIGHTS_DATA_DIR } from "./globals";
+import { ARKNIGHTS_DATA_DIR, professionToClass, toTitleCase } from "./globals";
 import { recruitDetail } from "./ArknightsGameData/en_US/gamedata/excel/gacha_table.json";
 import characterTable from "./ArknightsGameData/en_US/gamedata/excel/character_table.json";
 
@@ -40,29 +39,6 @@ const RECRUITMENT_TAGS = [
   "Support",
   "Survival",
 ];
-
-function toTitleCase(string: string) {
-  return [...string.toLowerCase()]
-    .map((char, i) => (i === 0 ? char.toUpperCase() : char))
-    .join("");
-}
-
-function professionToClass(profession: string) {
-  switch (profession) {
-    case "PIONEER":
-      return "Vanguard";
-    case "WARRIOR":
-      return "Guard";
-    case "SPECIAL":
-      return "Specialist";
-    case "TANK":
-      return "Defender";
-    case "SUPPORT":
-      return "Supporter";
-    default:
-      return toTitleCase(profession);
-  }
-}
 
 const operatorNameToId: Record<
   string,

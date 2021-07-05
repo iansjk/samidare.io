@@ -13,7 +13,9 @@ import {
   toIngredient,
   ARKNIGHTS_DATA_DIR,
   Ingredient,
+  professionToClass,
 } from "./globals";
+import { Operator } from "../src/types";
 
 enum GoalCategory {
   "Elite" = 0,
@@ -70,17 +72,24 @@ const operatorEntries = operatorIds.map((id: string) => {
     typeof enCharacterPatchTable[
       operatorId as keyof typeof enCharacterPatchTable
     ] === "undefined";
-  const entry: any = {
+
+  const entry = isPatchCharacter
+    ? cnCharacterPatchTable[operatorId as keyof typeof cnCharacterPatchTable]
+    : cnCharacterTable[operatorId as keyof typeof cnCharacterTable];
+  const operator: any = {
     id,
-    name,
+    name: name ?? "",
     isCnOnly,
+    rarity: entry.rarity + 1, // 0-indexed rarity
+    class: professionToClass(entry.profession),
+    skillLevels: [],
+    elite: [],
+    skills: [],
   };
-  if (name === "Amiya (Guard)") {
-    entry.rarity = 5;
-  }
+  // so far the only patch character is Guardmiya, and she has the exact same elite
+  // and skill level costs defined as Castermiya, so we don't want to duplicate those across both
   if (!isPatchCharacter) {
-    entry.rarity = cnCharacterTable[operatorId].rarity + 1;
-    entry.skillLevels = (cnCharacterTable[operatorId]
+    operator.skillLevels = (cnCharacterTable[operatorId]
       .allSkillLvlup as SkillLevelEntry[]).map((skillLevelEntry, i) => {
       const cost = skillLevelEntry.lvlUpCost;
       const ingredients = cost.map(toIngredient);
@@ -95,11 +104,11 @@ const operatorEntries = operatorIds.map((id: string) => {
       };
     });
     // operatorData[id].phases[0] is E0, so we skip that one
-    entry.elite = (cnCharacterTable[operatorId].phases.slice(
+    operator.elite = (cnCharacterTable[operatorId].phases.slice(
       1
     ) as EliteLevelEntry[]).map(({ evolveCost }, i) => {
       const ingredients = evolveCost.map(toIngredient);
-      ingredients.unshift(getEliteLMDCost(entry.rarity, i + 1));
+      ingredients.unshift(getEliteLMDCost(operator.rarity, i + 1));
       // [0] points to E1, [1] points to E2, so add 1
       return {
         eliteLevel: i + 1,
@@ -109,42 +118,35 @@ const operatorEntries = operatorIds.map((id: string) => {
       };
     });
   }
-  if (isPatchCharacter || entry.rarity > 3) {
-    const skillTable = isCnOnly ? cnSkillTable : enSkillTable;
-    const masteryEntries = (isPatchCharacter
-      ? cnCharacterPatchTable[operatorId as keyof typeof cnCharacterPatchTable]
-          .skills
-      : cnCharacterTable[operatorId].skills) as MasteryLevelEntry[];
-    entry.skills = masteryEntries.map((masteryLevelEntry, i) => {
-      // masteryLevelEntry contains data on all 3 mastery levels for one skill
-      const masteries: OperatorGoal[] = masteryLevelEntry.levelUpCostCond.map(
-        ({ levelUpCost }, j) => {
-          const ingredients = levelUpCost.map(toIngredient);
-          // mastery level -> array of ingredients
-          return {
-            masteryLevel: j + 1,
-            ingredients,
-            goalName: `Skill ${i + 1} Mastery ${j + 1}`,
-            goalShortName: `S${i + 1} M${j + 1}`,
-            goalCategory: GoalCategory.Mastery,
-          };
-        }
-      );
-      // skill # -> { skill name, skill 1 masteries, skill 2 masteries, ... }
-      return {
-        slot: i + 1,
-        skillId: masteryLevelEntry.skillId,
-        iconId:
-          skillTable[masteryLevelEntry.skillId as keyof typeof skillTable]
-            .iconId,
-        skillName:
-          skillTable[masteryLevelEntry.skillId as keyof typeof skillTable]
-            .levels[0].name,
-        masteries,
-      };
-    });
-  }
-  return entry;
+  const skillTable = isCnOnly ? cnSkillTable : enSkillTable;
+  const masteryEntries = entry.skills as MasteryLevelEntry[];
+  operator.skills = masteryEntries.map((masteryLevelEntry, i) => {
+    // masteryLevelEntry contains data on all 3 mastery levels for one skill
+    const masteries: OperatorGoal[] = masteryLevelEntry.levelUpCostCond.map(
+      ({ levelUpCost }, j) => {
+        const ingredients = levelUpCost.map(toIngredient);
+        // mastery level -> array of ingredients
+        return {
+          masteryLevel: j + 1,
+          ingredients,
+          goalName: `Skill ${i + 1} Mastery ${j + 1}`,
+          goalShortName: `S${i + 1} M${j + 1}`,
+          goalCategory: GoalCategory.Mastery,
+        };
+      }
+    );
+    // skill # -> { skill name, skill 1 masteries, skill 2 masteries, ... }
+    return {
+      skillId: masteryLevelEntry.skillId,
+      iconId:
+        skillTable[masteryLevelEntry.skillId as keyof typeof skillTable].iconId,
+      skillName:
+        skillTable[masteryLevelEntry.skillId as keyof typeof skillTable]
+          .levels[0].name,
+      masteries,
+    };
+  });
+  return operator;
 });
 
 fs.mkdirSync(ARKNIGHTS_DATA_DIR, { recursive: true });
