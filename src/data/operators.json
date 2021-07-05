@@ -4,6 +4,7 @@
     "name": "Amiya",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -503,6 +504,7 @@
     "name": "Kal'tsit",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -1016,14 +1018,17 @@
     "name": "12F",
     "isCnOnly": false,
     "rarity": 2,
+    "class": "Caster",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_010_chen",
     "name": "Ch'en",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -1537,6 +1542,7 @@
     "name": "Blaze",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -2050,6 +2056,7 @@
     "name": "Sora",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -2454,6 +2461,7 @@
     "name": "Lava the Purgatory",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -2858,6 +2866,7 @@
     "name": "Skadi the Corrupting Heart",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -3371,6 +3380,7 @@
     "name": "Texas",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -3775,6 +3785,7 @@
     "name": "Exusiai",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -4288,6 +4299,7 @@
     "name": "Franka",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -4692,6 +4704,7 @@
     "name": "Liskarm",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -5096,6 +5109,7 @@
     "name": "Silence",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -5500,6 +5514,7 @@
     "name": "Gitano",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -5897,6 +5912,7 @@
     "name": "Deepcolor",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -6294,6 +6310,7 @@
     "name": "Siege",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -6807,6 +6824,7 @@
     "name": "W",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -7320,6 +7338,7 @@
     "name": "Zima",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -7724,6 +7743,7 @@
     "name": "Myrrh",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -8121,6 +8141,7 @@
     "name": "Shirayuki",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -8518,6 +8539,7 @@
     "name": "Hibiscus",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -8660,6 +8682,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skcom_heal_up[1]",
+        "iconId": null,
+        "skillName": "Healing Up α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -8667,6 +8698,7 @@
     "name": "Lava",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -8809,6 +8841,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skcom_magic_rage[1]",
+        "iconId": null,
+        "skillName": "Tactical Chant α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -8816,6 +8857,7 @@
     "name": "Beagle",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -8958,6 +9000,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skcom_def_up[1]",
+        "iconId": null,
+        "skillName": "DEF Up α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -8965,6 +9016,7 @@
     "name": "Fang",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -9107,6 +9159,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skcom_charge_cost[1]",
+        "iconId": null,
+        "skillName": "Charge α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -9114,6 +9175,7 @@
     "name": "Kroos",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -9256,6 +9318,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skchr_kroos_1",
+        "iconId": null,
+        "skillName": "Double Tap - Auto",
+        "masteries": []
+      }
     ]
   },
   {
@@ -9263,6 +9334,7 @@
     "name": "Meteor",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -9660,6 +9732,7 @@
     "name": "Estelle",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -10057,6 +10130,7 @@
     "name": "Ptilopsis",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -10461,6 +10535,7 @@
     "name": "Blue Poison",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -10865,6 +10940,7 @@
     "name": "Dobermann",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -11262,6 +11338,7 @@
     "name": "Flamebringer",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -11666,6 +11743,7 @@
     "name": "May",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -12063,6 +12141,7 @@
     "name": "Ifrit",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -12576,6 +12655,7 @@
     "name": "Hoshiguma",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -13089,6 +13169,7 @@
     "name": "Beehunter",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -13486,6 +13567,7 @@
     "name": "Lappland",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -13890,6 +13972,7 @@
     "name": "Haze",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -14287,6 +14370,7 @@
     "name": "Specter",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -14691,6 +14775,7 @@
     "name": "Projekt Red",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -15095,6 +15180,7 @@
     "name": "Provence",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -15499,6 +15585,7 @@
     "name": "Shining",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -16012,6 +16099,7 @@
     "name": "Nearl",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -16416,6 +16504,7 @@
     "name": "Scavenger",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -16813,6 +16902,7 @@
     "name": "Cuora",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -17210,6 +17300,7 @@
     "name": "Myrtle",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -17607,6 +17698,7 @@
     "name": "Indra",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -18011,6 +18103,7 @@
     "name": "Firewatch",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -18415,6 +18508,7 @@
     "name": "Conviction",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -18812,6 +18906,7 @@
     "name": "Vulcan",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -19216,6 +19311,7 @@
     "name": "Nightmare",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -19620,6 +19716,7 @@
     "name": "Skyfire",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -20024,6 +20121,7 @@
     "name": "Warfarin",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -20428,6 +20526,7 @@
     "name": "SilverAsh",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -20941,6 +21040,7 @@
     "name": "Cliffheart",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -21345,6 +21445,7 @@
     "name": "Pramanix",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -21749,6 +21850,7 @@
     "name": "Nightingale",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -22262,6 +22364,7 @@
     "name": "Eyjafjalla",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -22775,6 +22878,7 @@
     "name": "Perfumer",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -23172,6 +23276,7 @@
     "name": "Earthspirit",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -23569,6 +23674,7 @@
     "name": "Mousse",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -23966,6 +24072,7 @@
     "name": "Gavial",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -24363,6 +24470,7 @@
     "name": "Hellagur",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -24876,6 +24984,7 @@
     "name": "Vermeil",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -25273,6 +25382,7 @@
     "name": "Plume",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -25415,6 +25525,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skcom_quickattack[1]",
+        "iconId": null,
+        "skillName": "Swift Strike α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -25422,6 +25541,7 @@
     "name": "Frostleaf",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -25819,6 +25939,7 @@
     "name": "Istina",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -26223,6 +26344,7 @@
     "name": "Gummy",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -26620,6 +26742,7 @@
     "name": "Rosa",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -27133,6 +27256,7 @@
     "name": "Courier",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -27530,6 +27654,7 @@
     "name": "Matterhorn",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -27927,6 +28052,7 @@
     "name": "Croissant",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -28331,6 +28457,7 @@
     "name": "Ceobe",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -28844,6 +28971,7 @@
     "name": "Nian",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -29357,6 +29485,7 @@
     "name": "Dusk",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -29870,6 +29999,7 @@
     "name": "Saria",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -30383,6 +30513,7 @@
     "name": "Platinum",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -30787,6 +30918,7 @@
     "name": "Melantha",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -30929,6 +31061,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skcom_atk_up[1]",
+        "iconId": null,
+        "skillName": "ATK Up α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -30936,6 +31077,7 @@
     "name": "Cardigan",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -31078,6 +31220,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skcom_heal_self[1]",
+        "iconId": null,
+        "skillName": "Regeneration α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -31085,6 +31236,7 @@
     "name": "Steward",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -31227,6 +31379,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skchr_stward_1",
+        "iconId": "skcom_powerstrike[1]",
+        "skillName": "Power Strike α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -31234,6 +31395,7 @@
     "name": "Adnachiel",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -31376,6 +31538,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skcom_atk_up[1]",
+        "iconId": null,
+        "skillName": "ATK Up α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -31383,6 +31554,7 @@
     "name": "Ansel",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -31525,6 +31697,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skcom_range_extend",
+        "iconId": null,
+        "skillName": "Healing Range Up",
+        "masteries": []
+      }
     ]
   },
   {
@@ -31532,6 +31713,7 @@
     "name": "Mostima",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -32045,6 +32227,7 @@
     "name": "Kafka",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -32449,6 +32632,7 @@
     "name": "Manticore",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -32853,6 +33037,7 @@
     "name": "Andreana",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -33257,6 +33442,7 @@
     "name": "Meteorite",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -33661,6 +33847,7 @@
     "name": "Grani",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -34065,6 +34252,7 @@
     "name": "Bagpipe",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -34578,6 +34766,7 @@
     "name": "Aak",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -35091,6 +35280,7 @@
     "name": "Hung",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -35495,6 +35685,7 @@
     "name": "Savage",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -35899,6 +36090,7 @@
     "name": "Jessica",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -36296,6 +36488,7 @@
     "name": "Rope",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -36693,6 +36886,7 @@
     "name": "Gravel",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -37090,6 +37284,7 @@
     "name": "Vanilla",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -37232,6 +37427,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skchr_wyvern_1",
+        "iconId": null,
+        "skillName": "Command - Reinforcement",
+        "masteries": []
+      }
     ]
   },
   {
@@ -37239,6 +37443,7 @@
     "name": "FEater",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -37643,6 +37848,7 @@
     "name": "Mayer",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -38047,6 +38253,7 @@
     "name": "Waai Fu",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -38451,6 +38658,7 @@
     "name": "Magallan",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -38964,6 +39172,7 @@
     "name": "Phantom",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -39477,6 +39686,7 @@
     "name": "Bibeak",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -39881,6 +40091,7 @@
     "name": "Greyy",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -40278,6 +40489,7 @@
     "name": "Shamare",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -40682,6 +40894,7 @@
     "name": "Podenco",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -41079,6 +41292,7 @@
     "name": "Dur-nar",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -41476,6 +41690,7 @@
     "name": "Reed",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -41880,6 +42095,7 @@
     "name": "Skadi",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -42393,6 +42609,7 @@
     "name": "Mountain",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -42906,6 +43123,7 @@
     "name": "Whislash",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -43310,6 +43528,7 @@
     "name": "Arene",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -43707,6 +43926,7 @@
     "name": "Jaye",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -44104,6 +44324,7 @@
     "name": "Astesia",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -44508,6 +44729,7 @@
     "name": "Breeze",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -44912,6 +45134,7 @@
     "name": "Shaw",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -45309,6 +45532,7 @@
     "name": "Orchid",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -45451,6 +45675,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skcom_quickattack[1]",
+        "iconId": null,
+        "skillName": "Swift Strike α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -45458,6 +45691,7 @@
     "name": "Executor",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -45862,6 +46096,7 @@
     "name": "Popukar",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -46004,6 +46239,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skcom_atk_up[1]",
+        "iconId": null,
+        "skillName": "ATK Up α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -46011,6 +46255,7 @@
     "name": "Catapult",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -46153,6 +46398,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skchr_catap_1",
+        "iconId": "skcom_blowrange_up[1]",
+        "skillName": "Blast Range Up α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -46160,6 +46414,7 @@
     "name": "Midnight",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -46302,6 +46557,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skchr_midn_1",
+        "iconId": "skcom_enchant[1]",
+        "skillName": "Enchant Weapon α",
+        "masteries": []
+      }
     ]
   },
   {
@@ -46309,6 +46573,7 @@
     "name": "Spot",
     "isCnOnly": false,
     "rarity": 3,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -46451,6 +46716,15 @@
         "goalName": "Elite 1",
         "goalCategory": 0
       }
+    ],
+    "skills": [
+      {
+        "slot": 1,
+        "skillId": "skchr_spot_1",
+        "iconId": null,
+        "skillName": "Secondary Healing Mode",
+        "masteries": []
+      }
     ]
   },
   {
@@ -46458,22 +46732,27 @@
     "name": "Lancet-2",
     "isCnOnly": false,
     "rarity": 1,
+    "class": "Medic",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_286_cast3",
     "name": "Castle-3",
     "isCnOnly": false,
     "rarity": 1,
+    "class": "Guard",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_289_gyuki",
     "name": "Matoimaru",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -46871,6 +47150,7 @@
     "name": "Vigna",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -47268,6 +47548,7 @@
     "name": "Angelina",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -47781,6 +48062,7 @@
     "name": "Thorns",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -48294,6 +48576,7 @@
     "name": "Ayerscarpe",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -48698,6 +48981,7 @@
     "name": "Sussurro",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -49095,6 +49379,7 @@
     "name": "Cutter",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -49492,6 +49777,7 @@
     "name": "Ambriel",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -49889,6 +50175,7 @@
     "name": "Heavyrain",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -50293,6 +50580,7 @@
     "name": "Leizi",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -50697,6 +50985,7 @@
     "name": "Swire",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -51101,6 +51390,7 @@
     "name": "Mudrock",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -51614,6 +51904,7 @@
     "name": "Bison",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -52018,6 +52309,7 @@
     "name": "Glaucus",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -52422,6 +52714,7 @@
     "name": "Click",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -52819,6 +53112,7 @@
     "name": "Archetto",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -53332,6 +53626,7 @@
     "name": "Sideroca",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -53736,6 +54031,7 @@
     "name": "Scene",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -54140,6 +54436,7 @@
     "name": "Utage",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -54537,6 +54834,7 @@
     "name": "Iris",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -54941,6 +55239,7 @@
     "name": "Schwarz",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -55454,6 +55753,7 @@
     "name": "Tsukinogi",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -55858,6 +56158,7 @@
     "name": "Beeswax",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -56262,6 +56563,7 @@
     "name": "Folinic",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -56666,6 +56968,7 @@
     "name": "Aosta",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -57070,6 +57373,7 @@
     "name": "Jackie",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -57467,6 +57771,7 @@
     "name": "Ceylon",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -57871,6 +58176,7 @@
     "name": "Chiave",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -58275,6 +58581,7 @@
     "name": "Surtr",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -58788,6 +59095,7 @@
     "name": "Ethan",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -59185,6 +59493,7 @@
     "name": "Broca",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -59589,6 +59898,7 @@
     "name": "Suzuran",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Supporter",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -60102,6 +60412,7 @@
     "name": "Saga",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -60615,6 +60926,7 @@
     "name": "Toddifons",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -61019,6 +61331,7 @@
     "name": "April",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -61423,6 +61736,7 @@
     "name": "Aciddrop",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -61820,6 +62134,7 @@
     "name": "GreyThroat",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -62224,6 +62539,7 @@
     "name": "Bena",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -62628,6 +62944,7 @@
     "name": "Leonhardt",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -63032,14 +63349,17 @@
     "name": "Thermal-EX",
     "isCnOnly": false,
     "rarity": 1,
+    "class": "Specialist",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_378_asbest",
     "name": "Asbestos",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -63444,6 +63764,7 @@
     "name": "Sesa",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -63848,6 +64169,7 @@
     "name": "Bubble",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -64245,6 +64567,7 @@
     "name": "Snowsant",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -64649,6 +64972,7 @@
     "name": "Purestream",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -65046,6 +65370,7 @@
     "name": "Mint",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -65450,6 +65775,7 @@
     "name": "Rosmontis",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -65963,6 +66289,7 @@
     "name": "Weedy",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -66476,6 +66803,7 @@
     "name": "Elysium",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -66880,6 +67208,7 @@
     "name": "Tuye",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -67284,6 +67613,7 @@
     "name": "Absinthe",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -67688,6 +68018,7 @@
     "name": "Tomimi",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -68092,6 +68423,7 @@
     "name": "Flint",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -68496,6 +68828,7 @@
     "name": "Eunectes",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -69009,6 +69342,7 @@
     "name": "Blemishine",
     "isCnOnly": false,
     "rarity": 6,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -69522,6 +69856,7 @@
     "name": "Carnelian",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -70035,6 +70370,7 @@
     "name": "Whisperain",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Medic",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -70439,6 +70775,7 @@
     "name": "Pinecone",
     "isCnOnly": false,
     "rarity": 4,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -70836,6 +71173,7 @@
     "name": "Robin",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -71240,6 +71578,7 @@
     "name": "Beanstalk",
     "isCnOnly": true,
     "rarity": 4,
+    "class": "Vanguard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -71637,6 +71976,7 @@
     "name": "Mr.Nothing",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -72041,6 +72381,7 @@
     "name": "Ash",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Sniper",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -72554,6 +72895,7 @@
     "name": "Blitz",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Defender",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -72958,6 +73300,7 @@
     "name": "Frost",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -73362,6 +73705,7 @@
     "name": "Tachanka",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -73766,6 +74110,7 @@
     "name": "Indigo",
     "isCnOnly": true,
     "rarity": 4,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -74163,6 +74508,7 @@
     "name": "Passenger",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Caster",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -74676,6 +75022,7 @@
     "name": "Gladiia",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -75189,6 +75536,7 @@
     "name": "Akafuyu",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -75593,6 +75941,7 @@
     "name": "Kirara",
     "isCnOnly": true,
     "rarity": 5,
+    "class": "Specialist",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -75997,6 +76346,7 @@
     "name": "Pallas",
     "isCnOnly": true,
     "rarity": 6,
+    "class": "Guard",
     "skillLevels": [
       {
         "skillLevel": 2,
@@ -76510,38 +76860,49 @@
     "name": "Noir Corne",
     "isCnOnly": false,
     "rarity": 2,
+    "class": "Defender",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_501_durin",
     "name": "Durin",
     "isCnOnly": false,
     "rarity": 2,
+    "class": "Caster",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_502_nblade",
     "name": "Yato",
     "isCnOnly": false,
     "rarity": 2,
+    "class": "Vanguard",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_503_rang",
     "name": "Rangers",
     "isCnOnly": false,
     "rarity": 2,
+    "class": "Sniper",
     "skillLevels": [],
-    "elite": []
+    "elite": [],
+    "skills": []
   },
   {
     "id": "char_1001_amiya2",
     "name": "Amiya (Guard)",
     "isCnOnly": false,
     "rarity": 5,
+    "class": "Guard",
+    "skillLevels": [],
+    "elite": [],
     "skills": [
       {
         "slot": 1,
