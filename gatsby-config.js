@@ -27,6 +27,10 @@ module.exports = {
         slug: "/leveling",
         pageTitle: "Leveling Costs",
       },
+      {
+        slug: "/anni",
+        pageTitle: "Annihilation Calculator",
+      },
     ],
   },
   pathPrefix: "/arknights",
