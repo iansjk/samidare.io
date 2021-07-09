@@ -26,7 +26,7 @@ import AppFooter from "../components/AppFooter";
 import favicon from "../data/images/favicon.ico";
 import NetlifyLoginContext from "./components/NetlifyLoginContext";
 
-const drawerWidth = 220;
+export const drawerWidth = 220;
 
 const useStyles = makeStyles((theme) => ({
   appWrapper: {
