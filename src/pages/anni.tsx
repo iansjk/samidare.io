@@ -10,18 +10,186 @@ const ANNI_STAGES = [
   {
     number: 1,
     name: "Chernobog",
+    rewards: [
+      {
+        killCount: 100,
+        sanityCost: 6,
+        orundum: 55,
+      },
+      {
+        killCount: 200,
+        sanityCost: 11,
+        orundum: 105,
+      },
+      {
+        killCount: 250,
+        sanityCost: 14,
+        orundum: 140,
+      },
+      {
+        killCount: 300,
+        sanityCost: 16,
+        orundum: 165,
+      },
+      {
+        killCount: 325,
+        sanityCost: 17,
+        orundum: 180,
+      },
+      {
+        killCount: 350,
+        sanityCost: 18,
+        orundum: 200,
+      },
+      {
+        killCount: 375,
+        sanityCost: 19,
+        orundum: 225,
+      },
+      {
+        killCount: 400,
+        sanityCost: 20,
+        orundum: 255,
+      },
+    ],
   },
   {
     number: 2,
     name: "Lungmen Outskirts",
+    rewards: [
+      {
+        killCount: 100,
+        sanityCost: 8,
+        orundum: 75,
+      },
+      {
+        killCount: 200,
+        sanityCost: 15,
+        orundum: 145,
+      },
+      {
+        killCount: 250,
+        sanityCost: 18,
+        orundum: 185,
+      },
+      {
+        killCount: 300,
+        sanityCost: 20,
+        orundum: 215,
+      },
+      {
+        killCount: 325,
+        sanityCost: 22,
+        orundum: 250,
+      },
+      {
+        killCount: 350,
+        sanityCost: 23,
+        orundum: 270,
+      },
+      {
+        killCount: 375,
+        sanityCost: 24,
+        orundum: 295,
+      },
+      {
+        killCount: 400,
+        sanityCost: 25,
+        orundum: 325,
+      },
+    ],
   },
   {
     number: 3,
     name: "Lungmen Downtown",
+    rewards: [
+      {
+        killCount: 100,
+        sanityCost: 8,
+        orundum: 78,
+      },
+      {
+        killCount: 200,
+        sanityCost: 15,
+        orundum: 150,
+      },
+      {
+        killCount: 250,
+        sanityCost: 18,
+        orundum: 192,
+      },
+      {
+        killCount: 300,
+        sanityCost: 20,
+        orundum: 224,
+      },
+      {
+        killCount: 325,
+        sanityCost: 22,
+        orundum: 262,
+      },
+      {
+        killCount: 350,
+        sanityCost: 23,
+        orundum: 284,
+      },
+      {
+        killCount: 375,
+        sanityCost: 24,
+        orundum: 312,
+      },
+      {
+        killCount: 400,
+        sanityCost: 25,
+        orundum: 345,
+      },
+    ],
   },
   {
     number: 5,
     name: "Frozen Abandoned City",
+    rewards: [
+      {
+        killCount: 100,
+        sanityCost: 8,
+        orundum: 80,
+      },
+      {
+        killCount: 200,
+        sanityCost: 15,
+        orundum: 155,
+      },
+      {
+        killCount: 250,
+        sanityCost: 18,
+        orundum: 200,
+      },
+      {
+        killCount: 300,
+        sanityCost: 20,
+        orundum: 235,
+      },
+      {
+        killCount: 325,
+        sanityCost: 22,
+        orundum: 275,
+      },
+      {
+        killCount: 350,
+        sanityCost: 23,
+        orundum: 300,
+      },
+      {
+        killCount: 375,
+        sanityCost: 24,
+        orundum: 330,
+      },
+      {
+        killCount: 400,
+        sanityCost: 25,
+        orundum: 365,
+      },
+    ],
   },
 ];
 const KILL_THRESHOLDS = [0, 100, 200, 250, 300, 325, 350, 375, 400].reverse();
