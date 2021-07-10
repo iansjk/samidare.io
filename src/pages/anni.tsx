@@ -3,7 +3,7 @@ import { FormControl, InputLabel, NativeSelect } from "@material-ui/core";
 import baseSlugify from "slugify";
 import ValidatedTextField from "../components/ValidatedTextField";
 
-const STARTING_ORUNDUM_CAP = 1200;
+const MIN_ORUNDUM_CAP = 1200;
 const MAX_ORUNDUM_CAP = 1800;
 
 const ANNI_STAGES = [
@@ -70,9 +70,9 @@ const Annihilation: React.FC = () => {
           defaultValue={orundumCap}
           label="Your orundum cap"
           type="number"
-          helperText={`From ${STARTING_ORUNDUM_CAP} to ${MAX_ORUNDUM_CAP}`}
+          helperText={`From ${MIN_ORUNDUM_CAP} to ${MAX_ORUNDUM_CAP}`}
           validator={(value) =>
-            inNumberRange(value, STARTING_ORUNDUM_CAP, MAX_ORUNDUM_CAP)
+            inNumberRange(value, MIN_ORUNDUM_CAP, MAX_ORUNDUM_CAP)
           }
           onChange={(e) => setOrundumCap(parseInt(e.target.value, 10))}
           variant="outlined"
