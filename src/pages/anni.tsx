@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable no-plusplus */
+import React, { useMemo, useState } from "react";
 import { FormControl, InputLabel, NativeSelect } from "@material-ui/core";
 import baseSlugify from "slugify";
 import ValidatedTextField from "../components/ValidatedTextField";
@@ -6,7 +7,18 @@ import ValidatedTextField from "../components/ValidatedTextField";
 const MIN_ORUNDUM_CAP = 1200;
 const MAX_ORUNDUM_CAP = 1800;
 
-const ANNI_STAGES = [
+interface StageReward {
+  killCount: number;
+  sanityCost: number;
+  orundum: number;
+}
+interface Stage {
+  number: number;
+  name: string;
+  rewards: StageReward[];
+}
+
+const ANNI_STAGES: Stage[] = [
   {
     number: 1,
     name: "Chernobog",
@@ -206,8 +218,79 @@ const inNumberRange = (value: string, min: number, max: number): boolean => {
   return min <= intValue && intValue <= max;
 };
 
+const expectedSanityCost = (
+  orundumEarned: number,
+  orundumCap: number,
+  expectedSanityToFinish: number[],
+  reward: StageReward
+) => {
+  let result = reward.sanityCost;
+  [-5, 0, 5].forEach((modifier) => {
+    let newOrundum = orundumEarned + reward.orundum + modifier;
+    newOrundum = Math.min(newOrundum, orundumCap);
+    result += expectedSanityToFinish[newOrundum] / 3;
+  });
+  return result;
+};
+
+const bestNextStage = (
+  orundumEarned: number,
+  orundumCap: number,
+  // mapping of anni stage number to max kill count
+  killCounts: Record<number, number>
+) => {
+  const expectedSanityToFinish = Array(orundumCap + 1);
+  for (let i = 0; i < expectedSanityToFinish.length; i++) {
+    expectedSanityToFinish[i] = Number.MAX_SAFE_INTEGER;
+  }
+  expectedSanityToFinish[orundumCap] = 0;
+
+  const anniOptions = Object.entries(killCounts).flatMap(
+    ([anniNumber, killCount]) => {
+      const stage = ANNI_STAGES.find(
+        (s) => s.number === parseInt(anniNumber, 10)
+      )!;
+      return stage.rewards
+        .filter((r) => r.killCount <= killCount)
+        .map((r) => ({
+          number: stage.number,
+          name: stage.name,
+          ...r,
+        }));
+    }
+  );
+
+  for (let i = orundumCap; i >= 0; i--) {
+    for (let j = 0; j < anniOptions.length; j++) {
+      expectedSanityToFinish[i] = Math.min(
+        expectedSanityToFinish[i],
+        expectedSanityCost(
+          i,
+          orundumCap,
+          expectedSanityToFinish,
+          anniOptions[j]
+        )
+      );
+    }
+  }
+
+  const bestOption = anniOptions.find(
+    (option) =>
+      expectedSanityCost(
+        orundumEarned,
+        orundumCap,
+        expectedSanityToFinish,
+        option
+      ) === expectedSanityToFinish[orundumEarned]
+  );
+  return {
+    bestOption,
+    expectedSanity: expectedSanityToFinish[orundumEarned],
+  };
+};
+
 const Annihilation: React.FC = () => {
-  const [orundum, setOrundum] = useState(0);
+  const [orundumEarned, setOrundumEarned] = useState(0);
   const [orundumCap, setOrundumCap] = useState(MAX_ORUNDUM_CAP);
   const [killCounts, setKillCounts] = useState(initialKillCounts);
 
@@ -222,15 +305,21 @@ const Annihilation: React.FC = () => {
       });
     }
   };
+
+  const output = useMemo(
+    () => bestNextStage(orundumEarned, orundumCap, killCounts),
+    [orundumEarned, orundumCap, killCounts]
+  );
+
   return (
     <>
       <div>
         <ValidatedTextField
-          defaultValue={orundum}
+          defaultValue={orundumEarned}
           label="Orundum obtained"
           type="number"
           helperText={`From 0 to ${orundumCap}`}
-          onChange={(e) => setOrundum(parseInt(e.target.value, 10))}
+          onChange={(e) => setOrundumEarned(parseInt(e.target.value, 10))}
           validator={(value) => inNumberRange(value, 0, orundumCap)}
           variant="outlined"
         />
@@ -249,7 +338,9 @@ const Annihilation: React.FC = () => {
       <div>
         {ANNI_STAGES.map(({ number, name }) => (
           <FormControl key={name} fullWidth>
-            <InputLabel htmlFor={slugify(name)}>{name}</InputLabel>
+            <InputLabel htmlFor={slugify(name)}>
+              Annihilation {number}: {name}
+            </InputLabel>
             <NativeSelect
               value={killCounts[number]}
               onChange={handleChangeKillCount}
@@ -269,6 +360,7 @@ const Annihilation: React.FC = () => {
           </FormControl>
         ))}
       </div>
+      <pre>{JSON.stringify(output, null, 2)}</pre>
     </>
   );
 };
