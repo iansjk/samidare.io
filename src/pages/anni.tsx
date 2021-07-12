@@ -17,6 +17,13 @@ interface Stage {
   name: string;
   rewards: StageReward[];
 }
+type Output = {
+  bestOption: {
+    number: number;
+    name: string;
+  } & StageReward;
+  expectedSanity: number;
+};
 
 const ANNI_STAGES: Stage[] = [
   {
@@ -282,7 +289,7 @@ const bestNextStage = (
         expectedSanityToFinish,
         option
       ) === expectedSanityToFinish[orundumEarned]
-  );
+  )!;
   return {
     bestOption,
     expectedSanity: expectedSanityToFinish[orundumEarned],
@@ -306,7 +313,7 @@ const Annihilation: React.FC = () => {
     }
   };
 
-  const output = useMemo(
+  const output: Output = useMemo(
     () => bestNextStage(orundumEarned, orundumCap, killCounts),
     [orundumEarned, orundumCap, killCounts]
   );
