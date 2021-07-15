@@ -46,6 +46,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-swipeable-views": "^0.14.0",
     "slugify": "^1.4.6",
     "sprintf-js": "^1.1.2"
   },
@@ -59,6 +60,7 @@
     "@types/netlify-identity-widget": "^1.9.1",
     "@types/node": "^14.14.14",
     "@types/react-helmet": "^6.1.0",
+    "@types/react-swipeable-views": "^0.13.0",
     "@types/sprintf-js": "^1.1.2",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.0.0",

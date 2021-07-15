@@ -1,0 +1,257 @@
+{
+  "rotations": [
+    {
+      "tradingPosts": [
+        [
+          ["Jaye", 0],
+          ["Texas", 2],
+          ["Lappland", 2]
+        ],
+        [
+          ["Exusiai", 2],
+          ["Gummy", 0],
+          ["Midnight", 0]
+        ]
+      ],
+      "factories": [
+        [
+          ["Vermeil", 1],
+          ["Ceobe", 2],
+          ["Scene", 2]
+        ],
+        [
+          ["Spot", 1],
+          ["Gravel", 1]
+        ],
+        [
+          ["Steward", 1],
+          ["Ptilopsis", 2]
+        ],
+        [
+          ["Haze", 0],
+          ["Perfumer", 1]
+        ],
+        [
+          ["Castle-3", -1],
+          ["FEater", 0]
+        ]
+      ],
+      "powerPlants": [
+        ["Greyy", 0],
+        ["Shaw", 1]
+      ],
+      "commandCenter": [
+        ["Amiya", 0],
+        ["Dobermann", 0],
+        ["Scavenger", 0]
+      ],
+      "dorms": [[], [], [], []],
+      "receptionRoom": [
+        ["Ch'en", 2],
+        ["Gitano", 0]
+      ],
+      "office": ["Orchid", 0]
+    },
+    {
+      "tradingPosts": [
+        [
+          ["Jaye", 0],
+          ["Texas", 2],
+          ["Lappland", 2]
+        ],
+        [
+          ["Exusiai", 2],
+          ["Gummy", 0],
+          ["Midnight", 0]
+        ]
+      ],
+      "factories": [
+        [
+          ["Vermeil", 1],
+          ["Ceobe", 2],
+          ["Scene", 2]
+        ],
+        [
+          ["Vanilla", 0],
+          ["Gravel", 1]
+        ],
+        [
+          ["Jessica", 0],
+          ["Ptilopsis", 2]
+        ],
+        [
+          ["Purestream", 1],
+          ["Perfumer", 1]
+        ],
+        [
+          ["Frostleaf", 1],
+          ["FEater", 0]
+        ]
+      ],
+      "powerPlants": [
+        ["Greyy", 0],
+        ["Ifrit", 2]
+      ],
+      "commandCenter": [
+        ["Amiya", 0],
+        ["Dobermann", 0],
+        ["Scavenger", 0]
+      ],
+      "dorms": [
+        [
+          ["Spot", 1],
+          ["Steward", 1],
+          ["Haze", 0],
+          ["Castle-3", -1],
+          ["Shaw", 1]
+        ],
+        [["Gitano", 0]],
+        [],
+        []
+      ],
+      "receptionRoom": [
+        ["Ch'en", 2],
+        ["Projekt Red", 2]
+      ],
+      "office": ["Orchid", 0]
+    },
+    {
+      "tradingPosts": [
+        [
+          ["Shamare", 2],
+          ["Bibeak", 2],
+          ["Myrtle", 2]
+        ],
+        [
+          ["Exusiai", 2],
+          ["Gummy", 0],
+          ["Midnight", 0]
+        ]
+      ],
+      "factories": [
+        [
+          ["Vermeil", 1],
+          ["Ceobe", 2],
+          ["Scene", 2]
+        ],
+        [
+          ["Spot", 1],
+          ["Vanilla", 0]
+        ],
+        [
+          ["Steward", 1],
+          ["Jessica", 0]
+        ],
+        [
+          ["Haze", 0],
+          ["Purestream", 1]
+        ],
+        [
+          ["Castle-3", 0],
+          ["Frostleaf", 1]
+        ]
+      ],
+      "powerPlants": [
+        ["Shaw", 1],
+        ["Ifrit", 2]
+      ],
+      "commandCenter": [
+        ["Amiya", 0],
+        ["Dobermann", 0],
+        ["Scavenger", 0]
+      ],
+      "dorms": [
+        [
+          ["Jaye", 0],
+          ["Texas", 2],
+          ["Lappland", 2],
+          ["Gravel", 1],
+          ["Ptilopsis", 2]
+        ],
+        [
+          ["Perfumer", 1],
+          ["FEater", 0],
+          ["Ch'en", 2],
+          ["Orchid", 0],
+          ["Greyy", 0]
+        ],
+        [],
+        []
+      ],
+      "receptionRoom": [
+        ["Gitano", 1],
+        ["Projekt Red", 2]
+      ],
+      "office": ["Ethan", 2]
+    },
+    {
+      "tradingPosts": [
+        [
+          ["Jaye", 0],
+          ["Texas", 2],
+          ["Lappland", 2]
+        ],
+        [
+          ["Catapult", 0],
+          ["Fang", 1],
+          ["Yato", -1]
+        ]
+      ],
+      "factories": [
+        [
+          ["Vermeil", 1],
+          ["Ceobe", 2],
+          ["Scene", 2]
+        ],
+        [
+          ["Gravel", 1],
+          ["Spot", 1]
+        ],
+        [
+          ["Steward", 1],
+          ["Ptilopsis", 2]
+        ],
+        [
+          ["Perfumer", 1],
+          ["Haze", 0]
+        ],
+        [
+          ["Castle-3", 0],
+          ["FEater", 0]
+        ]
+      ],
+      "powerPlants": [
+        ["Greyy", 0],
+        ["Shaw", 1]
+      ],
+      "commandCenter": [
+        ["Amiya", 0],
+        ["Dobermann", 0],
+        ["Scavenger", 0]
+      ],
+      "dorms": [
+        [
+          ["Shamare", 2],
+          ["Bibeak", 2],
+          ["Myrtle", 2],
+          ["Exusiai", 2],
+          ["Gummy", 0]
+        ],
+        [
+          ["Midnight", 0],
+          ["Vanilla", 0],
+          ["Jessica", 0],
+          ["Purestream", 1],
+          ["Frostleaf", 1]
+        ],
+        [["Projekt Red", 2]],
+        []
+      ],
+      "receptionRoom": [
+        ["Gitano", 1],
+        ["Ch'en", 2]
+      ],
+      "office": ["Ethan", 2]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import appTheme from '../src/gatsby-theme-material-ui-top-layout/theme';
 
@@ -47,4 +48,4 @@ export const parameters = {
     }
   }
 }
-export const decorators = [(Story) => <ThemeProvider theme={appTheme}><Story /></ThemeProvider>];
+export const decorators = [(Story) => <ThemeProvider theme={appTheme}><CssBaseline /><Container maxWidth="lg"><Story /></Container></ThemeProvider>];
