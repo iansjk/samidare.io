@@ -146,6 +146,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -448,6 +461,16 @@
           "Defense",
           "Melee",
           "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Executor",
+        "rarity": 5,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Sniper",
           "Senior Operator"
         ]
       }
@@ -1115,6 +1138,16 @@
         ]
       },
       {
+        "name": "Executor",
+        "rarity": 5,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Sniper",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Haze",
         "rarity": 4,
         "tags": [
@@ -1207,6 +1240,15 @@
           "Healing",
           "Ranged",
           "Medic"
+        ]
+      },
+      {
+        "name": "Vermeil",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
         ]
       },
       {
@@ -1817,6 +1859,16 @@
         ]
       },
       {
+        "name": "Executor",
+        "rarity": 5,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Sniper",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Jessica",
         "rarity": 4,
         "tags": [
@@ -1842,6 +1894,15 @@
         "tags": [
           "AoE",
           "Slow",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Vermeil",
+        "rarity": 4,
+        "tags": [
+          "DPS",
           "Ranged",
           "Sniper"
         ]
@@ -2165,6 +2226,16 @@
         "tags": [
           "AoE",
           "Debuff",
+          "Ranged",
+          "Sniper",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Executor",
+        "rarity": 5,
+        "tags": [
+          "AoE",
           "Ranged",
           "Sniper",
           "Senior Operator"
@@ -2625,6 +2696,15 @@
           "DPS",
           "Melee",
           "Guard"
+        ]
+      },
+      {
+        "name": "Vermeil",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Ranged",
+          "Sniper"
         ]
       },
       {
@@ -3577,6 +3657,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -3739,6 +3832,19 @@
           "DPS",
           "Ranged",
           "Sniper",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
           "Top Operator",
           "Senior Operator"
         ]
@@ -3936,6 +4042,30 @@
   },
   {
     "tags": [
+      "Supporter",
+      "Top Operator"
+    ],
+    "operators": [
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      6
+    ]
+  },
+  {
+    "tags": [
       "Top Operator",
       "Vanguard"
     ],
@@ -4102,6 +4232,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -4240,6 +4383,30 @@
   },
   {
     "tags": [
+      "Slow",
+      "Top Operator"
+    ],
+    "operators": [
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      6
+    ]
+  },
+  {
+    "tags": [
       "Support",
       "Top Operator"
     ],
@@ -4289,6 +4456,19 @@
           "Support",
           "Melee",
           "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
           "Top Operator",
           "Senior Operator"
         ]
@@ -4643,6 +4823,16 @@
           "Supporter",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Executor",
+        "rarity": 5,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Sniper",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -4883,6 +5073,16 @@
           "Sniper",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Executor",
+        "rarity": 5,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Sniper",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -5054,6 +5254,16 @@
         "tags": [
           "AoE",
           "Debuff",
+          "Ranged",
+          "Sniper",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Executor",
+        "rarity": 5,
+        "tags": [
+          "AoE",
           "Ranged",
           "Sniper",
           "Senior Operator"
@@ -7573,6 +7783,16 @@
         ]
       },
       {
+        "name": "Executor",
+        "rarity": 5,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Sniper",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Jessica",
         "rarity": 4,
         "tags": [
@@ -7598,6 +7818,15 @@
         "tags": [
           "AoE",
           "Slow",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Vermeil",
+        "rarity": 4,
+        "tags": [
+          "DPS",
           "Ranged",
           "Sniper"
         ]
@@ -7723,6 +7952,16 @@
         "tags": [
           "AoE",
           "Debuff",
+          "Ranged",
+          "Sniper",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Executor",
+        "rarity": 5,
+        "tags": [
+          "AoE",
           "Ranged",
           "Sniper",
           "Senior Operator"
@@ -7907,6 +8146,15 @@
         "tags": [
           "DPS",
           "Debuff",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Vermeil",
+        "rarity": 4,
+        "tags": [
+          "DPS",
           "Ranged",
           "Sniper"
         ]
@@ -9106,6 +9354,16 @@
         ]
       },
       {
+        "name": "Executor",
+        "rarity": 5,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Sniper",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Shirayuki",
         "rarity": 4,
         "tags": [
@@ -9190,6 +9448,15 @@
         "tags": [
           "DPS",
           "Debuff",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Vermeil",
+        "rarity": 4,
+        "tags": [
+          "DPS",
           "Ranged",
           "Sniper"
         ]
@@ -10775,6 +11042,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -10975,6 +11255,31 @@
   {
     "tags": [
       "Senior Operator",
+      "Supporter",
+      "Top Operator"
+    ],
+    "operators": [
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      6
+    ]
+  },
+  {
+    "tags": [
+      "Senior Operator",
       "Top Operator",
       "Vanguard"
     ],
@@ -11144,6 +11449,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -11287,6 +11605,31 @@
   {
     "tags": [
       "Senior Operator",
+      "Slow",
+      "Top Operator"
+    ],
+    "operators": [
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      6
+    ]
+  },
+  {
+    "tags": [
+      "Senior Operator",
       "Support",
       "Top Operator"
     ],
@@ -11336,6 +11679,19 @@
           "Support",
           "Melee",
           "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
           "Top Operator",
           "Senior Operator"
         ]
@@ -11865,6 +12221,31 @@
   },
   {
     "tags": [
+      "Ranged",
+      "Supporter",
+      "Top Operator"
+    ],
+    "operators": [
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      6
+    ]
+  },
+  {
+    "tags": [
       "AoE",
       "Ranged",
       "Top Operator"
@@ -11912,6 +12293,19 @@
           "DPS",
           "Ranged",
           "Sniper",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
           "Top Operator",
           "Senior Operator"
         ]
@@ -11984,6 +12378,31 @@
   {
     "tags": [
       "Ranged",
+      "Slow",
+      "Top Operator"
+    ],
+    "operators": [
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      6
+    ]
+  },
+  {
+    "tags": [
+      "Ranged",
       "Support",
       "Top Operator"
     ],
@@ -12008,6 +12427,19 @@
           "Support",
           "Ranged",
           "Medic",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
           "Top Operator",
           "Senior Operator"
         ]
@@ -12428,6 +12860,81 @@
   },
   {
     "tags": [
+      "DPS",
+      "Supporter",
+      "Top Operator"
+    ],
+    "operators": [
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      6
+    ]
+  },
+  {
+    "tags": [
+      "Slow",
+      "Supporter",
+      "Top Operator"
+    ],
+    "operators": [
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      6
+    ]
+  },
+  {
+    "tags": [
+      "Support",
+      "Supporter",
+      "Top Operator"
+    ],
+    "operators": [
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      6
+    ]
+  },
+  {
+    "tags": [
       "DP-Recovery",
       "Top Operator",
       "Vanguard"
@@ -12573,6 +13080,31 @@
   {
     "tags": [
       "DPS",
+      "Slow",
+      "Top Operator"
+    ],
+    "operators": [
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      6
+    ]
+  },
+  {
+    "tags": [
+      "DPS",
       "Support",
       "Top Operator"
     ],
@@ -12585,6 +13117,19 @@
           "Support",
           "Melee",
           "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
           "Top Operator",
           "Senior Operator"
         ]
@@ -12720,6 +13265,31 @@
           "Support",
           "Melee",
           "Defender",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      6
+    ]
+  },
+  {
+    "tags": [
+      "Slow",
+      "Support",
+      "Top Operator"
+    ],
+    "operators": [
+      {
+        "name": "Magallan",
+        "rarity": 6,
+        "tags": [
+          "Support",
+          "Slow",
+          "DPS",
+          "Ranged",
+          "Supporter",
           "Top Operator",
           "Senior Operator"
         ]
@@ -13512,6 +14082,16 @@
           "Sniper",
           "Senior Operator"
         ]
+      },
+      {
+        "name": "Executor",
+        "rarity": 5,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Sniper",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -13586,6 +14166,16 @@
         "tags": [
           "AoE",
           "Debuff",
+          "Ranged",
+          "Sniper",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Executor",
+        "rarity": 5,
+        "tags": [
+          "AoE",
           "Ranged",
           "Sniper",
           "Senior Operator"
@@ -14394,6 +14984,16 @@
         "tags": [
           "AoE",
           "Debuff",
+          "Ranged",
+          "Sniper",
+          "Senior Operator"
+        ]
+      },
+      {
+        "name": "Executor",
+        "rarity": 5,
+        "tags": [
+          "AoE",
           "Ranged",
           "Sniper",
           "Senior Operator"
@@ -17462,6 +18062,16 @@
         ]
       },
       {
+        "name": "Executor",
+        "rarity": 5,
+        "tags": [
+          "AoE",
+          "Ranged",
+          "Sniper",
+          "Senior Operator"
+        ]
+      },
+      {
         "name": "Shirayuki",
         "rarity": 4,
         "tags": [
@@ -17547,6 +18157,15 @@
         "tags": [
           "DPS",
           "Debuff",
+          "Ranged",
+          "Sniper"
+        ]
+      },
+      {
+        "name": "Vermeil",
+        "rarity": 4,
+        "tags": [
+          "DPS",
           "Ranged",
           "Sniper"
         ]
